@@ -1,0 +1,6 @@
+Mit folgenden Befehlen kopiert man geänderte Dateien auf den Server:
+
+cd charakterziffer.github.io/
+git add --all
+git commit -m "ÄNDERUNG"
+git push
