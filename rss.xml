@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
 <title>@cz+ // Blog von @charakterziffer</title>
-<link>index.htm</link>
+<link>http://charakterziffer.github.io/index.htm</link>
 <description>140 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
 <language>de-de</language>
 <copyright>Gerhard Großmann</copyright>
@@ -10,13 +10,13 @@
 <image>
 	<url>material/profilbild.png</url>
 	<title>@cz+ // Blog von @charakterziffer</title>
-	<link>index.htm</link>
+	<link>http://charakterziffer.github.io/index.htm</link>
 </image>
 
 <item>
 	<title>Krimis mit Richter Di</title>
 	<description>Der niederländische Diplomat Robert van Gulik hat in den 1950/60ern eine Reihe historischer Krimis geschrieben. Deren Hauptfigur Richter Di ermittelt im alten China und klärt meist drei Kriminalfälle auf einmal. Nebenbei erfährt der Leser viel über die Gesellschaft und Kultur der Tang-Dynastie.</description>
-	<link>index.htm#kritik12</link>
+	<link>http://charakterziffer.github.io/index.htm#kritik12</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz040</guid>
 	<pubDate>Thu, 27 Feb 2014 00:00:00 +0100</pubDate>
@@ -25,7 +25,7 @@
 <item>
 	<title>Anonym kommentieren</title>
 	<description>Bösartige Kommentare im Netz nerven und stören die Diskussion. Wenn sich jeder online nur noch mit seinem echten Namen äußern dürfte, dann hielten sich Störenfriede vielleicht zurück. Etwas anderes, wichtiges ginge dann aber auch verloren.</description>
-	<link>index.htm#kritik11</link>
+	<link>http://charakterziffer.github.io/index.htm#kritik11</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz039</guid>
 	<pubDate>Fri, 17 Jan 2014 00:00:00 +0100</pubDate>
@@ -34,7 +34,7 @@
 <item>
 	<title>2014 auf 24 Seiten</title>
 	<description>Bereits zum dritten Mal habe ich einen Halbmonatskalender gestaltet. Er zeigt immer zwei bis drei Wochen auf einer DIN-A5-Seite mit großen Zahlen und bietet viel Platz zum Reinschreiben. In meinem Blog gibt’s das PDF für 2014 zum Herunterladen und Ausdrucken.</description>
-	<link>index.htm#typografie08</link>
+	<link>http://charakterziffer.github.io/index.htm#typografie08</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz038</guid>
 	<pubDate>Tue, 19 Nov 2013 00:00:00 +0100</pubDate>
@@ -43,7 +43,7 @@
 <item>
 	<title>Aus den Archiven: Klara</title>
 	<description>Die folgende Serie entstand 2011 im Rahmen eines Wettbewerbs für Kurzhörspiele. Das Thema sind Liebesschwüre und deren abgegriffene Komplimente. Steigert man die verbrauchten Vergleiche und formuliert sie detaillierter, dann kippen sie vom Banalen ins Absurde, Lustige oder Poetische.</description>
-	<link>index.htm#serie11</link>
+	<link>http://charakterziffer.github.io/index.htm#serie11</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz037</guid>
 	<pubDate>Fri, 25 Oct 2013 00:00:00 +0100</pubDate>
@@ -52,7 +52,7 @@
 <item>
 	<title>Sechs freie Serifenschriften</title>
 	<description>Kostenlose Schriften gibt es ja wie Sand am Meer. Leider sind die wenigsten von annehmebarer Qualität: Da fehlen schon mal die deutschen Umlaute oder die Unterschneidung. Anders ist das bei Bitter, PT Serif, Alegreya, Gandhi Serif, Libre Baskerville und Noticia Text. Diese sechs Serifenschriften stelle ich hier vor.</description>
-	<link>index.htm#typografie07</link>
+	<link>http://charakterziffer.github.io/index.htm#typografie07</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz036</guid>
 	<pubDate>Wed, 18 Sep 2013 00:00:00 +0100</pubDate>
