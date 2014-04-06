@@ -1,0 +1,142 @@
+@font-face { font-family: 'Source Sans Pro';
+	font-style: normal; font-weight: 400;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
+	url(http://ubuntuone.com/3ZiVpMBnmk24bYOKkHiefe) format('woff'),
+	url(http://ubuntuone.com/1VY9XxNnFSRsepXmrhc6KR) format('truetype'); }
+@font-face { font-family: 'Source Sans Pro';
+	font-style: italic; font-weight: 400;
+	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
+	url(http://ubuntuone.com/2dqvOXSpuIXMnu5XEnbe6l) format('woff'),
+	url(http://ubuntuone.com/2FuDjC1mDawqH1oK3ISUIv) format('truetype'); }
+@font-face { font-family: 'Bitter';
+	font-style: normal; font-weight: normal;
+	src: local('Bitter-Regular'),
+	url(http://ubuntuone.com/7AKO6qDlYWWX28kUgLppK5) format('woff'),
+	url(http://ubuntuone.com/5rjPOsYLlaIUOxKpfwfPWX) format('truetype'); }
+
+body {background: #c8e3aa url(https://pbs.twimg.com/profile_background_images/713919957/2309130859ee0ff9affc6ec8305e6629.png) repeat fixed;
+	margin:0; padding:5px; text-align:center; font-size:100.01%;}
+
+#container { text-align: left; margin: 30px auto 60px;
+	min-width:47em; max-width:57em;
+	background-color:#eee; box-shadow: 1px 2px 5px #777;}
+#hauptfeld { background:#fff; padding: 52px 55px 56px 65px;
+	border-right:1px dashed #281; margin-right:16.6em;}
+#randspalte { float:right; width:15em; padding: 36px 12px 56px 13px;}
+
+h1,h2,h3 { font-family: Bitter,Georgia,serif;
+	font-weight:normal; color:#333; }
+h1 {font-size:1.9em; line-height:1.1;
+	margin: 0 0 -0.15em;}
+h2 {font-size:1.4em; line-height:1.0;
+	margin: 0.9em 0 -0.1em;}
+h3 {font-size:1.0em; line-height:1.4;
+	margin: 1.5em 0 -0.8em;}
+
+p, ul, ol, figure { font: 1em/1.4 'Source Sans Pro',Calibri,Arial,sans-serif; color:#222; font-weight:400;
+	margin-top:0.95em; margin-bottom:-0.26em;
+	-moz-font-feature-settings: "onum"; -webkit-font-feature-settings: "onum"; -ms-font-feature-settings: "onum" 1; font-feature-settings: "onum";
+/*	hypenate.js eingebaut, da bessere Pattern und Chrome-Unterstützung
+	-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;
+	-webkit-hyphenate-before: 2; -webkit-hyphenate-after: 3;
+	hyphenate-lines: 3; */}
+p.bild {margin:1.7em 0 -0.3em;}
+ul {margin: 1.4em 0 1.4em -1em;}
+ul li {list-style:none; margin-top:0.95em}
+ul.bullet li {list-style:square;}
+ol {margin-left: -1.2em;}
+
+.dachzeile {font-size:0.85em; color:#111;
+	margin-top:4.35em; margin-bottom:-1.2em; }
+
+i, em {font: inherit; font-style:italic; color: #111;}
+b, strong {font: normal 0.91em Bitter,Georgia,serif; color:#000;}
+code, pre {font: 0.91em/1 Monaco,Consolas,'Lucida Console',
+	'DejaVu Sans Mono','Courier New',monospace; color:#111;}
+
+img {max-width:98.5%; height:auto;}
+
+figure.quote {margin:1.5em 0 1.4em 0; padding:0.6em 0.2em 0.6em 0.8em;
+	border-left:3px solid; background-color:#eee;}
+figure.quote>blockquote {font-style:italic; margin:0; padding:0;}
+figure.quote>blockquote+figcaption:before {content:"— "}
+figure.quote>blockquote+figcaption {display:block; width:98%;
+	font:normal 0.8em/1.7 Bitter,Georgia,serif; font-style:normal;
+	margin-top:0.3em; text-align:right; letter-spacing:0.08em;
+	text-transform:uppercase;}
+cite {font-style:normal;}
+q { quotes: '„' '“' '‚' '‘'; }
+:lang(en) > q, :lang(en) > blockquote { quotes: '“' '”' '‘' '’'; }
+
+a:link {text-decoration:none;	font:normal 0.91em Bitter,Georgia,serif;}
+a:link {color:#281;}
+a:visited {color:#850;}
+a:focus {outline:1px dotted #444;}
+a:hover {color:#3A1;}
+a:active {color:#E32;}
+a:target {background-color:#CF8; color:#444;}
+
+.avatar {float:left; width:3.7em; height: auto;
+	margin: 2px 0.75em 0 -0.02em;}
+a .avatar {width:4.1em;}
+.texticon {border-width:0; position:relative; top:2px}
+
+.hinterlegt {background: #dbf0be; margin-top: 1.2em; padding: 0.25em 0.4em 0.3em;}
+.hinterlegt p {margin-bottom:0.25em}
+
+.button { margin:0 30%; }
+.button p {display:inline-block; width:40%; text-align:center;
+	font-size:1.09em; margin:1.6em 0 0.3em; border: 1px solid #281;
+	background:#dbf0be; padding:0.25em 0 0.4em;}
+
+div.quadrat { width:0.33em; height:0.33em; float:left;
+	margin-right:0.07em; margin-top:0.375em; background-color:#CCC;
+	color:white; font:bold italic 11em/0.35em
+	'Palatino Linotype','Palatino','URW Palladio L',
+	Georgia,serif; text-indent:-0.05em; overflow:hidden; }
+.quadrat:before {content: attr(data-icon); speak:none;}
+
+#randspalte h3, #randspalte p {
+	font-size:0.905em; line-height:1.538;}
+#randspalte h3 {margin-top:1.538em}
+#randspalte p {margin-bottom:-0.15em;}
+#randspalte ul {margin: 0.4em 0 0 -2.5em;}
+#randspalte ul li {margin-bottom:-0.4em;}
+p.tweet {display:inline;}
+p.timePosted:before {content: " // ";}
+p.timePosted {display:inline;}
+p.interact {display:none;}
+
+hr {margin-top:3em; margin-bottom:-1.1em; color:#BBB;}
+.mobil {display:none;}
+span.affe {display:inline;}
+span.affe:before {content:"\40";}
+
+@media handheld, (max-width: 54.7em) {
+#hauptfeld { padding: 52px 35px 56px 45px; }
+}
+@media handheld, (max-width: 31.3em), print {
+body {padding:2px;}
+#container { margin:0; min-width:100%; box-shadow:none;}
+#hauptfeld { margin-right:0;padding: 2.4em 7px 2.4em;border-right: 0; border-top:1px dashed;}
+#randspalte { float:none; width:auto; padding: 0.4em 7px 2.2em;
+	border-bottom: 1px solid #eee;}
+h1 {font-size:1.8em; line-height:1.15;}
+.dachzeile {font-size:0.85em; color:#111;
+	margin-top:4.35em; margin-bottom:-1.2em;}
+#randspalte p {font-size:1em; line-height:1.4;}
+}
+@media handheld, (max-width: 31.3em) {
+body {font-size:90.01%}
+.mobil {display:block; margin-bottom:-1em}
+}
+@media print {
+* {background:#fff !important;}
+h2, h3 {page-break-after: avoid;}
+@page {margin: 1.5cm;}
+div.quadrat {border:1px solid #666; color:#666;}
+a:link, a:visited {color:#666;}
+a[href^=http]:after {content:" [" attr(href) "] ";
+	font-style:italic; font-weight:normal;}
+a[href^="#"]:after, a[href^="javascript"]:after { content: "";}
+}
