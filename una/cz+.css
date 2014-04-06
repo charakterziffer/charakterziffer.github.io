@@ -1,20 +1,20 @@
 @font-face { font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
 	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
-	url(http://ubuntuone.com/3ZiVpMBnmk24bYOKkHiefe) format('woff'),
-	url(http://ubuntuone.com/1VY9XxNnFSRsepXmrhc6KR) format('truetype'); }
+	url(SourceSansPro-Rg.woff) format('woff'),
+	url(SourceSansPro-Rg.ttf) format('truetype'); }
 @font-face { font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
 	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
-	url(http://ubuntuone.com/2dqvOXSpuIXMnu5XEnbe6l) format('woff'),
-	url(http://ubuntuone.com/2FuDjC1mDawqH1oK3ISUIv) format('truetype'); }
+	url(SourceSansPro-It.woff) format('woff'),
+	url(SourceSansPro-Rg.ttf) format('truetype'); }
 @font-face { font-family: 'Bitter';
 	font-style: normal; font-weight: normal;
 	src: local('Bitter-Regular'),
-	url(http://ubuntuone.com/7AKO6qDlYWWX28kUgLppK5) format('woff'),
-	url(http://ubuntuone.com/5rjPOsYLlaIUOxKpfwfPWX) format('truetype'); }
+	url(Bitter.woff) format('woff'),
+	url(Bitter.ttf) format('truetype'); }
 
-body {background: #c8e3aa url(https://pbs.twimg.com/profile_background_images/713919957/2309130859ee0ff9affc6ec8305e6629.png) repeat fixed;
+body {background: #c8e3aa url(../material/hg-zahlen.png) repeat fixed;
 	margin:0; padding:5px; text-align:center; font-size:100.01%;}
 
 #container { text-align: left; margin: 30px auto 60px;
