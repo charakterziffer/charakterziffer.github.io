@@ -61,7 +61,34 @@
 
 <!-- hier folgen die Artikel  -->
 
-<div class="quadrat" data-icon=":" style="background-color:salmon"></div>
+<div class="quadrat" data-icon="-" style="background-color:lightslategray"></div>
+<p class="dachzeile">Mi, 9. Apr 2014 · <a id="methodik08" href="#methodik07">#methodik</a>, <a id="typografie09" href="#typografie08">#typografie</a></p>
+<h2 class="donthyphenate">Silbentrennung im Browser</h2>
+<p>In gedruckten Büchern ist es völlig normal, Wörter falls angebracht am Zeilenende zu trennen. Auf Internetseiten ist das noch eher die Ausnahme. Dabei hätte Silbentrennung auch online ihre Vorteile: Sie ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz).</p>
+<p>Besonders in schmalen Textspalten ist Silbentrennung oft unverzichtbar. Hier gibt es sehr häufige Zeilenwechsel und ein unruhig flatternder Text würde das Lesen stark erschweren. In deutschsprachigen Texten gibt es teilweise lange Wörter, die ohne Trennung große Lücken in den Text reißen können.</p>
+<p>Technisch spricht heutzutage übrigens nichts mehr dagegen, Silbentrennung auf Websites anzuwenden. Sie erschwert weder das Kopieren von Texten (hier tauchen keine Trennstriche auf) noch verhindert sie die Suche nach Begriffen (Trennstriche werden ignoriert). Und in Browsern, die Silbentrennung nicht unterstützen, bleibt es einfach bei ungetrenntem Text.</p>
+<h3>Umsetzung mit Javascript</h3>
+<p>Hier in meinem Blog nutze ich das <a href="https://code.google.com/p/hyphenator/">JavaScript-Programm Hyphenator.js</a>. Man definiert dazu zunächst die Sprache der Website: <code>&lt;html&nbsp;lang="de"&gt;</code></p>
+<p>Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse <em>hyphenate</em> aus (beispielsweise <code class="donthyphenate">&lt;body class=​"hyphenate"&gt;</code>, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z.&thinsp;B. Überschriften), bekommen die Klasse <em class="donthyphenate">donthyphenate</em>.</p>
+<p>Mit Hilfe der Seite <a href="http://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine <a href="una/hyphenate.js">eigene Hyphenator-Datei</a> für deutsche Texte hat knapp 100&nbsp;kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
+<p><code class="donthyphenate">
+&lt;script src="http://deine-adresse.de/PFAD/hyphenator.js" type="text/javascript"&gt;&lt;/script&gt;
+</code></p>
+<h3>Alternative: Die CSS-Eigenschaft »hyphens«</h3>
+<p>Einfacher funktioniert die Silbentrennung mit CSS. Auch hier legt man zunächste die Sprache der Website fest. Dann öffnet man seine CSS-Datei und gibt den zu trennenden Elementen (z.&nbsp;B. allen p-Absätze) die Eigenschaft:</p>
+<p><code class="donthyphenate">
+-ms-hyphens: auto; -webkit-hyphens: auto;<br>
+-moz-hyphens: auto; hyphens: auto;
+</code></p>
+<p>Laut <a href="http://caniuse.com">caniuse.com</a> wird die CSS-Eigenschaft <em>hyphens</em> leider bisher nur von Firefox (≥&nbsp;26), dem Internet Explorer (≥&nbsp;10) und Safari (≥&nbsp;7.0) unterstützt – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.</p>
+<h3>Was nicht funktioniert</h3>
+<p class="donthyphenate" style="display:block;float:left;width:3em;overflow:hidden;border-right:1px solid #281;margin:1.2em 1em 0.5em 0;font:1em/1.32 FreeSerif,'Times New Roman',Times;-ms-hyphens:auto;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;">
+mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich</p>
+<p>Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.</p>
+<p>Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen <a href="https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176">Fehlerbericht auf Launchpad</a> eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.</p>
+<p>Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.</p>
+
+<div class="quadrat" data-icon=":" style="clear:both; background-color:salmon"></div>
 <p class="dachzeile">Do, 27. Feb 2014 · <a id="kritik12" href="#kritik11">#kritik</a></p>
 <h2 class="donthyphenate">Verbrechen vor über 1300 Jahren – Krimigeschichten mit Richter Di</h2>
 <p>Nicht nur die Pest wütet im alten China, auch eine Mordserie erschüttert die Hauptstadt. Und die Lösung scheint in den Scherben einer Vase zu liegen …</p>

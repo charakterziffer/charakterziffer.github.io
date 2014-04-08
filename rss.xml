@@ -14,6 +14,15 @@
 </image>
 
 <item>
+	<title>Silbentrennung im Browser</title>
+	<description>Silbentrennung ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz). Technisch spricht heutzutage kaum etwas dagegen, Silbentrennung auch auf Interetseiten anzuwenden. In meinem Artikel stelle ich zwei Methoden dafür vor: Eine umfassende mit Javascript und eine native mit CSS.</description>
+	<link>http://charakterziffer.github.io/index.htm#methodik08</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="false">cz041</guid>
+	<pubDate>Wed, 9 Apr 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Krimis mit Richter Di</title>
 	<description>Der niederländische Diplomat Robert van Gulik hat in den 1950/60ern eine Reihe historischer Krimis geschrieben. Deren Hauptfigur Richter Di ermittelt im alten China und klärt meist drei Kriminalfälle auf einmal. Nebenbei erfährt der Leser viel über die Gesellschaft und Kultur der Tang-Dynastie.</description>
 	<link>http://charakterziffer.github.io/index.htm#kritik12</link>
@@ -47,15 +56,6 @@
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz037</guid>
 	<pubDate>Fri, 25 Oct 2013 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Sechs freie Serifenschriften</title>
-	<description>Kostenlose Schriften gibt es ja wie Sand am Meer. Leider sind die wenigsten von annehmebarer Qualität: Da fehlen schon mal die deutschen Umlaute oder die Unterschneidung. Anders ist das bei Bitter, PT Serif, Alegreya, Gandhi Serif, Libre Baskerville und Noticia Text. Diese sechs Serifenschriften stelle ich hier vor.</description>
-	<link>http://charakterziffer.github.io/index.htm#typografie07</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
-	<guid isPermaLink="false">cz036</guid>
-	<pubDate>Wed, 18 Sep 2013 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>

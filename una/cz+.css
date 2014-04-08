@@ -18,8 +18,8 @@ body {background: #c8e3aa url(../material/hg-zahlen.png) repeat fixed;
 	margin:0; padding:5px; text-align:center; font-size:100.01%;}
 
 #container { text-align: left; margin: 30px auto 60px;
-	min-width:47em; max-width:57em;
-	background-color:#eee; box-shadow: 1px 2px 5px #777;}
+	min-width:47em; max-width:57em; box-shadow: 1px 2px 6px #555;
+	background:#eee;}
 #hauptfeld { background:#fff; padding: 52px 55px 56px 65px;
 	border-right:1px dashed #281; margin-right:16.6em;}
 #randspalte { float:right; width:15em; padding: 36px 12px 56px 13px;}
@@ -89,7 +89,7 @@ a .avatar {width:4.1em;}
 	font-size:1.09em; margin:1.6em 0 0.3em; border: 1px solid #281;
 	background:#dbf0be; padding:0.25em 0 0.4em;}
 
-div.quadrat { width:0.33em; height:0.33em; float:left;
+.quadrat { width:0.33em; height:0.33em; float:left;
 	margin-right:0.07em; margin-top:0.375em; background-color:#CCC;
 	color:white; font:bold italic 11em/0.35em
 	'Palatino Linotype','Palatino','URW Palladio L',
