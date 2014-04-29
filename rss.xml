@@ -14,8 +14,17 @@
 </image>
 
 <item>
+	<title>Subtile (Un)wahrheiten</title>
+	<description>Fehler bei einer Recherche sind schnell passiert und was dann rauskommt, entspricht dann oft nicht so genau den Tatsachen. Auf Twitter bemühe ich mich um Objektivität und Faktentreue – außer in meiner Serie »Erfundene Fakten«. Dort spiele ich (mehr oder weniger) subtil mit der Wahrheit.</description>
+	<link>http://charakterziffer.github.io/index.htm#serie12</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="false">cz042</guid>
+	<pubDate>Wed, 30 Apr 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Silbentrennung im Browser</title>
-	<description>Silbentrennung ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz). Technisch spricht heutzutage kaum etwas dagegen, Silbentrennung auch auf Interetseiten anzuwenden. In meinem Artikel stelle ich zwei Methoden dafür vor: Eine umfassende mit Javascript und eine native mit CSS.</description>
+	<description>Silbentrennung ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz). Technisch spricht heutzutage kaum etwas dagegen, Silbentrennung auch auf Internetseiten anzuwenden. In meinem Artikel stelle ich zwei Methoden dafür vor: Eine umfassende mit Javascript und eine native mit CSS.</description>
 	<link>http://charakterziffer.github.io/index.htm#methodik08</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz041</guid>
@@ -47,15 +56,6 @@
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="false">cz038</guid>
 	<pubDate>Tue, 19 Nov 2013 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Aus den Archiven: Klara</title>
-	<description>Die folgende Serie entstand 2011 im Rahmen eines Wettbewerbs für Kurzhörspiele. Das Thema sind Liebesschwüre und deren abgegriffene Komplimente. Steigert man die verbrauchten Vergleiche und formuliert sie detaillierter, dann kippen sie vom Banalen ins Absurde, Lustige oder Poetische.</description>
-	<link>http://charakterziffer.github.io/index.htm#serie11</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
-	<guid isPermaLink="false">cz037</guid>
-	<pubDate>Fri, 25 Oct 2013 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>

@@ -2,7 +2,7 @@ So kopiert man geänderte Dateien auf den Server:
 
 cd ~/charakterziffer.github.io/
 git add --all
-git commit -m "Neuen Artikel ergänzt"
+git commit -m "Blogeintrag: Erfunde Fakten (3)"
 git push
 
 […] → Zusammenfassung der Änderungen
