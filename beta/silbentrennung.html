@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Silbentrennung ermöglicht einen ruhigeren Zeilenfall bzw. eine gleichmäßigere Textverteilung – auch auf Internetseiten. Es gibt verschiedene Methoden, Silbentrennung im Browser umzusetzen.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<title>Silbentrennung im Browser // @cz+</title>
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter, HandSerif, StickSerif, Otfeat, PixAntiqua, Fuchs und Ballerina">
+<link rel="shortcut icon" href="bestand/favicon.ico" type="image/x-icon" />
+<link href='bestand/style.css' rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" />
+</head>
+
+<body class="hyphenate">
+<div id="container">
+
+<div id="randspalte" class="donthyphenate">
+<a href="index.html"><img class="logo" src="bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – am besten <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p>Mein <a href="rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="bestand/cc-by-sa.png"></a></p>
+</div> <!-- randspalte -->
+
+<div id="hauptfeld">
+
+    <p class="datum">Mi, 9. Apr. 2014</p>
+<h1>Silbentrennung im Browser</h1>
+<p>In gedruckten Büchern ist es völlig normal, Wörter falls angebracht am Zeilenende zu trennen. Auf Internetseiten ist das noch eher die Ausnahme. Dabei hätte Silbentrennung auch online ihre Vorteile: Sie ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz).</p>
+
+<p>Besonders in schmalen Textspalten ist Silbentrennung oft unverzichtbar. Hier gibt es sehr häufige Zeilenwechsel und ein unruhig flatternder Text würde das Lesen stark erschweren. In deutschsprachigen Texten gibt es teilweise lange Wörter, die ohne Trennung große Lücken in den Text reißen können.</p>
+
+<p>Technisch spricht heutzutage übrigens nichts mehr dagegen, Silbentrennung auf Websites anzuwenden. Sie erschwert weder das Kopieren von Texten (hier tauchen keine Trennstriche auf) noch verhindert sie die Suche nach Begriffen (Trennstriche werden ignoriert). Und in Browsern, die Silbentrennung nicht unterstützen, bleibt es einfach bei ungetrenntem Text.</p>
+
+<h2 id="umsetzung_mit_javascript">Umsetzung mit Javascript</h2>
+
+<p>Hier in meinem Blog nutze ich das <a href="https://code.google.com/p/hyphenator/">JavaScript-Programm Hyphenator.js</a>. Man definiert dazu zunächst die Sprache der Website: <code>&lt;html lang=&quot;de&quot;&gt;</code></p>
+
+<p>Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse <em>.hyphenate</em> aus (beispielsweise <code>&lt;body class=&quot;hyphenate&quot;&gt;</code>, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse <em>.donthyphenate</em>.</p>
+
+<p>Mit Hilfe der Seite <a href="http://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine <a href="bestand/hyphenate.js">eigene Hyphenator-Datei</a> für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
+
+<pre><code>&lt;script src=&quot;http://deine-adresse.de/PFAD/hyphenator.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></pre>
+
+<h2 id="alternative_die_csseigenschaft_hyphens">Alternative: Die CSS-Eigenschaft „hyphens“</h2>
+
+<p>Einfacher funktioniert die Silbentrennung mit CSS. Auch hier legt man zunächste die Sprache der Website fest. Dann öffnet man seine CSS-Datei und gibt den zu trennenden Elementen (z. B. allen p-Absätze) die Eigenschaft:</p>
+
+<pre><code>-ms-hyphens: auto; -webkit-hyphens: auto;
+-moz-hyphens: auto; hyphens: auto;</code></pre>
+
+<p>Laut <a href="http://caniuse.com/#feat=css-hyphens">caniuse.com</a> wird die CSS-Eigenschaft <em>hyphens</em> leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.</p>
+
+<h2 id="was_nicht_funktioniert">Was nicht funktioniert</h2>
+<p class='donthyphenate' style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &apos;Times New Roman&apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;'>mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich</p>
+<p>Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.</p>
+
+<p>Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen <a href="https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176">Fehlerbericht auf Launchpad</a> eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.</p>
+
+<p>Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.</p>
+<p class='hinterlegt' style='clear:both;'><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
+Dan­ke für den Tipp von Ana­tol Bro­der (<a href='http://twitter.com/penibelst/'>@pe­ni­belst</a>)!</p>
+<p>---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+<br>
+&nbsp;</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'czplus';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();
+</script>
+
+<noscript>Leider wird JavaScript benötigt, um hier Kommentare lesen und schreiben zu können. Falls Sie trotzdem kommentieren möchten, senden Sie Ihren Kommentar bitte per Mail an postfach2b [ät] web.de – Danke!</noscript>
+
+<p>&nbsp;</p>
+
+<p style="width:48%; float:left;" class="donthyphenate"><a href="richter-di.html">← Krimigeschichten mit Richter Di</a></p>
+
+
+<p style="width:48%; float:right; text-align:right;" class="donthyphenate"><a href="erfundene-fakten-3.html">Subtile (Un)wahrheiten →</a></p>
+
+<p style="clear:both;">&nbsp;</p>
+
+<!-- div style="display:none; border:0"><img src="http://www.gratis-besucherzaehler.de/count.php?counter=55710&amp;style=6" alt=""></div -->
+
+</div> <!-- hauptfeld -->
+</div> <!-- container -->
+
+<script src="bestand/hyphenate.js" type="text/javascript"></script>
+<script src="bestand/parallax.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<title>@cz+ // Blog von @charakterziffer</title>
+<link>http://charakterziffer.github.io/index.htm</link>
+<description>140 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
+<language>de-de</language>
+<copyright>Gerhard Großmann</copyright>
+<pubDate>Wed, 4 Jul 2012 00:00:00 +0100</pubDate>
+<atom:link href="http://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+	<url>material/profilbild.png</url>
+	<title>@cz+ // Blog von @charakterziffer</title>
+	<link>http://charakterziffer.github.io/index.htm</link>
+</image>
+
+<item>
+	<title>Pattern-Library für cz+</title>
+	<description>&lt;p&gt;In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein &lt;a title=&quot;zur Startseite&quot; href=&quot;index.html&quot;&gt;interner Link&lt;/a&gt;, in diesem Fall ein bereits besuchert. Ein &lt;a title=&quot;Umlautseite&quot; href=&quot;http://äößü.de/&quot;&gt;unbesucher Link&lt;/a&gt; sieht so aus. Wie verlinke ich dann &lt;a title=&quot;zum Anker&quot; href=&quot;#anker&quot;&gt;einen Seitenanker&lt;/a&gt;? Übrigens kann man &lt;a href=&quot;http://google.de&quot;&gt;den Titel des Links&lt;/a&gt; auch weglassen.&lt;/p&gt;
+
+&lt;p&gt;Falls man keinen Extra-Linktext braucht, verlinkt man einfach so &lt;a href=&quot;http://direktadresse.de/&quot;&gt;http://direktadresse.de/&lt;/a&gt; (klappt nur bei externen Links). Das geht auch für Mailadressen: &lt;a href=&quot;mailto:&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; (Spam?!).&lt;/p&gt;
+
+&lt;p&gt;Aus Lesbarkeitsgründen im Markdown-Text kann man auch &lt;a title=&quot;Diese Links hier&quot; href=&quot;http://example.com/&quot;&gt;Referenzlinks&lt;/a&gt; verwenden. Sie lagern die &lt;a title=&quot;tauchen im Quelltext&quot; href=&quot;http://beispiel.de/&quot;&gt;Linkadresse&lt;/a&gt; einfach an eine beliebige Stelle im Dokument aus, machen im &lt;a title=&quot;im vorangehenden Absatz auf.&quot; href=&quot;http://пример.ru/&quot;&gt;HTML-Quelltext&lt;/a&gt; aber keinen Unterschied.&lt;/p&gt;
+
+&lt;h2 id=&quot;hervorhebungen_h2berschrift&quot;&gt;Hervorhebungen (H2-Überschrift)&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Kursive Textstellen&lt;/em&gt; werden mit einem Stern umschlossen, &lt;strong&gt;fette Hervorhebungen&lt;/strong&gt; bekommen zwei Sterne. Man kann auch Wort&lt;em&gt;bestand&lt;/em&gt;teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash.&lt;/p&gt;
+
+&lt;h3 id=&quot;weitere_formatierungen_h3berschrift&quot;&gt;Weitere Formatierungen (H3-Überschrift)&lt;/h3&gt;
+
+&lt;p&gt;Kurze &lt;code&gt;Codeschnippsel&lt;/code&gt; zeichnet man mit einem Gravis aus. Praktischerweise werden &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;-Sonderzeichen wie spitze Klammern oder „&lt;code&gt;Kaufmanns-&amp;amp;&lt;/code&gt;“ gleich umgewandelt.&lt;/p&gt;
+
+&lt;h2 id=&quot;unsortierte_und_sortierte_listen&quot;&gt;Unsortierte und sortierte Listen&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;eine unsortierte Lise&lt;/li&gt;
+
+&lt;li&gt;nein, eine Liste&lt;/li&gt;
+
+&lt;li&gt;aber unsortiert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hund&lt;/li&gt;
+
+&lt;li&gt;Katze&lt;/li&gt;
+
+&lt;li&gt;Maus&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dies ist ein Listenpunkt mit zwei Absätzen&lt;/p&gt;
+
+&lt;p&gt;Dies ist der zweite Absatz in diesem Listenpunkt. Nur die erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Ein weiterer Punkt in der selben Liste.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Und noch ein Absatz&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.&lt;/p&gt;
+
+&lt;h2 id=&quot;ksten_zitatblcke_codeblcke&quot;&gt;Kästen, Zitatblöcke, Codeblöcke&lt;/h2&gt;
+
+&lt;p&gt;Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse &lt;em&gt;hinterlegt&lt;/em&gt;.&lt;/p&gt;
+&lt;p class='hinterlegt'&gt;Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.&lt;/p&gt;
+&lt;p&gt;Man kann auch mehrere Absatze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.&lt;/p&gt;
+&lt;div class='hinterlegt'&gt;
+&lt;p&gt;Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.&lt;/p&gt;
+&lt;p&gt;Das ist Absatz Nº2.&lt;/p&gt;
+&lt;p&gt;Hier ist noch ein dritter Absatz.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;So ein Zitatblock wird dann mit &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; umschlossen. Der Text darinnen steht in einem &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;. Das wird zum Beispiel für Tweets benutzt.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wenn man ein längeres &lt;code&gt;Codebeispiel&lt;/code&gt; hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens &lt;code&gt;vier Leerzeichen&lt;/code&gt; einrücken):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@font-face {
+   font-family: 'Schriftname';
+   src: url('schrift.eot'); /* IE9 compatibility mode */
+   src: url('schrift.eot?#iefix') format('embedded-opentype'),
+      url('schrift.woff') format('woff'),
+      url('schrift.ttf') format('truetype');
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.&lt;/p&gt;
+
+&lt;h2 id=&quot;bilder&quot;&gt;Bilder&lt;/h2&gt;
+
+&lt;p&gt;Bilder werden so ähnlich wie Links eingebunden:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Alttext des Bildes&quot; src=&quot;material/hmk2013.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Allerdings kann die Größe des Bildes so nicht angegeben werden. Zur Not muss man halt doch &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; benutzen.&lt;/p&gt;
+
+&lt;p&gt;Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse &lt;code&gt;.texticon&lt;/code&gt;: &lt;img alt='CC-BY-SA' src='bestand/cc-by-sa.png' class='texticon' /&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;sonstiges&quot;&gt;Sonstiges&lt;/h2&gt;
+
+&lt;p&gt;Ein Klickfeld für Download-Links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='otfeat/otfeat.ttf' class='klickfeld'&gt;Ot­feat als&lt;br /&gt;&lt;i&gt;ttf-Da­tei&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Man erzeugt es als &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; mit &lt;em&gt;.klickfeld&lt;/em&gt; als CSS-Klasse.&lt;/p&gt;
+&lt;script src='bestand/klappskript.js' type='text/javascript'&gt;&lt;![CDATA[]]&gt;&lt;/script&gt;
+&lt;p&gt;&lt;img src='bestand/klapp.gif' onload='klappe(&amp;apos;K1&amp;apos;);' style='display:none' /&gt;&lt;/p&gt;
+&lt;div class='hinterlegt'&gt;
+&lt;p onclick='klappe(&amp;apos;K1&amp;apos;);' style='margin:0; cursor:pointer;'&gt;&amp;gt; Zum Öffnen hier Klicken&lt;/p&gt;
+&lt;div id='K1' style='overflow:hidden; display:block;'&gt;
+&lt;p&gt;Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes &lt;i&gt;klapp.gif&lt;/i&gt;, dass nach dem Laden das Klappskript einmal ausführt.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Eine &lt;b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'&gt;besonders starke Hervorhebung&lt;/b&gt; mit rotem Hintergrund. Kommt im Artikel &lt;em&gt;1337motiv.html&lt;/em&gt; vor und braucht evtl. noch eine CSS-Klasse.&lt;/p&gt;
+&lt;link rel='stylesheet' type='text/css' href='bestand/extra.css' /&gt;
+&lt;p&gt;Kurzer &lt;span class='fraktur'&gt;Textausſchnitt in gebrochener Schrift&lt;/span&gt;, wie er im Eintrag &lt;em&gt;gebrochene-schriften.html&lt;/em&gt; auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für Otfeat-Teile. Das funktioniert aber hier nicht, weil nur relativ verlinkt.&lt;/p&gt;
+
+&lt;p&gt;&lt;form style='margin-top:1.7em'&gt;&lt;textarea style='font:2em/1.3em &amp;apos;StickSerif&amp;apos;,monospace; width:98%; height:4.8em;' name='Testfeld'&gt;Ein Textfeld, um eine Schrift auszuprobieren.&lt;/textarea&gt;&lt;/form&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style='color:#e32;'&gt;Weitere Betonungen?&lt;/span&gt;&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/PATTERN-LIBRARY.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/PATTERN-LIBRARY.html</guid>
+	<pubDate>Thu, 01 May 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Subtile (Un)wahrheiten</title>
+	<description>&lt;p&gt;Auch im vergangenen Jahr haben sich in meiner Twitter-Timeline wieder so einige Falschmeldungen angesammeln. Allerdings nur in meiner Serie »Erfundene Fakten«. Alles andere, was ich auf Twitter schreibe, entspricht zu 100% der Wahrheit. Ganz echt jetzt. Wirklich!&lt;/p&gt;
+
+&lt;p&gt;Na gut, lassen wir das. Hier jedenfalls meine erfundenen Fakten aus den letzten zwölf Monaten:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;✻ Erfundenes Faktum № 29: Die Schriftart Floralia wird für lange Texte kaum verwendet, da sie beim Leser Frühlingsgefühle auslösen kann. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/327395171060822016&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;☻ Erfundenes Faktum № 30: Wegen ihrer intelligenzsteigernden Wirkung wird die Schwedenbombe in der Regel nur an Österreicher verkauft. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/342608139893501952&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;🐊 Erfundenes Faktum № 31: Krokodile fressen keine erwachsenen Nilpferde, weil deren »Sonnencrème« einen ekelhaften Geschmack besitzt. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/359625723918553089&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;▒ Erfundenes Faktum № 32: Durch die Prägung eignet sich die Innenseite von Klopapier besser für festem Stuhl, die Außenseite für Durchfall. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/372388164906000384&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;🍁 Erfundenes Faktum № 33: Würde man die Schallenergie der deutschen Laubsauger in Wärme wandeln, ließen sich ca. acht Opernhäuser beheizen. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/383557405839478784&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⚟ Erfundenes Faktum № 34: Wegen der Mikrofontechnik mussten Moderatoren früher (End-)Silben »ve’schluck’n«. Das setzte sich im Alltag durch. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/393020733859065856&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⑉ Erfundenes Faktum № 35: Ein nutzerfreundlicheres IBAN-Nummernsystem wurde von den Banken abgelehnt, weil sie an Fehlbuchungen verdienen. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/405262511009976320&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;👑 Erfundenes Faktum № 36: Heute vor 2014 Jahren wurden in Judäa drei Ausländer (vermutlich Perser) wegen illegaler Einreise verhaftet. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/420905386489958400&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;➿ Erfundenes Faktum № 37: Das Pasta-Museum in Rom hat eingewilligt: Endlich gehen die von Marco Polo geraubten Nudelmuster zurück an China. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/430638197052551168&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⚈ Erfundenes Faktum № 38: Im Frühjahr leiden Menschen am meisten an ihrer Depression – es entfällt die Option, sie aufs Wetter zu schieben. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/441486772862992384&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;∀ Erfundenes Faktum № 39: Insbesondere die spektakulären Aprilscherze sind meistens nicht wahr. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/450927604426895360&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⚒ Erfundenes Faktum № 40: Der Begriff »Meeting« hat sich durchgesetzt, weil sich »Besprechung« zu effektiv angehört hat. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/461022481135181824&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Die vorangegangenen &lt;a href=&quot;erfundene-fakten-2.html&quot;&gt;Folgen 17–28&lt;/a&gt; habe ich vor rund einem Jahr veröffentlicht.&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/erfundene-fakten-3.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-3.html</guid>
+	<pubDate>Wed, 30 Apr 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Silbentrennung im Browser</title>
+	<description>&lt;p&gt;In gedruckten Büchern ist es völlig normal, Wörter falls angebracht am Zeilenende zu trennen. Auf Internetseiten ist das noch eher die Ausnahme. Dabei hätte Silbentrennung auch online ihre Vorteile: Sie ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz).&lt;/p&gt;
+
+&lt;p&gt;Besonders in schmalen Textspalten ist Silbentrennung oft unverzichtbar. Hier gibt es sehr häufige Zeilenwechsel und ein unruhig flatternder Text würde das Lesen stark erschweren. In deutschsprachigen Texten gibt es teilweise lange Wörter, die ohne Trennung große Lücken in den Text reißen können.&lt;/p&gt;
+
+&lt;p&gt;Technisch spricht heutzutage übrigens nichts mehr dagegen, Silbentrennung auf Websites anzuwenden. Sie erschwert weder das Kopieren von Texten (hier tauchen keine Trennstriche auf) noch verhindert sie die Suche nach Begriffen (Trennstriche werden ignoriert). Und in Browsern, die Silbentrennung nicht unterstützen, bleibt es einfach bei ungetrenntem Text.&lt;/p&gt;
+
+&lt;h2 id=&quot;umsetzung_mit_javascript&quot;&gt;Umsetzung mit Javascript&lt;/h2&gt;
+
+&lt;p&gt;Hier in meinem Blog nutze ich das &lt;a href=&quot;https://code.google.com/p/hyphenator/&quot;&gt;JavaScript-Programm Hyphenator.js&lt;/a&gt;. Man definiert dazu zunächst die Sprache der Website: &lt;code&gt;&amp;lt;html lang=&amp;quot;de&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse &lt;em&gt;.hyphenate&lt;/em&gt; aus (beispielsweise &lt;code&gt;&amp;lt;body class=&amp;quot;hyphenate&amp;quot;&amp;gt;&lt;/code&gt;, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse &lt;em&gt;.donthyphenate&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mit Hilfe der Seite &lt;a href=&quot;http://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html&quot;&gt;merge+pack&lt;/a&gt; (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine &lt;a href=&quot;bestand/hyphenate.js&quot;&gt;eigene Hyphenator-Datei&lt;/a&gt; für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;http://deine-adresse.de/PFAD/hyphenator.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;alternative_die_csseigenschaft_hyphens&quot;&gt;Alternative: Die CSS-Eigenschaft „hyphens“&lt;/h2&gt;
+
+&lt;p&gt;Einfacher funktioniert die Silbentrennung mit CSS. Auch hier legt man zunächste die Sprache der Website fest. Dann öffnet man seine CSS-Datei und gibt den zu trennenden Elementen (z. B. allen p-Absätze) die Eigenschaft:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-ms-hyphens: auto; -webkit-hyphens: auto;
+-moz-hyphens: auto; hyphens: auto;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Laut &lt;a href=&quot;http://caniuse.com/#feat=css-hyphens&quot;&gt;caniuse.com&lt;/a&gt; wird die CSS-Eigenschaft &lt;em&gt;hyphens&lt;/em&gt; leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.&lt;/p&gt;
+
+&lt;h2 id=&quot;was_nicht_funktioniert&quot;&gt;Was nicht funktioniert&lt;/h2&gt;
+&lt;p class='donthyphenate' style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &amp;apos;Times New Roman&amp;apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;'&gt;mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich&lt;/p&gt;
+&lt;p&gt;Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.&lt;/p&gt;
+
+&lt;p&gt;Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen &lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176&quot;&gt;Fehlerbericht auf Launchpad&lt;/a&gt; eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.&lt;/p&gt;
+
+&lt;p&gt;Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.&lt;/p&gt;
+&lt;p class='hinterlegt' style='clear:both;'&gt;&lt;b&gt;UP­DATE:&lt;/b&gt; Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit &lt;b&gt;&amp;amp;shy;&lt;/b&gt; – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei&lt;b&gt;&amp;amp;shy;&lt;/b&gt;spiels&lt;b&gt;&amp;amp;shy;&lt;/b&gt;wei­se so.&lt;br /&gt;
+Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href='http://twitter.com/penibelst/'&gt;@pe­ni­belst&lt;/a&gt;)!&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/silbentrennung.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/silbentrennung.html</guid>
+	<pubDate>Wed, 09 Apr 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Krimigeschichten mit Richter Di</title>
+	<description>&lt;p&gt;Nicht nur die Pest wütet im alten China, auch eine Mordserie erschüttert die Hauptstadt. Und die Lösung scheint in den Scherben einer Vase zu liegen …&lt;/p&gt;
+
+&lt;p&gt;Das ist die Handlung von „Mord nach Muster“, einem Krimi von Robert van Gulik (1910–1967). Der niederländische Diplomat interessierte sich schon früh für die chinesische Sprache und Kultur und arbeitete nebenberuflich als Schriftsteller, Musiker und Zeichner. 1949 übersetzte Robert van Gulik einen chinesischen Krimi aus dem 18. Jahrhundert. Die Titelfigur darin war Richter Di, ein Beamter aus dem alten China – genauergesagt um 630 bis 700 nach Christus.&lt;/p&gt;
+
+&lt;p&gt;Die Übersetzung „Die merkwürdigen Kriminalfälle des Richter Di“ kam so gut an, dass Robert van Gulik begann, eigene Geschichten rund um den historischen Ermittler zu schreiben. Es entstanden vierzehn Romane und zwei Erzählbände. Typisch für die Krimis ist, dass nicht nur ein Verbrechen aufgeklärt wird. In der Regel ermitteln Richter Di und seine Gerichtsbeamten in gleich drei Kriminalfällen, die nur manchmal miteinander zu tun haben. Die Geschichten sind zwar fiktional, die Darstellungen der damaligen Gesellschaft und Kultur entsprechen aber den Tatsachen (Robert van Gulik war auch Sinologe).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;📖 Lese gerade »Mord nach Muster« von Robert van Gulik. Darin rätselt Richter Di über eine Mordserie rund um eine zerschlagene Porzellanvase.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mir gefällt besonders die Erzählweise der Richter-Di-Krimis. Die Ermittlungen zu den einzelnen Kriminalfällen sind geschickt miteinander verwoben und als Leser kann man miträtseln, warum Richter Di zur Aufklärung zwei Straßenmädchen kauft, warum er sich als Wahrsager kostümiert oder seine Beamten zu einem bestimmten Kaufmann schickt. Und ganz nebenbei erfährt man, wie die Menschen damals lebten und arbeiteten, welche Bräuche es gab und welche gesellschaftlichen Konflikte.&lt;/p&gt;
+
+&lt;p&gt;Inzwischen taucht Richter Di auch in Romanen anderer Autoren auf. „Halskette und Kalebasse“ wurde als Hörspiel produziert und es gibt den Film „Detective Dee und das Geheimnis der Phantomflammen“.&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/richter-di.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/richter-di.html</guid>
+	<pubDate>Thu, 27 Feb 2014 00:00:00 +0100</pubDate>
+</item>
+
+<item>
+	<title>Gut auch ohne Namen</title>
+	<description>&lt;p&gt;Vor gut acht Monaten habe ich einen &lt;a href=&quot;troll-dich.html&quot;&gt;Eintrag zum Thema ›Trolle‹&lt;/a&gt; geschrieben. Dabei habe ich ein wirksames Mittel gegen unliebsame Kommentare oder Äußerungen im Netz völlig ignoriert: die Klarnamenpflicht. Wenn jeder unter seinem eigenen Namen im Netz agieren müsste, dann würden sich Trolle doch zurückhalten, oder?&lt;/p&gt;
+
+&lt;p&gt;Meiner Einschätzung nach eher nicht. Zwar wäre es dann wohl schwerer aber sicher nicht unmöglich, Fake-Accounts einzurichten. Allerdings trollen Menschen sogar, wenn sie leicht zu identifizieren sind (z. B. auf Facebook).&lt;/p&gt;
+
+&lt;p&gt;Im Ausgleich zu diesem recht unwirksamen Troll-Schutz verliert man jedoch etwas sehr wichtiges: Sich äußern zu können, ohne folgenreiche Angriffe auf die eigene Person fürchten zu müssen. Zu allgemein akzeptierten Themen ist es ungefährlich, Stellung zu beziehen. Geht es aber um Themen, die nicht den moralischen Vorstellungen der Allgemeinheit entsprechen oder die sogar ungesetzlich sind, ist das eine andere Sache.&lt;/p&gt;
+
+&lt;p&gt;Warum man zulassen sollte, dass sich jemand über unmoralische oder ungesetzliche Dinge äußert? Weil das mit Moral und Gesetz so eine Sache ist. Beispielsweise könnte ich in Syrien ziemlichen Ärger bekommen, wenn ich das Verhalten der Regierung kritisiere; oder wenn ich in Russland über Homosexualität schreiben möchte; oder wenn ich mich in Amerika mit Pornographie auseinandersetzen will. Dabei könnten gerade Diskussionen über solche Tabu-Themen die Gesellschaft ein gutes Stück weiterbringen.&lt;/p&gt;
+
+&lt;p&gt;Sich im Netz anonym äußern zu können, erleichtert es, bestehende Ungerechtigkeiten zu hinterfragen, ein Gespräch darüber in Gang zu setzen und vielleicht etwas zu verändern. Wer das möchte, muss auch Trolle in Kauf nehmen. Was letztlich zählt ist nicht der Name einer Person, sondern ihre Argumente und Meinungen.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;PS: Seit Mai 2014 kann man in meinem Blog auch direkt kommentieren. Vorher war diese Website technisch sehr einfach gestrickt und mit HTML allein war eine Kommentarfunktion nicht möglich. Trotzdem erhalte ich weiterhin sehr gerne Anmerkungen per Mail &lt;em&gt;(postfach2b [ät] web.de)&lt;/em&gt; oder &lt;a href=&quot;https://twitter.com/intent/tweet?text=%40charakterziffer+&quot;&gt;via Twitter&lt;/a&gt;.&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/anonym-kommentieren.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/anonym-kommentieren.html</guid>
+	<pubDate>Fri, 17 Jan 2014 00:00:00 +0100</pubDate>
+</item>
+
+</channel></rss>

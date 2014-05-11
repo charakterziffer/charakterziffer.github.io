@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Viele Schriften enthalten OpenType-Features, mit denen zum Beispiel echte Kapitälchen oder Alternativbuchstaben aktiviert werden können. Seit kurzem lassen sich diese Funktionen auch per CSS einschalten und im Browser verwenden. Ob und welche Features unterstützt werden, kann man mit meiner Schrift Otfeat testen.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<title>OpenType-Features im Browser // @cz+</title>
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter, HandSerif, StickSerif, Otfeat, PixAntiqua, Fuchs und Ballerina">
+<link rel="shortcut icon" href="bestand/favicon.ico" type="image/x-icon" />
+<link href='bestand/style.css' rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" />
+</head>
+
+<body class="hyphenate">
+<div id="container">
+
+<div id="randspalte" class="donthyphenate">
+<a href="index.html"><img class="logo" src="bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – am besten <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p>Mein <a href="rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="bestand/cc-by-sa.png"></a></p>
+</div> <!-- randspalte -->
+
+<div id="hauptfeld">
+
+    <p class="datum">Mo, 4. Juni 2012</p>
+<h1>OpenType-Features im Browser</h1>
+<link rel='stylesheet' type='text/css' href='bestand/extra.css' /><p class='hinterlegt'><b>UPDATE:</b> I’ve made an extra page with a clear <a href='http://charakterziffer.github.io/otfeat/index.html'>OpenType feature test</a>.</p>
+<p>Vor gut zwei Jahren entwickelte sich ein brauchbarer Standard für Webfonts. Heute ist es möglich, beliebige Schriften auf Internetseiten zu verwenden – auch wenn diese nicht auf dem Rechner des Betrachters installiert sind. Die Schriftdatei wird einfach per CSS verlinkt:</p>
+
+<pre><code>@font-face {
+font-family: 'Schriftname';
+src: url('schrift.eot'); /* IE9 compatibility mode */
+/* für IE6 bis IE8 */
+src: url('schrift.eot?#iefix') format('embedded-opentype'),
+/* für moderne Browser (FF, Chrome, …) */
+url('schrift.woff') format('woff'),
+/* für Android */
+url('schrift.ttf') format('truetype');
+}</code></pre>
+
+<p>Die nächste große Entwicklung in Sachen Webschriften ist wohl, OpenType-Features im Browser nutzen zu können. Das sind zusätzliche Funktionen, die in professionelle Schriften hineinprogrammiert wurden. Klar ist das mehr etwas für Spezialisten und Detailverliebte. Manchmal ist es aber sehr praktisch, Schwungbuchstaben einzusetzen oder für den Fließtext auf Mediävalziffern zurückzugreifen.</p>
+
+<p>Um sehr leicht testen zu können, welche OpenType-Features ein Browser unterstützt (und ob man die Syntax richtig formuliert hat), habe ich Otfeat gestaltet. Die Webschrift enthält jede Menge OpenType-Features zum Ausprobieren. Und so sieht sie aus (wenn dein Browser Webschriften unterstützt):</p>
+<p class='otfeat'>ab­cdef­ghi­jklm<br />
+nopqr­stuvwxyz<br />
+AB­CDEF­GHIJ<br />
+KLM­NOPQR­STUVWZ</p>
+<p>Der hier angezeigte Text ist das kleine und das große Alphabet. Jeder Buchstabe wird als Kästchen angezeigt und steht für ein OpenType-Feature (z. B. a = smcp, Kapitälchen). Je nach Browser sind einige Kästchen vielleicht schon schwarz. Bei mir im Firefox sind das <em>locl</em>, <em>kern</em>, <em>liga</em>, <em>clig</em> und <em>calt</em> (= Lokale Varianten, Kerning, Ligaturen, kontextabhängige Ligaturen und kontextabhängige Alternativen). Diese Features sind mit meinem Browsereinstellungen automatisch aktiviert.</p>
+
+<p>Mit dem CSS-Befehl <code>font-feature-settings</code> kann ich jetzt weitere OpenType-Features einschalten. Der gleiche Text wie oben in der gleichen Schriftart sieht dann so aus (weiße Kästchen mit X sind nicht mit einer Funktion belegt):</p>
+<p class='otfeat aktfeat'>ab­cdef­ghi­jklm<br />
+nopqr­stuvwxyz<br />
+AB­CDEF­GHIJ<br />
+KLM­NOPQR­STUVWZ</p>
+<p>Der CSS-Code, um OpenType-Features zu aktivieren, wird bislang nur mit Vendor-Prefix in einigen aktuellen Browsern unterstützt. Für Chrome (17+), Firefox (15+), Internet Explorer (10+) und als zukünftiger Standard-Syntax lautet der Code (jeweils für die ersten drei Features):</p>
+
+<pre><code>-webkit-font-feature-settings: &quot;smcp&quot;, &quot;c2sc&quot;, &quot;c2pc&quot;;
+-moz-font-feature-settings: &quot;smcp&quot; 1, &quot;c2sc&quot; 1, &quot;c2pc&quot; 1;
+-ms-font-feature-settings: &quot;smcp&quot; 1, &quot;c2sc&quot; 1, &quot;c2pc&quot; 1;
+font-feature-settings: &quot;smcp&quot;, &quot;c2sc&quot;, &quot;c2pc&quot;;</code></pre>
+
+<p>Wie gut das im IE10 umgesetzt wird, kann ich leider nicht testen. Was man aber im Firefox und Chrome herausfinden kann: Das Feature <em>fina</em> wird nicht korrekt interpretiert. Das Kästchen mit dem Z sollte nur dann schwarz werden, wenn es am Ende eines Wortes steht. Im Folgenden also nur an der dritten Position:</p>
+<p class='otfeat aktfeat'>Z XZX XXZ</p>
+<p>Noch ein Hinweis: Die Kleinbuchstaben a–z repräsentieren einzelne OpenType-Features, die in beliebiger Reihenfolge abgefragt werden können. Die Großbuchstaben testen Ligaturen und kontextabhängige Varianten. Damit das OpenType-Feature hier aktiv wird, tippt man am einfachsten ein Alphabet. Zumindest müssen aufeinander folgen: AB, CD, EF, GH, IJ, RST und UVW. Das Paar KL muss vor einem M stehen, M und N bedingen einander (in der Reihenfolge) und das O benötigt ein vorangehendes N.</p>
+
+<p>Meine Schrift <em>Otfeat</em> steht unter der Creative Commons Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen gestellt (<img alt='CC-BY-NC-SA' src='material/cc-by-nc-sa.png' class='texticon' />). Sie kann hier in den drei typischen Webfont-Formaten heruntergeladen werden (Rechtsklick, Ziel speichern unter …).</p>
+
+<p><a href='otfeat/otfeat.woff' class='klickfeld' style='margin: 1.038em 5%; width:19%; float:left;'>Otfeat als<br /><i>woff-Datei</i></a></p>
+
+<p><a href='otfeat/otfeat.eot' class='klickfeld' style='margin: 1.038em 5%; width:19%; float:left;'>Otfeat als<br /><i>eot-Datei</i></a></p>
+
+<p><a href='otfeat/otfeat.ttf' class='klickfeld' style='margin: 1.038em 5%; width:19%;'>Otfeat als<br /><i>ttf-Datei</i></a></p>
+
+<p>Bei Fragen, Ideen und Verbesserungsvorschlägen freue ich mich über eine Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p>---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+<br>
+&nbsp;</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'czplus';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();
+</script>
+
+<noscript>Leider wird JavaScript benötigt, um hier Kommentare lesen und schreiben zu können. Falls Sie trotzdem kommentieren möchten, senden Sie Ihren Kommentar bitte per Mail an postfach2b [ät] web.de – Danke!</noscript>
+
+<p>&nbsp;</p>
+
+<p style="width:48%; float:left;" class="donthyphenate"><a href="gebrochene-schriften.html">← Gebrochene Schriften oder Antiqua?</a></p>
+
+
+<p style="width:48%; float:right; text-align:right;" class="donthyphenate"><a href="buchbinden.html">Vom Einzelblatt zum Buch →</a></p>
+
+<p style="clear:both;">&nbsp;</p>
+
+<!-- div style="display:none; border:0"><img src="http://www.gratis-besucherzaehler.de/count.php?counter=55710&amp;style=6" alt=""></div -->
+
+</div> <!-- hauptfeld -->
+</div> <!-- container -->
+
+<script src="bestand/hyphenate.js" type="text/javascript"></script>
+<script src="bestand/parallax.js" type="text/javascript"></script>
+</body>
+</html>
