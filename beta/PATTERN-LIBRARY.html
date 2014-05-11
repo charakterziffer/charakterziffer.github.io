@@ -141,10 +141,10 @@
 
 <p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
 <script src='bestand/klappskript.js' type='text/javascript'><![CDATA[]]></script>
-<p><img src='bestand/klapp.gif' onload='klappe(&apos;K1&apos;);' style='display:none' /></p>
+<p><img onload='klappe(&apos;K1&apos;);' src='bestand/klapp.gif' style='display:none' /></p>
 <div class='hinterlegt'>
 <p onclick='klappe(&apos;K1&apos;);' style='margin:0; cursor:pointer;'>&gt; Zum Öffnen hier Klicken</p>
-<div id='K1' style='overflow:hidden; display:block;'>
+<div style='overflow:hidden; display:block;' id='K1'>
 <p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p></div>
 </div>
 <p>Eine <b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'>besonders starke Hervorhebung</b> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>

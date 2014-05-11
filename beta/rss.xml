@@ -131,10 +131,10 @@
 
 &lt;p&gt;Man erzeugt es als &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; mit &lt;em&gt;.klickfeld&lt;/em&gt; als CSS-Klasse.&lt;/p&gt;
 &lt;script src='bestand/klappskript.js' type='text/javascript'&gt;&lt;![CDATA[]]&gt;&lt;/script&gt;
-&lt;p&gt;&lt;img src='bestand/klapp.gif' onload='klappe(&amp;apos;K1&amp;apos;);' style='display:none' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img onload='klappe(&amp;apos;K1&amp;apos;);' src='bestand/klapp.gif' style='display:none' /&gt;&lt;/p&gt;
 &lt;div class='hinterlegt'&gt;
 &lt;p onclick='klappe(&amp;apos;K1&amp;apos;);' style='margin:0; cursor:pointer;'&gt;&amp;gt; Zum Öffnen hier Klicken&lt;/p&gt;
-&lt;div id='K1' style='overflow:hidden; display:block;'&gt;
+&lt;div style='overflow:hidden; display:block;' id='K1'&gt;
 &lt;p&gt;Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes &lt;i&gt;klapp.gif&lt;/i&gt;, dass nach dem Laden das Klappskript einmal ausführt.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Eine &lt;b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'&gt;besonders starke Hervorhebung&lt;/b&gt; mit rotem Hintergrund. Kommt im Artikel &lt;em&gt;1337motiv.html&lt;/em&gt; vor und braucht evtl. noch eine CSS-Klasse.&lt;/p&gt;
@@ -239,13 +239,13 @@
 &lt;p&gt;Laut &lt;a href=&quot;http://caniuse.com/#feat=css-hyphens&quot;&gt;caniuse.com&lt;/a&gt; wird die CSS-Eigenschaft &lt;em&gt;hyphens&lt;/em&gt; leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.&lt;/p&gt;
 
 &lt;h2 id=&quot;was_nicht_funktioniert&quot;&gt;Was nicht funktioniert&lt;/h2&gt;
-&lt;p class='donthyphenate' style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &amp;apos;Times New Roman&amp;apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;'&gt;mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich&lt;/p&gt;
+&lt;p style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &amp;apos;Times New Roman&amp;apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;' class='donthyphenate'&gt;mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich&lt;/p&gt;
 &lt;p&gt;Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.&lt;/p&gt;
 
 &lt;p&gt;Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen &lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176&quot;&gt;Fehlerbericht auf Launchpad&lt;/a&gt; eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.&lt;/p&gt;
 
 &lt;p&gt;Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.&lt;/p&gt;
-&lt;p class='hinterlegt' style='clear:both;'&gt;&lt;b&gt;UP­DATE:&lt;/b&gt; Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit &lt;b&gt;&amp;amp;shy;&lt;/b&gt; – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei&lt;b&gt;&amp;amp;shy;&lt;/b&gt;spiels&lt;b&gt;&amp;amp;shy;&lt;/b&gt;wei­se so.&lt;br /&gt;
+&lt;p style='clear:both;' class='hinterlegt'&gt;&lt;b&gt;UP­DATE:&lt;/b&gt; Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit &lt;b&gt;&amp;amp;shy;&lt;/b&gt; – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei&lt;b&gt;&amp;amp;shy;&lt;/b&gt;spiels&lt;b&gt;&amp;amp;shy;&lt;/b&gt;wei­se so.&lt;br /&gt;
 Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href='http://twitter.com/penibelst/'&gt;@pe­ni­belst&lt;/a&gt;)!&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/silbentrennung.html</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
