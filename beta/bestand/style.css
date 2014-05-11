@@ -110,6 +110,8 @@ p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
 
 hr {margin:1.88em 0.4em 1.1em 0; color:#BBB;}
 
+/* Disqus-Schnickschnack entfernen */
+header#main-nav, .nav-secondary, .post-menu, .post-body footer, #discovery, #footer, .auth-section .connect, .guest-form-title, .what-is-disqus {display:none !important}
 
 /* ANPASSUNGEN FÜR KLEINERE BILDSCHIRME */
 
