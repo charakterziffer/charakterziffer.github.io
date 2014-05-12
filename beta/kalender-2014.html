@@ -16,7 +16,7 @@
 
 <div id="randspalte" class="donthyphenate">
 <a href="index.html"><img class="logo" src="bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
-<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – am besten <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p>Mein <a href="rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="bestand/cc-by-sa.png"></a></p>
 </div> <!-- randspalte -->
@@ -27,7 +27,7 @@
 <h1>2014 auf 24 Seiten</h1>
 <p>Nun ist es schon fast eine Tradition: Zum dritten Mal habe ich einen Halbmonatskalender gestaltet, den ich hier zum Herunterladen anbiete. Er zeigt immer zwei bis drei Wochen auf einer DIN-A5-Seite mit großen Zahlen und bietet viel Platz zum Reinschreiben.</p>
 
-<p><img alt="Details des Kalenders 2014" src="material/hmk2014.jpg" /></p>
+<p><img src="material/hmk2014.jpg" alt="Details des Kalenders 2014" /></p>
 
 <p>Einfach das PDF herunterladen und ausdrucken (ich habe dieses Jahr farbiges Papier benutzt), dann die Blätter halbieren und sortieren.</p>
 
@@ -35,7 +35,7 @@
 
 <p><a class='klickfeld' href='material/hmk2014.pdf'>Kalender herunterladen<br /><em>(PDF-Datei, 220 kB)</em></a></p>
 
-<p>Übrigens steht der Halbmonatskalender wieder unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (<img alt='CC-BY-NC-SA' src='material/cc-by-nc-sa.png' class='texticon' />). Er darf also gerne verbreitet werden.</p>
+<p>Übrigens steht der Halbmonatskalender wieder unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (<img src='material/cc-by-nc-sa.png' class='texticon' alt='CC-BY-NC-SA' />). Er darf also gerne verbreitet werden.</p>
 
 <p>Falls jemand den Kalender noch bearbeiten möchte (zum Beispiel die optionalen Feiertage aufs eigene Bundesland anpassen), verschicke ich gerne die SVG-Dateien. Bitte mich einfach kurz anschreiben. Die verwendete Schrift für 2014 ist <a href="https://www.google.com/fonts/specimen/Rambla">Rambla</a>.</p>
 <p>---<br>
@@ -44,17 +44,47 @@
 <br>
 &nbsp;</p>
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-var disqus_shortname = 'czplus';
 
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();
-</script>
+	
 
-<noscript>Leider wird JavaScript benötigt, um hier Kommentare lesen und schreiben zu können. Falls Sie trotzdem kommentieren möchten, senden Sie Ihren Kommentar bitte per Mail an postfach2b [ät] web.de – Danke!</noscript>
+
+<h2 id="kommentieren"><br>Artikel kommentieren</h2>
+<p style="font-variant:italic; margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, bis auf das Kommentarfeld gibt keine Pflichtfelder.</p>
+
+<form action="http://www.formular-chef.de/fc.cgi"
+method="post" enctype="multipart/form-data">
+<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
+<input type="hidden" name="pflicht" value="comment">
+<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/leeres-kommentarfeld.html">
+<input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
+<input type="hidden" name="antwortseite_template"
+value="http://charakterziffer.github.io/kommentar-abgeschickt.html">
+
+<input type="hidden" name="post_id" value="/kalender-2014">
+<div>
+	<label for="name">Name</label>
+	<div> <input name="name" type="text" size="25">
+	&nbsp;<i>(Pseudonym möglich)</i> </div>
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div> <input name="mail" type="text" size="25">
+	&nbsp;<i>(wird nicht veröffentlicht)</i> </div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div> <input name="link" type="text" size="25"></div>
+</div>
+<div>
+	<label for="comment">Kommentar</label>
+	<textarea name="comment" spellcheck="true" rows="10" cols="50"></textarea>
+</div>
+<div><input name="submit" type="submit" value="Abschicken"></div>
+</form>
+
+<p>Einfache Formatierungen mit HTML sind möglich.<br>
+Beispiele: &lt;i&gt;<i>kursiv</i>&lt;/i&gt;, &lt;b&gt;<b>fett</b>&lt;/b&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;.<br>
+Sowie Links (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) <br>und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
 
 <p>&nbsp;</p>
 

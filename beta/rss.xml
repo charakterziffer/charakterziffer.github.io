@@ -14,7 +14,7 @@
 </image>
 
 <item>
-	<title>Pattern-Library für cz+</title>
+	<title>Pattern-Library für @cz+</title>
 	<description>&lt;p&gt;In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein &lt;a title=&quot;zur Startseite&quot; href=&quot;index.html&quot;&gt;interner Link&lt;/a&gt;, in diesem Fall ein bereits besuchert. Ein &lt;a title=&quot;Umlautseite&quot; href=&quot;http://äößü.de/&quot;&gt;unbesucher Link&lt;/a&gt; sieht so aus. Wie verlinke ich dann &lt;a title=&quot;zum Anker&quot; href=&quot;#anker&quot;&gt;einen Seitenanker&lt;/a&gt;? Übrigens kann man &lt;a href=&quot;http://google.de&quot;&gt;den Titel des Links&lt;/a&gt; auch weglassen.&lt;/p&gt;
 
 &lt;p&gt;Falls man keinen Extra-Linktext braucht, verlinkt man einfach so &lt;a href=&quot;http://direktadresse.de/&quot;&gt;http://direktadresse.de/&lt;/a&gt; (klappt nur bei externen Links). Das geht auch für Mailadressen: &lt;a href=&quot;mailto:&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; (Spam?!).&lt;/p&gt;
@@ -117,11 +117,11 @@
 
 &lt;p&gt;Bilder werden so ähnlich wie Links eingebunden:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Alttext des Bildes&quot; src=&quot;material/hmk2013.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;material/hmk2013.jpg&quot; alt=&quot;Alttext des Bildes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Allerdings kann die Größe des Bildes so nicht angegeben werden. Zur Not muss man halt doch &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; benutzen.&lt;/p&gt;
 
-&lt;p&gt;Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse &lt;code&gt;.texticon&lt;/code&gt;: &lt;img alt='CC-BY-SA' src='bestand/cc-by-sa.png' class='texticon' /&gt;.&lt;/p&gt;
+&lt;p&gt;Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse &lt;code&gt;.texticon&lt;/code&gt;: &lt;img src='bestand/cc-by-sa.png' class='texticon' alt='CC-BY-SA' /&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;sonstiges&quot;&gt;Sonstiges&lt;/h2&gt;
 
@@ -131,10 +131,10 @@
 
 &lt;p&gt;Man erzeugt es als &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; mit &lt;em&gt;.klickfeld&lt;/em&gt; als CSS-Klasse.&lt;/p&gt;
 &lt;script src='bestand/klappskript.js' type='text/javascript'&gt;&lt;![CDATA[]]&gt;&lt;/script&gt;
-&lt;p&gt;&lt;img onload='klappe(&amp;apos;K1&amp;apos;);' src='bestand/klapp.gif' style='display:none' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src='bestand/klapp.gif' style='display:none' onload='klappe(&amp;apos;K1&amp;apos;);' /&gt;&lt;/p&gt;
 &lt;div class='hinterlegt'&gt;
 &lt;p onclick='klappe(&amp;apos;K1&amp;apos;);' style='margin:0; cursor:pointer;'&gt;&amp;gt; Zum Öffnen hier Klicken&lt;/p&gt;
-&lt;div style='overflow:hidden; display:block;' id='K1'&gt;
+&lt;div id='K1' style='overflow:hidden; display:block;'&gt;
 &lt;p&gt;Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes &lt;i&gt;klapp.gif&lt;/i&gt;, dass nach dem Laden das Klappskript einmal ausführt.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Eine &lt;b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'&gt;besonders starke Hervorhebung&lt;/b&gt; mit rotem Hintergrund. Kommt im Artikel &lt;em&gt;1337motiv.html&lt;/em&gt; vor und braucht evtl. noch eine CSS-Klasse.&lt;/p&gt;
@@ -147,7 +147,7 @@
 	<link>http://charakterziffer.github.io/PATTERN-LIBRARY.html</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/PATTERN-LIBRARY.html</guid>
-	<pubDate>Thu, 01 May 2014 00:00:00 +0200</pubDate>
+	<pubDate>Sun, 01 Jun 2014 00:00:00 +0200</pubDate>
 </item>
 
 <item>
@@ -288,7 +288,7 @@ Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href='http://twitter.com/peni
 
 &lt;p&gt; &lt;/p&gt;
 
-&lt;p&gt;PS: Seit Mai 2014 kann man in meinem Blog auch direkt kommentieren. Vorher war diese Website technisch sehr einfach gestrickt und mit HTML allein war eine Kommentarfunktion nicht möglich. Trotzdem erhalte ich weiterhin sehr gerne Anmerkungen per Mail &lt;em&gt;(postfach2b [ät] web.de)&lt;/em&gt; oder &lt;a href=&quot;https://twitter.com/intent/tweet?text=%40charakterziffer+&quot;&gt;via Twitter&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;PS: Seit Mai 2014 kann man in meinem Blog auch direkt kommentieren. Vorher war diese Website sehr einfach gestrickt und eine Kommentarfunktion technisch nicht möglich. Trotzdem erhalte ich weiterhin sehr gerne Anmerkungen per Mail &lt;em&gt;(postfach2b [ät] web.de)&lt;/em&gt; oder &lt;a href=&quot;https://twitter.com/intent/tweet?text=%40charakterziffer+&quot;&gt;via Twitter&lt;/a&gt;.&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/anonym-kommentieren.html</link>
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/anonym-kommentieren.html</guid>

@@ -16,7 +16,7 @@
 
 <div id="randspalte" class="donthyphenate">
 <a href="index.html"><img class="logo" src="bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
-<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – am besten <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p>Mein <a href="rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="bestand/cc-by-sa.png"></a></p>
 </div> <!-- randspalte -->
@@ -27,11 +27,12 @@
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="http://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 
-	<p class="datum">Do,
+	<p class="datum">So,
+
 1.
-Mai
+Juni
 2014</p>
-	<h1><a href="PATTERN-LIBRARY.html">Pattern-Library für cz+</a></h1>
+	<h1><a href="PATTERN-LIBRARY.html">Pattern-Library für @cz+</a></h1>
 	<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a title="zur Startseite" href="index.html">interner Link</a>, in diesem Fall ein bereits besuchert. Ein <a title="Umlautseite" href="http://äößü.de/">unbesucher Link</a> sieht so aus. Wie verlinke ich dann <a title="zum Anker" href="#anker">einen Seitenanker</a>? Übrigens kann man <a href="http://google.de">den Titel des Links</a> auch weglassen.</p>
 
 <p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="http://direktadresse.de/">http://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;</a> (Spam?!).</p>
@@ -134,11 +135,11 @@ Mai
 
 <p>Bilder werden so ähnlich wie Links eingebunden:</p>
 
-<p><img alt="Alttext des Bildes" src="material/hmk2013.jpg" /></p>
+<p><img src="material/hmk2013.jpg" alt="Alttext des Bildes" /></p>
 
 <p>Allerdings kann die Größe des Bildes so nicht angegeben werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen.</p>
 
-<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>: <img alt='CC-BY-SA' src='bestand/cc-by-sa.png' class='texticon' />.</p>
+<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>: <img src='bestand/cc-by-sa.png' class='texticon' alt='CC-BY-SA' />.</p>
 
 <h2 id="sonstiges">Sonstiges</h2>
 
@@ -148,10 +149,10 @@ Mai
 
 <p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
 <script src='bestand/klappskript.js' type='text/javascript'><![CDATA[]]></script>
-<p><img onload='klappe(&apos;K1&apos;);' src='bestand/klapp.gif' style='display:none' /></p>
+<p><img src='bestand/klapp.gif' style='display:none' onload='klappe(&apos;K1&apos;);' /></p>
 <div class='hinterlegt'>
 <p onclick='klappe(&apos;K1&apos;);' style='margin:0; cursor:pointer;'>&gt; Zum Öffnen hier Klicken</p>
-<div style='overflow:hidden; display:block;' id='K1'>
+<div id='K1' style='overflow:hidden; display:block;'>
 <p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p></div>
 </div>
 <p>Eine <b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'>besonders starke Hervorhebung</b> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>
@@ -161,7 +162,8 @@ Mai
 <p><form style='margin-top:1.7em'><textarea style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;' name='Testfeld'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
 
 <p><span style='color:#e32;'>Weitere Betonungen?</span></p>
-	<p>---<br><a href="PATTERN-LIBRARY.html#disqus_thread">Kommentare</a></p>
+	<p>---<br> <a href="PATTERN-LIBRARY.html#kommentare">2 Kommentare</a>
+	</p>
 
 	<p class="datum">Mi,
 30.
@@ -221,7 +223,8 @@ Apr.
 </blockquote>
 
 <p>Die vorangegangenen <a href="erfundene-fakten-2.html">Folgen 17–28</a> habe ich vor rund einem Jahr veröffentlicht.</p>
-	<p>---<br><a href="erfundene-fakten-3.html#disqus_thread">Kommentare</a></p>
+	<p>---<br> <a href="erfundene-fakten-3.html#kommentieren">Artikel kommentieren …</a>
+		</p>
 
 	<p class="datum">Mi,
 9.
@@ -262,7 +265,8 @@ Apr.
 <p>Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.</p>
 <p style='clear:both;' class='hinterlegt'><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
 Dan­ke für den Tipp von Ana­tol Bro­der (<a href='http://twitter.com/penibelst/'>@pe­ni­belst</a>)!</p>
-	<p>---<br><a href="silbentrennung.html#disqus_thread">Kommentare</a></p>
+	<p>---<br> <a href="silbentrennung.html#kommentieren">Artikel kommentieren …</a>
+		</p>
 
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
