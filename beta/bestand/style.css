@@ -110,14 +110,37 @@ p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
 
 hr {margin:1.88em 0.4em 1.1em 0; color:#BBB;}
 
-/* Disqus-Schnickschnack entfernen */
-header#main-nav, .nav-secondary, .post-menu, .post-body footer, #discovery, #footer, .auth-section .connect, .guest-form-title, .what-is-disqus {display:none !important}
+/* Formulare */
+
+form, input[type=text], input[type=email], input[type=url],
+input[type=password], textarea {color:#222; font-weight:400;
+	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 50%;}
+
+form > div {clear: both; padding-top: 0.4em;}
+label {font: 0.9em/1.556 Bitter,Georgia,serif; width:16%;
+	float:left;	position:relative; top:0.2em}
+label:after {content:':';}
+form > div > div {width: 78%; float:right; padding-right:2%;}
+
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 50%;}
+textarea {width: 98%; padding: 0.1em 0 0.1em 0.2em;}
+
 
 /* ANPASSUNGEN FÜR KLEINERE BILDSCHIRME */
 
 /* Randspalte nicht mehr fix, wenn Fensterhöhe zu niedrig */
 @media (max-height: 33.5em) {
 #randspalte {position:static;}
+}
+
+@media (max-width: 54em) {
+label {width: 100%; float: none; top:0;}
+form > div > div {width: 98%; float: none;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 100%;}
 }
 
 @media (max-width: 44.4em) {
@@ -130,6 +153,17 @@ body {padding:2px;}
 #hauptfeld {margin:-1.5em 0 0; padding: 0 13px 2.5em 15px;
 	border:0; background-color:transparent;}
 #randspalte h1 {margin:0.6em 0;}
+label {width: 50%; float: left; top:0.2em;}
+form > div > div {width: 78%; float: right;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 50%;}
+}
+
+@media (max-width: 34em) {
+label {width: 100%; float: none; top:0;}
+form > div > div {width: 98%; float: none;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 100%;}
 }
 
 @media (max-width: 25em) {
