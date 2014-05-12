@@ -25,11 +25,11 @@
 
     <p class="datum">So, 1. Juni 2014</p>
 <h1>Pattern-Library für @cz+</h1>
-<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchert. Ein <a href="http://äößü.de/" title="Umlautseite">unbesucher Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="http://google.de">den Titel des Links</a> auch weglassen.</p>
+<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a title="zur Startseite" href="index.html">interner Link</a>, in diesem Fall ein bereits besuchert. Ein <a title="Umlautseite" href="http://äößü.de/">unbesucher Link</a> sieht so aus. Wie verlinke ich dann <a title="zum Anker" href="#anker">einen Seitenanker</a>? Übrigens kann man <a href="http://google.de">den Titel des Links</a> auch weglassen.</p>
 
 <p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="http://direktadresse.de/">http://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;</a> (Spam?!).</p>
 
-<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="http://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="http://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="http://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
+<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a title="Diese Links hier" href="http://example.com/">Referenzlinks</a> verwenden. Sie lagern die <a title="tauchen im Quelltext" href="http://beispiel.de/">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a title="im vorangehenden Absatz auf." href="http://пример.ru/">HTML-Quelltext</a> aber keinen Unterschied.</p>
 
 <h2 id="hervorhebungen_h2berschrift">Hervorhebungen (H2-Überschrift)</h2>
 
@@ -137,21 +137,21 @@
 
 <p>Ein Klickfeld für Download-Links:</p>
 
-<p><a href='otfeat/otfeat.ttf' class='klickfeld'>Ot­feat als<br /><i>ttf-Da­tei</i></a></p>
+<p><a class='klickfeld' href='otfeat/otfeat.ttf'>Ot­feat als<br /><i>ttf-Da­tei</i></a></p>
 
 <p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
-<script src='bestand/klappskript.js' type='text/javascript'><![CDATA[]]></script>
+<script type='text/javascript' src='bestand/klappskript.js'><![CDATA[]]></script>
 <p><img onload='klappe(&apos;K1&apos;);' style='display:none' src='bestand/klapp.gif' /></p>
 <div class='hinterlegt'>
-<p onclick='klappe(&apos;K1&apos;);' style='margin:0; cursor:pointer;'>&gt; Zum Öffnen hier Klicken</p>
+<p style='margin:0; cursor:pointer;' onclick='klappe(&apos;K1&apos;);'>&gt; Zum Öffnen hier Klicken</p>
 <div style='overflow:hidden; display:block;' id='K1'>
 <p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p></div>
 </div>
 <p>Eine <b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'>besonders starke Hervorhebung</b> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>
-<link href='bestand/extra.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='bestand/extra.css' type='text/css' />
 <p>Kurzer <span class='fraktur'>Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für Otfeat-Teile. Das funktioniert aber hier nicht, weil nur relativ verlinkt.</p>
 
-<p><form style='margin-top:1.7em'><textarea style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;' name='Testfeld'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
+<p><form style='margin-top:1.7em'><textarea name='Testfeld' style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
 
 <p><span style='color:#e32;'>Weitere Betonungen?</span></p>
 <p>---<br>
@@ -190,7 +190,12 @@
 method="post" enctype="multipart/form-data">
 <input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
 <input type="hidden" name="pflicht" value="comment">
+<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/beta/leeres-kommentarfeld.html">
+<input type="hidden" name="email_template" value="http://charakterziffer.github.io/beta/bestand/kommentar-mail.txt">
+<input type="hidden" name="antwortseite_template"
+value="http://charakterziffer.github.io/beta/kommentar-abgeschickt.html">
 
+<input type="hidden" name="return_url" value="/PATTERN-LIBRARY.html">
 <input type="hidden" name="post_id" value="/PATTERN-LIBRARY">
 <div>
 	<label for="name">Name</label>
