@@ -127,11 +127,11 @@
 
 <p>Bilder werden so ähnlich wie Links eingebunden:</p>
 
-<p><img src="material/hmk2013.jpg" alt="Alttext des Bildes" /></p>
+<p><img alt="Alttext des Bildes" src="material/hmk2013.jpg" /></p>
 
 <p>Allerdings kann die Größe des Bildes so nicht angegeben werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen.</p>
 
-<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>: <img src='bestand/cc-by-sa.png' class='texticon' alt='CC-BY-SA' />.</p>
+<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>: <img class='texticon' alt='CC-BY-SA' src='bestand/cc-by-sa.png' />.</p>
 
 <h2 id="sonstiges">Sonstiges</h2>
 
@@ -141,17 +141,17 @@
 
 <p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
 <script src='bestand/klappskript.js' type='text/javascript'><![CDATA[]]></script>
-<p><img src='bestand/klapp.gif' style='display:none' onload='klappe(&apos;K1&apos;);' /></p>
+<p><img onload='klappe(&apos;K1&apos;);' style='display:none' src='bestand/klapp.gif' /></p>
 <div class='hinterlegt'>
-<p style='margin:0; cursor:pointer;' onclick='klappe(&apos;K1&apos;);'>&gt; Zum Öffnen hier Klicken</p>
-<div id='K1' style='overflow:hidden; display:block;'>
+<p onclick='klappe(&apos;K1&apos;);' style='margin:0; cursor:pointer;'>&gt; Zum Öffnen hier Klicken</p>
+<div style='overflow:hidden; display:block;' id='K1'>
 <p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p></div>
 </div>
 <p>Eine <b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'>besonders starke Hervorhebung</b> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>
-<link rel='stylesheet' href='bestand/extra.css' type='text/css' />
+<link href='bestand/extra.css' rel='stylesheet' type='text/css' />
 <p>Kurzer <span class='fraktur'>Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für Otfeat-Teile. Das funktioniert aber hier nicht, weil nur relativ verlinkt.</p>
 
-<p><form style='margin-top:1.7em'><textarea name='Testfeld' style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
+<p><form style='margin-top:1.7em'><textarea style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;' name='Testfeld'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
 
 <p><span style='color:#e32;'>Weitere Betonungen?</span></p>
 <p>---<br>
@@ -186,7 +186,7 @@
 <h2 id="kommentieren"><br>Artikel kommentieren</h2>
 <p style="font-variant:italic; margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, bis auf das Kommentarfeld gibt keine Pflichtfelder.</p>
 
-<form http://www.formular-chef.de/fc.cgi"
+<form action="http://www.formular-chef.de/fc.cgi"
 method="post" enctype="multipart/form-data">
 <input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
 <input type="hidden" name="pflicht" value="comment">
