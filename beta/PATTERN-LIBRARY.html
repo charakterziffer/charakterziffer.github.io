@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
-<title>Pattern-Library für cz+ // @cz+</title>
+<title>Pattern-Library für @cz+ // @cz+</title>
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter, HandSerif, StickSerif, Otfeat, PixAntiqua, Fuchs und Ballerina">
 <link rel="shortcut icon" href="bestand/favicon.ico" type="image/x-icon" />
 <link href='bestand/style.css' rel='stylesheet' type='text/css'>
@@ -16,20 +16,20 @@
 
 <div id="randspalte" class="donthyphenate">
 <a href="index.html"><img class="logo" src="bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
-<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – am besten <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p>Mein <a href="rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="bestand/cc-by-sa.png"></a></p>
 </div> <!-- randspalte -->
 
 <div id="hauptfeld">
 
-    <p class="datum">Do, 1. Mai 2014</p>
-<h1>Pattern-Library für cz+</h1>
-<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a title="zur Startseite" href="index.html">interner Link</a>, in diesem Fall ein bereits besuchert. Ein <a title="Umlautseite" href="http://äößü.de/">unbesucher Link</a> sieht so aus. Wie verlinke ich dann <a title="zum Anker" href="#anker">einen Seitenanker</a>? Übrigens kann man <a href="http://google.de">den Titel des Links</a> auch weglassen.</p>
+    <p class="datum">So, 1. Juni 2014</p>
+<h1>Pattern-Library für @cz+</h1>
+<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchert. Ein <a href="http://äößü.de/" title="Umlautseite">unbesucher Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="http://google.de">den Titel des Links</a> auch weglassen.</p>
 
 <p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="http://direktadresse.de/">http://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;</a> (Spam?!).</p>
 
-<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a title="Diese Links hier" href="http://example.com/">Referenzlinks</a> verwenden. Sie lagern die <a title="tauchen im Quelltext" href="http://beispiel.de/">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a title="im vorangehenden Absatz auf." href="http://пример.ru/">HTML-Quelltext</a> aber keinen Unterschied.</p>
+<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="http://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="http://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="http://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
 
 <h2 id="hervorhebungen_h2berschrift">Hervorhebungen (H2-Überschrift)</h2>
 
@@ -127,11 +127,11 @@
 
 <p>Bilder werden so ähnlich wie Links eingebunden:</p>
 
-<p><img alt="Alttext des Bildes" src="material/hmk2013.jpg" /></p>
+<p><img src="material/hmk2013.jpg" alt="Alttext des Bildes" /></p>
 
 <p>Allerdings kann die Größe des Bildes so nicht angegeben werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen.</p>
 
-<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>: <img alt='CC-BY-SA' src='bestand/cc-by-sa.png' class='texticon' />.</p>
+<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>: <img src='bestand/cc-by-sa.png' class='texticon' alt='CC-BY-SA' />.</p>
 
 <h2 id="sonstiges">Sonstiges</h2>
 
@@ -141,17 +141,17 @@
 
 <p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
 <script src='bestand/klappskript.js' type='text/javascript'><![CDATA[]]></script>
-<p><img onload='klappe(&apos;K1&apos;);' src='bestand/klapp.gif' style='display:none' /></p>
+<p><img src='bestand/klapp.gif' style='display:none' onload='klappe(&apos;K1&apos;);' /></p>
 <div class='hinterlegt'>
-<p onclick='klappe(&apos;K1&apos;);' style='margin:0; cursor:pointer;'>&gt; Zum Öffnen hier Klicken</p>
-<div style='overflow:hidden; display:block;' id='K1'>
+<p style='margin:0; cursor:pointer;' onclick='klappe(&apos;K1&apos;);'>&gt; Zum Öffnen hier Klicken</p>
+<div id='K1' style='overflow:hidden; display:block;'>
 <p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p></div>
 </div>
 <p>Eine <b style='background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;'>besonders starke Hervorhebung</b> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>
-<link rel='stylesheet' type='text/css' href='bestand/extra.css' />
+<link rel='stylesheet' href='bestand/extra.css' type='text/css' />
 <p>Kurzer <span class='fraktur'>Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für Otfeat-Teile. Das funktioniert aber hier nicht, weil nur relativ verlinkt.</p>
 
-<p><form style='margin-top:1.7em'><textarea style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;' name='Testfeld'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
+<p><form style='margin-top:1.7em'><textarea name='Testfeld' style='font:2em/1.3em &apos;StickSerif&apos;,monospace; width:98%; height:4.8em;'>Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form></p>
 
 <p><span style='color:#e32;'>Weitere Betonungen?</span></p>
 <p>---<br>
@@ -164,21 +164,62 @@
 <br>
 &nbsp;</p>
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-var disqus_shortname = 'czplus';
 
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();
-</script>
+		<h2 id="kommentare">2 Kommentare</h2>
 
-<noscript>Leider wird JavaScript benötigt, um hier Kommentare lesen und schreiben zu können. Falls Sie trotzdem kommentieren möchten, senden Sie Ihren Kommentar bitte per Mail an postfach2b [ät] web.de – Danke!</noscript>
+
+	<p class="datum" style="margin-top:1.3em;">12.7.2014, 12:34 Uhr</p>
+	<h3>#1
+	
+		<a href="http://karls-website.de">Karl Kommentator</a>
+	</h3>
+	<p>Dies hier ist der Kommentar, der <i>Formatierungen</i> und <b>Hervorhebungen</b>, <code>Unterstreichungen</code>, <a href="example.com">Links</a> und <img src="bestand/rss-icon.png" alt="Beispielbild"> ein Bild enthalten kann.</p> <p>Neue Absätze müssen um &lt;p&gt; ergänzt werden. Single Quotes müssen maskiert werden (&#39;).</p>
+
+	<p class="datum" style="margin-top:1.3em;">13.7.2014, 09:20 Uhr</p>
+	<h3>#2
+	
+		<a href="http://meikes-homepage.info">Meike Meinung</a>
+	</h3>
+	<p>Das ist Kommentar Nº 2. auch hier müsste ich neue Absatze händisch mit einem eingeschobenen p-Tag ermöglichen.</p>
+
+
+<h2 id="kommentieren"><br>Artikel kommentieren</h2>
+<p style="font-variant:italic; margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, bis auf das Kommentarfeld gibt keine Pflichtfelder.</p>
+
+<form http://www.formular-chef.de/fc.cgi"
+method="post" enctype="multipart/form-data">
+<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
+<input type="hidden" name="pflicht" value="comment">
+
+<input type="hidden" name="post_id" value="/PATTERN-LIBRARY">
+<div>
+	<label for="name">Name</label>
+	<div> <input name="name" type="text" size="25">
+	&nbsp;<i>(Pseudonym möglich)</i> </div>
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div> <input name="mail" type="text" size="25">
+	&nbsp;<i>(wird nicht veröffentlicht)</i> </div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div> <input name="link" type="text" size="25"></div>
+</div>
+<div>
+	<label for="comment">Kommentar</label>
+	<textarea name="comment" spellcheck="true" rows="10" cols="50"></textarea>
+</div>
+<div><input name="submit" type="submit" value="Abschicken"></div>
+</form>
+
+<p>Einfache Formatierungen mit HTML sind möglich.<br>
+Beispiele: &lt;i&gt;<i>kursiv</i>&lt;/i&gt;, &lt;b&gt;<b>fett</b>&lt;/b&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;.<br>
+Sowie Links (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) <br>und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
 
 <p>&nbsp;</p>
 
-<p style="width:48%; float:left;" class="donthyphenate"><a href="erfundene-fakten-3.html">← Subtile (Un)wahrheiten</a></p>
+<p style="width:48%; float:left;" class="donthyphenate"><a href="neues-blogdesign.html">← Neues Design für @cz+</a></p>
 
 
 <p style="clear:both;">&nbsp;</p>

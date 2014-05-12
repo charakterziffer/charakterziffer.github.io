@@ -4,5 +4,3 @@ cd ~/charakterziffer.github.io/
 git add --all
 git commit -m "Test der Kommentarfunktion"
 git push
-
-[…] → Zusammenfassung der Änderungen
