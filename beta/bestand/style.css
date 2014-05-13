@@ -34,6 +34,9 @@ body {text-align:center; font-size:100.01%; margin:0; padding:5px;
 #hauptfeld {background-color: #fff; border-left:1px dashed #281;
 	margin-left:16.6em; padding: 0.08em 65px 1.4em 55px;}
 
+/* Werbediv von formular-chef.de ausblenden  */
+div[style*="font-family:arial;"] {left:-9999px;}
+
 /* Überschriften */
 
 h1,h2,h3 {font-family: Bitter, Georgia, serif; font-weight:400;}
