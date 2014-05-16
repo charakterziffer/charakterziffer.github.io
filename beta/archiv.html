@@ -16,7 +16,7 @@
 
 <div id="randspalte" class="donthyphenate">
 <a href="index.html"><img class="logo" src="bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
-<p>Hallo, ich bin Gerhard Großmann aus Regensburg! Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg (siehe <a href="index.html#impressum">Impressum</a>). Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p>Mein <a href="rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="bestand/cc-by-sa.png"></a></p>
 </div> <!-- randspalte -->
@@ -39,17 +39,17 @@ else {
 
 <p>Um nur Blogeinträge aus einer bestimmten Rubrik aufzulisten, bitte diese Links verwenden (benötigt JavaScript) →
 
+    <a href="archiv.html?serie">#serie&nbsp;</a>
+
     <a href="archiv.html?sujet">#sujet&nbsp;</a>
-
-    <a href="archiv.html?methodik">#methodik&nbsp;</a>
-
-    <a href="archiv.html?kritik">#kritik&nbsp;</a>
 
     <a href="archiv.html?typografie">#typografie&nbsp;</a>
 
-    <a href="archiv.html?serie">#serie&nbsp;</a>
+    <a href="archiv.html?kritik">#kritik&nbsp;</a>
 
     <a href="archiv.html?ansporn">#ansporn&nbsp;</a>
+
+    <a href="archiv.html?methodik">#methodik&nbsp;</a>
 
 </p>
 <p>&nbsp;</p>
@@ -72,14 +72,41 @@ if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
 1.
 Juni
 2014</p>
-<h2><a href="PATTERN-LIBRARY.html">Pattern-Library für @cz+</a></h2>
-<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen. <a href="PATTERN-LIBRARY.html">[→]</a></p>
+<h2><a href="pattern-library.html">Pattern-Library für @cz+</a></h2>
+<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen. <a href="pattern-library.html">[→]</a></p>
 <p><i>Rubrik(en):</i>&nbsp;
 <a href="archiv.html?methodik">#methodik&nbsp; </a>
 
 <a href="archiv.html?typografie">#typografie&nbsp; </a>
 
 <a href="archiv.html?sujet">#sujet&nbsp; </a>
+<br>
+&nbsp;</p>
+
+<script type="text/javascript">
+if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
+else { treffer = true; }
+</script>
+
+
+
+
+
+<script type="text/javascript">
+var rubriken = 'anspornkritik'
+if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
+</script>
+
+<p class="datum" style="margin-top:1.3em;">Do,
+22.
+Mai
+2014</p>
+<h2><a href="neues-blogdesign.html">Neues Design für @cz+</a></h2>
+<p>Nach fast dreieinhalb Jahren habe ich die Struktur und Gestaltung meines Blogs grundlegend verändert. Hier ein Vergleich der alten und neuen Version. <a href="neues-blogdesign.html">[→]</a></p>
+<p><i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
+
+<a href="archiv.html?kritik">#kritik&nbsp; </a>
 <br>
 &nbsp;</p>
 
@@ -1202,12 +1229,11 @@ if(!treffer) {
 
 <p>&nbsp;</p>
 
-<!-- div style="display:none; border:0"><img src="http://www.gratis-besucherzaehler.de/count.php?counter=55710&amp;style=6" alt=""></div -->
-
 </div> <!-- hauptfeld -->
 </div> <!-- container -->
 
 <script src="bestand/hyphenate.js" type="text/javascript"></script>
 <script src="bestand/parallax.js" type="text/javascript"></script>
+<script type="text/javascript" charset="ISO-8859-1" src="http://www.onlex.de/_counter.php?username=charakterziffer" ></script>
 </body>
 </html>

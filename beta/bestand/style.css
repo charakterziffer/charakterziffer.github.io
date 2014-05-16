@@ -34,9 +34,6 @@ body {text-align:center; font-size:100.01%; margin:0; padding:5px;
 #hauptfeld {background-color: #fff; border-left:1px dashed #281;
 	margin-left:16.6em; padding: 0.08em 65px 1.4em 55px;}
 
-/* Werbediv von formular-chef.de ausblenden  */
-div[style*="font-family:arial;"] {left:-9999px;}
-
 /* Überschriften */
 
 h1,h2,h3 {font-family: Bitter, Georgia, serif; font-weight:400;}
@@ -64,6 +61,14 @@ b, strong {font: normal 0.9em Bitter, Georgia, serif; color:#000;}
 .datum {color:#666; float:right; position:relative; right:0.5em;
 	margin-top: 3.95em; padding-left:1em; display:block;}
 
+hr {margin:1.88em 0.4em 1.1em 0; color:#BBB;}
+
+.hinterlegt {margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
+	background-color: #deb;}
+.hinterlegt p {margin:0.7em 0 0.7em 0.2em;}
+.hinterlegt p:first-child {margin-top:0.2em;}
+.hinterlegt p:last-child {margin-bottom:0.2em;}
+
 /* Listen, Zitatblöcke, Code */
 
 ul {margin: 1.29em 0 1.1em -1em;}
@@ -80,12 +85,6 @@ code, pre {padding:0 0.1em; margin: 1.1em 0 -0.33em; color:#222;
 pre > code {font-size:1em; line-height:1.556;
 	white-space: pre; white-space: pre\9; /* IE7+ */
 	white-space: -moz-pre-wrap; white-space: pre-wrap;}
-
-.hinterlegt {margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
-	background-color: #deb;}
-.hinterlegt p {margin:0.7em 0 0.7em 0.2em;}
-.hinterlegt p:first-child {margin-top:0.2em;}
-.hinterlegt p:last-child {margin-bottom:0.2em;}
 
 /* Links */
 
@@ -111,25 +110,26 @@ p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
 .logo { float:left; margin-right:0.8em;}
 .texticon {margin:0 !important; position:relative; top:2px;}
 
-hr {margin:1.88em 0.4em 1.1em 0; color:#BBB;}
+/* Werbediv von Formular-Chef verstecken
+div[style*="font-family:arial;"] {left:-9999px;} */
+/* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
+.onlex_counter {display:none;}
 
 /* Formulare */
 
 form, input[type=text], input[type=email], input[type=url],
-input[type=password], textarea {color:#222; font-weight:400;
-	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;}
-input[type=text], input[type=email], input[type=url],
-input[type=password] {width: 50%;}
-
+input[type=submit], textarea {font-weight:400; color:#222;
+	font: 0.9em/1.556 'Source Sans Pro', Calibri, Arial, sans-serif; }
+form, textarea {font-size:1em; line-height:1.4em;}
+textarea {padding: 0.1em 0 0.1em 0.2em; width:98%;}
 form > div {clear: both; padding-top: 0.4em;}
+
 label {font: 0.9em/1.556 Bitter,Georgia,serif; width:16%;
 	float:left;	position:relative; top:0.2em}
 label:after {content:':';}
 form > div > div {width: 78%; float:right; padding-right:2%;}
-
 input[type=text], input[type=email], input[type=url],
 input[type=password] {width: 50%;}
-textarea {width: 98%; padding: 0.1em 0 0.1em 0.2em;}
 
 
 /* ANPASSUNGEN FÜR KLEINERE BILDSCHIRME */
