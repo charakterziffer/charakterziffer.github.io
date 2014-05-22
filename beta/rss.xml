@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<title>@cz+ // Blog von @charakterziffer</title>
+<link>http://charakterziffer.github.io/index.htm</link>
+<description>140 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
+<language>de-de</language>
+<copyright>Gerhard Großmann</copyright>
+<pubDate>Wed, 4 Jul 2012 00:00:00 +0100</pubDate>
+<atom:link href="http://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+	<url>material/profilbild.png</url>
+	<title>@cz+ // Blog von @charakterziffer</title>
+	<link>http://charakterziffer.github.io/index.htm</link>
+</image>
+
+<item>
+	<title>Neues Design für @cz+</title>
+	<description>&lt;p&gt;Ich hätte es nicht gedacht, aber mein Blog „@cz+“ ist ganz schön gewachsen. Seit November 2010 habe ich dreiundvierzig Artikel verfasst – zu viele, als dass die ursprüngliche Struktur weiterhin funktioniert hätte. Deswegen habe ich @cz+ nun umfassend technisch überarbeitet und auch grafisch weiterentwickelt. Weg vom früheren Design:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;mein Blog bis April 2014&quot; src=&quot;material/blogdesign-alt.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Zu Beginn war dieses Blog eine reine Weiterführung meines Twitterprofils &lt;a title=&quot;mein Mikroblog auf Twitter&quot; href=&quot;http://twitter.com/charakterziffer&quot;&gt;@charakterziffer&lt;/a&gt;. Ich habe mehrere kurze Artikel auf einer einzelnen HTML-Seite versammelt, ein farbiges Quadrat vor jeder Überschrift sollte an einen Twitter-Avatar erinnern. Jeder Blogbeitrag war quasi ein längerer Tweet. Zunächst gab es weder Bilder noch verlinkte Materialien; alles, was für die Gestaltung gebraucht wurde, war in die eine Datei eingebettet.&lt;/p&gt;
+
+&lt;h2 id=&quot;mit_den_inhalten_kam_die_komplexitt&quot;&gt;Mit den Inhalten kam die Komplexität&lt;/h2&gt;
+
+&lt;p&gt;Mit der Zeit haben sich aber einfach zuviele Artikel auf der einen Seite angesammelt und ich habe für die zehn ältesten eine Archivseite angelegt. Und dann noch eine. Und noch eine. Die CSS-Befehle (fürs Design) habe ich in eine externe Datei ausgelagert, habe Bilder hinzugefügt und PDFs verlinkt. Inhaltlich habe ich meine Themenpalette erweitert und mich weniger stark auf Twitter konzentriert.&lt;/p&gt;
+
+&lt;p&gt;Was mich zu einem größeren Umbau motiviert hat, war diesen April die Meldung, dass &lt;a href=&quot;http://one.ubuntu.com/&quot;&gt;Ubuntu One&lt;/a&gt; demnächst schließt. Das war der Cloud-Service, bei dem ich meine Dateien gelagert hatte. Daraufhin bin ich zu &lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; gewechselt, wo ich Dateien besser untereinander verlinken und organisieren kann. Ich werde verlinktes Material nun also nicht mehr nach einiger Zeit offline stellen, wie ich es bislang aus organisatorischen Gründen getan habe.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll_sortiert_alle_artikel&quot;&gt;Jekyll sortiert alle Artikel&lt;/h2&gt;
+
+&lt;p&gt;Über GitHub Pages bin ich auch auf &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; gestoßen. Das ist ein Generator für statische Websites, der einzelne Textdateien in Artikel umwandelt und diese untereinander verlinkt. Damit ist es kinderleicht, jedem Blogeintrag eine eigene, permanente Unterseite zu spendieren, die direkt aufgerufen und kommentiert werden kann.&lt;/p&gt;
+
+&lt;p&gt;Mit Jekyll platziere ich auch die drei neusten Einträge in voller Länge auf der &lt;a href=&quot;index.html&quot;&gt;Startseite&lt;/a&gt;; außerdem gibt es ein &lt;a href=&quot;archiv.html&quot;&gt;Archiv&lt;/a&gt;, in dem jeder neue Artikel automatisch auftaucht. Dieses Archiv lässt sich mithilfe von JavaScript übrigens filtern, so dass beispielsweise nur die &lt;a href=&quot;archiv.html?typografie&quot;&gt;Einträge zum Thema Typografie&lt;/a&gt; angezeigt werden.&lt;/p&gt;
+
+&lt;h2 id=&quot;gestalterisch_von_twitter_emanzipiert&quot;&gt;Gestalterisch von Twitter emanzipiert&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Vergleich von Überschriften und Randspalte&quot; src=&quot;material/blogdesign-vergleich.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Von der grafischen Gestaltung her habe ich wenige, aber augenfällige Details verändert: Die Randspalte ist nun links statt rechts und der Seitenhintergrund hat ein sattes Grün bekommen statt dem blassen Zahlenmuster. Die Farbquadrate vor den Überschriften sind genauso verschwunden wie die drei letzten Tweets; damit möchte ich mein Blog gestalterisch stärker von Twitter trennen.&lt;/p&gt;
+
+&lt;p&gt;Gleich geblieben ist dagegen die Schriftmischung aus &lt;a href=&quot;http://www.huertatipografica.com/fonts/bitter-ht&quot;&gt;Bitter&lt;/a&gt; und &lt;a href=&quot;http://blog.typekit.com/2012/08/02/source-sans-pro/&quot;&gt;Source Sans Pro&lt;/a&gt;. Zwar habe ich die gleiche Kombination mittlerweile auf zwei anderen Websites gesehen – so einmalig ist die Mischung also nicht mehr –, aber sie gefällt mir immer noch gut und passt zur Klarheit und Persönlichkeit meiner Blogartikel.&lt;/p&gt;
+
+&lt;h2 id=&quot;direktes_kommentieren_erlaubt&quot;&gt;Direktes Kommentieren erlaubt&lt;/h2&gt;
+
+&lt;p&gt;Weil mein Blog noch immer eine statische Website ist, sind dynamisch und interaktiv erstellte Inhalte technisch unmöglich. Ich finde aber, dass Kommentare einen Artikel sehr bereichern können. Deswegen greife ich für die Kommentarfunktion auf einen &lt;a href=&quot;http://formular-chef.de/&quot;&gt;externen Anbieter&lt;/a&gt; zurück, der mir Eingaben im HTML-Formular als E-Mail zuschickt. Die so empfangenen Kommentare füge ich dann manuell in die Seite ein (da hilft mir das Jekyll-Plugin &lt;a href=&quot;http://github.com/mpalmer/jekyll-static-comments&quot;&gt;Static Comments&lt;/a&gt; von Matt Palmer).&lt;/p&gt;
+
+&lt;p&gt;Ich bin gespannt auf Rückmeldungen zum neuen Design. Pseudonymes Kommentieren als Gast ist übrigens möglich, &lt;a href=&quot;anonym-kommentieren.html&quot;&gt;ich bin da nicht so&lt;/a&gt;. Weiterhin eine vergnügliche Lektüre mit @cz+!&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/neues-blogdesign.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/neues-blogdesign.html</guid>
+	<pubDate>Thu, 22 May 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Subtile (Un)wahrheiten</title>
+	<description>&lt;p&gt;Auch im vergangenen Jahr haben sich in meiner Twitter-Timeline wieder so einige Falschmeldungen angesammeln. Allerdings nur in meiner Serie »Erfundene Fakten«. Alles andere, was ich auf Twitter schreibe, entspricht zu 100% der Wahrheit. Ganz echt jetzt. Wirklich!&lt;/p&gt;
+
+&lt;p&gt;Na gut, lassen wir das. Hier jedenfalls meine erfundenen Fakten aus den letzten zwölf Monaten:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;✻ Erfundenes Faktum № 29: Die Schriftart Floralia wird für lange Texte kaum verwendet, da sie beim Leser Frühlingsgefühle auslösen kann. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/327395171060822016&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;☻ Erfundenes Faktum № 30: Wegen ihrer intelligenzsteigernden Wirkung wird die Schwedenbombe in der Regel nur an Österreicher verkauft. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/342608139893501952&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;🐊 Erfundenes Faktum № 31: Krokodile fressen keine erwachsenen Nilpferde, weil deren »Sonnencrème« einen ekelhaften Geschmack besitzt. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/359625723918553089&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;▒ Erfundenes Faktum № 32: Durch die Prägung eignet sich die Innenseite von Klopapier besser für festem Stuhl, die Außenseite für Durchfall. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/372388164906000384&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;🍁 Erfundenes Faktum № 33: Würde man die Schallenergie der deutschen Laubsauger in Wärme wandeln, ließen sich ca. acht Opernhäuser beheizen. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/383557405839478784&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⚟ Erfundenes Faktum № 34: Wegen der Mikrofontechnik mussten Moderatoren früher (End-)Silben »ve’schluck’n«. Das setzte sich im Alltag durch. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/393020733859065856&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⑉ Erfundenes Faktum № 35: Ein nutzerfreundlicheres IBAN-Nummernsystem wurde von den Banken abgelehnt, weil sie an Fehlbuchungen verdienen. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/405262511009976320&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;👑 Erfundenes Faktum № 36: Heute vor 2014 Jahren wurden in Judäa drei Ausländer (vermutlich Perser) wegen illegaler Einreise verhaftet. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/420905386489958400&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;➿ Erfundenes Faktum № 37: Das Pasta-Museum in Rom hat eingewilligt: Endlich gehen die von Marco Polo geraubten Nudelmuster zurück an China. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/430638197052551168&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⚈ Erfundenes Faktum № 38: Im Frühjahr leiden Menschen am meisten an ihrer Depression – es entfällt die Option, sie aufs Wetter zu schieben. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/441486772862992384&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;∀ Erfundenes Faktum № 39: Insbesondere die spektakulären Aprilscherze sind meistens nicht wahr. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/450927604426895360&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;⚒ Erfundenes Faktum № 40: Der Begriff »Meeting« hat sich durchgesetzt, weil sich »Besprechung« zu effektiv angehört hat. (&lt;a href=&quot;http://twitter.com/charakterziffer/status/461022481135181824&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Die vorangegangenen &lt;a href=&quot;erfundene-fakten-2.html&quot;&gt;Folgen 17–28&lt;/a&gt; habe ich vor rund einem Jahr veröffentlicht.&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/erfundene-fakten-3.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-3.html</guid>
+	<pubDate>Wed, 30 Apr 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Silbentrennung im Browser</title>
+	<description>&lt;p&gt;In gedruckten Büchern ist es völlig normal, Wörter falls angebracht am Zeilenende zu trennen. Auf Internetseiten ist das noch eher die Ausnahme. Dabei hätte Silbentrennung auch online ihre Vorteile: Sie ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz).&lt;/p&gt;
+
+&lt;p&gt;Besonders in schmalen Textspalten ist Silbentrennung oft unverzichtbar. Hier gibt es sehr häufige Zeilenwechsel und ein unruhig flatternder Text würde das Lesen stark erschweren. In deutschsprachigen Texten gibt es teilweise lange Wörter, die ohne Trennung große Lücken in den Text reißen können.&lt;/p&gt;
+
+&lt;p&gt;Technisch spricht heutzutage übrigens nichts mehr dagegen, Silbentrennung auf Websites anzuwenden. Sie erschwert weder das Kopieren von Texten (hier tauchen keine Trennstriche auf) noch verhindert sie die Suche nach Begriffen (Trennstriche werden ignoriert). Und in Browsern, die Silbentrennung nicht unterstützen, bleibt es einfach bei ungetrenntem Text.&lt;/p&gt;
+
+&lt;h2 id=&quot;umsetzung_mit_javascript&quot;&gt;Umsetzung mit Javascript&lt;/h2&gt;
+
+&lt;p&gt;Hier in meinem Blog nutze ich das &lt;a href=&quot;https://code.google.com/p/hyphenator/&quot;&gt;JavaScript-Programm Hyphenator.js&lt;/a&gt;. Man definiert dazu zunächst die Sprache der Website: &lt;code&gt;&amp;lt;html lang=&amp;quot;de&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse &lt;em&gt;.hyphenate&lt;/em&gt; aus (beispielsweise &lt;code&gt;&amp;lt;body class=&amp;quot;hyphenate&amp;quot;&amp;gt;&lt;/code&gt;, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse &lt;em&gt;.donthyphenate&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mit Hilfe der Seite &lt;a href=&quot;http://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html&quot;&gt;merge+pack&lt;/a&gt; (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine &lt;a href=&quot;bestand/hyphenate.js&quot;&gt;eigene Hyphenator-Datei&lt;/a&gt; für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;http://deine-adresse.de/PFAD/hyphenator.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;alternative_die_csseigenschaft_hyphens&quot;&gt;Alternative: Die CSS-Eigenschaft „hyphens“&lt;/h2&gt;
+
+&lt;p&gt;Einfacher funktioniert die Silbentrennung mit CSS. Auch hier legt man zunächste die Sprache der Website fest. Dann öffnet man seine CSS-Datei und gibt den zu trennenden Elementen (z. B. allen p-Absätze) die Eigenschaft:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-ms-hyphens: auto; -webkit-hyphens: auto;
+-moz-hyphens: auto; hyphens: auto;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Laut &lt;a href=&quot;http://caniuse.com/#feat=css-hyphens&quot;&gt;caniuse.com&lt;/a&gt; wird die CSS-Eigenschaft &lt;em&gt;hyphens&lt;/em&gt; leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.&lt;/p&gt;
+
+&lt;h2 id=&quot;was_nicht_funktioniert&quot;&gt;Was nicht funktioniert&lt;/h2&gt;
+&lt;p class='donthyphenate' style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &amp;apos;Times New Roman&amp;apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;'&gt;mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich&lt;/p&gt;
+&lt;p&gt;Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.&lt;/p&gt;
+
+&lt;p&gt;Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen &lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176&quot;&gt;Fehlerbericht auf Launchpad&lt;/a&gt; eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.&lt;/p&gt;
+
+&lt;p&gt;Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.&lt;/p&gt;
+&lt;p class='hinterlegt' style='clear:both;'&gt;&lt;b&gt;UP­DATE:&lt;/b&gt; Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit &lt;b&gt;&amp;amp;shy;&lt;/b&gt; – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei&lt;b&gt;&amp;amp;shy;&lt;/b&gt;spiels&lt;b&gt;&amp;amp;shy;&lt;/b&gt;wei­se so.&lt;br /&gt;
+Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href='http://twitter.com/penibelst/'&gt;@pe­ni­belst&lt;/a&gt;)!&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/silbentrennung.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/silbentrennung.html</guid>
+	<pubDate>Wed, 09 Apr 2014 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Krimigeschichten mit Richter Di</title>
+	<description>&lt;p&gt;Nicht nur die Pest wütet im alten China, auch eine Mordserie erschüttert die Hauptstadt. Und die Lösung scheint in den Scherben einer Vase zu liegen …&lt;/p&gt;
+
+&lt;p&gt;Das ist die Handlung von „Mord nach Muster“, einem Krimi von Robert van Gulik (1910–1967). Der niederländische Diplomat interessierte sich schon früh für die chinesische Sprache und Kultur und arbeitete nebenberuflich als Schriftsteller, Musiker und Zeichner. 1949 übersetzte Robert van Gulik einen chinesischen Krimi aus dem 18. Jahrhundert. Die Titelfigur darin war Richter Di, ein Beamter aus dem alten China – genauergesagt um 630 bis 700 nach Christus.&lt;/p&gt;
+
+&lt;p&gt;Die Übersetzung „Die merkwürdigen Kriminalfälle des Richter Di“ kam so gut an, dass Robert van Gulik begann, eigene Geschichten rund um den historischen Ermittler zu schreiben. Es entstanden vierzehn Romane und zwei Erzählbände. Typisch für die Krimis ist, dass nicht nur ein Verbrechen aufgeklärt wird. In der Regel ermitteln Richter Di und seine Gerichtsbeamten in gleich drei Kriminalfällen, die nur manchmal miteinander zu tun haben. Die Geschichten sind zwar fiktional, die Darstellungen der damaligen Gesellschaft und Kultur entsprechen aber den Tatsachen (Robert van Gulik war auch Sinologe).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;📖 Lese gerade »Mord nach Muster« von Robert van Gulik. Darin rätselt Richter Di über eine Mordserie rund um eine zerschlagene Porzellanvase.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mir gefällt besonders die Erzählweise der Richter-Di-Krimis. Die Ermittlungen zu den einzelnen Kriminalfällen sind geschickt miteinander verwoben und als Leser kann man miträtseln, warum Richter Di zur Aufklärung zwei Straßenmädchen kauft, warum er sich als Wahrsager kostümiert oder seine Beamten zu einem bestimmten Kaufmann schickt. Und ganz nebenbei erfährt man, wie die Menschen damals lebten und arbeiteten, welche Bräuche es gab und welche gesellschaftlichen Konflikte.&lt;/p&gt;
+
+&lt;p&gt;Inzwischen taucht Richter Di auch in Romanen anderer Autoren auf. „Halskette und Kalebasse“ wurde als Hörspiel produziert und es gibt den Film „Detective Dee und das Geheimnis der Phantomflammen“.&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/richter-di.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/richter-di.html</guid>
+	<pubDate>Thu, 27 Feb 2014 00:00:00 +0100</pubDate>
+</item>
+
+<item>
+	<title>Gut auch ohne Namen</title>
+	<description>&lt;p&gt;Vor gut acht Monaten habe ich einen &lt;a href=&quot;troll-dich.html&quot;&gt;Eintrag zum Thema ›Trolle‹&lt;/a&gt; geschrieben. Dabei habe ich ein wirksames Mittel gegen unliebsame Kommentare oder Äußerungen im Netz völlig ignoriert: die Klarnamenpflicht. Wenn jeder unter seinem eigenen Namen im Netz agieren müsste, dann würden sich Trolle doch zurückhalten, oder?&lt;/p&gt;
+
+&lt;p&gt;Meiner Einschätzung nach eher nicht. Zwar wäre es dann wohl schwerer aber sicher nicht unmöglich, Fake-Accounts einzurichten. Allerdings trollen Menschen sogar, wenn sie leicht zu identifizieren sind (z. B. auf Facebook).&lt;/p&gt;
+
+&lt;p&gt;Im Ausgleich zu diesem recht unwirksamen Troll-Schutz verliert man jedoch etwas sehr wichtiges: Sich äußern zu können, ohne folgenreiche Angriffe auf die eigene Person fürchten zu müssen. Zu allgemein akzeptierten Themen ist es ungefährlich, Stellung zu beziehen. Geht es aber um Themen, die nicht den moralischen Vorstellungen der Allgemeinheit entsprechen oder die sogar ungesetzlich sind, ist das eine andere Sache.&lt;/p&gt;
+
+&lt;p&gt;Warum man zulassen sollte, dass sich jemand über unmoralische oder ungesetzliche Dinge äußert? Weil das mit Moral und Gesetz so eine Sache ist. Beispielsweise könnte ich in Syrien ziemlichen Ärger bekommen, wenn ich das Verhalten der Regierung kritisiere; oder wenn ich in Russland über Homosexualität schreiben möchte; oder wenn ich mich in Amerika mit Pornographie auseinandersetzen will. Dabei könnten gerade Diskussionen über solche Tabu-Themen die Gesellschaft ein gutes Stück weiterbringen.&lt;/p&gt;
+
+&lt;p&gt;Sich im Netz anonym äußern zu können, erleichtert es, bestehende Ungerechtigkeiten zu hinterfragen, ein Gespräch darüber in Gang zu setzen und vielleicht etwas zu verändern. Wer das möchte, muss auch Trolle in Kauf nehmen. Was letztlich zählt ist nicht der Name einer Person, sondern ihre Argumente und Meinungen.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;PS: Seit Mai 2014 kann man in meinem Blog auch direkt kommentieren. Vorher war diese Website sehr einfach gestrickt und eine Kommentarfunktion technisch nicht möglich. Trotzdem erhalte ich weiterhin sehr gerne Anmerkungen per Mail &lt;em&gt;(postfach2b [ät] web.de)&lt;/em&gt; oder &lt;a href=&quot;https://twitter.com/intent/tweet?text=%40charakterziffer+&quot;&gt;via Twitter&lt;/a&gt;.&lt;/p&gt;</description>
+	<link>http://charakterziffer.github.io/anonym-kommentieren.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/anonym-kommentieren.html</guid>
+	<pubDate>Fri, 17 Jan 2014 00:00:00 +0100</pubDate>
+</item>
+
+</channel></rss>
