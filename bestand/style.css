@@ -1,0 +1,178 @@
+/* CSS-Stile für das cz+Blog, verfasst von Gerhard Großmann */
+
+/* Farben: #281 (grün), #3a1 (hellgrün), #deb (blassgrün)
+	Akzente: #839 (lila), #e32 (rot), #fdb (blassrot)
+	Text: #222 (kursiv#111 fett#000), #222–#444 (Titel), #666 (Datum) */
+
+/* Schriften: Source Sans Pro Regular & Italic, Bitter */
+
+@font-face {font-family: 'Source Sans Pro';
+	font-style: normal; font-weight: 400;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
+	url(SourceSansPro-Rg.woff) format('woff'),
+	url(SourceSansPro-Rg.ttf) format('truetype');}
+@font-face {font-family: 'Source Sans Pro';
+	font-style: italic; font-weight: 400;
+	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
+	url(SourceSansPro-It.woff) format('woff'),
+	url(SourceSansPro-Rg.ttf) format('truetype');}
+@font-face {font-family: 'Bitter';
+	font-style: normal; font-weight: normal;
+	src: local('Bitter-Regular'),
+	url(Bitter.woff) format('woff'),
+	url(Bitter.ttf) format('truetype');}
+
+/* Grundsätzliches Layout */
+
+body {text-align:center; font-size:100.01%; margin:0; padding:5px;
+	background: #281 url(shattered.png) repeat fixed;}
+
+#container {text-align: left; margin: 30px auto 50px;
+	min-width:47em; max-width:57em;
+	background-color:#eee; box-shadow: 1px 2px 8px #222;}
+#randspalte {float:left; width:14.6em; padding: 63px 1em 56px;
+	position:fixed;}
+#hauptfeld {background-color: #fff; border-left:1px dashed #281;
+	margin-left:16.6em; padding: 0.08em 65px 1.4em 55px;}
+
+/* Überschriften */
+
+h1,h2,h3 {font-family: Bitter, Georgia, serif; font-weight:400;}
+h1 {font-size:1.5em; line-height:0.933; color:#444;
+	margin: 2.78em 0 0.7em -0.04em;}
+#randspalte h1 {font-size: 1.9em; line-height:1; margin:0;}
+h2 {font-size:1.1em; line-height:1.273; color: #333;
+	margin: 1.2em 0 -0.55em -0.04em;}
+h3 {font-size:0.9em; line-height:1.556; color:#222;
+	margin: 1.5em 0 -0.725em -0.04em;}
+
+/* Formatierungen für Lesetexte */
+
+p, ul, ol {font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
+	color:#222; font-weight:400; margin-bottom:-0.3em;
+	-moz-font-feature-settings: "onum"; -webkit-font-feature-settings: "onum"; -ms-font-feature-settings: "onum" 1; font-feature-settings: "onum";
+/*	statt CSS-hyphens wird noch das Javascript hyphenator.js verwendet
+	-webkit-hyphens: auto; -moz-hyphens: auto;
+	-ms-hyphens: auto; hyphens: auto; */}
+#randspalte p {font-size:0.9em; line-height:1.556;
+	margin-bottom: -0.22em;}
+
+i, em {font-style:italic; color: #111;}
+b, strong {font: normal 0.9em Bitter, Georgia, serif; color:#000;}
+.datum {color:#666; float:right; position:relative; right:0.5em;
+	margin-top: 3.95em; padding-left:1em; display:block;}
+
+hr {margin:1.88em 0.4em 1.1em 0; color:#bbb;}
+
+.hinterlegt {margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
+	background-color: #deb;}
+.hinterlegt p {margin:0.7em 0 0.7em 0.2em;}
+.hinterlegt p:first-child {margin-top:0.2em;}
+.hinterlegt p:last-child {margin-bottom:0.2em;}
+
+/* Listen, Zitatblöcke, Code */
+
+ul {margin: 1.29em 0 1.1em -1em;}
+ul li {list-style:square; margin-top:0;}
+ul li p {margin:0.7em 0;}
+ol {margin-left: -1.2em;}
+
+blockquote {margin:1.4em 0 1.3em; padding: 0 0.2em 0 0.6em;
+	border-left:0.7em solid #deb; background-color:#f7f7f7;}
+blockquote + blockquote {margin-top:1.7em;}
+
+code, pre {padding:0 0.1em; margin: 1.1em 0 -0.33em; color:#222;
+	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono', monospace;}
+pre > code {font-size:1em; line-height:1.556;
+	white-space: pre; white-space: pre\9; /* IE7+ */
+	white-space: -moz-pre-wrap; white-space: pre-wrap;}
+
+/* Links */
+
+a:link {color:#281; font-family:Bitter,Georgia,serif;
+	text-decoration:none;}
+p a:link {font-size:0.9em;}
+a:visited {color:#839;}
+a:hover {color:#3a1;}
+a:active {color:#e32;}
+a:focus {outline:1px dotted #444;}
+a:target {background-color:#cf8; color:#444;}
+
+p a.klickfeld {margin:1.038em 30%; width:40%;
+	display:inline-block; padding: 0.25em 0.4em 0.35em;
+	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
+	color:#222;	text-align:center; background-color: #deb;
+	border:0.062em solid #281; box-shadow: 1px 1px 2px #eee;}
+
+/* Bilder */
+
+img {max-width:98.5%; height:auto; border-width:0}
+p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
+.logo { float:left; margin-right:0.8em;}
+.texticon {margin:0 !important; position:relative; top:2px;}
+
+/* Werbediv von Formular-Chef verstecken
+div[style*="font-family:arial;"] {left:-9999px;} */
+/* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
+.onlex_counter {display:none;}
+
+/* Formulare */
+
+form, input[type=text], input[type=email], input[type=url],
+input[type=submit], textarea {font-weight:400; color:#222;
+	font: 0.9em/1.556 'Source Sans Pro', Calibri, Arial, sans-serif; }
+form, textarea {font-size:1em; line-height:1.4em;}
+textarea {padding: 0.1em 0 0.1em 0.2em; width:98%;}
+form > div {clear: both; padding-top: 0.4em;}
+
+label {font: 0.9em/1.556 Bitter,Georgia,serif; width:16%;
+	float:left;	position:relative; top:0.2em}
+label:after {content:':';}
+form > div > div {width: 78%; float:right; padding-right:2%;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 50%;}
+
+
+/* ANPASSUNGEN FÜR KLEINERE BILDSCHIRME */
+
+/* Randspalte nicht mehr fix, wenn Fensterhöhe zu niedrig */
+@media (max-height: 33.5em) {
+#randspalte {position:static;}
+}
+
+@media (max-width: 54em) {
+label {width: 100%; float: none; top:0;}
+form > div > div {width: 98%; float: none;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 100%;}
+}
+
+@media (max-width: 44.4em) {
+body {padding:2px;}
+#container {margin:0; min-width:100%; box-shadow:none;
+	background-color:#fff;}
+#randspalte {width:inherit; padding:15px 13px 20px 15px;
+	float:none; position:static; border-bottom:1px dashed #281;
+	background-color:#eee;}
+#hauptfeld {margin:-1.5em 0 0; padding: 0 13px 2.5em 15px;
+	border:0; background-color:transparent;}
+#randspalte h1 {margin:0.6em 0;}
+label {width: 50%; float: left; top:0.2em;}
+form > div > div {width: 78%; float: right;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 50%;}
+}
+
+@media (max-width: 34em) {
+label {width: 100%; float: none; top:0;}
+form > div > div {width: 98%; float: none;}
+input[type=text], input[type=email], input[type=url],
+input[type=password] {width: 100%;}
+}
+
+@media (max-width: 25em) {
+body {padding:1px;}
+#randspalte h1 {margin:0;}
+p.datum {margin-top: 2.3em;}
+blockquote {border-width:0.4em; padding-left:0.5em;}
+}
