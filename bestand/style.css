@@ -9,18 +9,18 @@
 @font-face {font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
 	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
-	url(SourceSansPro-Rg.woff) format('woff'),
-	url(SourceSansPro-Rg.ttf) format('truetype');}
+	url('SourceSansPro-Rg.woff') format('woff'),
+	url('SourceSansPro-Rg.ttf') format('truetype');}
 @font-face {font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
 	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
-	url(SourceSansPro-It.woff) format('woff'),
-	url(SourceSansPro-Rg.ttf) format('truetype');}
+	url('SourceSansPro-It.woff') format('woff'),
+	url('SourceSansPro-Rg.ttf') format('truetype');}
 @font-face {font-family: 'Bitter';
 	font-style: normal; font-weight: normal;
 	src: local('Bitter-Regular'),
-	url(Bitter.woff) format('woff'),
-	url(Bitter.ttf) format('truetype');}
+	url('Bitter.woff') format('woff'),
+	url('Bitter.ttf') format('truetype');}
 
 /* Grundsätzliches Layout */
 
