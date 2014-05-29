@@ -9,15 +9,15 @@
 
 @font-face {font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
-	src: url('SourceSansPro-Rg.woff') format('woff'),
-	url('SourceSansPro-Rg.ttf') format('truetype');}
+	src: url('http://charakterziffer.github.io/bestand/SourceSansPro-Rg.woff') format('woff'),
+	url('http://charakterziffer.github.io/bestand/SourceSansPro-Rg.ttf') format('truetype');}
 @font-face {font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
-	src: url('SourceSansPro-It.woff') format('woff'),
-	url('SourceSansPro-Rg.ttf') format('truetype');}
+	src: url('http://charakterziffer.github.io/bestand/SourceSansPro-It.woff') format('woff'),
+	url('http://charakterziffer.github.io/bestand/SourceSansPro-Rg.ttf') format('truetype');}
 @font-face {font-family: 'Bitter';
 	font-style: normal; font-weight: normal;
-	src: url('Bitter.woff') format('woff'),
+	src: url('http://charakterziffer.github.io/bestand/Bitter.woff') format('woff'),
 	url('Bitter.ttf') format('truetype');}
 
 /* Grundsätzliches Layout */
