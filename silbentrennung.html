@@ -7,8 +7,11 @@
 <title>Silbentrennung im Browser // @cz+</title>
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow" />
 <link rel="shortcut icon" href="http://charakterziffer.github.io/bestand/favicon.ico" type="image/x-icon" />
 <link href='http://charakterziffer.github.io/bestand/style.css' rel='stylesheet' type='text/css'>
+<!-- CSS-Link für lokale Test, ist online eine Doppelung -->
+<link href='bestand/style.css' rel='stylesheet' type='text/css'>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://charakterziffer.github.io/rss.xml" />
 </head>
 
@@ -16,7 +19,7 @@
 <div id="container">
 
 <div id="randspalte" class="donthyphenate">
-<a href="index.html"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
+<a href="http://charakterziffer.github.io/"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zu Startseite"><h1>@charak<span style="font-size:0em;"> </span>terziffer</h1></a>
 <p>Hallo, ich bin Gerhard Großmann aus Regensburg (siehe <a href="http://charakterziffer.github.io/index.html#impressum">Impressum</a>). Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p>Mein <a href="http://charakterziffer.github.io/rss.xml">RSS-Feed&nbsp;<img alt="(RSS-Icon)" class="texticon" src="http://charakterziffer.github.io/bestand/rss-icon.png"></a>&nbsp; informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="http://charakterziffer.github.io/archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen. &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="http://charakterziffer.github.io/bestand/cc-by-sa.png"></a></p>
@@ -52,13 +55,13 @@
 <p>Laut <a href="http://caniuse.com/#feat=css-hyphens">caniuse.com</a> wird die CSS-Eigenschaft <em>hyphens</em> leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.</p>
 
 <h2 id="was_nicht_funktioniert">Was nicht funktioniert</h2>
-<p class='donthyphenate' style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &apos;Times New Roman&apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;'>mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich</p>
+<p style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &apos;Times New Roman&apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;' class='donthyphenate'>mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich</p>
 <p>Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.</p>
 
 <p>Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen <a href="https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176">Fehlerbericht auf Launchpad</a> eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.</p>
 
 <p>Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.</p>
-<p class='hinterlegt' style='clear:both;'><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
+<p style='clear:both;' class='hinterlegt'><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
 Dan­ke für den Tipp von Ana­tol Bro­der (<a href='http://twitter.com/penibelst/'>@pe­ni­belst</a>)!</p>
 <p>---<br>
 <i>Rubrik(en):</i>&nbsp;
@@ -75,7 +78,7 @@ Dan­ke für den Tipp von Ana­tol Bro­der (<a href='http://twitter.com/penibel
 
 
 <h2 id="kommentieren">Artikel kommentieren</h2>
-<p style="font-variant:italic; margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+<p style="margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
 
 <form action="http://www.formular-chef.de/fc.cgi"
 method="post" enctype="multipart/form-data">
