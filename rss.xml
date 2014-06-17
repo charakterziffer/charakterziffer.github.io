@@ -8,7 +8,7 @@
 <pubDate>Wed, 4 Jul 2012 00:00:00 +0100</pubDate>
 <atom:link href="http://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
 <image>
-	<url>http://charakterziffer.github.io/material/profilbild.png</url>
+	<url>http://charakterziffer.github.io/bestand/profilbild.png</url>
 	<title>@cz+ // Blog von @charakterziffer</title>
 	<link>http://charakterziffer.github.io/index.htm</link>
 </image>
@@ -70,7 +70,7 @@
 
 &lt;p&gt;&lt;img alt=&quot;mein Blog bis April 2014&quot; src=&quot;material/blogdesign-alt.jpg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Zu Beginn war dieses Blog eine reine Weiterführung meines Twitterprofils &lt;a title=&quot;mein Mikroblog auf Twitter&quot; href=&quot;http://twitter.com/charakterziffer&quot;&gt;@charakterziffer&lt;/a&gt;. Ich habe mehrere kurze Artikel auf einer einzelnen HTML-Seite versammelt, ein farbiges Quadrat vor jeder Überschrift sollte an einen Twitter-Avatar erinnern. Jeder Blogbeitrag war quasi ein längerer Tweet. Zunächst gab es weder Bilder noch verlinkte Materialien; alles, was für die Gestaltung gebraucht wurde, war in die eine Datei eingebettet.&lt;/p&gt;
+&lt;p&gt;Zu Beginn war dieses Blog eine reine Weiterführung meines Twitterprofils &lt;a href=&quot;http://twitter.com/charakterziffer&quot; title=&quot;mein Mikroblog auf Twitter&quot;&gt;@charakterziffer&lt;/a&gt;. Ich habe mehrere kurze Artikel auf einer einzelnen HTML-Seite versammelt, ein farbiges Quadrat vor jeder Überschrift sollte an einen Twitter-Avatar erinnern. Jeder Blogbeitrag war quasi ein längerer Tweet. Zunächst gab es weder Bilder noch verlinkte Materialien; alles, was für die Gestaltung gebraucht wurde, war in die eine Datei eingebettet.&lt;/p&gt;
 
 &lt;h2 id=&quot;mit_den_inhalten_kam_die_komplexitt&quot;&gt;Mit den Inhalten kam die Komplexität&lt;/h2&gt;
 
