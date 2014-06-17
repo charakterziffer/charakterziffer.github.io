@@ -43,17 +43,17 @@ else {
 
 <p>Um nur Blogeinträge aus einer bestimmten Rubrik aufzulisten, bitte diese Links verwenden (benötigt JavaScript) →<br>
 
-    <a href="archiv.html?methodik">#methodik&nbsp;</a>
-
-    <a href="archiv.html?kritik">#kritik&nbsp;</a>
-
     <a href="archiv.html?typografie">#typografie&nbsp;</a>
 
     <a href="archiv.html?sujet">#sujet&nbsp;</a>
 
-    <a href="archiv.html?ansporn">#ansporn&nbsp;</a>
+    <a href="archiv.html?methodik">#methodik&nbsp;</a>
 
     <a href="archiv.html?serie">#serie&nbsp;</a>
+
+    <a href="archiv.html?ansporn">#ansporn&nbsp;</a>
+
+    <a href="archiv.html?kritik">#kritik&nbsp;</a>
 
 </p>
 <p>&nbsp;</p>
@@ -64,6 +64,31 @@ else {
 	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2014<\/h1>"); </script>
 	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2014</h1> </noscript>
 	
+
+
+<script type="text/javascript">
+var rubriken = 'serie'
+if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
+</script>
+
+<p class="datum" style="margin-top:1.3em;">Mi,
+18.
+Juni
+2014</p>
+<h2><a href="fuchs-4.html">Ein Fuchs für alle Fälle</a></h2>
+<p>Wer kreativ tätig ist, dem tut es manchmal gut, wenn er einen Ansprechpartner hat – zum Beispiel einen lebensklugen Fuchs wie in meiner Twitterserie „Fuchs und Ballerina“. <a href="fuchs-4.html">[→]</a></p>
+<p><i>332 Wörter //</i>&nbsp;
+<a href="archiv.html?serie">#serie&nbsp; </a>
+<br>
+&nbsp;</p>
+
+<script type="text/javascript">
+if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
+else { treffer = true; }
+</script>
+
+
+
 
 
 <script type="text/javascript">
