@@ -55,13 +55,13 @@
 <p>Laut <a href="http://caniuse.com/#feat=css-hyphens">caniuse.com</a> wird die CSS-Eigenschaft <em>hyphens</em> leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.</p>
 
 <h2 id="was_nicht_funktioniert">Was nicht funktioniert</h2>
-<p style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &apos;Times New Roman&apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;' class='donthyphenate'>mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich</p>
+<p class='donthyphenate' style='display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, &apos;Times New Roman&apos;, Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;'>mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich</p>
 <p>Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.</p>
 
 <p>Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen <a href="https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176">Fehlerbericht auf Launchpad</a> eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.</p>
 
 <p>Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.</p>
-<p style='clear:both;' class='hinterlegt'><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
+<p class='hinterlegt' style='clear:both;'><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
 Dan­ke für den Tipp von Ana­tol Bro­der (<a href='http://twitter.com/penibelst/'>@pe­ni­belst</a>)!</p>
 <p>---<br>
 <i>Rubrik(en):</i>&nbsp;
