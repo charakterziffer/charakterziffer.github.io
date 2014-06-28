@@ -4,7 +4,7 @@
 <link>http://charakterziffer.github.io/index.htm</link>
 <description>140 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
 <language>de-de</language>
-<copyright>Gerhard Großmann, postfach2b [ät] web.de</copyright>
+<copyright>Gerhard Großmann</copyright>
 <pubDate>Wed, 4 Jul 2012 00:00:00 +0100</pubDate>
 <atom:link href="http://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
 <image>
@@ -59,7 +59,7 @@
 
 &lt;p&gt;Übrigens: Viele der Tweets beruhen auf eigener Erfahrungen – obwohl ich bisher nicht als Ballerina tätig war ☺.&lt;br /&gt; &lt;a href=&quot;fuchs-3.html&quot;&gt;Ältere Folgen dieser Serie&lt;/a&gt; habe ich im Juli 2013 zusammengetragen.&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/fuchs-4.html</link>
-	<author>@cz+ (Gerhard Großmann)</author>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/fuchs-4.html</guid>
 	<pubDate>Wed, 18 Jun 2014 00:00:00 +0200</pubDate>
 </item>
@@ -68,7 +68,7 @@
 	<title>Neues Design für @cz+</title>
 	<description>&lt;p&gt;Ich hätte es nicht gedacht, aber mein Blog „@cz+“ ist ganz schön gewachsen. Seit November 2010 habe ich dreiundvierzig Artikel verfasst – zu viele, als dass die ursprüngliche Struktur weiterhin funktioniert hätte. Deswegen habe ich @cz+ nun umfassend technisch überarbeitet und auch grafisch weiterentwickelt. Weg vom früheren Design:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;material/blogdesign-alt.jpg&quot; alt=&quot;mein Blog bis April 2014&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;mein Blog bis April 2014&quot; src=&quot;material/blogdesign-alt.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Zu Beginn war dieses Blog eine reine Weiterführung meines Twitterprofils &lt;a title=&quot;mein Mikroblog auf Twitter&quot; href=&quot;http://twitter.com/charakterziffer&quot;&gt;@charakterziffer&lt;/a&gt;. Ich habe mehrere kurze Artikel auf einer einzelnen HTML-Seite versammelt, ein farbiges Quadrat vor jeder Überschrift sollte an einen Twitter-Avatar erinnern. Jeder Blogbeitrag war quasi ein längerer Tweet. Zunächst gab es weder Bilder noch verlinkte Materialien; alles, was für die Gestaltung gebraucht wurde, war in die eine Datei eingebettet.&lt;/p&gt;
 
@@ -86,7 +86,7 @@
 
 &lt;h2 id=&quot;gestalterisch_von_twitter_emanzipiert&quot;&gt;Gestalterisch von Twitter emanzipiert&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;material/blogdesign-vergleich.jpg&quot; alt=&quot;Vergleich von Überschriften und Randspalte&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Vergleich von Überschriften und Randspalte&quot; src=&quot;material/blogdesign-vergleich.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Von der grafischen Gestaltung her habe ich wenige, aber augenfällige Details verändert: Die Randspalte ist nun links statt rechts und der Seitenhintergrund hat ein sattes Grün bekommen statt dem blassen Zahlenmuster. Die Farbquadrate vor den Überschriften sind genauso verschwunden wie die drei letzten Tweets; damit möchte ich mein Blog gestalterisch stärker von Twitter trennen.&lt;/p&gt;
 
@@ -98,7 +98,7 @@
 
 &lt;p&gt;Ich bin gespannt auf Rückmeldungen zum neuen Design. Pseudonymes Kommentieren als Gast ist übrigens möglich, &lt;a href=&quot;anonym-kommentieren.html&quot;&gt;ich bin da nicht so&lt;/a&gt;. Weiterhin eine vergnügliche Lektüre mit @cz+!&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/neues-blogdesign.html</link>
-	<author>@cz+ (Gerhard Großmann)</author>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/neues-blogdesign.html</guid>
 	<pubDate>Tue, 27 May 2014 00:00:00 +0200</pubDate>
 </item>
@@ -159,7 +159,7 @@
 
 &lt;p&gt;Die vorangegangenen &lt;a href=&quot;erfundene-fakten-2.html&quot;&gt;Folgen 17–28&lt;/a&gt; habe ich vor rund einem Jahr veröffentlicht.&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/erfundene-fakten-3.html</link>
-	<author>@cz+ (Gerhard Großmann)</author>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-3.html</guid>
 	<pubDate>Wed, 30 Apr 2014 00:00:00 +0200</pubDate>
 </item>
@@ -201,7 +201,7 @@
 &lt;p class='hinterlegt' style='clear:both;'&gt;&lt;b&gt;UP­DATE:&lt;/b&gt; Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit &lt;b&gt;&amp;amp;shy;&lt;/b&gt; – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei&lt;b&gt;&amp;amp;shy;&lt;/b&gt;spiels&lt;b&gt;&amp;amp;shy;&lt;/b&gt;wei­se so.&lt;br /&gt;
 Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href='http://twitter.com/penibelst/'&gt;@pe­ni­belst&lt;/a&gt;)!&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/silbentrennung.html</link>
-	<author>@cz+ (Gerhard Großmann)</author>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/silbentrennung.html</guid>
 	<pubDate>Wed, 09 Apr 2014 00:00:00 +0200</pubDate>
 </item>
@@ -222,7 +222,7 @@ Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href='http://twitter.com/peni
 
 &lt;p&gt;Inzwischen taucht Richter Di auch in Romanen anderer Autoren auf. „Halskette und Kalebasse“ wurde als Hörspiel produziert und es gibt den Film „Detective Dee und das Geheimnis der Phantomflammen“.&lt;/p&gt;</description>
 	<link>http://charakterziffer.github.io/richter-di.html</link>
-	<author>@cz+ (Gerhard Großmann)</author>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/richter-di.html</guid>
 	<pubDate>Thu, 27 Feb 2014 00:00:00 +0100</pubDate>
 </item>
