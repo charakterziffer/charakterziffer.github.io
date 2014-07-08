@@ -29,7 +29,10 @@
 
     <p class="datum">Mo, 4. Juni 2012</p>
 <h1>OpenType-Features im Browser</h1>
-<link rel='stylesheet' type='text/css' href='bestand/extra.css' /><p class='hinterlegt'><b>UPDATE:</b> I’ve made an extra page with a clear <a href='http://charakterziffer.github.io/otfeat/index.html'>OpenType feature test</a>.</p>
+<link href="bestand/extra.css" rel="stylesheet" type="text/css" />
+
+<p class="hinterlegt"><b>UPDATE:</b> I’ve made an extra page with a clear <a href="http://charakterziffer.github.io/otfeat/index.html">OpenType feature test</a>.</p>
+
 <p>Vor gut zwei Jahren entwickelte sich ein brauchbarer Standard für Webfonts. Heute ist es möglich, beliebige Schriften auf Internetseiten zu verwenden – auch wenn diese nicht auf dem Rechner des Betrachters installiert sind. Die Schriftdatei wird einfach per CSS verlinkt:</p>
 
 <pre><code>@font-face {
@@ -41,42 +44,51 @@ src: url('schrift.eot?#iefix') format('embedded-opentype'),
 url('schrift.woff') format('woff'),
 /* für Android */
 url('schrift.ttf') format('truetype');
-}</code></pre>
+}
+</code></pre>
 
 <p>Die nächste große Entwicklung in Sachen Webschriften ist wohl, OpenType-Features im Browser nutzen zu können. Das sind zusätzliche Funktionen, die in professionelle Schriften hineinprogrammiert wurden. Klar ist das mehr etwas für Spezialisten und Detailverliebte. Manchmal ist es aber sehr praktisch, Schwungbuchstaben einzusetzen oder für den Fließtext auf Mediävalziffern zurückzugreifen.</p>
 
 <p>Um sehr leicht testen zu können, welche OpenType-Features ein Browser unterstützt (und ob man die Syntax richtig formuliert hat), habe ich Otfeat gestaltet. Die Webschrift enthält jede Menge OpenType-Features zum Ausprobieren. Und so sieht sie aus (wenn dein Browser Webschriften unterstützt):</p>
-<p class='otfeat'>ab­cdef­ghi­jklm<br />
+
+<p class="otfeat">ab­cdef­ghi­jklm<br />
 nopqr­stuvwxyz<br />
 AB­CDEF­GHIJ<br />
 KLM­NOPQR­STUVWZ</p>
+
 <p>Der hier angezeigte Text ist das kleine und das große Alphabet. Jeder Buchstabe wird als Kästchen angezeigt und steht für ein OpenType-Feature (z. B. a = smcp, Kapitälchen). Je nach Browser sind einige Kästchen vielleicht schon schwarz. Bei mir im Firefox sind das <em>locl</em>, <em>kern</em>, <em>liga</em>, <em>clig</em> und <em>calt</em> (= Lokale Varianten, Kerning, Ligaturen, kontextabhängige Ligaturen und kontextabhängige Alternativen). Diese Features sind mit meinem Browsereinstellungen automatisch aktiviert.</p>
 
 <p>Mit dem CSS-Befehl <code>font-feature-settings</code> kann ich jetzt weitere OpenType-Features einschalten. Der gleiche Text wie oben in der gleichen Schriftart sieht dann so aus (weiße Kästchen mit X sind nicht mit einer Funktion belegt):</p>
-<p class='otfeat aktfeat'>ab­cdef­ghi­jklm<br />
+
+<p class="otfeat aktfeat">ab­cdef­ghi­jklm<br />
 nopqr­stuvwxyz<br />
 AB­CDEF­GHIJ<br />
 KLM­NOPQR­STUVWZ</p>
+
 <p>Der CSS-Code, um OpenType-Features zu aktivieren, wird bislang nur mit Vendor-Prefix in einigen aktuellen Browsern unterstützt. Für Chrome (17+), Firefox (15+), Internet Explorer (10+) und als zukünftiger Standard-Syntax lautet der Code (jeweils für die ersten drei Features):</p>
 
-<pre><code>-webkit-font-feature-settings: &quot;smcp&quot;, &quot;c2sc&quot;, &quot;c2pc&quot;;
--moz-font-feature-settings: &quot;smcp&quot; 1, &quot;c2sc&quot; 1, &quot;c2pc&quot; 1;
--ms-font-feature-settings: &quot;smcp&quot; 1, &quot;c2sc&quot; 1, &quot;c2pc&quot; 1;
-font-feature-settings: &quot;smcp&quot;, &quot;c2sc&quot;, &quot;c2pc&quot;;</code></pre>
+<pre><code>-webkit-font-feature-settings: "smcp", "c2sc", "c2pc";
+-moz-font-feature-settings: "smcp" 1, "c2sc" 1, "c2pc" 1;
+-ms-font-feature-settings: "smcp" 1, "c2sc" 1, "c2pc" 1;
+font-feature-settings: "smcp", "c2sc", "c2pc";
+</code></pre>
 
 <p>Wie gut das im IE10 umgesetzt wird, kann ich leider nicht testen. Was man aber im Firefox und Chrome herausfinden kann: Das Feature <em>fina</em> wird nicht korrekt interpretiert. Das Kästchen mit dem Z sollte nur dann schwarz werden, wenn es am Ende eines Wortes steht. Im Folgenden also nur an der dritten Position:</p>
-<p class='otfeat aktfeat'>Z XZX XXZ</p>
+
+<p class="otfeat aktfeat">Z XZX XXZ</p>
+
 <p>Noch ein Hinweis: Die Kleinbuchstaben a–z repräsentieren einzelne OpenType-Features, die in beliebiger Reihenfolge abgefragt werden können. Die Großbuchstaben testen Ligaturen und kontextabhängige Varianten. Damit das OpenType-Feature hier aktiv wird, tippt man am einfachsten ein Alphabet. Zumindest müssen aufeinander folgen: AB, CD, EF, GH, IJ, RST und UVW. Das Paar KL muss vor einem M stehen, M und N bedingen einander (in der Reihenfolge) und das O benötigt ein vorangehendes N.</p>
 
-<p>Meine Schrift <em>Otfeat</em> steht unter der Creative Commons Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen gestellt (<img class='texticon' alt='CC-BY-NC-SA' src='material/cc-by-nc-sa.png' />). Sie kann hier in den drei typischen Webfont-Formaten heruntergeladen werden (Rechtsklick, Ziel speichern unter …).</p>
+<p>Meine Schrift <em>Otfeat</em> steht unter der Creative Commons Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen gestellt (<img class="texticon" src="material/cc-by-nc-sa.png" alt="CC-BY-NC-SA" />). Sie kann hier in den drei typischen Webfont-Formaten heruntergeladen werden (Rechtsklick, Ziel speichern unter …).</p>
 
-<p><a class='klickfeld' style='margin: 1.038em 5%; width:19%; float:left;' href='otfeat/otfeat.woff'>Otfeat als<br /><i>woff-Datei</i></a></p>
+<p><a class="klickfeld" href="otfeat/otfeat.woff" style="margin: 1.038em 5%; width:19%; float:left;">Otfeat als<br /><i>woff-Datei</i></a></p>
 
-<p><a class='klickfeld' style='margin: 1.038em 5%; width:19%; float:left;' href='otfeat/otfeat.eot'>Otfeat als<br /><i>eot-Datei</i></a></p>
+<p><a class="klickfeld" href="otfeat/otfeat.eot" style="margin: 1.038em 5%; width:19%; float:left;">Otfeat als<br /><i>eot-Datei</i></a></p>
 
-<p><a class='klickfeld' style='margin: 1.038em 5%; width:19%;' href='otfeat/otfeat.ttf'>Otfeat als<br /><i>ttf-Datei</i></a></p>
+<p><a class="klickfeld" href="otfeat/otfeat.ttf" style="margin: 1.038em 5%; width:19%;">Otfeat als<br /><i>ttf-Datei</i></a></p>
 
 <p>Bei Fragen, Ideen und Verbesserungsvorschlägen freue ich mich über eine Mail an <em>postfach2b [ät] web.de</em>.</p>
+
 <p>---<br>
 <i>Rubrik(en):</i>&nbsp;
 <a href="archiv.html?typografie">#typografie&nbsp; </a>
