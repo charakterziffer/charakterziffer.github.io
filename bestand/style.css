@@ -96,7 +96,7 @@ a:active {color:#e32;}
 a:focus {outline:1px dotted #444;}
 a:target {background-color:#cf8; color:#444;}
 
-p a.klickfeld {margin:1.038em 30%; width:40%;
+a.klickfeld {margin:1.038em 30%; width:40%;
 	display:inline-block; padding: 0.25em 0.4em 0.35em;
 	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
 	color:#222;	text-align:center; background-color: #deb;
@@ -104,13 +104,21 @@ p a.klickfeld {margin:1.038em 30%; width:40%;
 
 /* Bilder */
 
-img {max-width:98.5%; height:auto; border-width:0}
+img {max-width:98.5%; height:auto; border-width:0;
+	-ms-interpolation-mode:bicubic;}
 p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
+
+figure {margin:1.7em 0 1.4em; line-height:0; border:0;
+	width:98.5%; background: #eee; height:auto;}
+figure img {max-width:100%;}
+figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font: italic 0.9em/1.556 'Source Sans Pro', Calibri, Arial, sans-serif;}
+figcaption a {font-style:normal; font-size:0.9em;}
+
 .logo { float:left; margin-right:0.8em;}
 .texticon {margin:0 !important; position:relative; top:2px;}
 
-/* Werbediv von Formular-Chef verstecken
-div[style*="font-family:arial;"] {left:-9999px;} */
+/* Werbediv von Formular-Chef verstecken */
+div[style*="font-family:arial;"] {left:-9999px;}
 /* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
 .onlex_counter {display:none;}
 
@@ -155,6 +163,8 @@ body {padding:2px;}
 #hauptfeld {margin:-1.5em 0 0; padding: 0 13px 2.5em 15px;
 	border:0; background-color:transparent;}
 #randspalte h1 {margin:0.6em 0;}
+.datum {margin-top: -0.2em;}
+p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
 label {width: 50%; float: left; top:0.2em;}
 form > div > div {width: 78%; float: right;}
 input[type=text], input[type=email], input[type=url],
@@ -171,6 +181,6 @@ input[type=password] {width: 100%;}
 @media (max-width: 25em) {
 body {padding:1px;}
 #randspalte h1 {margin:0;}
-p.datum {margin-top: 2.3em;}
+p + .datum {margin-top: 2.3em;} /* Abstand in Liste auf Startseite */
 blockquote {border-width:0.4em; padding-left:0.5em;}
 }
