@@ -5,7 +5,8 @@
 	Text: #222 (fett/kursiv #111), #222–#444 (Titel), #666 (Datum) */
 
 /* Schriften: Source Sans Pro Regular & Italic, Bitter */
-/* local('Source Sans Pro'), local('SourceSansPro-Regular') entfernt, weil Android 2.2 und 2.3 sonst gar keine Schriften laden */
+/* local('Source Sans Pro'), local('SourceSansPro-Regular') entfernt,
+ * weil Android 2.2 und 2.3 sonst gar keine Schriften laden */
 
 @font-face {font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
@@ -48,7 +49,9 @@ h3 {font-size:0.9em; line-height:1.556; color:#222;
 
 p, ul, ol {font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
 	color:#222; font-weight:400; margin-bottom:-0.3em;
-	-moz-font-feature-settings: "onum"; -webkit-font-feature-settings: "onum"; -ms-font-feature-settings: "onum" 1; font-feature-settings: "onum";
+	-moz-font-feature-settings: "onum";
+	-webkit-font-feature-settings: "onum";
+	-ms-font-feature-settings: "onum" 1; font-feature-settings: "onum";
 /*	statt CSS-hyphens wird noch das Javascript hyphenator.js verwendet
 	-webkit-hyphens: auto; -moz-hyphens: auto;
 	-ms-hyphens: auto; hyphens: auto; */}
@@ -111,7 +114,8 @@ p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
 figure {margin:1.7em 0 1.4em; line-height:0; border:0;
 	width:98.5%; background: #eee; height:auto;}
 figure img {max-width:100%;}
-figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font: italic 0.9em/1.556 'Source Sans Pro', Calibri, Arial, sans-serif;}
+figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font: italic
+   0.9em/1.556 'Source Sans Pro', Calibri, Arial, sans-serif;}
 figcaption a {font-style:normal; font-size:0.9em;}
 
 .logo { float:left; margin-right:0.8em;}

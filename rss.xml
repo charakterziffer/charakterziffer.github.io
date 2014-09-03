@@ -10,8 +10,28 @@
 <image>
 	<url>http://charakterziffer.github.io/bestand/profilbild.png</url>
 	<title>@cz+ // Blog von @charakterziffer</title>
-	<link>http://charakterziffer.github.io/index.htm</link>
+	<link>http://charakterziffer.github.io/index.html</link>
 </image>
+
+<item>
+	<title>Nützliche Kommentare</title>
+	<description>&lt;p&gt;Seine eigenen Meinungen und Gedanken zu einem Text äußern zu können, das empfinde ich als eines der besten Dinge, die das Internet zu bieten hat. Es ermöglicht den Austausch zwischen ganz unterschiedlichen Teilnehmern, kann erhellen, Standpunkte verschieben und Verständnis fördern. Lehrreiche Kommentare sehe ich zum Beispiel im Fontblog unter dem Artikel &lt;a href=&quot;http://www.fontblog.de/braucht-die-welt-einen-deutschen-e-book-award&quot;&gt;„Braucht die Welt einen deutschen E-Book-Award?“&lt;/a&gt; oder bei Hacker News über &lt;a href=&quot;https://news.ycombinator.com/item?id=8052908&quot;&gt;„How useful ist mapcode?“&lt;/a&gt; (englisch).&lt;/p&gt;
+
+&lt;p&gt;Als Leser erhalte ich weitere Blickwinkel, komme über die Kommentarfunktion in direkten Kontakt mit dem Verfasser, kann fehlende Punkte ergänzen und auf Fehler aufmerksam machen. Als Autor erhalte ich eine schnelle Rückmeldung und lerne vielleicht selbst noch etwas. Ich finde deshalb, dass man die Hürden möglichst niedrig halten sollte, um einfaches Kommentieren zu ermöglichen. Dazu gehört für mich, auf eine Anmeldung zu verzichten und &lt;a href=&quot;anonym-kommentieren.html&quot;&gt;keine Klarnamen einzufordern&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Im Gegenzug sollten Kommentare aber stark „kuratiert“ werden: Was unsachlich oder beleidigend ist, fliegt raus oder wird gekürzt. Die genaue Grenze ist sicherlich nicht einfach zu ziehen, vor allem was Polemik oder Übertreibung angeht. Ein bissiger Schreibstil kann einer Diskussion nämlich wunderbar Pfeffer geben, sie aber genauso in einen Kommentarkrieg eskalieren lassen. Ich persönlich ziehe die Grenze dort, wo nicht mehr ein Argument, sondern die dahinterstehende Person angegriffen wird.&lt;/p&gt;
+
+&lt;p&gt;Wo besonders viele Leute mitkommentieren, wird es schwierig, eine Online-Diskussion „auf Kurs“ zu halten. Stefan Plöchinger von der Süddeutschen Zeitung schilderte &lt;a href=&quot;http://ploechinger.tumblr.com/post/90956559317/besser-reden-mit-unseren-lesern&quot;&gt;in einem Blogartikel&lt;/a&gt; seine Erfahrungen und hat nach besseren Lösungen für den Dialog mit Lesern gesucht. Seit Anfang der Woche können Leser auf der Seite der Süddeutschen Zeitung &lt;a href=&quot;http://www.sueddeutsche.de/kolumne/ihre-sz-lassen-sie-uns-diskutieren-1.2095271&quot;&gt;nur noch ausgewählte Artikel kommentieren&lt;/a&gt;. Dadurch müssen die Redakteure weniger Kommentare im Auge behalten und können Diskussionen leichter auf eine sachliche Ebene zurückholen. Oder ist das ein Rückschritt in eine Zeit, wo Verlage kontrollieren, was veröffentlicht wird, ohne dass Leser korrigierend eingreifen könnten?&lt;/p&gt;
+
+&lt;p&gt;Das Problem mit zu vielen Kommentaren habe ich hier bei @cz+ ja „Gott sei Dank“ nicht. Nein, ernsthaft: Als Autor freue ich mich, wenn Leser meinem Artikel etwas hinzufügen. Es ist eine kleine Bestätigung, dass meine Inhalte relevant erscheinen und man sich damit auseinandersetzen mag.&lt;/p&gt;
+
+&lt;p&gt;Als kleine Anregung zum Kommentieren nenne ich hier mal ein paar Fragen: Was ist für eine gelungene Online-Diskussion notwendig? Braucht es feste Regeln? Kommentareinstufung durch Leser? Wo beginnt Zensur? Oder ist die Kommentarkultur in Zeiten von Facebook nicht mehr zu retten?&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/nuetzliche-kommentare.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/nuetzliche-kommentare.html</guid>
+	<pubDate>Thu, 04 Sep 2014 00:00:00 +0200</pubDate>
+</item>
 
 <item>
 	<title>Fotorealistische Malerei</title>
@@ -192,54 +212,6 @@
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-3.html</guid>
 	<pubDate>Wed, 30 Apr 2014 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Silbentrennung im Browser</title>
-	<description>&lt;p&gt;In gedruckten Büchern ist es völlig normal, Wörter falls angebracht am Zeilenende zu trennen. Auf Internetseiten ist das noch eher die Ausnahme. Dabei hätte Silbentrennung auch online ihre Vorteile: Sie ermöglicht einen ruhigeren Zeilenfall (bei linksbündigem Text) oder eine gleichmäßigere Textverteilung (im Blocksatz).&lt;/p&gt;
-
-&lt;p&gt;Besonders in schmalen Textspalten ist Silbentrennung oft unverzichtbar. Hier gibt es sehr häufige Zeilenwechsel und ein unruhig flatternder Text würde das Lesen stark erschweren. In deutschsprachigen Texten gibt es teilweise lange Wörter, die ohne Trennung große Lücken in den Text reißen können.&lt;/p&gt;
-
-&lt;p&gt;Technisch spricht heutzutage übrigens nichts mehr dagegen, Silbentrennung auf Websites anzuwenden. Sie erschwert weder das Kopieren von Texten (hier tauchen keine Trennstriche auf) noch verhindert sie die Suche nach Begriffen (Trennstriche werden ignoriert). Und in Browsern, die Silbentrennung nicht unterstützen, bleibt es einfach bei ungetrenntem Text.&lt;/p&gt;
-
-&lt;h2 id=&quot;umsetzung-mit-javascript&quot;&gt;Umsetzung mit Javascript&lt;/h2&gt;
-
-&lt;p&gt;Hier in meinem Blog nutze ich das &lt;a href=&quot;https://code.google.com/p/hyphenator/&quot;&gt;JavaScript-Programm Hyphenator.js&lt;/a&gt;. Man definiert dazu zunächst die Sprache der Website: &lt;code&gt;&amp;lt;html lang=&quot;de&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse &lt;em&gt;.hyphenate&lt;/em&gt; aus (beispielsweise &lt;code&gt;&amp;lt;body class=&quot;hyphenate&quot;&amp;gt;&lt;/code&gt;, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse &lt;em&gt;.donthyphenate&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mit Hilfe der Seite &lt;a href=&quot;http://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html&quot;&gt;merge+pack&lt;/a&gt; (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine &lt;a href=&quot;bestand/hyphenate.js&quot;&gt;eigene Hyphenator-Datei&lt;/a&gt; für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;http://deine-adresse.de/PFAD/hyphenator.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;alternative-die-css-eigenschaft-hyphens&quot;&gt;Alternative: Die CSS-Eigenschaft „hyphens“&lt;/h2&gt;
-
-&lt;p&gt;Einfacher funktioniert die Silbentrennung mit CSS. Auch hier legt man zunächste die Sprache der Website fest. Dann öffnet man seine CSS-Datei und gibt den zu trennenden Elementen (z. B. allen p-Absätze) die Eigenschaft:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;-ms-hyphens: auto; -webkit-hyphens: auto;
--moz-hyphens: auto; hyphens: auto;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Laut &lt;a href=&quot;http://caniuse.com/#feat=css-hyphens&quot;&gt;caniuse.com&lt;/a&gt; wird die CSS-Eigenschaft &lt;em&gt;hyphens&lt;/em&gt; leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.&lt;/p&gt;
-
-&lt;h2 id=&quot;was-nicht-funktioniert&quot;&gt;Was nicht funktioniert&lt;/h2&gt;
-
-&lt;p class=&quot;donthyphenate&quot; style=&quot;display:block; float:left; width:3em; overflow:hidden; border-right:1px solid #281; margin:1.2em 1em 0.5em 0; font:1em/1.32 FreeSerif, 'Times New Roman', Times; -ms-hyphens:auto; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto;&quot;&gt;mmmiii Türklinke Übungen wörtlich künftige öffentlich Überschriften überempfindlich&lt;/p&gt;
-
-&lt;p&gt;Natürlich kann man die Silbentrennung auf Webseiten bei weitem (noch) nicht so genau steuern wie in Printprodukten. Zum Beispiel kann man nicht festlegen, wie viele Trennungen am Zeilenende aufeinander folgen dürfen. Es ist auch sehr aufwendig, genaue Trennstellen zu definieren – so kann es zu unschönen Trennungen kommen wie Spargel-der oder Urin-sekten.&lt;/p&gt;
-
-&lt;p&gt;Und manchmal sind in bestimmten Browservarianten auch die falschen Trennmuster verlinkt. So erzeugt mein Firefox (Version 28, canonical 1.0), der bei meinem Betriebssystem Ubuntu 12.04 der Standard-Browser ist, im Beispiel links lauter falsche Trennungen. Habe dazu einen &lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1209176&quot;&gt;Fehlerbericht auf Launchpad&lt;/a&gt; eingereicht, aber bislang bin ich wohl der einzige, dem der Bug aufgefallen ist.&lt;/p&gt;
-
-&lt;p&gt;Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.&lt;/p&gt;
-
-&lt;p class=&quot;hinterlegt&quot; style=&quot;clear:both;&quot;&gt;&lt;b&gt;UP­DATE:&lt;/b&gt; Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit &lt;b&gt;&amp;amp;shy;&lt;/b&gt; – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei&lt;b&gt;&amp;amp;shy;&lt;/b&gt;spiels&lt;b&gt;&amp;amp;shy;&lt;/b&gt;wei­se so.&lt;br /&gt;
-Dan­ke für den Tipp von Ana­tol Bro­der (&lt;a href=&quot;http://twitter.com/penibelst/&quot;&gt;@pe­ni­belst&lt;/a&gt;)!&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/silbentrennung.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
-	<guid isPermaLink="true">http://charakterziffer.github.io/silbentrennung.html</guid>
-	<pubDate>Wed, 09 Apr 2014 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
