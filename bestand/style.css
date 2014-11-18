@@ -1,4 +1,4 @@
-/* CSS-Stile für das cz+Blog, verfasst von Gerhard Großmann */
+/* CSS-Stile für das Blog @cz+, verfasst von Gerhard Großmann */
 
 /* Farben: #281 (grün), #3a1 (hellgrün), #deb (blassgrün)
 	Akzente: #839 (lila), #e32 (rot), #fdb (blassrot)
@@ -79,7 +79,7 @@ ul li p {margin:0.7em 0;}
 ol {margin-left: -1.2em;}
 
 blockquote {margin:1.4em 0 1.3em; padding: 0 0.2em 0 0.6em;
-	border-left:0.7em solid #deb; background-color:#f7f7f7;}
+	border-left:0.7em solid #deb; background-color:#f4f4f4;}
 blockquote + blockquote {margin-top:1.7em;}
 
 code, pre {padding:0 0.1em; margin: 1.1em 0 -0.33em; color:#222;
@@ -99,7 +99,7 @@ a:active {color:#e32;}
 a:focus {outline:1px dotted #444;}
 a:target {background-color:#cf8; color:#444;}
 
-a.klickfeld {margin:1.038em 30%; width:40%;
+a.klickfeld.klickfeld {margin:1.038em 30%; width:40%;
 	display:inline-block; padding: 0.25em 0.4em 0.35em;
 	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
 	color:#222;	text-align:center; background-color: #deb;
@@ -109,7 +109,7 @@ a.klickfeld {margin:1.038em 30%; width:40%;
 
 img {max-width:98.5%; height:auto; border-width:0;
 	-ms-interpolation-mode:bicubic;}
-p > img:only-child {margin:0.7em 0 0.3em;} /* Extra-Abstand */
+p > img {margin:0.7em 0 0.3em;} /* Extra-Abstand */
 
 figure {margin:1.7em 0 1.4em; line-height:0; border:0;
 	width:98.5%; background: #eee; height:auto;}
@@ -119,7 +119,7 @@ figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font: italic
 figcaption a {font-style:normal; font-size:0.9em;}
 
 .logo { float:left; margin-right:0.8em;}
-.texticon {margin:0 !important; position:relative; top:2px;}
+.texticon {margin:0; position:relative; top:2px;}
 
 /* Werbediv von Formular-Chef verstecken */
 div[style*="font-family:arial;"] {left:-9999px;}
