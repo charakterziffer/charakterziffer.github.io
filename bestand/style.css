@@ -83,7 +83,7 @@ blockquote {margin:1.4em 0 1.3em; padding: 0 0.2em 0 0.6em;
 blockquote + blockquote {margin-top:1.7em;}
 
 code, pre {padding:0 0.1em; margin: 1.1em 0 -0.33em; color:#222;
-	font: 0.9em/1 'Source Code Pro',Monaco,Consolas,'DejaVu Sans Mono', monospace;}
+	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono', monospace;}
 pre > code {font-size:1em; line-height:1.556;
 	white-space: pre; white-space: pre\9; /* IE7+ */
 	white-space: -moz-pre-wrap; white-space: pre-wrap;}
