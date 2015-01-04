@@ -41,7 +41,7 @@
 
 <p>Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse <em>.hyphenate</em> aus (beispielsweise <code>&lt;body class="hyphenate"&gt;</code>, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse <em>.donthyphenate</em>.</p>
 
-<p>Mit Hilfe der Seite <a href="http://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine <a href="bestand/hyphenate.js">eigene Hyphenator-Datei</a> für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
+<p>Mit Hilfe der Seite <a href="https://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine <a href="bestand/hyphenate.js">eigene Hyphenator-Datei</a> für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
 
 <pre><code>&lt;script src="http://deine-adresse.de/PFAD/hyphenator.js" type="text/javascript"&gt;&lt;/script&gt;
 </code></pre>
@@ -67,7 +67,7 @@
 <p>Dennoch: Ich würde empfehlen, die Silbentrennung zu aktivieren. Die Wahrscheinlichkeit für störende Fehler ist in der Regel geringer als der Nutzen eines gut lesbaren Textflusses.</p>
 
 <p class="hinterlegt" style="clear:both;"><b>UP­DATE:</b> Eine wei­te­re (und tod­si­che­re) Me­tho­de ar­bei­tet mit <b>&amp;shy;</b> – das sind be­ding­te Trenn­stri­che, die nur dann an­ge­zeigt wer­den, wenn ein Wort am Zei­len­en­de tat­säch­lich um­bricht. Ein­fach ma­nu­ell im Quell­text an den po­ten­zi­el­len Trenn­stel­len ein­fü­gen: Bei<b>&amp;shy;</b>spiels<b>&amp;shy;</b>wei­se so.<br />
-Dan­ke für den Tipp von Ana­tol Bro­der (<a href="http://twitter.com/penibelst/">@pe­ni­belst</a>)!</p>
+Dan­ke für den Tipp von Ana­tol Bro­der (<a href="https://twitter.com/penibelst/">@pe­ni­belst</a>)!</p>
 
 <p>---<br>
 <i>Rubrik(en):</i>&nbsp;

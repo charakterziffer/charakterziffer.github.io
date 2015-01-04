@@ -91,19 +91,18 @@ pre > code {font-size:1em; line-height:1.556;
 
 /* Links */
 
-a:link {color:#281; font-family:Bitter,Georgia,serif;
-	text-decoration:none;}
-p a:link {font-size:0.9em;}
+a:link {text-decoration:none; color:#281;}
+a:link:not(.klickfeld) {font-family:Bitter,Georgia,serif;}
+p a:link:not(.klickfeld) {font-size:0.9em;} /* Überschriften-Links und Klickfelder nicht verkleinern */
 a:visited {color:#839;}
 a:hover {color:#3a1;}
 a:active {color:#e32;}
 a:focus {outline:1px dotted #444;}
 a:target {background-color:#cf8; color:#444;}
 
-a.klickfeld.klickfeld {margin:1.038em 30%; width:40%;
+a.klickfeld {margin:1.038em 30%; width:40%;
 	display:inline-block; padding: 0.25em 0.4em 0.35em;
-	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
-	color:#222;	text-align:center; background-color: #deb;
+	text-align:center; background-color: #deb; color:#222;
 	border:0.062em solid #281; box-shadow: 1px 1px 2px #bbb;}
 
 /* Bilder */
@@ -115,8 +114,7 @@ p > img {margin:0.7em 0 0.3em;} /* Extra-Abstand */
 figure {margin:1.7em 0 1.4em; line-height:0; border:0;
 	width:98.5%; background: #eee; height:auto;}
 figure img {max-width:100%;}
-figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font: italic
-   0.9em/1.556 'Source Sans Pro', Calibri, Arial, sans-serif;}
+figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font-size: 0.9em; line-height:1.556; font-style: italic;}
 figcaption a {font-style:normal; font-size:0.9em;}
 
 .logo { float:left; margin-right:0.8em;}
