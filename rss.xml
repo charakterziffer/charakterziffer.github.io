@@ -14,10 +14,60 @@
 </image>
 
 <item>
+	<title>Mit Cookies einverstanden?</title>
+	<description>&lt;p&gt;Im Grunde ist die &lt;a href=&quot;http://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32002L0058&quot; title=&quot;zum Gesetzestext&quot;&gt;Richtlinie 2001/58/EG&lt;/a&gt; der Europäischen Gemeinschaft sehr positiv für den Datenschutz. Sie regelt zum Beispiel, dass man automatischen Werbe-Anrufen oder -Mails vorher zustimmen muss (Artikel 13 §1). Eine dieser Vorschriften sorgt allerdings dafür, dass Internetnutzer, die sich um ihre Privatsphäre sorgen, eher gegängelt werden: die Warnung vor Cookies.&lt;/p&gt;
+
+&lt;p&gt;Er ist gut gemeint, der Hinweis mit dem Websites ihre Nutzer erst um Erlaubnis fragen, bevor sie in deren Browser einen &lt;a href=&quot;https://www.bsi.bund.de/DE/Themen/Cyber-Sicherheit/Themen/Sicherheitsvorfaelle/AktiveInhalte/definitionen/cookies.html&quot; title=&quot;Erklärung vom Bundesamt für Sicherheit in der Informationstechnik&quot;&gt;Cookie&lt;/a&gt; ablegen. Schließlich lässt sich über solche kleinen Textschnippsel feststellen, wie oft ein Besucher vorbeikommt, was er sich ansieht oder sogar, welche Seiten er sonst noch besucht.&lt;/p&gt;
+
+&lt;p&gt;In der Praxis sehen Cookie-Warnungen dann zum Beispiel so aus:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/cookiewarnungen.png&quot; alt=&quot;Verschiedene Cookie-Warnungen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Hinweise stehen oft in schmalen Leisten am oberen oder unteren Rand der Seite. Deutlich auffälliger ist es, wenn sich die Cookie-Warnung als Overlay über die gesamte Website liegt (Beispiel bei der &lt;a href=&quot;http://sourceforge.net/&quot;&gt;Open-Source-Gemeinschaft SourceForge &lt;/a&gt;). Man kann erst dann auf die Inhalte zugreifen, wenn man sich mit den Cookies einverstanden erklärt hat. Hat man sein Einverständnis dann gegeben, wird das im eigenen Browser gespeichert und zwar, nun ja, als Cookie. Das ist technisch der einfachste (und einzig praktikable?) Weg.&lt;/p&gt;
+
+&lt;h2 id=&quot;cookies-verwalten-mach-ich-schon-selbst&quot;&gt;Cookies verwalten? Mach ich schon selbst!&lt;/h2&gt;
+
+&lt;p&gt;Dabei kann doch schon seit über 15 Jahren jeder Internetnutzer selbst bestimmen, ob er Cookies akzeptiert. Bereits im Internet-Explorer 4 (erschien im September 1997) konnte man einstellen, ob eine Seite Datenkrümel im Browser speichern darf oder nicht. Heute kann man sogar genau festlegen, welche Websites Cookies setzen dürfen und wie lange – und das ganz ohne Hinweisbanner.&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot; style=&quot;float:right; width:30%; margin:1.25em 0.2em 0.7em 0.7em; padding: 0.25em 0.4em 0.35em; background-color: #deb;&quot;&gt;Anleitungen für unterschiedliche Browser, wie man den Umgang mit Cookies einstellt: &lt;a href=&quot;https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen&quot;&gt;Firefox&lt;/a&gt;, &lt;a href=&quot;https://support.google.com/chrome/answer/95647?hl=de&quot;&gt;Chrome&lt;/a&gt;, &lt;a href=&quot;http://windows.microsoft.com/de-de/internet-explorer/delete-manage-cookies#ie=ie-11&quot;&gt;Internet Explorer&lt;/a&gt; (rechts oben Version auswählen), &lt;a href=&quot;http://support.apple.com/kb/PH5042&quot;&gt;Safari (OS&amp;nbsp;X)&lt;/a&gt;, &lt;a href=&quot;http://support.apple.com/kb/HT1677?viewlocale=de_DE&quot;&gt;Safari (mobil)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ich persönlich akzeptiere Cookies beim Surfen, habe aber eingestellt, sie bis auf zwei Ausnahmen wieder zu löschen, sobald ich meinen Browser schließe. So verhindere ich, dass Websites mein Verhalten auf längere Zeit verfolgen können, kann aber trotzdem Funktionen nutzen, die Cookies benötigen (z.&lt;small&gt; &lt;/small&gt;B. Warenkorb, Anmeldung, temporäre Merkzettel).&lt;/p&gt;
+
+&lt;h2 id=&quot;technische-umsetzung-mangelhaft&quot;&gt;Technische Umsetzung: mangelhaft&lt;/h2&gt;
+
+&lt;p&gt;Und hier ist das Problem: Aufgeklärte Nutzer, die Ihre Cookies selbst verwalten (und löschen), bekommen die nervigen Cookie-Hinweise jedes Mal wieder angezeigt – denn der Einverständnis-Cookie wird ja auch immer wieder gelöscht. Wer sich dagegen überhaupt nicht mit Cookies beschäftigt, hat nach einem Mal wegklicken auf ewig seine Ruhe.&lt;/p&gt;
+
+&lt;p&gt;So wie die Richtlinie im Augenblick umgesetzt ist, erreicht sie genau das Gegenteil dessen, was sie beabsichtigt. Anstatt dafür zu sorgen, dass Internetnutzer sich bewusst mit Datenschutz beschäftigen, müssen wir nun eine weitere unerwünschte Meldung wegklicken, wie wir sowieso nicht lesen (und das immer wieder, wenn wir uns bereits um unsere Privatsphäre kümmern).&lt;/p&gt;
+
+&lt;p&gt;Eine alternative Umsetzung wäre gewesen, einen Cookie erst mal zu setzen ohne den Nutzer darüber zu informieren. Erst wenn der Cookie dann ausgelesen wird, muss ein Hinweis angezeigt und ein Einverständnis- bzw. Ablehnungs-Cookie gespeichert werden. Dazu müsste das Gesetz aber festlegen, dass nicht das Setzen, sondern das erneute Auslesen eines Cookies in die Privatsphäre eingreift und erst darüber informiert werden muss.&lt;/p&gt;
+
+&lt;h2 id=&quot;meine-bergangslsung&quot;&gt;Meine Übergangslösung&lt;/h2&gt;
+
+&lt;p&gt;Mit meinen jetzigen Cookie-Einstellungen bin ich sehr zufrieden und möchte sie auch nicht ändern. Um die lästigen Warnungen trotzdem nicht immer wieder angezeigt zu bekommen, verwende ich einen Werbeblocker, den ich mit meinen eigenen Filtern füttere (gegen unaufdringliche Werbung habe ich grundsätzlich nichts, deshalb habe ich keine vorgefertigte Filterliste abonniert). Meine Filter sind unter anderem diese:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;youtube.com##div[class*=&quot;cookie-alert&quot;]
+twitter.com##div[class*=&quot;cookie-notice&quot;]
+arte.tv##div[class*=&quot;cookie-banner&quot;]
+omgubuntu.co.uk##div[class=&quot;entry-share&quot;]
+##div[id=&quot;cookiewarning&quot;]
+||truste.com*.js*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;(Der vorletzte Filter blockiert ein Wordpress-Plugin; der letzte einen Datenschutzservice, der ein Skript für eine Overlay-Warnung anbietet.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ich bin gespannt, ob sich eine andere technische Umsetzung irgendwann etabliert, oder ob wir in Zukunft noch mehr solche gut gemeinten Einblendungen angezeigt bekommen.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/cookiewarnung.html</link>
+	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<guid isPermaLink="true">http://charakterziffer.github.io/cookiewarnung.html</guid>
+	<pubDate>Thu, 08 Jan 2015 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Blogeintrag Nº 50</title>
 	<description>&lt;p&gt;Vor über vier Jahren habe ich mit dem Bloggen begonnen, als Ergänzung zu meinen Tweets. Zunächst drehten sich die Themen stark um Twitter (z.&lt;small&gt; &lt;/small&gt;B. &lt;a href=&quot;wem-ich-folge.html&quot;&gt;wem ich auf Twitter gerne folge&lt;/a&gt; oder &lt;a href=&quot;bunte-mischung.html&quot;&gt;woraus ich meine Tweets mische&lt;/a&gt;). Mittlerweile ist das Themenfeld deutlich breiter geworden, ich hatte schon Artikel über &lt;a href=&quot;richter-di.html&quot;&gt;Krimis mit Richter Di&lt;/a&gt;, einen Kurztext zu &lt;a href=&quot;mehr-als-buchstaben.html&quot;&gt;Symbolen in Unicode&lt;/a&gt; oder eine Bastelanleitungen für &lt;a href=&quot;origamikarpfen.html&quot;&gt;gefaltete Papierkarpfen&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;bestand/cz-image-530x195.jpg&quot; alt=&quot;Weiße Ziffern auf grünem Hintergrund&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;material/cz530x195.jpg&quot; alt=&quot;Weiße Ziffern auf grünem Hintergrund&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ein bisschen schade an einem Blog ist, dass die Artikel recht schnell in der Versenkung verschwinden, obwohl sie noch immer gültig und (hoffentlich) interessant sind. Zwar habe ich ein Archiv, das einen &lt;a href=&quot;archiv.html&quot;&gt;Überblick über vergangene Einträge&lt;/a&gt; bietet, aber wer schau das schon durch, wenn er nicht weiß, worauf er stoßen könnte? Deswegen möchte ich diesen Blogeintrag – meinen fünfzigsten – zum Anlass nehmen, einige meiner bisherigen Artikel kurz vorzustellen, die ich noch immer für lesenswert halte.&lt;/p&gt;
 
@@ -139,26 +189,6 @@ Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch 
 	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
 	<guid isPermaLink="true">http://charakterziffer.github.io/semikolon.html</guid>
 	<pubDate>Thu, 25 Sep 2014 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Nützliche Kommentare</title>
-	<description>&lt;p&gt;Seine eigenen Meinungen und Gedanken zu einem Text äußern zu können, das empfinde ich als eines der besten Dinge, die das Internet zu bieten hat. Es ermöglicht den Austausch zwischen ganz unterschiedlichen Teilnehmern, kann erhellen, Standpunkte verschieben und Verständnis fördern. Lehrreiche Kommentare sehe ich zum Beispiel im Fontblog unter dem Artikel &lt;a href=&quot;http://www.fontshop.de/fontblog/braucht-die-welt-einen-deutschen-e-book-award/&quot;&gt;„Braucht die Welt einen deutschen E-Book-Award?“&lt;/a&gt; oder bei Hacker News über &lt;a href=&quot;https://news.ycombinator.com/item?id=8052908&quot;&gt;„How useful ist mapcode?“&lt;/a&gt; (englisch).&lt;/p&gt;
-
-&lt;p&gt;Als Leser erhalte ich weitere Blickwinkel, komme über die Kommentarfunktion in direkten Kontakt mit dem Verfasser, kann fehlende Punkte ergänzen und auf Fehler aufmerksam machen. Als Autor erhalte ich eine schnelle Rückmeldung und lerne vielleicht selbst noch etwas. Ich finde deshalb, dass man die Hürden möglichst niedrig halten sollte, um einfaches Kommentieren zu ermöglichen. Dazu gehört für mich, auf eine Anmeldung zu verzichten und &lt;a href=&quot;anonym-kommentieren.html&quot;&gt;keine Klarnamen einzufordern&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Im Gegenzug sollten Kommentare aber stark „kuratiert“ werden: Was unsachlich oder beleidigend ist, fliegt raus oder wird gekürzt. Die genaue Grenze ist sicherlich nicht einfach zu ziehen, vor allem was Polemik oder Übertreibung angeht. Ein bissiger Schreibstil kann einer Diskussion nämlich wunderbar Pfeffer geben, sie aber genauso in einen Kommentarkrieg eskalieren lassen. Ich persönlich ziehe die Grenze dort, wo nicht mehr ein Argument, sondern die dahinterstehende Person angegriffen wird.&lt;/p&gt;
-
-&lt;p&gt;Wo besonders viele Leute mitkommentieren, wird es schwierig, eine Online-Diskussion „auf Kurs“ zu halten. Stefan Plöchinger von der Süddeutschen Zeitung schilderte &lt;a href=&quot;http://ploechinger.tumblr.com/post/90956559317/besser-reden-mit-unseren-lesern&quot;&gt;in einem Blogartikel&lt;/a&gt; seine Erfahrungen und hat nach besseren Lösungen für den Dialog mit Lesern gesucht. Seit Anfang der Woche können Leser auf der Seite der Süddeutschen Zeitung &lt;a href=&quot;http://www.sueddeutsche.de/kolumne/ihre-sz-lassen-sie-uns-diskutieren-1.2095271&quot;&gt;nur noch ausgewählte Artikel kommentieren&lt;/a&gt;. Dadurch müssen die Redakteure weniger Kommentare im Auge behalten und können Diskussionen leichter auf eine sachliche Ebene zurückholen. Oder ist das ein Rückschritt in eine Zeit, wo Verlage kontrollieren, was veröffentlicht wird, ohne dass Leser korrigierend eingreifen könnten?&lt;/p&gt;
-
-&lt;p&gt;Das Problem mit zu vielen Kommentaren habe ich hier bei @cz+ ja „Gott sei Dank“ nicht. Nein, ernsthaft: Als Autor freue ich mich, wenn Leser meinem Artikel etwas hinzufügen. Es ist eine kleine Bestätigung, dass meine Inhalte relevant erscheinen und man sich damit auseinandersetzen mag.&lt;/p&gt;
-
-&lt;p&gt;Als kleine Anregung zum Kommentieren nenne ich hier mal ein paar Fragen: Was ist für eine gelungene Online-Diskussion notwendig? Braucht es feste Regeln? Kommentareinstufung durch Leser? Wo beginnt Zensur? Oder ist die Kommentarkultur in Zeiten von Facebook nicht mehr zu retten?&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/nuetzliche-kommentare.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
-	<guid isPermaLink="true">http://charakterziffer.github.io/nuetzliche-kommentare.html</guid>
-	<pubDate>Thu, 04 Sep 2014 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
