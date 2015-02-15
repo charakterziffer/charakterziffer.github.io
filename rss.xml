@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel>
 <title>@cz+ // Blog von @charakterziffer</title>
 <link>http://charakterziffer.github.io/index.htm</link>
 <description>140 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
@@ -30,7 +30,7 @@
 &lt;p&gt;Seitdem haben wir immer wieder kleine Zettel ausgetauscht – ohne ein einziges Wort darüber zu verlieren. Und heute Abend bin ich mit Henry verabredet. Zettel und Stift liegen schon bereit.&lt;/p&gt;
 </description>
 	<link>http://charakterziffer.github.io/kaffeezettel.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/kaffeezettel.html</guid>
 	<pubDate>Fri, 13 Feb 2015 00:00:00 +0100</pubDate>
 </item>
@@ -80,7 +80,7 @@ omgubuntu.co.uk##div[class=&quot;entry-share&quot;]
 &lt;p&gt;Ich bin gespannt, ob sich eine andere technische Umsetzung irgendwann etabliert, oder ob wir in Zukunft noch mehr solche gut gemeinten Einblendungen angezeigt bekommen.&lt;/p&gt;
 </description>
 	<link>http://charakterziffer.github.io/cookiewarnung.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/cookiewarnung.html</guid>
 	<pubDate>Thu, 08 Jan 2015 00:00:00 +0100</pubDate>
 </item>
@@ -116,7 +116,7 @@ Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch 
 &lt;p&gt;Das war aber wirklich eine einmalige Sache, denn in der Regel kommen etwa fünf Leser pro Artikel – über die ich mich natürlich auch freue!&lt;/p&gt;
 </description>
 	<link>http://charakterziffer.github.io/blogeintrag-50.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/blogeintrag-50.html</guid>
 	<pubDate>Wed, 17 Dec 2014 00:00:00 +0100</pubDate>
 </item>
@@ -136,7 +136,7 @@ Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch 
 &lt;p&gt;Falls euch das Kalenderformat gefällt, bitte weiterempfehlen (ihr wisst, wie das geht). Würde mich freuen, wenn noch mehr Leute meinen Halbmonatskalender praktisch finden. Änderungswünsche oder Anregungen gerne als Kommentar.&lt;/p&gt;
 </description>
 	<link>http://charakterziffer.github.io/kalender-2015.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/kalender-2015.html</guid>
 	<pubDate>Tue, 18 Nov 2014 00:00:00 +0100</pubDate>
 </item>
@@ -188,7 +188,7 @@ Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch 
 &lt;p&gt;Die Nachsilbe &lt;em&gt;-chorie&lt;/em&gt; steht wörtlich für „Land, Raum“. Einen guten Überblick über die Verbreitungswege verschiedener Pflanzen bietet der Wikipedia-Artikel &lt;a href=&quot;https://de.wikipedia.org/wiki/Samenausbreitung&quot;&gt;Samenausbreitung&lt;/a&gt;.&lt;/p&gt;
 </description>
 	<link>http://charakterziffer.github.io/einfallsreiche-pflanzen.html</link>
-	<author>Gerhard Großmann, postfach2b [ät] web.de</author>
+	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/einfallsreiche-pflanzen.html</guid>
 	<pubDate>Mon, 27 Oct 2014 00:00:00 +0100</pubDate>
 </item>
