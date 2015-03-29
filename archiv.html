@@ -30,7 +30,7 @@
     <script type="text/javascript">
 var suchwort = self.location.search.replace(/\?/, '');
 var treffer = false;
-if(suchwort!='') {
+if(suchwort=='ansporn' || suchwort=='kritik' || suchwort=='methodik' || suchwort=='sujet' || suchwort=='serie' || suchwort=='typografie') {
 	document.writeln("<h1>Artikel aus der Rubrik #"+suchwort+"<\/h1><p class=\"hinterlegt\">Hier folgt eine <i>gefilterte<\/i> Liste mit Blogartikeln aus der Rubrik #"+suchwort+". Stattdessen <a href=\"archiv.html\">alle Einträge<\/a> anzeigen?<\/p>"); }
 else {
 	document.writeln("<h1>Archiv aller Einträge<\/h1><p>Hier folgt eine Liste meiner Blogartikel, jeweils mit einer kurzen Inhaltsangabe. Der neueste Artikel steht oben, der älteste unten.<\/p>"); }
@@ -64,6 +64,32 @@ else {
 	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2015<\/h1>"); </script>
 	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2015</h1> </noscript>
 	
+
+
+<script type="text/javascript">
+var rubriken = 'methodik'
+if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
+</script>
+
+<p class="datum" style="margin-top:1.3em;">Mo,
+30.
+M&auml;rz
+2015</p>
+<h2><a href="rss-feeds.html">Neuigkeiten via RSS</a></h2>
+<p>Viele Websites halten Änderungen in einer strukturierten RSS-Datei fest. Diese lässt sich maschinell auslesen und man kann sich einfach informieren lassen, wenn neue Inhalte online sind.
+ <a href="rss-feeds.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
+<p><i>729 Wörter //</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+<br>
+&nbsp;</p>
+
+<script type="text/javascript">
+if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
+else { treffer = true; }
+</script>
+
+
+
 
 
 <script type="text/javascript">

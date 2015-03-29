@@ -14,6 +14,61 @@
 </image>
 
 <item>
+	<title>Neuigkeiten via RSS</title>
+	<description>&lt;p&gt;Wenn sich auf einer Website etwas ändert, zum Beispiel ein neuer Artikel veröffentlicht wird, dann erfährt man das am zuverlässigsten per RSS – zumindest, wenn die Website so etwas anbietet. RSS steht für &lt;em&gt;Really Simple Syndication&lt;/em&gt;, etwa: „echt einfaches Zusammenführen“.&lt;/p&gt;
+
+&lt;p&gt;Grundlage ist eine strukturierte Datei, die sich aktualisiert, sobald etwas neues online gestellt wird. In dieser RSS-Datei stehen dann beispielsweise die Überschrift eines neuen Artikels, ein Textausschnitt oder sogar der komplette Artikel, ein Link zur entsprechenden Internetseite und weitere Daten. Ein Beispiel:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;item&amp;gt;
+&amp;lt;title&amp;gt;Neuigkeiten via RSS&amp;lt;/title&amp;gt;
+&amp;lt;description&amp;gt;Wenn sich auf einer Website etwas ändert, zum Beispiel ein neuer Artikel […]&amp;lt;/description&amp;gt;
+&amp;lt;link&amp;gt;charakterziffer.github.io/rss-feeds.html&amp;lt;/link&amp;gt;
+&amp;lt;dc:creator&amp;gt;Gerhard Großmann&amp;lt;/dc:creator&amp;gt;
+&amp;lt;pubDate&amp;gt;Mon, 30 Mar 2015&amp;lt;/pubDate&amp;gt;
+&amp;lt;/item&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Der Code ist nur ein Ausschnitt; in der Regel stehen mehrere &lt;code&gt;&amp;lt;item&amp;gt;&lt;/code&gt; (also Artikel) in einer RSS-Datei, dazu einige allgemeine Informationen zur Website. Weil die Daten so klar strukturiert sind, lassen sie sich maschinell auslesen, also von einem Programm auswerten. Ein solches Programm könnte zum Beispiel ein Feedreader&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot; style=&quot;line-height:0&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; wie QuiteRSS sein. Er sammelt neue Artikel aus unterschiedlichen Quellen und stellt sie in einer Liste dar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/feedreader.png&quot; alt=&quot;Bildschirmfoto des Feedreaders QuiteRSS&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;soziale-medien-als-rss-ersatz&quot;&gt;Soziale Medien als RSS-Ersatz?&lt;/h2&gt;
+
+&lt;p&gt;Aber Moment: Ist das nicht das gleiche, was auch Twitter und Facebook tun? Ich gebe unterschiedliche Quellen an (folge, befreunde mich) und in meiner Timeline&lt;a href=&quot;#note2&quot;&gt;&lt;sup id=&quot;ziffer2&quot; style=&quot;line-height:0&quot;&gt;[2]&lt;/sup&gt;&lt;/a&gt; tauchen dann Informationen dieser Quellen auf …? – Ja, das Prinzip ist gleich, die Schwerpunkte aber liegen völlig unterschiedlich.&lt;/p&gt;
+
+&lt;p&gt;Bei soziale Medien geht es sehr oft um Vernetzung und persönliche Darstellung. Es hängt natürlich ein wenig davon ab, wem man folgt, oft werden auch Links zu wissenswerten Artikeln veröffentlicht, aber meistens sind da eben vor allem kurze Erlebnisse, Anspielungen auf Hobbys, Schnappschüsse und „soziales Geschnatter“. Posts in sozialen Medien sind sehr viel stärker auf Aktualität zugeschnitten, weil die Informationen recht schnell wieder unten in der Timeline verschwinden.&lt;/p&gt;
+
+&lt;p&gt;RSS ist eher eine alternative Art, auf Website-Inhalte zuzugreifen. Anstatt regelmäßig nachzugucken, ob es schon etwas neues auf der Website gibt, lässt man sich einfach per RSS benachrichtigen. Von der inhaltlichen Gewichtung entsprechen RSS-Einträge mehr einem Newsletter als einem Tweet oder Facebook-Post. Je nach Blog, das man abonniert hat, spielt die persönliche Perspektive eine größere oder kleinere Rolle.&lt;/p&gt;
+
+&lt;p&gt;Für RSS muss man auch keinen Account bei einem Anbieter anlegen und es ist völlig anonym, jemandem „zu folgen“.&lt;/p&gt;
+
+&lt;h2 id=&quot;wie-kann-man-rss-nutzen&quot;&gt;Wie kann man RSS nutzen?&lt;/h2&gt;
+
+&lt;p&gt;Damit man die RSS-Benachrichtigung auf einer Website nutzen kann, muss diese das erst einmal anbieten. Bei Blogs ist das zum Glück noch immer die Regel, auch viele Foren oder Nachrichtenseiten bieten das an. Die RSS-Adresse findet man meistens, indem man auf das &lt;img alt=&quot;&quot; class=&quot;texticon&quot; src=&quot;bestand/rss-icon.png&quot; /&gt; RSS-Symbol achtet. Die richtige Adresse kopiert man dann in das RSS-Programm, das man gerne nutzen möchte. Das muss übrigens nicht unbedingt ein RSS-Reader sein. Auch Mailprogramme wie Thunderbird unterstützen RSS. Wenn man die RSS-Adresse bei den Kontoeinstellungen als RSS-Quelle hinzufügt, bekommt man neue Website-Inhalte wie eine Mail zugestellt.&lt;/p&gt;
+
+&lt;p&gt;Sehr praktisch sind die dynamischen Lesezeichen im Firefox. Wenn man in diesem Browser eine RSS-Adresse öffnen, kann man den Feed als Lesezeichen abonnieren. Die Website taucht dann als Ordner in der Lesezeichenleiste auf, ein Klick auf einen Eintrag öffnet direkt den entsprechenden Artikel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/dyn-lesezeichen.png&quot; alt=&quot;Dynamische Lesezeichen in Firefox&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;RSS ist tot. So hieß es vor gut zwei Jahren, als der populäre RSS-Leser &lt;em&gt;Google Reader&lt;/em&gt; eingestellt wurde. Dabei ist das RSS-Format einfach zu praktisch, um es einfach aufzugeben. Ich persönlich habe sieben Blogs als dynamische Lesezeichen abonniert, folge sieben weiteren mit meinem Mailprogramm; beobachte vier Videokanäle, ohne dort mit einem Account eingeloggt zu sein, und lasse mich über Änderungen eines GitHub-Archivs informieren.&lt;/p&gt;
+
+&lt;p&gt;Das sind teilweise Quellen, bei denen sich nur alle halbe Jahre etwas tut. Aber dann werde ich sofort informiert, ohne dass ich in der Zwischenzeit aktiv nachschauen müsste.&lt;/p&gt;
+
+&lt;p&gt;Nutzt ihr (noch) RSS? Wenn ja: wie? Falls ihr selbst ein Blog betreibt: Habt ihr Abrufzahlen, wie viele Leser euch per RSS abonniert haben? Oder ist RSS für euch doch schon tot, weil soziale Medien einfach „viel praktischer“ sind?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Feedreader:&lt;/b&gt; RSS-Dateien mit ihren strukturierten Daten werden auch als &lt;em&gt;RSS-Feed&lt;/em&gt; bezeichnet (engl. &lt;em&gt;feed&lt;/em&gt; „Zulauf“, „Versorgung“). Ein Programm, das solche Feeds ausliest (engl. &lt;em&gt;read&lt;/em&gt; „lesen“) heißt eben Feadreader. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b id=&quot;note2&quot;&gt;[2] Timeline&lt;/b&gt;, bei Twitter auch &lt;em&gt;Stream&lt;/em&gt; („Strom“) genannt: Eine Liste von Meldungen/Tweets, oben beginnend mit dem Neusten. Aktuelle Einträge können vorhergehende schnell nach unten verdrängen, wo sie dann aus dem Blick geraten. &lt;a href=&quot;#ziffer2&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/rss-feeds.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/rss-feeds.html</guid>
+	<pubDate>Mon, 30 Mar 2015 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Garantiert gelogen</title>
 	<description>&lt;p&gt;An dieser Stelle möchte ich glaubhaft beteuern, dass ich lüge. Und zwar unverhohlen, balkenbiegend und sogar seriell. Alle Tweets meiner Serie &lt;em&gt;Erfundenes Faktum&lt;/em&gt; sind haltlos und völlig aus der Luft gegriffen – zumindest sofern sich keiner dieser „Fakten“ im Nachhinein bewahrheitet hat. Falls doch, bitte ich um einen kurzen Kommentar – es kann schließlich nicht sein, dass Wahrheiten hier als Lügen verkauft werden!&lt;/p&gt;
 
@@ -173,26 +228,6 @@ Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch 
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/blogeintrag-50.html</guid>
 	<pubDate>Wed, 17 Dec 2014 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Kein Kalender von der Stange</title>
-	<description>&lt;p&gt;7 cm² Platz für tägliche Termine; gut erkennbare große Zahlen; zwei Wochen in der Übersicht und trotzdem in der praktischen Größe DIN A5 – seit mehreren Jahren gestalte ich meinen Jahreskalender selbst. So muss ich mir auch nicht die Standard-Helvetica anderer Wandkalender angucken, sondern habe ein typografisch frisches Design.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/hmk2015.jpg&quot; alt=&quot;Abbildung Halbmonatskalender 2015&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Diesmal habe ich für meinen Halbmonatskalender &lt;a href=&quot;http://www.thequestaproject.com/&quot;&gt;die Schriftart Questa&lt;/a&gt; von  Martin Majoor und Jos Buivenga ausgewählt. Sie erschien im September dieses Jahres.&lt;/p&gt;
-
-&lt;p&gt;Wer meinen Kalender selbst verwenden möchte, kann das PDF herunterladen und ausdrucken, die Blätter halbieren und sortieren. Beim Zusammenhalten der Blätter vertraue ich wieder auf eine Vielzweckklammer („Foldback-Klammer“). Alternativ: Im Copy-Shop eine Spiralbindung anbringen lassen, die Blätter an der oberen Kante leicht zusammenleimen oder jede Seite mittig lochen und alles an einen Nagel hängen.&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&quot;klickfeld&quot; href=&quot;material/hmk2015.pdf&quot;&gt;Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 245 kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Falls euch das Kalenderformat gefällt, bitte weiterempfehlen (ihr wisst, wie das geht). Würde mich freuen, wenn noch mehr Leute meinen Halbmonatskalender praktisch finden. Änderungswünsche oder Anregungen gerne als Kommentar.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/kalender-2015.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/kalender-2015.html</guid>
-	<pubDate>Tue, 18 Nov 2014 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
