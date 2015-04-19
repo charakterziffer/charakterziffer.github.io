@@ -51,8 +51,7 @@ h3 {font-size:0.9em; line-height:1.556; color:#222;
 /* Formatierungen für Lesetexte */
 
 p, ul, ol {margin-bottom:-0.3em; -moz-font-feature-settings: "onum";
-	-webkit-font-feature-settings: "onum";
-	-ms-font-feature-settings: "onum" 1; font-feature-settings: "onum";
+	-webkit-font-feature-settings: "onum"; font-feature-settings: "onum";
 /*	statt CSS-hyphens wird noch das Javascript hyphenator.js verwendet
 	-webkit-hyphens: auto; -moz-hyphens: auto;
 	-ms-hyphens: auto; hyphens: auto; */}
@@ -68,18 +67,17 @@ hr {margin:1.88em 0.4em 1.1em 0; color:#bbb;}
 
 .hinterlegt {margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
 	background-color: #deb;}
-.hinterlegt p {margin:0.7em 0 0.7em 0.2em;}
-.hinterlegt p:first-child {margin-top:0.2em;}
-.hinterlegt p:last-child {margin-bottom:0.2em;}
+.hinterlegt p {margin:0.2em;}
+.hinterlegt p + p {margin-top:0.7em;}
 
 /* Listen, Zitatblöcke, Code */
 
-ul {margin: 1.29em 0 1.1em -1em;}
+ul {margin: 1.29em 0 1.1em -1.55em;}
 ul li {list-style:square; margin-top:0;}
 ul li p {margin:0.7em 0;}
 ol {margin-left: -1.2em;}
 
-blockquote {margin:1.4em 0 1.3em; padding: 0 0.2em 0 0.6em;
+blockquote {margin:1.4em 0 1.3em; padding: 0 0.2em 0 0.4em;
 	border-left:0.7em solid #deb; background-color:#f4f4f4;}
 blockquote + blockquote {margin-top:1.7em;}
 
@@ -103,7 +101,7 @@ a:target {background-color:#cf8; color:#444;}
 a.klickfeld {margin:1.038em 30%; width:40%;
 	display:inline-block; padding: 0.25em 0.4em 0.35em;
 	text-align:center; background-color: #deb; color:#222;
-	border:0.062em solid #281; box-shadow: 1px 1px 2px #bbb;}
+	border:0.062em solid #281; box-shadow: 1px 1px 2px #ccc;}
 
 /* Bilder */
 
@@ -136,8 +134,7 @@ label {font: 0.9em/1.556 Bitter,Georgia,serif; width:16%;
 	float:left;	position:relative; top:0.2em}
 label:after {content:':';}
 form > div > div {width: 78%; float:right; padding-right:2%;}
-input[type=text], input[type=email], input[type=url],
-input[type=password] {width: 50%;}
+input[type=text], input[type=email], input[type=url] {width: 50%;}
 
 
 /* ANPASSUNGEN FÜR KLEINERE BILDSCHIRME */
@@ -150,8 +147,7 @@ input[type=password] {width: 50%;}
 @media (max-width: 54em) {
 label {width: 100%; float: none; top:0;}
 form > div > div {width: 98%; float: none;}
-input[type=text], input[type=email], input[type=url],
-input[type=password] {width: 100%;}
+input[type=text], input[type=email], input[type=url] {width: 100%;}
 }
 
 @media (max-width: 44.4em) {
@@ -168,8 +164,7 @@ body {padding:2px;}
 p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
 label {width: 50%; float: left; top:0.2em;}
 form > div > div {width: 78%; float: right;}
-input[type=text], input[type=email], input[type=url],
-input[type=password] {width: 50%;}
+input[type=text], input[type=email], input[type=url] {width: 50%;}
 }
 
 @media (max-width: 34em) {
@@ -183,5 +178,5 @@ input[type=password] {width: 100%;}
 body {padding:1px;}
 #randspalte h1 {margin:0;}
 p + .datum {margin-top: 2.3em;} /* Abstand in Liste auf Startseite */
-blockquote {border-width:0.4em; padding-left:0.5em;}
+blockquote {border-width:0.4em; padding-left:0.3em;}
 }

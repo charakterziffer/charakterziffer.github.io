@@ -9,9 +9,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <link rel="shortcut icon" href="http://charakterziffer.github.io/bestand/favicon.ico" type="image/x-icon">
-<link href='http://charakterziffer.github.io/bestand/style.css' rel='stylesheet' type='text/css'>
+<link href='http://charakterziffer.github.io/bestand/style.css' rel='stylesheet'>
 <!-- CSS-Link für lokale Tests, ist online eine Doppelung -->
-<link href='bestand/style.css' rel='stylesheet' type='text/css'>
+<link href='bestand/style.css' rel='stylesheet'>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://charakterziffer.github.io/rss.xml">
 </head>
 
@@ -77,7 +77,7 @@ Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch 
 <p style="margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
 
 <form action="http://www.formular-chef.de/fc.cgi"
-method="post" enctype="multipart/form-data">
+method="post" enctype="multipart/form-data" novalidate>
 <input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
 <input type="hidden" name="pflicht" value="comment">
 <input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
@@ -93,12 +93,12 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 </div>
 <div>
 	<label for="mail">E-Mail</label>
-	<div> <input name="mail" type="text" size="25">
+	<div> <input name="mail" type="email" size="25">
 	&nbsp;<i>(wird nicht veröffentlicht)</i> </div>
 </div>
 <div>
 	<label for="link">Website</label>
-	<div> <input name="link" type="text" size="25"></div>
+	<div> <input name="link" type="url" size="25"></div>
 </div>
 <div>
 	<label for="comment">Kommentar</label><br>
@@ -121,8 +121,8 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 </div> <!-- hauptfeld -->
 </div> <!-- container -->
 
-<script src="http://charakterziffer.github.io/bestand/hyphenate.js" type="text/javascript"></script>
-<script src="http://charakterziffer.github.io/bestand/parallax.js" type="text/javascript"></script>
-<script type="text/javascript" charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer" ></script>
+<script src="http://charakterziffer.github.io/bestand/hyphenate.js"></script>
+<script src="http://charakterziffer.github.io/bestand/parallax.js"></script>
+<script type="text/javascript" charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer"></script>
 </body>
 </html>
