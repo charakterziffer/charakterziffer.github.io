@@ -119,7 +119,7 @@ figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font-size: 0.9em; line-heig
 figcaption a {font-style:normal; font-size:0.9em;}
 
 .logo { float:left; margin-right:0.8em;}
-.texticon {margin:0; position:relative; top:2px;}
+.texticon {margin:0;}
 
 /* Werbediv von Formular-Chef verstecken */
 div[style*="font-family:arial;"] {left:-9999px;}
