@@ -14,6 +14,48 @@
 </image>
 
 <item>
+	<title>Nicht nur die Größe zählt</title>
+	<description>&lt;p&gt;Wer einen Text gliedern möchte, macht das am besten mit Überschriften unterschiedlicher Klasse. Das ist bei wissenschaftlichen Aufsätzen so, genau wie auch in einem Wikipedia-Artikel. Gerade im Internet sind die verschiedenen Überschriftenklassen leider oft sehr langweilig gegeneinander abgestuft. Man orientiert sich an der Vorgabe des Browsers und differenziert die Überschriften einzig über eine unterschiedliche Größe.&lt;/p&gt;
+
+&lt;p&gt;Im Browser-Standard hat die höchste Überschriftenklasse H1 die doppelte Größe des Fließtextes, eine Überschrift vierter Klasse (H4) entspricht der Fließtextgröße. Die anderen Titel H2, H3, H5 und H6 sind entsprechend größer oder kleiner. Darüber hinaus sehen alle Überschriftenklassen aber identisch aus, nämlich … fett. Dabei gibt es gestalterisch viele Varianten, um Überschriften unterschiedlicher Klassen gegeneinander abzugrenzen. Ein Beispiel, wie man mit typografischen Mitteln eine Titel-Hierarchie konstruieren kann:&lt;/p&gt;
+
+&lt;div style=&quot;margin:1.2em 0.7em 1.8em 0; padding: 0 0.7em; border-left:0.7em solid #deb;&quot;&gt;
+&lt;h1 style=&quot;font:bold 1.3em/1.08 serif; letter-spacing:0.06em; margin:1.2em 0 -0.1em; text-transform:uppercase;color:#373737&quot;&gt;Titel für größte Abschnitte (H1)&lt;/h1&gt;
+
+&lt;p&gt;Hier ein kleiner Absatz, damit nicht sofort ein Überschriftentyp auf einen anderen folgt. Das kann zwar stellenweise vorkommen, ist aber vermutlich eher die Ausnahme.&lt;/p&gt;
+
+&lt;h2 style=&quot;font:bold 1.17em/1.2 serif; text-align:center; margin:1.35em 0 -0.17em;&quot;&gt;~ Kapitel-Überschriften (H2) ~&lt;/h2&gt;
+
+&lt;p&gt;Auf alle Fälle lässt sich die Gestaltung der Überschriften leichter beurteilen, wenn dazwischen auch ein bisschen „Normaltext“ steht. Deshalb dieser Blindtext hier, der eher nebensächliche Informationen vermittelt.&lt;/p&gt;
+
+&lt;h3 style=&quot;font:italic bold 1.17em/1.2 serif; margin:1em 0 -0.4em; color:#333;&quot;&gt;Untergliederungen des Kapitels (H3)&lt;/h3&gt;
+
+&lt;p&gt;Als Beschreibungen der Überschriften habe ich jetzt mal Begriffe aus Büchern gewählt, weil sie sehr anschaulich sind. Zwar gibt es auf Websites nicht unbedingt „Kapitel“, aber die unterschiedlichen Titel-Abstufungen lassen sich hier genauso anwenden.&lt;/p&gt;
+
+&lt;h4 style=&quot;font:bold 1em/1.4 serif; margin:1em 0 -1em;&quot;&gt;Zwischentitel in Textgröße (H4)&lt;/h4&gt;
+
+&lt;p&gt;Als Schriftart für diese Beispielüberschriften greife ich übrigens nicht auf die Bitter zurück, die ich sonst in meinem Blog verwende. Das hat den Grund, weil ich von jener Webschrift nur den Normalschnitt verlinkt habe und nur für dieses Beispiel nicht auch noch Fett und Kursiv nachladen möchte.&lt;/p&gt;
+
+&lt;h5 style=&quot;font:italic normal 1.05em/1.33 serif; margin:0.92em 0 -0.92em;&quot;&gt;Kleine Überschrift für kurze Abschnitte (H5)&lt;/h5&gt;
+
+&lt;p&gt;Stattdessen verwende ich für die Überschriften die Serifenschrift, die in deinem Browser als Standard festgelegt ist. Wenn du nichts geändert hast, ist das höchstwahrscheinlich Times oder Times New Roman.&lt;/p&gt;
+
+&lt;h6 style=&quot;font:bold 0.82em/1.7 serif; letter-spacing:0.06em; text-transform:uppercase; margin:1.28em 0.4em -1em 0; display:block; float:left;&quot;&gt;Hineinlaufender Titel (H6) ·&lt;/h6&gt;
+
+&lt;p&gt;Ehrlich gesagt muss ein Text schon sehr stark strukturiert sein, wenn man sechs Überschriften-Ebenen benötigt. In den meisten Fällen sollte man sich da eher Gedanken über seine Gliederung machen – typografisch sind so viele Unterscheidungen aber leicht machbar.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Die gestalterischen Möglichkeiten auszunutzen hat einige Vorteile gegenüber der Abstufung durch bloße Größenänderung. Man benötigt weniger extreme Schriftgrößen, d.&lt;span style=&quot;font-size:0.5em&quot;&gt; &lt;/span&gt;h. die H1 kann kleiner ausfallen und die H6 muss nicht mikroskopisch werden. Durch ihre unterschiedliche Gestaltung grenzen sich die Überschriften erkennbarer gegeneinander ab, H3 und H4 sehen sich beispielsweise weniger ähnlich. Zudem kann die abwechslungsreichere Gestaltung helfen, einen recht gleichförmigen Text aufzulockern.&lt;/p&gt;
+
+&lt;p&gt;Noch eine Anmerkung zur Wikipedia: Die nutzt zwar einen Schriftwechsel zur Überschriften-Differenzierung (zwischen H2 und H3 ändert sich die Schrift von Linux Libertine bzw. Georgia zur generischen &lt;code&gt;sans-serif&lt;/code&gt;), allerdings gibt es zwischen H4, H5 und H6 keine Größenunterschiede mehr. So kann man im &lt;a href=&quot;http://de.wikipedia.org/wiki/Wikipedia#Sekund.C3.A4rliteratur_.C3.BCber_Wikipedia&quot;&gt;Artikel über Wikipedia&lt;/a&gt; nicht erkennen, dass der Unterabschnitt „Markenbildung“ dem Abschnitt „Wissenschaftliche Untersuchungen“ untergeordnet ist.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/titel-abstufen.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/titel-abstufen.html</guid>
+	<pubDate>Mon, 08 Jun 2015 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Tweets mit Anhang</title>
 	<description>&lt;p&gt;Früher war die Twitter-Welt noch in Ordnung. Man hatte seine 140 Zeichen, die man mit einer interessanten Kurzinformation füllen konnte. Die Beschränkung gebar kreative Nutzungsmöglichkeiten wie den Hashtag: eine Art Schlagwort, mit Hilfe dessen man unterschiedliche Tweets zu einem Thema bündeln kann. Kurz-URL-Dienste kamen auf, damit auch Links in einem Tweet Platz haben konnten. Vor einen Retweet, also Statusmeldungen eines anderen, die man an die eigenen Follower weiterverbreitet, kopierte man &lt;em&gt;RT&lt;/em&gt; und den Nutzernamen.&lt;/p&gt;
 
@@ -200,28 +242,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-4.html</guid>
 	<pubDate>Wed, 04 Mar 2015 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Kaffeezettel</title>
-	<description>&lt;p&gt;&lt;em&gt;– eine Kurzgeschichte –&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;So nervös war ich schon lange nicht mehr. Seit einer halben Stunde laufe ich unruhig in meiner kleinen Wohnung auf und ab. Ich kann einfach nicht stillsitzen. Draußen wird es langsam dunkel, aber der Uhrzeiger bewegt sich nicht. Immer noch kurz nach halb acht.&lt;/p&gt;
-
-&lt;p&gt;Dabei bin ich doch schon längst startklar. Frisch geduscht, die Feuchtigkeits-Creme aufgetragen, Haare hochgesteckt und danach Make-up aufgelegt. Für heute habe ich mein blaues Abendkleid ausgesucht. Das steht mir so verdammt gut und außerdem ist es doch ein besonderer Anlass.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/kaffeetasse.jpg&quot; alt=&quot;Eine Tasse mit Briefchen auf dem Unterteller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Er heißt Henry, trägt immer karierte Hemden und schreibt Gedichte. Ich kenne ihn aus meiner Arbeit. Ich bin nämlich Kellnerin im Café an der Ecke und er kommt fast immer, wenn ich auch da bin. Das war schon komisch, das erste Mal, als ich einen Zettel bekam. Henry hatte schon bezahlt und war gegangen. Als ich seine Kaffeetasse abräumte, habe ich den Zettel gesehen. Ein einzelnes Blatt, leicht bräunlich und von einem Notizblöckchen abgerissen. Einmal in der Mitte gefaltet. Zuerst wollte ich das Papier in den Müll werfen, aber dann habe ich die kleine Rose gesehen, ganz winzig außen draufgemalt.&lt;/p&gt;
-
-&lt;p&gt;Ich halte es gar nicht mehr aus. In einer halben Stunde kommt er vorbei und holt mich ab. Dabei habe ich noch kein einziges Wort mit ihm gesprochen. Immer nur diese Zettel. Zuerst war es ein kurzes Gedicht, vier Zeilen nur – aber soo romantisch. Beim nächsten Mal hat er geschrieben, dass er mich schön findet. Und ich habe ihm geantwortet, natürlich schriftlich. Habe ganz klein unter die Rechnung geschrieben: „Ich dich auch“.&lt;/p&gt;
-
-&lt;p&gt;Seitdem haben wir immer wieder kleine Zettel ausgetauscht – ohne ein einziges Wort darüber zu verlieren. Und heute Abend bin ich mit Henry verabredet. Zettel und Stift liegen schon bereit.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/kaffeezettel.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/kaffeezettel.html</guid>
-	<pubDate>Fri, 13 Feb 2015 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
