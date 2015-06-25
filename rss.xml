@@ -150,13 +150,13 @@
 &amp;lt;/item&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Der Code ist nur ein Ausschnitt; in der Regel stehen mehrere &lt;code&gt;&amp;lt;item&amp;gt;&lt;/code&gt; (also Artikel) in einer RSS-Datei, dazu einige allgemeine Informationen zur Website. Weil die Daten so klar strukturiert sind, lassen sie sich maschinell auslesen, also von einem Programm auswerten. Ein solches Programm könnte zum Beispiel ein Feedreader&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot; style=&quot;line-height:0&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; wie QuiteRSS sein. Er sammelt neue Artikel aus unterschiedlichen Quellen und stellt sie in einer Liste dar.&lt;/p&gt;
+&lt;p&gt;Der Code ist nur ein Ausschnitt; in der Regel stehen mehrere &lt;code&gt;&amp;lt;item&amp;gt;&lt;/code&gt; (also Artikel) in einer RSS-Datei, dazu einige allgemeine Informationen zur Website. Weil die Daten so klar strukturiert sind, lassen sie sich maschinell auslesen, also von einem Programm auswerten. Ein solches Programm könnte zum Beispiel ein Feedreader&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; wie QuiteRSS sein. Er sammelt neue Artikel aus unterschiedlichen Quellen und stellt sie in einer Liste dar.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;material/feedreader.png&quot; alt=&quot;Bildschirmfoto des Feedreaders QuiteRSS&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;soziale-medien-als-rss-ersatz&quot;&gt;Soziale Medien als RSS-Ersatz?&lt;/h2&gt;
 
-&lt;p&gt;Aber Moment: Ist das nicht das gleiche, was auch Twitter und Facebook tun? Ich gebe unterschiedliche Quellen an (folge, befreunde mich) und in meiner Timeline&lt;a href=&quot;#note2&quot;&gt;&lt;sup id=&quot;ziffer2&quot; style=&quot;line-height:0&quot;&gt;[2]&lt;/sup&gt;&lt;/a&gt; tauchen dann Informationen dieser Quellen auf …? – Ja, das Prinzip ist gleich, die Schwerpunkte aber liegen völlig unterschiedlich.&lt;/p&gt;
+&lt;p&gt;Aber Moment: Ist das nicht das gleiche, was auch Twitter und Facebook tun? Ich gebe unterschiedliche Quellen an (folge, befreunde mich) und in meiner Timeline&lt;a href=&quot;#note2&quot;&gt;&lt;sup id=&quot;ziffer2&quot;&gt;[2]&lt;/sup&gt;&lt;/a&gt; tauchen dann Informationen dieser Quellen auf …? – Ja, das Prinzip ist gleich, die Schwerpunkte aber liegen völlig unterschiedlich.&lt;/p&gt;
 
 &lt;p&gt;Bei soziale Medien geht es sehr oft um Vernetzung und persönliche Darstellung. Es hängt natürlich ein wenig davon ab, wem man folgt, oft werden auch Links zu wissenswerten Artikeln veröffentlicht, aber meistens sind da eben vor allem kurze Erlebnisse, Anspielungen auf Hobbys, Schnappschüsse und „soziales Geschnatter“. Posts in sozialen Medien sind sehr viel stärker auf Aktualität zugeschnitten, weil die Informationen recht schnell wieder unten in der Timeline verschwinden.&lt;/p&gt;
 
@@ -172,7 +172,7 @@
 
 &lt;p&gt;&lt;img src=&quot;material/dyn-lesezeichen.png&quot; alt=&quot;Dynamische Lesezeichen in Firefox&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;RSS ist tot. So hieß es vor gut zwei Jahren, als der populäre RSS-Leser &lt;em&gt;Google Reader&lt;/em&gt; eingestellt wurde. Dabei ist das RSS-Format einfach zu praktisch, um es einfach aufzugeben. Ich persönlich habe sieben Blogs als dynamische Lesezeichen abonniert, folge sieben weiteren mit meinem Mailprogramm; beobachte vier Videokanäle, ohne dort mit einem Account eingeloggt zu sein, und lasse mich über Änderungen eines GitHub-Archivs informieren.&lt;/p&gt;
+&lt;p&gt;RSS ist tot. So hieß es vor gut zwei Jahren, als der populäre RSS-Leser &lt;em&gt;Google Reader&lt;/em&gt; eingestellt wurde. Dabei ist das RSS-Format einfach zu praktisch, um es leichtfertig aufzugeben. Ich persönlich habe sieben Blogs als dynamische Lesezeichen abonniert, folge sieben weiteren mit meinem Mailprogramm; beobachte vier Videokanäle, ohne dort mit einem Account eingeloggt zu sein, und lasse mich über Änderungen eines GitHub-Archivs informieren.&lt;/p&gt;
 
 &lt;p&gt;Das sind teilweise Quellen, bei denen sich nur alle halbe Jahre etwas tut. Aber dann werde ich sofort informiert, ohne dass ich in der Zwischenzeit aktiv nachschauen müsste.&lt;/p&gt;
 

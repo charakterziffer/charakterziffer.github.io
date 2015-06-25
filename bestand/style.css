@@ -55,7 +55,7 @@ h3 {font-size:0.9em; line-height:1.556; color:#222;
 
 p, ul, ol {margin-bottom:-0.3em; -moz-font-feature-settings: "onum";
 	-webkit-font-feature-settings: "onum"; font-feature-settings: "onum";
-/*	statt CSS-hyphens wird noch das Javascript hyphenator.js verwendet
+/*	statt CSS-hyphens wird noch hyphenator.js verwendet
 	-webkit-hyphens: auto; -moz-hyphens: auto;
 	-ms-hyphens: auto; hyphens: auto; */}
 #randspalte p {font-size:0.9em; line-height:1.556;
@@ -65,6 +65,7 @@ i, em {font-style:italic; color: #111;}
 b, strong {font: normal 0.9em Bitter, Georgia, serif; color:#111;}
 .datum {color:#666; float:right; position:relative; right:0.5em;
 	margin-top: 3.95em; padding-left:1em; display:block;}
+sup,sub {line-height:0;}
 
 hr {margin:1.88em 0.4em 1.1em 0; color:#bbb;}
 
