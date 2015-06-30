@@ -6,7 +6,7 @@
 
 /* Schriften: Source Sans Pro Regular & Italic, Bitter */
 /* local('Source Sans Pro'), local('SourceSansPro-Regular') entfernt,
- * weil Android 2.2 und 2.3 sonst gar keine Schriften laden */
+   weil Android 2.2 und 2.3 sonst gar keine Schriften laden */
 
 @font-face {font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
@@ -119,8 +119,8 @@ figure img {max-width:100%;}
 figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font-size: 0.9em; line-height:1.556; font-style: italic;}
 figcaption a {font-style:normal; font-size:0.9em;}
 
-.logo { float:left; margin-right:0.8em;}
-.texticon {margin:0;}
+.logo {float:left; margin-right:0.8em;}
+.texticon {margin:0; vertical-align:-2px; padding:0 0.2em;}
 
 /* Werbediv von Formular-Chef verstecken */
 div[style*="font-family:arial;"] {left:-9999px;}
