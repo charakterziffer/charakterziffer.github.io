@@ -26,7 +26,9 @@
 
 /* Grundsätzliches Layout */
 
-html {font-size:100.01%;}
+* {box-sizing: border-box;}
+html {font-size:100.01%; -webkit-text-size-adjust: 100.01%;
+	-ms-text-size-adjust: 100.01%;}
 body {text-align:center; margin:0; padding:5px;
 	background: #281 url(shattered.png) repeat fixed;
 	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
@@ -53,8 +55,8 @@ h3 {font-size:0.9em; line-height:1.556; color:#222;
 
 /* Formatierungen für Lesetexte */
 
-p, ul, ol {margin-bottom:-0.3em; -moz-font-feature-settings: "onum";
-	-webkit-font-feature-settings: "onum"; font-feature-settings: "onum";
+p, ul, ol {margin-bottom:-0.3em; -webkit-font-feature-settings: "onum";
+	font-feature-settings: "onum";
 /*	statt CSS-hyphens wird noch hyphenator.js verwendet
 	-webkit-hyphens: auto; -moz-hyphens: auto;
 	-ms-hyphens: auto; hyphens: auto; */}
@@ -183,4 +185,32 @@ body {padding:1px;}
 #randspalte h1 {margin:0;}
 p + .datum {margin-top: 2.3em;} /* Abstand in Liste auf Startseite */
 blockquote {border-width:0.4em; padding-left:0.3em;}
+}
+
+/* ANPASSUNGEN FÜR DEN AUSDRUCK */
+
+@media print {
+@page {margin: 1.5cm;}
+body, #container, #randspalte, #hauptfeld {background: #fff none;}
+#container {margin:0; width:100%; box-shadow:none;}
+#randspalte {width:inherit; float:none; position:static;
+	padding:20px 13px 20px 15px; border-bottom:1px dashed #281;}
+#hauptfeld {margin:-1.5em 0 0; padding: 0 13px 2.5em 15px; border:0;}
+
+h1,h2,h3,h4,h5,h6,.datum {page-break-after: avoid; color:#111;}
+#randspalte h1 {margin:0;padding-top:0.1em;}
+.datum {margin-top: -0.2em;}
+p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
+p,figcaption,blockquote {color:black;}
+
+figure,blockquote {border:1px solid #999; background:#fff;}
+blockquote + blockquote {margin-top:0.7em;}
+blockquote > p {margin:0 0 0.3em}
+
+.no-print,a[href$="#kommentieren"],a[href$="#kommentare"] {
+	display:none;}
+a:link, a:visited {color:#555;}
+a:after {content:" [" attr(href) "] ";
+	font:italic 1rem/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;}
+a[href^="#"]:after, a[href^="javascript"]:after, a[href^="archiv.html?"]:after { content: "";}
 }
