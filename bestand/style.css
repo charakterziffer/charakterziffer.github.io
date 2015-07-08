@@ -201,7 +201,7 @@ h1,h2,h3,h4,h5,h6,.datum {page-break-after: avoid; color:#111;}
 #randspalte h1 {margin:0;padding-top:0.1em;}
 .datum {margin-top: -0.2em;}
 p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
-p,figcaption,blockquote {color:black;}
+p,figcaption,blockquote {color:#000;}
 
 figure,blockquote {border:1px solid #999; background:#fff;}
 blockquote + blockquote {margin-top:0.7em;}
@@ -209,7 +209,7 @@ blockquote > p {margin:0 0 0.3em}
 
 .no-print,a[href$="#kommentieren"],a[href$="#kommentare"] {
 	display:none;}
-a:link, a:visited {color:#555;}
+a:link, a:visited {color:#000;}
 a:after {content:" [" attr(href) "] ";
 	font:italic 1rem/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;}
 a[href^="#"]:after, a[href^="javascript"]:after, a[href^="archiv.html?"]:after { content: "";}
