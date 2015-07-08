@@ -14,157 +14,6 @@
 </image>
 
 <item>
-	<title>Pattern-Library für @cz+</title>
-	<description>&lt;p&gt;In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein &lt;a href=&quot;index.html&quot; title=&quot;zur Startseite&quot;&gt;interner Link&lt;/a&gt;, in diesem Fall ein bereits besuchter. Ein &lt;a href=&quot;https://äößü.de/&quot; title=&quot;Umlautseite&quot;&gt;unbesuchter Link&lt;/a&gt; sieht so aus. Wie verlinke ich dann &lt;a href=&quot;#anker&quot; title=&quot;zum Anker&quot;&gt;einen Seitenanker&lt;/a&gt;? Übrigens kann man &lt;a href=&quot;https://google.de&quot;&gt;den Titel des Links&lt;/a&gt; auch weglassen.&lt;/p&gt;
-
-&lt;p&gt;Falls man keinen Extra-Linktext braucht, verlinkt man einfach so &lt;a href=&quot;https://direktadresse.de/&quot;&gt;https://direktadresse.de/&lt;/a&gt; (klappt nur bei externen Links). Das geht auch für Mailadressen: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; (Spam?!).&lt;/p&gt;
-
-&lt;p&gt;Aus Lesbarkeitsgründen im Markdown-Text kann man auch &lt;a href=&quot;https://example.com/&quot; title=&quot;Diese Links hier&quot;&gt;Referenzlinks&lt;/a&gt; verwenden. Sie lagern die &lt;a href=&quot;https://beispiel.de/&quot; title=&quot;tauchen im Quelltext&quot;&gt;Linkadresse&lt;/a&gt; einfach an eine beliebige Stelle im Dokument aus, machen im &lt;a href=&quot;https://пример.ru/&quot; title=&quot;im vorangehenden Absatz auf.&quot;&gt;HTML-Quelltext&lt;/a&gt; aber keinen Unterschied.&lt;/p&gt;
-
-&lt;h2 id=&quot;hervorhebungen-h2-berschrift&quot;&gt;Hervorhebungen (H2-Überschrift)&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Kursive Textstellen&lt;/em&gt; werden mit einem Stern umschlossen, &lt;strong&gt;fette Hervorhebungen&lt;/strong&gt; bekommen zwei Sterne. Man kann auch Wort&lt;em&gt;bestand&lt;/em&gt;teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash.&lt;/p&gt;
-
-&lt;h3 id=&quot;weitere-formatierungen-h3-berschrift&quot;&gt;Weitere Formatierungen (H3-Überschrift)&lt;/h3&gt;
-
-&lt;p&gt;Kurze &lt;code&gt;Codeschnippsel&lt;/code&gt; zeichnet man mit einem Gravis aus. Praktischerweise werden &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;-Sonderzeichen wie spitze Klammern oder „&lt;code&gt;Kaufmanns-&amp;amp;&lt;/code&gt;“ gleich umgewandelt.&lt;/p&gt;
-
-&lt;h2 id=&quot;unsortierte-und-sortierte-listen&quot;&gt;Unsortierte und sortierte Listen&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;eine unsortierte Lise&lt;/li&gt;
-  &lt;li&gt;nein, eine Liste&lt;/li&gt;
-  &lt;li&gt;aber unsortiert&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Hund&lt;/li&gt;
-  &lt;li&gt;Katze&lt;/li&gt;
-  &lt;li&gt;Maus&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Dies ist ein Listenpunkt mit zwei Absätzen&lt;/p&gt;
-
-    &lt;p&gt;Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
-erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ein weiterer Punkt in der selben Liste.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Und noch ein Absatz&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.&lt;/p&gt;
-
-&lt;h2 id=&quot;ksten-zitatblcke-codeblcke&quot;&gt;Kästen, Zitatblöcke, Codeblöcke&lt;/h2&gt;
-
-&lt;p&gt;Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse &lt;em&gt;hinterlegt&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p class=&quot;hinterlegt&quot;&gt;Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.&lt;/p&gt;
-
-&lt;p&gt;Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.&lt;/p&gt;
-
-&lt;div class=&quot;hinterlegt&quot;&gt;
-&lt;p&gt;Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.&lt;/p&gt;
-&lt;p&gt;Das ist Absatz Nº2.&lt;/p&gt;
-&lt;p&gt;Hier ist noch ein dritter Absatz.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&amp;gt;):&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;So ein Zitatblock wird dann mit &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; umschlossen. Der Text darinnen steht in einem &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;. Das wird zum Beispiel für Tweets benutzt.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Wenn man ein längeres &lt;code&gt;Codebeispiel&lt;/code&gt; hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens &lt;code&gt;vier Leerzeichen&lt;/code&gt; einrücken):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@font-face {
-   font-family: 'Schriftname';
-   src: url('schrift.eot'); /* IE9 compatibility mode */
-   src: url('schrift.eot?#iefix') format('embedded-opentype'),
-      url('schrift.woff') format('woff'),
-      url('schrift.ttf') format('truetype');
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.&lt;/p&gt;
-
-&lt;h2 id=&quot;bilder&quot;&gt;Bilder&lt;/h2&gt;
-
-&lt;p&gt;Bilder werden so ähnlich wie Links eingebunden:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/cz530x195.jpg&quot; alt=&quot;Alttext des Bildes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; benutzen. Für Untertitel:&lt;/p&gt;
-
-&lt;figure&gt;&lt;img src=&quot;material/cz530x195.jpg&quot; alt=&quot;Ein Beispielbild&quot; /&gt;
-	&lt;figcaption&gt;Hier steht der Bilduntertitel &lt;a href=&quot;#bild&quot;&gt;mit Verlinkung&lt;/a&gt;. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse &lt;code&gt;.texticon&lt;/code&gt;:  &lt;img class=&quot;texticon&quot; src=&quot;bestand/cc-by-sa.png&quot; alt=&quot;CC-BY-SA&quot; /&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;sonstiges&quot;&gt;Sonstiges&lt;/h2&gt;
-
-&lt;p&gt;Ein Klickfeld für Download-Links:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;otfeat/otfeat.ttf&quot; class=&quot;klickfeld&quot;&gt;Ot­feat als&lt;br /&gt;&lt;i&gt;ttf-Da­tei&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Man erzeugt es als &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; mit &lt;em&gt;.klickfeld&lt;/em&gt; als CSS-Klasse.&lt;/p&gt;
-
-&lt;script src=&quot;bestand/klappskript.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;img src=&quot;bestand/klapp.gif&quot; style=&quot;display:none&quot; onload=&quot;klappe('K1');&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;hinterlegt&quot;&gt;
-&lt;p onclick=&quot;klappe('K1');&quot; style=&quot;margin:0; cursor:pointer;&quot;&gt;&amp;gt; Zum Öffnen hier klicken&lt;/p&gt;
-&lt;div id=&quot;K1&quot; style=&quot;overflow:hidden; display:block;&quot;&gt;
-&lt;p&gt;Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes &lt;i&gt;klapp.gif&lt;/i&gt;, dass nach dem Laden das Klappskript einmal ausführt.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Eine &lt;strong style=&quot;background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;&quot;&gt;besonders starke Hervorhebung&lt;/strong&gt; mit rotem Hintergrund. Kommt im Artikel &lt;em&gt;1337motiv.html&lt;/em&gt; vor und braucht evtl. noch eine CSS-Klasse.&lt;/p&gt;
-
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bestand/extra.css&quot; /&gt;
-
-&lt;p&gt;Kurzer &lt;span class=&quot;fraktur&quot;&gt;Textausſchnitt in gebrochener Schrift&lt;/span&gt;, wie er im Eintrag &lt;em&gt;gebrochene-schriften.html&lt;/em&gt; auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für Otfeat-Teile. Das funktioniert aber hier nicht, weil nur relativ verlinkt.&lt;/p&gt;
-
-&lt;form style=&quot;margin-top:1.7em&quot;&gt;&lt;textarea style=&quot;font:2em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;&quot; name=&quot;Testfeld&quot;&gt;Ein Textfeld, um eine Schrift auszuprobieren.&lt;/textarea&gt;&lt;/form&gt;
-
-&lt;p&gt;&lt;span style=&quot;color:#e32;&quot;&gt;Weitere Betonungen?&lt;/span&gt;&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/pattern-library.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/pattern-library.html</guid>
-	<pubDate>Thu, 31 Dec 2015 00:00:00 +0100</pubDate>
-</item>
-
-<item>
 	<title>Eine Schachtel aus Papier</title>
 	<description>&lt;p&gt;Vor zwei Jahren habe ich hier in meinem Blog einen traditionellen, aber simplen &lt;a href=&quot;origamikarpfen.html&quot;&gt;Origami-Karpfen&lt;/a&gt; gefaltet. Diesmal soll eine kleine Schachtel entstehen, ebenfalls sehr leicht nachzufalten.&lt;/p&gt;
 
@@ -302,6 +151,61 @@ consectetuer adipiscing elit.&lt;/p&gt;
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/fuchs-5.html</guid>
 	<pubDate>Wed, 22 Apr 2015 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Neuigkeiten via RSS</title>
+	<description>&lt;p&gt;Wenn sich auf einer Website etwas ändert, zum Beispiel ein neuer Artikel veröffentlicht wird, dann erfährt man das am zuverlässigsten per RSS – zumindest, wenn die Website so etwas anbietet. RSS steht für &lt;em&gt;Really Simple Syndication&lt;/em&gt;, etwa: „echt einfaches Zusammenführen“.&lt;/p&gt;
+
+&lt;p&gt;Grundlage ist eine strukturierte Datei, die sich aktualisiert, sobald etwas neues online gestellt wird. In dieser RSS-Datei stehen dann beispielsweise die Überschrift eines neuen Artikels, ein Textausschnitt oder sogar der komplette Artikel, ein Link zur entsprechenden Internetseite und weitere Daten. Ein Beispiel:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;item&amp;gt;
+&amp;lt;title&amp;gt;Neuigkeiten via RSS&amp;lt;/title&amp;gt;
+&amp;lt;description&amp;gt;Wenn sich auf einer Website etwas ändert, zum Beispiel ein neuer Artikel […]&amp;lt;/description&amp;gt;
+&amp;lt;link&amp;gt;charakterziffer.github.io/rss-feeds.html&amp;lt;/link&amp;gt;
+&amp;lt;dc:creator&amp;gt;Gerhard Großmann&amp;lt;/dc:creator&amp;gt;
+&amp;lt;pubDate&amp;gt;Mon, 30 Mar 2015&amp;lt;/pubDate&amp;gt;
+&amp;lt;/item&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Der Code ist nur ein Ausschnitt; in der Regel stehen mehrere &lt;code&gt;&amp;lt;item&amp;gt;&lt;/code&gt; (also Artikel) in einer RSS-Datei, dazu einige allgemeine Informationen zur Website. Weil die Daten so klar strukturiert sind, lassen sie sich maschinell auslesen, also von einem Programm auswerten. Ein solches Programm könnte zum Beispiel ein Feedreader&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; wie QuiteRSS sein. Er sammelt neue Artikel aus unterschiedlichen Quellen und stellt sie in einer Liste dar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/feedreader.png&quot; alt=&quot;Bildschirmfoto des Feedreaders QuiteRSS&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;soziale-medien-als-rss-ersatz&quot;&gt;Soziale Medien als RSS-Ersatz?&lt;/h2&gt;
+
+&lt;p&gt;Aber Moment: Ist das nicht das gleiche, was auch Twitter und Facebook tun? Ich gebe unterschiedliche Quellen an (folge, befreunde mich) und in meiner Timeline&lt;a href=&quot;#note2&quot;&gt;&lt;sup id=&quot;ziffer2&quot;&gt;[2]&lt;/sup&gt;&lt;/a&gt; tauchen dann Informationen dieser Quellen auf …? – Ja, das Prinzip ist gleich, die Schwerpunkte aber liegen völlig unterschiedlich.&lt;/p&gt;
+
+&lt;p&gt;Bei soziale Medien geht es sehr oft um Vernetzung und persönliche Darstellung. Es hängt natürlich ein wenig davon ab, wem man folgt, oft werden auch Links zu wissenswerten Artikeln veröffentlicht, aber meistens sind da eben vor allem kurze Erlebnisse, Anspielungen auf Hobbys, Schnappschüsse und „soziales Geschnatter“. Posts in sozialen Medien sind sehr viel stärker auf Aktualität zugeschnitten, weil die Informationen recht schnell wieder unten in der Timeline verschwinden.&lt;/p&gt;
+
+&lt;p&gt;RSS ist eher eine alternative Art, auf Website-Inhalte zuzugreifen. Anstatt regelmäßig nachzugucken, ob es schon etwas neues auf der Website gibt, lässt man sich einfach per RSS benachrichtigen. Von der inhaltlichen Gewichtung entsprechen RSS-Einträge mehr einem Newsletter als einem Tweet oder Facebook-Post. Je nach Blog, das man abonniert hat, spielt die persönliche Perspektive eine größere oder kleinere Rolle.&lt;/p&gt;
+
+&lt;p&gt;Für RSS muss man auch keinen Account bei einem Anbieter anlegen und es ist völlig anonym, jemandem „zu folgen“.&lt;/p&gt;
+
+&lt;h2 id=&quot;wie-kann-man-rss-nutzen&quot;&gt;Wie kann man RSS nutzen?&lt;/h2&gt;
+
+&lt;p&gt;Damit man die RSS-Benachrichtigung auf einer Website nutzen kann, muss diese das erst einmal anbieten. Bei Blogs ist das zum Glück noch immer die Regel, auch viele Foren oder Nachrichtenseiten bieten das an. Die RSS-Adresse findet man meistens, indem man auf das &lt;img alt=&quot;&quot; class=&quot;texticon&quot; src=&quot;bestand/rss-icon.png&quot; /&gt; RSS-Symbol achtet. Die richtige Adresse kopiert man dann in das RSS-Programm, das man gerne nutzen möchte. Das muss übrigens nicht unbedingt ein RSS-Reader sein. Auch Mailprogramme wie Thunderbird unterstützen RSS. Wenn man die RSS-Adresse bei den Kontoeinstellungen als RSS-Quelle hinzufügt, bekommt man neue Website-Inhalte wie eine Mail zugestellt.&lt;/p&gt;
+
+&lt;p&gt;Sehr praktisch sind die dynamischen Lesezeichen im Firefox. Wenn man in diesem Browser eine RSS-Adresse öffnen, kann man den Feed als Lesezeichen abonnieren. Die Website taucht dann als Ordner in der Lesezeichenleiste auf, ein Klick auf einen Eintrag öffnet direkt den entsprechenden Artikel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/dyn-lesezeichen.png&quot; alt=&quot;Dynamische Lesezeichen in Firefox&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;RSS ist tot. So hieß es vor gut zwei Jahren, als der populäre RSS-Leser &lt;em&gt;Google Reader&lt;/em&gt; eingestellt wurde. Dabei ist das RSS-Format einfach zu praktisch, um es leichtfertig aufzugeben. Ich persönlich habe sieben Blogs als dynamische Lesezeichen abonniert, folge sieben weiteren mit meinem Mailprogramm; beobachte vier Videokanäle, ohne dort mit einem Account eingeloggt zu sein, und lasse mich über Änderungen eines GitHub-Archivs informieren.&lt;/p&gt;
+
+&lt;p&gt;Das sind teilweise Quellen, bei denen sich nur alle halbe Jahre etwas tut. Aber dann werde ich sofort informiert, ohne dass ich in der Zwischenzeit aktiv nachschauen müsste.&lt;/p&gt;
+
+&lt;p&gt;Nutzt ihr (noch) RSS? Wenn ja: wie? Falls ihr selbst ein Blog betreibt: Habt ihr Abrufzahlen, wie viele Leser euch per RSS abonniert haben? Oder ist RSS für euch doch schon tot, weil soziale Medien einfach „viel praktischer“ sind?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Feedreader:&lt;/b&gt; RSS-Dateien mit ihren strukturierten Daten werden auch als &lt;em&gt;RSS-Feed&lt;/em&gt; bezeichnet (engl. &lt;em&gt;feed&lt;/em&gt; „Zulauf“, „Versorgung“). Ein Programm, das solche Feeds ausliest (engl. &lt;em&gt;read&lt;/em&gt; „lesen“) heißt eben Feadreader. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b id=&quot;note2&quot;&gt;[2] Timeline&lt;/b&gt;, bei Twitter auch &lt;em&gt;Stream&lt;/em&gt; („Strom“) genannt: Eine Liste von Meldungen/Tweets, oben beginnend mit dem Neusten. Aktuelle Einträge können vorhergehende schnell nach unten verdrängen, wo sie dann aus dem Blick geraten. &lt;a href=&quot;#ziffer2&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/rss-feeds.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/rss-feeds.html</guid>
+	<pubDate>Mon, 30 Mar 2015 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

@@ -31,158 +31,6 @@
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="http://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 
-	<p class="datum">Do,
-31.
-Dez.
-
-2015</p>
-	<h1><a href="pattern-library.html">Pattern-Library für @cz+</a></h1>
-	<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
-
-<p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="https://direktadresse.de/">https://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;</a> (Spam?!).</p>
-
-<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="https://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="https://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="https://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
-
-<h2 id="hervorhebungen-h2-berschrift">Hervorhebungen (H2-Überschrift)</h2>
-
-<p><em>Kursive Textstellen</em> werden mit einem Stern umschlossen, <strong>fette Hervorhebungen</strong> bekommen zwei Sterne. Man kann auch Wort<em>bestand</em>teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash.</p>
-
-<h3 id="weitere-formatierungen-h3-berschrift">Weitere Formatierungen (H3-Überschrift)</h3>
-
-<p>Kurze <code>Codeschnippsel</code> zeichnet man mit einem Gravis aus. Praktischerweise werden <code>&lt;html&gt;</code>-Sonderzeichen wie spitze Klammern oder „<code>Kaufmanns-&amp;</code>“ gleich umgewandelt.</p>
-
-<h2 id="unsortierte-und-sortierte-listen">Unsortierte und sortierte Listen</h2>
-
-<ul>
-  <li>eine unsortierte Lise</li>
-  <li>nein, eine Liste</li>
-  <li>aber unsortiert</li>
-</ul>
-
-<p>Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:</p>
-
-<ol>
-  <li>Hund</li>
-  <li>Katze</li>
-  <li>Maus</li>
-</ol>
-
-<p>Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.</p>
-
-<ul>
-  <li>
-    <p>Dies ist ein Listenpunkt mit zwei Absätzen</p>
-
-    <p>Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
-erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit.</p>
-  </li>
-  <li>
-    <p>Ein weiterer Punkt in der selben Liste.</p>
-  </li>
-  <li>
-    <p>Und noch ein Absatz</p>
-  </li>
-</ul>
-
-<p>Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.</p>
-
-<h2 id="ksten-zitatblcke-codeblcke">Kästen, Zitatblöcke, Codeblöcke</h2>
-
-<p>Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse <em>hinterlegt</em>.</p>
-
-<p class="hinterlegt">Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.</p>
-
-<p>Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.</p>
-
-<div class="hinterlegt">
-<p>Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.</p>
-<p>Das ist Absatz Nº2.</p>
-<p>Hier ist noch ein dritter Absatz.</p>
-</div>
-
-<p>Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&gt;):</p>
-
-<blockquote>
-  <p>So ein Zitatblock wird dann mit <code>&lt;blockquote&gt;</code> umschlossen. Der Text darinnen steht in einem <code>&lt;p&gt;</code>. Das wird zum Beispiel für Tweets benutzt.</p>
-</blockquote>
-
-<p>Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:</p>
-
-<blockquote>
-  <p>⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<p>Wenn man ein längeres <code>Codebeispiel</code> hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens <code>vier Leerzeichen</code> einrücken):</p>
-
-<pre><code>@font-face {
-   font-family: 'Schriftname';
-   src: url('schrift.eot'); /* IE9 compatibility mode */
-   src: url('schrift.eot?#iefix') format('embedded-opentype'),
-      url('schrift.woff') format('woff'),
-      url('schrift.ttf') format('truetype');
-}
-</code></pre>
-
-<p>Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.</p>
-
-<hr />
-
-<p>Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.</p>
-
-<h2 id="bilder">Bilder</h2>
-
-<p>Bilder werden so ähnlich wie Links eingebunden:</p>
-
-<p><img src="material/cz530x195.jpg" alt="Alttext des Bildes" /></p>
-
-<p>Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen. Für Untertitel:</p>
-
-<figure><img src="material/cz530x195.jpg" alt="Ein Beispielbild" />
-	<figcaption>Hier steht der Bilduntertitel <a href="#bild">mit Verlinkung</a>. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.</figcaption>
-</figure>
-
-<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>:  <img class="texticon" src="bestand/cc-by-sa.png" alt="CC-BY-SA" />.</p>
-
-<h2 id="sonstiges">Sonstiges</h2>
-
-<p>Ein Klickfeld für Download-Links:</p>
-
-<p><a href="otfeat/otfeat.ttf" class="klickfeld">Ot­feat als<br /><i>ttf-Da­tei</i></a></p>
-
-<p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
-
-<script src="bestand/klappskript.js" type="text/javascript"></script>
-
-<p><img src="bestand/klapp.gif" style="display:none" onload="klappe('K1');" /></p>
-
-<div class="hinterlegt">
-<p onclick="klappe('K1');" style="margin:0; cursor:pointer;">&gt; Zum Öffnen hier klicken</p>
-<div id="K1" style="overflow:hidden; display:block;">
-<p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p></div>
-</div>
-
-<p>Eine <strong style="background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;">besonders starke Hervorhebung</strong> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>
-
-<link rel="stylesheet" type="text/css" href="bestand/extra.css" />
-
-<p>Kurzer <span class="fraktur">Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für Otfeat-Teile. Das funktioniert aber hier nicht, weil nur relativ verlinkt.</p>
-
-<form style="margin-top:1.7em"><textarea style="font:2em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;" name="Testfeld">Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form>
-
-<p><span style="color:#e32;">Weitere Betonungen?</span></p>
-
-	<p>---<br> <a href="pattern-library.html#kommentare">2 Kommentare</a>
-	</p>
-
 	<p class="datum">Di,
 30.
 Juni
@@ -243,6 +91,34 @@ Juni
 	<p>---<br> <a href="titel-abstufen.html#kommentieren">Artikel kommentieren …</a>
 		</p>
 
+	<p class="datum">Fr,
+15.
+Mai
+2015</p>
+	<h1><a href="tweets-mit-anhang.html">Tweets mit Anhang</a></h1>
+	<p>Früher war die Twitter-Welt noch in Ordnung. Man hatte seine 140 Zeichen, die man mit einer interessanten Kurzinformation füllen konnte. Die Beschränkung gebar kreative Nutzungsmöglichkeiten wie den Hashtag: eine Art Schlagwort, mit Hilfe dessen man unterschiedliche Tweets zu einem Thema bündeln kann. Kurz-URL-Dienste kamen auf, damit auch Links in einem Tweet Platz haben konnten. Vor einen Retweet, also Statusmeldungen eines anderen, die man an die eigenen Follower weiterverbreitet, kopierte man <em>RT</em> und den Nutzernamen.</p>
+
+<p>Auch wegen dieser etwas seltsamen Hacks würde ich sagen, dass Twitter für Neulinge eine hohe Einstiegshürde bereit hielt. Es war anfangs unklar, was man eigentlich schreiben sollte, wem man am besten folgt. Ich hatte da zu Beginn auch meine Schwierigkeiten, bis ich langsam <a href="twitterpause.html">den Reiz von Twitter</a> entdeckt habe. Als ich Rückmeldungen bekam, machte es großen Spaß, die Beschränkung der 140 Zeichen auszunutzen und zu versuchen, mit kreativen Lösungen das meiste herauszuholen. Und ich bekam ebenso kurze, witzige, informative Häppchen von den Leuten, denen ich gefolgt bin.</p>
+
+<h2 id="mehr-als-140-zeichen">Mehr als 140 Zeichen</h2>
+
+<p>Nun sind fünf Jahre vergangen und Twitter hat sich immens weiterentwickelt. Es hat die Hacks seiner Nutzer integriert und sich um viele Funktionen erweitert. URLs werden nun automatisch von Twitter gekürzt (praktischerweise gleich mit einer Click-Tracking-Auswertung), Bilder müssen nicht mehr verlinkt, sondern können direkt bei Twitter hochgeladen werden; seit einiger Zeit sogar mehrere Bilder pro Tweet. 30-Sekunden-Videos sind ebenfalls möglich, und wenn ein News-Artikel verlinkt wird, zeigt Twitter direkt eine kleine Vorschau an. Tweets eines anderen Nutzers können nun sogar zitiert und kommentiert werden – was die Länge eines Tweets quasi verdoppelt.</p>
+
+<p>Das kann einen Tweet natürlich attraktiver, umfangreicher und inhaltlich aussagekräftiger machen. Andererseits geht dadurch meiner Meinung nach etwas wichtiges verloren: Die Herausforderung, einen Inhalt in eine prägnante Text-Form bringen zu müssen.</p>
+
+<p>Ein Text ist zu lang für einen Tweet? Kein Problem: Es gibt Apps, die einen Artikel als mehrere Screenshots an einen Tweet hängen. Mir fehlen die Worte, um die anrührende Wirkung eines Sonnenuntergangs zu beschreiben? Häng ich halt ein Foto an. Ich kann eine Nachricht nicht kurz formulieren? Bette ich halt den Anfang des News-Beitrags ein. Meine Katze macht gerade spektakuläre Saltos? Dann wollen wir mal hoffen, dass die 30-Sekunden-Beschränkung für ein lustiges Video reicht.</p>
+
+<h2 id="weniger-ist-mehr">Weniger ist mehr</h2>
+
+<p>Damit wir uns nicht falsch verstehen: Ich habe nichts gegen längere Artikel, Sonnenuntergangsfotos oder … nun ja, gegen Katzenvideos habe ich eigentlich schon etwas (an dieser Stelle steigen nun 95% aller Leser kopfschüttelnd aus).</p>
+
+<p>Es geht mir nicht darum, was ich <em>nicht</em> mag, sondern im Gegenteil, was ich <em>liebe</em>. Und ich liebe nachdenkliche, überraschende, einfallsreiche, witzige und vor allem kurze und prägnante Texte. Ich liebe die Beschränkung und die Hacks mit denen man sie zu durchbrechen versucht. Je mehr Medieninhalte Twitter in seinen Statusupdates erlaubt, desto weniger bleibt übrig von diesem reizvollen Kern.</p>
+
+<p>Und nebenbei: Desto attraktiver wird Twitter für Linkschleudern, Katzenvideo-Poster, Newsartikel-Verbreiter, Foto-Blogger usw. – Bitte bleibt doch einfach bei Instagram, YouTube, Skype und Facebook, wenn ihr keine Kurztexte schreiben wollt.</p>
+
+	<p>---<br> <a href="tweets-mit-anhang.html#kommentare">2 Kommentare</a>
+	</p>
+
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -265,7 +141,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
 <p>&nbsp;</p>
-<p style="text-align:right; color:#666; font-size:0.5em; margin-right:1.6em">Website zuletzt erstellt: 2015-07-08T12:41:19+02:00<br>&nbsp;</p>
+<p style="text-align:right; color:#666; font-size:0.5em; margin-right:1.6em">Website zuletzt erstellt: 2015-07-08T12:43:05+02:00<br>&nbsp;</p>
 
 </div> <!-- hauptfeld -->
 </div> <!-- container -->

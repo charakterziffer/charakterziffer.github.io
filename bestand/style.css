@@ -203,7 +203,8 @@ h1, h2, h3, h4, h5, h6, .datum {page-break-after: avoid; color:#111;}
 p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited {color:#000;}
 
-figure,blockquote,.hinterlegt {border:1px solid #ccc; background:#fff;}
+figcaption, blockquote, .hinterlegt {
+	border:1px solid #ccc; background:#fff;}
 blockquote + blockquote {margin-top:0.7em;}
 blockquote > p {margin:0 0 0.3em}
 
