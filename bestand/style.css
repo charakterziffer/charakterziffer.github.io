@@ -8,212 +8,224 @@
 /* local('Source Sans Pro'), local('SourceSansPro-Regular') entfernt,
    weil Android 2.2 und 2.3 sonst gar keine Schriften laden */
 
-@font-face {font-family: 'Source Sans Pro';
+@font-face { font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
 	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
 	url('SourceSansPro-Rg.woff') format('woff'),
-	url('SourceSansPro-Rg.ttf') format('truetype');}
-@font-face {font-family: 'Source Sans Pro';
+	url('SourceSansPro-Rg.ttf') format('truetype'); }
+@font-face { font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
 	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
 	url('SourceSansPro-It.woff') format('woff'),
-	url('SourceSansPro-Rg.ttf') format('truetype');}
-@font-face {font-family: 'Bitter';
+	url('SourceSansPro-Rg.ttf') format('truetype'); }
+@font-face { font-family: 'Bitter';
 	font-style: normal; font-weight: normal;
 	src: local('Bitter'), local('Bitter-Regular'),
 	url('Bitter.woff') format('woff'),
-	url('Bitter.ttf') format('truetype');}
+	url('Bitter.ttf') format('truetype'); }
 
-/* Grundsätzliches Layout */
+/* GRUNDSÄTZLICHES LAYOUT */
 
-* {box-sizing: border-box;}
-html {font-size:100.01%; -webkit-text-size-adjust: 100.01%;
-	-ms-text-size-adjust: 100.01%;}
-body {text-align:center; margin:0; padding:5px;
-	background: #281 url(shattered.png) repeat fixed;
-	font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;
-	font-weight:400; color:#222;}
+* { box-sizing: border-box; }
+html { font-size: 100.01%; -webkit-text-size-adjust: 100.01%;
+	-ms-text-size-adjust: 100.01%; }
+body { margin: 0; padding: 5px; text-align: center;
+	font: 1em/1.4 'Source Sans Pro',Calibri,Arial,sans-serif;
+	font-weight: 400; color: #222;
+	background: #281 url(shattered.jpg) repeat fixed; }
 
-#container {text-align: left; margin: 30px auto 50px;
-	min-width:47em; max-width:57em;
-	background-color:#eee; box-shadow: 1px 2px 8px #222;}
-#randspalte {float:left; width:16.6em; padding: 63px 1em 56px;
-	position:fixed;}
-#hauptfeld {background-color: #fff; border-left:1px dashed #281;
-	margin-left:16.6em; padding: 0.08em 65px 1.4em 55px;}
+@media (max-width: 44.4em) { body { padding: 2px; } }
+@media (max-width: 25em) { body { padding: 1px; } }
 
-/* Überschriften */
+#container { min-width: 47em; max-width: 57em; margin: 30px auto 50px;
+	text-align: left; background-color: #eee;
+	box-shadow: 1px 2px 8px #222; }
+#randspalte { position: fixed; float: left;
+	width: 16.6em; padding: 63px 1em 56px; }
+#hauptfeld { margin-left: 16.6em; padding: 0.08em 65px 1.4em 55px;
+	background-color: #fff; border-left: 1px dashed #281; }
 
-h1,h2,h3 {font-family: Bitter, Georgia, serif; font-weight:400;}
-h1 {font-size:1.5em; line-height:0.933; color:#444;
-	margin: 2.78em 0 0.7em -0.04em;}
-#randspalte h1 {font-size: 1.9em; line-height:1; margin:0;}
-h2 {font-size:1.1em; line-height:1.273; color: #333;
-	margin: 1.2em 0 -0.55em -0.04em;}
-h3 {font-size:0.9em; line-height:1.556; color:#222;
-	margin: 1.5em 0 -0.725em -0.04em;}
-
-/* Formatierungen für Lesetexte */
-
-p, ul, ol {margin-bottom:-0.3em; -webkit-font-feature-settings: "onum";
-	font-feature-settings: "onum";
-/*	statt CSS-hyphens wird noch hyphenator.js verwendet
-	-webkit-hyphens: auto; -moz-hyphens: auto;
-	-ms-hyphens: auto; hyphens: auto; */}
-#randspalte p {font-size:0.9em; line-height:1.556;
-	margin-bottom: -0.22em;}
-
-i, em {font-style:italic; color: #111;}
-b, strong {font: normal 0.9em Bitter, Georgia, serif; color:#111;}
-.datum {color:#666; float:right; position:relative; right:0.5em;
-	margin-top: 3.95em; padding-left:1em; display:block;}
-sup,sub {line-height:0;}
-
-hr {margin:1.88em 0.4em 1.1em 0; color:#bbb;}
-
-.hinterlegt {margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
-	background-color: #deb;}
-.hinterlegt p {margin:0.2em;}
-.hinterlegt p + p {margin-top:0.7em;}
-
-/* Listen, Zitatblöcke, Code */
-
-ul {margin: 1.29em 0 1.1em -1.55em;}
-ul li {list-style:square; margin-top:0;}
-ul li p {margin:0.7em 0;}
-ol {margin-left: -1.2em;}
-
-blockquote {margin:1.4em 0 1.3em; padding: 0 0.2em 0 0.4em;
-	border-left:0.7em solid #deb; background-color:#f4f4f4;}
-blockquote + blockquote {margin-top:1.7em;}
-
-code, pre {padding:0 0.1em; margin: 1.1em 0 -0.33em; color:#222;
-	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono', monospace;}
-pre > code {font-size:1em; line-height:1.556;
-	white-space: pre; white-space: pre\9; /* IE7+ */
-	white-space: -moz-pre-wrap; white-space: pre-wrap;}
-
-/* Links */
-
-a:link {text-decoration:none; color:#281;}
-a:link:not(.klickfeld) {font-family:Bitter,Georgia,serif;}
-p a:link:not(.klickfeld) {font-size:0.9em;} /* Überschriften-Links und Klickfelder nicht verkleinern */
-a:visited {color:#839;}
-a:hover {color:#3a1;}
-a:active {color:#e32;}
-a:focus {outline:1px dotted #444;}
-a:target {background-color:#cf8; color:#444;}
-
-a.klickfeld {margin:1.038em 30%; width:40%;
-	display:inline-block; padding: 0.25em 0.4em 0.35em;
-	text-align:center; background-color: #deb; color:#222;
-	border:0.062em solid #281; box-shadow: 1px 1px 2px #ccc;}
-
-/* Bilder */
-
-img {max-width:98.5%; height:auto; border-width:0;
-	-ms-interpolation-mode:bicubic;}
-p > img {margin:0.7em 0 0.3em;} /* Extra-Abstand */
-
-figure {margin:1.7em 0 1.4em; line-height:0; border:0;
-	width:98.5%; background: #eee; height:auto;}
-figure img {max-width:100%;}
-figcaption {padding: 0.5em 0.8em 0.3em; color: #111; font-size: 0.9em; line-height:1.556; font-style: italic;}
-figcaption a {font-style:normal; font-size:0.9em;}
-
-.logo {float:left; margin-right:0.8em;}
-.texticon {margin:0; vertical-align:-2px; padding:0 0.2em;}
-
-/* Werbediv von Formular-Chef verstecken */
-div[style*="font-family:arial;"] {left:-9999px;}
-/* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
-.onlex_counter {display:none;}
-
-/* Formulare */
-
-input[type=text], input[type=email], input[type=url],
-input[type=submit] {font-size: 0.9em; line-height:1.556 }
-textarea {padding: 0.1em 0 0.1em 0.2em; width:98%;}
-form > div {clear: both; padding-top: 0.4em;}
-
-label {font: 0.9em/1.556 Bitter,Georgia,serif; width:16%;
-	float:left;	position:relative; top:0.2em}
-label:after {content:':';}
-form > div > div {width: 78%; float:right; padding-right:2%;}
-input[type=text], input[type=email], input[type=url] {width: 50%;}
-
-
-/* ANPASSUNGEN FÜR KLEINERE BILDSCHIRME */
-
-/* Randspalte nicht mehr fix, wenn Fensterhöhe zu niedrig */
-@media (max-height: 33.5em) {
-#randspalte {position:static;}
-}
-
-@media (max-width: 54em) {
-label {width: 100%; float: none; top:0;}
-form > div > div {width: 98%; float: none;}
-input[type=text], input[type=email], input[type=url] {width: 100%;}
-}
+/* Wenn Fensterhöhe zu niedrig, dann Randspalte nicht mehr fix */
+@media (max-height: 33.5em) { #randspalte { position: static; } }
 
 @media (max-width: 44.4em) {
-body {padding:2px;}
-#container {margin:0; min-width:100%; box-shadow:none;
-	background-color:#fff;}
-#randspalte {width:inherit; padding:15px 13px 20px 15px;
-	float:none; position:static; border-bottom:1px dashed #281;
-	background-color:#eee;}
-#hauptfeld {margin:-1.5em 0 0; padding: 0 13px 2.5em 15px;
-	border:0; background-color:transparent;}
-#randspalte h1 {margin:0.6em 0;}
-.datum {margin-top: -0.2em;}
-p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
-label {width: 50%; float: left; top:0.2em;}
-form > div > div {width: 78%; float: right;}
-input[type=text], input[type=email], input[type=url] {width: 50%;}
+#container { min-width: 100%; margin: 0;
+	background-color: #fff; box-shadow: none; }
+#randspalte { position: static; float: none; width: inherit;
+	padding: 15px 13px 20px 15px;
+	border-bottom: 1px dashed #281; background-color: #eee; }
+#hauptfeld { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
+	border: 0;}
 }
 
-@media (max-width: 34em) {
-label {width: 100%; float: none; top:0;}
-form > div > div {width: 98%; float: none;}
-input[type=text], input[type=email], input[type=url],
-input[type=password] {width: 100%;}
+/* ÜBERSCHRIFTEN */
+
+h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: 400; }
+h1 { font-size: 1.5em; line-height: 0.933; color: #444;
+	margin: 2.78em 0 0.7em -0.04em; }
+#randspalte h1 { font-size: 1.9em; line-height: 1; margin: 0; }
+h2 { font-size: 1.1em; line-height: 1.273; color: #333;
+	margin: 1.2em 0 -0.55em -0.04em; }
+h3 { font-size: 0.9em; line-height: 1.556; color: #222;
+	margin: 1.5em 0 -0.725em -0.04em; }
+
+@media (max-width: 44.4em) { #randspalte h1 { margin: 0.6em 0; } }
+@media (max-width: 25em) { #randspalte h1 { margin: 0; } }
+
+/* FORMATIERUNGEN FÜR LESETEXTE */
+
+p, ul, ol { margin-bottom: -0.3em;
+	-webkit-font-feature-settings: "onum"; font-feature-settings: "onum";
+/*	statt CSS-hyphens wird noch hyphenator.js verwendet
+	-webkit-hyphens: auto; -moz-hyphens: auto;
+	-ms-hyphens: auto; hyphens: auto; */ }
+#randspalte p { margin-bottom: -0.22em; font-size: 0.9em;
+	line-height: 1.556; }
+
+i, em { font-style: italic; color: #111; }
+b, strong { font: normal 0.9em Bitter,Georgia,serif; color: #111; }
+sup, sub { line-height: 0; }
+.datum { position: relative; float: right; right: 0.5em; display: block;
+	margin-top: 3.95em; padding-left: 1em; color: #666; }
+
+@media (max-width: 44.4em) {
+.datum { margin-top: -0.2em; }
+p + .datum { margin-top: 3.95em; } /* Abstand auf Startseite erhalten */
 }
 
 @media (max-width: 25em) {
-body {padding:1px;}
-#randspalte h1 {margin:0;}
-p + .datum {margin-top: 2.3em;} /* Abstand in Liste auf Startseite */
-blockquote {border-width:0.4em; padding-left:0.3em;}
+/* Datum rechts oberhalb der Überschrift */
+.datum { margin-top: -1.9em; }
+p + .datum { margin-top: 2.3em; } /* Abstand auf Startseite */
+}
+
+hr { margin: 1.88em 0.4em 1.1em 0; color: #bbb; }
+
+.hinterlegt { margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
+	background-color: #deb; }
+.hinterlegt p { margin: 0.2em; }
+.hinterlegt p + p { margin-top: 0.7em; }
+
+/* LISTEN, CODE, ZITATBLÖCKE */
+
+ul { margin: 1.29em 0 1.1em -1.55em; }
+ul li { list-style: square; margin-top: 0; }
+ul li p { margin: 0.7em 0; }
+ol { margin-left: -1.5em; }
+
+code, pre { margin: 1.1em 0 -0.33em; padding: 0 0.1em; color: #222;
+	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace; }
+pre > code { font-size: 1em; line-height: 1.556;
+	white-space: pre; white-space: pre\9; /* IE7+ */
+	white-space: -moz-pre-wrap; white-space: pre-wrap; }
+
+blockquote { margin: 1.4em 0 1.3em; padding: 0 0.2em 0 0.4em;
+	border-left: 0.7em solid #deb; background-color: #f4f4f4; }
+blockquote + blockquote { margin-top: 1.7em; }
+
+@media (max-width: 25em) {
+blockquote { padding-left: 0.3em; border-width: 0.4em; }
+}
+
+/* LINKS */
+
+a:link { text-decoration: none; color: #281; }
+a:link:not(.klickfeld) { font-family: Bitter,Georgia,serif; }
+p a:link:not(.klickfeld) { font-size: 0.9em; }
+	/* Überschriften-Links und Klickfelder nicht verkleinern */
+a:visited { color: #839; }
+a:hover { color: #3a1; }
+a:active { color: #e32; }
+a:focus { outline: 1px dotted #444; }
+a:target { background-color: #deb; color: #444; }
+
+a.klickfeld { width: 40%; margin: 1.038em 30%;
+	padding: 0.25em 0.4em 0.35em; display: inline-block;
+	text-align: center; color: #222; background-color: #deb;
+	border: 0.062em solid #281; box-shadow: 1px 1px 2px #ccc; }
+
+/* BILDER */
+
+img { max-width: 98.5%; height: auto; border-width: 0;
+	-ms-interpolation-mode: bicubic; }
+p > img { margin: 0.7em 0 0.3em; } /* Extra-Abstand */
+
+figure { width: 98.5%; height: auto; margin: 1.7em 0 1.4em;
+	line-height: 0; border: 0; background: #eee; }
+figure img { max-width: 100%; }
+figcaption { padding: 0.5em 0.8em 0.3em; font-style: italic;
+	font-size: 0.9em; line-height: 1.556; color: #111;}
+figcaption a { font-style: normal; font-size: 0.9em; }
+
+.logo { float: left; margin-right: 0.8em; }
+.texticon { margin: 0; padding: 0 0.2em; vertical-align: -2px; }
+
+/* Werbediv von Formular-Chef verstecken */
+div[style*="font-family: arial;"] { left: -9999px; }
+/* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
+.onlex_counter { display: none; }
+
+/* FORMULARE */
+
+input[type=text], input[type=email], input[type=url],
+input[type=submit] { font-size: 0.9em; line-height: 1.556 }
+textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; }
+form > div { padding-top: 0.4em; clear: both; }
+
+label { position: relative; float: left; top: 0.2em; width: 20%;
+	font: 0.9em/1.556 Bitter,Georgia,serif; }
+label:after { content: ': '; }
+form > div > div { float: right; width: 78%; padding-right: 2%; }
+input[type=text], input[type=email], input[type=url] { width: 50%; }
+
+@media (max-width: 54em) {
+label { float: none; top: 0; width: 100%; }
+form > div > div { float: none; width: 98%; }
+input[type=text], input[type=email], input[type=url] { width: 100%; }
+}
+
+@media (max-width: 44.4em) {
+label { float: left; top: 0.2em; width: 20%; }
+form > div > div { float: right; width: 78%; }
+input[type=text], input[type=email], input[type=url] { width: 50%; }
+}
+
+@media (max-width: 34em) {
+label { float: none; top: 0; width: 100%; }
+form > div > div { float: none; width: 98%; }
+input[type=text], input[type=email], input[type=url] { width: 100%; }
 }
 
 /* ANPASSUNGEN FÜR DEN AUSDRUCK */
 
 @media print {
-@page {margin: 1.5cm;}
-body, #container, #randspalte, #hauptfeld {background: #fff none;}
-#container {margin:0; width:100%; box-shadow:none;}
-#randspalte {width:inherit; float:none; position:static;
-	padding:20px 13px 20px 15px; border-bottom:1px dashed #281;}
-#hauptfeld {margin:-1.5em 0 0; padding: 0 13px 2.5em 15px; border:0;}
+@page { margin: 1.5cm; }
+body, #container, #randspalte, #hauptfeld { background: #fff none; }
+#container { width: 100%; margin: 0; box-shadow: none; }
+#randspalte { position: static; float: none; width: inherit;
+	padding: 20px 0; border-bottom: 1px dashed #281;}
+#hauptfeld { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
 
-h1, h2, h3, h4, h5, h6, .datum {page-break-after: avoid; color:#111;}
-#randspalte h1 {margin:0;padding-top:0.1em;}
-.datum {margin-top: -0.2em;}
-p + .datum {margin-top: 3.95em;} /* Abstand in Liste auf Startseite */
-p, figcaption, blockquote, a:link, a:visited {color:#000;}
-
-figcaption, blockquote, .hinterlegt {
-	border:1px solid #ccc; background:#fff;}
-blockquote + blockquote {margin-top:0.7em;}
-blockquote > p {margin:0 0 0.3em}
+h1, h2, h3, h4, h5, h6, .datum {
+	page-break-after: avoid; page-break-inside: avoid; color: #111; }
+#randspalte h1 { margin: 0; padding-top: 0.1em;}
+.datum { margin-top: -0.2em; }
+p + .datum { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
+p, figcaption, blockquote, a:link, a:visited { color: #000; }
 
 /* Alle Klappkästen im Druck geöffnet anzeigen */
-p[onclick^="klappe"] + div {display:block !important}
+p[onclick^="klappe"] + div { display: block !important }
+
+img, table { page-break-inside: avoid; }
+figcaption, blockquote, .hinterlegt {
+	background: #fff; border: 1px solid #ccc; }
+blockquote + blockquote { margin-top: 0.7em; }
+blockquote > p { margin: 0 0 0.3em }
 
 .no-print,a[href$="#kommentieren"],a[href$="#kommentare"] {
-	display:none;}
-a:after {content:" [" attr(href) "] ";
-	font:italic 1rem/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;}
-a[href^="#"]:after, a[href^="javascript"]:after, a[href^="archiv.html?"]:after { content: "";}
+	display: none; }
+a:after { content: " [" attr(href) "] ";
+	font: italic 1rem/1.4 'Source Sans Pro',Calibri,Arial,sans-serif; }
+a[href^="#"]:after, a[href^="javascript"]:after,
+	a[href^="archiv.html?"]:after { content: ""; }
 }

@@ -19,7 +19,7 @@
 <div id="container">
 
 <div id="randspalte" class="donthyphenate">
-<a href="http://charakterziffer.github.io/"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zur Startseite"><h1>@charak<span style="font-size:0.01em;"> </span>terziffer</h1></a>
+<a href="http://charakterziffer.github.io/"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zur Startseite" width="60px" height="60px"><h1>@charak<span style="font-size:0.01em;"> </span>terziffer</h1></a>
 <p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="http://charakterziffer.github.io/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p class="no-print">Mein <a href="http://charakterziffer.github.io/rss.xml">RSS-Feed <img alt="(RSS-Icon)" class="texticon" src="http://charakterziffer.github.io/bestand/rss-icon.png"></a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="http://charakterziffer.github.io/archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.<span class="no-print"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="http://charakterziffer.github.io/bestand/cc-by-sa.png"></a></span></p>
@@ -30,6 +30,55 @@
     <h1>Manches braucht mehr als 140 Zeichen …</h1>
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="http://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
+
+	<p class="datum">Fr,
+24.
+Juli
+2015</p>
+	<h1><a href="mailformat.html">Reintext oder HTML?</a></h1>
+	<p>Seit gut einem Jahr schreibe ich immer mal wieder verschlüsselte Mails. Leider bin ich sehr unsicher, wie gut verschiedene Mailprogramme die GnuPG-Verschlüsselung von HTML-Mails unterstützen (mit PGP/MIME). Deshalb versende ich verschlüsselte Mails standardmäßig als Reintext mit sehr eingeschränkter Formatierung: Mein Mailprogramm Thunderbird erlaubt Hervorhebungen mit <code style="font-weight:bold">*Sternchen*</code>, <code style="font-style:italic">/Schräg-/</code> und <code style="text-decoration:underline">_Unterstrichen_</code>.</p>
+
+<p>Dummerweise kann man in Reintext-Mails auch keine Bilder in den Text einbetten. Ich mache das sehr gern, weil man im vorangehenden Absatz dann direkt Bezug auf das Bild nehmen kann. Und noch ein Minuspunkt: Ohne HTML kann man keinerlei Wünsche bezüglich der Schrift äußern, in der die elektronische Post beim Empfänger angezeigt wird. Das ist zwar selbst mit HTML eher vage, aber eine bestimmte Richtung kann ich immerhin vorgeben.</p>
+
+<h2 id="bisher-html-gestaltung-mit-reintext-fallback">Bisher: HTML-Gestaltung mit Reintext-Fallback</h2>
+
+<p>Wer derzeit eine E-Mail von mir bekommt, der liest sie höchstwahrscheinlich in der Schriftart Corbel. Sollte diese nicht installiert sein, folgen Aller, Ubuntu, Lucida Sans und die generische Sans-Serif als Alternativen. Meine Schriftfarbe ist #252525, ein sehr dunkles Grau, das (wie ich finde) einen angenehmen Kontrast zum weißen Hintergrund hat. Außerdem beinhaltet meine Mail-Signatur ein Kunstquadrat, das ich jeden Monat austausche:</p>
+
+<p style="font-family:Corbel,Aller,Ubuntu,'Lucida Sans',sans-serif; color:#252525;line-height:20px;margin:1.4em 0 0.7em;">
+<a href="http://de.wikipedia.org/wiki/Die_Geburt_der_Venus"><img src="material/kq-muschel.jpg" title="Kunstquadrat" alt="" style="border:0;float:left;margin:0 9px 0 0" width="38" height="38" /></a>
+Gerhard Gro&szlig;mann &nbsp;&#8226;&nbsp; Beispielstraße 3 &nbsp;&#8226;&nbsp; 12345 Beispielstadt<br />
+Telefon: 09XX<small><small>&nbsp;</small></small>/<small><small>&nbsp;</small></small>XXX<small><small>&nbsp;</small></small>XXX &nbsp;&#8226;&nbsp; SMS: 017X<small><small>&nbsp;</small></small>/<small><small>&nbsp;</small></small>XXX<small><small>&nbsp;</small></small>XX<small><small>&nbsp;</small></small>XX</p>
+
+<p>Das Kunstquadrat ist ein 38×38 Pixel großer Ausschnitt eines Gemäldes, verlinkt mit dem entsprechenden Wikipedia-Artikel. In meinen Augen ist das ein unterhaltsames kleines Extra, das monatlich zum Entdecken einlädt und meine Mails bereichert. Für Empfänger, die HTML nicht angezeigt bekommen können (gibt’s so was?), schickt mein Mailprogramm zur Sicherheit immer eine automatisch erzeugte Reintext-Version mit.</p>
+
+<h2 id="eigenschaften-von-reinem-text">Eigenschaften von reinem Text</h2>
+
+<p>Würde ich grundsätzlich nur Reintext-Mails verschicken, hätte ich es mit der Mailverschlüsselung etwas einfacher – ich müsste beim Schreiben nicht auf deaktiviertes HTML achten.</p>
+
+<p>Vielleicht würde ich mich dann auch stärker auf einen kurzen, prägnanten Schreibstil konzentrieren. Schließlich erscheint eine Reintext-Mail (zumindest bei mir) in einer puristischen Schreibmaschinen-Type, genau wie in minimalistischen Schreibprogrammen. Das motiviert, die Aufmerksamkeit auf den eigentlichen Inhalt zu richten. – Andererseits schreibe ich gern längere Mails, und wenn die dann ohne optimierte Lesbarkeitsgestaltung beim Empfänger ankommen …</p>
+
+<p>Der Dateigrößenvorteil ist eher zu vernachlässigen. Ohne Signatur bringt es eine HTML-Mail (mit Reintext-Fallback) aus den ersten zwei Absätzen dieses Blogeintrags auf 3,0<small> </small>kB, als bloße Reintext-Mail auf 1,4<small> </small>kB. Das ist zwar mehr als doppelt so viel, absolut gesehen reden wir aber nur über einen Unterschied von 1,6<small> </small>kB (zum Vergleich: Das Logo der Wikipedia hat allein 10,2<small> </small>kB).</p>
+
+<p>Noch nicht so ganz zufrieden bin ich damit, dass Reintext-Nachrichten in der Regel nach<br />einer bestimmten Zeichenzahl mit festen Zeilenumbrüchen versehen werden. Und nicht<br />jedes Mailprogramm hat ein ausreichend breites Anzeigefenster oder umbricht die<br />Nachricht neu. Im schlimmsten Fall sehen meine Mails dann so zebrastreifenartig aus wie<br />dieser Absatz.</p>
+
+<h2 id="bereit-fr-den-umstieg">Bereit für den Umstieg?</h2>
+
+<p>Die oben genannten Formatierungsmöglichkeiten würden mir wohl genügen. Zwar stellt nicht jedes Mailprogramm sie als fett, kursiv oder unterstrichen dar, aber schon ohne fetten Schriftschnitt reichen die <code>*Sternchen*</code> aus, um einen Begriff hervorzuheben. Falls nötig könnte ich die Mail mit Sonderzeichen wie • » oder # strukturieren und markieren. Das regt vielleicht sogar meine Kreativität an …</p>
+
+<p>Dass ich keine Schriftvorgabe mehr machen kann, würde ich vermutlich ebenfalls verkraften. Schließlich ist jeder Mail-Empfänger schon jetzt zu einem Großteil selbst dafür verantwortlich, wie er Nachrichten von anderen angezeigt bekommt.</p>
+
+<p>Was mir auf jeden Fall fehlen würde, ist die Möglichkeit, Bilder zwischen Absätzen einzubetten. Und natürlich meine abwechslungsreiche und unterhaltsame Kunstquadrat-Signatur. Vielleicht könnte ich da alternativ etwas mit ASCII-Art machen, zum Beispiel</p>
+
+<pre><code>{*\./*}  Beispielstraße 3, 12345 Beispielstadt
+ &lt;/¦\&gt;   Telefon: 09XX/XXX XXX, SMS: 017X/XXX XX XX
+</code></pre>
+
+<p>So richtig originell finde ich das aber nicht. Außerdem kommt es auf schmaleren Bildschirmen zu Problemen mit dem Umbruch und in Mail-Clients, die keine Festbreitenschrift verwenden, bleibt vom sowieso schwer erkennbaren Schmetterling nicht mehr viel übrig. Darüber muss ich also noch ein wenig nachdenken.</p>
+
+<p>Wie haltet ihr es mit euren Mails? Seid ihr minimalistische Text-Puristen oder verschickt ihr durchgestylte E-Post? Habt ihr die HTML-Anzeige in eurem Mailprogramm geblockt, weil ihr immer Comic-Sans-Mail bekommt? Oder habt ihr besseres zu tun, als über solche Dinge wie Mailformate nachzudenken?</p>
+
+	<p>---<br> <a href="mailformat.html#kommentieren">Artikel kommentieren …</a>
+		</p>
 
 	<p class="datum">Di,
 30.
@@ -91,34 +140,6 @@ Juni
 	<p>---<br> <a href="titel-abstufen.html#kommentieren">Artikel kommentieren …</a>
 		</p>
 
-	<p class="datum">Fr,
-15.
-Mai
-2015</p>
-	<h1><a href="tweets-mit-anhang.html">Tweets mit Anhang</a></h1>
-	<p>Früher war die Twitter-Welt noch in Ordnung. Man hatte seine 140 Zeichen, die man mit einer interessanten Kurzinformation füllen konnte. Die Beschränkung gebar kreative Nutzungsmöglichkeiten wie den Hashtag: eine Art Schlagwort, mit Hilfe dessen man unterschiedliche Tweets zu einem Thema bündeln kann. Kurz-URL-Dienste kamen auf, damit auch Links in einem Tweet Platz haben konnten. Vor einen Retweet, also Statusmeldungen eines anderen, die man an die eigenen Follower weiterverbreitet, kopierte man <em>RT</em> und den Nutzernamen.</p>
-
-<p>Auch wegen dieser etwas seltsamen Hacks würde ich sagen, dass Twitter für Neulinge eine hohe Einstiegshürde bereit hielt. Es war anfangs unklar, was man eigentlich schreiben sollte, wem man am besten folgt. Ich hatte da zu Beginn auch meine Schwierigkeiten, bis ich langsam <a href="twitterpause.html">den Reiz von Twitter</a> entdeckt habe. Als ich Rückmeldungen bekam, machte es großen Spaß, die Beschränkung der 140 Zeichen auszunutzen und zu versuchen, mit kreativen Lösungen das meiste herauszuholen. Und ich bekam ebenso kurze, witzige, informative Häppchen von den Leuten, denen ich gefolgt bin.</p>
-
-<h2 id="mehr-als-140-zeichen">Mehr als 140 Zeichen</h2>
-
-<p>Nun sind fünf Jahre vergangen und Twitter hat sich immens weiterentwickelt. Es hat die Hacks seiner Nutzer integriert und sich um viele Funktionen erweitert. URLs werden nun automatisch von Twitter gekürzt (praktischerweise gleich mit einer Click-Tracking-Auswertung), Bilder müssen nicht mehr verlinkt, sondern können direkt bei Twitter hochgeladen werden; seit einiger Zeit sogar mehrere Bilder pro Tweet. 30-Sekunden-Videos sind ebenfalls möglich, und wenn ein News-Artikel verlinkt wird, zeigt Twitter direkt eine kleine Vorschau an. Tweets eines anderen Nutzers können nun sogar zitiert und kommentiert werden – was die Länge eines Tweets quasi verdoppelt.</p>
-
-<p>Das kann einen Tweet natürlich attraktiver, umfangreicher und inhaltlich aussagekräftiger machen. Andererseits geht dadurch meiner Meinung nach etwas wichtiges verloren: Die Herausforderung, einen Inhalt in eine prägnante Text-Form bringen zu müssen.</p>
-
-<p>Ein Text ist zu lang für einen Tweet? Kein Problem: Es gibt Apps, die einen Artikel als mehrere Screenshots an einen Tweet hängen. Mir fehlen die Worte, um die anrührende Wirkung eines Sonnenuntergangs zu beschreiben? Häng ich halt ein Foto an. Ich kann eine Nachricht nicht kurz formulieren? Bette ich halt den Anfang des News-Beitrags ein. Meine Katze macht gerade spektakuläre Saltos? Dann wollen wir mal hoffen, dass die 30-Sekunden-Beschränkung für ein lustiges Video reicht.</p>
-
-<h2 id="weniger-ist-mehr">Weniger ist mehr</h2>
-
-<p>Damit wir uns nicht falsch verstehen: Ich habe nichts gegen längere Artikel, Sonnenuntergangsfotos oder … nun ja, gegen Katzenvideos habe ich eigentlich schon etwas (an dieser Stelle steigen nun 95% aller Leser kopfschüttelnd aus).</p>
-
-<p>Es geht mir nicht darum, was ich <em>nicht</em> mag, sondern im Gegenteil, was ich <em>liebe</em>. Und ich liebe nachdenkliche, überraschende, einfallsreiche, witzige und vor allem kurze und prägnante Texte. Ich liebe die Beschränkung und die Hacks mit denen man sie zu durchbrechen versucht. Je mehr Medieninhalte Twitter in seinen Statusupdates erlaubt, desto weniger bleibt übrig von diesem reizvollen Kern.</p>
-
-<p>Und nebenbei: Desto attraktiver wird Twitter für Linkschleudern, Katzenvideo-Poster, Newsartikel-Verbreiter, Foto-Blogger usw. – Bitte bleibt doch einfach bei Instagram, YouTube, Skype und Facebook, wenn ihr keine Kurztexte schreiben wollt.</p>
-
-	<p>---<br> <a href="tweets-mit-anhang.html#kommentare">2 Kommentare</a>
-	</p>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -128,6 +149,9 @@ Mai
 <h2>Schrift­arten dieses Blogs</h2>
 <p>Wenn dein Brow­ser ein­ge­bet­te­te Schrif­ten (WOFF/TTF) un­ter­stützt, dann liest du die Flie­ß­tex­te hier in der <a href="http://blog.typekit.com/2012/08/02/source-sans-pro/">Sour­ce Sans Pro</a> von Paul D. Hunt, er­schie­nen 2012 bei Ado­be.</p>
 <p>Die Über­schrif­ten sind aus der <a href="http://www.huertatipografica.com/fonts/bitter-ht">Bit­ter</a> von Sol Ma­tas ge­setzt, die der ar­gen­ti­ni­sche Schrift­ver­lag Hu­er­ta Ti­po­gráfica 2011 ver­öf­fent­licht hat.</p>
+
+<h2>Hintergrundmuster</h2>
+<p>Das Hintergrundbild dieser Website beruht auf dem Muster <a href="http://subtlepatterns.com/shattered/">„Shattered“</a> von <a href="http://luukvanbaars.com/">Luuk van Baars</a>, entdeckt auf <a href="http://subtlepatterns.com">Subtle Patterns</a>.</p>
 <hr>
 
 <h2 id="impressum">Impressum</h2>
@@ -141,7 +165,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
 <p>&nbsp;</p>
-<p style="text-align:right; color:#666; font-size:0.5em; margin-right:1.6em">Website zuletzt erstellt: 2015-07-08T12:43:05+02:00<br>&nbsp;</p>
+<p style="text-align:right; color:#666; font-size:0.7em; margin-right:1em">Website zuletzt erstellt: 2015-07-24T00:04:17+02:00<br>&nbsp;</p>
 
 </div> <!-- hauptfeld -->
 </div> <!-- container -->

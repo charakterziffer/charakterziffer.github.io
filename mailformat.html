@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="In letzter Zeit überlege ich, meine Mails nicht mehr in HTML zu formatieren. Ob Reintext aber für meine Bedürfnisse ausreicht? Ich denke mal laut darüber nach.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<title>Reintext oder HTML? // @cz+</title>
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="http://charakterziffer.github.io/bestand/favicon.ico" type="image/x-icon">
+<link href='http://charakterziffer.github.io/bestand/style.css' rel='stylesheet'>
+<!-- CSS-Link für lokale Tests, ist online eine Doppelung -->
+<link href='bestand/style.css' rel='stylesheet'>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://charakterziffer.github.io/rss.xml">
+</head>
+
+<body class="hyphenate">
+<div id="container">
+
+<div id="randspalte" class="donthyphenate">
+<a href="http://charakterziffer.github.io/"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zur Startseite" width="60px" height="60px"><h1>@charak<span style="font-size:0.01em;"> </span>terziffer</h1></a>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="http://charakterziffer.github.io/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="http://charakterziffer.github.io/rss.xml">RSS-Feed <img alt="(RSS-Icon)" class="texticon" src="http://charakterziffer.github.io/bestand/rss-icon.png"></a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="http://charakterziffer.github.io/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.<span class="no-print"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="http://charakterziffer.github.io/bestand/cc-by-sa.png"></a></span></p>
+</div> <!-- randspalte -->
+
+<div id="hauptfeld">
+
+    <p class="datum">Fr, 24. Juli 2015</p>
+<h1>Reintext oder HTML?</h1>
+<p>Seit gut einem Jahr schreibe ich immer mal wieder verschlüsselte Mails. Leider bin ich sehr unsicher, wie gut verschiedene Mailprogramme die GnuPG-Verschlüsselung von HTML-Mails unterstützen (mit PGP/MIME). Deshalb versende ich verschlüsselte Mails standardmäßig als Reintext mit sehr eingeschränkter Formatierung: Mein Mailprogramm Thunderbird erlaubt Hervorhebungen mit <code style="font-weight:bold">*Sternchen*</code>, <code style="font-style:italic">/Schräg-/</code> und <code style="text-decoration:underline">_Unterstrichen_</code>.</p>
+
+<p>Dummerweise kann man in Reintext-Mails auch keine Bilder in den Text einbetten. Ich mache das sehr gern, weil man im vorangehenden Absatz dann direkt Bezug auf das Bild nehmen kann. Und noch ein Minuspunkt: Ohne HTML kann man keinerlei Wünsche bezüglich der Schrift äußern, in der die elektronische Post beim Empfänger angezeigt wird. Das ist zwar selbst mit HTML eher vage, aber eine bestimmte Richtung kann ich immerhin vorgeben.</p>
+
+<h2 id="bisher-html-gestaltung-mit-reintext-fallback">Bisher: HTML-Gestaltung mit Reintext-Fallback</h2>
+
+<p>Wer derzeit eine E-Mail von mir bekommt, der liest sie höchstwahrscheinlich in der Schriftart Corbel. Sollte diese nicht installiert sein, folgen Aller, Ubuntu, Lucida Sans und die generische Sans-Serif als Alternativen. Meine Schriftfarbe ist #252525, ein sehr dunkles Grau, das (wie ich finde) einen angenehmen Kontrast zum weißen Hintergrund hat. Außerdem beinhaltet meine Mail-Signatur ein Kunstquadrat, das ich jeden Monat austausche:</p>
+
+<p style="font-family:Corbel,Aller,Ubuntu,'Lucida Sans',sans-serif; color:#252525;line-height:20px;margin:1.4em 0 0.7em;">
+<a href="http://de.wikipedia.org/wiki/Die_Geburt_der_Venus"><img src="material/kq-muschel.jpg" title="Kunstquadrat" alt="" style="border:0;float:left;margin:0 9px 0 0" width="38" height="38" /></a>
+Gerhard Gro&szlig;mann &nbsp;&#8226;&nbsp; Beispielstraße 3 &nbsp;&#8226;&nbsp; 12345 Beispielstadt<br />
+Telefon: 09XX<small><small>&nbsp;</small></small>/<small><small>&nbsp;</small></small>XXX<small><small>&nbsp;</small></small>XXX &nbsp;&#8226;&nbsp; SMS: 017X<small><small>&nbsp;</small></small>/<small><small>&nbsp;</small></small>XXX<small><small>&nbsp;</small></small>XX<small><small>&nbsp;</small></small>XX</p>
+
+<p>Das Kunstquadrat ist ein 38×38 Pixel großer Ausschnitt eines Gemäldes, verlinkt mit dem entsprechenden Wikipedia-Artikel. In meinen Augen ist das ein unterhaltsames kleines Extra, das monatlich zum Entdecken einlädt und meine Mails bereichert. Für Empfänger, die HTML nicht angezeigt bekommen können (gibt’s so was?), schickt mein Mailprogramm zur Sicherheit immer eine automatisch erzeugte Reintext-Version mit.</p>
+
+<h2 id="eigenschaften-von-reinem-text">Eigenschaften von reinem Text</h2>
+
+<p>Würde ich grundsätzlich nur Reintext-Mails verschicken, hätte ich es mit der Mailverschlüsselung etwas einfacher – ich müsste beim Schreiben nicht auf deaktiviertes HTML achten.</p>
+
+<p>Vielleicht würde ich mich dann auch stärker auf einen kurzen, prägnanten Schreibstil konzentrieren. Schließlich erscheint eine Reintext-Mail (zumindest bei mir) in einer puristischen Schreibmaschinen-Type, genau wie in minimalistischen Schreibprogrammen. Das motiviert, die Aufmerksamkeit auf den eigentlichen Inhalt zu richten. – Andererseits schreibe ich gern längere Mails, und wenn die dann ohne optimierte Lesbarkeitsgestaltung beim Empfänger ankommen …</p>
+
+<p>Der Dateigrößenvorteil ist eher zu vernachlässigen. Ohne Signatur bringt es eine HTML-Mail (mit Reintext-Fallback) aus den ersten zwei Absätzen dieses Blogeintrags auf 3,0<small> </small>kB, als bloße Reintext-Mail auf 1,4<small> </small>kB. Das ist zwar mehr als doppelt so viel, absolut gesehen reden wir aber nur über einen Unterschied von 1,6<small> </small>kB (zum Vergleich: Das Logo der Wikipedia hat allein 10,2<small> </small>kB).</p>
+
+<p>Noch nicht so ganz zufrieden bin ich damit, dass Reintext-Nachrichten in der Regel nach<br />einer bestimmten Zeichenzahl mit festen Zeilenumbrüchen versehen werden. Und nicht<br />jedes Mailprogramm hat ein ausreichend breites Anzeigefenster oder umbricht die<br />Nachricht neu. Im schlimmsten Fall sehen meine Mails dann so zebrastreifenartig aus wie<br />dieser Absatz.</p>
+
+<h2 id="bereit-fr-den-umstieg">Bereit für den Umstieg?</h2>
+
+<p>Die oben genannten Formatierungsmöglichkeiten würden mir wohl genügen. Zwar stellt nicht jedes Mailprogramm sie als fett, kursiv oder unterstrichen dar, aber schon ohne fetten Schriftschnitt reichen die <code>*Sternchen*</code> aus, um einen Begriff hervorzuheben. Falls nötig könnte ich die Mail mit Sonderzeichen wie • » oder # strukturieren und markieren. Das regt vielleicht sogar meine Kreativität an …</p>
+
+<p>Dass ich keine Schriftvorgabe mehr machen kann, würde ich vermutlich ebenfalls verkraften. Schließlich ist jeder Mail-Empfänger schon jetzt zu einem Großteil selbst dafür verantwortlich, wie er Nachrichten von anderen angezeigt bekommt.</p>
+
+<p>Was mir auf jeden Fall fehlen würde, ist die Möglichkeit, Bilder zwischen Absätzen einzubetten. Und natürlich meine abwechslungsreiche und unterhaltsame Kunstquadrat-Signatur. Vielleicht könnte ich da alternativ etwas mit ASCII-Art machen, zum Beispiel</p>
+
+<pre><code>{*\./*}  Beispielstraße 3, 12345 Beispielstadt
+ &lt;/¦\&gt;   Telefon: 09XX/XXX XXX, SMS: 017X/XXX XX XX
+</code></pre>
+
+<p>So richtig originell finde ich das aber nicht. Außerdem kommt es auf schmaleren Bildschirmen zu Problemen mit dem Umbruch und in Mail-Clients, die keine Festbreitenschrift verwenden, bleibt vom sowieso schwer erkennbaren Schmetterling nicht mehr viel übrig. Darüber muss ich also noch ein wenig nachdenken.</p>
+
+<p>Wie haltet ihr es mit euren Mails? Seid ihr minimalistische Text-Puristen oder verschickt ihr durchgestylte E-Post? Habt ihr die HTML-Anzeige in eurem Mailprogramm geblockt, weil ihr immer Comic-Sans-Mail bekommt? Oder habt ihr besseres zu tun, als über solche Dinge wie Mailformate nachzudenken?</p>
+
+<p>---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
+
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+<br>
+&nbsp;</p>
+
+
+	
+<br>
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p style="margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+
+<form action="http://www.formular-chef.de/fc.cgi"
+method="post" enctype="multipart/form-data" novalidate>
+<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
+<input type="hidden" name="pflicht" value="comment">
+<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
+<input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
+<input type="hidden" name="antwortseite_template"
+value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
+
+<input type="hidden" name="post_id" value="/mailformat">
+<div>
+	<label for="name">Name</label>
+	<div> <input name="name" type="text" size="25">
+	&nbsp;<i>(Pseudonym möglich)</i> </div>
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div> <input name="mail" type="email" size="25">
+	&nbsp;<i>(wird nicht veröffentlicht)</i> </div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div> <input name="link" type="url" size="25"></div>
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" spellcheck="true" rows="10" cols="50"></textarea>
+</div>
+<div><input name="submit" type="submit" value="Abschicken"></div>
+</form>
+
+<p class="donthyphenate" style="font-size:0.9em;line-height:1.556em;">Formatierungen mit HTML sind möglich, z.&nbsp;B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+<p class="no-print">&nbsp;</p>
+
+<p style="width:48%; float:left;" class="donthyphenate no-print"><a href="origamischachtel.html">← Eine Schachtel aus Papier</a></p>
+
+
+<p style="clear:both;" class="no-print">&nbsp;</p>
+
+</div> <!-- hauptfeld -->
+</div> <!-- container -->
+
+<script src="http://charakterziffer.github.io/bestand/hyphenate.js"></script>
+<script type="text/javascript"> <!-- parallax -->
+window.innerWidth>940&&(window.onscroll=function(){document.body.style.backgroundPosition=-window.pageXOffset/3.5+"px "+-window.pageYOffset/3.5+"px"}); </script>
+<script charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer"></script>
+</body>
+</html>
