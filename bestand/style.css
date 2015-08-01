@@ -5,8 +5,8 @@
 	Text: #222 (fett/kursiv #111), #222–#444 (Titel), #666 (Datum) */
 
 /* Schriften: Source Sans Pro Regular & Italic, Bitter */
-/* local('Source Sans Pro'), local('SourceSansPro-Regular') entfernt,
-   weil Android 2.2 und 2.3 sonst gar keine Schriften laden */
+/* Mit local('Source Sans Pro'), local('SourceSansPro-Regular')
+   laden Android 2.2 und 2.3 gar keine Schriften */
 
 @font-face { font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
@@ -40,21 +40,23 @@ body { margin: 0; padding: 5px; text-align: center;
 #container { min-width: 47em; max-width: 57em; margin: 30px auto 50px;
 	text-align: left; background-color: #eee;
 	box-shadow: 1px 2px 8px #222; }
-#randspalte { position: fixed; float: left;
+aside { position: fixed; float: left; display: block;
 	width: 16.6em; padding: 63px 1em 56px; }
-#hauptfeld { margin-left: 16.6em; padding: 0.08em 65px 1.4em 55px;
+main { display: block; margin-left: 16.6em;
+	padding: 0.08em 65px 1.4em 55px;
 	background-color: #fff; border-left: 1px dashed #281; }
+article, section {display: block;}
 
 /* Wenn Fensterhöhe zu niedrig, dann Randspalte nicht mehr fix */
-@media (max-height: 33.5em) { #randspalte { position: static; } }
+@media (max-height: 33.5em) { aside { position: static; } }
 
 @media (max-width: 44.4em) {
 #container { min-width: 100%; margin: 0;
 	background-color: #fff; box-shadow: none; }
-#randspalte { position: static; float: none; width: inherit;
+aside { position: static; float: none; width: inherit;
 	padding: 15px 13px 20px 15px;
 	border-bottom: 1px dashed #281; background-color: #eee; }
-#hauptfeld { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
+main { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
 	border: 0;}
 }
 
@@ -63,14 +65,14 @@ body { margin: 0; padding: 5px; text-align: center;
 h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: 400; }
 h1 { font-size: 1.5em; line-height: 0.933; color: #444;
 	margin: 2.78em 0 0.7em -0.04em; }
-#randspalte h1 { font-size: 1.9em; line-height: 1; margin: 0; }
+aside h1 { font-size: 1.9em; line-height: 1; margin: 0; }
 h2 { font-size: 1.1em; line-height: 1.273; color: #333;
 	margin: 1.2em 0 -0.55em -0.04em; }
 h3 { font-size: 0.9em; line-height: 1.556; color: #222;
 	margin: 1.5em 0 -0.725em -0.04em; }
 
-@media (max-width: 44.4em) { #randspalte h1 { margin: 0.6em 0; } }
-@media (max-width: 25em) { #randspalte h1 { margin: 0; } }
+@media (max-width: 44.4em) { aside h1 { margin: 0.6em 0; } }
+@media (max-width: 25em) { aside h1 { margin: 0; } }
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
@@ -79,25 +81,17 @@ p, ul, ol { margin-bottom: -0.3em;
 /*	statt CSS-hyphens wird noch hyphenator.js verwendet
 	-webkit-hyphens: auto; -moz-hyphens: auto;
 	-ms-hyphens: auto; hyphens: auto; */ }
-#randspalte p { margin-bottom: -0.22em; font-size: 0.9em;
+aside p { margin-bottom: -0.22em; font-size: 0.9em;
 	line-height: 1.556; }
 
 i, em { font-style: italic; color: #111; }
 b, strong { font: normal 0.9em Bitter,Georgia,serif; color: #111; }
 sup, sub { line-height: 0; }
-.datum { position: relative; float: right; right: 0.5em; display: block;
-	margin-top: 3.95em; padding-left: 1em; color: #666; }
+time { position: relative; float: right; right: 0.5em; display: block;
+	margin-top: -0.2em; padding-left: 1em; color: #666; }
 
-@media (max-width: 44.4em) {
-.datum { margin-top: -0.2em; }
-p + .datum { margin-top: 3.95em; } /* Abstand auf Startseite erhalten */
-}
-
-@media (max-width: 25em) {
-/* Datum rechts oberhalb der Überschrift */
-.datum { margin-top: -1.9em; }
-p + .datum { margin-top: 2.3em; } /* Abstand auf Startseite */
-}
+/* Wenn Fenster sehr schmal, Datum rechts oberhalb der Überschrift */
+@media (max-width: 27em) { time { margin-top: -1.7em; } }
 
 hr { margin: 1.88em 0.4em 1.1em 0; color: #bbb; }
 
@@ -199,18 +193,18 @@ input[type=text], input[type=email], input[type=url] { width: 100%; }
 /* ANPASSUNGEN FÜR DEN AUSDRUCK */
 
 @media print {
-@page { margin: 1.5cm; }
-body, #container, #randspalte, #hauptfeld { background: #fff none; }
+@page { margin: 1.5cm 1.5cm 2cm; }
+body, #container, aside, main { background: #fff none; }
 #container { width: 100%; margin: 0; box-shadow: none; }
-#randspalte { position: static; float: none; width: inherit;
+aside { position: static; float: none; width: inherit;
 	padding: 20px 0; border-bottom: 1px dashed #281;}
-#hauptfeld { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
+main { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
 
 h1, h2, h3, h4, h5, h6, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
-#randspalte h1 { margin: 0; padding-top: 0.1em;}
-.datum { margin-top: -0.2em; }
-p + .datum { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
+aside h1 { margin: 0; padding-top: 0.1em;}
+time { margin-top: -0.2em; }
+p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited { color: #000; }
 
 /* Alle Klappkästen im Druck geöffnet anzeigen */

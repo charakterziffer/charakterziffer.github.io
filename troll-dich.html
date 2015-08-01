@@ -13,21 +13,32 @@
 <!-- CSS-Link für lokale Tests, ist online eine Doppelung -->
 <link href='bestand/style.css' rel='stylesheet'>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://charakterziffer.github.io/rss.xml">
+<!--[if lt IE 9]>
+<script>
+document.createElement('aside'); document.createElement('main'); document.createElement('article'); document.createElement('section'); document.createElement('time');
+</script>
+<![endif]-->
+<!--[if lte IE 11]>
+<style>
+aside {margin-left:-16.6em; width:15em;}
+</style>
+<![endif]-->
 </head>
 
 <body class="hyphenate">
 <div id="container">
 
-<div id="randspalte" class="donthyphenate">
+<aside class="donthyphenate">
 <a href="http://charakterziffer.github.io/"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zur Startseite" width="60px" height="60px"><h1>@charak<span style="font-size:0.01em;"> </span>terziffer</h1></a>
 <p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="http://charakterziffer.github.io/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p class="no-print">Mein <a href="http://charakterziffer.github.io/rss.xml">RSS-Feed <img alt="(RSS-Icon)" class="texticon" src="http://charakterziffer.github.io/bestand/rss-icon.png"></a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="http://charakterziffer.github.io/archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.<span class="no-print"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="http://charakterziffer.github.io/bestand/cc-by-sa.png"></a></span></p>
-</div> <!-- randspalte -->
+</aside>
 
-<div id="hauptfeld">
+<main>
 
-    <p class="datum">Do, 30. Mai 2013</p>
+    <article>
+<time datetime="2013-05-30">Do, 30. Mai 2013</time>
 <h1>Troll dich!</h1>
 <p>In der vergangenen Woche habe ich bei Tatort+ mitgespielt, einem Online-Spiel zum TV-Tatort aus Stuttgart. Beim gemeinsamen Sammeln der Ermittlungsergebnisse im öffentlichen EtherPad<a href="#note1"><sup id="ziffer1">[1]</sup></a> war auch ein <a href="https://de.wikipedia.org/wiki/Troll_%28Netzkultur%29">Troll</a> anwesend, der unsere Arbeit zu stören versucht hat. Ich fand das allerdings gar nicht schlimm, denn es hat mir großes Vergnügen bereitet, dem Troll den Spaß zu verderben. Im Nachfolgenden möchte ich meine Erfahrungen teilen.</p>
 
@@ -90,6 +101,7 @@
 <a href="archiv.html?methodik">#methodik&nbsp; </a>
 <br>
 &nbsp;</p>
+</article>
 
 
 	
@@ -144,12 +156,11 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 
 <p style="clear:both;" class="no-print">&nbsp;</p>
 
-</div> <!-- hauptfeld -->
+</main> <!-- hauptfeld -->
 </div> <!-- container -->
 
 <script src="http://charakterziffer.github.io/bestand/hyphenate.js"></script>
-<script type="text/javascript"> <!-- parallax -->
-window.innerWidth>940&&(window.onscroll=function(){document.body.style.backgroundPosition=-window.pageXOffset/3.5+"px "+-window.pageYOffset/3.5+"px"}); </script>
+<script>window.innerWidth>940&&(window.onscroll=function(){document.body.style.backgroundPosition="0 "+-window.pageYOffset/3.5+"px"});</script> <!-- parallax -->
 <script charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer"></script>
 </body>
 </html>

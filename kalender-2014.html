@@ -13,21 +13,32 @@
 <!-- CSS-Link für lokale Tests, ist online eine Doppelung -->
 <link href='bestand/style.css' rel='stylesheet'>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://charakterziffer.github.io/rss.xml">
+<!--[if lt IE 9]>
+<script>
+document.createElement('aside'); document.createElement('main'); document.createElement('article'); document.createElement('section'); document.createElement('time');
+</script>
+<![endif]-->
+<!--[if lte IE 11]>
+<style>
+aside {margin-left:-16.6em; width:15em;}
+</style>
+<![endif]-->
 </head>
 
 <body class="hyphenate">
 <div id="container">
 
-<div id="randspalte" class="donthyphenate">
+<aside class="donthyphenate">
 <a href="http://charakterziffer.github.io/"><img class="logo" src="http://charakterziffer.github.io/bestand/profilbild.png" alt="" title="zur Startseite" width="60px" height="60px"><h1>@charak<span style="font-size:0.01em;"> </span>terziffer</h1></a>
 <p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="http://charakterziffer.github.io/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
 <p class="no-print">Mein <a href="http://charakterziffer.github.io/rss.xml">RSS-Feed <img alt="(RSS-Icon)" class="texticon" src="http://charakterziffer.github.io/bestand/rss-icon.png"></a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="http://charakterziffer.github.io/archiv.html">im Archiv</a>.</p>
 <p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative-Commons-Lizenz 3.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.<span class="no-print"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img alt="Creative Commons Lizenzvertrag" class="texticon" src="http://charakterziffer.github.io/bestand/cc-by-sa.png"></a></span></p>
-</div> <!-- randspalte -->
+</aside>
 
-<div id="hauptfeld">
+<main>
 
-    <p class="datum">Di, 19. Nov. 2013</p>
+    <article>
+<time datetime="2013-11-19">Di, 19. Nov. 2013</time>
 <h1>2014 auf 24 Seiten</h1>
 <p>Nun ist es schon fast eine Tradition: Zum dritten Mal habe ich einen Halbmonatskalender gestaltet, den ich hier zum Herunterladen anbiete. Er zeigt immer zwei bis drei Wochen auf einer DIN-A5-Seite mit großen Zahlen und bietet viel Platz zum Reinschreiben.</p>
 
@@ -48,6 +59,7 @@
 <a href="archiv.html?typografie">#typografie&nbsp; </a>
 <br>
 &nbsp;</p>
+</article>
 
 
 	
@@ -102,12 +114,11 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 
 <p style="clear:both;" class="no-print">&nbsp;</p>
 
-</div> <!-- hauptfeld -->
+</main> <!-- hauptfeld -->
 </div> <!-- container -->
 
 <script src="http://charakterziffer.github.io/bestand/hyphenate.js"></script>
-<script type="text/javascript"> <!-- parallax -->
-window.innerWidth>940&&(window.onscroll=function(){document.body.style.backgroundPosition=-window.pageXOffset/3.5+"px "+-window.pageYOffset/3.5+"px"}); </script>
+<script>window.innerWidth>940&&(window.onscroll=function(){document.body.style.backgroundPosition="0 "+-window.pageYOffset/3.5+"px"});</script> <!-- parallax -->
 <script charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer"></script>
 </body>
 </html>
