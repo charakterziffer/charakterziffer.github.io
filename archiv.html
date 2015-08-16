@@ -76,6 +76,35 @@ else {
 
 
 <script>
+var rubriken = 'anspornmethodik'
+if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
+</script>
+
+<section>
+<time datetime="2015-08-17">Mo,
+17.
+Aug.
+2015</time>
+<h2><a href="tagebuch.html">Blick ins Tagebuch</a></h2>
+<p>Ich schreibe wieder regelmäßig Tagebuch. Es hilft, Gedanken und Erlebnisse zu sortieren, und macht es leicht, Erinnerungen aufzufrischen.
+ <a href="tagebuch.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
+<p><i>409 Wörter //</i>&nbsp;
+<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
+
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+<br>
+&nbsp;</p>
+</section>
+
+<script>
+if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
+</script>
+
+
+
+
+
+<script>
 var rubriken = 'ansporntypografie'
 if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
 </script>
@@ -310,7 +339,7 @@ Jan.
 <h2><a href="cookiewarnung.html">Mit Cookies einverstanden?</a></h2>
 <p>Eine Richtlinie der Europäischen Gemeinschaft soll den Datenschutz verbessern. Die Umsetzung eines der Abschnitte nervt aber gerade die, die sich schon um ihre Privatsphäre kümmern.
  <a href="cookiewarnung.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
-<p><i>632 Wörter //</i>&nbsp;
+<p><i>626 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
 <br>
 &nbsp;</p>
@@ -1758,6 +1787,6 @@ if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
 
 <script src="http://charakterziffer.github.io/bestand/hyphenate.js"></script>
 <script>window.innerWidth>940&&(window.onscroll=function(){document.body.style.backgroundPosition="0 "+-window.pageYOffset/3.5+"px"});</script> <!-- parallax -->
-<script charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer"></script>
+<script charset="windows-1252" src="http://www.onlex.de/_counter.php?username=charakterziffer" async></script>
 </body>
 </html>

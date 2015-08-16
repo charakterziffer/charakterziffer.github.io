@@ -14,6 +14,40 @@
 </image>
 
 <item>
+	<title>Blick ins Tagebuch</title>
+	<description>&lt;p&gt;Jedes Jahr mache ich mir einen guten Vorsatz. Er sollte nicht zu schwierig sein und mir in irgendeiner Weise gut tun, damit ich ihn durchhalte. Ich hatte beispielsweise schon vollständig computerfreie Samstage und täglich eine Portion Fitnessübungen, die sich von Woche zu Woche steigerte. Dieses Jahr habe ich mir vorgenommen, einmal pro Woche Tagebuch zu schreiben.&lt;/p&gt;
+
+&lt;p&gt;Angeregt dazu hat mich ein &lt;a href=&quot;http://zachholman.com/posts/keeping-a-journal/&quot;&gt;ein Blogartikel von Zach Holman&lt;/a&gt;. Die Motivation von Zach ist, mit dem Tagebuchschreiben das Gedächtnis zu erweitern und Rückblicke zu ermöglichen. Zum Beispiel bedauert er, im College mit dem Schreiben aufgehört zu haben und nun gar keine Aufzeichnungen über seine ersten Jahre in der Arbeitswelt zu besitzen. Es kommt ihm im Rückblick vor, als hätte er diese Jahre gar nicht gelebt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/tagebuch.jpg&quot; alt=&quot;Mein erstes Tagebuch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ich bin jetzt nicht so der Rückblick-Typ, aber wer weiß, vielleicht kommt das irgendwann. Bisher habe ich meine Tagebücher mehr zum Gedanken sortieren verwendet und um mir Dinge von der Seele zu schreiben. Nachdem ich in den vergangenen zwei Jahren gerade mal fünf Einträge gemacht habe, dachte ich, ich könnte das mit einem guten Vorsatz mal wieder ein bisschen forcieren.&lt;/p&gt;
+
+&lt;p&gt;Anfang Mai habe ich auch meine allerersten beiden Tagebücher herausgekramt, jeweils vier zusammengeklebte karierte DIN-A5-Hefte. Ich habe sie von Juni 1998 bis Oktober 1999 beschrieben, dazu Postkarten, Kinotickets, Fotos und Fahrscheine eingeklebt. So richtig darin gelesen habe ich bislang noch immer nicht, aber ich könnte ja mal mit dem allerersten Eintrag anfangen. Er steht neben einem eingeklebten Zeitschriften-Ausschnitt mit &lt;em&gt;Sieben Regeln fürs [Tagebuch-]Schreiben&lt;/em&gt; und ist vom Mittwoch, den 3. Juni 1998:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;warnung&quot;&gt;Warnung&lt;/h2&gt;
+
+  &lt;p&gt;Ich habe mir diese beiden Hefte für nur 2,50 DM gekauft. Trotzdem, sie sind etwas Besonderes, nämlich &quot;mein geheimes Tagebuch&quot;. Also, …&lt;/p&gt;
+
+  &lt;p&gt;… wenn du nun schon unbefugt die erste Seite aufgeschlagen hast, mach’ sie wieder zu und lege das Tagebuch an seinen Platz zurück. Solltest du trotz dieser Warnung weiterlesen, ist dies ein sehr großer Vertrauensbruch zwischen uns. Das hier geht dich gar nichts an!&lt;/p&gt;
+
+  &lt;p&gt;Der Tagebuchführer&lt;br /&gt;&lt;em&gt;Gerhard Großmann&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;Falls ich schon tot bin, darfst du selbstverständlich weiterlesen …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bisher halte ich meinen guten Vorsatz durch, wenngleich ich manchmal den Eintrag der vorangegangenen Woche am Montag oder Dienstag nachhole.&lt;/p&gt;
+
+&lt;p&gt;Ein willkommener Nebeneffekt des Tagebuchschreibens ist jedenfalls, dass ich meine Handschrift trainiere. Das ist mir auch wichtig, also meine Aufzeichnungen per Hand und auf Papier zu machen. Eine Journal-App zu benutzen oder ein Fototagebuch zu führen, wie Zach Holman es anregt, wäre nichts für mich.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/tagebuch.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/tagebuch.html</guid>
+	<pubDate>Mon, 17 Aug 2015 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Reintext oder HTML?</title>
 	<description>&lt;p&gt;Seit gut einem Jahr schreibe ich immer mal wieder verschlüsselte Mails. Leider bin ich sehr unsicher, wie gut verschiedene Mailprogramme die GnuPG-Verschlüsselung von HTML-Mails unterstützen (mit PGP/MIME). Deshalb versende ich verschlüsselte Mails standardmäßig als Reintext mit sehr eingeschränkter Formatierung: Mein Mailprogramm Thunderbird erlaubt Hervorhebungen mit &lt;code style=&quot;font-weight:bold&quot;&gt;*Sternchen*&lt;/code&gt;, &lt;code style=&quot;font-style:italic&quot;&gt;/Schräg-/&lt;/code&gt; und &lt;code style=&quot;text-decoration:underline&quot;&gt;_Unterstrichen_&lt;/code&gt;.&lt;/p&gt;
 
@@ -148,58 +182,6 @@ Telefon: 09XX&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;/&l
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/tweets-mit-anhang.html</guid>
 	<pubDate>Fri, 15 May 2015 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Pirouetten und andere Probleme</title>
-	<description>&lt;p&gt;Wer vor einer Herausforderung steht, freut sich über praktische Ratschläge eines guten Freundes. Und meistens würde so ein Rat auch anderen weiterhelfen. Deshalb sitze ich immer heimlich hinter dem Holzstoß vor dem Fuchsbau, wenn die Ballerina mal wieder vorbeikommt. In der Regel berichtet sie dem Fuchs von einem aktuellen Problem und ich schreibe dann die Fuchs-Antworten auf. Netterweise veröffentliche ich die Ratschläge auch in meiner Twitterserie „Fuchs und Ballerina“:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;◎ „Wenn du nicht weiter weißt, blick zurück“, sprach der #Fuchs zur Ballerina. „Das kann helfen.“  […] (&lt;a href=&quot;https://twitter.com/charakterziffer/status/479236281684488192&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⌆ „Für die meisten Menschen“, sprach der #Fuchs zur Ballerina, „ist Tanz eben nichts Normales, sondern wunderbar. Vergiss das nicht.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/489328636106117120&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;␃ „Es ist keine Niederlage, wenn du ein erfolgloses Projekt aufgibst“, sprach der #Fuchs zur Ballerina. „Manchmal war der Zeitpunkt falsch.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/512947268333617152&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Ꙭ „So siehst du das“, sprach der #Fuchs zur Ballerina. „Aber eine neue Perspektive bekommst du, wenn du dich in andere hineinversetzt.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/522720787661619201&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⅄ „Keine Angst, wenn man Ungewohntes von dir fordert“, sprach der #Fuchs zur Ballerina. „Auch wenn es nicht klappt, lernst du daraus viel.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/533175414349639680&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;✱ „Manchmal ist dein Beruf stressig, weil du ihn so liebst“, sprach der #Fuchs zur Ballerina. „Häng dich rein, aber vergiss den Spaß nicht.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/543374001830387712&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;✴ „Nicht so verbissen“, mahnte der #Fuchs die Ballerina. „Oft findet man deshalb nicht das Richtige, weil man zu intensiv danach sucht.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/558221524038340608&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🔧 „Gegen Kritik spricht ja nichts“, beruhigte der #Fuchs die Ballerina. „Aber sie ist nur hilfreich, wenn sie ruhig und sachlich bleibt.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/568044233233436672&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;✠ „Ganz aufhören solltest du nicht“, sprach der #Fuchs zur Ballerina. „Teste immer mal wieder, ob du deine Leidenschaft im Kleinen spürst.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/585714954155778049&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⌆ „Von Leuten mit anderer Perspektive“, sprach der #Fuchs zur Ballerina, „kannst du viel lernen.“ […] (&lt;a href=&quot;https://twitter.com/charakterziffer/status/590757702298685440&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Die &lt;a href=&quot;fuchs-4.html&quot;&gt;vorherigen #Fuchs-Folgen&lt;/a&gt; habe ich im Juni 2014 in diesem Blog gesammelt.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/fuchs-5.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/fuchs-5.html</guid>
-	<pubDate>Wed, 22 Apr 2015 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

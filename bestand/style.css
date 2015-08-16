@@ -26,9 +26,8 @@
 
 /* GRUNDSÄTZLICHES LAYOUT */
 
-* { box-sizing: border-box; }
-html { font-size: 100.01%; -webkit-text-size-adjust: 100.01%;
-	-ms-text-size-adjust: 100.01%; }
+html { font-size: 100.01%; box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 body { margin: 0; padding: 5px; text-align: center;
 	font: 1em/1.4 'Source Sans Pro',Calibri,Arial,sans-serif;
 	font-weight: 400; color: #222;
@@ -62,7 +61,8 @@ main { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
 
 /* ÜBERSCHRIFTEN */
 
-h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: 400; }
+h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: 400;
+	font-feature-settings: "liga", "kern";}
 h1 { font-size: 1.5em; line-height: 0.933; color: #444;
 	margin: 2.78em 0 0.7em -0.04em; }
 aside h1 { font-size: 1.9em; line-height: 1; margin: 0; }
@@ -77,7 +77,7 @@ h3 { font-size: 0.9em; line-height: 1.556; color: #222;
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
 p, ul, ol { margin-bottom: -0.3em;
-	-webkit-font-feature-settings: "onum"; font-feature-settings: "onum";
+	-webkit-font-feature-settings: "onum", "liga", "kern"; font-feature-settings: "onum", "liga", "kern";
 /*	statt CSS-hyphens wird noch hyphenator.js verwendet
 	-webkit-hyphens: auto; -moz-hyphens: auto;
 	-ms-hyphens: auto; hyphens: auto; */ }
@@ -110,8 +110,7 @@ ol { margin-left: -1.5em; }
 code, pre { margin: 1.1em 0 -0.33em; padding: 0 0.1em; color: #222;
 	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace; }
 pre > code { font-size: 1em; line-height: 1.556;
-	white-space: pre; white-space: pre\9; /* IE7+ */
-	white-space: -moz-pre-wrap; white-space: pre-wrap; }
+	white-space: pre-wrap; }
 
 blockquote { margin: 1.4em 0 1.3em; padding: 0 0.2em 0 0.4em;
 	border-left: 0.7em solid #deb; background-color: #f4f4f4; }
