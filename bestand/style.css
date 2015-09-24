@@ -161,7 +161,7 @@ div[style*="font-family: arial;"] { left: -9999px; }
 /* FORMULARE */
 
 input[type=text], input[type=email], input[type=url],
-input[type=submit] { font-size: 0.9em; line-height: 1.556 }
+input[type=submit] { font-size: 0.9em; line-height: 1.556; }
 textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; }
 form > div { padding-top: 0.4em; clear: both; }
 
@@ -207,13 +207,13 @@ p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited { color: #000; }
 
 /* Alle Klappkästen im Druck geöffnet anzeigen */
-p[onclick^="klappe"] + div { display: block !important }
+p[onclick^="klappe"] + div { display: block !important; }
 
 img, table { page-break-inside: avoid; }
 figcaption, blockquote, .hinterlegt {
 	background: #fff; border: 1px solid #ccc; }
 blockquote + blockquote { margin-top: 0.7em; }
-blockquote > p { margin: 0 0 0.3em }
+blockquote > p { margin: 0 0 0.3em; }
 
 .no-print,a[href$="#kommentieren"],a[href$="#kommentare"] {
 	display: none; }
