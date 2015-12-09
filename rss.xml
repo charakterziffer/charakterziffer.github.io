@@ -14,6 +14,66 @@
 </image>
 
 <item>
+	<title>Apposition mit inkongruentem Kasus</title>
+	<description>&lt;p&gt;In Radiospots tauchen hinter einer Produktbezeichnung oder einem Firmennamen sehr oft kleine Ergänzungen auf, zum Beispiel:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Diese Sendung wird präsentiert von &lt;em&gt;Rundmüller&lt;/em&gt;, &lt;strong&gt;Ihr(em) exklusiver/n Autohändler.&lt;/strong&gt;“&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Das gibt’s auf der &lt;em&gt;Regensburger Bildungsmesse&lt;/em&gt; – &lt;strong&gt;&lt;span style=&quot;text-decoration:underline;&quot;&gt;die/der&lt;/span&gt; Arbeits- und Ausbildungsbörse.&lt;/strong&gt;“&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Die Ergänzungen haben immer ein Bezugswort, das sie näher bestimmen (im Beispiel kursiv). Es handelt sich dabei aber nicht um Relativsätze (denn ihnen fehlt das Verb), sondern um eine &lt;em&gt;Apposition&lt;/em&gt; („Beisatz“).&lt;/p&gt;
+
+&lt;p&gt;Manchmal ist nicht ganz klar, in welchem Kasus (grammatischen Fall) so eine Apposition stehen soll. Auch bei den obigen Beispielen habe ich ja zwei Möglichkeiten genannt. Die erste davon (der Nominativ) klingt dem Sprachgefühl nach viel unmittelbarer und deutlicher. Standardsprachlich korrekt muss eine Apposition aber immer im gleichen Fall stehen wie das Bezugswort („kongruenter Kasus“):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Entdecken Sie die Vorteile der Putzfee, des Reinigers für Profis.“ (Genitiv)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Unterstützt von Pizzabräter, dem italienischen Essens-Innovateur.“ (Dativ)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Holen Sie sich das Modell 601, den besten Trabant aller Zeiten.“ (Akkusativ)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Das schreibt sich sehr einfach, wenn man zum Testen das Bezugswort einfach mal weglässt: „Holen Sie sich […] den besten Trabant aller Zeiten.“&lt;/p&gt;
+
+&lt;h2 id=&quot;wo-ein-anderer-kasus-erlaubt-ist&quot;&gt;Wo ein anderer Kasus erlaubt ist&lt;/h2&gt;
+
+&lt;p&gt;In der Standardsprache gibt nur zwei Ausnahmen, bei denen Bezugswort und Apposition einen unterschiedlichen Fall haben („inkongruenter Kasus“): Erstens wenn die Apposition zwar ein gebeugtes Adjektiv aber kein Artikelwort (der, ein, Ihre, dieser, keine, …) besitzt:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Ab zum Bauermann, stadtbestes Modegeschäft.“&lt;br /&gt;(selten: stadtbeste&lt;em&gt;n&lt;/em&gt; Modegeschäft)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Und zweitens wenn weder Artikel noch Adjektiv vorkommen. Die Apposition steht dann im Nominativ:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Das Design eines Holzmüllers, Künstler von Welt.“&lt;br /&gt;(nicht: Künstler&lt;em&gt;s&lt;/em&gt; von Welt)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Und jetzt?&lt;/p&gt;
+
+&lt;h2 id=&quot;ein-argument-fr-falsche-grammatik&quot;&gt;Ein Argument für falsche Grammatik&lt;/h2&gt;
+
+&lt;p&gt;Wie erkläre ich meinem (Werbe-)Kunden, dass es sich aber besser anhört, wenn es grammatikalisch falsch ist? Man könnte auftrumpfen mit: Natürlich sollten Bezugswort und Apposition standardsprachlich im Kasus kongruent sein. In der gesprochenen Sprache empfiehlt sich hier aber der Nominativ, weil die Apposition dadurch unmittelbarer und deutlicher wirkt und eben nicht nur eine bloße, eher unwichtige Beifügung zu Ihrem Produkt-/Marken-/Firmennamen.&lt;/p&gt;
+
+&lt;p&gt;Als Werbetexter macht man grammatikalisch ja oft krude Sachen (unvollständige Sätze, Wortneuschöpfungen, …), aber keine Sorge: Zwar ist Sprachverhunzung natürlich streng verboten, aber kreativ mit der Sprache zu spielen ist sogar eine Pflicht – vor allem wenn eine Aussage dadurch deutlicher wird. Man muss halt nur wissen, was man tut – und es gut begründen können.&lt;/p&gt;
+
+&lt;p&gt;PS: Schön nachzulesen gibt es das Thema &lt;a href=&quot;http://www.canoo.net/services/OnlineGrammar/Satz/Satzgliedbau/Nomen/Apposition.html&quot;&gt;Appostition bei canoo.net&lt;/a&gt;.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/apposition.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/apposition.html</guid>
+	<pubDate>Thu, 10 Dec 2015 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Unterhaltsam? Tatsächlich!</title>
 	<description>&lt;p&gt;Es gibt ja Kinofilme, die in ihrem Trailer von sich behaupten, auf wahren Ereignissen zu beruhen. Offensichtlich soll diese „Authentizität“ einen Film glaubhafter, relevanter oder irgendwie sonst besser machen. Mich schreckt das eher ab.&lt;/p&gt;
 
@@ -232,55 +292,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/tagebuch.html</guid>
 	<pubDate>Mon, 17 Aug 2015 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Reintext oder HTML?</title>
-	<description>&lt;p&gt;Seit gut einem Jahr schreibe ich immer mal wieder verschlüsselte Mails. Leider bin ich sehr unsicher, wie gut verschiedene Mailprogramme die GnuPG-Verschlüsselung von HTML-Mails unterstützen (mit PGP/MIME). Deshalb versende ich verschlüsselte Mails standardmäßig als Reintext mit sehr eingeschränkter Formatierung: Mein Mailprogramm Thunderbird erlaubt Hervorhebungen mit &lt;code style=&quot;font-weight:bold&quot;&gt;*Sternchen*&lt;/code&gt;, &lt;code style=&quot;font-style:italic&quot;&gt;/Schräg-/&lt;/code&gt; und &lt;code style=&quot;text-decoration:underline&quot;&gt;_Unterstrichen_&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dummerweise kann man in Reintext-Mails auch keine Bilder in den Text einbetten. Ich mache das sehr gern, weil man im vorangehenden Absatz dann direkt Bezug auf das Bild nehmen kann. Und noch ein Minuspunkt: Ohne HTML kann man keinerlei Wünsche bezüglich der Schrift äußern, in der die elektronische Post beim Empfänger angezeigt wird. Das ist zwar selbst mit HTML eher vage, aber eine bestimmte Richtung kann ich immerhin vorgeben.&lt;/p&gt;
-
-&lt;h2 id=&quot;bisher-html-gestaltung-mit-reintext-fallback&quot;&gt;Bisher: HTML-Gestaltung mit Reintext-Fallback&lt;/h2&gt;
-
-&lt;p&gt;Wer derzeit eine E-Mail von mir bekommt, der liest sie höchstwahrscheinlich in der Schriftart Corbel. Sollte diese nicht installiert sein, folgen Aller, Ubuntu, Lucida Sans und die generische Sans-Serif als Alternativen. Meine Schriftfarbe ist #252525, ein sehr dunkles Grau, das (wie ich finde) einen angenehmen Kontrast zum weißen Hintergrund hat. Außerdem beinhaltet meine Mail-Signatur ein Kunstquadrat, das ich jeden Monat austausche:&lt;/p&gt;
-
-&lt;p style=&quot;font-family:Corbel,Aller,Ubuntu,'Lucida Sans',sans-serif; color:#252525;line-height:20px;margin:1.4em 0 0.7em;&quot;&gt;
-&lt;a href=&quot;http://de.wikipedia.org/wiki/Die_Geburt_der_Venus&quot;&gt;&lt;img src=&quot;material/kq-muschel.jpg&quot; title=&quot;Kunstquadrat&quot; alt=&quot;&quot; style=&quot;border:0;float:left;margin:0 9px 0 0&quot; width=&quot;38&quot; height=&quot;38&quot; /&gt;&lt;/a&gt;
-Gerhard Gro&amp;szlig;mann &amp;nbsp;&amp;#8226;&amp;nbsp; Beispielstraße 3 &amp;nbsp;&amp;#8226;&amp;nbsp; 12345 Beispielstadt&lt;br /&gt;
-Telefon: 09XX&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;/&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;XXX&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;XXX &amp;nbsp;&amp;#8226;&amp;nbsp; SMS: 017X&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;/&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;XXX&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;XX&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;XX&lt;/p&gt;
-
-&lt;p&gt;Das Kunstquadrat ist ein 38×38 Pixel großer Ausschnitt eines Gemäldes, verlinkt mit dem entsprechenden Wikipedia-Artikel. In meinen Augen ist das ein unterhaltsames kleines Extra, das monatlich zum Entdecken einlädt und meine Mails bereichert. Für Empfänger, die HTML nicht angezeigt bekommen können (gibt’s so was?), schickt mein Mailprogramm zur Sicherheit immer eine automatisch erzeugte Reintext-Version mit.&lt;/p&gt;
-
-&lt;h2 id=&quot;eigenschaften-von-reinem-text&quot;&gt;Eigenschaften von reinem Text&lt;/h2&gt;
-
-&lt;p&gt;Würde ich grundsätzlich nur Reintext-Mails verschicken, hätte ich es mit der Mailverschlüsselung etwas einfacher – ich müsste beim Schreiben nicht auf deaktiviertes HTML achten.&lt;/p&gt;
-
-&lt;p&gt;Vielleicht würde ich mich dann auch stärker auf einen kurzen, prägnanten Schreibstil konzentrieren. Schließlich erscheint eine Reintext-Mail (zumindest bei mir) in einer puristischen Schreibmaschinen-Type, genau wie in minimalistischen Schreibprogrammen. Das motiviert, die Aufmerksamkeit auf den eigentlichen Inhalt zu richten. – Andererseits schreibe ich gern längere Mails, und wenn die dann ohne optimierte Lesbarkeitsgestaltung beim Empfänger ankommen …&lt;/p&gt;
-
-&lt;p&gt;Der Dateigrößenvorteil ist eher zu vernachlässigen. Ohne Signatur bringt es eine HTML-Mail (mit Reintext-Fallback) aus den ersten zwei Absätzen dieses Blogeintrags auf 3,0&lt;small&gt; &lt;/small&gt;kB, als bloße Reintext-Mail auf 1,4&lt;small&gt; &lt;/small&gt;kB. Das ist zwar mehr als doppelt so viel, absolut gesehen reden wir aber nur über einen Unterschied von 1,6&lt;small&gt; &lt;/small&gt;kB (zum Vergleich: Das Logo der Wikipedia hat allein 10,2&lt;small&gt; &lt;/small&gt;kB).&lt;/p&gt;
-
-&lt;p&gt;Noch nicht so ganz zufrieden bin ich damit, dass Reintext-Nachrichten in der Regel nach&lt;br /&gt;einer bestimmten Zeichenzahl mit festen Zeilenumbrüchen versehen werden. Und nicht&lt;br /&gt;jedes Mailprogramm hat ein ausreichend breites Anzeigefenster oder umbricht die&lt;br /&gt;Nachricht neu. Im schlimmsten Fall sehen meine Mails dann so zebrastreifenartig aus wie&lt;br /&gt;dieser Absatz.&lt;/p&gt;
-
-&lt;h2 id=&quot;bereit-fr-den-umstieg&quot;&gt;Bereit für den Umstieg?&lt;/h2&gt;
-
-&lt;p&gt;Die oben genannten Formatierungsmöglichkeiten würden mir wohl genügen. Zwar stellt nicht jedes Mailprogramm sie als fett, kursiv oder unterstrichen dar, aber schon ohne fetten Schriftschnitt reichen die &lt;code&gt;*Sternchen*&lt;/code&gt; aus, um einen Begriff hervorzuheben. Falls nötig könnte ich die Mail mit Sonderzeichen wie • » oder # strukturieren und markieren. Das regt vielleicht sogar meine Kreativität an …&lt;/p&gt;
-
-&lt;p&gt;Dass ich keine Schriftvorgabe mehr machen kann, würde ich vermutlich ebenfalls verkraften. Schließlich ist jeder Mail-Empfänger schon jetzt zu einem Großteil selbst dafür verantwortlich, wie er Nachrichten von anderen angezeigt bekommt.&lt;/p&gt;
-
-&lt;p&gt;Was mir auf jeden Fall fehlen würde, ist die Möglichkeit, Bilder zwischen Absätzen einzubetten. Und natürlich meine abwechslungsreiche und unterhaltsame Kunstquadrat-Signatur. Vielleicht könnte ich da alternativ etwas mit ASCII-Art machen, zum Beispiel&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{*\./*}  Beispielstraße 3, 12345 Beispielstadt
- &amp;lt;/¦\&amp;gt;   Telefon: 09XX/XXX XXX, SMS: 017X/XXX XX XX
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So richtig originell finde ich das aber nicht. Außerdem kommt es auf schmaleren Bildschirmen zu Problemen mit dem Umbruch und in Mail-Clients, die keine Festbreitenschrift verwenden, bleibt vom sowieso schwer erkennbaren Schmetterling nicht mehr viel übrig. Darüber muss ich also noch ein wenig nachdenken.&lt;/p&gt;
-
-&lt;p&gt;Wie haltet ihr es mit euren Mails? Seid ihr minimalistische Text-Puristen oder verschickt ihr durchgestylte E-Post? Habt ihr die HTML-Anzeige in eurem Mailprogramm geblockt, weil ihr immer Comic-Sans-Mail bekommt? Oder habt ihr besseres zu tun, als über solche Dinge wie Mailformate nachzudenken?&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/mailformat.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/mailformat.html</guid>
-	<pubDate>Fri, 24 Jul 2015 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
