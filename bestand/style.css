@@ -59,20 +59,22 @@ main { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
 	border: 0;}
 }
 
-/* ÜBERSCHRIFTEN */
+/* ÜBERSCHRIFTEN UND LOGO */
 
 h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: 400;
 	font-feature-settings: "liga", "kern";}
 h1 { font-size: 1.5em; line-height: 0.933; color: #444;
 	margin: 2.78em 0 0.7em -0.04em; }
-aside h1 { font-size: 1.9em; line-height: 1; margin: 0; }
 h2 { font-size: 1.1em; line-height: 1.273; color: #333;
 	margin: 1.2em 0 -0.55em -0.04em; }
 h3 { font-size: 0.9em; line-height: 1.556; color: #222;
 	margin: 1.5em 0 -0.725em -0.04em; }
 
-@media (max-width: 44.4em) { aside h1 { margin: 0.6em 0; } }
-@media (max-width: 25em) { aside h1 { margin: 0; } }
+.logo > span { font-size: 1.9em; line-height: 1; color: #444; margin: 0; display: block; }
+.logo img { float: left; margin-right: 0.8em; }
+
+@media (max-width: 44.4em) { .logo > span { margin: 0.6em 0; } }
+@media (max-width: 22.9em) { .logo > span { margin: 0; } }
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
@@ -150,7 +152,6 @@ figcaption { padding: 0.5em 0.8em 0.3em; font-style: italic;
 	font-size: 0.9em; line-height: 1.556; color: #111;}
 figcaption a { font-style: normal; font-size: 0.9em; }
 
-.logo { float: left; margin-right: 0.8em; }
 .texticon { margin: 0; padding: 0 0.2em; vertical-align: -2px; }
 
 /* Werbediv von Formular-Chef verstecken */
@@ -201,7 +202,7 @@ main { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
 
 h1, h2, h3, h4, h5, h6, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
-aside h1 { margin: 0; padding-top: 0.1em;}
+.logo > span { margin: 0; padding-top: 0.1em;}
 time { margin-top: -0.2em; }
 p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited { color: #000; }
