@@ -97,8 +97,6 @@
 <form action="http://www.formular-chef.de/fc.cgi"
 method="post" enctype="multipart/form-data" novalidate>
 <input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
-<input type="hidden" name="pflicht" value="comment">
-<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
 <input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
 <input type="hidden" name="antwortseite_template"
 value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
@@ -120,7 +118,7 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 </div>
 <div>
 	<label for="comment">Kommentar</label><br>
-	<textarea id="comment" name="comment" spellcheck="true" rows="10" cols="50"></textarea>
+	<textarea id="comment" spellcheck="true" rows="10" cols="50" required></textarea>
 </div>
 <div><input name="submit" type="submit" value="Abschicken"></div>
 </form>
