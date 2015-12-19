@@ -124,9 +124,9 @@ blockquote { padding-left: 0.3em; border-width: 0.4em; }
 
 /* LINKS */
 
-a:link { text-decoration: none; color: #281; }
-a:link:not(.klickfeld) { font-family: Bitter,Georgia,serif; }
-p a:link:not(.klickfeld) { font-size: 0.9em; }
+a { text-decoration: none; color: #281; }
+a:not(.klickfeld) { font-family: Bitter,Georgia,serif; }
+p a:not(.klickfeld) { font-size: 0.9em; }
 	/* Überschriften-Links und Klickfelder nicht verkleinern */
 a:visited { color: #839; }
 a:hover { color: #3a1; }
