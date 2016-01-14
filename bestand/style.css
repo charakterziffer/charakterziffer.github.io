@@ -94,11 +94,6 @@ time { position: relative; float: right; right: 0.5em; display: block;
 
 hr { margin: 1.88em 0.4em 1.1em 0; color: #bbb; }
 
-.hinterlegt { margin-top: 1.1em; padding: 0.25em 0.4em 0.35em;
-	background-color: #deb; }
-.hinterlegt p { margin: 0.2em; }
-.hinterlegt p + p { margin-top: 0.7em; }
-
 /* LISTEN, CODE, ZITATBLÖCKE */
 
 ul { margin: 1.29em 0 1.1em -1.55em; }
@@ -118,6 +113,23 @@ blockquote + blockquote { margin-top: 1.7em; }
 @media (max-width: 25em) {
 blockquote { padding-left: 0.3em; border-width: 0.4em; }
 }
+
+.hinterlegt, .klappkasten { position: relative; margin-top: 1.1em;
+	padding: 0.25em 0.4em 0.35em; background-color: #deb; }
+.hinterlegt p { margin: 0.2em; }
+.hinterlegt p + p { margin-top: 0.7em; }
+
+.klappkasten input { position: absolute; top: 0; left: 0;
+	width: 98.5%; height: 2.1em; opacity: 0; cursor: pointer; }
+.klappkasten label { cursor: pointer;}
+
+.klappkasten label:before { content: "→"; padding-right:0.3em;}
+input:checked ~ label:before { content: "↓"; }
+
+.klappkasten p { max-height: 0; margin: 0 0.2em; overflow: hidden;
+	transition: max-height 0.4s ease, margin 0.2s ease; }
+.klappkasten input:checked ~ p { max-height: 17em; margin: 0.2em; }
+.klappkasten input:checked ~ p + p { margin-top: 0.7em }
 
 /* LINKS */
 
@@ -160,33 +172,37 @@ audio { margin: 0.45em 0.1em 0.3em; width:98.5%; }
 
 /* FORMULARE */
 
-input[type=text], input[type=email], input[type=url],
-input[type=submit] { font-size: 0.9em; line-height: 1.556; }
+form input[type=text], form input[type=email], form input[type=url],
+form input[type=submit] { font-size: 0.9em; line-height: 1.556; }
 textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; }
 form > div { padding-top: 0.4em; clear: both; }
 
-label { position: relative; float: left; top: 0.2em; width: 20%;
+form label { position: relative; float: left; top: 0.2em; width: 20%;
 	font: 0.9em/1.556 Bitter,Georgia,serif; }
-label:after { content: ': '; }
+form label:after { content: ': '; }
 form > div > div { float: right; width: 78%; padding-right: 2%; }
-input[type=text], input[type=email], input[type=url] { width: 50%; }
+form input[type=text], form input[type=email], form input[type=url] {
+	width: 50%; }
 
 @media (max-width: 54em) {
-label { float: none; top: 0; width: 100%; }
+form label { float: none; top: 0; width: 100%; }
 form > div > div { float: none; width: 98%; }
-input[type=text], input[type=email], input[type=url] { width: 100%; }
+form input[type=text], form input[type=email], form input[type=url] {
+	width: 100%; }
 }
 
 @media (max-width: 44.4em) {
-label { float: left; top: 0.2em; width: 20%; }
+form label { float: left; top: 0.2em; width: 20%; }
 form > div > div { float: right; width: 78%; }
-input[type=text], input[type=email], input[type=url] { width: 50%; }
+form input[type=text], form input[type=email], form input[type=url] {
+	width: 50%; }
 }
 
 @media (max-width: 34em) {
-label { float: none; top: 0; width: 100%; }
+form label { float: none; top: 0; width: 100%; }
 form > div > div { float: none; width: 98%; }
-input[type=text], input[type=email], input[type=url] { width: 100%; }
+form input[type=text], form input[type=email], form input[type=url] {
+	width: 100%; }
 }
 
 /* ANPASSUNGEN FÜR DEN AUSDRUCK */
@@ -206,11 +222,12 @@ time { margin-top: -0.2em; }
 p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited { color: #000; }
 
-/* Alle Klappkästen im Druck geöffnet anzeigen */
-p[onclick^="klappe"] + div { display: block !important; }
+/* Klappkästen im Druck geöffnet anzeigen */
+.klappkasten p { max-height: 17em; margin: 0.2em; }
+.klappkasten p + p { margin-top: 0.7em }
 
 img, table { page-break-inside: avoid; }
-figcaption, blockquote, .hinterlegt {
+figcaption, blockquote, .hinterlegt, .klappkasten {
 	background: #fff; border: 1px solid #ccc; }
 blockquote + blockquote { margin-top: 0.7em; }
 blockquote > p { margin: 0 0 0.3em; }

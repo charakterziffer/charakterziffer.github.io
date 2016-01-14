@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <link rel="shortcut icon" href="http://charakterziffer.github.io/bestand/favicon.ico" type="image/x-icon">
-<link href='http://charakterziffer.github.io/bestand/style.css' rel='stylesheet'>
+<link href='http://cha█rakterziffer.github.io/bestand/style.css' rel='stylesheet'>
 <!-- CSS-Link für lokale Tests, ist online eine Doppelung -->
 <link href='bestand/style.css' rel='stylesheet'>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://charakterziffer.github.io/rss.xml">
@@ -36,6 +36,164 @@
     <h1>Manches braucht mehr als 140 Zeichen …</h1>
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="http://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
+
+	<article>
+	<time datetime="2016-12-31">Sa, 31. Dez. 2016</time>
+	<h1><a href="pattern-library.html">Pattern-Library für @cz+</a></h1>
+	<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
+
+<p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="https://direktadresse.de/">https://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;</a> (Spam?!).</p>
+
+<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="https://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="https://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="https://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
+
+<h2 id="hervorhebungen-h2-berschrift">Hervorhebungen (H2-Überschrift)</h2>
+
+<p><em>Kursive Textstellen</em> werden mit einem Stern umschlossen, <strong>fette Hervorhebungen</strong> bekommen zwei Sterne. Man kann auch Wort<em>bestand</em>teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash.</p>
+
+<h3 id="weitere-formatierungen-h3-berschrift">Weitere Formatierungen (H3-Überschrift)</h3>
+
+<p>Kurze <code>Codeschnippsel</code> zeichnet man mit einem Gravis aus. Praktischerweise werden <code>&lt;html&gt;</code>-Sonderzeichen wie spitze Klammern oder „<code>Kaufmanns-&amp;</code>“ gleich umgewandelt.</p>
+
+<h2 id="unsortierte-und-sortierte-listen">Unsortierte und sortierte Listen</h2>
+
+<ul>
+  <li>eine unsortierte Lise</li>
+  <li>nein, eine Liste</li>
+  <li>aber unsortiert</li>
+</ul>
+
+<p>Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:</p>
+
+<ol>
+  <li>Hund</li>
+  <li>Katze</li>
+  <li>Maus</li>
+</ol>
+
+<p>Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.</p>
+
+<ul>
+  <li>
+    <p>Dies ist ein Listenpunkt mit zwei Absätzen</p>
+
+    <p>Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
+erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit.</p>
+  </li>
+  <li>
+    <p>Ein weiterer Punkt in der selben Liste.</p>
+  </li>
+  <li>
+    <p>Und noch ein Absatz</p>
+  </li>
+</ul>
+
+<p>Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.</p>
+
+<h2 id="ksten-zitatblcke-codeblcke">Kästen, Zitatblöcke, Codeblöcke</h2>
+
+<p>Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse <em>hinterlegt</em>.</p>
+
+<p class="hinterlegt">Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.</p>
+
+<p>Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.</p>
+
+<div class="hinterlegt">
+<p>Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.</p>
+<p>Das ist Absatz Nº2.</p>
+<p>Hier ist noch ein dritter Absatz.</p>
+</div>
+
+<p>Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&gt;):</p>
+
+<blockquote>
+  <p>So ein Zitatblock wird dann mit <code>&lt;blockquote&gt;</code> umschlossen. Der Text darinnen steht in einem <code>&lt;p&gt;</code>. Das wird zum Beispiel für Tweets benutzt.</p>
+</blockquote>
+
+<p>Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:</p>
+
+<blockquote>
+  <p>⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (<a href="#fuchs">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (<a href="#fuchs">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (<a href="#fuchs">#</a>)</p>
+</blockquote>
+
+<p>Um mehrere Absätze in einen Codeblock zu packen, beginnt man auch die Leerzeilen dazwischen mit einer spitzen Klammer:</p>
+
+<blockquote>
+  <h2 id="groes-zitat">Großes Zitat</h2>
+
+  <p>Diese Blockquote enthält etwas mehr Text und beginnt sogar mit einer Überschrift (hier ein H2-Titel).</p>
+
+  <p>Im Moment (Anfang Juli 2015) bin ich mit dem Abständen noch nicht ganz zufrieden. Eventuell sollte ich das noch an die Klasse <code>.hinterlegt</code> angleichen.</p>
+
+  <p>Aus irgendeinem Grund verhält sich eine Blockquote aber anders als ein Div. Dies gilt es zu erforschen … wenn ich mal Lust dazu habe.</p>
+</blockquote>
+
+<p>Wenn man ein längeres <code>Codebeispiel</code> hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens <code>vier Leerzeichen</code> einrücken):</p>
+
+<pre><code>@font-face {
+   font-family: 'Schriftname';
+   src: url('schrift.eot'); /* IE9 compatibility mode */
+   src: url('schrift.eot?#iefix') format('embedded-opentype'),
+      url('schrift.woff') format('woff'),
+      url('schrift.ttf') format('truetype');
+}
+</code></pre>
+
+<p>Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.</p>
+
+<hr />
+
+<p>Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.</p>
+
+<h2 id="bilder">Bilder</h2>
+
+<p>Bilder werden so ähnlich wie Links eingebunden:</p>
+
+<p><img src="material/cz530x195.jpg" alt="Alttext des Bildes" /></p>
+
+<p>Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen. Für Untertitel:</p>
+
+<figure><img src="material/cz530x195.jpg" alt="Ein Beispielbild" />
+	<figcaption>Hier steht der Bilduntertitel <a href="#bild">mit Verlinkung</a>. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.</figcaption>
+</figure>
+
+<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse <code>.texticon</code>:  <img class="texticon" src="bestand/cc-by-sa.png" alt="CC-BY-SA" />.</p>
+
+<h2 id="sonstiges">Sonstiges</h2>
+
+<p>Ein Klickfeld für Download-Links:</p>
+
+<p><a href="otfeat/otfeat.ttf" class="klickfeld">Ot­feat als<br /><i>ttf-Da­tei</i></a></p>
+
+<p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
+
+<div class="klappkasten">
+<input type="checkbox" id="K1" />
+<label for="K1">Zum Öffnen hier klicken</label>
+<p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes <i>klapp.gif</i>, dass nach dem Laden das Klappskript einmal ausführt.</p>
+</div>
+
+<p>Eine <strong style="background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;">besonders starke Hervorhebung</strong> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.</p>
+
+<link rel="stylesheet" type="text/css" href="bestand/extra.css" />
+
+<p>Kurzer <span class="fraktur">Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für die Otfeat-Schrift und für Stick-Serif.</p>
+
+<form style="margin-top:1.7em"><textarea style="font:2em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;" name="Testfeld">Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form>
+
+<p><span style="color:#e32;">Weitere Betonungen?</span></p>
+
+	<p>---<br> <a href="pattern-library.html#kommentare">2 Kommentare</a>
+	</p>
+	</article>
 
 	<article>
 	<time datetime="2016-01-05">Di, 5. Jan. 2016</time>
@@ -144,63 +302,6 @@
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2015-11-16">Mo, 16. Nov. 2015</time>
-	<h1><a href="erfundene-fakten-5.html">Unterhaltsam? Tatsächlich!</a></h1>
-	<p>Es gibt ja Kinofilme, die in ihrem Trailer von sich behaupten, auf wahren Ereignissen zu beruhen. Offensichtlich soll diese „Authentizität“ einen Film glaubhafter, relevanter oder irgendwie sonst besser machen. Mich schreckt das eher ab.</p>
-
-<p>Wenn ich einen Film, ein Buch, ein Hörspiel oder sonst ein fiktionales Werk genieße, dann ist mir doch relativ egal, ob es auf Tatsachen beruht. Viel wichtiger ist, ob mich die Geschichte unterhält, ob sie mich packt, überrascht, mein Interesse weckt, mich mitfiebern oder ins Grübeln kommen lässt.</p>
-
-<p>Zwar sagt man, die schönsten Geschichten schriebe das Leben selbst – doch was ist unser durchschnittlicher Alltag schon gegen die Verfolgungsjagden in einem Bond-Film, die dramatischen Wendungen einer Verdi-Oper oder die schaurige Spannung in einem Fitzek-Buch? Natürlich können auch wahre Ereignisse mitreißend sein. Aber dann sind sie doch deshalb gut, weil sie mitreißen, nicht weil sie wahr sind.</p>
-
-<p>Der langen Rede kurzer Sinne: Wenn es um Unterhaltung geht, ziehe ich eine spannende, erfundene Story einer langweiligen, aber wahren vor. Und damit kommen wir zu einer weiteren Tweetsammlung aus meiner Serie „Erfundenes Faktum“:</p>
-
-<blockquote>
-  <p>⎋ Erfundenes Faktum № 51: Wenn man während des Essens Diätsendungen anschaut (vor allem Dokus), dann nimmt man weniger stark zu. (<a href="https://twitter.com/charakterziffer/status/578234108222054400">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>∿ Erfundenes Faktum № 52: Der BND verhindert seit Jahren die Abschaltung von UKW, weil diese deutlich leichter abzuhören ist. (<a href="https://twitter.com/charakterziffer/status/592972703512064000">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⛊ Erfundenes Faktum № 53: Mit der schwarzen Version des Favicons nimmt Twitter Bezug auf die Raben des Gottes Odin. <a href="https://twitter.com/charakterziffer/status/603503011097358336/photo/1">pic.twitter.com/MS4px4Pm1e</a> (<a href="https://twitter.com/charakterziffer/status/603503011097358336">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⚲ Erfundenes Faktum № 54: Weil Mücken ein mittleres Blau nicht so gut erkennen, sind Fliegenklatschen in dieser Farbe am erfolgreichsten. (<a href="https://twitter.com/charakterziffer/status/611836431389081600">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>◵ Erfundenes Faktum № 55: TV-Dokus zeigen historische Szenen vor 1800 deshalb so ausgedehnt, damit sich die teure Zeitreise bezahlt macht. (<a href="https://twitter.com/charakterziffer/status/620857805516378112">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>ᘎ Erfundenes Faktum № 56: Mit Weißbier und viel Geduld lassen sich Schnecken so abrichten, dass sie aus einem Beet nur das Unkraut fressen. (<a href="https://twitter.com/charakterziffer/status/632177976508030976">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>☣ Erfundenes Faktum № 57: Schnupfenviren beeinträchtigen den Geruchssinn, damit wir mehr verdorbene Nahrung essen, die uns weiter schwächt. (<a href="https://twitter.com/charakterziffer/status/639460055629320192">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>◙ Erfundenes Faktum № 58: Wenn alle Menschen Waffen trügen, gäbe es weniger Tode in Schießereien. #Lobbylogik (<a href="https://twitter.com/charakterziffer/status/650013790323523584">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⚰ Erfundenes Faktum № 59: Laut WHO können rotes Fleisch und viel Zucker dabei helfen, im Leben weniger oft an Erkältung zu erkranken. (<a href="https://twitter.com/charakterziffer/status/660018555975565312">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>🍆  Erfundenes Faktum № 60: Aus Angst vor psychischer Belastung durch Pornografie wurde die manuelle Leitungsvermittlung vor Erfindung des Internets abgeschafft. (<a href="https://twitter.com/charakterziffer/status/666189052585078784">#</a>)</p>
-</blockquote>
-
-<p>Diese Twitterserie gibt es übrigens schon seit Dezember 2010. Gesammelt als Blogeintrag kann man die Folgen <a href="erfundene-fakten-1.html">1–16</a>, <a href="erfundene-fakten-2.html">17–28</a>, <a href="erfundene-fakten-3.html">29–40</a>, <a href="erfundene-fakten-4.html">41–50</a> und <a href="erfundene-fakten-5.html">51–60</a> nachlesen.</p>
-
-	<p>---<br> <a href="erfundene-fakten-5.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -225,7 +326,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-01-14T01:35:10+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-01-14T11:48:58+01:00</p>
 
 </main> <!-- hauptfeld -->
 </div> <!-- container -->

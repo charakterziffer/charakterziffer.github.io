@@ -14,6 +14,165 @@
 </image>
 
 <item>
+	<title>Pattern-Library für @cz+</title>
+	<description>&lt;p&gt;In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein &lt;a href=&quot;index.html&quot; title=&quot;zur Startseite&quot;&gt;interner Link&lt;/a&gt;, in diesem Fall ein bereits besuchter. Ein &lt;a href=&quot;https://äößü.de/&quot; title=&quot;Umlautseite&quot;&gt;unbesuchter Link&lt;/a&gt; sieht so aus. Wie verlinke ich dann &lt;a href=&quot;#anker&quot; title=&quot;zum Anker&quot;&gt;einen Seitenanker&lt;/a&gt;? Übrigens kann man &lt;a href=&quot;https://google.de&quot;&gt;den Titel des Links&lt;/a&gt; auch weglassen.&lt;/p&gt;
+
+&lt;p&gt;Falls man keinen Extra-Linktext braucht, verlinkt man einfach so &lt;a href=&quot;https://direktadresse.de/&quot;&gt;https://direktadresse.de/&lt;/a&gt; (klappt nur bei externen Links). Das geht auch für Mailadressen: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#097;&amp;#100;&amp;#100;&amp;#114;&amp;#101;&amp;#115;&amp;#115;&amp;#064;&amp;#101;&amp;#120;&amp;#097;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; (Spam?!).&lt;/p&gt;
+
+&lt;p&gt;Aus Lesbarkeitsgründen im Markdown-Text kann man auch &lt;a href=&quot;https://example.com/&quot; title=&quot;Diese Links hier&quot;&gt;Referenzlinks&lt;/a&gt; verwenden. Sie lagern die &lt;a href=&quot;https://beispiel.de/&quot; title=&quot;tauchen im Quelltext&quot;&gt;Linkadresse&lt;/a&gt; einfach an eine beliebige Stelle im Dokument aus, machen im &lt;a href=&quot;https://пример.ru/&quot; title=&quot;im vorangehenden Absatz auf.&quot;&gt;HTML-Quelltext&lt;/a&gt; aber keinen Unterschied.&lt;/p&gt;
+
+&lt;h2 id=&quot;hervorhebungen-h2-berschrift&quot;&gt;Hervorhebungen (H2-Überschrift)&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Kursive Textstellen&lt;/em&gt; werden mit einem Stern umschlossen, &lt;strong&gt;fette Hervorhebungen&lt;/strong&gt; bekommen zwei Sterne. Man kann auch Wort&lt;em&gt;bestand&lt;/em&gt;teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash.&lt;/p&gt;
+
+&lt;h3 id=&quot;weitere-formatierungen-h3-berschrift&quot;&gt;Weitere Formatierungen (H3-Überschrift)&lt;/h3&gt;
+
+&lt;p&gt;Kurze &lt;code&gt;Codeschnippsel&lt;/code&gt; zeichnet man mit einem Gravis aus. Praktischerweise werden &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;-Sonderzeichen wie spitze Klammern oder „&lt;code&gt;Kaufmanns-&amp;amp;&lt;/code&gt;“ gleich umgewandelt.&lt;/p&gt;
+
+&lt;h2 id=&quot;unsortierte-und-sortierte-listen&quot;&gt;Unsortierte und sortierte Listen&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;eine unsortierte Lise&lt;/li&gt;
+  &lt;li&gt;nein, eine Liste&lt;/li&gt;
+  &lt;li&gt;aber unsortiert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Hund&lt;/li&gt;
+  &lt;li&gt;Katze&lt;/li&gt;
+  &lt;li&gt;Maus&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dies ist ein Listenpunkt mit zwei Absätzen&lt;/p&gt;
+
+    &lt;p&gt;Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
+erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ein weiterer Punkt in der selben Liste.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Und noch ein Absatz&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.&lt;/p&gt;
+
+&lt;h2 id=&quot;ksten-zitatblcke-codeblcke&quot;&gt;Kästen, Zitatblöcke, Codeblöcke&lt;/h2&gt;
+
+&lt;p&gt;Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse &lt;em&gt;hinterlegt&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot;&gt;Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.&lt;/p&gt;
+
+&lt;p&gt;Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.&lt;/p&gt;
+
+&lt;div class=&quot;hinterlegt&quot;&gt;
+&lt;p&gt;Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.&lt;/p&gt;
+&lt;p&gt;Das ist Absatz Nº2.&lt;/p&gt;
+&lt;p&gt;Hier ist noch ein dritter Absatz.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&amp;gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So ein Zitatblock wird dann mit &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; umschlossen. Der Text darinnen steht in einem &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;. Das wird zum Beispiel für Tweets benutzt.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Um mehrere Absätze in einen Codeblock zu packen, beginnt man auch die Leerzeilen dazwischen mit einer spitzen Klammer:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;groes-zitat&quot;&gt;Großes Zitat&lt;/h2&gt;
+
+  &lt;p&gt;Diese Blockquote enthält etwas mehr Text und beginnt sogar mit einer Überschrift (hier ein H2-Titel).&lt;/p&gt;
+
+  &lt;p&gt;Im Moment (Anfang Juli 2015) bin ich mit dem Abständen noch nicht ganz zufrieden. Eventuell sollte ich das noch an die Klasse &lt;code&gt;.hinterlegt&lt;/code&gt; angleichen.&lt;/p&gt;
+
+  &lt;p&gt;Aus irgendeinem Grund verhält sich eine Blockquote aber anders als ein Div. Dies gilt es zu erforschen … wenn ich mal Lust dazu habe.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wenn man ein längeres &lt;code&gt;Codebeispiel&lt;/code&gt; hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens &lt;code&gt;vier Leerzeichen&lt;/code&gt; einrücken):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@font-face {
+   font-family: 'Schriftname';
+   src: url('schrift.eot'); /* IE9 compatibility mode */
+   src: url('schrift.eot?#iefix') format('embedded-opentype'),
+      url('schrift.woff') format('woff'),
+      url('schrift.ttf') format('truetype');
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.&lt;/p&gt;
+
+&lt;h2 id=&quot;bilder&quot;&gt;Bilder&lt;/h2&gt;
+
+&lt;p&gt;Bilder werden so ähnlich wie Links eingebunden:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/cz530x195.jpg&quot; alt=&quot;Alttext des Bildes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; benutzen. Für Untertitel:&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/cz530x195.jpg&quot; alt=&quot;Ein Beispielbild&quot; /&gt;
+	&lt;figcaption&gt;Hier steht der Bilduntertitel &lt;a href=&quot;#bild&quot;&gt;mit Verlinkung&lt;/a&gt;. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Doch ich füge per CSS Extra-Abstände ein, die im Text stören würden. Deswegen verwendet man dafür die normale HTML-Syntax und gibt der Bild die Klasse &lt;code&gt;.texticon&lt;/code&gt;:  &lt;img class=&quot;texticon&quot; src=&quot;bestand/cc-by-sa.png&quot; alt=&quot;CC-BY-SA&quot; /&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;sonstiges&quot;&gt;Sonstiges&lt;/h2&gt;
+
+&lt;p&gt;Ein Klickfeld für Download-Links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;otfeat/otfeat.ttf&quot; class=&quot;klickfeld&quot;&gt;Ot­feat als&lt;br /&gt;&lt;i&gt;ttf-Da­tei&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Man erzeugt es als &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; mit &lt;em&gt;.klickfeld&lt;/em&gt; als CSS-Klasse.&lt;/p&gt;
+
+&lt;div class=&quot;klappkasten&quot;&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;K1&quot; /&gt;
+&lt;label for=&quot;K1&quot;&gt;Zum Öffnen hier klicken&lt;/label&gt;
+&lt;p&gt;Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Aus Zugänglichkeitsgründen ist die Box zunächst geöffnet und wird erst mit JavaScript geschlossen. Das klappt mit Hilfe des unsichtbaren Bildes &lt;i&gt;klapp.gif&lt;/i&gt;, dass nach dem Laden das Klappskript einmal ausführt.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Eine &lt;strong style=&quot;background-color:#fdb; font-size:0.8em; letter-spacing:0.05em; text-transform:uppercase;&quot;&gt;besonders starke Hervorhebung&lt;/strong&gt; mit rotem Hintergrund. Kommt im Artikel &lt;em&gt;1337motiv.html&lt;/em&gt; vor und braucht evtl. noch eine CSS-Klasse.&lt;/p&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bestand/extra.css&quot; /&gt;
+
+&lt;p&gt;Kurzer &lt;span class=&quot;fraktur&quot;&gt;Textausſchnitt in gebrochener Schrift&lt;/span&gt;, wie er im Eintrag &lt;em&gt;gebrochene-schriften.html&lt;/em&gt; auftaucht. Der Code dazu steht in der extra.css-Datei. Dort steht auch der Code für die Otfeat-Schrift und für Stick-Serif.&lt;/p&gt;
+
+&lt;form style=&quot;margin-top:1.7em&quot;&gt;&lt;textarea style=&quot;font:2em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;&quot; name=&quot;Testfeld&quot;&gt;Ein Textfeld, um eine Schrift auszuprobieren.&lt;/textarea&gt;&lt;/form&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#e32;&quot;&gt;Weitere Betonungen?&lt;/span&gt;&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/pattern-library.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/pattern-library.html</guid>
+	<pubDate>Sat, 31 Dec 2016 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Geschichten fürs Ohr</title>
 	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Thematisch passend gibt es diesen Artikel auch zum Anhören:&lt;br /&gt;
 	&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
@@ -287,26 +446,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/kleinschreibung.html</guid>
 	<pubDate>Tue, 20 Oct 2015 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Schattiger Mondtag</title>
-	<description>&lt;p&gt;Wer in der Nacht von Sonntag auf Montag (28. September 2015) nicht schlafen kann, sollte einen Blick aus dem Fenster werfen. Von kurz nach Mitternacht bis fast halb sechs spielt sich am Nachthimmel eine totale Mondfinsternis ab.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/mondfinsternis.jpg&quot; alt=&quot;Schemazeichnung: Sonne, Erde und im Schatten dahinter der Mond&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Dabei wandert der Mond in den Schatten, den die Erde im Sonnenlicht wirft. Das passiert etwa zweimal im Jahr, nämlich immer dann, wenn sich der Vollmond ausreichend nah am Mondkonten befindet (Schnittpunkt der Mondbahn mit der scheinbaren Bahn der Sonne).&lt;/p&gt;
-
-&lt;p&gt;Die totale Mondfinsternis wird immer von partiellen Sonnenfinsternissen begleitet, am Neumond davor oder danach. Im Unterschied zur Sonnenfinsternis ist eine Verfinsterung des Mondes aber von jedem Ort auf der Nachtseite der Erde zu sehen.&lt;/p&gt;
-
-&lt;p&gt;In der kommenden Montagnacht bewegt sich der Mond zwischen 3:07 Uhr und 6:27 Uhr durch den Kernschatten der Erde. Gänzlich im Erdschatten ist der Mond von 4:11 Uhr bis 5:23 Uhr. Dann ist er fast unsichtbar, schimmert in einem rötlich braunen Licht.&lt;/p&gt;
-
-&lt;p&gt;Wer diese totale Mondfinsternis verschläft oder wem Wolken einen Strich durch die Rechnung machen, der hat in Europa nächstes Jahr am 16. September wieder eine Chance – zumindest auf eine teilweise Mondfinsternis.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/mondfinsternis.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/mondfinsternis.html</guid>
-	<pubDate>Fri, 25 Sep 2015 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
