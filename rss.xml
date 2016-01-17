@@ -15,11 +15,11 @@
 
 <item>
 	<title>Geschichten fürs Ohr</title>
-	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Thematisch passend gibt es diesen Artikel auch zum Anhören:&lt;br /&gt;
-	&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
-		&lt;source src=&quot;material/hoerspiele.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-		Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/hoerspiele.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
-	&lt;/audio&gt;
+	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Thematisch passend gibt es diesen Artikel auch zum Anhören:
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/hoerspiele.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/hoerspiele.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;
 &lt;/p&gt;
 
 &lt;p&gt;„Gibt’s das heutzutage überhaupt noch? Und ist das nicht nur was für Kinder?“ – Die Fragen bekomme ich meistens gestellt, wenn ich davon erzähle, wie gerne ich Hörspiele höre.&lt;/p&gt;

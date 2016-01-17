@@ -42,6 +42,7 @@ main { display: block; margin-left: 16.6em;
 	padding: 0.08em 65px 1.4em 55px;
 	background-color: #fff; border-left: 1px dashed #281; }
 article, section { display: block; }
+/* article { background: linear-gradient(#e39 5%, transparent 0) 0 0 / auto 1.4em; } /* Zeilenregister */
 
 /* Wenn Fensterhöhe zu niedrig, dann Randspalte nicht mehr fix */
 @media (max-height: 33.5em) { aside { position: static; } }
@@ -168,7 +169,7 @@ div[style*="font-family: arial;"] { left: -9999px; }
 /* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
 .onlex_counter { display: none; }
 
-audio { margin: 0.45em 0.1em 0.3em; width:98.5%; }
+audio { margin: 0.6em 0 0.1em; width:100%; }
 
 /* FORMULARE */
 
