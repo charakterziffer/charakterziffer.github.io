@@ -10,18 +10,15 @@
 
 @font-face { font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
-	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
-	url('SourceSansPro-Rg.woff') format('woff'),
+	src: url('SourceSansPro-Rg.woff') format('woff'),
 	url('SourceSansPro-Rg.ttf') format('truetype'); }
 @font-face { font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
-	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
-	url('SourceSansPro-It.woff') format('woff'),
+	src: url('SourceSansPro-It.woff') format('woff'),
 	url('SourceSansPro-Rg.ttf') format('truetype'); }
 @font-face { font-family: 'Bitter';
 	font-style: normal; font-weight: normal;
-	src: local('Bitter'), local('Bitter-Regular'),
-	url('Bitter.woff') format('woff'),
+	src: url('Bitter.woff') format('woff'),
 	url('Bitter.ttf') format('truetype'); }
 
 /* GRUNDSÄTZLICHES LAYOUT */
@@ -42,7 +39,7 @@ main { display: block; margin-left: 16.6em;
 	padding: 0.08em 65px 1.4em 55px;
 	background-color: #fff; border-left: 1px dashed #281; }
 article, section { display: block; }
-/* article { background: linear-gradient(#e39 5%, transparent 0) 0 0 / auto 1.4em; } /* Zeilenregister */
+/* article { background: linear-gradient(#e32 4.5%, transparent 0) 0 0 / auto 1.4em; } /* Zeilenregister */
 
 /* Wenn Fensterhöhe zu niedrig, dann Randspalte nicht mehr fix */
 @media (max-height: 33.5em) { aside { position: static; } }
@@ -175,7 +172,7 @@ audio { margin: 0.6em 0 0.1em; width:100%; }
 
 form input[type=text], form input[type=email], form input[type=url],
 form input[type=submit] { font-size: 0.9em; line-height: 1.556; }
-textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; }
+textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; resize: vertical; }
 form > div { padding-top: 0.4em; clear: both; }
 
 form label { position: relative; float: left; top: 0.2em; width: 20%;
