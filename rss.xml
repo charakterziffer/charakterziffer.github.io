@@ -14,9 +14,32 @@
 </image>
 
 <item>
+	<title>Die richtige Verwendung des Apostrophs</title>
+	<description>&lt;p&gt;Der Apostroph ( &lt;strong&gt;’&lt;/strong&gt; griechisch: &lt;em&gt;der Abgewandte&lt;/em&gt;) ist ein Satzzeichen, mit dem leider viel Schindluder getrieben wird. Oft wird damit das Mehrzahl-s abgetrennt &lt;em&gt;(Auto’s, CD’s)&lt;/em&gt; oder das „s“ des Genitivs &lt;em&gt;(Luise’s Studio, Bernd’s Werkstatt)&lt;/em&gt;. Falsch ist der Apostroph auch bei Befehlsformen &lt;em&gt;(Komm’ her! Geh’ weg!)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dabei ist es gar nicht so schwer, denn eigentlich gibt es nur zwei Fälle, in denen der Apostroph zum Einsatz kommt.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Der Apostroph kennzeichnet Stellen, wo &lt;strong&gt;Buchstaben ausgelassen&lt;/strong&gt; wurden. Beispiele: &lt;em&gt;Hast du ’nen Euro? Heute ist’s kalt am Ku’damm, kälter als in M’Gladbach.&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Der Apostroph &lt;strong&gt;verdeutlicht Eigennamen&lt;/strong&gt;, wenn eine Endung dazukommt: &lt;em&gt;Grimm’sche Märchen, Ohm’scher Widerstand.&lt;/em&gt; So hilft der Apostroph auch beim Genitiv, wenn andernfalls Namen unklar (!) wären: &lt;em&gt;Andrea’s Freundin&lt;/em&gt; (nicht die von Andreas) – oder wenn Namen bereits auf einem S-Laut enden: &lt;em&gt;Klaus’ Auto, Alex’ Fahrrad&lt;/em&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ausführlich nachlesen kann man die Regeln zum Gebrauch des Apostrophs bei &lt;a href=&quot;http://www.belleslettres.eu/artikel/apostroph.php&quot;&gt;Belles Lettres&lt;/a&gt; oder auf &lt;a href=&quot;http://canoo.net/services/GermanSpelling/Regeln/Interpunktion/Apostroph.html&quot;&gt;Canoo.net&lt;/a&gt;. Übrigens findet sich das korrekte Apostroph-Zeichen nicht auf einer normalen Computertastatur. Wer typografisches Feingefühl an den Tag legen möchte, sollte auf ' oder ` verzichten. Siehe dazu auch den Artikel bei &lt;a href=&quot;http://typefacts.com/artikel/apostroph&quot;&gt;Typefacts&lt;/a&gt;.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/apostroph.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/apostroph.html</guid>
+	<pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Geschichten fürs Ohr</title>
 	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Thematisch passend gibt es diesen Artikel auch zum Anhören:
-&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot; tabindex=&quot;0&quot;&gt;
 	&lt;source src=&quot;material/hoerspiele.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/hoerspiele.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
 &lt;/audio&gt;
@@ -287,26 +310,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/kleinschreibung.html</guid>
 	<pubDate>Tue, 20 Oct 2015 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Schattiger Mondtag</title>
-	<description>&lt;p&gt;Wer in der Nacht von Sonntag auf Montag (28. September 2015) nicht schlafen kann, sollte einen Blick aus dem Fenster werfen. Von kurz nach Mitternacht bis fast halb sechs spielt sich am Nachthimmel eine totale Mondfinsternis ab.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/mondfinsternis.jpg&quot; alt=&quot;Schemazeichnung: Sonne, Erde und im Schatten dahinter der Mond&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Dabei wandert der Mond in den Schatten, den die Erde im Sonnenlicht wirft. Das passiert etwa zweimal im Jahr, nämlich immer dann, wenn sich der Vollmond ausreichend nah am Mondkonten befindet (Schnittpunkt der Mondbahn mit der scheinbaren Bahn der Sonne).&lt;/p&gt;
-
-&lt;p&gt;Die totale Mondfinsternis wird immer von partiellen Sonnenfinsternissen begleitet, am Neumond davor oder danach. Im Unterschied zur Sonnenfinsternis ist eine Verfinsterung des Mondes aber von jedem Ort auf der Nachtseite der Erde zu sehen.&lt;/p&gt;
-
-&lt;p&gt;In der kommenden Montagnacht bewegt sich der Mond zwischen 3:07 Uhr und 6:27 Uhr durch den Kernschatten der Erde. Gänzlich im Erdschatten ist der Mond von 4:11 Uhr bis 5:23 Uhr. Dann ist er fast unsichtbar, schimmert in einem rötlich braunen Licht.&lt;/p&gt;
-
-&lt;p&gt;Wer diese totale Mondfinsternis verschläft oder wem Wolken einen Strich durch die Rechnung machen, der hat in Europa nächstes Jahr am 16. September wieder eine Chance – zumindest auf eine teilweise Mondfinsternis.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/mondfinsternis.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/mondfinsternis.html</guid>
-	<pubDate>Fri, 25 Sep 2015 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
