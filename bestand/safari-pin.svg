@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="219pt" width="219pt" version="1.0" preserveAspectRatio="xMidYMid meet" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 219.000000 219.000000">
- <metadata id="metadata4">Created by potrace 1.11, written by Peter Selinger 2001-2013
-  <rdf:RDF>
-   <cc:Work rdf:about="">
-    <dc:format>image/svg+xml</dc:format>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="219pt" width="219pt" version="1.0" preserveAspectRatio="xMidYMid meet" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 219 219">
  <g id="g6" transform="translate(0 219) scale(0.1 -0.1)">
   <path id="path8" d="m262 2166c91.389-115.94 208.19-252.86 202-396-11-176-87-305-257-437l-57-44 87-68c224-173 303-300 303-486 0-145-52-265-160-370-75-72-189-132-290-154l-55-11c-14.587-43.7-7.089-131.4-6.505-163.05 69.981 4.611 387.22-10.113 501.5 3.05 21.447 22.447 15 20 28 36 12 16 59 79 104 139 45 61 86 115 91 120 9 11 360 477 382 508 12 17 15 17 69 0l56-17-6-171c-3-93-7-275-8-403l-3-233c253.51 21.328 658.1-6.7735 894.72 19.414 19.8 117.98-0.7 499.85 10.3 566.73-36.1 10.39-38 7.86-184 9.86l-141 1-39-105-40-106-35 1c-20 1-48 4-63 8l-27 7 6 77c4 42 8 93 11 112 2 19 6 69 10 110s9 95 13 120l6 45h227c221 0 243.14 0 244.14 20 13.425 208.83 7.5821 424.56 8.4709 572.89-19.199 3.7186-35.658 8.107-75.612 10.107-197 7-332 53-413 142-48 53-68 96-71 150-4 84 33 137 119 171 80 32 93 32 101 1 11-45 72-165 105-204 34-41 98-75 150-79 27.891-4.4247 52.18-8.1591 83.077-0.6238 19.699 166.13 9.2823 419 7.9541 467.06-266.52 16.833-568.38 9.005-926.03 4.5657v-374-375l30-5c17-3 44-8 60-11 17-2 39-7 50-9s40-7 65-11c123-20 118-16 109-78-4-28-8-60-8-69-1-17-30-18-457-18h-455l6 63c4 34 10 65 13 68 4 3 71 23 150 44l143 38-3 381-3 381c-244.48 7.7624-449.29-8.878-663 1z"/>
   <path id="path10" d="m74 1362c6-5 88 119 106 161 38 86 44 268 12 359-23.339 90.526-78.693 140.27-116.52 163-9.164-163.3-7.773-445.2-1.48-683z"/>
