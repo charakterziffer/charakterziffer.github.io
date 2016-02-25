@@ -94,10 +94,12 @@ hr { margin: 1.88em 0.4em 1.1em 0; color: #ccc; }
 
 /* LISTEN, CODE, ZITATBLÖCKE */
 
-ul { margin: 1.29em 0 1.1em -1.55em; }
-ul li { list-style: square; margin-top: 0; }
+ul { margin: 1.29em 0 1.1em -1.55em; list-style: square; }
+ul ul { list-style: circle; }
+ul li { margin-top: 0; }
 ul li p { margin: 0.7em 0; }
 ol { margin-left: -1.5em; }
+ol ol { list-style: lower-alpha; }
 
 code, pre { margin: 1.1em 0 -0.33em; padding: 0 0.1em; color: #222;
 	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace; }
@@ -133,8 +135,8 @@ blockquote { padding-left: 0.3em; border-width: 0.4em; }
 
 a { text-decoration: none; color: #281; }
 a:not(.klickfeld) { font-family: Bitter,Georgia,serif; }
-p a:not(.klickfeld) { font-size: 0.9em; }
-	/* Überschriften-Links und Klickfelder nicht verkleinern */
+p a:not(.klickfeld), li a { font-size: 0.9em; }
+	/* Links in Überschriften und Klickfelder nicht verkleinern */
 a:visited { color: #839; }
 a:hover { color: #3a1; }
 a:active { color: #e32; }
