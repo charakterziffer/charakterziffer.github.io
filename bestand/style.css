@@ -147,7 +147,6 @@ a:focus { outline: 1px dotted #444; }
 @-webkit-keyframes target-fade { 0% { background-color: #deb; } }
 @keyframes target-fade { 0% { background-color: #deb; } }
 
-
 .klickfeld { width: 40%; margin: 1.038em 30%;
 	padding: 0.25em 0.4em 0.35em; display: inline-block;
 	text-align: center; color: #222; background-color: #deb;
