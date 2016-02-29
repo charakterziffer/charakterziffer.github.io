@@ -141,7 +141,12 @@ a:visited { color: #839; }
 a:hover { color: #3a1; }
 a:active { color: #e32; }
 a:focus { outline: 1px dotted #444; }
-a:target { background-color: #deb; color: #444; }
+
+:target { background-color: transparent;
+	-webkit-animation: target-fade 1.4s; animation: target-fade 1.4s; }
+@-webkit-keyframes target-fade { 0% { background-color: #deb; } }
+@keyframes target-fade { 0% { background-color: #deb; } }
+
 
 .klickfeld { width: 40%; margin: 1.038em 30%;
 	padding: 0.25em 0.4em 0.35em; display: inline-block;
