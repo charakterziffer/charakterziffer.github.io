@@ -16,7 +16,7 @@
 	src: url('SourceSansPro-It.woff') format('woff'),
 	url('SourceSansPro-Rg.ttf') format('truetype'); }
 @font-face { font-family: 'Bitter';
-	font-style: normal; font-weight: normal;
+	font-style: normal; font-weight: bold;
 	src: url('Bitter.woff') format('woff'),
 	url('Bitter.ttf') format('truetype'); }
 
@@ -55,7 +55,7 @@ main { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
 
 /* ÜBERSCHRIFTEN UND LOGO */
 
-h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: 400;
+h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: bold;
 	font-feature-settings: "liga", "kern";}
 h1 { font-size: 1.5em; line-height: 0.933; color: #444;
 	margin: 2.78em 0 0.7em -0.04em; }
@@ -82,7 +82,7 @@ aside p { margin-bottom: -0.22em; font-size: 0.9em;
 	line-height: 1.556; }
 
 i, em { font-style: italic; color: #111; }
-b, strong { font: normal 0.9em Bitter,Georgia,serif; color: #111; }
+b, strong { font: bold 0.9em Bitter,Georgia,serif; color: #111; }
 sup, sub { line-height: 0; }
 time { position: relative; float: right; right: 0.5em; display: block;
 	margin-top: -0.2em; padding-left: 1em; color: #666; }
@@ -134,7 +134,8 @@ blockquote { padding-left: 0.3em; border-width: 0.4em; }
 /* LINKS */
 
 a { text-decoration: none; color: #281; }
-a:not(.klickfeld) { font-family: Bitter,Georgia,serif; }
+a:not(.klickfeld) { font-family: Bitter,Georgia,serif;
+	font-weight: bold; }
 p a:not(.klickfeld), li a { font-size: 0.9em; }
 	/* Links in Überschriften und Klickfelder nicht verkleinern */
 a:visited { color: #839; }
@@ -182,7 +183,7 @@ textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; resize: vertical; }
 form > div { padding-top: 0.4em; clear: both; }
 
 form label { position: relative; float: left; top: 0.2em; width: 20%;
-	font: 0.9em/1.556 Bitter,Georgia,serif; }
+	font: bold 0.9em/1.556 Bitter,Georgia,serif; }
 form label:after { content: ': '; }
 form > div > div { float: right; width: 78%; padding-right: 2%; }
 form input[type=text], form input[type=email], form input[type=url] {
