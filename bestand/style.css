@@ -179,7 +179,8 @@ audio { margin: 0.6em 0 0.1em; width:100%; }
 
 form input[type=text], form input[type=email], form input[type=url],
 form input[type=submit] { font-size: 0.9em; line-height: 1.556; }
-textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; resize: vertical; }
+textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; overflow: auto;
+	resize: vertical; }
 form > div { padding-top: 0.4em; clear: both; }
 
 form label { position: relative; float: left; top: 0.2em; width: 20%;
