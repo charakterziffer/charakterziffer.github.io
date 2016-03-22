@@ -53,6 +53,65 @@
 
 
 	<article>
+	<time datetime="2016-03-23">Mi, 23. M&auml;rz 2016</time>
+	<h1><a href="verschluesselte-mails.html">Verschlüsselte Mails</a></h1>
+	<p>Nicht einmal jeder sechste Internetnutzer in Deutschland verschlüsselt seine E-Mails. Das ermittelte Bitkom, der Verband der deutschen Informations- und Telekommunikationsbranche, <a href="https://www.bitkom.org/Presse/Presseinformation/Verschluesselung-von-E-Mails-kommt-nur-langsam-voran.html">in einer Umfrage</a> Anfang dieses Jahres. Viele kennen sich demnach mit der Verschlüsselungssoftware nicht aus, ihre Kontakte unterstützen keine verschlüsselten Mails oder die Technik erscheint generell zu aufwändig.</p>
+
+<p>Ein Freund von mir fand es ärgerlich, dass ein entsprechendes Plug-in in seinem Mailprogramm gleich mal die Einstellung für formatierte Mails deaktiviert hat – auch für unverschlüsselte Mails. Ein anderer Bekannter ist überzeugt, dass Verschlüsselung nichts gegen Geheimdienste hilft, weil die sich die Schlüssel schon irgendwie besorgen könnten. Die Gefahr besteht tatsächlich, andererseits kann man seinen Computer relativ gut vor Zugriffen schützen und wenn man seinen geheimen Schlüssel sicher aufbewahrt …</p>
+
+<h2 id="warum-sollte-man-berhaupt-verschlsseln">Warum sollte man überhaupt verschlüsseln?</h2>
+
+<p>Aber ich habe doch gar nichts zu verbergen! Wirklich? Würdest du dann dein Mailpasswort im Internet veröffentlichen? Darf jeder von deinen Bewerbungen wissen? Von sorgenvollen Mails an deine Freundin, von Verabredungen, Beschwerdemails oder vertrautem Geläster? Ich nehme Nutzername und Passwort deines Mailkontos gern entgegen und schaue mir mit Interesse an, was du so für Post bekommst. Besonders spannende Mails würde ich auch hier im Blog veröffentlichen. Einverstanden?</p>
+
+<p>Globaler gedacht: Vielleicht benötigt man nicht unbedingt selbst eine vertrauliche Korrespondenz, aber eben ein Friedensaktivist im Nahen Osten. Wenn nur diejenigen verschlüsseln, die es absolut brauchen, geraten sie besonders in den Fokus. Wenn einfach jeder verschlüsselt, gehen brisantere Mails im Rauschen unter.</p>
+
+<p>Aber nicht nur Geheimdienste lesen mit. Vor vier Wochen wollte ich die Mail eines Freundes beantworten, bekam aber immer wieder eine Fehlermeldung vom Yahoo-Server: „Nachricht konnte nicht versendet werden, Verdacht auf Spam“. Nach einigem Testen fand ich heraus, dass es an den Links in der Originalnachricht lag. Yahoo filtert Mails, um Werbepost einzudämmen. Auch von T-Online habe ich mal eine entsprechende Rückmeldung bekommen.<a href="#note1"><sup id="ziffer1">[1]</sup></a> Google-Mail durchsucht elektronische Nachrichten seiner Nutzer, um treffendere Werbeanzeigen einzublenden. Legitime Gründe, um meine Mailinhalte auszuwerten? Verschlüsselung schützt Inhalte jedenfalls auch vor dem Mailprovider.</p>
+
+<p>Vielleicht bin ich ein bisschen naiv, doch ich sehe Mailverschlüsselung auch als politische Aussage – sowohl gegenüber meinen Mailkontakten als auch möglichen Mitlesern. Was ich anderen Menschen schreibe, betrifft meine Privatsphäre und geht niemanden sonst etwas an. Die Piratenpartei hat übrigens in ihrem Wiki <a href="http://wiki.piratenpartei.de/Ich_habe_nichts_zu_verbergen!">viele weitere Argumente</a> gegen die Nichts-zu-verbergen-Behauptung gesammelt.</p>
+
+<h2 id="das-zwei-schlssel-prinzip">Das Zwei-Schlüssel-Prinzip</h2>
+
+<p>Ein Schwachpunkt konventioneller Verschlüsselungen ist, dass Sender und Empfänger irgendwann ihren gemeinsamen Schlüssel austauschen müssen. Da besteht leicht die Gefahr, dass er einem Unbefugten in die Hände fällt.</p>
+
+<p>Das verbreitete Programm PGP („Pretty Good Privacy“) benutzt ein asymmetrisches Kryptosystem. Bei diesem Verfahren gibt es <em>zwei</em> Schlüssel. Sie ergänzen einander (können aber praktisch nicht aus jeweils dem anderen berechnet werden) und nur einer davon wird veröffentlicht – ja, öffentlich zugänglich gemacht für alle. Der andere Schlüssel bleibt geheim und verlässt den Empfänger nie. Der Kniff: Alles, was mit einem öffentlichen Schlüssel codiert wurde, kann nur mit dem entsprechendem privaten Schlüssel wieder lesbar gemacht werden. Jonas Kramer von <a href="http://stiftfilm.de">Stiftfilm</a> hat das in einem 3½-Minuten-Video recht schön erklärt:</p>
+
+<div style="position: relative; height:0; border: 1px solid #ccc; margin:1.4em 0 1.5em; width:99%; padding-bottom:55.7%"><iframe src="https://player.vimeo.com/video/86736532?color=3a1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
+
+<h2 id="programme-und-plug-ins">Programme und Plug-ins</h2>
+
+<p>Um den eigenen Computer für Mailverschlüsselung aufzurüsten, benötigt man zunächst das Basisprogramm <a href="https://www.gnupg.org/index.de.html">GnuPGP</a>. Es sammelt die öffentlichen Schlüssel der Mailkontakte und bewahrt das eigene, passwortgeschützte Schlüsselpaar auf – quasi ein Schlüsselbund. Das Programm ist für Windows, OS X, Android und verschiendene Linux-Betriebssysteme verfügbar.</p>
+
+<p>GnuPGP ist auch in einigen Paketen enthalten, die alles weitere mitbringen, was man sonst noch zum Mailverschlüsselung braucht. Für Windows gibt es das Komplettpaket <a href="https://www.gpg4win.org/about.html">Gpg4win</a> (mit Plug-In für 32-Bit-Outlook ab Version 2003), für OS X gibt es das Bündel <a href="https://gpgtools.org/">GPGTools</a>, das ein Plug-in für Apple Mail mitliefert.</p>
+
+<p>Auf meinem Linux-Rechner war GnuPGP bereits installiert, ich musste nur mein gewohntes Mailprogramm <a href="https://www.mozilla.org/de/thunderbird/">Thunderbird</a> um das Plug-in <a href="https://www.enigmail.net/index.php/en/">Enigmail</a> ergänzen. Dieses verwaltet die Verschlüsselung abhängig vom Empfänger und kümmert sich um das richtige Versenden (es ist zugegebenermaßen ein wenig frickelig, das Plug-in wunschgemäß einzurichten).</p>
+
+<p>Für Android gibt es zum Beispiel die Plug-ins <a href="https://www.openkeychain.org/">OpenKeayChain</a>, <a href="https://guardianproject.info/code/gnupg/">GnuPG for Android</a> oder (für ältere Geräte) <a href="https://play.google.com/store/apps/details?id=org.thialfihar.android.apg">APG</a>. Diese Plug-ins schlagen die Brücke zwischen dem Basisprogramm GnuPGP und einem Mailprogramm wie <a href="https://play.google.com/store/apps/details?id=com.fsck.k9">K-9 Mail</a>, das mit Verschlüsselung umgehen kann.</p>
+
+<p>Auch wer kein eigenes Mailprogramm verwendet, sondern seine Mails online über den Browser verwaltet, kann verschlüsseln. Zumindest für Google Chrome und Mozilla Firefox ist das Browser-Plug-in <a href="https://www.mailvelope.com/de/">Mailvelope</a> erhältlich.</p>
+
+<h2 id="ausfhrliche-anleitung-gibts-hier-nicht">Ausführliche Anleitung? Gibt’s hier nicht.</h2>
+
+<p>Spezielle Anleitungen, wie auf welchem System was für ein Programm installiert und verwendet wird, möchte ich hier nicht geben. Da wird man im Netz schnell fündig, zum Beispiel auf den oben verlinkten Seiten, bei <a href="http://howtopgp.jugendhackt.de/?lang=de">Jugend hackt</a> oder im Blog des Informatikers Thomas Leister (für <a href="https://thomas-leister.de/allgemein/android-pgp-e-mail-verschluesselung-mit-k9-und-apg/">K-9 Mail auf Android</a> oder <a href="https://thomas-leister.de/allgemein/pgp-e-mail-verschluesselung-mit-thunderbird-und-enigmail/">Thunderbird</a>). Ich hoffe aber, mit diesem Artikel das Interesse am Thema Mailverschlüsselung geweckt zu haben.</p>
+
+<p>Zum Abschluss noch drei weiterführende Links:</p>
+
+<ul>
+  <li><a href="https://emailselfdefense.fsf.org/de/">E-Mail-Selbstverteidigung</a> von der Free Software Foundation vermittelt übersichtlich sämtliche Grundlagen.</li>
+  <li>Das Dossier von <a href="https://www.verbraucher-sicher-online.de/thema/e-mail-verschluesselung">Verbraucher sicher online</a> bietet Hintergrund-Infos und einige Praxis-Anleitungen.</li>
+  <li>Einen praktischen Selbstversuch haben Moritz Metz und Sebastian Sonntag in einer  <a href="http://dradiowissen.de/beitrag/netzbasteln-e-mails-verschluesseln">Netzbasteln-Folge</a> auf DRadio Wissen gemacht. Wie man hören kann, ist es mit ein wenig Hilfe gar nicht schwer, E-Mails zu verschlüsseln.</li>
+</ul>
+
+<p>Konkrete Fragen gerne per Kommentar. Vielleicht kann ich weiterhelfen, wenn es beim Einrichten der Mailverschlüsselung irgendwo hakt. Wer mir gerne verschlüsselt schreiben möchte, dem schicke ich den öffentlichen Schlüssel meiner privaten Mailadresse auf Anfrage zu bzw. antworte auf eine signierte Mail.</p>
+
+<hr />
+
+<p><b id="note1">[1] Gefilterte Mails:</b> In der Yahoo-Mail ging es übrigens um die Übersetzung eines japanisches Computerspiels, in der Telekom-Mail ums Rooten eines Android-Telefons. Aber warum rechtfertige ich mich eigentlich für meine private Korrespondenz? <a href="#ziffer1">[↑]</a></p>
+
+	<p>---<br> <a href="verschluesselte-mails.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2016-02-19">Fr, 19. Feb. 2016</time>
 	<h1><a href="apostroph.html">Die richtige Verwendung des Apostrophs</a></h1>
 	<p>Der Apostroph ( <strong>’</strong> griechisch: <em>der Abgewandte</em>) ist ein Satzzeichen, mit dem leider viel Schindluder getrieben wird. Oft wird damit das Mehrzahl-s abgetrennt <em>(Auto’s, CD’s)</em> oder das „s“ des Genitivs <em>(Luise’s Studio, Bernd’s Werkstatt)</em>. Falsch ist der Apostroph auch bei Befehlsformen <em>(Komm’ her! Geh’ weg!)</em>.</p>
@@ -122,65 +181,6 @@
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2015-12-10">Do, 10. Dez. 2015</time>
-	<h1><a href="apposition.html">Apposition mit inkongruentem Kasus</a></h1>
-	<p>In Radiospots tauchen hinter einer Produktbezeichnung oder einem Firmennamen sehr oft kleine Ergänzungen auf, zum Beispiel:</p>
-
-<blockquote>
-  <p>„Diese Sendung wird präsentiert von <em>Rundmüller</em>, <strong>Ihr(em) exklusiver/n Autohändler.</strong>“</p>
-</blockquote>
-
-<blockquote>
-  <p>„Das gibt’s auf der <em>Regensburger Bildungsmesse</em> – <strong><span style="text-decoration:underline;">die/der</span> Arbeits- und Ausbildungsbörse.</strong>“</p>
-</blockquote>
-
-<p>Die Ergänzungen haben immer ein Bezugswort, das sie näher bestimmen (im Beispiel kursiv). Es handelt sich dabei aber nicht um Relativsätze (denn ihnen fehlt das Verb), sondern um eine <em>Apposition</em> („Beisatz“).</p>
-
-<p>Manchmal ist nicht ganz klar, in welchem Kasus (grammatischen Fall) so eine Apposition stehen soll. Auch bei den obigen Beispielen habe ich ja zwei Möglichkeiten genannt. Die erste davon (der Nominativ) klingt dem Sprachgefühl nach viel unmittelbarer und deutlicher. Standardsprachlich korrekt muss eine Apposition aber immer im gleichen Fall stehen wie das Bezugswort („kongruenter Kasus“):</p>
-
-<blockquote>
-  <p>„Entdecken Sie die Vorteile der Putzfee, des Reinigers für Profis.“ (Genitiv)</p>
-</blockquote>
-
-<blockquote>
-  <p>„Unterstützt von Pizzabräter, dem italienischen Essens-Innovateur.“ (Dativ)</p>
-</blockquote>
-
-<blockquote>
-  <p>„Holen Sie sich das Modell 601, den besten Trabant aller Zeiten.“ (Akkusativ)</p>
-</blockquote>
-
-<p>Das schreibt sich sehr einfach, wenn man zum Testen das Bezugswort einfach mal weglässt: „Holen Sie sich […] den besten Trabant aller Zeiten.“</p>
-
-<h2 id="wo-ein-anderer-kasus-erlaubt-ist">Wo ein anderer Kasus erlaubt ist</h2>
-
-<p>In der Standardsprache gibt nur zwei Ausnahmen, bei denen Bezugswort und Apposition einen unterschiedlichen Fall haben („inkongruenter Kasus“): Erstens wenn die Apposition zwar ein gebeugtes Adjektiv aber kein Artikelwort (der, ein, Ihre, dieser, keine, …) besitzt:</p>
-
-<blockquote>
-  <p>„Ab zum Bauermann, stadtbestes Modegeschäft.“<br />(selten: stadtbeste<em>n</em> Modegeschäft)</p>
-</blockquote>
-
-<p>Und zweitens wenn weder Artikel noch Adjektiv vorkommen. Die Apposition steht dann im Nominativ:</p>
-
-<blockquote>
-  <p>„Das Design eines Holzmüllers, Künstler von Welt.“<br />(nicht: Künstler<em>s</em> von Welt)</p>
-</blockquote>
-
-<p>Und jetzt?</p>
-
-<h2 id="ein-argument-fr-falsche-grammatik">Ein Argument für falsche Grammatik</h2>
-
-<p>Wie erkläre ich meinem (Werbe-)Kunden, dass es sich aber besser anhört, wenn es grammatikalisch falsch ist? Man könnte auftrumpfen mit: Natürlich sollten Bezugswort und Apposition standardsprachlich im Kasus kongruent sein. In der gesprochenen Sprache empfiehlt sich hier aber der Nominativ, weil die Apposition dadurch unmittelbarer und deutlicher wirkt und eben nicht nur eine bloße, eher unwichtige Beifügung zu Ihrem Produkt-/Marken-/Firmennamen.</p>
-
-<p>Als Werbetexter macht man grammatikalisch ja oft krude Sachen (unvollständige Sätze, Wortneuschöpfungen, …), aber keine Sorge: Zwar ist Sprachverhunzung natürlich streng verboten, aber kreativ mit der Sprache zu spielen ist sogar eine Pflicht – vor allem wenn eine Aussage dadurch deutlicher wird. Man muss halt nur wissen, was man tut – und es gut begründen können.</p>
-
-<p>PS: Schön nachzulesen gibt es das Thema <a href="http://www.canoo.net/services/OnlineGrammar/Satz/Satzgliedbau/Nomen/Apposition.html">Appostition bei canoo.net</a>.</p>
-
-	<p>---<br> <a href="apposition.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -205,7 +205,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-03-23T00:03:35+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-03-23T00:05:50+01:00</p>
 
 </main> <!-- hauptfeld -->
 </div> <!-- container -->

@@ -14,6 +14,66 @@
 </image>
 
 <item>
+	<title>Verschlüsselte Mails</title>
+	<description>&lt;p&gt;Nicht einmal jeder sechste Internetnutzer in Deutschland verschlüsselt seine E-Mails. Das ermittelte Bitkom, der Verband der deutschen Informations- und Telekommunikationsbranche, &lt;a href=&quot;https://www.bitkom.org/Presse/Presseinformation/Verschluesselung-von-E-Mails-kommt-nur-langsam-voran.html&quot;&gt;in einer Umfrage&lt;/a&gt; Anfang dieses Jahres. Viele kennen sich demnach mit der Verschlüsselungssoftware nicht aus, ihre Kontakte unterstützen keine verschlüsselten Mails oder die Technik erscheint generell zu aufwändig.&lt;/p&gt;
+
+&lt;p&gt;Ein Freund von mir fand es ärgerlich, dass ein entsprechendes Plug-in in seinem Mailprogramm gleich mal die Einstellung für formatierte Mails deaktiviert hat – auch für unverschlüsselte Mails. Ein anderer Bekannter ist überzeugt, dass Verschlüsselung nichts gegen Geheimdienste hilft, weil die sich die Schlüssel schon irgendwie besorgen könnten. Die Gefahr besteht tatsächlich, andererseits kann man seinen Computer relativ gut vor Zugriffen schützen und wenn man seinen geheimen Schlüssel sicher aufbewahrt …&lt;/p&gt;
+
+&lt;h2 id=&quot;warum-sollte-man-berhaupt-verschlsseln&quot;&gt;Warum sollte man überhaupt verschlüsseln?&lt;/h2&gt;
+
+&lt;p&gt;Aber ich habe doch gar nichts zu verbergen! Wirklich? Würdest du dann dein Mailpasswort im Internet veröffentlichen? Darf jeder von deinen Bewerbungen wissen? Von sorgenvollen Mails an deine Freundin, von Verabredungen, Beschwerdemails oder vertrautem Geläster? Ich nehme Nutzername und Passwort deines Mailkontos gern entgegen und schaue mir mit Interesse an, was du so für Post bekommst. Besonders spannende Mails würde ich auch hier im Blog veröffentlichen. Einverstanden?&lt;/p&gt;
+
+&lt;p&gt;Globaler gedacht: Vielleicht benötigt man nicht unbedingt selbst eine vertrauliche Korrespondenz, aber eben ein Friedensaktivist im Nahen Osten. Wenn nur diejenigen verschlüsseln, die es absolut brauchen, geraten sie besonders in den Fokus. Wenn einfach jeder verschlüsselt, gehen brisantere Mails im Rauschen unter.&lt;/p&gt;
+
+&lt;p&gt;Aber nicht nur Geheimdienste lesen mit. Vor vier Wochen wollte ich die Mail eines Freundes beantworten, bekam aber immer wieder eine Fehlermeldung vom Yahoo-Server: „Nachricht konnte nicht versendet werden, Verdacht auf Spam“. Nach einigem Testen fand ich heraus, dass es an den Links in der Originalnachricht lag. Yahoo filtert Mails, um Werbepost einzudämmen. Auch von T-Online habe ich mal eine entsprechende Rückmeldung bekommen.&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; Google-Mail durchsucht elektronische Nachrichten seiner Nutzer, um treffendere Werbeanzeigen einzublenden. Legitime Gründe, um meine Mailinhalte auszuwerten? Verschlüsselung schützt Inhalte jedenfalls auch vor dem Mailprovider.&lt;/p&gt;
+
+&lt;p&gt;Vielleicht bin ich ein bisschen naiv, doch ich sehe Mailverschlüsselung auch als politische Aussage – sowohl gegenüber meinen Mailkontakten als auch möglichen Mitlesern. Was ich anderen Menschen schreibe, betrifft meine Privatsphäre und geht niemanden sonst etwas an. Die Piratenpartei hat übrigens in ihrem Wiki &lt;a href=&quot;http://wiki.piratenpartei.de/Ich_habe_nichts_zu_verbergen!&quot;&gt;viele weitere Argumente&lt;/a&gt; gegen die Nichts-zu-verbergen-Behauptung gesammelt.&lt;/p&gt;
+
+&lt;h2 id=&quot;das-zwei-schlssel-prinzip&quot;&gt;Das Zwei-Schlüssel-Prinzip&lt;/h2&gt;
+
+&lt;p&gt;Ein Schwachpunkt konventioneller Verschlüsselungen ist, dass Sender und Empfänger irgendwann ihren gemeinsamen Schlüssel austauschen müssen. Da besteht leicht die Gefahr, dass er einem Unbefugten in die Hände fällt.&lt;/p&gt;
+
+&lt;p&gt;Das verbreitete Programm PGP („Pretty Good Privacy“) benutzt ein asymmetrisches Kryptosystem. Bei diesem Verfahren gibt es &lt;em&gt;zwei&lt;/em&gt; Schlüssel. Sie ergänzen einander (können aber praktisch nicht aus jeweils dem anderen berechnet werden) und nur einer davon wird veröffentlicht – ja, öffentlich zugänglich gemacht für alle. Der andere Schlüssel bleibt geheim und verlässt den Empfänger nie. Der Kniff: Alles, was mit einem öffentlichen Schlüssel codiert wurde, kann nur mit dem entsprechendem privaten Schlüssel wieder lesbar gemacht werden. Jonas Kramer von &lt;a href=&quot;http://stiftfilm.de&quot;&gt;Stiftfilm&lt;/a&gt; hat das in einem 3½-Minuten-Video recht schön erklärt:&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; height:0; border: 1px solid #ccc; margin:1.4em 0 1.5em; width:99%; padding-bottom:55.7%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/86736532?color=3a1&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;programme-und-plug-ins&quot;&gt;Programme und Plug-ins&lt;/h2&gt;
+
+&lt;p&gt;Um den eigenen Computer für Mailverschlüsselung aufzurüsten, benötigt man zunächst das Basisprogramm &lt;a href=&quot;https://www.gnupg.org/index.de.html&quot;&gt;GnuPGP&lt;/a&gt;. Es sammelt die öffentlichen Schlüssel der Mailkontakte und bewahrt das eigene, passwortgeschützte Schlüsselpaar auf – quasi ein Schlüsselbund. Das Programm ist für Windows, OS X, Android und verschiendene Linux-Betriebssysteme verfügbar.&lt;/p&gt;
+
+&lt;p&gt;GnuPGP ist auch in einigen Paketen enthalten, die alles weitere mitbringen, was man sonst noch zum Mailverschlüsselung braucht. Für Windows gibt es das Komplettpaket &lt;a href=&quot;https://www.gpg4win.org/about.html&quot;&gt;Gpg4win&lt;/a&gt; (mit Plug-In für 32-Bit-Outlook ab Version 2003), für OS X gibt es das Bündel &lt;a href=&quot;https://gpgtools.org/&quot;&gt;GPGTools&lt;/a&gt;, das ein Plug-in für Apple Mail mitliefert.&lt;/p&gt;
+
+&lt;p&gt;Auf meinem Linux-Rechner war GnuPGP bereits installiert, ich musste nur mein gewohntes Mailprogramm &lt;a href=&quot;https://www.mozilla.org/de/thunderbird/&quot;&gt;Thunderbird&lt;/a&gt; um das Plug-in &lt;a href=&quot;https://www.enigmail.net/index.php/en/&quot;&gt;Enigmail&lt;/a&gt; ergänzen. Dieses verwaltet die Verschlüsselung abhängig vom Empfänger und kümmert sich um das richtige Versenden (es ist zugegebenermaßen ein wenig frickelig, das Plug-in wunschgemäß einzurichten).&lt;/p&gt;
+
+&lt;p&gt;Für Android gibt es zum Beispiel die Plug-ins &lt;a href=&quot;https://www.openkeychain.org/&quot;&gt;OpenKeayChain&lt;/a&gt;, &lt;a href=&quot;https://guardianproject.info/code/gnupg/&quot;&gt;GnuPG for Android&lt;/a&gt; oder (für ältere Geräte) &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.thialfihar.android.apg&quot;&gt;APG&lt;/a&gt;. Diese Plug-ins schlagen die Brücke zwischen dem Basisprogramm GnuPGP und einem Mailprogramm wie &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.fsck.k9&quot;&gt;K-9 Mail&lt;/a&gt;, das mit Verschlüsselung umgehen kann.&lt;/p&gt;
+
+&lt;p&gt;Auch wer kein eigenes Mailprogramm verwendet, sondern seine Mails online über den Browser verwaltet, kann verschlüsseln. Zumindest für Google Chrome und Mozilla Firefox ist das Browser-Plug-in &lt;a href=&quot;https://www.mailvelope.com/de/&quot;&gt;Mailvelope&lt;/a&gt; erhältlich.&lt;/p&gt;
+
+&lt;h2 id=&quot;ausfhrliche-anleitung-gibts-hier-nicht&quot;&gt;Ausführliche Anleitung? Gibt’s hier nicht.&lt;/h2&gt;
+
+&lt;p&gt;Spezielle Anleitungen, wie auf welchem System was für ein Programm installiert und verwendet wird, möchte ich hier nicht geben. Da wird man im Netz schnell fündig, zum Beispiel auf den oben verlinkten Seiten, bei &lt;a href=&quot;http://howtopgp.jugendhackt.de/?lang=de&quot;&gt;Jugend hackt&lt;/a&gt; oder im Blog des Informatikers Thomas Leister (für &lt;a href=&quot;https://thomas-leister.de/allgemein/android-pgp-e-mail-verschluesselung-mit-k9-und-apg/&quot;&gt;K-9 Mail auf Android&lt;/a&gt; oder &lt;a href=&quot;https://thomas-leister.de/allgemein/pgp-e-mail-verschluesselung-mit-thunderbird-und-enigmail/&quot;&gt;Thunderbird&lt;/a&gt;). Ich hoffe aber, mit diesem Artikel das Interesse am Thema Mailverschlüsselung geweckt zu haben.&lt;/p&gt;
+
+&lt;p&gt;Zum Abschluss noch drei weiterführende Links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://emailselfdefense.fsf.org/de/&quot;&gt;E-Mail-Selbstverteidigung&lt;/a&gt; von der Free Software Foundation vermittelt übersichtlich sämtliche Grundlagen.&lt;/li&gt;
+  &lt;li&gt;Das Dossier von &lt;a href=&quot;https://www.verbraucher-sicher-online.de/thema/e-mail-verschluesselung&quot;&gt;Verbraucher sicher online&lt;/a&gt; bietet Hintergrund-Infos und einige Praxis-Anleitungen.&lt;/li&gt;
+  &lt;li&gt;Einen praktischen Selbstversuch haben Moritz Metz und Sebastian Sonntag in einer  &lt;a href=&quot;http://dradiowissen.de/beitrag/netzbasteln-e-mails-verschluesseln&quot;&gt;Netzbasteln-Folge&lt;/a&gt; auf DRadio Wissen gemacht. Wie man hören kann, ist es mit ein wenig Hilfe gar nicht schwer, E-Mails zu verschlüsseln.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Konkrete Fragen gerne per Kommentar. Vielleicht kann ich weiterhelfen, wenn es beim Einrichten der Mailverschlüsselung irgendwo hakt. Wer mir gerne verschlüsselt schreiben möchte, dem schicke ich den öffentlichen Schlüssel meiner privaten Mailadresse auf Anfrage zu bzw. antworte auf eine signierte Mail.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Gefilterte Mails:&lt;/b&gt; In der Yahoo-Mail ging es übrigens um die Übersetzung eines japanisches Computerspiels, in der Telekom-Mail ums Rooten eines Android-Telefons. Aber warum rechtfertige ich mich eigentlich für meine private Korrespondenz? &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/verschluesselte-mails.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/verschluesselte-mails.html</guid>
+	<pubDate>Wed, 23 Mar 2016 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Die richtige Verwendung des Apostrophs</title>
 	<description>&lt;p&gt;Der Apostroph ( &lt;strong&gt;’&lt;/strong&gt; griechisch: &lt;em&gt;der Abgewandte&lt;/em&gt;) ist ein Satzzeichen, mit dem leider viel Schindluder getrieben wird. Oft wird damit das Mehrzahl-s abgetrennt &lt;em&gt;(Auto’s, CD’s)&lt;/em&gt; oder das „s“ des Genitivs &lt;em&gt;(Luise’s Studio, Bernd’s Werkstatt)&lt;/em&gt;. Falsch ist der Apostroph auch bei Befehlsformen &lt;em&gt;(Komm’ her! Geh’ weg!)&lt;/em&gt;.&lt;/p&gt;
 
@@ -201,115 +261,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-5.html</guid>
 	<pubDate>Mon, 16 Nov 2015 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>gedanken zur kleinschreibung</title>
-	<description>&lt;p&gt;im august habe ich das buch „phi phi island“ von josef haslinger gelesen. er berichtet, wie er und seine familie den tsunami von weihnachten 2004 in thailand überlebt hat. ungewöhnlich: das buch ist – so wie dieser blogeintrag – in konsequenter kleinschreibung verfasst. das hat mich anfangs irritiert, aber nach einigen seiten hatte ich mich daran gewöhnt.&lt;/p&gt;
-
-&lt;p&gt;im alltag ist es uns normalerweise nicht bewusst, dass wir in unserem schriftsystem eigentlich zwei unterschiedliche alphabete nutzen: groß- und kleinbuchstaben. damit sind wir nicht allein, denn auch im kyrillischen, griechischen, armenischen oder georgischen verwendet man großbuchstaben. viele sprachen funktionieren aber auch „monoalphabetisch“, zum beispiel arabisch, hebräisch, bengalisch oder chinesisch. diese schriftsysteme kommen ohne großbuchstaben aus.&lt;/p&gt;
-
-&lt;p&gt;lange zeit war auch im deutschen nur kleinbuchstaben üblich. erst im mittelalter begann man damit, kapitelanfänge oder absätze mit einem besonders hervorgehobenen anfangsbuchstaben auszuzeichnen. personen- und ortsnamen werden seit dem 16. jahrhundert fast durchwegs großgeschrieben. das weitete sich allmählich auf anredefürwörter und titel aus („papst“, „könig“), auf wörter von großer bedeutung („konzil“) und schließlich auf alle substantive.&lt;/p&gt;
-
-&lt;p&gt;kann man das nun als weiterentwicklung der sprache sehen? oder stünde es dem heutigen deutsch gut, wieder weniger bedeutsam daher zu kommen? was verliert man durch eine durchgängige kleinschreibung? ist es nicht logischer und ästhetischer, wenn ein text nur ein alphabet verwendet und nicht durch versalien unterbrochen wird?&lt;/p&gt;
-
-&lt;h2 id=&quot;drei-die-bewusst-klein-schreiben&quot;&gt;drei, die bewusst klein schreiben&lt;/h2&gt;
-
-&lt;p&gt;ein vertreter der konsequenten kleinschreibung ist der autor und projektleiter felix schwenzel. in einem &lt;a href=&quot;http://wirres.net/article/articleview/8181/1/6/&quot;&gt;faq-artikel&lt;/a&gt; erklärt er, dass ihm die kleinschreibung den schreibfluss erleichtere und er so rotziger (=direkter?) schreiben könne. zudem findet er kleinschreibung ansprechender, keineswegs schlechter lesbar und sie sei mittlerweile zu einem markenzeichen geworden. kleinschreibung diene sogar als eine art „arschlochfilter“, weil es denjenigen, die seine texte lesen, tatsächlich um den inhalt gehe.&lt;/p&gt;
-
-&lt;p&gt;eine ganz andere begründung habe ich in einem &lt;a href=&quot;http://rudolfgreger.at/post/58170701241/alles-kleinschreiben-warum&quot;&gt;blogartikel von rudolf greger&lt;/a&gt; gefunden. der wiener designer sieht großbuchstaben als irrtümlich eingeführtes mittel der repräsentation, um lesern die eigene wichtigkeit vorzuspiegeln und unterschiede sichtbar zu machen. mit seiner konsequenten kleinschreibung will sich rudolf greger von dieser aufwertung distanzieren, weil „werten nicht zum erfolg führt“.&lt;/p&gt;
-
-&lt;p&gt;eine ähnliche ansicht vertrat auch otl aicher (1922–1991). der schriftgestalter und designer gründete die &lt;a href=&quot;http://www.typolexikon.de/hochschule-fuer-gestaltung-ulm/&quot;&gt;hochschule für gestaltung&lt;/a&gt; in ulm und hat unter anderem das design der olympischen spiele in münchen entwickelt. im buch „gehen in der wüste“ kritisiert otl aicher unter der überschrift „rückkehr zu den verben“, wie sehr sich substantive durch ihre großschreibung in den vordergrund drängen. als statische objekte verstellen sie die beweglichen, lebendigen verben (siehe &lt;a href=&quot;http://kaffeehaussitzer.de/otl-aichers-wuestentrip/&quot;&gt;buchbesprechung auf kaffeehaussitzer.de&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h2 id=&quot;wissenschaftliche-untersuchung-1&quot;&gt;wissenschaftliche untersuchung 1&lt;/h2&gt;
-
-&lt;p&gt;aber großbuchstaben schaffen doch orientierung, unterstützen das querlesen von texten und machen wortbilder einprägsamer, oder? laut einer studie von &lt;a href=&quot;http://www.salzburg.com/wiki/index.php/Herbert_Haberl_%28P%C3%A4dagoge%29&quot;&gt;herbert haberl&lt;/a&gt; werden großbuchstaben da überschätzt. der österreichische pädagoge hat 1976 in lesetests mit grundschülern und studenten erforscht, wie gut lesbar texte in kleinschreibung sind (es ging hier um die gemäßigte kleinschreibung, bei der satzanfänge und eigennamen weiterhin großgeschrieben bleiben).&lt;/p&gt;
-
-&lt;p&gt;in seiner &lt;a href=&quot;http://d-nb.info/770500080&quot;&gt;96-seitigen arbeit&lt;/a&gt; kommt er zu dem schluss, dass sich texte in (gemäßigter) kleinschreibung nach kurzer eingewöhnungszeit genauso gut oder leichter läsen als die großschreibung. das gälte für erwachsene wie auch für kinder. die optische akzentuierung der hauptwörter durch majuskeln wirke für die leser eher störend. so sei die großschreibung dem leser keine hilfe; eine gliederung durch groß geschriebene hauptwörter würde den lesevorgang eher beeinträchtigen.&lt;/p&gt;
-
-&lt;p&gt;das ergebnis ist allerdings ein wenig mit vorsicht zu genießen. leider lässt sich aus dem mitgelieferten zahlenmaterial nicht erkennen, ob der versuchsaufbau durch das statistische phänomen „regression zur mitte“ verzerrt wurde.&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;wissenschaftliche-untersuchung-2&quot;&gt;wissenschaftliche untersuchung 2&lt;/h2&gt;
-
-&lt;p&gt;wer den &lt;a href=&quot;https://de.wikipedia.org/wiki/Kleinschreibung&quot;&gt;wikipedia-artikel über kleinschreibung&lt;/a&gt; durchliest, stößt auf zwei studien aus dem jahr 1989. die erste studie hat die augenbewegungen von 22 niederländischen studenten beim lesen aufgezeichnet. die versuchspersonen hatten gute deutschkenntnisse und bekamen fabeln auf deutsch und niederländisch auf einem bildschirm angezeigt. dabei wurde die groß-/kleinschreibung für beide sprachen variiert.&lt;a href=&quot;#note2&quot;&gt;&lt;sup id=&quot;ziffer2&quot;&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;überraschendes ergebnis: die versuchspersonen konnten die niederländischen texte schneller lesen, wenn darin die substantive nach deutscher regel großgeschrieben waren. die leser fixierten dann die wortbilder kürzer und erfassten mit einem blick mehr buchstaben. die zufällige, inverse oder konsequente großschreibung brachte dagegen schlechtere ergebnisse als die gewohnte kleinschreibung.&lt;/p&gt;
-
-&lt;p&gt;die autoren der studie folgern daraus, dass guten deutschlesern die gelernte regel auch für niederländische texte hilft. noch bevor der leser die bedeutung eines wortes kennt, erfährt er durch die großschreibung, dass es ein nomen und &lt;a href=&quot;https://de.wikipedia.org/wiki/Argument_%28Linguistik%29&quot;&gt;argument&lt;/a&gt; ist.&lt;/p&gt;
-
-&lt;h2 id=&quot;wissenschaftliche-untersuchung-3&quot;&gt;wissenschaftliche untersuchung 3&lt;/h2&gt;
-
-&lt;p&gt;die zweite studie von 1989 hinterfragt, ob eine sich eine lesesituation wie in der vorher beschriebenen studie überhaupt mit alltäglichem lesen vergleichen lässt. zwar mag die messung der augenbewegungen genauer sein als wenn die lesezeit per stopptaste festgehalten wird. allerdings hatte jede versuchsperson eine 15 minütige kalibrierung über sich ergehen lassen müssen und war beim lesen mit zwei gurten auf einem zahnarztstuhl festgeschnallt gewesen.&lt;/p&gt;
-
-&lt;p&gt;diese studie arbeitete dagegen mit je 100 deutschen und niederländischen studenten. das textmaterial und die schreibvarianten waren identisch mit dem des zuvor beschriebenen versuchs; zusätzlich gab es weitere fabeln und deren übersetzung ins englische. die versuchpersonen erhielten die texte als diaprojektion in deutsch und englisch (für deutsche studenten) bzw. in deutsch und niederländisch (für niederländische studenten).&lt;/p&gt;
-
-&lt;p&gt;ergebnis bei den deutschen lesern: sie haben die englischsprachigen fabeln gleich schnell in gemäßigter kleinschreibung gelesen wie in gemischtschreibung nach deutscher regel. (kleine unterschiede: gute englischleser haben sie in kleinschreibung etwas schneller gelesen, schlechtere englischleser in gemischtschreibung). die deutsche schreibung erleichterte den deutschen versuchspersonen das lesen also mehr, als die ungewohnte wortbilder störten.&lt;/p&gt;
-
-&lt;p&gt;bei den niederländischen lesern gab es keine vorteile der deutschen schreibung. es ließ sich nur festhalten, dass gute deutschleser die schreibung nach deutscher regel in niederländischen texten weniger störend fanden. gleichzeitig wurden sie durch die kleinschreibung in deutschen texten mehr behindert. für gute wie schlechte deutschleser unter den niederländischen versuchspersonen war es besser, wenn die texte in gewohnter schreibweise präsentiert wurden.&lt;/p&gt;
-
-&lt;p&gt;die beiden studien trugen übrigens die titel „augenbewegungen und substantivgroßschreibung – eine pilotstudie“ beziehungsweise „zur funktion der groß- und kleinbuchstaben beim lesen deutscher, englischer und niederländischer texte“. sie erschienen 1989 in &lt;a href=&quot;http://d-nb.info/891418849&quot;&gt;„schriftsystem und orthographie“&lt;/a&gt; von den herausgebern peter eisenberg und hartmut günther.&lt;/p&gt;
-
-&lt;h2 id=&quot;eine-diskussion-unter-typografen&quot;&gt;eine diskussion unter typografen&lt;/h2&gt;
-
-&lt;p&gt;mitte juli ging es im &lt;a href=&quot;http://www.swr.de/swr2/programm/sendungen/swr2-forum/swr2-forum-arial-ist-umweltverschmutzung-helvetica-wie-mcdonalds/-/id=660214/did=15635760/nid=660214/sdpgid=1112378/15z588w/index.html&quot;&gt;swr2-forum um typografie&lt;/a&gt;. es diskutierten die typografen prof. hans andree, prof. dr. erik spiekermann und prof. ulrike stoltz. ab minute 16 ging es auch um die kleinschreibung.&lt;/p&gt;
-
-&lt;p&gt;ulrike stoltz schreibt auf einigen tastaturen gern mal konsequent klein. sie hat aber beobachtet, dass die gemischtschreibung für leichter erkennbare wortbilder sorgt. bei schriften wie der &lt;a href=&quot;https://de.wikipedia.org/wiki/Johnston_Sans&quot;&gt;johnston sans&lt;/a&gt;, die im öffentlichen nahverkehr in london verwendet wird, hat sie eine größere x-höhe bemerkt und schlussfolgert, dass dies bei der gemäßigten kleinschreibung für eine bessere unterscheidbarkeit der buchstaben nötig ist. allgemein schätzt sie die größere visuelle abwechslung bei gemischtschreibung.&lt;/p&gt;
-
-&lt;p&gt;erik spiekermann schreibt seine mails pragmatisch klein – allerdings mit großem satzanfang und großgeschriebenen eigennamen. das liegt vor allem daran, weil er mehr englische als deutsche e-post verschickt. den gänzlichen verzicht auf großbuchstaben findet er allerdings „eine rein ideologische forderung, die völlig bescheuert ist“, weil man dann nur noch schwer erkennen könne, wo ein satz endet und ein neuer anfängt.&lt;/p&gt;
-
-&lt;p&gt;hans andree verweist auf die brüder grimm, die zeitlebens gegen die verwendung von großbuchstaben gewettert haben (wie im &lt;a href=&quot;http://woerterbuchnetz.de/cgi-bin/WBNetz/wbgui_py?sigle=DWB&amp;amp;mainmode=Vorworte&amp;amp;file=vor01_html&quot;&gt;band 1 ihres wörterbuchs&lt;/a&gt;: „[i]ch wollte auch den wust und unflat unsrer schimpflichen die gliedmaszen der sprache ungefüg verhüllenden und entstellenden schreibweise ausfegen“; oder in &lt;a href=&quot;https://archive.org/stream/bub_gb_VXTJ_C205t4C#page/n49/mode/2up&quot;&gt;deutsche grammatik&lt;/a&gt;: „wer große buchstaben für den anlaut der substantive [braucht], schreibt pedantisch.“). nach dem krieg mit der umstellung von fraktur auf antiqua forderten auch typografen wie paul renner einen neuanfang und die rückkehr zur kleinschreibung (d.&lt;small&gt; &lt;/small&gt;h. die rückkehr vor die zeit des barock).&lt;/p&gt;
-
-&lt;h2 id=&quot;mehrdeutigkeiten-weniger-ausdrucksvielfalt&quot;&gt;mehrdeutigkeiten, weniger ausdrucksvielfalt&lt;/h2&gt;
-
-&lt;p&gt;natürlich kann es zu missverständnissen kommen, wenn zur unterscheidung keine großbuchstaben mehr zur verfügung stehen. im deutschen entstehen solche mehrdeutigkeiten besonders leicht, erklärt der literaturwissenschaftler andreas digeser in seinem beitrag „lese-erschwernis oder neue syntax?“ (erschienen in &lt;a href=&quot;http://d-nb.info/740434721&quot;&gt;„groß- oder kleinschreibung? – beiträge zur rechtschreibreform“&lt;/a&gt;, 1974). die gründe sind:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;andere wortarten können wie ein substantiv verwendet werden: „was gibt den faulen antrieb?“&lt;/li&gt;
-  &lt;li&gt;substantivisch, verbale und adjektivische formen haben gleichlautende endungen: „nur alte wagen gefahren“&lt;/li&gt;
-  &lt;li&gt;subjekt und objekt können direkt aufeinander folgen (ohne verb dazwischen): „es sollte jeder höfliche rhetorik beherrschen.“, d.&lt;small&gt; &lt;/small&gt;h. &lt;em&gt;jeder höfliche sollte rhet…&lt;/em&gt; oder &lt;em&gt;jeder sollte höfliche rhet…&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;der&lt;/em&gt;, &lt;em&gt;die&lt;/em&gt; und &lt;em&gt;das&lt;/em&gt; können bestimmter artikel oder demonstrativpronomen sein: „sie sollte besser das schreiben lassen.“, d.&lt;small&gt; &lt;/small&gt;h. &lt;em&gt;das sollte sie schreib…&lt;/em&gt; oder &lt;em&gt;das schreiben sollte sie …&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;viele der beispiele&lt;a href=&quot;#note2&quot;&gt;&lt;sup id=&quot;ziffer3&quot;&gt;[3]&lt;/sup&gt;&lt;/a&gt; lassen sich zwar schnell aus dem kontext erschließen, also ob es sich bei „der gefangene floh“ um einen geflüchteten häftling handelt oder um ein eingesperrtes insekt. einige formulierungen versteht man aber erst im größeren zusammenhang. reicht es wirklich, wenn der leser erst nach zwei weiteren sätzen versteht, worum es geht?&lt;/p&gt;
-
-&lt;p&gt;damit solche sätze in kleinschreibung eindeutig sind, müssen sie umformuliert werden; das kann man als eingeschränkte ausdrucksvielfalt betrachten.&lt;/p&gt;
-
-&lt;h2 id=&quot;beleidigen-kleinschreiber-ihre-leser&quot;&gt;beleidigen kleinschreiber ihre leser?&lt;/h2&gt;
-
-&lt;p&gt;warum die kleinschreibung derzeit bei einigen leuten nicht gut ankommt, hat in einem &lt;a href=&quot;http://www.wer-weiss-was.de/t/kleinschreibung/1835271#post_28&quot;&gt;forumsthread auf wer-weiss-was.de&lt;/a&gt; die nutzerin klara_673311 schon 2003 recht schön erklärt: man unterstellt dem schreiber faulheit, arroganz („ich stehe über der rechtschreibung“) oder respektlosigkeit den lesern gegenüber. das würde natürlich wegfallen, wenn sich die forderungen nach gemäßigter oder konsequenter kleinschreibung durchsetzten, wie sie beispielsweise der &lt;a href=&quot;http://www.sprache.org/&quot;&gt;bund für vereinfachte rechtschreibung&lt;/a&gt; oder &lt;a href=&quot;http://www.kleinschreiben.de/&quot;&gt;die kleinschriftbewegung&lt;/a&gt; aufstellen.&lt;/p&gt;
-
-&lt;p&gt;bis nach dem zweiten weltkrieg gab es neben deutsch übrigens eine weitere sprache, in der substantive mitten im satz mit großbuchstaben geschrieben wurden: dänisch. mit der &lt;a href=&quot;https://de.wikipedia.org/wiki/D%C3%A4nische_Rechtschreibreform_von_1948&quot;&gt;rechtschreibreform von 1948&lt;/a&gt; hat sich dänemark dann aber für die gemäßigte kleinschreibung entschieden. möglicherweise spielte dabei auch eine rolle, dass man sich damit nach dem zweiten weltkrieg von deutschland abgrenzen konnte.&lt;/p&gt;
-
-&lt;h2 id=&quot;eine-entscheidung-zwischen-schreiber-und-leser&quot;&gt;eine entscheidung zwischen schreiber und leser&lt;/h2&gt;
-
-&lt;p&gt;schrift wird von ganz unterschiedlichen leuten zu unterschiedlichen zwecken benutzt. dementsprechend breit gefächert sind die anforderungen und wünsche, die schreibende haben: formulierung spontaner gedanken, erörterung exakter argumente, poetischer ausdruck von gefühlen, schnelle kommunikation über alltägliches, &lt;a href=&quot;tagebuch.html&quot;&gt;festhalten von erinnerungen&lt;/a&gt;, formelle mitteilungen, …&lt;/p&gt;
-
-&lt;p&gt;ich finde, als schreibender sollte man seine leser im blick haben. sie müssen verstehen können, was man sagen möchte, und das geschieht wohl am einfachsten, wenn man die möglichkeiten der großschreibung für sich nutzt. als lesender, so würde ich mir wünschen, sollte man aber ruhig ein wenig offener dafür sein, wie ein autor sich ausdrückt. wenn jemand eine ungewohnte rechtschreibung anwendet, steckt dahinter nicht automatisch dummheit, boshaftigkeit oder wichtigtuerei.&lt;/p&gt;
-
-&lt;p&gt;im grunde bin ich recht froh darüber, großbuchstaben zur verfügung zu haben. zum glück sind aber auch blogeinträge wie dieser oder bücher wie „phi phi island“ ganz ohne großbuchstaben möglich. ich mag gedichte mit zurückhaltender kleinschreibung und bleibe im chat auch gerne mal monoalphabetisch (auch wenn der grund dann eher faulheit ist).&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] regression zur mitte:&lt;/b&gt; der versuchsleiter hat aus zwei größeren gruppen aufgrund eines vortests zwei „gleichrangige“ teilgruppen gebildet. gehen wir mal davon aus, die erste gesamtgruppe hat aus eher guten schülern bestanden, die zweite aber aus eher schlechten schülern. beide gruppen machen den vortest und einzelne schüler haben dabei auch glück oder pech. pickt man sich jetzt, um scheinbar gleichartige teilgruppen zu erhalten, diejenigen schüler heraus, die ähnliche testergebnisse hatten, so erwischt man in gruppe 1 diejenigen guten schüler, die diesmal einfach etwas pech hatten; aus gruppe zwei fischt man die schlechteren schüler, denen das glück im vortest hold gewesen war.&lt;/p&gt;
-
-&lt;p&gt;beim eigentlichen test verteilen sich glück und pech mit hoher wahrscheinlichkeit anders – es sind ja leistungsunabhängige zufallsgrößen. die eigentlich besseren schüler bringen auch wieder bessere ergebnisse, die schlechteren schlechtere. und das hat nichts damit zu tun, dass der test diesmal in kleinschreibung durchgeführt wurde, sondern es offenbart sich einfach, dass versuchs- und kontrollgruppe eben doch nicht gleichrangig waren. wie gesagt: im anhang der untersuchung fehlen leider die durchschnittszahlen der gesamtgruppen, so dass sich die regression zu mitte weder nachweisen noch ausschließen lässt. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b id=&quot;note2&quot;&gt;[2] schreibvarianten:&lt;/b&gt; die schreibung der fabeln wurden in den verschiedenen sprachen folgendermaßen variiert:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;gemischtschreibung nach deutschen regeln;&lt;/li&gt;
-  &lt;li&gt;gemäßigte kleinschreibung;&lt;/li&gt;
-  &lt;li&gt;alle wortanfänge groß;&lt;/li&gt;
-  &lt;li&gt;zufällige verteilung von großen und kleinen wortanfängen sowie&lt;/li&gt;
-  &lt;li&gt;inversion der deutschen regel (alles was eigentlich groß geschrieben ist, wird klein geschrieben, und umgekehrt).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;b id=&quot;note3&quot;&gt;[3] missverständliche beispiele:&lt;/b&gt; es war übrigens ziemlich schwierig, sich solche beispiele auszudenken; da muss einiges zusammenfallen, damit glaubhafte mehrdeutigkeiten entstehen. die ersten drei fälle treten nur auf, wenn man adjektive für gruppenbezeichnungen verwendet: die reichen, die wilden, die jungen. ich persönlich vermeide das eher, weil man damit sehr leicht ins schubladendenken gerät.&lt;a href=&quot;#ziffer2&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/kleinschreibung.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/kleinschreibung.html</guid>
-	<pubDate>Tue, 20 Oct 2015 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
