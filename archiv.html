@@ -48,1746 +48,1052 @@
 
 <main>
 
-    <script type="text/javascript">
-var suchwort = self.location.search.replace(/\?/, '');
-if(suchwort=='ansporn' || suchwort=='kritik' || suchwort=='methodik' || suchwort=='sujet' || suchwort=='serie' || suchwort=='typografie') {
-	document.writeln("<h1>Artikel aus der Rubrik #"+suchwort+"<\/h1><p class=\"hinterlegt\">Hier folgt eine <i>gefilterte<\/i> Liste mit Blogartikeln aus der Rubrik #"+suchwort+". Stattdessen <a href=\"archiv.html\">alle Einträge<\/a> anzeigen?<\/p>"); }
-else {
-	document.writeln("<h1>Archiv aller Einträge<\/h1><p>Hier folgt eine Liste meiner Blogartikel, jeweils mit einer kurzen Inhaltsangabe. Der neueste Artikel steht oben, der älteste unten.<\/p>"); }
+    <style>
+.jahreszahl { margin-top:1.36em;} /* Klasse wird in JS auch zum Ausblenden benutzt */
+.is-hidden { display:none; }
+</style>
+
+<h1>Archiv meiner Blogartikel</h1>
+<p>Die Einträge sind vom neusten zum ältesten sortiert, jeweils mit einer kurzen Inhaltsangabe. Liste nach Rubrik filtern (benötigt JavaScript) → <a href="archiv.html?ansporn">#ansporn</a> &nbsp;<a href="archiv.html?kritik">#kritik</a> &nbsp;<a href="archiv.html?methodik">#methodik</a> &nbsp;<a href="archiv.html?sujet">#sujet</a> &nbsp;<a href="archiv.html?serie">#serie</a> &nbsp;<a href="archiv.html?typografie">#typografie</a> &nbsp;</p>
+
+<script type="text/javascript">
+<!--
+var suchRubrik = encodeURI(self.location.search.replace(/\?/, ''));
+if(suchRubrik.length) {
+	document.writeln("<p class=\"hinterlegt\"><b>Filter aktiv:<\/b> Es sind nur Artikel aus der Rubrik #"+suchRubrik+" zu sehen. Stattdessen <a href=\"archiv.html\">alle Einträge anzeigen<\/a>?<\/p>"); }
+//-->
 </script>
 
-<noscript>
-	<h1>Archiv aller Einträge</h1>
-	<p>Hier folgt eine Liste meiner Blogartikel, jeweils mit einer kurzen Inhaltsangabe. Der neueste Artikel steht oben, der älteste unten.</p>
-</noscript>
-
-<p>Um nur Blogeinträge aus einer bestimmten Rubrik aufzulisten, bitte diese Links verwenden (benötigt JavaScript) →<br>
-
-    <a href="archiv.html?ansporn">#ansporn&nbsp;</a>
-
-    <a href="archiv.html?kritik">#kritik&nbsp;</a>
-
-    <a href="archiv.html?methodik">#methodik&nbsp;</a>
-
-    <a href="archiv.html?sujet">#sujet&nbsp;</a>
-
-    <a href="archiv.html?serie">#serie&nbsp;</a>
-
-    <a href="archiv.html?typografie">#typografie&nbsp;</a>
-
-</p>
 <p>&nbsp;</p>
 
 
 
 
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2016<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2016</h1> </noscript>
+	<h1 class="jahreszahl">2016</h1>
 	
 
 
-<script>
-var rubriken = 'anspornmethodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn methodik ">
 <time datetime="2016-03-23">Mi, 23. M&auml;rz 2016</time>
 <h2><a href="verschluesselte-mails.html">Verschlüsselte Mails</a></h2>
 <p>Damit E-Mails vertraulich bleiben, sollte man sie verschlüsseln. Leider ist das noch keine Standardeinstellung – dabei ist es gar nicht schwer.
  <a href="verschluesselte-mails.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>948 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiktypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik typografie ">
 <time datetime="2016-02-19">Fr, 19. Feb. 2016</time>
 <h2><a href="apostroph.html">Die richtige Verwendung des Apostrophs</a></h2>
 <p>Der Apostroph kennzeichnet ausgelassene Buchstaben und verdeutlicht Eigennamen. Leider wird er viel zu oft falsch eingesetzt.
  <a href="apostroph.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>187 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik sujet ">
 <time datetime="2016-01-05">Di, 5. Jan. 2016</time>
 <h2><a href="hoerspiele.html">Geschichten fürs Ohr</a></h2>
 <p>Jede Woche laufen im Radio über fünfzig Hörspiele ganz unterschiedlicher Art. Hier habe ich einige Links und Empfehlungen zusammengestellt.
  <a href="hoerspiele.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>746 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
-
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2015<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2015</h1> </noscript>
+	<h1 class="jahreszahl">2015</h1>
 	
 
 
-<script>
-var rubriken = 'methodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik ">
 <time datetime="2015-12-10">Do, 10. Dez. 2015</time>
 <h2><a href="apposition.html">Apposition mit inkongruentem Kasus</a></h2>
 <p>In der Werbung wird sprachlich so einiges verbrochen. Manchmal ist es für Werbetexter aber wirklich besser, eine Grammatikregel zu ignorieren.
  <a href="apposition.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>401 Wörter //</i>&nbsp;
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2015-11-16">Mo, 16. Nov. 2015</time>
 <h2><a href="erfundene-fakten-5.html">Unterhaltsam? Tatsächlich!</a></h2>
 <p>Meine Twitterserie „Erfundenes Faktum“ beruht ganz sicher nicht auf wahren Ereignissen; aber das schließt ja Unterhaltsamkeit nicht aus.
  <a href="erfundene-fakten-5.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>451 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiksujettypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik sujet typografie ">
 <time datetime="2015-10-20">Di, 20. Okt. 2015</time>
 <h2><a href="kleinschreibung.html">gedanken zur kleinschreibung</a></h2>
 <p>was wäre, wenn wir zukünftig auf großbuchstaben verzichten? werden texte dann schwerer lesbar? ästhetisch ansprechender? weniger imperialistisch?
  <a href="kleinschreibung.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>2060 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
 <a href="archiv.html?sujet">#sujet&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'sujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="sujet ">
 <time datetime="2015-09-25">Fr, 25. Sept. 2015</time>
 <h2><a href="mondfinsternis.html">Schattiger Mondtag</a></h2>
 <p>In der Nacht auf den 28. September 2015 wandert der Mond durch den Kernschatten der Erde. Wir Erdbewohner erleben das als Mondfinsternis.
  <a href="mondfinsternis.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>193 Wörter //</i>&nbsp;
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornmethodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn methodik ">
 <time datetime="2015-08-17">Mo, 17. Aug. 2015</time>
 <h2><a href="tagebuch.html">Blick ins Tagebuch</a></h2>
 <p>Ich schreibe wieder regelmäßig Tagebuch. Es hilft, Gedanken und Erlebnisse zu sortieren, und macht es leicht, Erinnerungen aufzufrischen.
  <a href="tagebuch.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>408 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'ansporntypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn typografie ">
 <time datetime="2015-07-24">Fr, 24. Juli 2015</time>
 <h2><a href="mailformat.html">Reintext oder HTML?</a></h2>
 <p>In letzter Zeit überlege ich, meine Mails nicht mehr in HTML zu formatieren. Ob Reintext aber für meine Bedürfnisse ausreicht? Ich denke mal laut darüber nach.
  <a href="mailformat.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>690 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'sujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="sujet ">
 <time datetime="2015-06-30">Di, 30. Juni 2015</time>
 <h2><a href="origamischachtel.html">Eine Schachtel aus Papier</a></h2>
 <p>Mit der japanischen Faltkunst Origami kann man recht schnell ansehnliche Papier-Objekte herzustellen, zum Beispiel diese praktische Schachtel.
  <a href="origamischachtel.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>138 Wörter //</i>&nbsp;
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodiktypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik typografie ">
 <time datetime="2015-06-08">Mo, 8. Juni 2015</time>
 <h2><a href="titel-abstufen.html">Nicht nur die Größe zählt</a></h2>
 <p>Überschriften und Unterüberschriften unterschieden sich oft nur durch ihre Schriftgröße. Dabei gibt es mehrere Möglichkeiten, um Titel abzustufen.
  <a href="titel-abstufen.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>528 Wörter //</i>&nbsp;
 <a href="archiv.html?methodik">#methodik&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornkritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik ">
 <time datetime="2015-05-15">Fr, 15. Mai 2015</time>
 <h2><a href="tweets-mit-anhang.html">Tweets mit Anhang</a></h2>
 <p>Tweets haben sich weiterentwickelt und erlauben schon längst mehr als 140 Zeichen; nämlich Fotos, Artikel-Vorschauen oder Videos. Dadurch geht viel von Twitters Reiz verloren.
  <a href="tweets-mit-anhang.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>491 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2015-04-22">Mi, 22. Apr. 2015</time>
 <h2><a href="fuchs-5.html">Pirouetten und andere Probleme</a></h2>
 <p>In meiner Twitterserie „Fuchs und Ballerina“ kämpft die Tänzerin immer wieder mit kleinen Problemen. Die klugen Antworten des Fuchses helfen da oft weiter.
  <a href="fuchs-5.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>351 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik ">
 <time datetime="2015-03-30">Mo, 30. M&auml;rz 2015</time>
 <h2><a href="rss-feeds.html">Neuigkeiten via RSS</a></h2>
 <p>Viele Websites halten Änderungen in einer strukturierten RSS-Datei fest. Diese lässt sich maschinell auslesen und man kann sich einfach informieren lassen, wenn neue Inhalte online sind.
  <a href="rss-feeds.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>727 Wörter //</i>&nbsp;
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2015-03-04">Mi, 4. M&auml;rz 2015</time>
 <h2><a href="erfundene-fakten-4.html">Garantiert gelogen</a></h2>
 <p>… durch dieses Prädikat zeichnet sich meine Twitterserie „Erfundenes Faktum“ aus. Anders gesagt sind Wahrheiten hier unerwünscht, ehrlich!
  <a href="erfundene-fakten-4.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>353 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'sujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="sujet ">
 <time datetime="2015-02-13">Fr, 13. Feb. 2015</time>
 <h2><a href="kaffeezettel.html">Kaffeezettel</a></h2>
 <p>Eine Kurzgeschichte zum Thema Liebe und Kommunikation, erzählt aus der Perspektive einer Kellnerin.
  <a href="kaffeezettel.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>301 Wörter //</i>&nbsp;
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik ">
 <time datetime="2015-01-08">Do, 8. Jan. 2015</time>
 <h2><a href="cookiewarnung.html">Mit Cookies einverstanden?</a></h2>
 <p>Eine Richtlinie der Europäischen Gemeinschaft soll den Datenschutz verbessern. Die Umsetzung eines der Abschnitte nervt aber gerade die, die sich schon um ihre Privatsphäre kümmern.
  <a href="cookiewarnung.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>626 Wörter //</i>&nbsp;
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
-
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2014<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2014</h1> </noscript>
+	<h1 class="jahreszahl">2014</h1>
 	
 
 
-<script>
-var rubriken = 'anspornkritiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik sujet ">
 <time datetime="2014-12-17">Mi, 17. Dez. 2014</time>
 <h2><a href="blogeintrag-50.html">Blogeintrag Nº 50</a></h2>
 <p>In den vier Jahren meines Blogs haben sich so einige schöne Artikel angesammelt. Ich nutze meinen fünfzigsten Eintrag für einen Rückblick.
  <a href="blogeintrag-50.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>510 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2014-11-18">Di, 18. Nov. 2014</time>
 <h2><a href="kalender-2015.html">Kein Kalender von der Stange</a></h2>
 <p>Wer bisher vergeblich nach einem Halb-Monats-Kalender in DIN A5 gesucht hat, wird hier fündig. Mein „HMK“ ist übersichtlich, handlich und typografisch ansprechend.
  <a href="kalender-2015.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>166 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2014-10-27">Mo, 27. Okt. 2014</time>
 <h2><a href="einfallsreiche-pflanzen.html">Einfallsreiche Pflanzen</a></h2>
 <p>Für gewöhnlich können Pflanzen ihren Standort nicht verändern. Damit wenigstens ihre Nachkommen weiter weg kommen, haben viele Arten kluge Verbreitungswege entwickelt.
  <a href="einfallsreiche-pflanzen.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>408 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'ansporntypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn typografie ">
 <time datetime="2014-09-25">Do, 25. Sept. 2014</time>
 <h2><a href="semikolon.html">Zwischen Trennung und Verbundenheit</a></h2>
 <p>Das Semikolon wird nur noch selten verwendet, zumindest habe ich diesen Eindruck. Dabei gibt es so viele Möglichkeiten, dieses Satzzeichen einzusetzen.
  <a href="semikolon.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>153 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornkritikmethodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik methodik ">
 <time datetime="2014-09-04">Do, 4. Sept. 2014</time>
 <h2><a href="nuetzliche-kommentare.html">Nützliche Kommentare</a></h2>
 <p>Leserkommentare sind eine wunderbare Sache; man sollte die Hürden dafür möglichst niedrig halten. Als Ausgleich muss man Kommentare aber besser begutachten und auch mal aussortieren.
  <a href="nuetzliche-kommentare.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>386 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik sujet ">
 <time datetime="2014-07-24">Do, 24. Juli 2014</time>
 <h2><a href="fotorealismus.html">Fotorealistische Malerei</a></h2>
 <p>Es gibt Maler, die bringen Bilder so wirklichkeitsgetreu auf die Leinwand, dass sie aussehen wie fotografiert. Bewundernswertes Handwerk, das schon. Kunst ist das meiner Meinung nach aber nicht mehr.
  <a href="fotorealismus.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>338 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2014-06-18">Mi, 18. Juni 2014</time>
 <h2><a href="fuchs-4.html">Ein Fuchs für alle Fälle</a></h2>
 <p>Wer kreativ tätig ist, dem tut es manchmal gut, wenn er einen Ansprechpartner hat – zum Beispiel einen lebensklugen Fuchs wie in meiner Twitterserie „Fuchs und Ballerina“.
  <a href="fuchs-4.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>353 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornkritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik ">
 <time datetime="2014-05-27">Di, 27. Mai 2014</time>
 <h2><a href="neues-blogdesign.html">Neues Design für @cz+</a></h2>
 <p>Nach fast dreieinhalb Jahren habe ich die Struktur und Gestaltung meines Blogs grundlegend verändert. Mehr zum neuen Design und welche Absicht ich damit verfolge …
  <a href="neues-blogdesign.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>578 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2014-04-30">Mi, 30. Apr. 2014</time>
 <h2><a href="erfundene-fakten-3.html">Subtile (Un)wahrheiten</a></h2>
 <p>Auf Twitter bemühe ich mich um Objektivität und Faktentreue – außer in meiner Serie »Erfundene Fakten«. Dort spiele ich (mehr oder weniger) subtil mit der Wahrheit.
  <a href="erfundene-fakten-3.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>362 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodiktypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik typografie ">
 <time datetime="2014-04-09">Mi, 9. Apr. 2014</time>
 <h2><a href="silbentrennung.html">Silbentrennung im Browser</a></h2>
 <p>Silbentrennung ermöglicht einen ruhigeren Zeilenfall bzw. eine gleichmäßigere Textverteilung – auch auf Internetseiten. Es gibt verschiedene Methoden, Silbentrennung im Browser umzusetzen.
  <a href="silbentrennung.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>568 Wörter //</i>&nbsp;
 <a href="archiv.html?methodik">#methodik&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik sujet ">
 <time datetime="2014-02-27">Do, 27. Feb. 2014</time>
 <h2><a href="richter-di.html">Krimigeschichten mit Richter Di</a></h2>
 <p>Der niederländische Diplomat Robert van Gulik hat in den 1950/60ern eine Reihe historischer Krimis geschrieben. Deren Hauptfigur Richter Di ermittelt im alten China vor über 1300 Jahren.
  <a href="richter-di.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>299 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik ">
 <time datetime="2014-01-17">Fr, 17. Jan. 2014</time>
 <h2><a href="anonym-kommentieren.html">Gut auch ohne Namen</a></h2>
 <p>Bösartige Kommentare im Netz nerven und stören eine Diskussion. Würde es helfen, wenn sich online jeder nur noch mit seinem echten Namen äußern dürfte?
  <a href="anonym-kommentieren.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>294 Wörter //</i>&nbsp;
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
-
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2013<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2013</h1> </noscript>
+	<h1 class="jahreszahl">2013</h1>
 	
 
 
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2013-11-19">Di, 19. Nov. 2013</time>
 <h2><a href="kalender-2014.html">2014 auf 24 Seiten</a></h2>
 <p>Mein Kalender für 2014 bietet viel Platz für Notizen und bleibt trotzdem übersichtlich. Jeweils ein halber Monat nimmt eine der DIN-A5-Seiten ein, praktisch zum Ausdrucken.
  <a href="kalender-2014.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>182 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2013-10-25">Fr, 25. Okt. 2013</time>
 <h2><a href="klara.html">Aus den Archiven&#58; Klara</a></h2>
 <p>Komplimente sind etwas schönes, zumindest wenn sie persönlich und nicht abgenutzt sind. Was aber passiert, wenn man verbrauchte Vergleiche überteigert?
  <a href="klara.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>274 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2013-09-18">Mi, 18. Sept. 2013</time>
 <h2><a href="serifenschriften.html">Sechs gute und kostenlose Schriftfamilien mit Serifen</a></h2>
 <p>Die hier vorgestellten Serifenschriften sind nicht nur kostenlos, sie sind auch von sehr guter Qualität (großer Zeichensatz, mehrere Schnitte, Kerning und Hinting).
  <a href="serifenschriften.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>509 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik sujet ">
 <time datetime="2013-08-13">Di, 13. Aug. 2013</time>
 <h2><a href="thursday-next.html">Sommerlektüre&#58; Thursday Next</a></h2>
 <p>Ich lese gern und twittere auch regelmäßig den Titel meiner aktuellen Lektüre. Diesmal möchte ein Buch etwas ausführlicher vorstellen, genauer gesagt die Buchreihe um Thursday Next von Jasper Fforde.
  <a href="thursday-next.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>334 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2013-07-18">Do, 18. Juli 2013</time>
 <h2><a href="fuchs-3.html">Ballerinas Selbstzweifel</a></h2>
 <p>In meiner Twitterserie „Fuchs und Ballerina“ geht es um eine sensible Tänzerin. Mit ihren Sorgen kommt sie zum Fuchs, der ihr mit guten Worten weiterhilft.
  <a href="fuchs-3.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>368 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornkritikmethodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik methodik ">
 <time datetime="2013-05-30">Do, 30. Mai 2013</time>
 <h2><a href="troll-dich.html">Troll dich!</a></h2>
 <p>Kürzlich habe ich Erfahrungen mit einem Troll gemacht. Eine gute Gelegenheit, um einige Methoden auszuprobieren, mit denen man so einen digitalen Störenfried entschärft.
  <a href="troll-dich.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>443 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'sujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="sujet ">
 <time datetime="2013-05-02">Do, 2. Mai 2013</time>
 <h2><a href="origamikarpfen.html">Ein Karpfen für jedes Kind</a></h2>
 <p>Origami ist die japanische Kunst des Papierfaltens. Dabei entstehen Kraniche, Lilien, Schachteln – oder wie in dieser klassischen Faltanleitung: ein Karpfen.
  <a href="origamikarpfen.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>287 Wörter //</i>&nbsp;
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2013-04-03">Mi, 3. Apr. 2013</time>
 <h2><a href="erfundene-fakten-2.html">Wenn es nicht wahr ist, so ist’s doch gut erfunden.</a></h2>
 <p>In meiner Twitterserie „Erfundenes Faktum“ stelle ich aus der Luft gegriffene Behauptungen auf. Merkwürdig nur, dass diese genauso auch stimmen könnten.
  <a href="erfundene-fakten-2.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>411 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'ansporntypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn typografie ">
 <time datetime="2013-01-22">Di, 22. Jan. 2013</time>
 <h2><a href="stickserif.html">StickSerif – eine Pixelschrift (nicht nur) für Kreuzstickereien</a></h2>
 <p>Pixel gab es schon lange bevor es Bildschirme gab – nämlich bei Kreuzstickereien. Und dort nutzt man dann auch Pixelschriften, zum Beispiel meine StickSerif.
  <a href="stickserif.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>296 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
-
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2012<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2012</h1> </noscript>
+	<h1 class="jahreszahl">2012</h1>
 	
 
 
-<script>
-var rubriken = 'kritikserie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik serie ">
 <time datetime="2012-12-14">Fr, 14. Dez. 2012</time>
 <h2><a href="vergessen.html">Für und wider das Vergessen</a></h2>
 <p>In diesem Eintrag krame ich eine Twitterserie von vor 1½ Jahren wieder hervor, vielleicht damit sie nicht ganz in Vergessenheit gerät. Wobei das Vergessen durchaus seine Vorteile haben kann …
  <a href="vergessen.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>288 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2012-11-15">Do, 15. Nov. 2012</time>
 <h2><a href="kalender-2013.html">Knapp 8 cm² pro Tag</a></h2>
 <p>Auch fürs Jahr 2013 habe ich mir wieder einen Halbmonatskalender zum Ausdrucken gestaltet. Endlich ein Kalender, der genau meinen Vorstellungen entspricht.
  <a href="kalender-2013.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>245 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik sujet ">
 <time datetime="2012-08-23">Do, 23. Aug. 2012</time>
 <h2><a href="totgeschriebene.html">Totgeschriebene leben länger</a></h2>
 <p>Überall wird nur noch getippt, zu Stift und Papier greift man immer seltener. Die Handschrift hat es schwer im digitalen Zeitalter.
  <a href="totgeschriebene.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>271 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2012-07-31">Di, 31. Juli 2012</time>
 <h2><a href="fuchs-2.html">Weisheiten für sensible Künstler</a></h2>
 <p>Manchmal ist die sensible Ballerina meiner Twitterserie verzweifelt: Der Alltag nimmt einfach keine Rücksicht auf ihre Kunst. Wie gut, dass der Fuchs dann einen guten Rat weiß.
  <a href="fuchs-2.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>448 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik ">
 <time datetime="2012-07-02">Mo, 2. Juli 2012</time>
 <h2><a href="buchbinden.html">Vom Einzelblatt zum Buch</a></h2>
 <p>Praktisch alle Bücher werden industriell gebunden, es geht aber auch per Hand. Wie man dabei vorgeht, soll diese kleine Anleitung zeigen.
  <a href="buchbinden.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>541 Wörter //</i>&nbsp;
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2012-06-04">Mo, 4. Juni 2012</time>
 <h2><a href="otfeat.html">OpenType-Features im Browser</a></h2>
 <p>Viele Schriften enthalten OpenType-Features, mit denen zum Beispiel echte Kapitälchen oder Alternativbuchstaben aktiviert werden können. Seit kurzem lassen sich diese Funktionen auch per CSS einschalten und im Browser verwenden. Ob und welche Features unterstützt werden, kann man mit meiner Schrift Otfeat testen.
  <a href="otfeat.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>571 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2012-05-04">Fr, 4. Mai 2012</time>
 <h2><a href="gebrochene-schriften.html">Gebrochene Schriften oder Antiqua?</a></h2>
 <p>Im Alltag findet man gebrochene Schriften heutzutage nur noch selten. Statt Fraktur, Textur, Schwabacher oder Rotunda verwenden wir heute die Antiqua. Aber welche Schriftvariante ist nun tatsächlich besser?
  <a href="gebrochene-schriften.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>514 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'ansporn'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn ">
 <time datetime="2012-03-16">Fr, 16. M&auml;rz 2012</time>
 <h2><a href="ubuntu-1204.html">Why I’m looking forward to Ubuntu 12.04 LTS</a></h2>
 <p>In a couple of weeks a new version of Ubuntu Linux will be published. I use this operation system for almost four years now. This blog post is about how I came to Ubuntu.
  <a href="ubuntu-1204.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>290 Wörter //</i>&nbsp;
-<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-<br>
+<a href="archiv.html?ansporn">#ansporn&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2012-03-05">Mo, 5. M&auml;rz 2012</time>
 <h2><a href="erfundene-fakten-1.html">Das stimmt doch gar nicht!</a></h2>
 <p>Ob eine Sachaussage der Wahrheit entspricht, lässt sich nicht immer so leicht beurteilen. Diesen Bereich zwischen wahr und gelogen lote ich mit meiner Twitterserie „Erfundenes Faktum“ aus.
  <a href="erfundene-fakten-1.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>550 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik ">
 <time datetime="2012-02-15">Mi, 15. Feb. 2012</time>
 <h2><a href="retweet.html">RT – Gutes gerne weitergeben</a></h2>
 <p>Tweets nicht nur zu empfangen, sondern per Retweet an seine eigenen Follower weiterzuvermitteln, ist ein großartiges Feature von Twitter. Aber auch ein zweischneidiges.
  <a href="retweet.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>372 Wörter //</i>&nbsp;
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2012-01-18">Mi, 18. Jan. 2012</time>
 <h2><a href="filme-140-zeichen.html">Filme in 140 Zeichen</a></h2>
 <p>Kann man die Handlung eines 90-minütigen Kinofilms in einen Tweet packen? Nun, sicherlich nicht eins zu eins, aber ein wiedererkennbarer Ausschnitt passt auf jeden Fall in 140 Zeichen.
  <a href="filme-140-zeichen.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>348 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
-
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2011<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2011</h1> </noscript>
+	<h1 class="jahreszahl">2011</h1>
 	
 
 
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2011-12-14">Mi, 14. Dez. 2011</time>
 <h2><a href="kalender-2012.html">366 Tage im Quadrat</a></h2>
 <p>Es gibt viele Arten von Kalendern am Markt. Ich habe bisher aber keinen gefunden, der so ganz meinen Bedürfnissen entspricht. Da gibt es nur eines: selbermachen.
  <a href="kalender-2012.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>271 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritikserie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik serie ">
 <time datetime="2011-12-02">Fr, 2. Dez. 2011</time>
 <h2><a href="schenken.html">Gedanken übers Schenken</a></h2>
 <p>Geschenke sind etwas Schönes. Außerdem sind sie unter sozialen Gesichtspunkten interessant gesehen: Wer Geschenke empfängt, geht eine Verpflichtung ein; nicht immer gefällt die Gabe; der Schenkwert kann ganz unterschiedlich bewertet werden …
  <a href="schenken.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>199 Wörter //</i>&nbsp;
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik ">
 <time datetime="2011-11-03">Do, 3. Nov. 2011</time>
 <h2><a href="weltsprache-englisch.html">Warum ich nicht in der Weltsprache Englisch twittere</a></h2>
 <p>Ja, ich spreche Englisch. Ich würde sogar sagen – ziemlich gut. Natürlich würden mehr Menschen meine Tweets verstehen, wenn ich sie auf englisch veröffentlichen würde. Ich habe aber gute Gründe, es trotzdem nicht zu tun.
  <a href="weltsprache-englisch.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>177 Wörter //</i>&nbsp;
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'sujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="sujet ">
 <time datetime="2011-10-06">Do, 6. Okt. 2011</time>
 <h2><a href="nicht-befreundet.html">Wir sind gar nicht befreundet</a></h2>
 <p>Was man bei sozialen Medien wie Facebook oft vergisst: Im Grunde sind die Freunde dort nur Kontakte in einem digitalen Adressbuch. Das erklärt auch, warum ich über Twitter kaum Privates teile.
  <a href="nicht-befreundet.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>204 Wörter //</i>&nbsp;
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik ">
 <time datetime="2011-09-01">Do, 1. Sept. 2011</time>
 <h2><a href="netz-ergaenzt-zeitung.html">Das Netz ergänzt die Zeitung</a></h2>
 <p>Ist das Internet die bessere Zeitung? Es ist interaktiv, schneller aktuell, von überall zugänglich … Vielleicht löst das Netz die Zeitung nicht vollständig ab, aber es könnte sie bereichern.
  <a href="netz-ergaenzt-zeitung.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>411 Wörter //</i>&nbsp;
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik ">
 <time datetime="2011-08-04">Do, 4. Aug. 2011</time>
 <h2><a href="1337motiv.html">1337motiv – Zusammenfassung bisheriger Folgen</a></h2>
 <p>Die Hörspielserie <em>1337motiv</em> von Marcel-André Casasola Merkle umfasst über siebzig Folgen. Wer dabei den Überblick verloren hat, kann hier die inhaltliche Zusammenfassung nachlesen.
  <a href="1337motiv.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>1063 Wörter //</i>&nbsp;
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornserie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn serie ">
 <time datetime="2011-07-15">Fr, 15. Juli 2011</time>
 <h2><a href="mehrteiler.html">Teil 1/9&#58; Mehrere Tweets zu einem Thema</a></h2>
 <p>Immer wieder mische ich mehrteilige Serien unter meine Tweets. Sie ziehen sich über gut einen Monat hin und beleuchten ein Thema aus verschiedenen Perspektiven.
  <a href="mehrteiler.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>156 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik ">
 <time datetime="2011-06-21">Di, 21. Juni 2011</time>
 <h2><a href="ideenspeicher.html">Ideenspeicher – nicht alles sofort versenden</a></h2>
 <p>Okay, jetzt kann ich es ja sagen: Mir fällt nicht jeden Tag genau ein Tweet ein, den ich dann frisch ersonnen veröffentliche. Meist „produziere“ ich auf Vorrat.
  <a href="ideenspeicher.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>165 Wörter //</i>&nbsp;
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornkritikmethodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik methodik ">
 <time datetime="2011-05-23">Mo, 23. Mai 2011</time>
 <h2><a href="echtzeit-und-relevanz.html">Echtzeit und Relevanz</a></h2>
 <p>Das Eisenhower-Prinzip kann nicht nur dabei helfen, anstehende Aufgaben zu organisieren. Es ermöglicht auch, seine Tweets zu filtern, bevor man sie veröffentlicht.
  <a href="echtzeit-und-relevanz.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>291 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'sujettypografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="sujet typografie ">
 <time datetime="2011-05-03">Di, 3. Mai 2011</time>
 <h2><a href="mehr-als-buchstaben.html">Es gibt mehr als Buchstaben</a></h2>
 <p>Es gibt eine unvorstellbare Menge an Buchstaben, Zeichen und Symbolen – versammelt in der Zeichenkodierungen Unicode. Ich nutze das aus, um jeden meiner Tweets mit einem Symbol beginnen zu lassen.
  <a href="mehr-als-buchstaben.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>208 Wörter //</i>&nbsp;
 <a href="archiv.html?sujet">#sujet&nbsp; </a>
-
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'kritik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="kritik ">
 <time datetime="2011-04-06">Mi, 6. Apr. 2011</time>
 <h2><a href="unliebsame-verfolger.html">Unliebsame Verfolger</a></h2>
 <p>Jemandem auf Twitter zu folgen, ist kein Ausdruck von Anerkennung. Jedenfalls sollte es das nicht sein, denn sonst verstärken sich einige nervige Entwicklungen.
  <a href="unliebsame-verfolger.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>223 Wörter //</i>&nbsp;
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
-<br>
+<a href="archiv.html?kritik">#kritik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'serie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="serie ">
 <time datetime="2011-03-14">Mo, 14. M&auml;rz 2011</time>
 <h2><a href="fuchs-1.html">… sprach der &#35;Fuchs zur Ballerina</a></h2>
 <p>Wenn Kunst auf den Alltag trifft, dann muss sie sich einschränken und zurückstecken – so wie die Ballerina in meiner Twitterserie. Gut, dass ihr der lebenserfahrene Fuchs mit seinen Ratschlägen zur Seite steht.
  <a href="fuchs-1.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>536 Wörter //</i>&nbsp;
-<a href="archiv.html?serie">#serie&nbsp; </a>
-<br>
+<a href="archiv.html?serie">#serie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornsujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn sujet ">
 <time datetime="2011-02-18">Fr, 18. Feb. 2011</time>
 <h2><a href="wem-ich-folge.html">Wem ich auf Twitter gerne folge</a></h2>
 <p>Wie jeder andere Twitterer abonniere ich gerne Tweets von Personen, die über meine Lieblingsthemen twittert. Sie sollten aber auch nicht zu viel am Tag schreiben.
  <a href="wem-ich-folge.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>184 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'typografie'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="typografie ">
 <time datetime="2011-01-27">Do, 27. Jan. 2011</time>
 <h2><a href="drei-typoregeln.html">Gänsefüßchen, Gedankenstriche und das kleine ß im Versalsatz</a></h2>
 <p>Wer sich ein bisschen Mühe gibt, kann seine Texte verständlicher und „schöner“ gestalten. Das Zauberwort heißt „Typografie“. In diesem Artikel liste ich drei typografische Grundregeln auf.
  <a href="drei-typoregeln.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>162 Wörter //</i>&nbsp;
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
-<br>
+<a href="archiv.html?typografie">#typografie&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodikseriesujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik serie sujet ">
 <time datetime="2011-01-03">Mo, 3. Jan. 2011</time>
 <h2><a href="bunte-mischung.html">Bunte Mischung&#58; Lyrik, Fakten, Tipps</a></h2>
 <p>Meine Tweets mische ich aus unterschiedlichen Themenbereichen. Das macht sie abwechslungsreicher und ich muss mich thematisch nicht einschränken; schließlich sind meine Interessen auch weitgestreut.
  <a href="bunte-mischung.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>171 Wörter //</i>&nbsp;
 <a href="archiv.html?methodik">#methodik&nbsp; </a>
-
 <a href="archiv.html?serie">#serie&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
-
-	<script type="text/javascript"> if(suchwort=='') document.writeln("<h1 style=\"margin:1.36em 0 0 -0.04em;\">2010<\/h1>"); </script>
-	<noscript> <h1 style="margin:1.36em 0 0 -0.04em;">2010</h1> </noscript>
+	<h1 class="jahreszahl">2010</h1>
 	
 
 
-<script>
-var rubriken = 'anspornsujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn sujet ">
 <time datetime="2010-12-01">Mi, 1. Dez. 2010</time>
 <h2><a href="reiz-der-kuerze.html">Der Reiz der Kürze</a></h2>
 <p>Ein kurzer Text darüber, was an kurzen Texten so viel Spaß macht.
  <a href="reiz-der-kuerze.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>115 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'methodiksujet'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="methodik sujet ">
 <time datetime="2010-11-28">So, 28. Nov. 2010</time>
 <h2><a href="minilyrik.html">Von Kraftprotz und Herzstück</a></h2>
 <p>Ein poetischer Gedanke lässt sich sehr gut in einem einzelnen Tweet ausdrücken. Inspiration für meine Minilyrik ist meistens ein schönes Wort oder eine Beobachtung.
  <a href="minilyrik.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>183 Wörter //</i>&nbsp;
 <a href="archiv.html?methodik">#methodik&nbsp; </a>
-
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
-<br>
+<a href="archiv.html?sujet">#sujet&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
 
 
 
 
-
-<script>
-var rubriken = 'anspornkritikmethodik'
-if(!rubriken.match(suchwort)) document.writeln("<div style=\"display:none;\">");
-</script>
-
-<section>
+<section data-rubrik="ansporn kritik methodik ">
 <time datetime="2010-11-27">Sa, 27. Nov. 2010</time>
 <h2><a href="twitterpause.html">Warum ich Twitter pausiert habe</a></h2>
 <p>Im November 2010 hatte ich Twitter komplett gemieden. Ursprünglich wollte ich nicht nur eine Pause machen, sondern den Dienst komplett beenden. Ich erhielt zu wenig Rückmeldung; es gab keine Motivation mehr, etwas zu schreiben. Das änderte sich dann zum Glück.
  <a href="twitterpause.html">[<span style="font: 1em/1.4 'Source Sans Pro', Calibri, Arial, sans-serif;">→</span>]</a></p>
 <p><i>206 Wörter //</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
-
 <a href="archiv.html?kritik">#kritik&nbsp; </a>
-
-<a href="archiv.html?methodik">#methodik&nbsp; </a>
-<br>
+<a href="archiv.html?methodik">#methodik&nbsp; </a><br>
 &nbsp;</p>
 </section>
 
-<script>
-if(!rubriken.match(suchwort)) { document.writeln("<\/div>"); }
-</script>
-
 
 <p>&nbsp;</p>
+
+<script>
+<!--
+// Vorlage war http://osvaldas.info/real-time-search-in-javascript
+'use strict';
+;( function ( document, window, index ) {
+var hasElementClass = function( element, className ){
+	return element.classList ? element.classList.contains( className ) : new RegExp( '(^| )' + className + '( |$)', 'gi' ).test( element.className ); },
+addElementClass = function( element, className ){
+	element.classList ? element.classList.add( className ) : element.className += ' ' + className; },
+removeElementClass = function( element, className ){
+	element.classList ? element.classList.remove( className ) : element.className = element.className.replace( new RegExp( '(^|\\b)' + className.split( ' ' ).join( '|' ) + '(\\b|$)', 'gi' ), ' ' ); };
+
+// Rubriken-Filter
+;( function ( document, window, index ) {
+	var suchRubrik = encodeURI(self.location.search.replace(/\?/, ''));
+	var jahreszahlen = document.querySelectorAll( '.jahreszahl' );
+	var eintraege = document.querySelectorAll( 'section[data-rubrik]' );
+
+	if( suchRubrik.length ) {
+		for (var i = 0; i < jahreszahlen.length; i++) {
+			addElementClass( jahreszahlen[i], 'is-hidden'); }
+		for (var j = 0; j < eintraege.length; j++) {
+			if ( !eintraege[j].getAttribute('data-rubrik').match(suchRubrik) ) { addElementClass( eintraege[j], 'is-hidden' ); }
+		}
+	}
+} ( document, window, 0 ));
+
+} ( document, window, 0 ));
+// -->
+</script>
 
 </main> <!-- hauptfeld -->
 </div> <!-- container -->
