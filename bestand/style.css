@@ -38,7 +38,7 @@ main { display: block; margin-left: 16.6em;
 	padding: 0.08em 65px 1.4em 55px;
 	background-color: #fff; border-left: 1px dashed #281; }
 article, section { display: block; }
-/* article { background: linear-gradient(#e32 4.5%, transparent 0) 0 0 / auto 1.4em; } /* Grundlinienraster */
+/* article { background: linear-gradient(rgba(0,0,0,.2) .1em, transparent 0) 0 0 / auto 0.7em; } /* Grundlinienraster */
 
 /* Wenn Fensterhöhe zu niedrig, dann Randspalte nicht mehr fix */
 @media (max-height: 33.5em) { aside { position: static; } }
@@ -101,8 +101,10 @@ ul li p { margin: 0.7em 0; }
 ol { margin-left: -1.5em; }
 ol ol { list-style: lower-alpha; }
 
-code, pre { margin: 1.1em 0 -0.33em; padding: 0 0.1em; color: #222;
-	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace; }
+code, pre { margin: .95em 0 -0.28em; padding:.05em .2em;
+	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace;
+	color: #222; background-color:#f4f4f4; box-decoration-break: clone;
+	border-radius:.1em; }
 pre > code { font-size: 1em; line-height: 1.556;
 	white-space: pre-wrap; }
 
