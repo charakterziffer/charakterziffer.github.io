@@ -179,18 +179,18 @@ audio { margin: 0.6em 0 0.1em; width:100%; }
 
 /* FORMULARE */
 
-form input[type=text], form input[type=email], form input[type=url],
-form input[type=submit] { font-size: 0.9em; line-height: 1.556; }
+input { font: inherit; font-size: 0.9em; line-height: 1.556; }
 textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; overflow: auto;
-	resize: vertical; }
+	resize: vertical; font: inherit;}
 form > div { padding-top: 0.4em; clear: both; }
 
-form label { position: relative; float: left; top: 0.2em; width: 20%;
-	font: bold 0.9em/1.556 Bitter,Georgia,serif; }
+form label { position: relative; float: left; top: 0.3em; width: 20%;
+	margin-bottom:.6em; font: bold 0.9em/1.556 Bitter,Georgia,serif; }
 form label:after { content: ': '; }
 form > div > div { float: right; width: 78%; padding-right: 2%; }
 form input[type=text], form input[type=email], form input[type=url] {
 	width: 50%; }
+[type="submit"] { -webkit-appearance: button; }
 
 @media (max-width: 54em) {
 form label { float: none; top: 0; width: 100%; }
