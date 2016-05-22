@@ -53,6 +53,66 @@
 
 
 	<article>
+	<time datetime="2016-05-23">Mo, 23. Mai 2016</time>
+	<h1><a href="user-css.html">Deine Website, mein CSS</a></h1>
+	<p>Als Gestalter hat man einen Blick dafür, wenn Dinge nicht ganz optimal aussehen. Ob das nun zu kleine Schrift ist, ein störender Banner oder typografische Details (wie im xkcd-Comic <a href="https://www.xkcd.com/1015/">Bad Kerning</a>). Würde man jedes Mal den jeweiligen Urheber anschreiben, das Problem erklären und warum die Welt viel schöner wäre, wenn man das anders gestaltet – man käme gar nicht mehr dazu, sein Mailprogramm zu schließen. Und gefrustet wäre man am Ende auch, denn nicht jeder sieht ein, warum so ein Detail geändert werden sollte.</p>
+
+<p>Falls diese „Gestaltungsfehler“ auf einer Websites zu finden sind (und man ein bisschen <a href="https://wiki.selfhtml.org/wiki/CSS">CSS</a> kann), habe ich eine gute Nachricht: Jeder Internetnutzer kann die Darstellung beliebiger Websites in seinem Browser beeinflussen – und so wenigstens seine eigene Welt ein bisschen schöner machen. Möglich machen das benutzerdefinierte CSS-Befehle.</p>
+
+<h2 id="was-ist-user-css">Was ist User-CSS?</h2>
+
+<p>Dabei handelt es sich um CSS-Anweisungen in einer Datei oder innerhalb einer Browser-Erweiterung. Mit diesem CSS kann man Formatierungen auf jeder beliebigen Website einfach überschreiben. Beispielsweise macht für mich der Code</p>
+
+<pre><code>a:visited { color: #752 !important; }
+</code></pre>
+
+<p>besuchte Links auf der Website <a href="http://ubuntuusers.de">http://ubuntuusers.de</a> dunkler. So kann ich erkennen, welche Verweise ich schon einmal aufgerufen habe. Ein weiteres Beispiel aus meiner Nutzer-CSS-Datei:</p>
+
+<pre><code>.postArticle-content, .notesPositionContainer {
+   letter-spacing: 0 !important; }
+.postActionsBar { display: none !important; }
+</code></pre>
+
+<p>Das zeigt mir die Texte auf <a href="http://medium.com">http://medium.com</a> ohne Buchstaben-Sperrung und blendet die untere Leiste aus. Weitere Anpassungen in meiner Nutzer-CSS-Datei aktivieren auf Wikipedia die Silbentrennung, entfernen nervige Overlay-Hinweise diverser Seiten, machen fixierte Menüs scrollbar oder ändern die Schriftfarbe von blassgrau auf lesbares dunkelgrau.</p>
+
+<h2 id="wohin-mit-meinen-css-korrekturen">Wohin mit meinen CSS-Korrekturen?</h2>
+
+<p>Je nach Browser und Betriebssystem geht man ein wenig anders vor. Am besten finde ich die Lösung von Firefox, eigene CSS-Anweisungen in eine bestimmte Datei im Profil-Ordner zu legen. Das war einst auch mit Chrome und Opera möglich, jetzt benötigen diese Browser eine Erweiterung. Im Einzelnen:</p>
+
+<h3 id="mozilla-firefox">Mozilla Firefox</h3>
+
+<p>Hier stehen die CSS-Anpassungen in einer Datei namens <code>userContent.css</code>. Sie liegt im eigenen Profil-Ordner im Verzeichnis <code>chrome</code> (muss evtl. erst angelegt werden). Bei Linux also unter <code>~/.mozilla/firefox/&lt;Profil-Ordner&gt;/chrome/userContent.css</code>, bei Windows unter <code>%APPDATA%\Mozilla\Firefox\Profiles\&lt;Profil-Ordner&gt;\chrome\userContent.css</code>. Die Mozilla-Hilfe erklärt, wie man den <a href="https://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten">Profil-Ordner findet</a>.</p>
+
+<p>Möchte man CSS-Stile nur auf einer bestimmten Website anwenden, umschließt man sie mit</p>
+
+<pre><code>@-moz-document domain(EXAMPLE.COM) { &lt;CSS-Code&gt; }
+</code></pre>
+
+<h3 id="internet-explorer-und-microsoft-edge">Internet-Explorer und Microsoft Edge</h3>
+
+<p>Laut <a href="https://www.itsupportguides.com/computer-accessibility/how-to-use-a-custom-style-sheet-css-with-internet-explorer/">IT Support Guides</a> (engl.) kann man im Internet-Explorer den Speicherort seiner CSS-Datei frei wählen. Ich bin mir aber nicht sicher, ob man damit CSS-Stile auf bestimmte Seiten einschränken kann. Microsoft Edge scheint im Augenblick <a href="http://stackoverflow.com/questions/33060628/how-to-attach-user-css-to-microsoft-edge#33060668">User-Stylesheets nicht zu unterstützen</a>.</p>
+
+<h3 id="opera">Opera</h3>
+
+<p>Für Opera muss man auf eine Erweiterung zurückgreifen, zum Beispiel <a href="https://addons.opera.com/de/extensions/details/user-css/">User-CSS</a>. Nach Installation und Neustart des Browsers kann man auf das blaue Icon rechts oben klicken und zu einer bestimmten Website eigene CSS-Anweisungen hinzufügen.</p>
+
+<h3 id="chrome-und-safari">Chrome und Safari</h3>
+
+<p>Eine sehr verbreitete Erweiterung, um Website-CSS anzupassen, ist <em>Stylish</em> (<a href="https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe">für Chrome</a> und <a href="http://sobolev.us/stylish/">für Safari</a>). Hiermit habe ich aber keine Erfahrungen und kann nur auf die englischsprachige <a href="https://userstyles.org/help/stylish_chrome">Anleitung des Entwicklers</a> verweisen.</p>
+
+<p>Mit Stylish (das es übrigens auch <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">für Firefox</a> und <a href="https://addons.opera.com/de/extensions/details/stylish/">für Opera</a> gibt) kann man eigene CSS-Anpassungen verwalten oder vorgefertigte Stildateien von <a href="http://userstyles.org">http://userstyles.org</a> installieren. So erscheint Facebook dann zum Beispiel im schwarz-grünen <a href="https://userstyles.org/styles/99184/facebook-monster-energy-by-royal-style">Monster-Energy-Look</a>. Wem’s gefällt.</p>
+
+<h2 id="vieles-ist-mglich">Vieles ist möglich</h2>
+
+<p>Man muss sich nicht mit einer schlecht gestalteten Website abfinden. Wer seine Google-Ergebnisse lieber in Comic Sans lesen möchte, hat mit User-CSS die Möglichkeit dazu.</p>
+
+<p><img src="material/comic-google.png" alt="Google-Ergebnisse in Comic Sans" /></p>
+
+	<p>---<br> <a href="user-css.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2016-04-26">Di, 26. Apr. 2016</time>
 	<h1><a href="fuchs-6.html">Ausgefuchste Antworten</a></h1>
 	<p>Der Fuchs aus meiner Twitterserie „Fuchs und Ballerina“ ist schon ein schlauer Kerl. Er fühlt sich ein, schaut voraus und beratschlagt weise. Kein Wunder, dass die Ballerina sich an ihn wendet, wenn ihre künstlerische Seele mal wieder unter den erbarmungslosen Herausforderungen des Alltags leidet. Was der Fuchs dann so antwortet? Hier ist es nachzulesen:</p>
@@ -175,28 +235,6 @@
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2016-02-19">Fr, 19. Feb. 2016</time>
-	<h1><a href="apostroph.html">Die richtige Verwendung des Apostrophs</a></h1>
-	<p>Der Apostroph ( <strong>’</strong> griechisch: <em>der Abgewandte</em>) ist ein Satzzeichen, mit dem leider viel Schindluder getrieben wird. Oft wird damit das Mehrzahl-s abgetrennt <em>(Auto’s, CD’s)</em> oder das „s“ des Genitivs <em>(Luise’s Studio, Bernd’s Werkstatt)</em>. Falsch ist der Apostroph auch bei Befehlsformen <em>(Komm’ her! Geh’ weg!)</em>.</p>
-
-<p>Dabei ist es gar nicht so schwer, denn eigentlich gibt es nur zwei Fälle, in denen der Apostroph zum Einsatz kommt.</p>
-
-<ol>
-  <li>
-    <p>Der Apostroph kennzeichnet Stellen, wo <strong>Buchstaben ausgelassen</strong> wurden. Beispiele: <em>Hast du ’nen Euro? Heute ist’s kalt am Ku’damm, kälter als in M’Gladbach.</em></p>
-  </li>
-  <li>
-    <p>Der Apostroph <strong>verdeutlicht Eigennamen</strong>, wenn eine Endung dazukommt: <em>Grimm’sche Märchen, Ohm’scher Widerstand.</em> So hilft der Apostroph auch beim Genitiv, wenn andernfalls Namen unklar (!) wären: <em>Andrea’s Freundin</em> (nicht die von Andreas) – oder wenn Namen bereits auf einem S-Laut enden: <em>Klaus’ Auto, Alex’ Fahrrad</em>.</p>
-  </li>
-</ol>
-
-<p>Ausführlich nachlesen kann man die Regeln zum Gebrauch des Apostrophs bei <a href="http://www.belleslettres.eu/artikel/apostroph.php">Belles Lettres</a> oder auf <a href="http://canoo.net/services/GermanSpelling/Regeln/Interpunktion/Apostroph.html">Canoo.net</a>. Übrigens findet sich das korrekte Apostroph-Zeichen nicht auf einer normalen Computertastatur. Wer typografisches Feingefühl an den Tag legen möchte, sollte auf ' oder ` verzichten. Siehe dazu auch den Artikel bei <a href="http://typefacts.com/artikel/apostroph">Typefacts</a>.</p>
-
-	<p>---<br> <a href="apostroph.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -221,7 +259,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-05-20T17:28:32+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-05-23T00:01:43+02:00</p>
 
 </main> <!-- hauptfeld -->
 </div> <!-- container -->
