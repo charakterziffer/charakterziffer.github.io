@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="de"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Does your browser display OpenType features? Find it out on this test page">
 <meta name="author" content="Gerhard Großmann">
 <title>OpenType Feature Test</title>
 <meta name="keywords" content="Otfeat, OpenType, open type, css3, test, feature, font">
-<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJkDgAOpczADWaLQAzoSsAPqUrACqqLwBHpUMAX6lSAFWuSQBst2AAfsCBAJHGjQC72rIA2O3ZAPr9+wAAAAAA8AHdfukAAADaER7O6gERAL7RF+7pI4MgAewivuki5iEB3iIt6iLdzPHuIibqIt7u/e0iJEFEmar+6SIyM1U1Nf5xi6qqpFVV+yKN7u7YVTT+oiJu4jNTiPznEo7oQ67uC+sRfugo7qb76xJ+5hjtE/7mIY7mImgk/pQknuhCIi+AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAAAAAAAgAAAAIAAAACAAQAA" type="image/x-icon">
+<meta name="robots" content="index, follow">
+
+<link rel="apple-touch-icon-precomposed" href="bestand/touchicon.png">
+<link rel="icon" href="bestand/favicon.png">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="bestand/tileicon.png">
+<link rel="mask-icon" href="bestand/safari-pin.svg" color="#228811">
+
 <style>
 <!--
 @font-face {font-family: 'Otfeat'; src: url('otfeat.eot');
@@ -35,17 +43,9 @@ p { font: 1em/1.4em Georgia,serif;
 .otfeat {font: 2.9em/1.3em 'Otfeat',monospace; margin: 0.2em 0 -0.2em; color:#2c2c2c;}
 
 .alloff { -webkit-font-feature-settings: "smcp" off, "c2sc" off, "c2pc" off, "pcap" off, "case" off, "salt" off, "ss01" off, "hist" off, "locl" off, "swsh" off, "titl" off, "unic" off, "ornm" off, "ital" off, "subs" off, "sinf" off, "sups" off, "mgrk" off, "nalt" off, "tnum" off, "pnum" off, "lnum" off, "onum" off, "zero" off, "kern" off, "cpsp" off, "liga" off, "dlig" off, "hlig" off, "clig" off, "calt" off, "cswh" off, "ordn" off, "numr" off, "dnom" off, "frac" off, "afrc" off, "fina" off;
--moz-font-feature-settings: "smcp=0, c2sc=0, c2pc=0, pcap=0, case=0, salt=0, ss01=0, hist=0, locl=0, swsh=0, titl=0, unic=0, ornm=0, ital=0, subs=0, sinf=0, sups=0, mgrk=0, nalt=0, tnum=0, pnum=0, lnum=0, onum=0, zero=0, kern=0, cpsp=0, liga=0, dlig=0, hlig=0, clig=0, calt=0, cswh=0, ordn=0, numr=0, dnom=0, frac=0, afrc=0, fina=0";
--moz-font-feature-settings: "smcp" 0, "c2sc" 0, "c2pc" 0, "pcap" 0, "case" 0, "salt" 0, "ss01" 0, "hist" 0, "locl" 0, "swsh" 0, "titl" 0, "unic" 0, "ornm" 0, "ital" 0, "subs" 0, "sinf" 0, "sups" 0, "mgrk" 0, "nalt" 0, "tnum" 0, "pnum" 0, "lnum" 0, "onum" 0, "zero" 0, "kern" 0, "cpsp" 0, "liga" 0, "dlig" 0, "hlig" 0, "clig" 0, "calt" 0, "cswh" 0, "ordn" 0, "numr" 0, "dnom" 0, "frac" 0, "afrc" 0, "fina" 0;
--ms-font-feature-settings: "smcp" 0, "c2sc" 0, "c2pc" 0, "pcap" 0, "case" 0, "salt" 0, "ss01" 0, "hist" 0, "locl" 0, "swsh" 0, "titl" 0, "unic" 0, "ornm" 0, "ital" 0, "subs" 0, "sinf" 0, "sups" 0, "mgrk" 0, "nalt" 0, "tnum" 0, "pnum" 0, "lnum" 0, "onum" 0, "zero" 0, "kern" 0, "cpsp" 0, "liga" 0, "dlig" 0, "hlig" 0, "clig" 0, "calt" 0, "cswh" 0, "ordn" 0, "numr" 0, "dnom" 0, "frac" 0, "afrc" 0, "fina" 0;
--o-font-feature-settings: "smcp" off, "c2sc" off, "c2pc" off, "pcap" off, "case" off, "salt" off, "ss01" off, "hist" off, "locl" off, "swsh" off, "titl" off, "unic" off, "ornm" off, "ital" off, "subs" off, "sinf" off, "sups" off, "mgrk" off, "nalt" off, "tnum" off, "pnum" off, "lnum" off, "onum" off, "zero" off, "kern" off, "cpsp" off, "liga" off, "dlig" off, "hlig" off, "clig" off, "calt" off, "cswh" off, "ordn" off, "numr" off, "dnom" off, "frac" off, "afrc" off, "fina" off;
 font-feature-settings: "smcp" off, "c2sc" off, "c2pc" off, "pcap" off, "case" off, "salt" off, "ss01" off, "hist" off, "locl" off, "swsh" off, "titl" off, "unic" off, "ornm" off, "ital" off, "subs" off, "sinf" off, "sups" off, "mgrk" off, "nalt" off, "tnum" off, "pnum" off, "lnum" off, "onum" off, "zero" off, "kern" off, "cpsp" off, "liga" off, "dlig" off, "hlig" off, "clig" off, "calt" off, "cswh" off, "ordn" off, "numr" off, "dnom" off, "frac" off, "afrc" off, "fina" off;}
 
 .allon { -webkit-font-feature-settings: "smcp", "c2sc", "c2pc", "pcap", "case", "salt", "ss01", "hist", "locl", "swsh", "titl", "unic", "ornm", "ital", "subs", "sinf", "sups", "mgrk", "nalt", "tnum", "pnum", "lnum", "onum", "zero", "kern", "cpsp", "liga", "dlig", "hlig", "clig", "calt", "cswh", "ordn", "numr", "dnom", "frac", "afrc", "fina";
--moz-font-feature-settings: "smcp=1, c2sc=1, c2pc=1, pcap=1, case=1, salt=1, ss01=1, hist=1, locl=1, swsh=1, titl=1, unic=1, ornm=1, ital=1, subs=1, sinf=1, sups=1, mgrk=1, nalt=1, tnum=1, pnum=1, lnum=1, onum=1, zero=1, kern=1, cpsp=1, liga=1, dlig=1, hlig=1, clig=1, calt=1, cswh=1, ordn=1, numr=1, dnom=1, frac=1, afrc=1, fina=1";
--moz-font-feature-settings: "smcp" 1, "c2sc" 1, "c2pc" 1, "pcap" 1, "case" 1, "salt" 1, "ss01" 1, "hist" 1, "locl" 1, "swsh" 1, "titl" 1, "unic" 1, "ornm" 1, "ital" 1, "subs" 1, "sinf" 1, "sups" 1, "mgrk" 1, "nalt" 1, "tnum" 1, "pnum" 1, "lnum" 1, "onum" 1, "zero" 1, "kern" 1, "cpsp" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1, "calt" 1, "cswh" 1, "ordn" 1, "numr" 1, "dnom" 1, "frac" 1, "afrc" 1, "fina" 1;
--ms-font-feature-settings: "smcp" 1, "c2sc" 1, "c2pc" 1, "pcap" 1, "case" 1, "salt" 1, "ss01" 1, "hist" 1, "locl" 1, "swsh" 1, "titl" 1, "unic" 1, "ornm" 1, "ital" 1, "subs" 1, "sinf" 1, "sups" 1, "mgrk" 1, "nalt" 1, "tnum" 1, "pnum" 1, "lnum" 1, "onum" 1, "zero" 1, "kern" 1, "cpsp" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1, "calt" 1, "cswh" 1, "ordn" 1, "numr" 1, "dnom" 1, "frac" 1, "afrc" 1, "fina" 1;
--o-font-feature-settings: "smcp", "c2sc", "c2pc", "pcap", "case", "salt", "ss01", "hist", "locl", "swsh", "titl", "unic", "ornm", "ital", "subs", "sinf", "sups", "mgrk", "nalt", "tnum", "pnum", "lnum", "onum", "zero", "kern", "cpsp", "liga", "dlig", "hlig", "clig", "calt", "cswh", "ordn", "numr", "dnom", "frac", "afrc", "fina";
 font-feature-settings: "smcp", "c2sc", "c2pc", "pcap", "case", "salt", "ss01", "hist", "locl", "swsh", "titl", "unic", "ornm", "ital", "subs", "sinf", "sups", "mgrk", "nalt", "tnum", "pnum", "lnum", "onum", "zero", "kern", "cpsp", "liga", "dlig", "hlig", "clig", "calt", "cswh", "ordn", "numr", "dnom", "frac", "afrc", "fina"; }
 -->
 </style>

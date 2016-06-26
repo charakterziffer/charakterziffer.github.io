@@ -76,8 +76,7 @@ h3 { font-size: 0.9em; line-height: 1.556; color: #222;
 p, ul, ol { margin-bottom: -0.3em;
 	-webkit-font-feature-settings: "onum", "liga", "kern"; font-feature-settings: "onum", "liga", "kern";
 /*	statt CSS-hyphens wird noch hyphenator.js verwendet
-	-webkit-hyphens: auto; -moz-hyphens: auto;
-	-ms-hyphens: auto; hyphens: auto; */ }
+	-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; */ }
 aside p { margin-bottom: -0.22em; font-size: 0.9em;
 	line-height: 1.556; }
 
