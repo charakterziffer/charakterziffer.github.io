@@ -14,6 +14,34 @@
 </image>
 
 <item>
+	<title>Tintengläschen voller Farben</title>
+	<description>&lt;p&gt;Als bevorzugtes Schreibgerät verwende ich einen Füller. Seit gut anderthalb Jahren ist das ein &lt;a href=&quot;http://www.kaweco-pen.com/de/Schreibgeraete/andere_serien/special/fuellhalter/special_fuellhalter_neu.php&quot;&gt;Kaweco SPECIAL Füllhalter&lt;/a&gt;, davor waren es ein sehr alter Aufziehfüller und ein einfacher Werbegeschenk-Füller.&lt;/p&gt;
+
+&lt;p&gt;Was alle drei gemeinsam haben? Ich bestück(t)e sie nicht mit Patronen, sondern befüll(t)e sie direkt aus dem Tintenglas. Das halte ich für eine ökonomische und umweltfreundliche Art zu schreiben. Auch was die Tintenfarbe angeht, bin ich so flexibler, schließlich kann ich den gewünschten Farbton aus erhältlichen Tinten mischen (was ich aber eher selten mache).&lt;/p&gt;
+
+&lt;p&gt;Anfangs habe ich nur mit gewöhnlicher königsblauer Tinte geschrieben (von Lamy und Pelikan). Vor zehn Jahren habe ich mir dann mal in einem Bamberger Schreibwarenladen ein Gläschen Havanna-Braun von Waterman gekauft. Es schien mir eine schöne Ergänzung zum normalen Blau. Und wenn man erst einmal damit angefangen hat …&lt;/p&gt;
+
+&lt;p&gt;Derzeit verwende ich sieben verschiedene Tintenfarben – eine recht vernünftige Anzahl, wie ich finde. Nachdem ich zuletzt vor drei Jahren zwei Tintengläser geschenkt bekommen habe (man kennt mich ja), habe ich mir einen Einkaufs- und meinen Bekannten einen Tinten-Schenke-Stopp verordnet. So viel kann ich sonst ja gar nicht aufs Papier bringen.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/farbtinten.jpg&quot; alt=&quot;Die Farben meiner sieben Tinten&quot; /&gt;
+	&lt;figcaption&gt;Leider gibt der Scan die Farbtöne nur mäßig gut wieder. Türkis, violett und vor allem safranfarben sind im Original viel leuchtender.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Meine Farbpalette reicht von sehr hellem Orange über gedämpftes Rot, gedecktes Graugrün, leuchtendes Türkis und zurückhaltendes Violett bis hin zu schmutzigem Braun und dunklem Blauschwarz. Einmal aufgetankt hält die Tinte ungefähr einen Monat, danach wechsle ich erschreckend systematisch auf die nachfolgende Farbe (es gibt da eine gewisse Reihenfolge …). Als schönen Nebeneffekt sehe ich an der Tintenfarbe gleich, in welchem Monat ungefähr ich etwas geschrieben habe.&lt;/p&gt;
+
+&lt;p&gt;Zu welchen besonderen Anlässen ich meinen Füller verwende? Zu gar keinen; ich schreibe nämlich &lt;em&gt;nahezu alles&lt;/em&gt; damit: Einkaufszettel, Notizbucheinträge, Rezepte, Textskizzen, … und gelegentlich auch Briefe.&lt;/p&gt;
+
+&lt;p&gt;Wer übrigens schon immer mal einen handgeschriebenen Brief von mir bekommen wollte, schicke mir einfach einen ebensolchen an &lt;a href=&quot;index.html#impressum&quot;&gt;meine Adresse&lt;/a&gt;. Ich antworte mindestens im gleichen Umfang … nun ja, außer es sind mehr als fünf A4-Seiten. Im Augenblick käme die Antwort in (mit der Zeit nachgedunkeltem) Braun zurück, ab Mitte/Ende Juli in Seetang-Grün.&lt;/p&gt;
+
+&lt;p&gt;Schreibt ihr noch &lt;a href=&quot;totgeschriebene.html&quot;&gt;mit der Hand&lt;/a&gt;? Habt ihr einen „Lieblingsstift“?&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/tintenfarben.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/tintenfarben.html</guid>
+	<pubDate>Thu, 30 Jun 2016 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Deine Website, mein CSS</title>
 	<description>&lt;p&gt;Als Gestalter hat man einen Blick dafür, wenn Dinge nicht ganz optimal aussehen. Ob das nun zu kleine Schrift ist, ein störender Banner oder typografische Details (wie im xkcd-Comic &lt;a href=&quot;https://www.xkcd.com/1015/&quot;&gt;Bad Kerning&lt;/a&gt;). Würde man jedes Mal den jeweiligen Urheber anschreiben, das Problem erklären und warum die Welt viel schöner wäre, wenn man das anders gestaltet – man käme gar nicht mehr dazu, sein Mailprogramm zu schließen. Und gefrustet wäre man am Ende auch, denn nicht jeder sieht ein, warum so ein Detail geändert werden sollte.&lt;/p&gt;
 
@@ -220,55 +248,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/apostroph.html</guid>
 	<pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Geschichten fürs Ohr</title>
-	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Thematisch passend gibt es diesen Artikel auch zum Anhören:
-&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot; tabindex=&quot;0&quot;&gt;
-	&lt;source src=&quot;material/hoerspiele.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/hoerspiele.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
-&lt;/audio&gt;
-&lt;/p&gt;
-
-&lt;p&gt;„Gibt’s das heutzutage überhaupt noch? Und ist das nicht nur was für Kinder?“ – Die Fragen bekomme ich meistens gestellt, wenn ich davon erzähle, wie gerne ich Hörspiele höre.&lt;/p&gt;
-
-&lt;p&gt;Zum ersten: Ja, es gibt noch Hörspiele, und zwar eine ganz schöne Menge. Der deutschsprachige Rundfunk hat dafür pro Woche über fünfzig Sendeplätze reserviert. Eine gute Informationsquelle (weil senderübergreifend) ist hier die &lt;a href=&quot;http://hördat.de/&quot;&gt;HörDat&lt;/a&gt;. Hinter der etwas nüchternen Weboberfläche steckt eine gut gepflegte Datenbank, mithilfe derer sich aktuelle Ausstrahlungstermine finden lassen. Ich wähle in der Suchmaske als Sendezeitraum meistens die kommende Woche und hake das Kästchen bei „alle Sender“ an. So bekomme ich einen guten Überblick und stelle mir mein Radioprogramm zusammen.&lt;/p&gt;
-
-&lt;p&gt;Eine ähnliche Übersicht bietet der &lt;a href=&quot;http://programm.ard.de/Radio/Listen/Kalender/Hoerspiel&quot;&gt;Hörspielkalender der ARD&lt;/a&gt;. Zwar beschränkt er sich auf die ARD-Radiowellen, ist meinem Eindruck nach aber vollständiger und genauer. Trotzdem nutze ich diese Programmübersicht kaum, weil sie auf den ersten Blick zu wenige Informationen anzeigt. Ich habe keine Lust, mich für einen schnellen Überblick durch eine Liste aus Klappkästen zu klicken.&lt;/p&gt;
-
-&lt;p&gt;Eine dritte Möglichkeit, sich über laufende Hörspiele zu informieren, sind die entsprechenden Programmhefte einzelner Sender. Man kann sich die (in der Regel) halbjährlich erscheinenden Hefte oft sogar kostenlos zuschicken lassen oder als PDF herunterladen. Entsprechende Broschüren gibt es beispielsweise &lt;a href=&quot;http://www.deutschlandradiokultur.de/dkultur-horspielbroschure-jan-jun-2016.media.1479b899e0d94c4b5b72147f7a539a0b.pdf&quot;&gt;vom Deutschlandradio&lt;/a&gt; (PDF, 10 MB), &lt;a href=&quot;https://ssl.br.de/radio/bayern2/sendungen/hoerspiel-und-medienkunst/publikationen/Programmheft-Bestellung100.html?ssl=true&quot;&gt;vom Bayerischen Rundfunk&lt;/a&gt; oder &lt;a href=&quot;http://www.swr.de/swr2/hoerspiel-feature/hoerspielbroschuere-bestellen/-/id=661194/cf=42/did=3716294/nid=661194/1loap52/index.html&quot;&gt;dem SWR&lt;/a&gt;. Natürlich informieren die Sender zusätzlich auf ihren Internetseiten über ihr Hörspielangebot.&lt;/p&gt;
-
-&lt;h2 id=&quot;breitgefchertes-hrspielangebot-auch-zum-download&quot;&gt;Breitgefächertes Hörspielangebot, auch zum Download&lt;/h2&gt;
-
-&lt;p&gt;Wäre noch die zweite Frage zu klären, ob das nicht nur etwas für Kinder sei. Definitiv nicht. Es gibt sogar Hörspiele, die ganz sicher nicht für Kinder geeignet sind, zum Beispiel viele Produktionen von 1LIVE. Sie enthalten schon mal soviel Sex oder Gewalt, dass der Sendeplatz dienstags/donnerstags um 23 Uhr wirklich gerechtfertigt ist.&lt;/p&gt;
-
-&lt;p&gt;Allgemein ist das Hörspielprogramm deutschsprachiger Wellen sehr breit gefächert. Es gibt unter anderem heitere Mundarthörspiele (14-tägig samstags um 21:05 Uhr auf SWR4), atmosphärische oder schräge Klangkunst (freitags, 0:05 Uhr im Deutschlandradio Kultur) und Trash- oder Action-Hörspiele (dienstags, 23 Uhr auf 1LIVE). Dazu natürlich Krimis (samstags, 17:05 Uhr im WDR5), experimentelle Hörspiele (freitags, 21:05 in Bayern2), Kindergeschichten (sonntags, 8:05 Uhr im Deutschlandradio Kultur), Literaturbearbeitungen sowie Kurzhörspiele (werktäglich um 13:10 Uhr, MDR Figaro) … Das sind natürlich nur einige Beispiele.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/radioskala.jpg&quot; alt=&quot;Senderskala eines Radios&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Und wer „einfach keine Zeit zum Radiohören“ hat, kann viele Hörspiele mittlerweile für eine Woche oder länger online nachhören oder sogar herunterladen. Der Bayerische Rundfunk ist da ein großer Vorreiter und stellt (soweit ich weiß) alle Neuproduktionen zum Download in seinen &lt;a href=&quot;http://www.br.de/radio/bayern2/sendungen/hoerspiel-und-medienkunst/hoerspiel-pool/index.html&quot;&gt;Hörspielpool&lt;/a&gt; – größtenteils etwas sperrige (=anspruchsvolle?) Kost. Auch bei 1LIVE (&lt;a href=&quot;http://www.einslive.de/einslive/on-air/sendungen/krimi/&quot;&gt;Krimis&lt;/a&gt;, &lt;a href=&quot;http://www.einslive.de/einslive/on-air/sendungen/soundstories&quot;&gt;Soundstories&lt;/a&gt;) oder dem &lt;a href=&quot;http://www.srf.ch/sendungen/hoerspiel&quot;&gt;Schweizer Radio und Fernsehen&lt;/a&gt; kann man viele Sendungen finden. Wer Krimis mag, könnte am monatlichen &lt;a href=&quot;http://www.ard.de/home/radio/ARD_Radio_Tatort/94130/index.html&quot;&gt;Radiotatort&lt;/a&gt; Interesse haben (die Qualität ist so gemischt wie beim Fernsehtatort, mit Perlen und Mist). Die Nachhör-/Download-Angebote aller ARD-Wellen trägt (etwas unübersichtlich) die &lt;a href=&quot;http://www.ardmediathek.de/radio/H%25C3%25B6rspiele/mehr?documentId=21301890&quot;&gt;ARD-Mediathek&lt;/a&gt; zusammen. Eine weitere senderübergreifende Übersicht von Download-Hörspielen bietet die Website &lt;a href=&quot;http://www.radio-today.de/hoerspiel-download.php&quot;&gt;Radio Today&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;persnliche-tipps&quot;&gt;Persönliche Tipps&lt;/h2&gt;
-
-&lt;p&gt;Was ich gerne höre sind unter anderem ältere, klassisch erzählte Krimis, zum Beispiel die Geschichten um &lt;a href=&quot;https://de.wikipedia.org/wiki/Professor_van_Dusen&quot;&gt;Professor van Dusen&lt;/a&gt;. Aus urheberrechtlichen Gründen gibt es diese Hörspiele nicht im Internet. Aber einige andere stehen online, zumindest eine Zeitlang. Hier ein paar Empfehlungen:&lt;/p&gt;
-
-&lt;p&gt;Action, spannende Wendungen und eine (teils absurde) Geschichte: &lt;a href=&quot;http://www.einslive.de/einslive/on-air/sendungen/krimi/the-cruise-104.html&quot;&gt;The Cruise&lt;/a&gt; ist ein achtteiliges Hörspiel, in dem sich eine Gruppe Menschen plötzlich allein auf einem riesigen Luxusdampfer wiederfindet. Tolle Sprecher, ziemlich geiles Sounddesign.&lt;/p&gt;
-
-&lt;p&gt;Leider kann man „Gras wachsen hören“ nicht mehr nachhören. Aber das Stück über ein fiktives Pflanzeninstitut läuft wieder am Sonntag, den 21. Februar 2016, um 21 Uhr auf &lt;a href=&quot;http://www.ndr.de/info/epg/stationndrinfo102-radioplayer.html&quot;&gt;NDR Info&lt;/a&gt; (zukünftige Sendetermine auf &lt;a href=&quot;http://www.liquidpenguin.de/Termine.html&quot;&gt;liquidpenguin.de&lt;/a&gt;). Die Wartezeit bis dahin könnte man mit &lt;a href=&quot;http://www.deutschlandradiokultur.de/hoerspielpreis-der-kriegsblinden-ickelsamers-alphabet.964.de.html?dram:article_id=301903&quot;&gt;Ickelsamers Alphabet&lt;/a&gt; vom gleichen Autorenteam überbrücken &lt;em&gt;[Nachtrag 9.1.2016: Hörspiel nicht mehr online]&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.wdr3.de/programm/sendungen/wdr3hoerspiel/atlas-der-abgelegenen-inseln-100.html&quot;&gt;Der Atlas der abgelegenen Inseln&lt;/a&gt;  ist eine Hörspielinszenierung des gleichnamigen Buchs von Judith Schalanski. Teils poetisch, skurril, schön komponiert.&lt;/p&gt;
-
-&lt;p&gt;Ein klassischer Krimi im Sport-Milieu ist &lt;a href=&quot;http://www.wdr5.de/sendungen/krimiamsamstag/tod-eines-fussballers-100.html&quot;&gt;Tod eines Fußballers&lt;/a&gt;. Ein bisschen durchsichtiges Mordmotiv, aber die Ermittlungsarbeit ist unterhaltsam.&lt;/p&gt;
-
-&lt;p&gt;Kein Hörspiel sondern ein sehr spannendes Feature ist &lt;a href=&quot;http://www.mdr.de/mdr-figaro/hoerspiel/feature/jalloh-overath100.html&quot;&gt;Ouri Jallouh&lt;/a&gt;. Es untersucht den Todesfall eines Asylbewerbers, der gefesselt in einer Polizeizelle verbrannt ist. Gut recherchiert, sehr gut erzählt.&lt;/p&gt;
-
-&lt;p&gt;Wie ist eure Erfahrung mit Hörspielen? Habt ihr Empfehlungen, vielleicht auch für Podcasts? Kennt ihr noch gute Webangebote zu Hörspielen? Ich freue mich über Kommentare!&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/hoerspiele.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/hoerspiele.html</guid>
-	<pubDate>Tue, 05 Jan 2016 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
