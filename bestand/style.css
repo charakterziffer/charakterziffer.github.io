@@ -122,9 +122,9 @@ blockquote { padding-left: 0.3em; border-width: 0.4em; }
 
 .klappkasten input { position: absolute; top: 0; left: 0;
 	width: 98.5%; height: 2.1em; opacity: 0; cursor: pointer; }
-.klappkasten label { cursor: pointer;}
+.klappkasten label { cursor: pointer; }
 
-.klappkasten label:before { content: "→"; padding-right:0.3em;}
+.klappkasten label:before { content: "→"; padding-right:0.3em; }
 .klappkasten input:checked ~ label:before { content: "↓"; }
 
 .klappkasten p { max-height: 0; margin: 0 0.2em; overflow: hidden;
@@ -224,7 +224,7 @@ main { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
 
 h1, h2, h3, h4, h5, h6, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
-.logo > span { margin: 0; padding-top: 0.1em;}
+.logo > span { margin: 0; padding-top: 0.1em; }
 time { margin-top: -0.2em; }
 p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited { color: #000; }
@@ -239,7 +239,7 @@ figcaption, blockquote, .hinterlegt, .klappkasten {
 blockquote + blockquote { margin-top: 0.7em; }
 blockquote > p { margin: 0 0 0.3em; }
 
-.no-print,a[href$="#kommentieren"],a[href$="#kommentare"] {
+.no-print, a[href$="#kommentieren"], a[href$="#kommentare"] {
 	display: none; }
 a:after { content: " [" attr(href) "] ";
 	font: italic 1rem/1.4 'Source Sans Pro',Calibri,Arial,sans-serif; }
