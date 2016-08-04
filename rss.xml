@@ -14,6 +14,38 @@
 </image>
 
 <item>
+	<title>Podcasts als Informationsquelle</title>
+	<description>&lt;p&gt;Ich bin ein Ohrenmensch. Nicht weil ich ein absolutes Gehör hätte oder besonders viel Musik hören würde, sondern weil ich einen Großteil meiner Informationen übers Gehör konsumiere – in Form von Nachrichten, Magazine, Diskussionen (über &lt;a href=&quot;hoerspiele.html&quot;&gt;Hörspiele&lt;/a&gt; habe ich ja schon geschrieben; meinen Internetkonsum lasse ich aus dramaturgischen Gründen mal außen vor). Dabei höre ich nicht nur gerne das Wortprogramm im Radio, sondern habe auch so einige Podcasts abonniert.&lt;/p&gt;
+
+&lt;h2 id=&quot;podcasts&quot;&gt;Podcasts?&lt;/h2&gt;
+
+&lt;p&gt;Ja genau: Diese regelmäßig erscheinenden Audio-Dateien, die man im Internet findet und mithilfe eines Programms („Podcatcher“) automatisiert herunterladen kann.&lt;/p&gt;
+
+&lt;p&gt;In den letzten Jahren erlebt der Begriff &lt;em&gt;Podcast&lt;/em&gt; einen Bedeutungswandel und einige meinen damit grundsätzlich jede Audiodatei, die man im Netz anhören kann; für mich muss ein Podcast aber regelmäßig erscheinen und plattformunabhängig sein. Wenn ich mir zum Anhören erst die spezielle App eines bestimmten Herstellers installieren muss, dann ist es in meinen Augen kein Podcast mehr, sondern höchstens eine Audio-Show oder -Serie. Diskutiert wurde darüber letztens im Podcast &lt;em&gt;Frequenz 4000&lt;/em&gt; (Folge 6, ab Restzeit ca. 43 Minuten):&lt;/p&gt;
+
+&lt;script class=&quot;podigee-podcast-player&quot; src=&quot;https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js&quot; data-configuration=&quot;https://frequenz-4000.podigee.io/6-frq06/embed&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;mein-ohr-liebt-&quot;&gt;Mein Ohr liebt …&lt;/h2&gt;
+
+&lt;p&gt;Ich höre Podcasts übrigens schon seit über zehn Jahren. Am Rechner meiner Hochschule lud ich mir dereinst mit dem &lt;a href=&quot;http://www.rotzoll.de/podblogger/mp3stick/&quot;&gt;Podcatcher on a Stick&lt;/a&gt; die mp3-Dateien direkt auf einen USB-Stick, um sie daheim anzuhören – hach, Nostalgie! Damals begeisterten mich vor allem private Erzählpodcasts wie &lt;a href=&quot;http://www.schlaflosinmuenchen.com/&quot;&gt;Schlaflos in München&lt;/a&gt; oder der &lt;a href=&quot;http://www.pimpyourbrain.de/&quot;&gt;Blick über den Tellerrand&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Heute bevorzuge ich eher die Produktionen öffentlich-rechtlicher Radiosender; das sind normalerweise Radiosendungen, die nach ihrer Ausstrahlung noch ins Netz gestellt werden (beispielsweise die tägliche Nachrichtensendung &lt;a href=&quot;http://dradiowissen.de/podcasts/download/update&quot;&gt;DRadio Wissen Update&lt;/a&gt;, das samstägliche WDR5-Medienmagazin &lt;a href=&quot;http://www1.wdr.de/mediathek/audio/wdr5/wdr5-toene-texte-bilder-medienschelte/index.html&quot;&gt;Töne, Texte, Bilder&lt;/a&gt; oder &lt;a href=&quot;http://www.deutschlandfunk.de/computer-und-kommunikation.683.de.html&quot;&gt;Computer und Kommunikation&lt;/a&gt; vom Deutschlandfunk).&lt;/p&gt;
+
+&lt;p&gt;Dazu kommen einige private Sendungen wie der Video-Podcast von &lt;a href=&quot;http://www.belleslettres.eu&quot;&gt;Belles Lettres&lt;/a&gt; über Sprache oder der Technik-Podcast &lt;a href=&quot;http://systemfehler.viertausendhertz.de/&quot;&gt;Systemfehler&lt;/a&gt; des Podcast-Labels Viertausendhertz. Vom englischsprachigen &lt;a href=&quot;https://serialpodcast.org/&quot;&gt;Podcast-Erfolg Serial&lt;/a&gt; habe ich mir die erste Staffel nachträglich angehört.&lt;/p&gt;
+
+&lt;h2 id=&quot;zeitsouvern-automatisch-und-mobil&quot;&gt;Zeitsouverän, automatisch und mobil&lt;/h2&gt;
+
+&lt;p&gt;Im Gegensatz zu Sendungen im Radio bin ich mit Podcasts zeitlich unabhängig. Ich höre mir einen Audiobeitrag an, wenn ich es möchte, nicht weil er gerade im Rundfunk läuft. Ich muss auch nicht regelmäßig mehrere Websites abgrasen, ob es schon eine neue Episode zum Herunterladen gibt – das macht mein Podcatcher-Programm für mich. Bei Audio habe ich zudem Augen und Hände frei, kann nebenher aufräumen oder einen Podcast unterwegs anhören, ohne gegen Straßenlaternen zu laufen.&lt;/p&gt;
+
+&lt;p&gt;Wie sieht es mit eurem Medienkonsum aus? Konsumiert ihr neben Musik reine Audioformate? Zur Information oder mehr als Unterhaltung?&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/podcasts.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/podcasts.html</guid>
+	<pubDate>Fri, 05 Aug 2016 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Tintengläschen voller Farben</title>
 	<description>&lt;p&gt;Als bevorzugtes Schreibgerät verwende ich einen Füller. Seit gut anderthalb Jahren ist das ein &lt;a href=&quot;http://www.kaweco-pen.com/de/Schreibgeraete/andere_serien/special/fuellhalter/special_fuellhalter_neu.php&quot;&gt;Kaweco SPECIAL Füllhalter&lt;/a&gt;, davor waren es ein sehr alter Aufziehfüller und ein einfacher Werbegeschenk-Füller.&lt;/p&gt;
 
@@ -225,29 +257,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/verschluesselte-mails.html</guid>
 	<pubDate>Wed, 23 Mar 2016 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Die richtige Verwendung des Apostrophs</title>
-	<description>&lt;p&gt;Der Apostroph ( &lt;strong&gt;’&lt;/strong&gt; griechisch: &lt;em&gt;der Abgewandte&lt;/em&gt;) ist ein Satzzeichen, mit dem leider viel Schindluder getrieben wird. Oft wird damit das Mehrzahl-s abgetrennt &lt;em&gt;(Auto’s, CD’s)&lt;/em&gt; oder das „s“ des Genitivs &lt;em&gt;(Luise’s Studio, Bernd’s Werkstatt)&lt;/em&gt;. Falsch ist der Apostroph auch bei Befehlsformen &lt;em&gt;(Komm’ her! Geh’ weg!)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dabei ist es gar nicht so schwer, denn eigentlich gibt es nur zwei Fälle, in denen der Apostroph zum Einsatz kommt.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Der Apostroph kennzeichnet Stellen, wo &lt;strong&gt;Buchstaben ausgelassen&lt;/strong&gt; wurden. Beispiele: &lt;em&gt;Hast du ’nen Euro? Heute ist’s kalt am Ku’damm, kälter als in M’Gladbach.&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Der Apostroph &lt;strong&gt;verdeutlicht Eigennamen&lt;/strong&gt;, wenn eine Endung dazukommt: &lt;em&gt;Grimm’sche Märchen, Ohm’scher Widerstand.&lt;/em&gt; So hilft der Apostroph auch beim Genitiv, wenn andernfalls Namen unklar (!) wären: &lt;em&gt;Andrea’s Freundin&lt;/em&gt; (nicht die von Andreas) – oder wenn Namen bereits auf einem S-Laut enden: &lt;em&gt;Klaus’ Auto, Alex’ Fahrrad&lt;/em&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Ausführlich nachlesen kann man die Regeln zum Gebrauch des Apostrophs bei &lt;a href=&quot;http://www.belleslettres.eu/artikel/apostroph.php&quot;&gt;Belles Lettres&lt;/a&gt; oder auf &lt;a href=&quot;http://canoo.net/services/GermanSpelling/Regeln/Interpunktion/Apostroph.html&quot;&gt;Canoo.net&lt;/a&gt;. Übrigens findet sich das korrekte Apostroph-Zeichen nicht auf einer normalen Computertastatur. Wer typografisches Feingefühl an den Tag legen möchte, sollte auf ' oder ` verzichten. Siehe dazu auch den Artikel bei &lt;a href=&quot;http://typefacts.com/artikel/apostroph&quot;&gt;Typefacts&lt;/a&gt;.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/apostroph.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/apostroph.html</guid>
-	<pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
