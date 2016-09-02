@@ -54,7 +54,7 @@
 
 <p>Grundlage ist eine strukturierte Datei, die sich aktualisiert, sobald etwas neues online gestellt wird. In dieser RSS-Datei stehen dann beispielsweise die Überschrift eines neuen Artikels, ein Textausschnitt oder sogar der komplette Artikel, ein Link zur entsprechenden Internetseite und weitere Daten. Ein Beispiel:</p>
 
-<pre><code>&lt;item&gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;item&gt;
 &lt;title&gt;Neuigkeiten via RSS&lt;/title&gt;
 &lt;description&gt;Wenn sich auf einer Website etwas ändert, zum Beispiel ein neuer Artikel […]&lt;/description&gt;
 &lt;link&gt;charakterziffer.github.io/rss-feeds.html&lt;/link&gt;
@@ -62,8 +62,9 @@
 &lt;pubDate&gt;Mon, 30 Mar 2015&lt;/pubDate&gt;
 &lt;/item&gt;
 </code></pre>
+</div>
 
-<p>Der Code ist nur ein Ausschnitt; in der Regel stehen mehrere <code>&lt;item&gt;</code> (also Artikel) in einer RSS-Datei, dazu einige allgemeine Informationen zur Website. Weil die Daten so klar strukturiert sind, lassen sie sich maschinell auslesen, also von einem Programm auswerten. Ein solches Programm könnte zum Beispiel ein Feedreader<a href="#note1"><sup id="ziffer1">[1]</sup></a> wie QuiteRSS sein. Er sammelt neue Artikel aus unterschiedlichen Quellen und stellt sie in einer Liste dar.</p>
+<p>Der Code ist nur ein Ausschnitt; in der Regel stehen mehrere <code class="highlighter-rouge">&lt;item&gt;</code> (also Artikel) in einer RSS-Datei, dazu einige allgemeine Informationen zur Website. Weil die Daten so klar strukturiert sind, lassen sie sich maschinell auslesen, also von einem Programm auswerten. Ein solches Programm könnte zum Beispiel ein Feedreader<a href="#note1"><sup id="ziffer1">[1]</sup></a> wie QuiteRSS sein. Er sammelt neue Artikel aus unterschiedlichen Quellen und stellt sie in einer Liste dar.</p>
 
 <p><img src="material/feedreader.png" alt="Bildschirmfoto des Feedreaders QuiteRSS" /></p>
 

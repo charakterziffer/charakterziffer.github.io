@@ -54,7 +54,7 @@
 
 <p>Vor gut zwei Jahren entwickelte sich ein brauchbarer Standard für Webfonts. Heute ist es möglich, beliebige Schriften auf Internetseiten zu verwenden – auch wenn diese nicht auf dem Rechner des Betrachters installiert sind. Die Schriftdatei wird einfach per CSS verlinkt:</p>
 
-<pre><code>@font-face {
+<div class="highlighter-rouge"><pre class="highlight"><code>@font-face {
 font-family: 'Schriftname';
 src: url('schrift.eot'); /* IE9 compatibility mode */
 /* für IE6 bis IE8 */
@@ -65,6 +65,7 @@ url('schrift.woff') format('woff'),
 url('schrift.ttf') format('truetype');
 }
 </code></pre>
+</div>
 
 <p>Die nächste große Entwicklung in Sachen Webschriften ist wohl, OpenType-Features im Browser nutzen zu können. Das sind zusätzliche Funktionen, die in professionelle Schriften hineinprogrammiert wurden. Klar ist das mehr etwas für Spezialisten und Detailverliebte. Manchmal ist es aber sehr praktisch, Schwungbuchstaben einzusetzen oder für den Fließtext auf Mediävalziffern zurückzugreifen.</p>
 
@@ -77,7 +78,7 @@ KLM­NOPQR­STUVWZ</p>
 
 <p>Der hier angezeigte Text ist das kleine und das große Alphabet. Jeder Buchstabe wird als Kästchen angezeigt und steht für ein OpenType-Feature (z. B. a = smcp, Kapitälchen). Je nach Browser sind einige Kästchen vielleicht schon schwarz. Bei mir im Firefox sind das <em>locl</em>, <em>kern</em>, <em>liga</em>, <em>clig</em> und <em>calt</em> (= Lokale Varianten, Kerning, Ligaturen, kontextabhängige Ligaturen und kontextabhängige Alternativen). Diese Features sind mit meinem Browsereinstellungen automatisch aktiviert.</p>
 
-<p>Mit dem CSS-Befehl <code>font-feature-settings</code> kann ich jetzt weitere OpenType-Features einschalten. Der gleiche Text wie oben in der gleichen Schriftart sieht dann so aus (weiße Kästchen mit X sind nicht mit einer Funktion belegt):</p>
+<p>Mit dem CSS-Befehl <code class="highlighter-rouge">font-feature-settings</code> kann ich jetzt weitere OpenType-Features einschalten. Der gleiche Text wie oben in der gleichen Schriftart sieht dann so aus (weiße Kästchen mit X sind nicht mit einer Funktion belegt):</p>
 
 <p class="otfeat aktfeat">ab­cdef­ghi­jklm<br />
 nopqr­stuvwxyz<br />
@@ -86,11 +87,12 @@ KLM­NOPQR­STUVWZ</p>
 
 <p>Der CSS-Code, um OpenType-Features zu aktivieren, wird bislang nur mit Vendor-Prefix in einigen aktuellen Browsern unterstützt. Für Chrome (17+), Firefox (15+), Internet Explorer (10+) und als zukünftiger Standard-Syntax lautet der Code (jeweils für die ersten drei Features):</p>
 
-<pre><code>-webkit-font-feature-settings: "smcp", "c2sc", "c2pc";
+<div class="highlighter-rouge"><pre class="highlight"><code>-webkit-font-feature-settings: "smcp", "c2sc", "c2pc";
 -moz-font-feature-settings: "smcp" 1, "c2sc" 1, "c2pc" 1;
 -ms-font-feature-settings: "smcp" 1, "c2sc" 1, "c2pc" 1;
 font-feature-settings: "smcp", "c2sc", "c2pc";
 </code></pre>
+</div>
 
 <p>Wie gut das im IE10 umgesetzt wird, kann ich leider nicht testen. Was man aber im Firefox und Chrome herausfinden kann: Das Feature <em>fina</em> wird nicht korrekt interpretiert. Das Kästchen mit dem Z sollte nur dann schwarz werden, wenn es am Ende eines Wortes steht. Im Folgenden also nur an der dritten Position:</p>
 

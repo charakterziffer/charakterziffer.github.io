@@ -83,15 +83,17 @@
 
 &lt;p&gt;Dabei handelt es sich um CSS-Anweisungen in einer Datei oder innerhalb einer Browser-Erweiterung. Mit diesem CSS kann man Formatierungen auf jeder beliebigen Website einfach überschreiben. Beispielsweise macht für mich der Code&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;a:visited { color: #752 !important; }
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a:visited { color: #752 !important; }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;besuchte Links auf der Website &lt;a href=&quot;http://ubuntuusers.de&quot;&gt;http://ubuntuusers.de&lt;/a&gt; dunkler. So kann ich erkennen, welche Verweise ich schon einmal aufgerufen habe. Ein weiteres Beispiel aus meiner Nutzer-CSS-Datei:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;.postArticle-content, .notesPositionContainer {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.postArticle-content, .notesPositionContainer {
    letter-spacing: 0 !important; }
 .postActionsBar { display: none !important; }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Das zeigt mir die Texte auf &lt;a href=&quot;http://medium.com&quot;&gt;http://medium.com&lt;/a&gt; ohne Buchstaben-Sperrung und blendet die untere Leiste aus. Weitere Anpassungen in meiner Nutzer-CSS-Datei aktivieren auf Wikipedia die Silbentrennung, entfernen nervige Overlay-Hinweise diverser Seiten, machen fixierte Menüs scrollbar oder ändern die Schriftfarbe von blassgrau auf lesbares dunkelgrau.&lt;/p&gt;
 
@@ -101,12 +103,13 @@
 
 &lt;h3 id=&quot;mozilla-firefox&quot;&gt;Mozilla Firefox&lt;/h3&gt;
 
-&lt;p&gt;Hier stehen die CSS-Anpassungen in einer Datei namens &lt;code&gt;userContent.css&lt;/code&gt;. Sie liegt im eigenen Profil-Ordner im Verzeichnis &lt;code&gt;chrome&lt;/code&gt; (muss evtl. erst angelegt werden). Bei Linux also unter &lt;code&gt;~/.mozilla/firefox/&amp;lt;Profil-Ordner&amp;gt;/chrome/userContent.css&lt;/code&gt;, bei Windows unter &lt;code&gt;%APPDATA%\Mozilla\Firefox\Profiles\&amp;lt;Profil-Ordner&amp;gt;\chrome\userContent.css&lt;/code&gt;. Die Mozilla-Hilfe erklärt, wie man den &lt;a href=&quot;https://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten&quot;&gt;Profil-Ordner findet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hier stehen die CSS-Anpassungen in einer Datei namens &lt;code class=&quot;highlighter-rouge&quot;&gt;userContent.css&lt;/code&gt;. Sie liegt im eigenen Profil-Ordner im Verzeichnis &lt;code class=&quot;highlighter-rouge&quot;&gt;chrome&lt;/code&gt; (muss evtl. erst angelegt werden). Bei Linux also unter &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.mozilla/firefox/&amp;lt;Profil-Ordner&amp;gt;/chrome/userContent.css&lt;/code&gt;, bei Windows unter &lt;code class=&quot;highlighter-rouge&quot;&gt;%APPDATA%\Mozilla\Firefox\Profiles\&amp;lt;Profil-Ordner&amp;gt;\chrome\userContent.css&lt;/code&gt;. Die Mozilla-Hilfe erklärt, wie man den &lt;a href=&quot;https://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten&quot;&gt;Profil-Ordner findet&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Möchte man CSS-Stile nur auf einer bestimmten Website anwenden, umschließt man sie mit&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;@-moz-document domain(EXAMPLE.COM) { &amp;lt;CSS-Code&amp;gt; }
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@-moz-document domain(EXAMPLE.COM) { &amp;lt;CSS-Code&amp;gt; }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;internet-explorer-und-microsoft-edge&quot;&gt;Internet-Explorer und Microsoft Edge&lt;/h3&gt;
 
