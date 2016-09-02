@@ -100,7 +100,7 @@ ul li p { margin: 0.7em 0; }
 ol { margin-left: -1.5em; }
 ol ol { list-style: lower-alpha; }
 
-code, pre { margin: .75em 0 -0em; padding:.05em .2em;
+code, pre { margin: .95em 0 -0.28em; padding:.05em .2em;
 	font: 0.9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace;
 	color: #222; background-color:#f4f4f4; box-decoration-break: clone;
 	border-radius:.1em; }
