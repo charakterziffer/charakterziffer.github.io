@@ -14,6 +14,58 @@
 </image>
 
 <item>
+	<title>Verfettet und schräggestellt</title>
+	<description>&lt;p&gt;Endlich haben sich Webfonts durchgesetzt. Internetseiten können nun in ganz anderen Schriftarten erscheinen als nur in &lt;em&gt;web-safe fonts&lt;/em&gt; wie Arial, Georgia oder Verdana. Einfach die Schriftdateien auf den Server laden und im CSS verlinken:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@font-face {
+  font-family: 'Beispielschrift';
+  font-style: normal; font-weight: 400;
+  src: url(Pfad/zur/Schrift-Regular.woff2) format('woff2'),
+  url(Pfad/zur/Schrift-Regular.woff) format('woff');
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Damit versorgt man &lt;a href=&quot;http://caniuse.com/#search=woff&quot;&gt;über 90% der Internetnutzer&lt;/a&gt; mit der „Beispielschrift“ und kann seinen Webauftritt individueller und stimmiger gestalten. Doch alle Klippen hat man damit noch nicht umschifft. Wichtig ist nämlich, genau den Schriftstil einzubetten, der später auch verwendet wird. Womit wir beim Thema dieses Blogeintrags sind.&lt;/p&gt;
+
+&lt;h2 id=&quot;regular-hilft-nur-im-normalfall&quot;&gt;Regular hilft nur im Normalfall&lt;/h2&gt;
+
+&lt;p&gt;Viel zu oft binden Website-Betreiber nicht den richtigen Schriftschnitt ein. Das passiert sogar bekannten Anbietern wie &lt;a href=&quot;https://github.com/explore&quot;&gt;Github&lt;/a&gt; (siehe “Trending repositories”),  &lt;a href=&quot;https://www.alnatura.de/de-de/ueber-uns&quot;&gt;Alnatura&lt;/a&gt; (alle fetten Hervorhebung im Text) oder der &lt;a href=&quot;https://www.washingtonpost.com/news/wonk/wp/2016/09/01/these-charts-clearly-show-how-some-olympic-swimmers-may-have-gotten-an-unfair-advantage/&quot;&gt;Washington Post&lt;/a&gt; (bei den Zwischenüberschriften).&lt;/p&gt;
+
+&lt;p&gt;Meistens wird vergessen, dass der Browser Überschriften oder Hervorhebungen mit &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; standardmäßig fett darstellt. Wenn man seine Beispielschrift nun wie oben verlinkt und einfach einer Überschrift zuweist, wird der Browser zu rechnen beginnen. Er verfettet die Schrift künstlich, da er ja nur die Datei für den Normalschnitt vorfindet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/verfettet.png&quot; alt=&quot;Künstlich verfettete Schrift verglichen mit echtem Fettschnitt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Manchmal klappt die künstliche Verfettung relativ gut, abhängig vom Browser und der Schrift. Sie sieht aber &lt;em&gt;immer schlechter&lt;/em&gt; aus als der richtige Fettschnitt. Fettgerechnete Buchstaben wirken oft klecksig, i-Punkte kleben am Stamm, kleine Öffnungen laufen zu und die Schrift wird schlechter lesbar. Ähnliches gilt für kursive Schriftschnitte.&lt;/p&gt;
+
+&lt;h2 id=&quot;die-bereinstimmung-ist-entscheidend&quot;&gt;Die Übereinstimmung ist entscheidend&lt;/h2&gt;
+
+&lt;p&gt;Dabei lassen sich mathematische Schrägstellung und Verfettung recht leicht vermeiden. Man muss nur das Schriftgewicht (&lt;code&gt;font-weight&lt;/code&gt;) und die Schriftneigung (&lt;code&gt;font-style&lt;/code&gt;) beim gewählten HTML-Element genauso angeben wie bei der Font-Datei, die dafür verwendet werden soll. Möchte man also die Überschrift fett und dazu kursiv haben, kommt ins CSS …&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;h1 { font: 1.5em/1.2 'Playfair Display';
+     font-weight: 700; font-style: italic; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Die Schriftdatei bindet man dann ein mit …&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@font-face { font-family: 'Playfair Display';
+  font-weight: 700; font-style: italic;
+  src: url(Pfad/zur/Playfair-BdIt.woff) format('woff');
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Man beachte jeweils die zweite Zeile: Die Angaben bei dem HTML-Element und der Einbettung stimmen überein. Dadurch erscheint der Webfont dann genau so, wie ihn der Schriftgestalter sorgfältig hergestellt hat.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/verschraegt.png&quot; alt=&quot;Normalschnitt verschrägt und verfettet, darunter der richtige Schriftschnitt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Übrigens: Es ist egal, ob man das Schriftgewicht in Zahlen (300, 400, 700, …) oder in Worten angibt (light, normal, bold, …). Es muss noch nicht einmal dem eigentlichen Gewicht der Schriftdatei entsprechen. Zum Beispiel kann man einen Regular-Schnitt verlinken, aber als &lt;code&gt;bold&lt;/code&gt; deklarieren. So wird eine Fallback-Schrift fett angezeigt, falls beim Laden der Webschrift etwas schief geht. Das habe ich zum Beispiel hier im Blog mit meiner Titelschrift Bitter gemacht, die mir als Regular-Variante schon fett genug erscheint.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/webfont-styles.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/webfont-styles.html</guid>
+	<pubDate>Mon, 12 Sep 2016 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Podcasts als Informationsquelle</title>
 	<description>&lt;p&gt;Ich bin ein Ohrenmensch. Nicht weil ich ein absolutes Gehör hätte oder besonders viel Musik hören würde, sondern weil ich einen Großteil meiner Informationen übers Gehör konsumiere – in Form von Nachrichten, Magazine, Diskussionen (über &lt;a href=&quot;hoerspiele.html&quot;&gt;Hörspiele&lt;/a&gt; habe ich ja schon geschrieben; meinen Internetkonsum lasse ich aus dramaturgischen Gründen mal außen vor). Dabei höre ich nicht nur gerne das Wortprogramm im Radio, sondern habe auch so einige Podcasts abonniert.&lt;/p&gt;
 
@@ -197,66 +249,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/fuchs-6.html</guid>
 	<pubDate>Tue, 26 Apr 2016 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Verschlüsselte Mails</title>
-	<description>&lt;p&gt;Nicht einmal jeder sechste Internetnutzer in Deutschland verschlüsselt seine E-Mails. Das ermittelte Bitkom, der Verband der deutschen Informations- und Telekommunikationsbranche, &lt;a href=&quot;https://www.bitkom.org/Presse/Presseinformation/Verschluesselung-von-E-Mails-kommt-nur-langsam-voran.html&quot;&gt;in einer Umfrage&lt;/a&gt; Anfang dieses Jahres. Viele kennen sich demnach mit der Verschlüsselungssoftware nicht aus, ihre Kontakte unterstützen keine verschlüsselten Mails oder die Technik erscheint generell zu aufwändig.&lt;/p&gt;
-
-&lt;p&gt;Ein Freund von mir fand es ärgerlich, dass ein entsprechendes Plug-in in seinem Mailprogramm gleich mal die Einstellung für formatierte Mails deaktiviert hat – auch für unverschlüsselte Mails. Ein anderer Bekannter ist überzeugt, dass Verschlüsselung nichts gegen Geheimdienste hilft, weil die sich die Schlüssel schon irgendwie besorgen könnten. Die Gefahr besteht tatsächlich, andererseits kann man seinen Computer relativ gut vor Zugriffen schützen und wenn man seinen geheimen Schlüssel sicher aufbewahrt …&lt;/p&gt;
-
-&lt;h2 id=&quot;warum-sollte-man-berhaupt-verschlsseln&quot;&gt;Warum sollte man überhaupt verschlüsseln?&lt;/h2&gt;
-
-&lt;p&gt;Aber ich habe doch gar nichts zu verbergen! Wirklich? Würdest du dann dein Mailpasswort im Internet veröffentlichen? Darf jeder von deinen Bewerbungen wissen? Von sorgenvollen Mails an deine Freundin, von Verabredungen, Beschwerdemails oder vertrautem Geläster? Ich nehme Nutzername und Passwort deines Mailkontos gern entgegen und schaue mir mit Interesse an, was du so für Post bekommst. Besonders spannende Mails würde ich auch hier im Blog veröffentlichen. Einverstanden?&lt;/p&gt;
-
-&lt;p&gt;Globaler gedacht: Vielleicht benötigt man nicht unbedingt selbst eine vertrauliche Korrespondenz, aber eben ein Friedensaktivist im Nahen Osten. Wenn nur diejenigen verschlüsseln, die es absolut brauchen, geraten sie besonders in den Fokus. Wenn einfach jeder verschlüsselt, gehen brisantere Mails im Rauschen unter.&lt;/p&gt;
-
-&lt;p&gt;Aber nicht nur Geheimdienste lesen mit. Vor vier Wochen wollte ich die Mail eines Freundes beantworten, bekam aber immer wieder eine Fehlermeldung vom Yahoo-Server: „Nachricht konnte nicht versendet werden, Verdacht auf Spam“. Nach einigem Testen fand ich heraus, dass es an den Links in der Originalnachricht lag. Yahoo filtert Mails, um Werbepost einzudämmen. Auch von T-Online habe ich mal eine entsprechende Rückmeldung bekommen.&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; Google-Mail durchsucht elektronische Nachrichten seiner Nutzer, um treffendere Werbeanzeigen einzublenden. Legitime Gründe, um meine Mailinhalte auszuwerten? Verschlüsselung schützt Inhalte jedenfalls auch vor dem Mailprovider.&lt;/p&gt;
-
-&lt;p&gt;Vielleicht bin ich ein bisschen naiv, doch ich sehe Mailverschlüsselung auch als politische Aussage – sowohl gegenüber meinen Mailkontakten als auch möglichen Mitlesern. Was ich anderen Menschen schreibe, betrifft meine Privatsphäre und geht niemanden sonst etwas an. Die Piratenpartei hat übrigens in ihrem Wiki &lt;a href=&quot;http://wiki.piratenpartei.de/Ich_habe_nichts_zu_verbergen!&quot;&gt;viele weitere Argumente&lt;/a&gt; gegen die Nichts-zu-verbergen-Behauptung gesammelt.&lt;/p&gt;
-
-&lt;h2 id=&quot;das-zwei-schlssel-prinzip&quot;&gt;Das Zwei-Schlüssel-Prinzip&lt;/h2&gt;
-
-&lt;p&gt;Ein Schwachpunkt konventioneller Verschlüsselungen ist, dass Sender und Empfänger irgendwann ihren gemeinsamen Schlüssel austauschen müssen. Da besteht leicht die Gefahr, dass er einem Unbefugten in die Hände fällt.&lt;/p&gt;
-
-&lt;p&gt;Das verbreitete Programm PGP („Pretty Good Privacy“) benutzt ein asymmetrisches Kryptosystem. Bei diesem Verfahren gibt es &lt;em&gt;zwei&lt;/em&gt; Schlüssel. Sie ergänzen einander (können aber praktisch nicht aus jeweils dem anderen berechnet werden) und nur einer davon wird veröffentlicht – ja, öffentlich zugänglich gemacht für alle. Der andere Schlüssel bleibt geheim und verlässt den Empfänger nie. Der Kniff: Alles, was mit einem öffentlichen Schlüssel codiert wurde, kann nur mit dem entsprechendem privaten Schlüssel wieder lesbar gemacht werden. Jonas Kramer von &lt;a href=&quot;http://stiftfilm.de&quot;&gt;Stiftfilm&lt;/a&gt; hat das in einem 3½-Minuten-Video recht schön erklärt (&lt;a href=&quot;https://vimeo.com/86736532&quot;&gt;Link zum Video&lt;/a&gt;):&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; height:0; border: 1px solid #ccc; margin:1.4em 0 1.5em; width:99%; padding-bottom:55.7%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/86736532?color=3a1&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;programme-und-plug-ins&quot;&gt;Programme und Plug-ins&lt;/h2&gt;
-
-&lt;p&gt;Um den eigenen Computer für Mailverschlüsselung aufzurüsten, benötigt man zunächst das Basisprogramm &lt;a href=&quot;https://www.gnupg.org/index.de.html&quot;&gt;GnuPGP&lt;/a&gt;. Es sammelt die öffentlichen Schlüssel der Mailkontakte und bewahrt das eigene, passwortgeschützte Schlüsselpaar auf – quasi ein Schlüsselbund. Das Programm ist für Windows, OS X, Android und verschiendene Linux-Betriebssysteme verfügbar.&lt;/p&gt;
-
-&lt;p&gt;GnuPGP ist auch in einigen Paketen enthalten, die alles weitere mitbringen, was man sonst noch zum Mailverschlüsselung braucht. Für Windows gibt es das Komplettpaket &lt;a href=&quot;https://www.gpg4win.org/about.html&quot;&gt;Gpg4win&lt;/a&gt; (mit Plug-In für 32-Bit-Outlook ab Version 2003), für OS X gibt es das Bündel &lt;a href=&quot;https://gpgtools.org/&quot;&gt;GPGTools&lt;/a&gt;, das ein Plug-in für Apple Mail mitliefert.&lt;/p&gt;
-
-&lt;p&gt;Auf meinem Linux-Rechner war GnuPGP bereits installiert, ich musste nur mein gewohntes Mailprogramm &lt;a href=&quot;https://www.mozilla.org/de/thunderbird/&quot;&gt;Thunderbird&lt;/a&gt; um das Plug-in &lt;a href=&quot;https://www.enigmail.net/index.php/en/&quot;&gt;Enigmail&lt;/a&gt; ergänzen. Dieses verwaltet die Verschlüsselung abhängig vom Empfänger und kümmert sich um das richtige Versenden (es ist zugegebenermaßen ein wenig frickelig, das Plug-in wunschgemäß einzurichten).&lt;/p&gt;
-
-&lt;p&gt;Für Android gibt es zum Beispiel die Plug-ins &lt;a href=&quot;https://www.openkeychain.org/&quot;&gt;OpenKeyChain&lt;/a&gt;, &lt;a href=&quot;https://guardianproject.info/code/gnupg/&quot;&gt;GnuPG for Android&lt;/a&gt; oder (für ältere Geräte) &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.thialfihar.android.apg&quot;&gt;APG&lt;/a&gt;. Diese Plug-ins schlagen die Brücke zwischen dem Basisprogramm GnuPGP und einem Mailprogramm wie &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.fsck.k9&quot;&gt;K-9 Mail&lt;/a&gt;, das mit Verschlüsselung umgehen kann.&lt;/p&gt;
-
-&lt;p&gt;Auch wer kein eigenes Mailprogramm verwendet, sondern seine Mails online über den Browser verwaltet, kann verschlüsseln. Zumindest für Google Chrome und Mozilla Firefox ist das Browser-Plug-in &lt;a href=&quot;https://www.mailvelope.com/de/&quot;&gt;Mailvelope&lt;/a&gt; erhältlich.&lt;/p&gt;
-
-&lt;h2 id=&quot;ausfhrliche-anleitung-gibts-hier-nicht&quot;&gt;Ausführliche Anleitung? Gibt’s hier nicht.&lt;/h2&gt;
-
-&lt;p&gt;Spezielle Anleitungen, wie auf welchem System was für ein Programm installiert und verwendet wird, möchte ich hier nicht geben. Da wird man im Netz schnell fündig, zum Beispiel auf den oben verlinkten Seiten, bei &lt;a href=&quot;http://howtopgp.jugendhackt.de/?lang=de&quot;&gt;Jugend hackt&lt;/a&gt; oder im Blog des Informatikers Thomas Leister (für &lt;a href=&quot;https://thomas-leister.de/allgemein/android-pgp-e-mail-verschluesselung-mit-k9-und-apg/&quot;&gt;K-9 Mail auf Android&lt;/a&gt; oder &lt;a href=&quot;https://thomas-leister.de/allgemein/pgp-e-mail-verschluesselung-mit-thunderbird-und-enigmail/&quot;&gt;Thunderbird&lt;/a&gt;). Ich hoffe aber, mit diesem Artikel das Interesse am Thema Mailverschlüsselung geweckt zu haben.&lt;/p&gt;
-
-&lt;p&gt;Zum Abschluss noch drei weiterführende Links:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://emailselfdefense.fsf.org/de/&quot;&gt;E-Mail-Selbstverteidigung&lt;/a&gt; von der Free Software Foundation vermittelt übersichtlich sämtliche Grundlagen.&lt;/li&gt;
-  &lt;li&gt;Das Dossier von &lt;a href=&quot;https://www.verbraucher-sicher-online.de/thema/e-mail-verschluesselung&quot;&gt;Verbraucher sicher online&lt;/a&gt; bietet Hintergrund-Infos und einige Praxis-Anleitungen.&lt;/li&gt;
-  &lt;li&gt;Einen praktischen Selbstversuch haben Moritz Metz und Sebastian Sonntag in einer  &lt;a href=&quot;http://dradiowissen.de/beitrag/netzbasteln-e-mails-verschluesseln&quot;&gt;Netzbasteln-Folge&lt;/a&gt; auf DRadio Wissen gemacht. Wie man hören kann, ist es mit ein wenig Hilfe gar nicht schwer, E-Mails zu verschlüsseln.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Konkrete Fragen gerne per Kommentar. Vielleicht kann ich weiterhelfen, wenn es beim Einrichten der Mailverschlüsselung irgendwo hakt. Wer mir gerne verschlüsselt schreiben möchte, dem schicke ich den öffentlichen Schlüssel meiner privaten Mailadresse auf Anfrage zu bzw. antworte auf eine signierte Mail.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Gefilterte Mails:&lt;/b&gt; In der Yahoo-Mail ging es übrigens um die Übersetzung eines japanisches Computerspiels, in der Telekom-Mail ums Rooten eines Android-Telefons. Aber warum rechtfertige ich mich eigentlich für meine private Korrespondenz? &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/verschluesselte-mails.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/verschluesselte-mails.html</guid>
-	<pubDate>Wed, 23 Mar 2016 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>

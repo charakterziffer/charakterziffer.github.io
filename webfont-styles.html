@@ -6,8 +6,8 @@
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Podcasts als Informationsquelle // @cz+</title>
-<meta name="description" content="Fernsehen schaue ich wenig, lese kaum eine Zeitung, aber ich höre viel Radio. Und ich nutze Podcasts, um mich über Themen zu informieren.">
+<title>Verfettet und schräggestellt // @cz+</title>
+<meta name="description" content="Webfonts können eine Internetseite sehr bereichern. Es kommt aber zu hässlichen Verfettungen, wenn benötigte Schriftschnitte fehlen.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
 <meta name="robots" content="index, follow">
@@ -26,9 +26,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@charakterziffer" />
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
-<meta property="og:title" content="Podcasts als Informationsquelle" />
-<meta property="og:description" content="Fernsehen schaue ich wenig, lese kaum eine Zeitung, aber ich höre viel Radio. Und ich nutze Podcasts, um mich über Themen zu informieren." />
-<meta property="og:url" content="http://charakterziffer.github.io/podcasts.html" />
+<meta property="og:title" content="Verfettet und schräggestellt" />
+<meta property="og:description" content="Webfonts können eine Internetseite sehr bereichern. Es kommt aber zu hässlichen Verfettungen, wenn benötigte Schriftschnitte fehlen." />
+<meta property="og:url" content="http://charakterziffer.github.io/webfont-styles.html" />
 <meta property="og:type" content="article" />
 
 <!--[if lte IE 11]>
@@ -49,37 +49,57 @@
 <main>
 
     <article>
-<time datetime="2016-08-05">Fr, 5. Aug. 2016</time>
-<h1>Podcasts als Informationsquelle</h1>
-<p>Ich bin ein Ohrenmensch. Nicht weil ich ein absolutes Gehör hätte oder besonders viel Musik hören würde, sondern weil ich einen Großteil meiner Informationen übers Gehör konsumiere – in Form von Nachrichten, Magazine, Diskussionen (über <a href="hoerspiele.html">Hörspiele</a> habe ich ja schon geschrieben; meinen Internetkonsum lasse ich aus dramaturgischen Gründen mal außen vor). Dabei höre ich nicht nur gerne das Wortprogramm im Radio, sondern habe auch so einige Podcasts abonniert.</p>
+<time datetime="2016-09-12">Mo, 12. Sept. 2016</time>
+<h1>Verfettet und schräggestellt</h1>
+<p>Endlich haben sich Webfonts durchgesetzt. Internetseiten können nun in ganz anderen Schriftarten erscheinen als nur in <em>web-safe fonts</em> wie Arial, Georgia oder Verdana. Einfach die Schriftdateien auf den Server laden und im CSS verlinken:</p>
 
-<h2 id="podcasts">Podcasts?</h2>
+<pre><code>@font-face {
+  font-family: 'Beispielschrift';
+  font-style: normal; font-weight: 400;
+  src: url(Pfad/zur/Schrift-Regular.woff2) format('woff2'),
+  url(Pfad/zur/Schrift-Regular.woff) format('woff');
+}
+</code></pre>
 
-<p>Ja genau: Diese regelmäßig erscheinenden Audio-Dateien, die man im Internet findet und mithilfe eines Programms („Podcatcher“) automatisiert herunterladen kann.</p>
+<p>Damit versorgt man <a href="http://caniuse.com/#search=woff">über 90% der Internetnutzer</a> mit der „Beispielschrift“ und kann seinen Webauftritt individueller und stimmiger gestalten. Doch alle Klippen hat man damit noch nicht umschifft. Wichtig ist nämlich, genau den Schriftstil einzubetten, der später auch verwendet wird. Womit wir beim Thema dieses Blogeintrags sind.</p>
 
-<p>In den letzten Jahren erlebt der Begriff <em>Podcast</em> einen Bedeutungswandel und einige meinen damit grundsätzlich jede Audiodatei, die man im Netz anhören kann; für mich muss ein Podcast aber regelmäßig erscheinen und plattformunabhängig sein. Wenn ich mir zum Anhören erst die spezielle App eines bestimmten Herstellers installieren muss, dann ist es in meinen Augen kein Podcast mehr, sondern höchstens eine Audio-Show oder -Serie. Diskutiert wurde darüber letztens im Podcast <em>Frequenz 4000</em> (Folge 6, ab Restzeit ca. 43 Minuten):</p>
+<h2 id="regular-hilft-nur-im-normalfall">Regular hilft nur im Normalfall</h2>
 
-<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="https://frequenz-4000.podigee.io/6-frq06/embed"></script>
+<p>Viel zu oft binden Website-Betreiber nicht den richtigen Schriftschnitt ein. Das passiert sogar bekannten Anbietern wie <a href="https://github.com/explore">Github</a> (siehe “Trending repositories”),  <a href="https://www.alnatura.de/de-de/ueber-uns">Alnatura</a> (alle fetten Hervorhebung im Text) oder der <a href="https://www.washingtonpost.com/news/wonk/wp/2016/09/01/these-charts-clearly-show-how-some-olympic-swimmers-may-have-gotten-an-unfair-advantage/">Washington Post</a> (bei den Zwischenüberschriften).</p>
 
-<h2 id="mein-ohr-liebt-">Mein Ohr liebt …</h2>
+<p>Meistens wird vergessen, dass der Browser Überschriften oder Hervorhebungen mit <code>&lt;strong&gt;</code> standardmäßig fett darstellt. Wenn man seine Beispielschrift nun wie oben verlinkt und einfach einer Überschrift zuweist, wird der Browser zu rechnen beginnen. Er verfettet die Schrift künstlich, da er ja nur die Datei für den Normalschnitt vorfindet.</p>
 
-<p>Ich höre Podcasts übrigens schon seit über zehn Jahren. Am Rechner meiner Hochschule lud ich mir dereinst mit dem <a href="http://www.rotzoll.de/podblogger/mp3stick/">Podcatcher on a Stick</a> die mp3-Dateien direkt auf einen USB-Stick, um sie daheim anzuhören – hach, Nostalgie! Damals begeisterten mich vor allem private Erzählpodcasts wie <a href="http://www.schlaflosinmuenchen.com/">Schlaflos in München</a> oder der <a href="http://www.pimpyourbrain.de/">Blick über den Tellerrand</a>.</p>
+<p><img src="material/verfettet.png" alt="Künstlich verfettete Schrift verglichen mit echtem Fettschnitt" /></p>
 
-<p>Heute bevorzuge ich eher die Produktionen öffentlich-rechtlicher Radiosender; das sind normalerweise Radiosendungen, die nach ihrer Ausstrahlung noch ins Netz gestellt werden (beispielsweise die tägliche Nachrichtensendung <a href="http://dradiowissen.de/podcasts/download/update">DRadio Wissen Update</a>, das samstägliche WDR5-Medienmagazin <a href="http://www1.wdr.de/mediathek/audio/wdr5/wdr5-toene-texte-bilder-medienschelte/index.html">Töne, Texte, Bilder</a> oder <a href="http://www.deutschlandfunk.de/computer-und-kommunikation.683.de.html">Computer und Kommunikation</a> vom Deutschlandfunk).</p>
+<p>Manchmal klappt die künstliche Verfettung relativ gut, abhängig vom Browser und der Schrift. Sie sieht aber <em>immer schlechter</em> aus als der richtige Fettschnitt. Fettgerechnete Buchstaben wirken oft klecksig, i-Punkte kleben am Stamm, kleine Öffnungen laufen zu und die Schrift wird schlechter lesbar. Ähnliches gilt für kursive Schriftschnitte.</p>
 
-<p>Dazu kommen einige private Sendungen wie der Video-Podcast von <a href="http://www.belleslettres.eu">Belles Lettres</a> über Sprache oder der Technik-Podcast <a href="http://systemfehler.viertausendhertz.de/">Systemfehler</a> des Podcast-Labels Viertausendhertz. Vom englischsprachigen <a href="https://serialpodcast.org/">Podcast-Erfolg Serial</a> habe ich mir die erste Staffel nachträglich angehört.</p>
+<h2 id="die-bereinstimmung-ist-entscheidend">Die Übereinstimmung ist entscheidend</h2>
 
-<h2 id="zeitsouvern-automatisch-und-mobil">Zeitsouverän, automatisch und mobil</h2>
+<p>Dabei lassen sich mathematische Schrägstellung und Verfettung recht leicht vermeiden. Man muss nur das Schriftgewicht (<code>font-weight</code>) und die Schriftneigung (<code>font-style</code>) beim gewählten HTML-Element genauso angeben wie bei der Font-Datei, die dafür verwendet werden soll. Möchte man also die Überschrift fett und dazu kursiv haben, kommt ins CSS …</p>
 
-<p>Im Gegensatz zu Sendungen im Radio bin ich mit Podcasts zeitlich unabhängig. Ich höre mir einen Audiobeitrag an, wenn ich es möchte, nicht weil er gerade im Rundfunk läuft. Ich muss auch nicht regelmäßig mehrere Websites abgrasen, ob es schon eine neue Episode zum Herunterladen gibt – das macht mein Podcatcher-Programm für mich. Bei Audio habe ich zudem Augen und Hände frei, kann nebenher aufräumen oder einen Podcast unterwegs anhören, ohne gegen Straßenlaternen zu laufen.</p>
+<pre><code>h1 { font: 1.5em/1.2 'Playfair Display';
+     font-weight: 700; font-style: italic; }
+</code></pre>
 
-<p>Wie sieht es mit eurem Medienkonsum aus? Konsumiert ihr neben Musik reine Audioformate? Zur Information oder mehr als Unterhaltung?</p>
+<p>Die Schriftdatei bindet man dann ein mit …</p>
+
+<pre><code>@font-face { font-family: 'Playfair Display';
+  font-weight: 700; font-style: italic;
+  src: url(Pfad/zur/Playfair-BdIt.woff) format('woff');
+}
+</code></pre>
+
+<p>Man beachte jeweils die zweite Zeile: Die Angaben bei dem HTML-Element und der Einbettung stimmen überein. Dadurch erscheint der Webfont dann genau so, wie ihn der Schriftgestalter sorgfältig hergestellt hat.</p>
+
+<p><img src="material/verschraegt.png" alt="Normalschnitt verschrägt und verfettet, darunter der richtige Schriftschnitt" /></p>
+
+<p>Übrigens: Es ist egal, ob man das Schriftgewicht in Zahlen (300, 400, 700, …) oder in Worten angibt (light, normal, bold, …). Es muss noch nicht einmal dem eigentlichen Gewicht der Schriftdatei entsprechen. Zum Beispiel kann man einen Regular-Schnitt verlinken, aber als <code>bold</code> deklarieren. So wird eine Fallback-Schrift fett angezeigt, falls beim Laden der Webschrift etwas schief geht. Das habe ich zum Beispiel hier im Blog mit meiner Titelschrift Bitter gemacht, die mir als Regular-Variante schon fett genug erscheint.</p>
 
 <p style="margin-bottom:1.1em;">---<br>
 <i>Rubrik(en):</i>&nbsp;
-<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
 
-<a href="archiv.html?kritik">#kritik&nbsp; </a>
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
 </p>
 </article>
 
@@ -101,7 +121,7 @@ method="post" enctype="multipart/form-data" novalidate>
 <input type="hidden" name="antwortseite_template"
 value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 
-<input type="hidden" name="post_id" value="/podcasts">
+<input type="hidden" name="post_id" value="/webfont-styles">
 <div>
 	<label for="name">Name</label>
 	<div> <input name="name" id="name" type="text" size="25" autocorrect="off">
@@ -127,10 +147,8 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 </div> <!-- .no-print -->
 
 
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="donthyphenate no-print"><a href="tintenfarben.html">← Tintengläschen voller Farben</a></p>
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="donthyphenate no-print"><a href="podcasts.html">← Podcasts als Informationsquelle</a></p>
 
-
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="donthyphenate no-print"><a href="webfont-styles.html">Verfettet und schräggestellt →</a></p>
 
 <p style="clear:both;" class="no-print"></p>
 

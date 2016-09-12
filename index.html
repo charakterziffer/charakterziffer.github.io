@@ -53,6 +53,57 @@
 
 
 	<article>
+	<time datetime="2016-09-12">Mo, 12.  Sept. 2016</time>
+	<h1><a href="webfont-styles.html">Verfettet und schräggestellt</a></h1>
+	<p>Endlich haben sich Webfonts durchgesetzt. Internetseiten können nun in ganz anderen Schriftarten erscheinen als nur in <em>web-safe fonts</em> wie Arial, Georgia oder Verdana. Einfach die Schriftdateien auf den Server laden und im CSS verlinken:</p>
+
+<pre><code>@font-face {
+  font-family: 'Beispielschrift';
+  font-style: normal; font-weight: 400;
+  src: url(Pfad/zur/Schrift-Regular.woff2) format('woff2'),
+  url(Pfad/zur/Schrift-Regular.woff) format('woff');
+}
+</code></pre>
+
+<p>Damit versorgt man <a href="http://caniuse.com/#search=woff">über 90% der Internetnutzer</a> mit der „Beispielschrift“ und kann seinen Webauftritt individueller und stimmiger gestalten. Doch alle Klippen hat man damit noch nicht umschifft. Wichtig ist nämlich, genau den Schriftstil einzubetten, der später auch verwendet wird. Womit wir beim Thema dieses Blogeintrags sind.</p>
+
+<h2 id="regular-hilft-nur-im-normalfall">Regular hilft nur im Normalfall</h2>
+
+<p>Viel zu oft binden Website-Betreiber nicht den richtigen Schriftschnitt ein. Das passiert sogar bekannten Anbietern wie <a href="https://github.com/explore">Github</a> (siehe “Trending repositories”),  <a href="https://www.alnatura.de/de-de/ueber-uns">Alnatura</a> (alle fetten Hervorhebung im Text) oder der <a href="https://www.washingtonpost.com/news/wonk/wp/2016/09/01/these-charts-clearly-show-how-some-olympic-swimmers-may-have-gotten-an-unfair-advantage/">Washington Post</a> (bei den Zwischenüberschriften).</p>
+
+<p>Meistens wird vergessen, dass der Browser Überschriften oder Hervorhebungen mit <code>&lt;strong&gt;</code> standardmäßig fett darstellt. Wenn man seine Beispielschrift nun wie oben verlinkt und einfach einer Überschrift zuweist, wird der Browser zu rechnen beginnen. Er verfettet die Schrift künstlich, da er ja nur die Datei für den Normalschnitt vorfindet.</p>
+
+<p><img src="material/verfettet.png" alt="Künstlich verfettete Schrift verglichen mit echtem Fettschnitt" /></p>
+
+<p>Manchmal klappt die künstliche Verfettung relativ gut, abhängig vom Browser und der Schrift. Sie sieht aber <em>immer schlechter</em> aus als der richtige Fettschnitt. Fettgerechnete Buchstaben wirken oft klecksig, i-Punkte kleben am Stamm, kleine Öffnungen laufen zu und die Schrift wird schlechter lesbar. Ähnliches gilt für kursive Schriftschnitte.</p>
+
+<h2 id="die-bereinstimmung-ist-entscheidend">Die Übereinstimmung ist entscheidend</h2>
+
+<p>Dabei lassen sich mathematische Schrägstellung und Verfettung recht leicht vermeiden. Man muss nur das Schriftgewicht (<code>font-weight</code>) und die Schriftneigung (<code>font-style</code>) beim gewählten HTML-Element genauso angeben wie bei der Font-Datei, die dafür verwendet werden soll. Möchte man also die Überschrift fett und dazu kursiv haben, kommt ins CSS …</p>
+
+<pre><code>h1 { font: 1.5em/1.2 'Playfair Display';
+     font-weight: 700; font-style: italic; }
+</code></pre>
+
+<p>Die Schriftdatei bindet man dann ein mit …</p>
+
+<pre><code>@font-face { font-family: 'Playfair Display';
+  font-weight: 700; font-style: italic;
+  src: url(Pfad/zur/Playfair-BdIt.woff) format('woff');
+}
+</code></pre>
+
+<p>Man beachte jeweils die zweite Zeile: Die Angaben bei dem HTML-Element und der Einbettung stimmen überein. Dadurch erscheint der Webfont dann genau so, wie ihn der Schriftgestalter sorgfältig hergestellt hat.</p>
+
+<p><img src="material/verschraegt.png" alt="Normalschnitt verschrägt und verfettet, darunter der richtige Schriftschnitt" /></p>
+
+<p>Übrigens: Es ist egal, ob man das Schriftgewicht in Zahlen (300, 400, 700, …) oder in Worten angibt (light, normal, bold, …). Es muss noch nicht einmal dem eigentlichen Gewicht der Schriftdatei entsprechen. Zum Beispiel kann man einen Regular-Schnitt verlinken, aber als <code>bold</code> deklarieren. So wird eine Fallback-Schrift fett angezeigt, falls beim Laden der Webschrift etwas schief geht. Das habe ich zum Beispiel hier im Blog mit meiner Titelschrift Bitter gemacht, die mir als Regular-Variante schon fett genug erscheint.</p>
+
+	<p>---<br> <a href="webfont-styles.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2016-08-05">Fr, 5.  Aug. 2016</time>
 	<h1><a href="podcasts.html">Podcasts als Informationsquelle</a></h1>
 	<p>Ich bin ein Ohrenmensch. Nicht weil ich ein absolutes Gehör hätte oder besonders viel Musik hören würde, sondern weil ich einen Großteil meiner Informationen übers Gehör konsumiere – in Form von Nachrichten, Magazine, Diskussionen (über <a href="hoerspiele.html">Hörspiele</a> habe ich ja schon geschrieben; meinen Internetkonsum lasse ich aus dramaturgischen Gründen mal außen vor). Dabei höre ich nicht nur gerne das Wortprogramm im Radio, sondern habe auch so einige Podcasts abonniert.</p>
@@ -110,66 +161,6 @@
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2016-05-23">Mo, 23.  Mai 2016</time>
-	<h1><a href="user-css.html">Deine Website, mein CSS</a></h1>
-	<p>Als Gestalter hat man einen Blick dafür, wenn Dinge nicht ganz optimal aussehen. Ob das nun zu kleine Schrift ist, ein störender Banner oder typografische Details (wie im xkcd-Comic <a href="https://www.xkcd.com/1015/">Bad Kerning</a>). Würde man jedes Mal den jeweiligen Urheber anschreiben, das Problem erklären und warum die Welt viel schöner wäre, wenn man das anders gestaltet – man käme gar nicht mehr dazu, sein Mailprogramm zu schließen. Und gefrustet wäre man am Ende auch, denn nicht jeder sieht ein, warum so ein Detail geändert werden sollte.</p>
-
-<p>Falls diese „Gestaltungsfehler“ auf einer Websites zu finden sind (und man ein bisschen <a href="https://wiki.selfhtml.org/wiki/CSS">CSS</a> kann), habe ich eine gute Nachricht: Jeder Internetnutzer kann die Darstellung beliebiger Websites in seinem Browser beeinflussen – und so wenigstens seine eigene Welt ein bisschen schöner machen. Möglich machen das benutzerdefinierte CSS-Befehle.</p>
-
-<h2 id="was-ist-user-css">Was ist User-CSS?</h2>
-
-<p>Dabei handelt es sich um CSS-Anweisungen in einer Datei oder innerhalb einer Browser-Erweiterung. Mit diesem CSS kann man Formatierungen auf jeder beliebigen Website einfach überschreiben. Beispielsweise macht für mich der Code</p>
-
-<pre><code>a:visited { color: #752 !important; }
-</code></pre>
-
-<p>besuchte Links auf der Website <a href="http://ubuntuusers.de">http://ubuntuusers.de</a> dunkler. So kann ich erkennen, welche Verweise ich schon einmal aufgerufen habe. Ein weiteres Beispiel aus meiner Nutzer-CSS-Datei:</p>
-
-<pre><code>.postArticle-content, .notesPositionContainer {
-   letter-spacing: 0 !important; }
-.postActionsBar { display: none !important; }
-</code></pre>
-
-<p>Das zeigt mir die Texte auf <a href="http://medium.com">http://medium.com</a> ohne Buchstaben-Sperrung und blendet die untere Leiste aus. Weitere Anpassungen in meiner Nutzer-CSS-Datei aktivieren auf Wikipedia die Silbentrennung, entfernen nervige Overlay-Hinweise diverser Seiten, machen fixierte Menüs scrollbar oder ändern die Schriftfarbe von blassgrau auf lesbares dunkelgrau.</p>
-
-<h2 id="wohin-mit-meinen-css-korrekturen">Wohin mit meinen CSS-Korrekturen?</h2>
-
-<p>Je nach Browser und Betriebssystem geht man ein wenig anders vor. Am besten finde ich die Lösung von Firefox, eigene CSS-Anweisungen in eine bestimmte Datei im Profil-Ordner zu legen. Das war einst auch mit Chrome und Opera möglich, jetzt benötigen diese Browser eine Erweiterung. Im Einzelnen:</p>
-
-<h3 id="mozilla-firefox">Mozilla Firefox</h3>
-
-<p>Hier stehen die CSS-Anpassungen in einer Datei namens <code>userContent.css</code>. Sie liegt im eigenen Profil-Ordner im Verzeichnis <code>chrome</code> (muss evtl. erst angelegt werden). Bei Linux also unter <code>~/.mozilla/firefox/&lt;Profil-Ordner&gt;/chrome/userContent.css</code>, bei Windows unter <code>%APPDATA%\Mozilla\Firefox\Profiles\&lt;Profil-Ordner&gt;\chrome\userContent.css</code>. Die Mozilla-Hilfe erklärt, wie man den <a href="https://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten">Profil-Ordner findet</a>.</p>
-
-<p>Möchte man CSS-Stile nur auf einer bestimmten Website anwenden, umschließt man sie mit</p>
-
-<pre><code>@-moz-document domain(EXAMPLE.COM) { &lt;CSS-Code&gt; }
-</code></pre>
-
-<h3 id="internet-explorer-und-microsoft-edge">Internet-Explorer und Microsoft Edge</h3>
-
-<p>Laut <a href="https://www.itsupportguides.com/computer-accessibility/how-to-use-a-custom-style-sheet-css-with-internet-explorer/">IT Support Guides</a> (engl.) kann man im Internet-Explorer den Speicherort seiner CSS-Datei frei wählen. Ich bin mir aber nicht sicher, ob man damit CSS-Stile auf bestimmte Seiten einschränken kann. Microsoft Edge scheint im Augenblick <a href="http://stackoverflow.com/questions/33060628/how-to-attach-user-css-to-microsoft-edge#33060668">User-Stylesheets nicht zu unterstützen</a>.</p>
-
-<h3 id="opera">Opera</h3>
-
-<p>Für Opera muss man auf eine Erweiterung zurückgreifen, zum Beispiel <a href="https://addons.opera.com/de/extensions/details/user-css/">User-CSS</a>. Nach Installation und Neustart des Browsers kann man auf das blaue Icon rechts oben klicken und zu einer bestimmten Website eigene CSS-Anweisungen hinzufügen.</p>
-
-<h3 id="chrome-und-safari">Chrome und Safari</h3>
-
-<p>Eine sehr verbreitete Erweiterung, um Website-CSS anzupassen, ist <em>Stylish</em> (<a href="https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe">für Chrome</a> und <a href="http://sobolev.us/stylish/">für Safari</a>). Hiermit habe ich aber keine Erfahrungen und kann nur auf die englischsprachige <a href="https://userstyles.org/help/stylish_chrome">Anleitung des Entwicklers</a> verweisen.</p>
-
-<p>Mit Stylish (das es übrigens auch <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">für Firefox</a> und <a href="https://addons.opera.com/de/extensions/details/stylish/">für Opera</a> gibt) kann man eigene CSS-Anpassungen verwalten oder vorgefertigte Stildateien von <a href="http://userstyles.org">http://userstyles.org</a> installieren. So erscheint Facebook dann zum Beispiel im schwarz-grünen <a href="https://userstyles.org/styles/99184/facebook-monster-energy-by-royal-style">Monster-Energy-Look</a>. Wem’s gefällt.</p>
-
-<h2 id="vieles-ist-mglich">Vieles ist möglich</h2>
-
-<p>Man muss sich nicht mit einer schlecht gestalteten Website abfinden. Wer seine Google-Ergebnisse lieber in Comic Sans lesen möchte, hat mit User-CSS die Möglichkeit dazu.</p>
-
-<p><img src="material/comic-google.png" alt="Google-Ergebnisse in Comic Sans" /></p>
-
-	<p>---<br> <a href="user-css.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -194,7 +185,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-09-02T19:43:53+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-09-12T07:47:27+02:00</p>
 
 </main> <!-- hauptfeld -->
 </div> <!-- container -->
