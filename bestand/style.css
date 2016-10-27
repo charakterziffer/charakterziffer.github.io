@@ -174,12 +174,12 @@ div[style*="font-family: arial;"] { left: -9999px; }
 /* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
 .onlex_counter { display: none; }
 
-audio { margin: 0.6em 0 0.1em; width:100%; }
+audio { margin: 0.6em 0 0.1em; width:98.5%; }
 
 /* FORMULARE */
 
 input { font: inherit; font-size: 0.9em; line-height: 1.556; }
-textarea { width: 98%; padding: 0.1em 0 0.1em 0.2em; overflow: auto;
+textarea { width: 98.5%; padding: 0.1em 0 0.1em 0.2em; overflow: auto;
 	resize: vertical; font: inherit;}
 form > div { padding-top: 0.4em; clear: both; }
 
@@ -193,7 +193,7 @@ form input[type=text], form input[type=email], form input[type=url] {
 
 @media (max-width: 54em) {
 form label { float: none; top: 0; width: 100%; }
-form > div > div { float: none; width: 98%; }
+form > div > div { float: none; width: 98.5%; }
 form input[type=text], form input[type=email], form input[type=url] {
 	width: 100%; }
 }
@@ -207,7 +207,7 @@ form input[type=text], form input[type=email], form input[type=url] {
 
 @media (max-width: 34em) {
 form label { float: none; top: 0; width: 100%; }
-form > div > div { float: none; width: 98%; }
+form > div > div { float: none; width: 98.5%; }
 form input[type=text], form input[type=email], form input[type=url] {
 	width: 100%; }
 }

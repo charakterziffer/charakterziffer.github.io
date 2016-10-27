@@ -119,9 +119,12 @@
 
 &lt;p&gt;Ja genau: Diese regelmäßig erscheinenden Audio-Dateien, die man im Internet findet und mithilfe eines Programms („Podcatcher“) automatisiert herunterladen kann.&lt;/p&gt;
 
-&lt;p&gt;In den letzten Jahren erlebt der Begriff &lt;em&gt;Podcast&lt;/em&gt; einen Bedeutungswandel und einige meinen damit grundsätzlich jede Audiodatei, die man im Netz anhören kann; für mich muss ein Podcast aber regelmäßig erscheinen und plattformunabhängig sein. Wenn ich mir zum Anhören erst die spezielle App eines bestimmten Herstellers installieren muss, dann ist es in meinen Augen kein Podcast mehr, sondern höchstens eine Audio-Show oder -Serie. Diskutiert wurde darüber letztens im Podcast &lt;em&gt;Frequenz 4000&lt;/em&gt; (Folge 6, ab Restzeit ca. 43 Minuten):&lt;/p&gt;
+&lt;p&gt;In den letzten Jahren erlebt der Begriff &lt;em&gt;Podcast&lt;/em&gt; einen Bedeutungswandel und einige meinen damit grundsätzlich jede Audiodatei, die man im Netz anhören kann; für mich muss ein Podcast aber regelmäßig erscheinen und plattformunabhängig sein. Wenn ich mir zum Anhören erst die spezielle App eines bestimmten Herstellers installieren muss, dann ist es in meinen Augen kein Podcast mehr, sondern höchstens eine Audio-Show oder -Serie. Diskutiert wurde darüber letztens im Podcast &lt;em&gt;Frequenz 4000&lt;/em&gt; (Folge 6, ab ca. 12’30”):&lt;/p&gt;
 
-&lt;script class=&quot;podigee-podcast-player&quot; src=&quot;https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js&quot; data-configuration=&quot;https://frequenz-4000.podigee.io/6-frq06/embed&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot; tabindex=&quot;0&quot;&gt;
+	&lt;source src=&quot;https://cdn.podigee.com/media/podcast_674_frequenz_4000_episode_6_eisen_in_der_pipeline.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;https://cdn.podigee.com/media/podcast_674_frequenz_4000_episode_6_eisen_in_der_pipeline.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;mein-ohr-liebt-&quot;&gt;Mein Ohr liebt …&lt;/h2&gt;
 
