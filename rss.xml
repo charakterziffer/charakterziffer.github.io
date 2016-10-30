@@ -14,6 +14,44 @@
 </image>
 
 <item>
+	<title>Rezept Kürbissuppe</title>
+	<description>&lt;p&gt;Man kann im Supermarkt tatsächlich sinnvolle und benötigte Dinge für nur 3 Cent kaufen, zum Beispiel das kleine Stückchen Ingwer für diese leckere Kürbissuppe.&lt;/p&gt;
+
+&lt;h2 id=&quot;zutaten-fr-8-personen&quot;&gt;Zutaten (für 8 Personen)&lt;/h2&gt;
+
+&lt;div style=&quot;-moz-columns: 10em; -webkit-columns: 10em; columns: 10em; margin:1em 0 -0.3em;&quot;&gt;
+800&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;g Kürbisfleisch&lt;br /&gt;
+150&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;g Zwiebeln&lt;br /&gt;
+300&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;g Kartoffeln&lt;br /&gt;
+40&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;g Butter&lt;br /&gt;
+1 unbehandelte Orange (Schale und Saft)&lt;br /&gt;
+1,5&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;l Gemüsebrühe&lt;br /&gt;
+1 Saft von einer Limette&lt;br /&gt;
+1 Stück Ingwer&lt;br /&gt;
+Salz, Pfeffer&lt;br /&gt;
+1 Prise Zucker&lt;br /&gt;
+250&lt;small&gt;&lt;small&gt;&amp;nbsp;&lt;/small&gt;&lt;/small&gt;ml Sahne&lt;br /&gt;
+Muskatnuss&lt;br /&gt;
+Cayenne-Pfeffer&lt;br /&gt;
+Tabasco&lt;br /&gt;
+Kürbis-Öl und geröstete Kürbiskerne zum Garnieren&lt;br /&gt;
+etwas Petersilie&lt;/div&gt;
+
+&lt;h2 id=&quot;zubereitung&quot;&gt;Zubereitung&lt;/h2&gt;
+
+&lt;p&gt;Kürbis, Zwiebeln und Kartoffeln in kleine Würfel schneiden und in Butter anbraten. Den Saft und die geriebene Schale der Orange dazugeben, außerdem die Gemüsebrühe und den kleingeschnittenen Ingwer. Mit Salz, Pfeffer und einer Prise Zucker würzen.&lt;/p&gt;
+
+&lt;p&gt;25 Minuten köcheln lassen, danach mit dem Pürier-Stab pürieren. Nun die Sahne zugeben. Mit Limettensaft, Muskat usw. (was das Herz begehrt) abschmecken.&lt;/p&gt;
+
+&lt;p&gt;Die fertige Suppe im Teller mit einigen Tropfen Kürbis-Öl garnieren, sowie eventuell mit Kürbiskernen und etwas Petersilie.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/kuerbissuppe.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/kuerbissuppe.html</guid>
+	<pubDate>Mon, 31 Oct 2016 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Vier Plakate fürs Chorkonzert</title>
 	<description>&lt;p&gt;Seit einigen Jahren gestalte ich für unseren Kirchenchor das Plakat und das Programmblatt des Jahreskonzertes im Herbst. Die Aufgabe macht mir recht viel Spaß, weil ich kaum Vorgaben habe und viele Dinge ausprobieren kann. Gut, einige Einschränkungen gibt es natürlich schon: Plakat und Programm dürfen nur schwarz-weiß sein, Text und Thema stehen fest und auch das Logo der Kirchengemeinde muss vorhanden sein.&lt;/p&gt;
 
@@ -172,67 +210,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/tintenfarben.html</guid>
 	<pubDate>Thu, 30 Jun 2016 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Deine Website, mein CSS</title>
-	<description>&lt;p&gt;Als Gestalter hat man einen Blick dafür, wenn Dinge nicht ganz optimal aussehen. Ob das nun zu kleine Schrift ist, ein störender Banner oder typografische Details (wie im xkcd-Comic &lt;a href=&quot;https://www.xkcd.com/1015/&quot;&gt;Bad Kerning&lt;/a&gt;). Würde man jedes Mal den jeweiligen Urheber anschreiben, das Problem erklären und warum die Welt viel schöner wäre, wenn man das anders gestaltet – man käme gar nicht mehr dazu, sein Mailprogramm zu schließen. Und gefrustet wäre man am Ende auch, denn nicht jeder sieht ein, warum so ein Detail geändert werden sollte.&lt;/p&gt;
-
-&lt;p&gt;Falls diese „Gestaltungsfehler“ auf einer Websites zu finden sind (und man ein bisschen &lt;a href=&quot;https://wiki.selfhtml.org/wiki/CSS&quot;&gt;CSS&lt;/a&gt; kann), habe ich eine gute Nachricht: Jeder Internetnutzer kann die Darstellung beliebiger Websites in seinem Browser beeinflussen – und so wenigstens seine eigene Welt ein bisschen schöner machen. Möglich machen das benutzerdefinierte CSS-Befehle.&lt;/p&gt;
-
-&lt;h2 id=&quot;was-ist-user-css&quot;&gt;Was ist User-CSS?&lt;/h2&gt;
-
-&lt;p&gt;Dabei handelt es sich um CSS-Anweisungen in einer Datei oder innerhalb einer Browser-Erweiterung. Mit diesem CSS kann man Formatierungen auf jeder beliebigen Website einfach überschreiben. Beispielsweise macht für mich der Code&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;a:visited { color: #752 !important; }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;besuchte Links auf der Website &lt;a href=&quot;http://ubuntuusers.de&quot;&gt;http://ubuntuusers.de&lt;/a&gt; dunkler. So kann ich erkennen, welche Verweise ich schon einmal aufgerufen habe. Ein weiteres Beispiel aus meiner Nutzer-CSS-Datei:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.postArticle-content, .notesPositionContainer {
-   letter-spacing: 0 !important; }
-.postActionsBar { display: none !important; }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Das zeigt mir die Texte auf &lt;a href=&quot;http://medium.com&quot;&gt;http://medium.com&lt;/a&gt; ohne Buchstaben-Sperrung und blendet die untere Leiste aus. Weitere Anpassungen in meiner Nutzer-CSS-Datei aktivieren auf Wikipedia die Silbentrennung, entfernen nervige Overlay-Hinweise diverser Seiten, machen fixierte Menüs scrollbar oder ändern die Schriftfarbe von blassgrau auf lesbares dunkelgrau.&lt;/p&gt;
-
-&lt;h2 id=&quot;wohin-mit-meinen-css-korrekturen&quot;&gt;Wohin mit meinen CSS-Korrekturen?&lt;/h2&gt;
-
-&lt;p&gt;Je nach Browser und Betriebssystem geht man ein wenig anders vor. Am besten finde ich die Lösung von Firefox, eigene CSS-Anweisungen in eine bestimmte Datei im Profil-Ordner zu legen. Das war einst auch mit Chrome und Opera möglich, jetzt benötigen diese Browser eine Erweiterung. Im Einzelnen:&lt;/p&gt;
-
-&lt;h3 id=&quot;mozilla-firefox&quot;&gt;Mozilla Firefox&lt;/h3&gt;
-
-&lt;p&gt;Hier stehen die CSS-Anpassungen in einer Datei namens &lt;code&gt;userContent.css&lt;/code&gt;. Sie liegt im eigenen Profil-Ordner im Verzeichnis &lt;code&gt;chrome&lt;/code&gt; (muss evtl. erst angelegt werden). Bei Linux also unter &lt;code&gt;~/.mozilla/firefox/&amp;lt;Profil-Ordner&amp;gt;/chrome/userContent.css&lt;/code&gt;, bei Windows unter &lt;code&gt;%APPDATA%\Mozilla\Firefox\Profiles\&amp;lt;Profil-Ordner&amp;gt;\chrome\userContent.css&lt;/code&gt;. Die Mozilla-Hilfe erklärt, wie man den &lt;a href=&quot;https://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten&quot;&gt;Profil-Ordner findet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Möchte man CSS-Stile nur auf einer bestimmten Website anwenden, umschließt man sie mit&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@-moz-document domain(EXAMPLE.COM) { &amp;lt;CSS-Code&amp;gt; }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;internet-explorer-und-microsoft-edge&quot;&gt;Internet-Explorer und Microsoft Edge&lt;/h3&gt;
-
-&lt;p&gt;Laut &lt;a href=&quot;https://www.itsupportguides.com/computer-accessibility/how-to-use-a-custom-style-sheet-css-with-internet-explorer/&quot;&gt;IT Support Guides&lt;/a&gt; (engl.) kann man im Internet-Explorer den Speicherort seiner CSS-Datei frei wählen. Ich bin mir aber nicht sicher, ob man damit CSS-Stile auf bestimmte Seiten einschränken kann. Microsoft Edge scheint im Augenblick &lt;a href=&quot;http://stackoverflow.com/questions/33060628/how-to-attach-user-css-to-microsoft-edge#33060668&quot;&gt;User-Stylesheets nicht zu unterstützen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;opera&quot;&gt;Opera&lt;/h3&gt;
-
-&lt;p&gt;Für Opera muss man auf eine Erweiterung zurückgreifen, zum Beispiel &lt;a href=&quot;https://addons.opera.com/de/extensions/details/user-css/&quot;&gt;User-CSS&lt;/a&gt;. Nach Installation und Neustart des Browsers kann man auf das blaue Icon rechts oben klicken und zu einer bestimmten Website eigene CSS-Anweisungen hinzufügen.&lt;/p&gt;
-
-&lt;h3 id=&quot;chrome-und-safari&quot;&gt;Chrome und Safari&lt;/h3&gt;
-
-&lt;p&gt;Eine sehr verbreitete Erweiterung, um Website-CSS anzupassen, ist &lt;em&gt;Stylish&lt;/em&gt; (&lt;a href=&quot;https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe&quot;&gt;für Chrome&lt;/a&gt; und &lt;a href=&quot;http://sobolev.us/stylish/&quot;&gt;für Safari&lt;/a&gt;). Hiermit habe ich aber keine Erfahrungen und kann nur auf die englischsprachige &lt;a href=&quot;https://userstyles.org/help/stylish_chrome&quot;&gt;Anleitung des Entwicklers&lt;/a&gt; verweisen.&lt;/p&gt;
-
-&lt;p&gt;Mit Stylish (das es übrigens auch &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/stylish/&quot;&gt;für Firefox&lt;/a&gt; und &lt;a href=&quot;https://addons.opera.com/de/extensions/details/stylish/&quot;&gt;für Opera&lt;/a&gt; gibt) kann man eigene CSS-Anpassungen verwalten oder vorgefertigte Stildateien von &lt;a href=&quot;http://userstyles.org&quot;&gt;http://userstyles.org&lt;/a&gt; installieren. So erscheint Facebook dann zum Beispiel im schwarz-grünen &lt;a href=&quot;https://userstyles.org/styles/99184/facebook-monster-energy-by-royal-style&quot;&gt;Monster-Energy-Look&lt;/a&gt;. Wem’s gefällt.&lt;/p&gt;
-
-&lt;h2 id=&quot;vieles-ist-mglich&quot;&gt;Vieles ist möglich&lt;/h2&gt;
-
-&lt;p&gt;Man muss sich nicht mit einer schlecht gestalteten Website abfinden. Wer seine Google-Ergebnisse lieber in Comic Sans lesen möchte, hat mit User-CSS die Möglichkeit dazu.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/comic-google.png&quot; alt=&quot;Google-Ergebnisse in Comic Sans&quot; /&gt;&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/user-css.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/user-css.html</guid>
-	<pubDate>Mon, 23 May 2016 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
