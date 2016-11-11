@@ -167,7 +167,7 @@ figcaption { padding: 0.5em 0.8em 0.3em; font-style: italic;
 	font-size: 0.9em; line-height: 1.556; color: #111;}
 figcaption a { font-style: normal; font-size: 0.9em; }
 
-.texticon { margin: 0; padding: 0 .2em 0 .15em; vertical-align: -2px; }
+.texticon { margin: 0 .2em 0 .15em; padding: 0; vertical-align: -6%; }
 
 /* Werbediv von Formular-Chef verstecken */
 div[style*="font-family: arial;"] { left: -9999px; }
