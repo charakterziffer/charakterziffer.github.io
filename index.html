@@ -51,6 +51,27 @@
 
 
 	<article>
+	<time datetime="2016-11-23">Mi, 23.  Nov. 2016</time>
+	<h1><a href="kalender-2017.html">2017 übersichtlich und detailliert</a></h1>
+	<p>Ein idealer Kalender sollte mir ausreichend Platz bieten, damit ich drei bis vier Anmerkungen zu einem Tag notieren kann. Andererseits sollte er übersichtlich sein, d.<small><small> </small></small>h. aus einer gewissen Entfernung lesbar sein und den Blick auf mehrere Tage oder Wochen gleichzeitig ermöglichen.</p>
+
+<p>Raumgreifend wie ein Jahresposter darf mein Kalender aber nicht sein, sondern möglichst kleiner als DIN A4. Schöne Landschaftsfotografien brauche ich nicht unbedingt, doch eine ansprechende Gestaltung wäre schön. Klingt unmöglich? Ach was!</p>
+
+<p><img src="material/hmk2017.jpg" alt="Details meines Halbmonatskalenders 2017" /></p>
+
+<p>Schon 2012 habe ich das Design für einen ausgewogenen Halbmonatskalender entwickelt, den ich mir seitdem jedes Jahr neu erstelle und an die Wand neben meinem Arbeitsplatz hänge. Mit ein bisschen Übung kann man leicht erkennen, welches Quadrat zu welchem Wochentag gehört. Als Schriftart kommt diesmal die <a href="https://github.com/mozilla/Fira">Fira Sans von Mozilla</a> zum Einsatz.</p>
+
+<p>Wer meinen Kalender selbst verwenden möchte, kann unten das PDF herunterladen. Nach dem Ausdrucken einfach die Blätter halbieren und sortieren. Ich nutze als Halterung eine Vielzweckklammer („Foldback-Klammer“). Möglich ist aber auch, die einzelnen Seiten mit einer Spiralbindung zu versehen (Copy-Shop), sie an der oberen Kante leicht zusammenzuleimen, zu klammern oder alle Blätter mittig zu lochen und an einen Nagel zu hängen.</p>
+
+<p><a class="klickfeld" href="material/hmk2017.pdf">Kalender herunterladen<br /><em>(PDF-Datei, 325 kB)</em></a></p>
+
+<p>Falls euch das Kalenderformat gefällt, bitte weiterempfehlen. Ich würde mich freuen, wenn noch mehr Leute meinen Halbmonatskalender praktisch finden. Änderungswünsche oder Anregungen gerne als Kommentar.</p>
+
+	<p>---<br> <a href="kalender-2017.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2016-10-31">Mo, 31.  Okt. 2016</time>
 	<h1><a href="kuerbissuppe.html">Rezept Kürbissuppe</a></h1>
 	<p>Man kann im Supermarkt tatsächlich sinnvolle und benötigte Dinge für nur fünf Cent kaufen, zum Beispiel das kleine Stückchen Ingwer für diese leckere Kürbissuppe.</p>
@@ -134,57 +155,6 @@ etwas Petersilie</div>
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2016-09-12">Mo, 12.  Sept. 2016</time>
-	<h1><a href="webfont-styles.html">Verfettet und schräggestellt</a></h1>
-	<p>Endlich haben sich Webfonts durchgesetzt. Internetseiten können nun in ganz anderen Schriftarten erscheinen als nur in <em>web-safe fonts</em> wie Arial, Georgia oder Verdana. Einfach die Schriftdateien auf den Server laden und im CSS verlinken:</p>
-
-<pre><code>@font-face {
-  font-family: 'Beispielschrift';
-  font-style: normal; font-weight: 400;
-  src: url(Pfad/zur/Schrift-Regular.woff2) format('woff2'),
-  url(Pfad/zur/Schrift-Regular.woff) format('woff');
-}
-</code></pre>
-
-<p>Damit versorgt man <a href="http://caniuse.com/#search=woff">über 90% der Internetnutzer</a> mit der „Beispielschrift“ und kann seinen Webauftritt individueller und stimmiger gestalten. Doch alle Klippen hat man damit noch nicht umschifft. Wichtig ist nämlich, genau den Schriftstil einzubetten, der später auch verwendet wird. Womit wir beim Thema dieses Blogeintrags sind.</p>
-
-<h2 id="regular-hilft-nur-im-normalfall">Regular hilft nur im Normalfall</h2>
-
-<p>Viel zu oft binden Website-Betreiber nicht den richtigen Schriftschnitt ein. Das passiert sogar bekannten Anbietern wie <a href="https://github.com/explore">Github</a> (siehe “Trending repositories”),  <a href="https://www.alnatura.de/de-de/ueber-uns">Alnatura</a> (alle fetten Hervorhebung im Text) oder der <a href="https://www.washingtonpost.com/news/wonk/wp/2016/09/01/these-charts-clearly-show-how-some-olympic-swimmers-may-have-gotten-an-unfair-advantage/">Washington Post</a> (bei den Zwischenüberschriften).</p>
-
-<p>Meistens wird vergessen, dass der Browser Überschriften oder Hervorhebungen mit <code>&lt;strong&gt;</code> standardmäßig fett darstellt. Wenn man seine Beispielschrift nun wie oben verlinkt und einfach einer Überschrift zuweist, wird der Browser zu rechnen beginnen. Er verfettet die Schrift künstlich, da er ja nur die Datei für den Normalschnitt vorfindet.</p>
-
-<p><img src="material/verfettet.png" alt="Künstlich verfettete Schrift verglichen mit echtem Fettschnitt" /></p>
-
-<p>Manchmal klappt die künstliche Verfettung relativ gut, abhängig vom Browser und der Schrift. Sie sieht aber <em>immer schlechter</em> aus als der richtige Fettschnitt. Fettgerechnete Buchstaben wirken oft klecksig, i-Punkte kleben am Stamm, kleine Öffnungen laufen zu und die Schrift wird schlechter lesbar. Ähnliches gilt für kursive Schriftschnitte.</p>
-
-<h2 id="die-bereinstimmung-ist-entscheidend">Die Übereinstimmung ist entscheidend</h2>
-
-<p>Dabei lassen sich mathematische Schrägstellung und Verfettung recht leicht vermeiden. Man muss nur das Schriftgewicht (<code>font-weight</code>) und die Schriftneigung (<code>font-style</code>) beim gewählten HTML-Element genauso angeben wie bei der Font-Datei, die dafür verwendet werden soll. Möchte man also die Überschrift fett und dazu kursiv haben, kommt ins CSS …</p>
-
-<pre><code>h1 { font: 1.5em/1.2 'Playfair Display';
-     font-weight: 700; font-style: italic; }
-</code></pre>
-
-<p>Die Schriftdatei bindet man dann ein mit …</p>
-
-<pre><code>@font-face { font-family: 'Playfair Display';
-  font-weight: 700; font-style: italic;
-  src: url(Pfad/zur/Playfair-BdIt.woff) format('woff');
-}
-</code></pre>
-
-<p>Man beachte jeweils die zweite Zeile: Die Angaben bei dem HTML-Element und der Einbettung stimmen überein. Dadurch erscheint der Webfont dann genau so, wie ihn der Schriftgestalter sorgfältig hergestellt hat.</p>
-
-<p><img src="material/verschraegt.png" alt="Normalschnitt verschrägt und verfettet, darunter der richtige Schriftschnitt" /></p>
-
-<p>Übrigens: Es ist egal, ob man das Schriftgewicht in Zahlen (300, 400, 700, …) oder in Worten angibt (light, normal, bold, …). Es muss noch nicht einmal dem eigentlichen Gewicht der Schriftdatei entsprechen. Zum Beispiel kann man einen Regular-Schnitt verlinken, aber als <code>bold</code> deklarieren. So wird eine Fallback-Schrift fett angezeigt, falls beim Laden der Webschrift etwas schief geht. Das habe ich zum Beispiel hier im Blog mit meiner Titelschrift Bitter gemacht, die mir als Regular-Variante schon fett genug erscheint.</p>
-
-	<p>---<br> <a href="webfont-styles.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -209,7 +179,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-11-22T14:53:09+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.7em; margin: 4em 1em 1.1em">Website zuletzt erstellt: 2016-11-23T00:01:07+01:00</p>
 
 </main>
 </div> <!-- container -->
