@@ -9,16 +9,14 @@
 
 @font-face { font-family: 'Source Sans Pro';
 	font-style: normal; font-weight: 400;
-	src: url('SourceSansPro-Rg.woff') format('woff'),
-	url('SourceSansPro-Rg.ttf') format('truetype'); }
+	src: url('SourceSansPro-Rg.woff2') format('woff2'), url('SourceSansPro-Rg.woff') format('woff'); }
 @font-face { font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
-	src: url('SourceSansPro-It.woff') format('woff'),
-	url('SourceSansPro-Rg.ttf') format('truetype'); }
+	src: url('SourceSansPro-It.woff2') format('woff2'), url('SourceSansPro-It.woff') format('woff'); }
 @font-face { font-family: 'Bitter';
 	font-style: normal; font-weight: bold;
-	src: url('Bitter.woff') format('woff'),
-	url('Bitter.ttf') format('truetype'); }
+	src: url('Bitter.woff2') format('woff2'),
+	url('Bitter.woff') format('woff'); }
 
 /* GRUNDSÄTZLICHES LAYOUT */
 
