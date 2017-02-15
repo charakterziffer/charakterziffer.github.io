@@ -58,11 +58,11 @@ main { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
 h1,h2,h3 { font-family: Bitter,Georgia,serif; font-weight: bold;
 	font-feature-settings: "liga", "kern";}
 h1 { font-size: 1.5em; line-height: .933; color: #444;
-	margin: 2.78em 0 .7em -0.04em; }
+	margin: 2.78em 0 .7em -.04em; }
 h2 { font-size: 1.1em; line-height: 1.273; color: #333;
-	margin: 1.2em 0 -0.55em -0.04em; }
+	margin: 1.2em 0 -.55em -.04em; }
 h3 { font-size: .9em; line-height: 1.556; color: #222;
-	margin: 1.5em 0 -0.725em -0.04em; }
+	margin: 1.5em 0 -.725em -.04em; }
 
 .logo > span { font-size: 1.9em; line-height: 1; color: #444;
 	margin: 0; display: block; }
@@ -73,18 +73,18 @@ h3 { font-size: .9em; line-height: 1.556; color: #222;
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
-p, ul, ol { margin-bottom: -0.3em;
+p, ul, ol { margin-bottom: -.3em;
 	-webkit-font-feature-settings: "onum", "liga", "kern"; font-feature-settings: "onum", "liga", "kern";
 /*	statt CSS-hyphens wird noch hyphenator.js verwendet
 	-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; */ }
-aside p { margin-bottom: -0.22em; font-size: .9em;
+aside p { margin-bottom: -.22em; font-size: .9em;
 	line-height: 1.556; }
 
 i, em { font-style: italic; color: #111; }
 b, strong { font: bold .9em Bitter,Georgia,serif; color: #111; }
 sup, sub { line-height: 0; }
 time { position: relative; float: right; right: .5em; display: block;
-	margin-top: -0.2em; padding-left: 1em; color: #666; }
+	margin-top: -.2em; padding-left: 1em; color: #666; }
 
 /* Wenn Fenster sehr schmal, Datum rechts oberhalb der Überschrift */
 @media (max-width: 27em) { time { margin-top: -1.7em; } }
@@ -100,7 +100,7 @@ ul li p { margin: .7em 0; }
 ol { margin-left: -1.5em; }
 ol ol { list-style: lower-alpha; }
 
-code, pre { margin: .95em 0 -0.28em; padding:.05em .2em;
+code, pre { margin: .95em 0 -.28em; padding:.05em .2em;
 	font: .9em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace;
 	color: #222; background-color:#f4f4f4; box-decoration-break: clone;
 	border-radius:.1em; }
@@ -167,7 +167,7 @@ figcaption { padding: .5em .8em .3em; font-style: italic;
 	font-size: .9em; line-height: 1.556; color: #111;}
 figcaption a { font-style: normal; font-size: .9em; }
 
-[class^="icon"]:after { margin: 0 .15em -0.2em .4em; padding: 0; vertical-align: -5%; display:inline-block; }
+[class^="icon"]:after { margin: 0 .15em -.2em .4em; padding: 0; vertical-align: -5%; display:inline-block; }
 
 .icon-rss:after { width:1em; content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2014%2014%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cg%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M13%2013V1H1v12z%22%20fill%3D%22%23f60%22%20stroke%3D%22%23f60%22%2F%3E%3Cpath%20d%3D%22M11%2011c1-9-8-8-8-8m4.5%208C8%206%203%206.5%203%206.5%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%2F%3E%3Ccircle%20cx%3D%223.5%22%20cy%3D%2210.5%22%20r%3D%221.5%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
 
@@ -229,7 +229,7 @@ main { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
 h1, h2, h3, h4, h5, h6, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
 .logo > span { margin: 0; padding-top: .1em; }
-time { margin-top: -0.2em; }
+time { margin-top: -.2em; }
 p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 p, figcaption, blockquote, a:link, a:visited { color: #000; }
 
