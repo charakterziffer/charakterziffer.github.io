@@ -29,13 +29,13 @@ body { margin: 0; padding: .5%; text-align: center;
 	font-weight: 400; color: #222;
 	background: #281 url(shattered.jpg) repeat fixed; }
 
-#container { min-width: 47em; max-width: 57em; margin: 30px auto 50px;
+#container { min-width: 47em; max-width: 57em; margin: 1.9em auto 3.1em;
 	text-align: left; background-color: #eee;
 	box-shadow: 1px 2px 8px #222; }
 aside { position: fixed; float: left; display: block;
-	width: 16.6em; padding: 63px 1em 56px; }
+	width: 16.6em; padding: 4em 1em 3.4em; }
 main { display: block; margin-left: 16.6em;
-	padding: .08em 65px 1.4em 55px;
+	padding: .08em 4em 1.4em 3.4em;
 	background-color: #fff; border-left: 1px dashed #281; }
 article, section { display: block; }
 /* article { background: linear-gradient(rgba(0,0,0,.2) .1em, transparent 0) 0 0 / auto .7em; } /* Grundlinienraster */
@@ -47,9 +47,9 @@ article, section { display: block; }
 #container { min-width: 100%; margin: 0;
 	background-color: #fff; box-shadow: none; }
 aside { position: static; float: none; width: inherit;
-	padding: 15px 13px 20px 15px;
+	padding: .9em .8em 1.25em .9em;
 	border-bottom: 1px dashed #281; background-color: #eee; }
-main { margin: -1.5em 0 0; padding: 0 13px 2.5em 15px;
+main { margin: -1.5em 0 0; padding: 0 .8em 2.5em .9em;
 	border: 0;}
 }
 
@@ -66,7 +66,7 @@ h3 { font-size: .9em; line-height: 1.556; color: #222;
 
 .logo > span { font-size: 1.9em; line-height: 1; color: #444;
 	margin: 0; display: block; }
-.logo img { float: left; margin-right: .8em; }
+.logo img { float: left; margin-right: .8em; width: 3.75em; height: auto; }
 
 @media (max-width: 44.4em) { .logo > span { margin: .6em 0; } }
 @media (max-width: 22.9em) { .logo > span { margin: 0; } }
@@ -223,7 +223,7 @@ form input[type=text], form input[type=email], form input[type=url] {
 body, #container, aside, main { background: #fff none; }
 #container { width: 100%; margin: 0; box-shadow: none; }
 aside { position: static; float: none; width: inherit;
-	padding: 20px 0; border-bottom: 1px dashed #281;}
+	padding: 1.25em 0; border-bottom: 1px dashed #281;}
 main { margin: -1.5em 0 0; padding: 0 0 2.5em; border: 0; }
 
 h1, h2, h3, h4, h5, h6, .datum {
