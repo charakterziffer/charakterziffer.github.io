@@ -238,7 +238,7 @@ p, figcaption, blockquote, a:link, a:visited { color: #000; }
 .klappkasten p + p { margin-top: .7em }
 
 img, table { page-break-inside: avoid; }
-figcaption, blockquote, .hinterlegt, .klappkasten {
+figure, blockquote, .hinterlegt, .klappkasten {
 	background: #fff; border: 1px solid #ccc; }
 blockquote + blockquote { margin-top: .7em; }
 blockquote > p { margin: 0 0 .3em; }
