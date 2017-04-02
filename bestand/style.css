@@ -85,6 +85,8 @@ b, strong { font: bold .9em Bitter,Georgia,serif; color: #111; }
 sup, sub { line-height: 0; }
 time { position: relative; float: right; right: .5em; display: block;
 	margin-top: -.2em; padding-left: 1em; color: #666; }
+/* schmale, nicht umbrechende Leerzeichen: <small>&nbsp;</small> */
+small { font-size: 75%; }
 
 /* Wenn Fenster sehr schmal, Datum rechts oberhalb der Überschrift */
 @media (max-width: 27em) { time { margin-top: -1.7em; } }
