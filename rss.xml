@@ -13,6 +13,36 @@
 </image>
 
 <item>
+	<title>@cz+ grafisch überarbeitet</title>
+	<description>&lt;p&gt;Gut drei Jahre ist es her, dass mein kleines Blog hier ein neues Gewand bekommen hat. Und so langsam hatte ich mich daran satt gesehen: Zu dominanter Hintergrund, zu gewöhnliche Schriftmischung, irgendwie zu beengt. Gründe genau für eine Überarbeitung. Im Gegensatz zur &lt;a href=&quot;neues-blogdesign.html&quot;&gt;letzten Umgestaltung&lt;/a&gt; hat sich technisch nicht viel verändert. Diesmal habe ich den Schwerpunkt auf die optische Erscheinung gelegt.&lt;/p&gt;
+
+&lt;p&gt;Das vorige Design ist mir mit der Zeit zu eng geworden. Mir gefällt der grüne Hintergrund noch immer sehr gut, zumal größere, farbkräftige Flächen im Internet eher ungewöhnlich sind. Zunehmend hatte ich aber den Eindruck, die grüne Fläche ist so stark, dass sie den Inhalt nicht nur rahmt, sondern regelrecht einsperrt und klein hält.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/blogdesign-2.jpg&quot; alt=&quot;mein Blog bis März 2017&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;raum-fr-texte&quot;&gt;Raum für Texte&lt;/h2&gt;
+
+&lt;p&gt;Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 12&lt;small&gt; &lt;/small&gt;pt (16px/1em) auf 13,2&lt;small&gt; &lt;/small&gt;pt (17,6px/1,1em) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.&lt;/p&gt;
+
+&lt;p&gt;Ob ich die graue Randspalte erhalten soll, darüber war ich mir lange Zeit unschlüssig. Sie stört, wenn ich ein eher minimales Design haben möchte, das sich auf den eigentlichen Text fokussiert. Andererseits gefällt mir der einladende Kurztext und er dient auch der Navigation ins Archiv oder zum RSS-Feed. Also habe ich ihn als durchscheinenden Kasten auf die rechte Seite gesetzt. Wird das Browserfenster schmaler, verschwindet der Kasten nach unten und stattdessen erscheint rechts oben ein reduziertes Menü zu den wichtigsten Bereichen meines Blogs.&lt;/p&gt;
+
+&lt;h2 id=&quot;eigenstndiges-design&quot;&gt;Eigenständiges Design&lt;/h2&gt;
+
+&lt;p&gt;Wenn man Gestaltungselemente reduziert oder abschwächt, besteht leicht die Gefahr, dass sich eine Website grafisch wenig von anderen unterscheidet und im Einheitsbrei untergeht. Ich wollte die charakteristischen Merkmale zwar zurückhaltend einsetzen, sie im Gegenzug aber möglichst einzigartig gestalten. Neben meinem Logo oben links lasse ich deshalb die Farbe Grün als Streifen am rechten Rand wieder auftauchen. Ja, ich weiß, &lt;a href=&quot;https://duckduckgo.com/?q=triangle+pattern&amp;amp;ia=images&amp;amp;iax=1&quot;&gt;Triangle Patterns&lt;/a&gt; liegen jetzt schon seit über drei Jahren im Trend und werden ihren Zenit sicher bald überschritten haben. Trotzdem: Ich fand es einfach zu reizvoll, mir wie im vorigen Design ein kristallines Muster zu basteln. Die Besonderheit diesmal: Es besteht nicht aus einer Bilddatei, sondern wurde per CSS aus vier Farbverläufen zusammengesetzt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/blogdesign-2-zu-3.jpg&quot; alt=&quot;Vergleich von Überschriften und Randspalte&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Weitaus einmaliger ist die Schriftart, die ich nun für Überschriften und Links verwende. Ich wollte mich ja schon länger von der &lt;em&gt;Bitter&lt;/em&gt; verabschieden, auch weil sie in Kombination mit meiner Textschrift &lt;em&gt;Source Sans Pro&lt;/em&gt; dank eines &lt;a href=&quot;https://wordpress.org/themes/twentythirteen/&quot;&gt;populären WordPress-Themes&lt;/a&gt; recht verbreitet ist. Um mich von anderen Websites abzugrenzen, verwende ich nun die &lt;em&gt;cz Slab&lt;/em&gt;, die ich selbst extra für dieses Blog gestaltet habe. Sie ist stark von &lt;a href=&quot;http://yanone.de/&quot;&gt;Yanone&lt;/a&gt;s genialer &lt;a href=&quot;https://www.fontshop.com/families/ff-antithesis&quot;&gt;Antithesis&lt;/a&gt; inspiriert, ist dabei aber etwas schmaler, fetter, angepasster und hat eine geringere x-Höhe.&lt;/p&gt;
+
+&lt;p&gt;Vom neuen Design erhoffe ich mir, dass es großzügiger, offener und leichter wirkt als sein Vorgänger. Wem die jetzige Schrift übrigens zu groß sein sollte, der kann die Zoom-Funktion seines Browsers nutzen und den Text mit der Tastenkombination &lt;kbd&gt;Strg&lt;/kbd&gt; + &lt;kbd&gt;-&lt;/kbd&gt; verkleinern (zurücksetzen dann mit &lt;kbd&gt;Strg&lt;/kbd&gt; + &lt;kbd&gt;0&lt;/kbd&gt;).&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/blogdesign-3.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/blogdesign-3.html</guid>
+	<pubDate>Tue, 11 Apr 2017 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Wo Texte eine Bleibe finden</title>
 	<description>&lt;p&gt;Kürzlich habe ich den Band „Die perfekte Lesemaschine“ gelesen. Darin beleuchtet Roland Reuß in fünfzig Essays verschiedene Aspekte &lt;em&gt;zur Ergonomie des Buches&lt;/em&gt; – so der Untertitel. Mir gefiel das Buch recht gut, obwohl (oder auch weil) ich nicht immer der Meinung des Autors war. Hätte er doch nur auf die übertriebenen Bildungsprotzwörter verzichtet (Quisquilie, distrahierend, …) und bloßen Lobpreis des Materials vermieden (Bücher besäßen haptisch erfahrbare Körperlichkeit, das Lesen am Bildschirm sei pathologisch planimetrisch, S.&lt;small&gt; &lt;/small&gt;25) …&lt;/p&gt;
 
@@ -171,28 +201,6 @@ Himmel: Orion. Er ist das auffallendste Sternbild des Winterhimmels, denn er ent
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/vorsaetze.html</guid>
 	<pubDate>Tue, 27 Dec 2016 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>2017 übersichtlich und detailliert</title>
-	<description>&lt;p&gt;Ein idealer Kalender sollte mir ausreichend Platz bieten, damit ich drei bis vier Anmerkungen zu einem Tag notieren kann. Andererseits sollte er übersichtlich sein, d.&lt;small&gt; &lt;/small&gt;h. aus einer gewissen Entfernung lesbar sein und den Blick auf mehrere Tage oder Wochen gleichzeitig ermöglichen.&lt;/p&gt;
-
-&lt;p&gt;Raumgreifend wie ein Jahresposter darf mein Kalender aber nicht sein, sondern möglichst kleiner als DIN A4. Schöne Landschaftsfotografien brauche ich nicht unbedingt, doch eine ansprechende Gestaltung wäre schön. Klingt unmöglich? Ach was!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/hmk2017.jpg&quot; alt=&quot;Details meines Halbmonatskalenders 2017&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Schon 2012 habe ich das Design für einen ausgewogenen Halbmonatskalender entwickelt, den ich mir seitdem jedes Jahr neu erstelle und an die Wand neben meinem Arbeitsplatz hänge. Mit ein bisschen Übung kann man leicht erkennen, welches Quadrat zu welchem Wochentag gehört. Als Schriftart kommt diesmal die &lt;a href=&quot;https://github.com/mozilla/Fira&quot;&gt;Fira Sans von Mozilla&lt;/a&gt; zum Einsatz.&lt;/p&gt;
-
-&lt;p&gt;Wer meinen Kalender selbst verwenden möchte, kann unten das PDF herunterladen. Nach dem Ausdrucken einfach die Blätter halbieren und sortieren. Ich nutze als Halterung eine Vielzweckklammer („Foldback-Klammer“). Möglich ist aber auch, die einzelnen Seiten mit einer Spiralbindung zu versehen (Copy-Shop), sie an der oberen Kante leicht zusammenzuleimen, zu klammern oder alle Blätter mittig zu lochen und an einen Nagel zu hängen.&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&quot;klickfeld&quot; href=&quot;material/hmk2017.pdf&quot;&gt;Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 325 kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Falls euch das Kalenderformat gefällt, bitte weiterempfehlen. Ich würde mich freuen, wenn noch mehr Leute meinen Halbmonatskalender praktisch finden. Änderungswünsche oder Anregungen gerne als Kommentar.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/kalender-2017.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/kalender-2017.html</guid>
-	<pubDate>Wed, 23 Nov 2016 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
