@@ -2,8 +2,9 @@
 
 /* Farben: #281 (grün), #3a1 (hellgrün), #deb (blassgrün)
 	Akzente: #839 (lila), #e32 (rot), #fdb (blassrot)
-	Grautöne: #666 (Datum) #ccc (hr), #eee (figure), #f4f4f4 (blockquote)
-	Text: #222 (fett/kursiv #111), #222–#444 (Titel) */
+	Grautöne: #666 (Datum) #ccc (hr), #eee (figure),
+	#f4f4f4 (blockquote + code), hsla(0,0%,94%,.7) (aside)
+	Text: #222 (fett/kursiv #111), #3a3a3a + #222 (Titel) */
 
 /* Schriften: Source Sans Pro Regular & Italic, czSlab */
 @font-face { font-family: 'Source Sans Pro';
@@ -38,7 +39,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 header, main, aside { display: block; max-width: 43em; }
 
 header { margin-bottom: 2.8em; }
-header > a:not(.spezifität) { font-size:1.7em; color:#444; padding:0; }
+header > a:not(.spezifität) { font-size:1.7em; color:#3a3a3a; padding:0; }
 header img { float: left; margin-right: .4em; margin-top:-.02em;
 	width: 2em; height: auto; }
 
@@ -47,7 +48,7 @@ nav ul { margin: 0; padding: 0; list-style: none; }
 nav li { display: inline-block; margin-bottom: .5em; }
 nav li a { padding: .25em .4em .2em; background-color: inherit;
 	cursor: pointer; transition: background-color .1s; }
-nav a, nav a:visited, nav a:hover, nav a:focus { color: #444; }
+nav a, nav a:visited, nav a:hover, nav a:focus { color: #3a3a3a; }
 nav a:hover, nav a:focus { background-color: #deb; }
 
 @media (min-width: 71.5em) { nav { display: none; } }
@@ -73,9 +74,9 @@ b, strong, p a:not(.klickfeld), figcaption a, form label {
 
 /* ÜBERSCHRIFTEN */
 
-h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */; color: #444;
+h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */; color: #3a3a3a;
 	margin: 1.5em 0 .5em -.04em; }
-h2 { font-size: 1.4em; line-height: 1.071 /* 1.5÷1.4 */; color: #333;
+h2 { font-size: 1.4em; line-height: 1.071 /* 1.5÷1.4 */; color: #3a3a3a;
 	margin: 1.25em 0 -.179em -.02em; }
 h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */; color: #222;
 	margin: 1.2em 0 -.518em -.01em; }
@@ -158,7 +159,7 @@ a { text-decoration: none; color: #281; }
 a:visited { color: #839; }
 a:hover { color: #3a1; }
 a:active { color: #e32; }
-a:focus { outline: 1px dotted #444; }
+a:focus { outline: 1px dotted #3a3a3a; }
 
 :target { background-color: transparent;
 	-webkit-animation: target-fade 1.4s; animation: target-fade 1.4s; }
