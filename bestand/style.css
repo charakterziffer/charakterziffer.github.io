@@ -128,8 +128,7 @@ pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap; }
 blockquote { margin: 1.35em 0 1.4em; padding: 0 .2em 0 .4em;
 	border-left: .75em solid #deb; background-color: #f4f4f4; }
 blockquote + blockquote { margin-top: 1.75em; }
-blockquote > h1, blockquote > h2, blockquote > h3 {
-	padding-top:.25em;}
+blockquote > h1, blockquote > h2, blockquote > h3 { padding-top:.25em; }
 
 @media (max-width: 35em) {
 blockquote { padding-left: .35em; border-width: .4em; } }
