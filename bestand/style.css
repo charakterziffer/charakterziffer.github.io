@@ -240,6 +240,7 @@ header > a:not(.spezifität), p, ul, ol, code, pre, figcaption, blockquote,
 
 img, table { page-break-inside: avoid; }
 blockquote + blockquote { margin-top: .7em; }
+blockquote > h1, blockquote > h2, blockquote > h3 { margin: 0 0 .25em; }
 blockquote > p { margin: 0 0 .3em; }
 
 .no-print, a[href$="#kommentieren"], a[href$="#kommentare"] {
