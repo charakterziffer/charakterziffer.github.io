@@ -160,7 +160,7 @@ a:active { color: #e32; }
 a:focus { outline: 1px dotted #333; }
 
 :target { background-color: transparent;
-	-webkit-animation: target-fade 1.4s; animation: target-fade 1.4s; }
+	-webkit-animation: target-fade 2s; animation: target-fade 2s; }
 @-webkit-keyframes target-fade { 0% { background-color: #deb; } }
 @keyframes target-fade { 0% { background-color: #deb; } }
 
