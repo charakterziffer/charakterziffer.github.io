@@ -104,7 +104,9 @@ kbd { font: .8em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace;
 
 /* time bei Datumsangabe eines Artikels, .datum bei Kommentaren */
 time, .datum {
-	display:block; float:right; padding-right:.4em; padding-left:1em; }
+	display:block; float:right; padding-right:.4em; padding-left:1em;
+	-webkit-font-feature-settings: "onum", "liga", "kern";
+	font-feature-settings: "onum", "liga", "kern"; }
 time { margin-top: -0.25em; color: #666; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
 @media (max-width: 35em) { time { margin-top: -1.6em; } }
