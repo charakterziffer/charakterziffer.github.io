@@ -48,7 +48,7 @@ header img { float: left; margin-right: .4em; margin-top:-.02em;
 nav { float:right; position:relative; top:-1.6em; text-align:right; }
 nav ul { margin: 0; padding: 0; list-style: none; }
 nav li { display: inline-block; margin-bottom: .5em; }
-nav li a { padding: .25em .4em .2em; cursor: pointer; }
+nav li a { padding: .25em .4em .2em; }
 nav a, nav a:visited, nav a:hover, nav a:focus { color: #333; }
 nav a:hover, nav a:focus { background-color: #deb; }
 
@@ -95,7 +95,8 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 b, strong, i, em { color: #111; }
 i, em { font-style: italic; }
 sup, sub { line-height: 0; letter-spacing: 0.05em;
-	-webkit-font-feature-settings: "liga", "kern"; font-feature-settings: "liga", "kern"; }
+	-webkit-font-feature-settings: "liga", "kern";
+	font-feature-settings: "liga", "kern"; }
 small { font-size:50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font: .8em/1 Monaco,Consolas,'DejaVu Sans Mono',monospace;
 	display: inline-block; position: relative; top: -.1em;

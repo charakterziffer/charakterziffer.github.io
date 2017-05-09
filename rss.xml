@@ -14,7 +14,7 @@
 
 <item>
 	<title>@cz+ grafisch überarbeitet</title>
-	<description>&lt;p&gt;Gut drei Jahre ist es her, dass mein kleines Blog hier ein neues Gewand bekommen hat. Und so langsam hatte ich mich daran satt gesehen: Zu dominanter Hintergrund, zu gewöhnliche Schriftmischung, irgendwie zu beengt. Gründe genau für eine Überarbeitung. Im Gegensatz zur &lt;a href=&quot;neues-blogdesign.html&quot;&gt;letzten Umgestaltung&lt;/a&gt; hat sich technisch nicht viel verändert. Diesmal habe ich den Schwerpunkt auf die optische Erscheinung gelegt.&lt;/p&gt;
+	<description>&lt;p&gt;Gut drei Jahre ist es her, dass mein kleines Blog hier ein neues Gewand bekommen hat. Und so langsam hatte ich mich daran satt gesehen: Zu dominanter Hintergrund, zu gewöhnliche Schriftmischung, irgendwie zu beengt. Gründe genug für eine Überarbeitung. Im Gegensatz zur &lt;a href=&quot;neues-blogdesign.html&quot;&gt;letzten Umgestaltung&lt;/a&gt; hat sich technisch nicht viel verändert. Diesmal habe ich den Schwerpunkt auf die optische Erscheinung gelegt.&lt;/p&gt;
 
 &lt;p&gt;Das vorige Design ist mir mit der Zeit zu eng geworden. Mir gefällt der grüne Hintergrund noch immer sehr gut, zumal größere, farbkräftige Flächen im Internet eher ungewöhnlich sind. Zunehmend hatte ich aber den Eindruck, die grüne Fläche ist so stark, dass sie den Inhalt nicht nur rahmt, sondern regelrecht einsperrt und klein hält.&lt;/p&gt;
 
@@ -22,7 +22,7 @@
 
 &lt;h2 id=&quot;raum-fr-texte&quot;&gt;Raum für Texte&lt;/h2&gt;
 
-&lt;p&gt;Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 12&lt;small&gt; &lt;/small&gt;pt (16px/1em) auf 13,2&lt;small&gt; &lt;/small&gt;pt (17,6px/1,1em) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.&lt;/p&gt;
+&lt;p&gt;Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 1&lt;small&gt; &lt;/small&gt;em (16px/12pt) auf 1,1&lt;small&gt; &lt;/small&gt;em (17,6px/13,2pt) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.&lt;/p&gt;
 
 &lt;p&gt;Ob ich die graue Randspalte erhalten soll, darüber war ich mir lange Zeit unschlüssig. Sie stört, wenn ich ein eher minimales Design haben möchte, das sich auf den eigentlichen Text fokussiert. Andererseits gefällt mir der einladende Kurztext und er dient auch der Navigation ins Archiv oder zum RSS-Feed. Also habe ich ihn als durchscheinenden Kasten auf die rechte Seite gesetzt. Wird das Browserfenster schmaler, verschwindet der Kasten nach unten und stattdessen erscheint rechts oben ein reduziertes Menü zu den wichtigsten Bereichen meines Blogs.&lt;/p&gt;
 
