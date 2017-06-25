@@ -1,4 +1,4 @@
-/* CSS-Stile für das Blog @cz+, verfasst von Gerhard Großmann */
+/* CSS zum Blog @cz+, verfasst von Gerhard Großmann */
 
 /* Farben: #281 (grün), #3a1 (hellgrün), #deb (blassgrün)
 	Akzente: #839 (lila), #e32 (rot), #fdb (blassrot)
@@ -60,7 +60,7 @@ nav a:hover, nav a:focus { background-color: #deb; }
 article, section { display: block; }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
-	background-color: #f4f4f4; background-color: hsla(0,0%,94%,.7); }
+	background-color: hsla(0,0%,94%,.7); }
 @media (min-width: 71.5em) { aside { position: absolute; top: .4em;
 	left: 48em; right: 1.5em; max-width: 24em; } }
 
@@ -126,7 +126,7 @@ ol ol { list-style: lower-alpha; }
 
 code, pre { margin: 1.5em 0 1.167em; padding:.05em .2em;
 	font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
-	color:#222; background-color:#f4f4f4; box-decoration-break: clone;
+	background-color:#f4f4f4; box-decoration-break: clone;
 	border-radius: .1em; }
 pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap; }
 
@@ -176,12 +176,11 @@ a:focus { outline: 1px dotted #333; }
 
 /* BILDER, AUDIO-ELEMENT */
 
-img { max-width: 98.5%; height: auto; border-width: 0;
-	-ms-interpolation-mode: bicubic; }
+img, figure { max-width:98.5%; height:auto; line-height:0; border:0; }
+img {-ms-interpolation-mode: bicubic; }
 p > img { margin: .6em 0 .25em; } /* Extra-Abstand */
 
-figure { width: 98.5%; height: auto; margin: 1.65em 0 1.45em;
-	line-height: 0; border: 0; background: #eee; }
+figure { margin: 1.65em 0 1.45em; background: #eee; }
 figure img { max-width: 100%; }
 figcaption { padding: .4em .6em .3em; font-style: italic;
 	font-size: .9em; line-height: 1.667; color: #111;}
@@ -236,8 +235,7 @@ h1, h2, h3, h4, h5, h6, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
 time { margin-top: -.2em; }
 p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
-header > a:not(.spezifität), p, ul, ol, code, pre, figcaption, blockquote,
-	a:link, a:visited { color: #000; }
+header > a:not(.spezifität), p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited { color: #000; }
 
 /* Klappkästen im Druck geöffnet anzeigen */
 .klappkasten p { max-height: 17em; margin: .2em; }
