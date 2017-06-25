@@ -85,7 +85,8 @@ h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */; color: #222;
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
 p, ul, ol { margin-bottom: -.25em;
-	-webkit-font-feature-settings: "onum", "liga", "kern"; font-feature-settings: "onum", "liga", "kern";
+	-webkit-font-feature-settings: "onum", "liga", "kern";
+	font-feature-settings: "onum", "liga", "kern";
 	-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
@@ -101,7 +102,8 @@ small { font-size:50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font: .8em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
 	display: inline-block; position: relative; top: -.1em;
 	margin: 0 .2em; padding: .15em .35em .2em; background-color: #eee;
-	border: 1px solid #888; border-radius: .2em; box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
+	border: 1px solid #888; border-radius: .2em;
+	box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
 
 /* time bei Datumsangabe eines Artikels, .datum bei Kommentaren */
 time, .datum {
@@ -235,7 +237,8 @@ h1, h2, h3, h4, h5, h6, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
 time { margin-top: -.2em; }
 p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
-header > a:not(.spezifität), p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited { color: #000; }
+header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
+	blockquote, a:link, a:visited { color: #000; }
 
 /* Klappkästen im Druck geöffnet anzeigen */
 .klappkasten p { max-height: 17em; margin: .2em; }
