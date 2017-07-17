@@ -104,7 +104,8 @@ sup, sub { line-height: 0; letter-spacing: .05em;
 	-webkit-font-feature-settings: "liga", "kern";
 	font-feature-settings: "liga", "kern"; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
-kbd { font: .8em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; display: inline-block; position: relative; top: -.1em;
+kbd { font: .8em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
+	display: inline-block; position: relative; top: -.1em;
 	margin: 0 .2em; padding: .15em .35em .2em; background-color: #eee;
 	border: 1px solid #888; border-radius: .2em;
 	box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
@@ -131,7 +132,8 @@ ol { margin-left: -1.5em; }
 ol ol { list-style: lower-alpha; }
 
 code, pre { margin: 1.5em 0 1.167em; padding: .05em .2em;
-	font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; background-color:#f4f4f4; box-decoration-break: clone;
+	font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
+	background-color:#f4f4f4; box-decoration-break: clone;
 	border-radius: .1em; }
 pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap; }
 
@@ -214,11 +216,9 @@ form input[type=text], form input[type=email], form input[type=url] {
 input[type="submit"] { -webkit-appearance: button; }
 
 @media (max-width: 35em) {
-form label { float: none; top: 0; width: 100%; }
-form > div > div { float: none; width: 98.5%; }
-form input[type=text], form input[type=email], form input[type=url] {
-	width: 100%; }
-}
+	form label { float: none; top: 0; width: 100%; }
+	form > div > div { float: none; width: 98.5%; }
+	form input[type=text],form input[type=email],form input[type=url] { width: 100%; } }
 
 /* ANPASSUNGEN FÜR DEN AUSDRUCK */
 
