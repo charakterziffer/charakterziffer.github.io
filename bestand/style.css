@@ -60,7 +60,7 @@ nav a:hover, nav a:focus { background-color: #deb; }
 article, section { display: block; }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
-	background-color: hsla(0,0%,94%,.7); }
+	background-color: #f4f4f4; background-color: hsla(0,0%,94%,.7); }
 @media (min-width: 71.5em) { aside { position: absolute; top: .4em;
 	left: 48em; right: 1.5em; max-width: 24em; } }
 
@@ -115,7 +115,7 @@ time, .datum {
 	display:block; float:right; padding-right:.4em; padding-left:1em;
 	-webkit-font-feature-settings: "onum", "liga", "kern";
 	font-feature-settings: "onum", "liga", "kern"; }
-time { margin-top: -0.25em; color: #666; }
+time { margin-top: -.25em; color: #666; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
 @media (max-width: 35em) { time { margin-top: -1.6em; } }
 .datum { margin-top: 1.3em; }
@@ -186,7 +186,7 @@ img, figure { max-width:98.5%; height:auto; line-height:0; border:0; }
 img {-ms-interpolation-mode: bicubic; }
 p > img { margin: .6em 0 .25em; } /* Extra-Abstand */
 
-figure { margin: 1.65em 0 1.45em; background: #eee; }
+figure { margin: 1.65em 0 1.45em; background-color: #eee; }
 figure img { max-width: 100%; }
 figcaption { padding: .4em .6em .3em; font-style: italic;
 	font-size: .9em; line-height: 1.667; color: #111;}
@@ -239,12 +239,11 @@ header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
 
 /* Klappkästen im Druck geöffnet anzeigen */
 .klappkasten p { max-height: 17em; margin: .2em; }
-.klappkasten p + p { margin-top: .7em }
-
-img, table { page-break-inside: avoid; }
-blockquote + blockquote { margin-top: .7em; }
+.klappkasten p + p, blockquote + blockquote { margin-top: .7em }
 blockquote > h1, blockquote > h2, blockquote > h3 { margin: 0 0 .25em; }
 blockquote > p { margin: 0 0 .3em; }
+
+img, table { page-break-inside: avoid; }
 
 .no-print, a[href$="#kommentieren"], a[href$="#kommentare"] {
 	display: none; }
