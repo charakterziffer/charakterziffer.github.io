@@ -247,7 +247,7 @@ img, table { page-break-inside: avoid; }
 
 .no-print, a[href$="#kommentieren"], a[href$="#kommentare"] {
 	display: none; }
-a:after { content: " [" attr(href) "]";
+a[href]:after { content: " [" attr(href) "]";
 	font: italic 1rem/1.4 'Source Sans Pro',Calibri,Arial,sans-serif; }
 a[href^="#"]:after, a[href^="javascript"]:after,
 	a[href^="archiv.html?"]:after { content: ""; }
