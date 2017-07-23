@@ -29,9 +29,9 @@ html { font-size: 100.01%; box-sizing: border-box; }
 body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	font: 1.1em/1.5 'Source Sans Pro',Calibri,Arial,sans-serif;
 	font-weight: 400; color: #222; background-color: #fff;
-	background-image: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, 0.4) 91px, hsla(0, 0%, 100%, 0.1) 214px),
-	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, 0.1) 130px, hsla(0, 0%, 100%, 0.2) 243px),
-	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, 0.3) 81px, hsla(0, 0%, 100%, 0.3) 293px),
+	background-image: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
+	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
+	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
 	linear-gradient(90deg, transparent 51rem, #deb 80%, #3a1 100%); }
 @media (max-width: 35em) {
 	body { padding: 1.4em 2% 2.1em 3%; line-height:1.4; } }
