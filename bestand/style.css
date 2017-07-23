@@ -69,7 +69,7 @@ div[style*="font-family:arial;"] { left: -9999px; }
 /* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
 .onlex_counter { display: none; }
 
-/* Zweitschrift für Titel, Links und fett */
+/* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a:not(.klickfeld), form label {
 	font: bold 1em/1 czSlab,Georgia,serif; }
 h1, h2, h3 { font-feature-settings: "liga", "kern"; }
@@ -77,6 +77,7 @@ b, strong, p a:not(.klickfeld), figcaption a, form label {
 	padding: 0 .06em; font-size: .95em;
 	-webkit-font-feature-settings: "onum", "liga", "kern";
 	font-feature-settings: "onum", "liga", "kern"; }
+code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
 /* ÜBERSCHRIFTEN */
 
@@ -104,10 +105,9 @@ sup, sub { line-height: 0; letter-spacing: .05em;
 	-webkit-font-feature-settings: "liga", "kern";
 	font-feature-settings: "liga", "kern"; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
-kbd { font: .8em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
-	display: inline-block; position: relative; top: -.1em;
-	margin: 0 .2em; padding: .15em .35em .2em; background-color: #eee;
-	border: 1px solid #888; border-radius: .2em;
+kbd { font-size: .8em; display: inline-block; position: relative;
+	top: -.1em; margin: 0 .2em; padding: .15em .35em .2em;
+	background-color: #eee; border: 1px solid #888; border-radius: .2em;
 	box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
 
 /* time bei Datumsangabe eines Artikels, .datum bei Kommentaren */
@@ -132,7 +132,6 @@ ol { margin-left: -1.5em; }
 ol ol { list-style: lower-alpha; }
 
 code, pre { margin: 1.5em 0 1.167em; padding: .05em .2em;
-	font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
 	background-color:#f4f4f4; box-decoration-break: clone;
 	border-radius: .1em; }
 pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap; }
