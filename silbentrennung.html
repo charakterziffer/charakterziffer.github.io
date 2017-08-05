@@ -53,11 +53,11 @@
 
 <h2 id="umsetzung-mit-javascript">Umsetzung mit Javascript</h2>
 
-<p>Hier in meinem Blog nutze ich das <a href="https://code.google.com/p/hyphenator/">JavaScript-Programm Hyphenator.js</a>. Man definiert dazu zunächst die Sprache der Website: <code>&lt;html lang="de"&gt;</code></p>
+<p>Hier in meinem Blog nutze ich das <a href="http://mnater.github.io/Hyphenator/">JavaScript-Programm Hyphenator.js</a>. Man definiert dazu zunächst die Sprache der Website: <code>&lt;html lang="de"&gt;</code></p>
 
 <p>Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse <em>.hyphenate</em> aus (beispielsweise <code>&lt;body class="hyphenate"&gt;</code>, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse <em>.donthyphenate</em>.</p>
 
-<p>Mit Hilfe der Seite <a href="https://hyphenator.googlecode.com/svn/tags/Version%203.3.0/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine <a href="bestand/hyphenate.js">eigene Hyphenator-Datei</a> für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
+<p>Mit Hilfe der Seite <a href="http://mnater.github.io/Hyphenator/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine eigene Hyphenator-Datei für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
 
 <pre><code>&lt;script src="http://deine-adresse.de/PFAD/hyphenator.js" type="text/javascript"&gt;&lt;/script&gt;
 </code></pre>
