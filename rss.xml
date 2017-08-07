@@ -20,19 +20,19 @@
 
 &lt;style&gt;
 &lt;!--
-[class^=&quot;bild&quot;] { position: relative; width: 98.5%; height: 0;
+[class^=&quot;stier&quot;] { position: relative; width: 98.5%; height: 0;
 	margin: 1.65em 0 1.45em; padding-bottom: 25%;
 	line-height: 0; border: 0; background-size: 100% auto;
 	background-image: url('material/origamistier.jpg'); }
-[class^=&quot;bild&quot;] a { visibility:hidden; }
-.bild1 { background-position: 0 0; }
-.bild2 { background-position: 0 33.33%; }
-.bild3 { background-position: 0 66.67%; }
-.bild4 { background-position: 0 100%; }
+[class^=&quot;stier&quot;] a { visibility:hidden; }
+.stier1 { background-position: 0 0; }
+.stier2 { background-position: 0 33.33%; }
+.stier3 { background-position: 0 66.67%; }
+.stier4 { background-position: 0 100%; }
 --&gt;
 &lt;/style&gt;
 
-&lt;div class=&quot;bild1&quot; title=&quot;Faltschritte 1–4&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;stier1&quot; title=&quot;Faltschritte 1–4&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;b&gt;1.&lt;/b&gt; Man benötigt ein quadratisches Papier, zum Beispiel mit einer Seitenlänge von 15&lt;small&gt; &lt;/small&gt;cm. Die Diagonalen vorfalten. Dann zwei benachbarte Kanten zur entsprechenden Diagonalen falten, damit die Drachenform in Schritt 2 entsteht.&lt;/p&gt;
 
@@ -42,13 +42,13 @@
 
 &lt;p&gt;&lt;b&gt;4.&lt;/b&gt; Nun alle vier Papierkanten an den eben entstandenen Faltlinien zur Diagonale bringen. Die entstehenden Zacken flach zusammenfalten und nach unten legen, so dass die Form wie in Schritt 5 entsteht.&lt;/p&gt;
 
-&lt;div class=&quot;bild2&quot; title=&quot;Faltschritte 5+6abc&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;stier2&quot; title=&quot;Faltschritte 5+6abc&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;b&gt;5.&lt;/b&gt; Die Form in der Mitte entlang der Diagonale falten, dabei den unteren Teil nach hinten umschlagen, damit die beiden Zacken außen bleiben.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;6.&lt;/b&gt; Die äußeren Spitzen mit einer &lt;em&gt;Gegenbruchfalte&lt;/em&gt; nach oben bringen. Dazu an den gekennzeichneten Linien zunächst gut vorfalten (siehe &lt;b&gt;6b&lt;/b&gt;) und wieder entfalten. Dann die Spitzen oben öffnen und die mittlere Kante umkehren und nach innen holen. Das Ergebnis für die linke Spitze ist im Schritt &lt;b&gt;6c&lt;/b&gt; zu sehen. Mit der rechten Spitze ebenso verfahren.&lt;/p&gt;
 
-&lt;div class=&quot;bild3&quot; title=&quot;Faltschritte 7–10&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritt
+&lt;div class=&quot;stier3&quot; title=&quot;Faltschritte 7–10&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritt
 e)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;b&gt;7.&lt;/b&gt; Die rechte Spitze mit einer Gegenbruchfalte wieder nach unten holen. Dabei an der gestrichelten Linie im Bild orientieren, das Ergebnis ist im nächsten Bild zu sehen.&lt;br /&gt;
@@ -60,7 +60,7 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 
 &lt;p&gt;&lt;b&gt;10.&lt;/b&gt; Den Kopf an der gestrichelten Linie öffnen (also obere Papierschicht nach oben umfalten, untere nach unten). Das Horn des Stiers dabei nach vorne falten. Es ergibt sich der Nasenrücken, wie bei Schritt 11 zu sehen.&lt;/p&gt;
 
-&lt;div class=&quot;bild4&quot; title=&quot;Faltschritte 11+12&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;stier4&quot; title=&quot;Faltschritte 11+12&quot;&gt;&lt;a href=&quot;material/origamistier.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;b&gt;11. &amp;amp; 12.&lt;/b&gt; Schließlich die kleine Ecke unterhalb des Horns ein wenig herausfalten, so dass ein Ohr entsteht. Auf der Rückseite wiederholen.&lt;/p&gt;
 
@@ -84,32 +84,32 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 
 &lt;style&gt;
 &lt;!--
-[class^=&quot;bild&quot;] { position: relative; width: 98.5%; height: 0;
+[class^=&quot;safari&quot;] { position: relative; width: 98.5%; height: 0;
 	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
 	line-height: 0; border: 0; background-size: 100% auto;
 	background-image: url('material/typosafari.jpg'); }
-[class^=&quot;bild&quot;] a { visibility:hidden; }
-.bild1 { background-position: 0 0; }
-.bild2 { background-position: 0 16.67%; }
-.bild3 { background-position: 0 33.33%; }
-.bild4 { background-position: 0 83.33%; }
-.bild5 { background-position: 0 60%;
+[class^=&quot;safari&quot;] a { visibility:hidden; }
+.safari1 { background-position: 0 0; }
+.safari2 { background-position: 0 16.67%; }
+.safari3 { background-position: 0 33.33%; }
+.safari4 { background-position: 0 83.33%; }
+.safari5 { background-position: 0 60%;
 	width:100%; margin:0; padding-bottom: 72%; }
-.bild6 { background-position: 0 100%; }
+.safari6 { background-position: 0 100%; }
 --&gt;
 &lt;/style&gt;
 
-&lt;div class=&quot;bild1&quot; title=&quot;Fotos: Wegweiser, Parkregel, Haltestelle&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;safari1&quot; title=&quot;Fotos: Wegweiser, Parkregel, Haltestelle&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;Die offiziellen Schriften der Stadtverwaltung sind &lt;a href=&quot;http://www.identifont.com/show?8MZ&quot;&gt;Hermes FB&lt;/a&gt; (nur im Logo) und &lt;a href=&quot;http://www.lucasfonts.com/fonts/thesans/&quot;&gt;ThesisSans&lt;/a&gt;. Man findet sie zum Beispiel bei Schildern der städtischen Wohnungsbaugesellschaft, auf Plakaten städtischer Veranstaltungen oder an Gebäuden von Ämtern (hier leider durch die Allerweltsschrift Arial ersetzt; ich glaube, das Corporate Design Manual erlaubt das im Ausnahmefall sogar, kann das Manual aber nirgendwo finden).&lt;/p&gt;
 
-&lt;div class=&quot;bild2&quot; title=&quot;Thesis Sans ist die Schrift der Stadtverwaltung, wenn auch nicht konsequent&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;safari2&quot; title=&quot;Thesis Sans ist die Schrift der Stadtverwaltung, wenn auch nicht konsequent&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;tausendfach-vorhanden&quot;&gt;Tausendfach vorhanden&lt;/h2&gt;
 
 &lt;p&gt;Ein wenig einheitlicher und deutlich präsenter sind die Hausnummernschilder. In Regensburg sind sie dunkelblau mit weißer Schrift (der Straßenname in Fraktur, Ziffern in Antiqua). Ein Pfeil zeigt an, in welche Richtung die Hausnummern aufsteigen. Außerdem stehen auf sehr vielen Schildern in der Altstadt noch die ursprünglichen Litera-Hausnummern.&lt;/p&gt;
 
-&lt;div class=&quot;bild3&quot; title=&quot;Hausnummern, weiße Schrift auf blauem Grund&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;safari3&quot; title=&quot;Hausnummern, weiße Schrift auf blauem Grund&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;Seit dem 12. Jahrhundert war die Regensburger Altstadt in acht &lt;a href=&quot;http://www.regensburger-tagebuch.de/2016/08/die-regensburger-wachten.html&quot;&gt;sogenannte Wachten&lt;/a&gt; untergliedert, quasi Zuständigkeitsbereiche von Militär/Polizei. Jede Wacht wurde mit einem Großbuchstaben bezeichnet – von A für die Westnerwacht bis H für die Ostnerwacht, dazu kamen später J für den „Felddistrikt“ (= an die Altstadt grenzender, innerer Westen) und K für Kumpfmühl. Innerhalb einer Wacht waren die Häuser durchnummeriert. Die mittlere Hausnummer oben im Bild enthält übrigens einen „Übersetzungsfehler“: Offensichtlich war vom Vorgängerschild das Fraktur-A (siehe rechtes Schild) als U missverstanden worden.&lt;/p&gt;
 
@@ -119,7 +119,7 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 
 &lt;p&gt;Ein regelmäßiges Phänomen in Regensburg sind auch die Donau-Hochwasser. Davon zeugen Wasserstandsmarkierungen an der Historischen Wurstkuchl (Bild unten mittig). Sie liegt am Donauufer neben dem Salzstadl, ganz in der Nähe der Steinernen Brücke. Bis 1146 war hier das Baubüro für die Steinerne Brücke, danach versorgte sie als Garküche unter anderem Steinmetze und Hafenarbeiter. Heute bekommt man dort Bratwürste auf Sauerkraut (natürlich mit süßem Senf) und Kartoffelsuppe.&lt;/p&gt;
 
-&lt;div class=&quot;bild4&quot; title=&quot;Stadtmaße, Hochwasser-Markierung und Grabinschrift&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;safari4&quot; title=&quot;Stadtmaße, Hochwasser-Markierung und Grabinschrift&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;Rund 300 Jahre alt sind viele Grabinschriften an der Klosterkirche St. Emmeram (Bild oben rechts). Die Kirche gehört zum Regensburger Schloss der Familie Thurn und Taxis, die das Postwesen in Europa aufgebaut hat. Sehr viel kann ich zu den Inschriften nicht erzählen, außer dass sie mir recht gut gefallen.&lt;/p&gt;
 
@@ -128,7 +128,7 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 &lt;p&gt;Wie interessant oder „sehenswert“ ein Schriftzug ist, kann schließlich auch ein gültiges Kriterium sein, nach dem man die Typografie einer Stadt auswählt. Die Meinungen düften hier zwar sehr auseinander gehen, denn objektiv ist diese Eigenschaft ja kaum … Wer allerdings immer nur mit objektivem Maßstab misst, übersieht vielleicht viele schöne, lustige, seltsame und kunstvolle Eigenheiten.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;div class=&quot;bild5&quot; title=&quot;diverse Regensburger Schriftzüge mit Schauwert&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;safari5&quot; title=&quot;diverse Regensburger Schriftzüge mit Schauwert&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
 	&lt;figcaption&gt;Oben links: Schusterladen (Weiße-Hahnen-Gasse); darunter: Übung eines Steinmetzlehrlings am Dom (ca. 1975); oben mittig: Buchstabenkugel des Metallbildhauers &lt;a href=&quot;http://www.peter-schwenk.de/&quot;&gt;Peter Schwenk&lt;/a&gt; am Verlagsgebäude der Mittelbayerischen Zeitung; oben rechts: Ausschnitt aus dem Wappenschild an der Spitalbrauerei.&lt;br /&gt;
 	Links mittig: Kanaldeckel bei der Dombauhütte (sonst haben die Regensburger Kanaldeckel keine stadtspezifische Gestaltung); mittig: erhabene Hausanschrift in der Lindnergasse; links darunter: Ziffern am Walhalla-Bockerl (Lokomotive der ehemaligen Zugstrecke Regensburg–Walhalla).&lt;br /&gt;
 	Unten rechts: „Zum goldenen M“ am McDonald’s-Restaurants am Arnulfsplatz; unten mittig: Graffiti an einem Tor am Königshof; unten rechts: Stelen am Portal der Schottenkirche&lt;/figcaption&gt;
@@ -140,7 +140,7 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 
 &lt;p&gt;Ebenfalls handgemachte Schriftkunst findet man im sympathischen Laden &lt;a href=&quot;https://blinkfuer-handdruck.de/&quot;&gt;Blinkfüer&lt;/a&gt; in der Oberen Bachgasse. Die Besitzerin Susanne Kauth arbeitet dort ganz ohne digitale Hilfsmittel und bedruckt im aufwendigen Handsatz verschiedene Materialien – größtenteils mit historischen Holz- und Bleilettern.&lt;/p&gt;
 
-&lt;div class=&quot;bild6&quot; title=&quot;Fassaden-Kalligrafie in der Dänzergasse, Blinkfüer-Laden in Oberer Bachgasse&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;safari6&quot; title=&quot;Fassaden-Kalligrafie in der Dänzergasse, Blinkfüer-Laden in Oberer Bachgasse&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
 
 &lt;p&gt;Und bei euch? Welche Schriften gibt es in eurem Wohnort zu entdecken? Wenn ihr die Augen offen haltet, findet ihr vielleicht eine schöne Ladenfassade, Gravuren in Mauern oder ungewöhnliche Beschilderungen. Ganz systematisch halten zum Beispiel die Betreiber des Blogs &lt;a href=&quot;https://berlintypography.wordpress.com/&quot;&gt;Berlin Typography&lt;/a&gt; ihre Entdeckungen fest.&lt;/p&gt;
 
