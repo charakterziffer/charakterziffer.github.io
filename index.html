@@ -49,240 +49,6 @@
 
 
 	<article>
-	<time datetime="2017-12-31">So, 31. Dez. 2017</time>
-	<h1><a href="pattern-library.html">Pattern-Library für @cz+</a></h1>
-	<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
-
-<p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="https://direktadresse.de/">https://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:address@example.com">address@example.com</a> (mit Spamschutz).</p>
-
-<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="https://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="https://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="https://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
-
-<h2 id="hervorhebungen-h2-Überschrift">Hervorhebungen (H2-Überschrift)</h2>
-
-<p><em>Kursive Textstellen</em> werden mit einem Stern umschlossen, <strong>fette Hervorhebungen</strong> bekommen zwei Sterne. Man kann auch Wort<em>bestand</em>teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash. Für Tastenkombinationen gibt es den &lt;kbd&gt;-Tag, den man beispielsweise für <kbd>Strg</kbd> + <kbd>+</kbd> verwenden kann.</p>
-
-<h3 id="weitere-formatierungen-h3-Überschrift">Weitere Formatierungen (H3-Überschrift)</h3>
-
-<p>Kurze <code>Codeschnippsel</code> zeichnet man mit einem Gravis aus. Praktischerweise werden <code>&lt;html&gt;</code>-Sonderzeichen wie spitze Klammern oder „<code>Kaufmanns-&amp;</code>“ gleich umgewandelt.</p>
-
-<h2 id="unsortierte-und-sortierte-listen">Unsortierte und sortierte Listen</h2>
-
-<ul>
-  <li>eine unsortierte Lise</li>
-  <li>nein, eine Liste</li>
-  <li>aber unsortiert</li>
-</ul>
-
-<p>Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:</p>
-
-<ol>
-  <li>Hund</li>
-  <li>Katze</li>
-  <li>Maus</li>
-</ol>
-
-<p>Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.</p>
-
-<ul>
-  <li>
-    <p>Dies ist ein Listenpunkt mit zwei Absätzen</p>
-
-    <p>Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
-erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit.</p>
-  </li>
-  <li>
-    <p>Ein weiterer Punkt in der selben Liste.</p>
-  </li>
-  <li>
-    <p>Und noch ein Absatz</p>
-  </li>
-</ul>
-
-<p>Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.</p>
-
-<div style="-webkit-columns:13em; columns:13em; margin:1em 0 -0.3em;">
-<p style="margin-top:0;">Dieser Text verteilt sich auf maximal drei Spalten mit einer Mindestbreite von 13em. Wo genau die Spaltenumbrüche liegen, kann ich aber nicht festlegen.</p>
-<p>800<small>&nbsp;</small>g Kürbisfleisch<br />
-150<small>&nbsp;</small>g Zwiebeln<br />
-300<small>&nbsp;</small>g Kartoffeln<br />
-40<small>&nbsp;</small>g Butter<br />
-1 unbehandelte Orange (Schale und Saft)<br />
-1,5<small>&nbsp;</small>l Gemüsebrühe<br />
-1 Saft von einer Limette<br />
-1 Stück Ingwer<br />
-Salz, Pfeffer<br />
-1 Prise Zucker<br />
-250<small>&nbsp;</small>ml Sahne<br />
-Muskatnuss<br />
-Cayenne-Pfeffer<br />
-Tabasco<br />
-Kürbis-Öl und geröstete Kürbiskerne zum Garnieren<br />
-etwas Petersilie</p></div>
-
-<h2 id="kästen-zitatblöcke-codeblöcke">Kästen, Zitatblöcke, Codeblöcke</h2>
-
-<p>Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse <em>hinterlegt</em>.</p>
-
-<p class="hinterlegt">Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.</p>
-
-<p>Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.</p>
-
-<div class="hinterlegt">
-<p>Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.</p>
-<p>Das ist Absatz Nº2.</p>
-<p>Hier ist noch ein dritter Absatz.</p>
-</div>
-
-<p>Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&gt;):</p>
-
-<blockquote>
-  <p>So ein Zitatblock wird dann mit <code>&lt;blockquote&gt;</code> umschlossen. Der Text darinnen steht in einem <code>&lt;p&gt;</code>. Das wird zum Beispiel für Tweets benutzt.</p>
-</blockquote>
-
-<p>Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:</p>
-
-<blockquote>
-  <p>⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<p>Um mehrere Absätze in einen Zitatblock zu packen, beginnt man auch die Leerzeilen dazwischen mit einer spitzen Klammer:</p>
-
-<blockquote>
-  <h2 id="großes-zitat">Großes Zitat</h2>
-
-  <p>Diese Blockquote enthält etwas mehr Text und beginnt sogar mit einer Überschrift (hier ein H2-Titel).</p>
-
-  <p>Die Überschrift bekommt dabei einen klitzekleinen Abstand oben, damit die Ränder einigermaßen passen. Die graue Markierung von <code>Codeschnippseln</code> fehlt hier dann natürlich. Das könnte ich mit einem halbtransparent-grauen Hintergrund lösen …</p>
-</blockquote>
-
-<p>Wenn man ein längeres <code>Codebeispiel</code> hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens <code>vier Leerzeichen</code> einrücken):</p>
-
-<pre><code>@font-face {
-   font-family: 'Schriftname';
-   src: url('schrift.eot'); /* IE9 compatibility mode */
-   src: url('schrift.eot?#iefix') format('embedded-opentype'),
-      url('schrift.woff') format('woff'),
-      url('schrift.ttf') format('truetype');
-}
-</code></pre>
-
-<p>Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.</p>
-
-<hr />
-
-<p>Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.</p>
-
-<h2 id="bilder">Bilder</h2>
-
-<p>Bilder werden so ähnlich wie Links eingebunden:</p>
-
-<p><img src="material/cz750x270.jpg" alt="Alttext des Bildes" /></p>
-
-<p>Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen. Für Untertitel:</p>
-
-<figure><img src="material/cz750x270.jpg" alt="Ein Beispielbild" />
-	<figcaption>Hier steht der Bilduntertitel <a href="#bild">mit Verlinkung</a>. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.</figcaption>
-</figure>
-
-<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Mann muss aber auf die richtigen Abstände achten, damit das Bild keine Löcher in den Text reißt. Am besten verwendet man SVG, das vergrößert sich mit: <svg width=".8em" height=".8em" viewBox="0 0 14 14" preserveAspectRatio="xMinYMin meet"><g id="rss" style="stroke-width:2;"><path style="fill:#839; stroke:#839" d="M 13,13 13,1 1,1 1,13 Z"></path><circle style="fill:none; stroke:#fff" cx="7" cy="7" r="4"></circle></g></svg></p>
-
-<p>Es ist möglich, Teilbilder zu kombinieren und die Slices dann als Hintergrundbild eines Divs anzuzeigen. Das geht zum einen mit Verlinkung zu einer größeren Ansicht (wie bei Chorplakate):</p>
-
-<style>
-<!--
-[class^="bild"] { position: relative; width: 98.5%; height: 0;
-	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
-	line-height: 0; border: 0; background-size: 100% auto; }
-
-.bild1 { background-position: 0 33.33%;
-	background-image: url('material/chor-vorschau.jpg'); }
-.bild1 a { position:absolute;top:0;bottom:0;left:0;right:0;
-	display: flex; justify-content: center; align-items: center;
-	opacity:0; }
-
-.bild2 { width:100%; margin:0; padding-bottom: 72%;
-	background-position: 0 60%;
-	background-image: url('material/typosafari.jpg');}
-.bild2 a { visibility:hidden; }
--->
-</style>
-
-<div class="bild1" title="Ausschnitte aus dem Chorplakat und -programm von 2012"><a href="material/chor-2012.jpg">größere Abbildung</a></div>
-
-<p>Oder ohne Verlinkung (Fallback-Link trotzdem vorhanden) und hier mit Untertitel und doppelter Höhe:</p>
-
-<figure>
-<div class="bild2" title="diverse Regensburger Schriftzüge mit Schauwert"><a href="material/typosafari.jpg">Komplettes Bild (alle Teilbilder)</a></div>
-	<figcaption>Diverse Schriftzüge in Regensburg</figcaption>
-</figure>
-
-<p>Wichtig: Eng aufeinanderfolgenden Artikel dürfen nicht die gleiche Klasse .bildX benutzen, denn sonst überschreibt <em>auf der Startseite</em> das CSS des unteren Artikels die Bilder im oberen.</p>
-
-<h2 id="sonstiges">Sonstiges</h2>
-
-<p>Datum der Website oder eines Artikels: So, 27. Aug. 2017 / So, 31. Dez. 2017 (ausgegeben in meinem Wunschformat)</p>
-
-<p>Ein Klickfeld für Download-Links:</p>
-
-<p><a href="otfeat/otfeat.ttf" class="klickfeld">Ot­feat als<br /><em>ttf-Da­tei</em></a></p>
-
-<p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
-
-<div class="klappkasten">
-<input type="checkbox" id="K1" />
-<label for="K1">Zum Öffnen hier klicken</label>
-<p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Zunächst hatte ich sie mit Javascript realisiert, jetzt aber arbeite ich mit CSS-Animationen und einer unsichtbaren Checkbox. Bei mehreren Klappboxen darauf achten, dass unterschiedliche IDs vergeben werden.</p>
-</div>
-
-<p>Eine <strong style="background-color: #fdb; font-size: 0.85em; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.1em 0.2em 0.05em;">besonders starke Hervorhebung</strong> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.<a href="#note1"><sup id="ziffer1">[1]</sup></a></p>
-
-<style>
-<!--
-@font-face {font-family: StickSerif; src:url(material/StickSerif.woff) format('woff');}
-@font-face {font-family: 'UnifrakturMaguntia';
-src: local('UnifrakturMaguntia'),
-url('material/UnifrakturMaguntia.woff') format('woff'),
-url('material/UnifrakturMaguntia.ttf') format('truetype');}
--->
-</style>
-
-<p>Kurzer <span style="font:1.1em/1.3em UnifrakturMaguntia,'Old English Text MT',sans-serif;margin-bottom:-1em;color:#2c2c2c;">Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht.</p>
-
-<form style="margin-top:1.7em"><textarea style="font:1.8em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;" name="Testfeld">Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form>
-
-<p class="hinterlegt">Eine eingebundene Audiodatei in einem grünen Kasten.
-<audio controls="" preload="metadata">
-	<source src="material/hoerspiele.mp3" type="audio/mpeg" />
-	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die <a href="material/hoerspiele.mp3">Datei herunterladen</a>.
-</audio></p>
-
-<p>Ein einfacher Textabsatz. Danach eine alleinstehende Audio-Datei (aber in einem eigenen Absatz).</p>
-
-<p><audio controls="" preload="metadata">
-	<source src="material/hoerspiele.mp3" type="audio/mpeg" />
-	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die <a href="material/hoerspiele.mp3">Datei herunterladen</a>.
-</audio></p>
-
-<p><span style="color:#e32;">Weitere Betonungen?</span></p>
-
-<hr />
-
-<p><b id="note1">[1] Kleine Fußnote:</b> Hier wird ein Detail näher erläutert. <a href="#ziffer1">[↑]</a></p>
-
-	<p>---<br> <a href="pattern-library.html#kommentare">2 Kommentare</a>
-	</p>
-	</article>
-
-	<article>
 	<time datetime="2017-08-07">Mo, 7. Aug. 2017</time>
 	<h1><a href="origamistier.html">Ein gefalteter Stier</a></h1>
 	<p>Origami-Figuren sind meistens kantig und abstrakt, dabei dennoch gut zu erkennen. Das fasziniert mich am Papierfalten, diese Reduktion auf das Wesentliche. Im folgenden zeige ich eine Anleitung für einen eher einfachen Stier (mit fortgeschrittener Gegenbruchfalte). Auf meiner <a href="http://web.archive.org/web/20040205223825/http://www.netverk.com.ar/~halgall/classes/WebSite/toro02.jpg">Quelle für dieses Modell</a> wird als Autor <a href="http://georgerhoads.com/">George Rohads</a> genannt.</p>
@@ -420,6 +186,69 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 		</p>
 	</article>
 
+	<article>
+	<time datetime="2017-05-22">Mo, 22. Mai 2017</time>
+	<h1><a href="fuchs-7.html">Vorgaben hinter sich lassen</a></h1>
+	<p>Ob im Tanz, Text oder Grafikdesign – wer Aufgaben von anderen kreativ bearbeitet, der kennt diesen einen Punkt. Irgendwann muss man aufhören, Informationen zu sammeln, zu recherchieren oder noch mehr Details zu erfragen. Dann heißt es selbst aktiv zu werden, offen für Ideen zu sein und zu versuchen, anhand der Vorgaben eine einfallsreiche Lösung zu finden – ohne ständig nachzuhaken, ob man immer noch richtig liegt.</p>
+
+<p>Für meine Twitterserie <em>Fuchs und Ballerina</em> lauten die Vorgaben in etwa: Der Fuchs ist praktisch veranlagt und alltagsweise, die Ballerina oft unsicher aber sehr gefühlvoll. Jeder Tweet der Serie ist die Antwort des Fuchses. Die Frage der Ballerina entspringt aus deren Erfahrung, meist in einer ungewohnten Situation. Und das Ergebnis sollte möglichst keine Binsenweisheit sein. Hier nun die neusten Lösungen für diese selbstverordnete Aufgabenstellung:</p>
+
+<blockquote>
+  <p>⋑ „Überlege dir“, sprach der #Fuchs zur Ballerina, „ob es wirklich nötig ist, einen Weg zu gehen, der dir falsch erscheint.“ (<a href="https://twitter.com/charakterziffer/status/740520037283450881">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>𐇛 „Wenigstens dabeigewesen zu sein“, sprach der #Fuchs zur Ballerina, „mag dich zwar jetzt nicht trösten, tut’s in einiger Zeit aber schon.“ (<a href="https://twitter.com/charakterziffer/status/751420993550348288">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>𐇵 „Schlechte Laune ist ansteckend – gute aber auch“, sprach der #Fuchs zur Ballerina. „Denke daran, wenn du mit anderen zusammenarbeitest.“ (<a href="https://twitter.com/charakterziffer/status/776330090229665792">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>🙃 „Warte erst mal ab“, sprach der #Fuchs zur Ballerina. „Was dir jetzt als Gemeinheit erscheint, könnte sich auch als Glücksfall entpuppen.“ (<a href="https://twitter.com/charakterziffer/status/788649064258793472">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>𐇐 „In Wirklichkeit sind wir alle unsicher“, sprach der #Fuchs zur Ballerina. „Es gelingt einigen nur, es besser zu verbergen.“ (<a href="https://twitter.com/charakterziffer/status/802066270522867712">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>🞋 „Wenn dich jemand enttäuschend fand“, sprach der #Fuchs zur Ballerina, „wusste derjenige vielleicht auch einfach nicht, was er wollte.“ (<a href="https://twitter.com/charakterziffer/status/814435162322829312">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⧑ „Einen Plan B zu schmieden, bedeutet nicht zweifeln“, sprach der #Fuchs zur Ballerina. „Es heißt nur, sich auf Misserfolge vorzubereiten.“ (<a href="https://twitter.com/charakterziffer/status/831108522586828801">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>𐇲 „Riskier lieber manchmal, dich selbst zu belügen“, sprach der #Fuchs zur Ballerina. „Besser als wirklich alles zweifelnd zu hinterfragen.“ (<a href="https://twitter.com/charakterziffer/status/844129949317582848">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⚙ „Er ist nicht unfreundlich“, sprach der #Fuchs zur Ballerina, „nur zurückhaltend und konzentriert. Gib ihm Zeit, dann klappt das schon.“ (<a href="https://twitter.com/charakterziffer/status/854965590510981120">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>ᣫ „Frag nicht so viel“, sprach der #Fuchs zur Ballerina. „Jetzt kommt es auf deine eigene Ideen an.“ […] (<a href="https://twitter.com/charakterziffer/status/866564925505888256">#</a>)</p>
+</blockquote>
+
+<p>Meine Twitterserie ist über sieben Jahre alt und entsprechend gibt es schon mehr als 80 Folgen. Alle Blogeinträge zu dieser Twitterserie:</p>
+
+<ol>
+  <li><a href="fuchs-1.html">… sprach der #Fuchs zur Ballerina</a></li>
+  <li><a href="fuchs-2.html">Weisheiten für sensible Künstler</a></li>
+  <li><a href="fuchs-3.html">Ballerinas Selbstzweifel</a></li>
+  <li><a href="fuchs-4.html">Ein Fuchs für alle Fälle</a></li>
+  <li><a href="fuchs-5.html">Pirouetten und andere Probleme</a></li>
+  <li><a href="fuchs-6.html">Ausgefuchste Antworten</a></li>
+  <li><a href="fuchs-7.html">Vorgaben hinter sich lassen</a></li>
+</ol>
+
+	<p>---<br> <a href="fuchs-7.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -442,7 +271,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2017-08-27T22:03:06+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2017-08-27T22:03:31+02:00</p>
 </main>
 
 <aside>
