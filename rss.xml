@@ -13,6 +13,241 @@
 </image>
 
 <item>
+	<title>Pattern-Library für @cz+</title>
+	<description>&lt;p&gt;In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein &lt;a href=&quot;index.html&quot; title=&quot;zur Startseite&quot;&gt;interner Link&lt;/a&gt;, in diesem Fall ein bereits besuchter. Ein &lt;a href=&quot;https://äößü.de/&quot; title=&quot;Umlautseite&quot;&gt;unbesuchter Link&lt;/a&gt; sieht so aus. Wie verlinke ich dann &lt;a href=&quot;#anker&quot; title=&quot;zum Anker&quot;&gt;einen Seitenanker&lt;/a&gt;? Übrigens kann man &lt;a href=&quot;https://google.de&quot;&gt;den Titel des Links&lt;/a&gt; auch weglassen.&lt;/p&gt;
+
+&lt;p&gt;Falls man keinen Extra-Linktext braucht, verlinkt man einfach so &lt;a href=&quot;https://direktadresse.de/&quot;&gt;https://direktadresse.de/&lt;/a&gt; (klappt nur bei externen Links). Das geht auch für Mailadressen: &lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt; (mit Spamschutz).&lt;/p&gt;
+
+&lt;p&gt;Aus Lesbarkeitsgründen im Markdown-Text kann man auch &lt;a href=&quot;https://example.com/&quot; title=&quot;Diese Links hier&quot;&gt;Referenzlinks&lt;/a&gt; verwenden. Sie lagern die &lt;a href=&quot;https://beispiel.de/&quot; title=&quot;tauchen im Quelltext&quot;&gt;Linkadresse&lt;/a&gt; einfach an eine beliebige Stelle im Dokument aus, machen im &lt;a href=&quot;https://пример.ru/&quot; title=&quot;im vorangehenden Absatz auf.&quot;&gt;HTML-Quelltext&lt;/a&gt; aber keinen Unterschied.&lt;/p&gt;
+
+&lt;h2 id=&quot;hervorhebungen-h2-Überschrift&quot;&gt;Hervorhebungen (H2-Überschrift)&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Kursive Textstellen&lt;/em&gt; werden mit einem Stern umschlossen, &lt;strong&gt;fette Hervorhebungen&lt;/strong&gt; bekommen zwei Sterne. Man kann auch Wort&lt;em&gt;bestand&lt;/em&gt;teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash. Für Tastenkombinationen gibt es den &amp;lt;kbd&amp;gt;-Tag, den man beispielsweise für &lt;kbd&gt;Strg&lt;/kbd&gt; + &lt;kbd&gt;+&lt;/kbd&gt; verwenden kann.&lt;/p&gt;
+
+&lt;h3 id=&quot;weitere-formatierungen-h3-Überschrift&quot;&gt;Weitere Formatierungen (H3-Überschrift)&lt;/h3&gt;
+
+&lt;p&gt;Kurze &lt;code&gt;Codeschnippsel&lt;/code&gt; zeichnet man mit einem Gravis aus. Praktischerweise werden &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;-Sonderzeichen wie spitze Klammern oder „&lt;code&gt;Kaufmanns-&amp;amp;&lt;/code&gt;“ gleich umgewandelt.&lt;/p&gt;
+
+&lt;h2 id=&quot;unsortierte-und-sortierte-listen&quot;&gt;Unsortierte und sortierte Listen&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;eine unsortierte Lise&lt;/li&gt;
+  &lt;li&gt;nein, eine Liste&lt;/li&gt;
+  &lt;li&gt;aber unsortiert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Hund&lt;/li&gt;
+  &lt;li&gt;Katze&lt;/li&gt;
+  &lt;li&gt;Maus&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dies ist ein Listenpunkt mit zwei Absätzen&lt;/p&gt;
+
+    &lt;p&gt;Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
+erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ein weiterer Punkt in der selben Liste.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Und noch ein Absatz&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.&lt;/p&gt;
+
+&lt;div style=&quot;-webkit-columns:13em; columns:13em; margin:1em 0 -0.3em;&quot;&gt;
+&lt;p style=&quot;margin-top:0;&quot;&gt;Dieser Text verteilt sich auf maximal drei Spalten mit einer Mindestbreite von 13em. Wo genau die Spaltenumbrüche liegen, kann ich aber nicht festlegen.&lt;/p&gt;
+&lt;p&gt;800&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Kürbisfleisch&lt;br /&gt;
+150&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Zwiebeln&lt;br /&gt;
+300&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Kartoffeln&lt;br /&gt;
+40&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Butter&lt;br /&gt;
+1 unbehandelte Orange (Schale und Saft)&lt;br /&gt;
+1,5&lt;small&gt;&amp;nbsp;&lt;/small&gt;l Gemüsebrühe&lt;br /&gt;
+1 Saft von einer Limette&lt;br /&gt;
+1 Stück Ingwer&lt;br /&gt;
+Salz, Pfeffer&lt;br /&gt;
+1 Prise Zucker&lt;br /&gt;
+250&lt;small&gt;&amp;nbsp;&lt;/small&gt;ml Sahne&lt;br /&gt;
+Muskatnuss&lt;br /&gt;
+Cayenne-Pfeffer&lt;br /&gt;
+Tabasco&lt;br /&gt;
+Kürbis-Öl und geröstete Kürbiskerne zum Garnieren&lt;br /&gt;
+etwas Petersilie&lt;/p&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;kästen-zitatblöcke-codeblöcke&quot;&gt;Kästen, Zitatblöcke, Codeblöcke&lt;/h2&gt;
+
+&lt;p&gt;Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse &lt;em&gt;hinterlegt&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot;&gt;Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.&lt;/p&gt;
+
+&lt;p&gt;Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.&lt;/p&gt;
+
+&lt;div class=&quot;hinterlegt&quot;&gt;
+&lt;p&gt;Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.&lt;/p&gt;
+&lt;p&gt;Das ist Absatz Nº2.&lt;/p&gt;
+&lt;p&gt;Hier ist noch ein dritter Absatz.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&amp;gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So ein Zitatblock wird dann mit &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; umschlossen. Der Text darinnen steht in einem &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;. Das wird zum Beispiel für Tweets benutzt.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (&lt;a href=&quot;#fuchs&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Um mehrere Absätze in einen Zitatblock zu packen, beginnt man auch die Leerzeilen dazwischen mit einer spitzen Klammer:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;großes-zitat&quot;&gt;Großes Zitat&lt;/h2&gt;
+
+  &lt;p&gt;Diese Blockquote enthält etwas mehr Text und beginnt sogar mit einer Überschrift (hier ein H2-Titel).&lt;/p&gt;
+
+  &lt;p&gt;Die Überschrift bekommt dabei einen klitzekleinen Abstand oben, damit die Ränder einigermaßen passen. Die graue Markierung von &lt;code&gt;Codeschnippseln&lt;/code&gt; fehlt hier dann natürlich. Das könnte ich mit einem halbtransparent-grauen Hintergrund lösen …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wenn man ein längeres &lt;code&gt;Codebeispiel&lt;/code&gt; hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens &lt;code&gt;vier Leerzeichen&lt;/code&gt; einrücken):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@font-face {
+   font-family: 'Schriftname';
+   src: url('schrift.eot'); /* IE9 compatibility mode */
+   src: url('schrift.eot?#iefix') format('embedded-opentype'),
+      url('schrift.woff') format('woff'),
+      url('schrift.ttf') format('truetype');
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.&lt;/p&gt;
+
+&lt;h2 id=&quot;bilder&quot;&gt;Bilder&lt;/h2&gt;
+
+&lt;p&gt;Bilder werden so ähnlich wie Links eingebunden:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/cz750x270.jpg&quot; alt=&quot;Alttext des Bildes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; benutzen. Für Untertitel:&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/cz750x270.jpg&quot; alt=&quot;Ein Beispielbild&quot; /&gt;
+	&lt;figcaption&gt;Hier steht der Bilduntertitel &lt;a href=&quot;#bild&quot;&gt;mit Verlinkung&lt;/a&gt;. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Mann muss aber auf die richtigen Abstände achten, damit das Bild keine Löcher in den Text reißt. Am besten verwendet man SVG, das vergrößert sich mit: &lt;svg width=&quot;.8em&quot; height=&quot;.8em&quot; viewBox=&quot;0 0 14 14&quot; preserveAspectRatio=&quot;xMinYMin meet&quot;&gt;&lt;g id=&quot;rss&quot; style=&quot;stroke-width:2;&quot;&gt;&lt;path style=&quot;fill:#839; stroke:#839&quot; d=&quot;M 13,13 13,1 1,1 1,13 Z&quot;&gt;&lt;/path&gt;&lt;circle style=&quot;fill:none; stroke:#fff&quot; cx=&quot;7&quot; cy=&quot;7&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/p&gt;
+
+&lt;p&gt;Es ist möglich, Teilbilder zu kombinieren und die Slices dann als Hintergrundbild eines Divs anzuzeigen. Das geht zum einen mit Verlinkung zu einer größeren Ansicht (wie bei Chorplakate):&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+[class^=&quot;bild&quot;] { position: relative; width: 98.5%; height: 0;
+	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
+	line-height: 0; border: 0; background-size: 100% auto; }
+
+.bild1 { background-position: 0 33.33%;
+	background-image: url('material/chor-vorschau.jpg'); }
+.bild1 a { position:absolute;top:0;bottom:0;left:0;right:0;
+	display: flex; justify-content: center; align-items: center;
+	opacity:0; }
+
+.bild2 { width:100%; margin:0; padding-bottom: 72%;
+	background-position: 0 60%;
+	background-image: url('material/typosafari.jpg');}
+.bild2 a { visibility:hidden; }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;bild1&quot; title=&quot;Ausschnitte aus dem Chorplakat und -programm von 2012&quot;&gt;&lt;a href=&quot;material/chor-2012.jpg&quot;&gt;größere Abbildung&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Oder ohne Verlinkung (Fallback-Link trotzdem vorhanden) und hier mit Untertitel und doppelter Höhe:&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;bild2&quot; title=&quot;diverse Regensburger Schriftzüge mit Schauwert&quot;&gt;&lt;a href=&quot;material/typosafari.jpg&quot;&gt;Komplettes Bild (alle Teilbilder)&lt;/a&gt;&lt;/div&gt;
+	&lt;figcaption&gt;Diverse Schriftzüge in Regensburg&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Wichtig: Eng aufeinanderfolgenden Artikel dürfen nicht die gleiche Klasse .bildX benutzen, denn sonst überschreibt &lt;em&gt;auf der Startseite&lt;/em&gt; das CSS des unteren Artikels die Bilder im oberen.&lt;/p&gt;
+
+&lt;h2 id=&quot;sonstiges&quot;&gt;Sonstiges&lt;/h2&gt;
+
+&lt;p&gt;Datum der Website oder eines Artikels: So, 27. Aug. 2017 / So, 31. Dez. 2017 (ausgegeben in meinem Wunschformat)&lt;/p&gt;
+
+&lt;p&gt;Ein Klickfeld für Download-Links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;otfeat/otfeat.ttf&quot; class=&quot;klickfeld&quot;&gt;Ot­feat als&lt;br /&gt;&lt;em&gt;ttf-Da­tei&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Man erzeugt es als &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; mit &lt;em&gt;.klickfeld&lt;/em&gt; als CSS-Klasse.&lt;/p&gt;
+
+&lt;div class=&quot;klappkasten&quot;&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;K1&quot; /&gt;
+&lt;label for=&quot;K1&quot;&gt;Zum Öffnen hier klicken&lt;/label&gt;
+&lt;p&gt;Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Zunächst hatte ich sie mit Javascript realisiert, jetzt aber arbeite ich mit CSS-Animationen und einer unsichtbaren Checkbox. Bei mehreren Klappboxen darauf achten, dass unterschiedliche IDs vergeben werden.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Eine &lt;strong style=&quot;background-color: #fdb; font-size: 0.85em; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.1em 0.2em 0.05em;&quot;&gt;besonders starke Hervorhebung&lt;/strong&gt; mit rotem Hintergrund. Kommt im Artikel &lt;em&gt;1337motiv.html&lt;/em&gt; vor und braucht evtl. noch eine CSS-Klasse.&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+@font-face {font-family: StickSerif; src:url(material/StickSerif.woff) format('woff');}
+@font-face {font-family: 'UnifrakturMaguntia';
+src: local('UnifrakturMaguntia'),
+url('material/UnifrakturMaguntia.woff') format('woff'),
+url('material/UnifrakturMaguntia.ttf') format('truetype');}
+--&gt;
+&lt;/style&gt;
+
+&lt;p&gt;Kurzer &lt;span style=&quot;font:1.1em/1.3em UnifrakturMaguntia,'Old English Text MT',sans-serif;margin-bottom:-1em;color:#2c2c2c;&quot;&gt;Textausſchnitt in gebrochener Schrift&lt;/span&gt;, wie er im Eintrag &lt;em&gt;gebrochene-schriften.html&lt;/em&gt; auftaucht.&lt;/p&gt;
+
+&lt;form style=&quot;margin-top:1.7em&quot;&gt;&lt;textarea style=&quot;font:1.8em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;&quot; name=&quot;Testfeld&quot;&gt;Ein Textfeld, um eine Schrift auszuprobieren.&lt;/textarea&gt;&lt;/form&gt;
+
+&lt;p class=&quot;hinterlegt&quot;&gt;Eine eingebundene Audiodatei in einem grünen Kasten.
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/hoerspiele.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/hoerspiele.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;Ein einfacher Textabsatz. Danach eine alleinstehende Audio-Datei (aber in einem eigenen Absatz).&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/hoerspiele.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/hoerspiele.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#e32;&quot;&gt;Weitere Betonungen?&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Kleine Fußnote:&lt;/b&gt; Hier wird ein Detail näher erläutert. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/pattern-library.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/pattern-library.html</guid>
+	<pubDate>Sun, 31 Dec 2017 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Ein gefalteter Stier</title>
 	<description>&lt;p&gt;Origami-Figuren sind meistens kantig und abstrakt, dabei dennoch gut zu erkennen. Das fasziniert mich am Papierfalten, diese Reduktion auf das Wesentliche. Im folgenden zeige ich eine Anleitung für einen eher einfachen Stier (mit fortgeschrittener Gegenbruchfalte). Auf meiner &lt;a href=&quot;http://web.archive.org/web/20040205223825/http://www.netverk.com.ar/~halgall/classes/WebSite/toro02.jpg&quot;&gt;Quelle für dieses Modell&lt;/a&gt; wird als Autor &lt;a href=&quot;http://georgerhoads.com/&quot;&gt;George Rohads&lt;/a&gt; genannt.&lt;/p&gt;
 
@@ -224,13 +459,13 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 
 &lt;p&gt;&lt;img src=&quot;material/blogdesign-2.jpg&quot; alt=&quot;mein Blog bis März 2017&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;raum-fr-texte&quot;&gt;Raum für Texte&lt;/h2&gt;
+&lt;h2 id=&quot;raum-für-texte&quot;&gt;Raum für Texte&lt;/h2&gt;
 
 &lt;p&gt;Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 1&lt;small&gt; &lt;/small&gt;em (16px/12pt) auf 1,1&lt;small&gt; &lt;/small&gt;em (17,6px/13,2pt) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.&lt;/p&gt;
 
 &lt;p&gt;Ob ich die graue Randspalte erhalten soll, darüber war ich mir lange Zeit unschlüssig. Sie stört, wenn ich ein eher minimales Design haben möchte, das sich auf den eigentlichen Text fokussiert. Andererseits gefällt mir der einladende Kurztext und er dient auch der Navigation ins Archiv oder zum RSS-Feed. Also habe ich ihn als durchscheinenden Kasten auf die rechte Seite gesetzt. Wird das Browserfenster schmaler, verschwindet der Kasten nach unten und stattdessen erscheint rechts oben ein reduziertes Menü zu den wichtigsten Bereichen meines Blogs.&lt;/p&gt;
 
-&lt;h2 id=&quot;eigenstndiges-design&quot;&gt;Eigenständiges Design&lt;/h2&gt;
+&lt;h2 id=&quot;eigenständiges-design&quot;&gt;Eigenständiges Design&lt;/h2&gt;
 
 &lt;p&gt;Wenn man Gestaltungselemente reduziert oder abschwächt, besteht leicht die Gefahr, dass sich eine Website grafisch wenig von anderen unterscheidet und im Einheitsbrei untergeht. Ich wollte die charakteristischen Merkmale zwar zurückhaltend einsetzen, sie im Gegenzug aber möglichst einzigartig gestalten. Neben meinem Logo oben links lasse ich deshalb die Farbe Grün als Streifen am rechten Rand wieder auftauchen. Ja, ich weiß, &lt;a href=&quot;https://duckduckgo.com/?q=triangle+pattern&amp;amp;ia=images&amp;amp;iax=1&quot;&gt;Triangle Patterns&lt;/a&gt; liegen jetzt schon seit über drei Jahren im Trend und werden ihren Zenit sicher bald überschritten haben. Trotzdem: Ich fand es einfach zu reizvoll, mir wie im vorigen Design ein kristallines Muster zu basteln. Die Besonderheit diesmal: Es besteht nicht aus einer Bilddatei, sondern wurde per CSS aus vier Farbverläufen zusammengesetzt.&lt;/p&gt;
 
@@ -244,52 +479,6 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/blogdesign-3.html</guid>
 	<pubDate>Tue, 11 Apr 2017 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Wo Texte eine Bleibe finden</title>
-	<description>&lt;p&gt;Kürzlich habe ich den Band „Die perfekte Lesemaschine“ gelesen. Darin beleuchtet Roland Reuß in fünfzig Essays verschiedene Aspekte &lt;em&gt;zur Ergonomie des Buches&lt;/em&gt; – so der Untertitel. Mir gefiel das Buch recht gut, obwohl (oder auch weil) ich nicht immer der Meinung des Autors war. Hätte er doch nur auf die übertriebenen Bildungsprotzwörter verzichtet (Quisquilie, distrahierend, …) und bloßen Lobpreis des Materials vermieden (Bücher besäßen haptisch erfahrbare Körperlichkeit, das Lesen am Bildschirm sei pathologisch planimetrisch, S.&lt;small&gt; &lt;/small&gt;25) …&lt;/p&gt;
-
-&lt;p&gt;Inhaltlich waren die Essays nachvollziehbar, größtenteils gut begründet und vor allem sehr anregend. In diesem Blogeintrag möchte ich mich mit einer Frage aus dem Buch beschäftigen, die der Autor scheinbar plausibel beantwortet, aber meiner Meinung nach nicht ganz durchdacht hat.&lt;/p&gt;
-
-&lt;h2 id=&quot;stabiles-buch-vergngliches-internet&quot;&gt;Stabiles Buch, vergängliches Internet?&lt;/h2&gt;
-
-&lt;p&gt;Ein Buch biete einem Text eine &lt;em&gt;Bleibe&lt;/em&gt;, um langfristig unverändert zu bestehen. Im Internet seien Texte dagegen instabil und abhängig von technischen, politischen und ökonomischen Bedingungen, z.&lt;small&gt; &lt;/small&gt;B. Elektrizität, Zensurfreiheit oder profitablem Serverbetrieb.&lt;/p&gt;
-
-&lt;p&gt;Diese Gegenüberstellung macht Roland Reuß einige Male (wie auf S.&lt;small&gt; &lt;/small&gt;23 oder S.&lt;small&gt; &lt;/small&gt;75), vor allem im Essay „Bleibe“ (S.&lt;small&gt; &lt;/small&gt;17f). Damit wird angedeutet, wie überlegen das Buch doch dem Internet sei. Und für sich betrachtet stimmen die beiden Aussagen über Buch und Internet auch, doch der direkte Vergleich führt in die Irre. Und das liegt nicht nur daran, dass die Stärken des einen Gegenstands mit separaten Schwächen des anderen verglichen werden (man würde ja auch nicht die Anfälligkeit für Insektenfraß der weltweiten Verfügbarkeit gegenüberstellen).&lt;/p&gt;
-
-&lt;h2 id=&quot;es-bleibt-was-man-bewahren-will&quot;&gt;Es bleibt, was man bewahren will&lt;/h2&gt;
-
-&lt;p&gt;Eine wichtige Voraussetzung, damit ein Text erhalten bleibt, ist zunächst einmal das Interesse daran. Wenn der Inhalt eines Buchs niemanden (mehr) anspricht, so wandert es vom Dachboden ins Altpapier und wird aus Bibliotheksbeständen genommen. Genauso wie Blogartikel und belanglose Kommentare untergehen, für die sich einfach keiner interessiert.&lt;/p&gt;
-
-&lt;p&gt;Nun verschwinden durch mangelndes Interesse sicher mehr Online-Texte als Buchtexte. Das liegt aber nicht unbedingt an der Erscheinungsform, sondern daran, dass Buchinhalte vorgefiltert werden. Schließlich lehnt ein Verleger von vornherein alle Texte ab, an denen voraussichtlich kaum Interesse besteht. Wer hier also die vielen ungelesenen Netzinhalte anführt, muss die von Verlagen zurückgewiesenen Manuskripte ebenfalls berücksichtigen.&lt;/p&gt;
-
-&lt;p&gt;Wenn niemand Interesse daran hat, dann besteht ein 3000-fach gedrucktes Taschenbuch nicht länger als beispielsweise die erste Internetseite &lt;a href=&quot;http://info.cern.ch/&quot;&gt;http://info.cern.ch/&lt;/a&gt; von 1989.&lt;/p&gt;
-
-&lt;h2 id=&quot;es-bleibt-was-sich-nicht-abnutzt&quot;&gt;Es bleibt, was sich nicht abnutzt&lt;/h2&gt;
-
-&lt;p&gt;Wer diesen Satz hier liest, sieht eigentlich nur eine Kopie der Daten, die auf einem entfernten Server liegen. Es ist der &lt;em&gt;Abruf&lt;/em&gt; dieses Textes. Roland Reuß berücksichtigt diese Feinheit nicht und schreibt über Texte im Internet: „Trivialerweise bedarf es der Elektrizität, damit diese Art von Schrift gelesen werden kann“. Was natürlich stimmt, aber nicht den Kern trifft. Schließlich ist ein Text nicht verschwunden, wenn ein Stromausfall die Internetverbindung kappt; er liegt immer noch unbeschadet auf dem Server. Er ist nur genauso unzugänglich wie ein Buch, wenn es gerade jemand anderes in der Hand hält oder die Bibliothek geschlossen hat.&lt;/p&gt;
-
-&lt;p&gt;Um Bücher und digitale Texte in dieser Hinsicht fair miteinander vergleichen zu können, muss man von beiden entweder die tatsächliche Speicherform betrachten oder eben den jeweiligen Abruf (das vielfache Lesen).&lt;/p&gt;
-
-&lt;p&gt;Wer möchte, dass ein Text lange Zeit besteht, speichert ihn am besten in einer möglichst haltbaren Form. Das Buch ist einigermaßen beständig, hat mäßig hohe Anforderungen an die Lagerung und ist auch nach vielen Jahren noch leicht lesbar. Zwecks einer langen Lebensdauer wählt man natürlich kein säurehaltiges Papier, das sich bereits nach hundert Jahren zersetzen würde. Genauso würde man für einen digitalen Text keine CD-R verwenden, deren Beschichtung nach 10 Jahren abblättert. Eher würde man die einzelnen Bits zum Beispiel auf eine Messingscheibe gravieren – sie ist länger haltbar und leichter zu lagern als jedes Buch. Die technische Lesbarkeit in, sagen wir, 2000 Jahren ist eine andere Frage, welche schon die &lt;a href=&quot;https://de.wikipedia.org/wiki/Voyager_Golden_Record&quot;&gt;Voyager Golden Records&lt;/a&gt; zu beantworten versucht haben.&lt;/p&gt;
-
-&lt;p&gt;Was die langfristige Abrufbarkeit angeht, kommt es im Grunde nur auf die Anzahl der Kopien an. Wird ein Text tausendfach aus nur einem einzigen Buchexemplar gelesen, wird dieses schon sehr bald zerfleddert sein. – So wie auch die Messingscheibe leidet, wenn sie immer wieder in ein Laufwerk gelegt wird. Je öfter der Text allerdings in Kopie vorliegt, desto unempfindlicher ist er gegen eine Abnutzung durchs Lesen/Abrufen. Ein digitaler Text ist hier im Vorteil. Ihn milliardenfach zu kopieren ist deutlich einfacher, als die gleiche Anzahl an Büchern herzustellen.&lt;/p&gt;
-
-&lt;h2 id=&quot;keine-gefhlten-beweise-bitte&quot;&gt;Keine gefühlten Beweise, bitte!&lt;/h2&gt;
-
-&lt;p&gt;Mag sein, dass ein altehrwürdiges Buch für einen Text eine angemessenere Bleibe bietet, als das kalte, digitale und ruhelose Internet – doch das ist ein emotionales Argument ohne sachliche Substanz. Genauso könnte man ein Buch als Kerkerzelle verunglimpfen, während sich Texte im Internet frei überall hinbewegen können. Ebenfalls ein emotionales Argument.&lt;/p&gt;
-
-&lt;p&gt;Um zu bleiben, braucht ein Text vor allem erst einmal interessierte Leser – dann wird er seine Bleibe schon finden. Ob nun in einem Buch, auf einer Messingscheibe oder als elektronische Blitze im weltweiten Netz.&lt;/p&gt;
-
-&lt;h2 id=&quot;schlussbemerkung&quot;&gt;Schlussbemerkung&lt;/h2&gt;
-
-&lt;p&gt;In diesem Artikel habe ich mich auf den Aspekt der Bleibe im Sinne der Beständigkeit beschränkt. Die Frage, ob Texte im Buch oder im Netz besser aufgehoben sind, hat noch viele andere Facetten. So haben Online-Texte eine potenziell höhere Reichweite, dafür ist Gedrucktes geschützter gegen Veränderungen (negativ wie positiv). Dazu kommen Gesichtspunkte wie die Abhängigkeit von großen Internetkonzernen, ein begrenzendes Urheberrecht, Books on Demand, typografische Qualität … und letztlich auch die Frage, ob und welche Texte überhaupt bleiben sollten.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/textbleibe.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/textbleibe.html</guid>
-	<pubDate>Thu, 09 Mar 2017 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>

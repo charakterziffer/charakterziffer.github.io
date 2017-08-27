@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="no-referrer">
+
+<title>Pattern-Library für @cz+ // @cz+</title>
+<meta name="description" content="In dieser Datei sind Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="https://charakterziffer.github.io/bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Pattern-Library für @cz+" />
+<meta property="og:description" content="In dieser Datei sind Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen." />
+<meta property="og:url" content="http://charakterziffer.github.io/pattern-library.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="http://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</header>
+
+<main>
+	<article>
+<time datetime="2017-12-31">So, 31. Dez. 2017</time>
+<h1>Pattern-Library für @cz+</h1>
+<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
+
+<p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="https://direktadresse.de/">https://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:address@example.com">address@example.com</a> (mit Spamschutz).</p>
+
+<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="https://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="https://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="https://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
+
+<h2 id="hervorhebungen-h2-Überschrift">Hervorhebungen (H2-Überschrift)</h2>
+
+<p><em>Kursive Textstellen</em> werden mit einem Stern umschlossen, <strong>fette Hervorhebungen</strong> bekommen zwei Sterne. Man kann auch Wort<em>bestand</em>teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash. Für Tastenkombinationen gibt es den &lt;kbd&gt;-Tag, den man beispielsweise für <kbd>Strg</kbd> + <kbd>+</kbd> verwenden kann.</p>
+
+<h3 id="weitere-formatierungen-h3-Überschrift">Weitere Formatierungen (H3-Überschrift)</h3>
+
+<p>Kurze <code>Codeschnippsel</code> zeichnet man mit einem Gravis aus. Praktischerweise werden <code>&lt;html&gt;</code>-Sonderzeichen wie spitze Klammern oder „<code>Kaufmanns-&amp;</code>“ gleich umgewandelt.</p>
+
+<h2 id="unsortierte-und-sortierte-listen">Unsortierte und sortierte Listen</h2>
+
+<ul>
+  <li>eine unsortierte Lise</li>
+  <li>nein, eine Liste</li>
+  <li>aber unsortiert</li>
+</ul>
+
+<p>Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:</p>
+
+<ol>
+  <li>Hund</li>
+  <li>Katze</li>
+  <li>Maus</li>
+</ol>
+
+<p>Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.</p>
+
+<ul>
+  <li>
+    <p>Dies ist ein Listenpunkt mit zwei Absätzen</p>
+
+    <p>Dies ist der zweite Absatz in diesem Listenpunkt. Nur die
+erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit.</p>
+  </li>
+  <li>
+    <p>Ein weiterer Punkt in der selben Liste.</p>
+  </li>
+  <li>
+    <p>Und noch ein Absatz</p>
+  </li>
+</ul>
+
+<p>Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.</p>
+
+<div style="-webkit-columns:13em; columns:13em; margin:1em 0 -0.3em;">
+<p style="margin-top:0;">Dieser Text verteilt sich auf maximal drei Spalten mit einer Mindestbreite von 13em. Wo genau die Spaltenumbrüche liegen, kann ich aber nicht festlegen.</p>
+<p>800<small>&nbsp;</small>g Kürbisfleisch<br />
+150<small>&nbsp;</small>g Zwiebeln<br />
+300<small>&nbsp;</small>g Kartoffeln<br />
+40<small>&nbsp;</small>g Butter<br />
+1 unbehandelte Orange (Schale und Saft)<br />
+1,5<small>&nbsp;</small>l Gemüsebrühe<br />
+1 Saft von einer Limette<br />
+1 Stück Ingwer<br />
+Salz, Pfeffer<br />
+1 Prise Zucker<br />
+250<small>&nbsp;</small>ml Sahne<br />
+Muskatnuss<br />
+Cayenne-Pfeffer<br />
+Tabasco<br />
+Kürbis-Öl und geröstete Kürbiskerne zum Garnieren<br />
+etwas Petersilie</p></div>
+
+<h2 id="kästen-zitatblöcke-codeblöcke">Kästen, Zitatblöcke, Codeblöcke</h2>
+
+<p>Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse <em>hinterlegt</em>.</p>
+
+<p class="hinterlegt">Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.</p>
+
+<p>Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.</p>
+
+<div class="hinterlegt">
+<p>Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.</p>
+<p>Das ist Absatz Nº2.</p>
+<p>Hier ist noch ein dritter Absatz.</p>
+</div>
+
+<p>Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&gt;):</p>
+
+<blockquote>
+  <p>So ein Zitatblock wird dann mit <code>&lt;blockquote&gt;</code> umschlossen. Der Text darinnen steht in einem <code>&lt;p&gt;</code>. Das wird zum Beispiel für Tweets benutzt.</p>
+</blockquote>
+
+<p>Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:</p>
+
+<blockquote>
+  <p>⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (<a href="#fuchs">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (<a href="#fuchs">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (<a href="#fuchs">#</a>)</p>
+</blockquote>
+
+<p>Um mehrere Absätze in einen Zitatblock zu packen, beginnt man auch die Leerzeilen dazwischen mit einer spitzen Klammer:</p>
+
+<blockquote>
+  <h2 id="großes-zitat">Großes Zitat</h2>
+
+  <p>Diese Blockquote enthält etwas mehr Text und beginnt sogar mit einer Überschrift (hier ein H2-Titel).</p>
+
+  <p>Die Überschrift bekommt dabei einen klitzekleinen Abstand oben, damit die Ränder einigermaßen passen. Die graue Markierung von <code>Codeschnippseln</code> fehlt hier dann natürlich. Das könnte ich mit einem halbtransparent-grauen Hintergrund lösen …</p>
+</blockquote>
+
+<p>Wenn man ein längeres <code>Codebeispiel</code> hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens <code>vier Leerzeichen</code> einrücken):</p>
+
+<pre><code>@font-face {
+   font-family: 'Schriftname';
+   src: url('schrift.eot'); /* IE9 compatibility mode */
+   src: url('schrift.eot?#iefix') format('embedded-opentype'),
+      url('schrift.woff') format('woff'),
+      url('schrift.ttf') format('truetype');
+}
+</code></pre>
+
+<p>Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.</p>
+
+<hr />
+
+<p>Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.</p>
+
+<h2 id="bilder">Bilder</h2>
+
+<p>Bilder werden so ähnlich wie Links eingebunden:</p>
+
+<p><img src="material/cz750x270.jpg" alt="Alttext des Bildes" /></p>
+
+<p>Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen. Für Untertitel:</p>
+
+<figure><img src="material/cz750x270.jpg" alt="Ein Beispielbild" />
+	<figcaption>Hier steht der Bilduntertitel <a href="#bild">mit Verlinkung</a>. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.</figcaption>
+</figure>
+
+<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Mann muss aber auf die richtigen Abstände achten, damit das Bild keine Löcher in den Text reißt. Am besten verwendet man SVG, das vergrößert sich mit: <svg width=".8em" height=".8em" viewBox="0 0 14 14" preserveAspectRatio="xMinYMin meet"><g id="rss" style="stroke-width:2;"><path style="fill:#839; stroke:#839" d="M 13,13 13,1 1,1 1,13 Z"></path><circle style="fill:none; stroke:#fff" cx="7" cy="7" r="4"></circle></g></svg></p>
+
+<p>Es ist möglich, Teilbilder zu kombinieren und die Slices dann als Hintergrundbild eines Divs anzuzeigen. Das geht zum einen mit Verlinkung zu einer größeren Ansicht (wie bei Chorplakate):</p>
+
+<style>
+<!--
+[class^="bild"] { position: relative; width: 98.5%; height: 0;
+	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
+	line-height: 0; border: 0; background-size: 100% auto; }
+
+.bild1 { background-position: 0 33.33%;
+	background-image: url('material/chor-vorschau.jpg'); }
+.bild1 a { position:absolute;top:0;bottom:0;left:0;right:0;
+	display: flex; justify-content: center; align-items: center;
+	opacity:0; }
+
+.bild2 { width:100%; margin:0; padding-bottom: 72%;
+	background-position: 0 60%;
+	background-image: url('material/typosafari.jpg');}
+.bild2 a { visibility:hidden; }
+-->
+</style>
+
+<div class="bild1" title="Ausschnitte aus dem Chorplakat und -programm von 2012"><a href="material/chor-2012.jpg">größere Abbildung</a></div>
+
+<p>Oder ohne Verlinkung (Fallback-Link trotzdem vorhanden) und hier mit Untertitel und doppelter Höhe:</p>
+
+<figure>
+<div class="bild2" title="diverse Regensburger Schriftzüge mit Schauwert"><a href="material/typosafari.jpg">Komplettes Bild (alle Teilbilder)</a></div>
+	<figcaption>Diverse Schriftzüge in Regensburg</figcaption>
+</figure>
+
+<p>Wichtig: Eng aufeinanderfolgenden Artikel dürfen nicht die gleiche Klasse .bildX benutzen, denn sonst überschreibt <em>auf der Startseite</em> das CSS des unteren Artikels die Bilder im oberen.</p>
+
+<h2 id="sonstiges">Sonstiges</h2>
+
+<p>Datum der Website oder eines Artikels: So, 27. Aug. 2017 / So, 31. Dez. 2017 (ausgegeben in meinem Wunschformat)</p>
+
+<p>Ein Klickfeld für Download-Links:</p>
+
+<p><a href="otfeat/otfeat.ttf" class="klickfeld">Ot­feat als<br /><em>ttf-Da­tei</em></a></p>
+
+<p>Man erzeugt es als <code>&lt;a&gt;</code> mit <em>.klickfeld</em> als CSS-Klasse.</p>
+
+<div class="klappkasten">
+<input type="checkbox" id="K1" />
+<label for="K1">Zum Öffnen hier klicken</label>
+<p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Zunächst hatte ich sie mit Javascript realisiert, jetzt aber arbeite ich mit CSS-Animationen und einer unsichtbaren Checkbox. Bei mehreren Klappboxen darauf achten, dass unterschiedliche IDs vergeben werden.</p>
+</div>
+
+<p>Eine <strong style="background-color: #fdb; font-size: 0.85em; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.1em 0.2em 0.05em;">besonders starke Hervorhebung</strong> mit rotem Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.<a href="#note1"><sup id="ziffer1">[1]</sup></a></p>
+
+<style>
+<!--
+@font-face {font-family: StickSerif; src:url(material/StickSerif.woff) format('woff');}
+@font-face {font-family: 'UnifrakturMaguntia';
+src: local('UnifrakturMaguntia'),
+url('material/UnifrakturMaguntia.woff') format('woff'),
+url('material/UnifrakturMaguntia.ttf') format('truetype');}
+-->
+</style>
+
+<p>Kurzer <span style="font:1.1em/1.3em UnifrakturMaguntia,'Old English Text MT',sans-serif;margin-bottom:-1em;color:#2c2c2c;">Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht.</p>
+
+<form style="margin-top:1.7em"><textarea style="font:1.8em/1.3em 'StickSerif',monospace; width:98%; height:4.8em;" name="Testfeld">Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form>
+
+<p class="hinterlegt">Eine eingebundene Audiodatei in einem grünen Kasten.
+<audio controls="" preload="metadata">
+	<source src="material/hoerspiele.mp3" type="audio/mpeg" />
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die <a href="material/hoerspiele.mp3">Datei herunterladen</a>.
+</audio></p>
+
+<p>Ein einfacher Textabsatz. Danach eine alleinstehende Audio-Datei (aber in einem eigenen Absatz).</p>
+
+<p><audio controls="" preload="metadata">
+	<source src="material/hoerspiele.mp3" type="audio/mpeg" />
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die <a href="material/hoerspiele.mp3">Datei herunterladen</a>.
+</audio></p>
+
+<p><span style="color:#e32;">Weitere Betonungen?</span></p>
+
+<hr />
+
+<p><b id="note1">[1] Kleine Fußnote:</b> Hier wird ein Detail näher erläutert. <a href="#ziffer1">[↑]</a></p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+
+<a href="archiv.html?sujet">#sujet&nbsp; </a>
+</p>
+</article>
+
+
+		<h2 id="kommentare">2 Kommentare</h2>
+
+
+	<p class="datum">12.7.2014, 12:34 Uhr</p>
+	<h3>#1
+	
+		<a href="http://karls-website.de">Karl Kommentator</a>
+	</h3>
+	<p>Dies hier ist der Kommentar, der <i>Formatierungen</i> und <b>Hervorhebungen</b>, <code>Codebeispiele</code>, <a href="example.com">Links</a> und ein Bild <svg width=".8em" height=".8em" viewBox="0 0 14 14" preserveAspectRatio="xMinYMin meet"><g id="rss" style="stroke-width:2;"><path style="fill:#839; stroke:#839" d="M 13,13 13,1 1,1 1,13 Z" /><circle style="fill:none; stroke:#fff" cx="7" cy="7" r="4" /></g></svg> enthalten kann.</p> <p>Neue Absätze müssen um &lt;p&gt; ergänzt werden. Single Quotes müssen maskiert werden (&#39;).</p>
+	<hr style="margin-bottom:0;">
+
+	<p class="datum">13.7.2014, 09:20 Uhr</p>
+	<h3>#2
+	
+		<a class="hinterlegt" href="http://charakterziffer.github.io">Gerhard Großmann</a>
+	</h3>
+	<p>Das meine Antwort, die hervorgehoben wird.</p> <p>Auch hier müsste ich neue Absatze händisch mit einem eingeschobenen p-Tag ermöglichen.</p>
+	<hr style="margin-bottom:0;">
+
+<br>
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p style="margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+
+<form action="http://www.formular-chef.de/fc.cgi"
+method="post" enctype="multipart/form-data">
+<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
+<input type="hidden" name="pflicht" value="comment">
+<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
+<input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
+<input type="hidden" name="antwortseite_template"
+value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
+
+<input type="hidden" name="post_id" value="/pattern-library">
+<div>
+	<label for="name">Name</label>
+	<div><input name="name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off"></div>
+</div>
+<div>
+	<label for="comment">Kommentar*</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<div><input name="submit" type="submit" value="Abschicken"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="origamistier.html">← Ein gefalteter Stier</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="http://www.onlex.de/_counter.php?username=charakterziffer" async></script>
+</body>
+</html>
