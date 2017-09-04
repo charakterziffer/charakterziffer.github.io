@@ -75,7 +75,8 @@ div[style*='font-family:arial;'] { left: -9999px; }
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a:not(.klickfeld), form label {
 	font: bold 1em/1 czSlab,Georgia,serif; }
-h1, h2, h3 { font-feature-settings: 'liga', 'kern'; }
+h1, h2, h3 { -webkit-font-feature-settings: 'liga', 'kern';
+	font-feature-settings: 'liga', 'kern'; }
 b, strong, p a:not(.klickfeld), figcaption a, form label {
 	padding: 0 .06em; font-size: .95em;
 	-webkit-font-feature-settings: 'onum', 'liga', 'kern';
@@ -167,8 +168,11 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 /* LINKS (Schrift: Siehe oben bei b, strong) */
 
 a { text-decoration: none; color: #281; }
+.hinterlegt a, figcaption a, blockquote a { color: #270; }
 a:visited { color: #839; }
 a:hover { color: #3a1; }
+.hinterlegt a:hover, figcaption a:hover, blockquote a:hover {
+	color: #281; }
 a:active { color: #e32; }
 a:focus { outline: 1px dotted #333; }
 
