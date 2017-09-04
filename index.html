@@ -49,6 +49,105 @@
 
 
 	<article>
+	<time datetime="2017-09-05">Di, 5. Sept. 2017</time>
+	<h1><a href="css-muster.html">Muster aus CSS-Farbverläufen</a></h1>
+	<p>Vor fünf Monaten habe ich das <a href="blogdesign-3.html">Aussehen meines Blogs überarbeitet</a>. Statt eines großflächigen Hintergrundbilds verwende ich seitdem einen grünen Randstreifen mit kristallinem Muster (nur sichtbar, wenn das Browserfenster breit genug ist). Ich brauche dafür keine Bilddatei mehr, sondern erzeuge das Muster durch Code. Es besteht aus mehreren, übereinander gelegten Farbverläufen.</p>
+
+<h2 id="ein-farbverlauf-in-css">Ein Farbverlauf in CSS</h2>
+
+<p>Mit der <a href="http://www.bjoernsworld.de/css/grundlagen.html">Auszeichnungssprache CSS</a> kann man die HTML-Elemente einer Website gestalten. Für einen einfachen Verlauf mit drei Farben sorgt der folgende Code:</p>
+
+<pre><code>background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%);
+</code></pre>
+
+<p>Erklärung: Ein ausgewähltes Element bekommt als Hintergrundbild (<code>background-image</code>) einen linearen Farbverlauf (<code>linear-gradient</code>). Dieser soll aber nicht standardmäßig von unten nach oben laufen, sondern von links nach rechts, also um 90° verdreht (<code>90deg</code>).</p>
+
+<p>Für die ersten 5% unseres Verlaufs wählen wir die Farbe Weiß (mit verkürzter <a href="https://wiki.selfhtml.org/wiki/CSS/Wertetypen/Farbangaben">Hexadezimalschreibweise</a> ist das <code>#fff 5%</code>). Das Weiß geht dann über in Rot (bei 30% des Verlaufs: <code>#e32 30%</code>). Ab da verblasst das Rot zu Hellgrau, was bei 80% des Farbverlaufs erreicht ist (<code>#ccc 80%</code>). Diese letzte Farbe behält der Verlauf bis 100%, also bis ganz nach rechts:</p>
+
+<style>
+<!--
+[class^="verlauf"] { position:relative; width:100%; height:0; margin:0;
+	padding-bottom:28.75%; line-height:0; border:1px solid #ccc; }
+
+.verlauf1 { background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%); }
+.verlauf2 { background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%); }
+.verlauf3 { background-image: repeating-linear-gradient(160deg, transparent, #deb 30%), repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%), repeating-linear-gradient(100deg, #fff, #839 25%); }
+.verlauf4 { background-image: repeating-linear-gradient(160deg, transparent, #fff 30%), repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%), repeating-linear-gradient(100deg, transparent, #fff 25%), linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%); }
+
+-->
+</style>
+
+<figure>
+<div class="verlauf1"></div>
+<figcaption>Beispiel 1: Farbverlauf von links nach rechts, von Weiß über Rot bis zu Grau.</figcaption>
+</figure>
+
+<h2 id="musterhafte-wiederholung">Musterhafte Wiederholung</h2>
+
+<p>Seit 2012/2013 unterstützen moderne Browser auch CSS-Farbverläufe, die sich wiederholen. Der folgende Verlauf umfasst nur etwa ein Viertel der Bildbreite und geht von violett über rosa nach grün. Danach beginnt er wieder bei Violett und wiederholt sich über die gesamte Fläche.</p>
+
+<figure>
+<div class="verlauf2"></div>
+<figcaption>Beispiel 2: Ein Farbverlauf von violett über rosa nach grün, der sich danach dreimal wiederholt</figcaption>
+</figure>
+
+<p>Für das CSS benötigen wir nun einen <code>repeating-linear-gradient</code>, einen <em>sich wiederholenden</em> linearen Verlauf. Den Winkel habe ich mit <code>100deg</code> leicht schräg gewählt. Der Code:</p>
+
+<pre><code>background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%);
+</code></pre>
+
+<p>Farbbeginn ist Violett (<code>#839</code>, ohne Prozentangabe), bei 10% liegt ein gelbliches Rosa (<code>#fdb 10%</code>) und bis 25% ändert sich das zu Grün (<code>#3a1 25%</code>). Die letzte Angabe legt auch fest, wie breit der Verlauf insgesamt ist, bevor er sich wiederholt.</p>
+
+<p>In diesem Beispiel ist zwischen grün und violett eine harte Kante; man sieht, wo der Verlauf neu anfängt. Würde man bei der ersten und letzten Angabe dieselbe Farbe festlegen, bekäme man zwischen den Wiederholungen einen weichen Übergang.</p>
+
+<h2 id="farbe-in-schichten">Farbe in Schichten</h2>
+
+<p>Der Trick meines grünen Randstreifens besteht darin, Teile des Farbverlaufs transparent zu lassen, dafür aber mehrere Verläufe mit unterschiedlichen Winkeln übereinander zu legen. Hier ein Beispiel mit drei Verläufen:</p>
+
+<figure>
+<div class="verlauf3"></div>
+<figcaption>Beispiel 3: Drei Farbverläufe mit unterschiedlichen Winkeln, teilweise transparent</figcaption>
+</figure>
+
+<p>Der oberste Verlauf geht von <code>transparent</code> nach <code>#deb</code> (hellgrün) und ist 30% breit. Darunter liegt ein Farbverlauf von <code>transparent</code> nach <code>#e32</code> (rot) und zurück nach <code>transparent</code> – dadurch entsteht keine harte Kante zwischen Ende und Anfang des Verlaufs.</p>
+
+<p>Ganz zuunterst und zu einem großen Teil verdeckt ist der Farbverlauf aus Beispiel 2, hier mit den Farben <code>#fff</code> (weiß) und <code>#839</code> (violett). Der gesamte Code, ergänzt um Winkel und Prozentangaben sieht so aus:</p>
+
+<pre><code>background-image:
+repeating-linear-gradient(160deg, transparent, #deb 30%),
+repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%),
+repeating-linear-gradient(100deg, #fff, #839 25%);
+</code></pre>
+
+<h2 id="kombiniere">Kombiniere!</h2>
+
+<p>Nun haben wir alle Zutaten für den Randstreifen zusammen. Es kommt nur noch auf die richtige Zusammenstellung und Farbgebung an. Man nehme den Verlauf aus Beispiel eins, aber mit den Farben Weiß, Hellgrün und Grün. Darüber lege man die drei Verläufe aus Beispiel 3, aber in transparent-weiß statt farbig:</p>
+
+<figure>
+<div class="verlauf4"></div>
+<figcaption>Beispiel 4: Über einem weiß-grünen Farbverlauf liegen drei transparente-weiße Verläufe, die sich wiederholen.</figcaption>
+</figure>
+
+<p>Der Code dazu ist folgender:</p>
+
+<pre><code>background-image:
+repeating-linear-gradient(160deg, transparent, #fff 30%),
+repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%),
+repeating-linear-gradient(100deg, transparent, #fff 25%),
+linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%);
+</code></pre>
+
+<p>Für meinen Blog habe ich die Maße und Winkel der Farbverläufe angepasst, das Weiß halbtransparent gemacht (mit der <a href="http://www.css3.de/hsl-farben-hsl-farbangaben-und-hsla.html">HSLA-Farbangabe </a> <code>hsla(0,0%,100%, 0.3)</code> statt <code>#fff</code>) und die Abstände des weiß-grünen Hintergrunds teilweise fest und teilweise abhängig von der Fensterbreite gesetzt. Deshalb verschwindet der Randstreifen scheinbar, wenn das Browserfenster schmaler wird (tatsächlich sieht man die weißen Verläufe auf weißem Hintergrund nicht mehr).</p>
+
+<h2 id="erst-der-anfang">Erst der Anfang</h2>
+
+<p>Das <em>Mozilla Developer Network</em> bietet einen ausführlichen, deutschsprachigen <a href="https://developer.mozilla.org/de/docs/Farbverl%C3%A4ufe_in_CSS">Artikel über CSS-Farbverläufe</a>, auch über radiale Verläufe. Wie unterschiedlich CSS-Muster sein können, zeigt Lea Verou in ihrer <a href="http://lea.verou.me/css3patterns/">CSS3-Muster-Galerie</a>. Hier kann man selbst im Code herumprobieren, zum Beispiel bei den einfacheren <a href="http://lea.verou.me/css3patterns/#diagonal-stripes">diagonalen Streifen</a>.</p>
+
+	<p>---<br> <a href="css-muster.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2017-08-07">Mo, 7. Aug. 2017</time>
 	<h1><a href="origamistier.html">Ein gefalteter Stier</a></h1>
 	<p>Origami-Figuren sind meistens kantig und abstrakt, dabei dennoch gut zu erkennen. Das fasziniert mich am Papierfalten, diese Reduktion auf das Wesentliche. Im folgenden zeige ich eine Anleitung für einen eher einfachen Stier (mit fortgeschrittener Gegenbruchfalte). Auf meiner <a href="http://web.archive.org/web/20040205223825/http://www.netverk.com.ar/~halgall/classes/WebSite/toro02.jpg">Quelle für dieses Modell</a> wird als Autor <a href="http://georgerhoads.com/">George Rohads</a> genannt.</p>
@@ -186,69 +285,6 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2017-05-22">Mo, 22. Mai 2017</time>
-	<h1><a href="fuchs-7.html">Vorgaben hinter sich lassen</a></h1>
-	<p>Ob im Tanz, Text oder Grafikdesign – wer Aufgaben von anderen kreativ bearbeitet, der kennt diesen einen Punkt. Irgendwann muss man aufhören, Informationen zu sammeln, zu recherchieren oder noch mehr Details zu erfragen. Dann heißt es selbst aktiv zu werden, offen für Ideen zu sein und zu versuchen, anhand der Vorgaben eine einfallsreiche Lösung zu finden – ohne ständig nachzuhaken, ob man immer noch richtig liegt.</p>
-
-<p>Für meine Twitterserie <em>Fuchs und Ballerina</em> lauten die Vorgaben in etwa: Der Fuchs ist praktisch veranlagt und alltagsweise, die Ballerina oft unsicher aber sehr gefühlvoll. Jeder Tweet der Serie ist die Antwort des Fuchses. Die Frage der Ballerina entspringt aus deren Erfahrung, meist in einer ungewohnten Situation. Und das Ergebnis sollte möglichst keine Binsenweisheit sein. Hier nun die neusten Lösungen für diese selbstverordnete Aufgabenstellung:</p>
-
-<blockquote>
-  <p>⋑ „Überlege dir“, sprach der #Fuchs zur Ballerina, „ob es wirklich nötig ist, einen Weg zu gehen, der dir falsch erscheint.“ (<a href="https://twitter.com/charakterziffer/status/740520037283450881">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>𐇛 „Wenigstens dabeigewesen zu sein“, sprach der #Fuchs zur Ballerina, „mag dich zwar jetzt nicht trösten, tut’s in einiger Zeit aber schon.“ (<a href="https://twitter.com/charakterziffer/status/751420993550348288">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>𐇵 „Schlechte Laune ist ansteckend – gute aber auch“, sprach der #Fuchs zur Ballerina. „Denke daran, wenn du mit anderen zusammenarbeitest.“ (<a href="https://twitter.com/charakterziffer/status/776330090229665792">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>🙃 „Warte erst mal ab“, sprach der #Fuchs zur Ballerina. „Was dir jetzt als Gemeinheit erscheint, könnte sich auch als Glücksfall entpuppen.“ (<a href="https://twitter.com/charakterziffer/status/788649064258793472">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>𐇐 „In Wirklichkeit sind wir alle unsicher“, sprach der #Fuchs zur Ballerina. „Es gelingt einigen nur, es besser zu verbergen.“ (<a href="https://twitter.com/charakterziffer/status/802066270522867712">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>🞋 „Wenn dich jemand enttäuschend fand“, sprach der #Fuchs zur Ballerina, „wusste derjenige vielleicht auch einfach nicht, was er wollte.“ (<a href="https://twitter.com/charakterziffer/status/814435162322829312">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⧑ „Einen Plan B zu schmieden, bedeutet nicht zweifeln“, sprach der #Fuchs zur Ballerina. „Es heißt nur, sich auf Misserfolge vorzubereiten.“ (<a href="https://twitter.com/charakterziffer/status/831108522586828801">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>𐇲 „Riskier lieber manchmal, dich selbst zu belügen“, sprach der #Fuchs zur Ballerina. „Besser als wirklich alles zweifelnd zu hinterfragen.“ (<a href="https://twitter.com/charakterziffer/status/844129949317582848">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⚙ „Er ist nicht unfreundlich“, sprach der #Fuchs zur Ballerina, „nur zurückhaltend und konzentriert. Gib ihm Zeit, dann klappt das schon.“ (<a href="https://twitter.com/charakterziffer/status/854965590510981120">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>ᣫ „Frag nicht so viel“, sprach der #Fuchs zur Ballerina. „Jetzt kommt es auf deine eigene Ideen an.“ […] (<a href="https://twitter.com/charakterziffer/status/866564925505888256">#</a>)</p>
-</blockquote>
-
-<p>Meine Twitterserie ist über sieben Jahre alt und entsprechend gibt es schon mehr als 80 Folgen. Alle Blogeinträge zu dieser Twitterserie:</p>
-
-<ol>
-  <li><a href="fuchs-1.html">… sprach der #Fuchs zur Ballerina</a></li>
-  <li><a href="fuchs-2.html">Weisheiten für sensible Künstler</a></li>
-  <li><a href="fuchs-3.html">Ballerinas Selbstzweifel</a></li>
-  <li><a href="fuchs-4.html">Ein Fuchs für alle Fälle</a></li>
-  <li><a href="fuchs-5.html">Pirouetten und andere Probleme</a></li>
-  <li><a href="fuchs-6.html">Ausgefuchste Antworten</a></li>
-  <li><a href="fuchs-7.html">Vorgaben hinter sich lassen</a></li>
-</ol>
-
-	<p>---<br> <a href="fuchs-7.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -271,7 +307,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2017-09-04T19:25:01+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2017-09-05T00:04:11+02:00</p>
 </main>
 
 <aside>

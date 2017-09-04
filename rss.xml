@@ -13,6 +13,106 @@
 </image>
 
 <item>
+	<title>Muster aus CSS-Farbverläufen</title>
+	<description>&lt;p&gt;Vor fünf Monaten habe ich das &lt;a href=&quot;blogdesign-3.html&quot;&gt;Aussehen meines Blogs überarbeitet&lt;/a&gt;. Statt eines großflächigen Hintergrundbilds verwende ich seitdem einen grünen Randstreifen mit kristallinem Muster (nur sichtbar, wenn das Browserfenster breit genug ist). Ich brauche dafür keine Bilddatei mehr, sondern erzeuge das Muster durch Code. Es besteht aus mehreren, übereinander gelegten Farbverläufen.&lt;/p&gt;
+
+&lt;h2 id=&quot;ein-farbverlauf-in-css&quot;&gt;Ein Farbverlauf in CSS&lt;/h2&gt;
+
+&lt;p&gt;Mit der &lt;a href=&quot;http://www.bjoernsworld.de/css/grundlagen.html&quot;&gt;Auszeichnungssprache CSS&lt;/a&gt; kann man die HTML-Elemente einer Website gestalten. Für einen einfachen Verlauf mit drei Farben sorgt der folgende Code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Erklärung: Ein ausgewähltes Element bekommt als Hintergrundbild (&lt;code&gt;background-image&lt;/code&gt;) einen linearen Farbverlauf (&lt;code&gt;linear-gradient&lt;/code&gt;). Dieser soll aber nicht standardmäßig von unten nach oben laufen, sondern von links nach rechts, also um 90° verdreht (&lt;code&gt;90deg&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Für die ersten 5% unseres Verlaufs wählen wir die Farbe Weiß (mit verkürzter &lt;a href=&quot;https://wiki.selfhtml.org/wiki/CSS/Wertetypen/Farbangaben&quot;&gt;Hexadezimalschreibweise&lt;/a&gt; ist das &lt;code&gt;#fff 5%&lt;/code&gt;). Das Weiß geht dann über in Rot (bei 30% des Verlaufs: &lt;code&gt;#e32 30%&lt;/code&gt;). Ab da verblasst das Rot zu Hellgrau, was bei 80% des Farbverlaufs erreicht ist (&lt;code&gt;#ccc 80%&lt;/code&gt;). Diese letzte Farbe behält der Verlauf bis 100%, also bis ganz nach rechts:&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+[class^=&quot;verlauf&quot;] { position:relative; width:100%; height:0; margin:0;
+	padding-bottom:28.75%; line-height:0; border:1px solid #ccc; }
+
+.verlauf1 { background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%); }
+.verlauf2 { background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%); }
+.verlauf3 { background-image: repeating-linear-gradient(160deg, transparent, #deb 30%), repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%), repeating-linear-gradient(100deg, #fff, #839 25%); }
+.verlauf4 { background-image: repeating-linear-gradient(160deg, transparent, #fff 30%), repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%), repeating-linear-gradient(100deg, transparent, #fff 25%), linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%); }
+
+--&gt;
+&lt;/style&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;verlauf1&quot;&gt;&lt;/div&gt;
+&lt;figcaption&gt;Beispiel 1: Farbverlauf von links nach rechts, von Weiß über Rot bis zu Grau.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;musterhafte-wiederholung&quot;&gt;Musterhafte Wiederholung&lt;/h2&gt;
+
+&lt;p&gt;Seit 2012/2013 unterstützen moderne Browser auch CSS-Farbverläufe, die sich wiederholen. Der folgende Verlauf umfasst nur etwa ein Viertel der Bildbreite und geht von violett über rosa nach grün. Danach beginnt er wieder bei Violett und wiederholt sich über die gesamte Fläche.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;verlauf2&quot;&gt;&lt;/div&gt;
+&lt;figcaption&gt;Beispiel 2: Ein Farbverlauf von violett über rosa nach grün, der sich danach dreimal wiederholt&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Für das CSS benötigen wir nun einen &lt;code&gt;repeating-linear-gradient&lt;/code&gt;, einen &lt;em&gt;sich wiederholenden&lt;/em&gt; linearen Verlauf. Den Winkel habe ich mit &lt;code&gt;100deg&lt;/code&gt; leicht schräg gewählt. Der Code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Farbbeginn ist Violett (&lt;code&gt;#839&lt;/code&gt;, ohne Prozentangabe), bei 10% liegt ein gelbliches Rosa (&lt;code&gt;#fdb 10%&lt;/code&gt;) und bis 25% ändert sich das zu Grün (&lt;code&gt;#3a1 25%&lt;/code&gt;). Die letzte Angabe legt auch fest, wie breit der Verlauf insgesamt ist, bevor er sich wiederholt.&lt;/p&gt;
+
+&lt;p&gt;In diesem Beispiel ist zwischen grün und violett eine harte Kante; man sieht, wo der Verlauf neu anfängt. Würde man bei der ersten und letzten Angabe dieselbe Farbe festlegen, bekäme man zwischen den Wiederholungen einen weichen Übergang.&lt;/p&gt;
+
+&lt;h2 id=&quot;farbe-in-schichten&quot;&gt;Farbe in Schichten&lt;/h2&gt;
+
+&lt;p&gt;Der Trick meines grünen Randstreifens besteht darin, Teile des Farbverlaufs transparent zu lassen, dafür aber mehrere Verläufe mit unterschiedlichen Winkeln übereinander zu legen. Hier ein Beispiel mit drei Verläufen:&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;verlauf3&quot;&gt;&lt;/div&gt;
+&lt;figcaption&gt;Beispiel 3: Drei Farbverläufe mit unterschiedlichen Winkeln, teilweise transparent&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Der oberste Verlauf geht von &lt;code&gt;transparent&lt;/code&gt; nach &lt;code&gt;#deb&lt;/code&gt; (hellgrün) und ist 30% breit. Darunter liegt ein Farbverlauf von &lt;code&gt;transparent&lt;/code&gt; nach &lt;code&gt;#e32&lt;/code&gt; (rot) und zurück nach &lt;code&gt;transparent&lt;/code&gt; – dadurch entsteht keine harte Kante zwischen Ende und Anfang des Verlaufs.&lt;/p&gt;
+
+&lt;p&gt;Ganz zuunterst und zu einem großen Teil verdeckt ist der Farbverlauf aus Beispiel 2, hier mit den Farben &lt;code&gt;#fff&lt;/code&gt; (weiß) und &lt;code&gt;#839&lt;/code&gt; (violett). Der gesamte Code, ergänzt um Winkel und Prozentangaben sieht so aus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;background-image:
+repeating-linear-gradient(160deg, transparent, #deb 30%),
+repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%),
+repeating-linear-gradient(100deg, #fff, #839 25%);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;kombiniere&quot;&gt;Kombiniere!&lt;/h2&gt;
+
+&lt;p&gt;Nun haben wir alle Zutaten für den Randstreifen zusammen. Es kommt nur noch auf die richtige Zusammenstellung und Farbgebung an. Man nehme den Verlauf aus Beispiel eins, aber mit den Farben Weiß, Hellgrün und Grün. Darüber lege man die drei Verläufe aus Beispiel 3, aber in transparent-weiß statt farbig:&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;verlauf4&quot;&gt;&lt;/div&gt;
+&lt;figcaption&gt;Beispiel 4: Über einem weiß-grünen Farbverlauf liegen drei transparente-weiße Verläufe, die sich wiederholen.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Der Code dazu ist folgender:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;background-image:
+repeating-linear-gradient(160deg, transparent, #fff 30%),
+repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%),
+repeating-linear-gradient(100deg, transparent, #fff 25%),
+linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Für meinen Blog habe ich die Maße und Winkel der Farbverläufe angepasst, das Weiß halbtransparent gemacht (mit der &lt;a href=&quot;http://www.css3.de/hsl-farben-hsl-farbangaben-und-hsla.html&quot;&gt;HSLA-Farbangabe &lt;/a&gt; &lt;code&gt;hsla(0,0%,100%, 0.3)&lt;/code&gt; statt &lt;code&gt;#fff&lt;/code&gt;) und die Abstände des weiß-grünen Hintergrunds teilweise fest und teilweise abhängig von der Fensterbreite gesetzt. Deshalb verschwindet der Randstreifen scheinbar, wenn das Browserfenster schmaler wird (tatsächlich sieht man die weißen Verläufe auf weißem Hintergrund nicht mehr).&lt;/p&gt;
+
+&lt;h2 id=&quot;erst-der-anfang&quot;&gt;Erst der Anfang&lt;/h2&gt;
+
+&lt;p&gt;Das &lt;em&gt;Mozilla Developer Network&lt;/em&gt; bietet einen ausführlichen, deutschsprachigen &lt;a href=&quot;https://developer.mozilla.org/de/docs/Farbverl%C3%A4ufe_in_CSS&quot;&gt;Artikel über CSS-Farbverläufe&lt;/a&gt;, auch über radiale Verläufe. Wie unterschiedlich CSS-Muster sein können, zeigt Lea Verou in ihrer &lt;a href=&quot;http://lea.verou.me/css3patterns/&quot;&gt;CSS3-Muster-Galerie&lt;/a&gt;. Hier kann man selbst im Code herumprobieren, zum Beispiel bei den einfacheren &lt;a href=&quot;http://lea.verou.me/css3patterns/#diagonal-stripes&quot;&gt;diagonalen Streifen&lt;/a&gt;.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/css-muster.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/css-muster.html</guid>
+	<pubDate>Tue, 05 Sep 2017 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Ein gefalteter Stier</title>
 	<description>&lt;p&gt;Origami-Figuren sind meistens kantig und abstrakt, dabei dennoch gut zu erkennen. Das fasziniert mich am Papierfalten, diese Reduktion auf das Wesentliche. Im folgenden zeige ich eine Anleitung für einen eher einfachen Stier (mit fortgeschrittener Gegenbruchfalte). Auf meiner &lt;a href=&quot;http://web.archive.org/web/20040205223825/http://www.netverk.com.ar/~halgall/classes/WebSite/toro02.jpg&quot;&gt;Quelle für dieses Modell&lt;/a&gt; wird als Autor &lt;a href=&quot;http://georgerhoads.com/&quot;&gt;George Rohads&lt;/a&gt; genannt.&lt;/p&gt;
 
@@ -232,7 +332,7 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 
 &lt;h2 id=&quot;eigenständiges-design&quot;&gt;Eigenständiges Design&lt;/h2&gt;
 
-&lt;p&gt;Wenn man Gestaltungselemente reduziert oder abschwächt, besteht leicht die Gefahr, dass sich eine Website grafisch wenig von anderen unterscheidet und im Einheitsbrei untergeht. Ich wollte die charakteristischen Merkmale zwar zurückhaltend einsetzen, sie im Gegenzug aber möglichst einzigartig gestalten. Neben meinem Logo oben links lasse ich deshalb die Farbe Grün als Streifen am rechten Rand wieder auftauchen. Ja, ich weiß, &lt;a href=&quot;https://duckduckgo.com/?q=triangle+pattern&amp;amp;ia=images&amp;amp;iax=1&quot;&gt;Triangle Patterns&lt;/a&gt; liegen jetzt schon seit über drei Jahren im Trend und werden ihren Zenit sicher bald überschritten haben. Trotzdem: Ich fand es einfach zu reizvoll, mir wie im vorigen Design ein kristallines Muster zu basteln. Die Besonderheit diesmal: Es besteht nicht aus einer Bilddatei, sondern wurde per CSS aus vier Farbverläufen zusammengesetzt.&lt;/p&gt;
+&lt;p&gt;Wenn man Gestaltungselemente reduziert oder abschwächt, besteht leicht die Gefahr, dass sich eine Website grafisch wenig von anderen unterscheidet und im Einheitsbrei untergeht. Ich wollte die charakteristischen Merkmale zwar zurückhaltend einsetzen, sie im Gegenzug aber möglichst einzigartig gestalten. Neben meinem Logo oben links lasse ich deshalb die Farbe Grün als Streifen am rechten Rand wieder auftauchen. Ja, ich weiß, &lt;a href=&quot;https://duckduckgo.com/?q=triangle+pattern&amp;amp;ia=images&amp;amp;iax=1&quot;&gt;Triangle Patterns&lt;/a&gt; liegen jetzt schon seit über drei Jahren im Trend und werden ihren Zenit sicher bald überschritten haben. Trotzdem: Ich fand es einfach zu reizvoll, mir wie im vorigen Design ein kristallines Muster zu basteln. Die Besonderheit diesmal: Es besteht nicht aus einer Bilddatei, sondern wurde &lt;a href=&quot;css-muster.html&quot;&gt;per CSS aus vier Farbverläufen&lt;/a&gt; zusammengesetzt.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;material/blogdesign-2-zu-3.jpg&quot; alt=&quot;Vergleich von Überschriften und Randspalte&quot; /&gt;&lt;/p&gt;
 
@@ -244,52 +344,6 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/blogdesign-3.html</guid>
 	<pubDate>Tue, 11 Apr 2017 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Wo Texte eine Bleibe finden</title>
-	<description>&lt;p&gt;Kürzlich habe ich den Band „Die perfekte Lesemaschine“ gelesen. Darin beleuchtet Roland Reuß in fünfzig Essays verschiedene Aspekte &lt;em&gt;zur Ergonomie des Buches&lt;/em&gt; – so der Untertitel. Mir gefiel das Buch recht gut, obwohl (oder auch weil) ich nicht immer der Meinung des Autors war. Hätte er doch nur auf die übertriebenen Bildungsprotzwörter verzichtet (Quisquilie, distrahierend, …) und bloßen Lobpreis des Materials vermieden (Bücher besäßen haptisch erfahrbare Körperlichkeit, das Lesen am Bildschirm sei pathologisch planimetrisch, S.&lt;small&gt; &lt;/small&gt;25) …&lt;/p&gt;
-
-&lt;p&gt;Inhaltlich waren die Essays nachvollziehbar, größtenteils gut begründet und vor allem sehr anregend. In diesem Blogeintrag möchte ich mich mit einer Frage aus dem Buch beschäftigen, die der Autor scheinbar plausibel beantwortet, aber meiner Meinung nach nicht ganz durchdacht hat.&lt;/p&gt;
-
-&lt;h2 id=&quot;stabiles-buch-vergängliches-internet&quot;&gt;Stabiles Buch, vergängliches Internet?&lt;/h2&gt;
-
-&lt;p&gt;Ein Buch biete einem Text eine &lt;em&gt;Bleibe&lt;/em&gt;, um langfristig unverändert zu bestehen. Im Internet seien Texte dagegen instabil und abhängig von technischen, politischen und ökonomischen Bedingungen, z.&lt;small&gt; &lt;/small&gt;B. Elektrizität, Zensurfreiheit oder profitablem Serverbetrieb.&lt;/p&gt;
-
-&lt;p&gt;Diese Gegenüberstellung macht Roland Reuß einige Male (wie auf S.&lt;small&gt; &lt;/small&gt;23 oder S.&lt;small&gt; &lt;/small&gt;75), vor allem im Essay „Bleibe“ (S.&lt;small&gt; &lt;/small&gt;17f). Damit wird angedeutet, wie überlegen das Buch doch dem Internet sei. Und für sich betrachtet stimmen die beiden Aussagen über Buch und Internet auch, doch der direkte Vergleich führt in die Irre. Und das liegt nicht nur daran, dass die Stärken des einen Gegenstands mit separaten Schwächen des anderen verglichen werden (man würde ja auch nicht die Anfälligkeit für Insektenfraß der weltweiten Verfügbarkeit gegenüberstellen).&lt;/p&gt;
-
-&lt;h2 id=&quot;es-bleibt-was-man-bewahren-will&quot;&gt;Es bleibt, was man bewahren will&lt;/h2&gt;
-
-&lt;p&gt;Eine wichtige Voraussetzung, damit ein Text erhalten bleibt, ist zunächst einmal das Interesse daran. Wenn der Inhalt eines Buchs niemanden (mehr) anspricht, so wandert es vom Dachboden ins Altpapier und wird aus Bibliotheksbeständen genommen. Genauso wie Blogartikel und belanglose Kommentare untergehen, für die sich einfach keiner interessiert.&lt;/p&gt;
-
-&lt;p&gt;Nun verschwinden durch mangelndes Interesse sicher mehr Online-Texte als Buchtexte. Das liegt aber nicht unbedingt an der Erscheinungsform, sondern daran, dass Buchinhalte vorgefiltert werden. Schließlich lehnt ein Verleger von vornherein alle Texte ab, an denen voraussichtlich kaum Interesse besteht. Wer hier also die vielen ungelesenen Netzinhalte anführt, muss die von Verlagen zurückgewiesenen Manuskripte ebenfalls berücksichtigen.&lt;/p&gt;
-
-&lt;p&gt;Wenn niemand Interesse daran hat, dann besteht ein 3000-fach gedrucktes Taschenbuch nicht länger als beispielsweise die erste Internetseite &lt;a href=&quot;http://info.cern.ch/&quot;&gt;http://info.cern.ch/&lt;/a&gt; von 1989.&lt;/p&gt;
-
-&lt;h2 id=&quot;es-bleibt-was-sich-nicht-abnutzt&quot;&gt;Es bleibt, was sich nicht abnutzt&lt;/h2&gt;
-
-&lt;p&gt;Wer diesen Satz hier liest, sieht eigentlich nur eine Kopie der Daten, die auf einem entfernten Server liegen. Es ist der &lt;em&gt;Abruf&lt;/em&gt; dieses Textes. Roland Reuß berücksichtigt diese Feinheit nicht und schreibt über Texte im Internet: „Trivialerweise bedarf es der Elektrizität, damit diese Art von Schrift gelesen werden kann“. Was natürlich stimmt, aber nicht den Kern trifft. Schließlich ist ein Text nicht verschwunden, wenn ein Stromausfall die Internetverbindung kappt; er liegt immer noch unbeschadet auf dem Server. Er ist nur genauso unzugänglich wie ein Buch, wenn es gerade jemand anderes in der Hand hält oder die Bibliothek geschlossen hat.&lt;/p&gt;
-
-&lt;p&gt;Um Bücher und digitale Texte in dieser Hinsicht fair miteinander vergleichen zu können, muss man von beiden entweder die tatsächliche Speicherform betrachten oder eben den jeweiligen Abruf (das vielfache Lesen).&lt;/p&gt;
-
-&lt;p&gt;Wer möchte, dass ein Text lange Zeit besteht, speichert ihn am besten in einer möglichst haltbaren Form. Das Buch ist einigermaßen beständig, hat mäßig hohe Anforderungen an die Lagerung und ist auch nach vielen Jahren noch leicht lesbar. Zwecks einer langen Lebensdauer wählt man natürlich kein säurehaltiges Papier, das sich bereits nach hundert Jahren zersetzen würde. Genauso würde man für einen digitalen Text keine CD-R verwenden, deren Beschichtung nach 10 Jahren abblättert. Eher würde man die einzelnen Bits zum Beispiel auf eine Messingscheibe gravieren – sie ist länger haltbar und leichter zu lagern als jedes Buch. Die technische Lesbarkeit in, sagen wir, 2000 Jahren ist eine andere Frage, welche schon die &lt;a href=&quot;https://de.wikipedia.org/wiki/Voyager_Golden_Record&quot;&gt;Voyager Golden Records&lt;/a&gt; zu beantworten versucht haben.&lt;/p&gt;
-
-&lt;p&gt;Was die langfristige Abrufbarkeit angeht, kommt es im Grunde nur auf die Anzahl der Kopien an. Wird ein Text tausendfach aus nur einem einzigen Buchexemplar gelesen, wird dieses schon sehr bald zerfleddert sein. – So wie auch die Messingscheibe leidet, wenn sie immer wieder in ein Laufwerk gelegt wird. Je öfter der Text allerdings in Kopie vorliegt, desto unempfindlicher ist er gegen eine Abnutzung durchs Lesen/Abrufen. Ein digitaler Text ist hier im Vorteil. Ihn milliardenfach zu kopieren ist deutlich einfacher, als die gleiche Anzahl an Büchern herzustellen.&lt;/p&gt;
-
-&lt;h2 id=&quot;keine-gefühlten-beweise-bitte&quot;&gt;Keine gefühlten Beweise, bitte!&lt;/h2&gt;
-
-&lt;p&gt;Mag sein, dass ein altehrwürdiges Buch für einen Text eine angemessenere Bleibe bietet, als das kalte, digitale und ruhelose Internet – doch das ist ein emotionales Argument ohne sachliche Substanz. Genauso könnte man ein Buch als Kerkerzelle verunglimpfen, während sich Texte im Internet frei überall hinbewegen können. Ebenfalls ein emotionales Argument.&lt;/p&gt;
-
-&lt;p&gt;Um zu bleiben, braucht ein Text vor allem erst einmal interessierte Leser – dann wird er seine Bleibe schon finden. Ob nun in einem Buch, auf einer Messingscheibe oder als elektronische Blitze im weltweiten Netz.&lt;/p&gt;
-
-&lt;h2 id=&quot;schlussbemerkung&quot;&gt;Schlussbemerkung&lt;/h2&gt;
-
-&lt;p&gt;In diesem Artikel habe ich mich auf den Aspekt der Bleibe im Sinne der Beständigkeit beschränkt. Die Frage, ob Texte im Buch oder im Netz besser aufgehoben sind, hat noch viele andere Facetten. So haben Online-Texte eine potenziell höhere Reichweite, dafür ist Gedrucktes geschützter gegen Veränderungen (negativ wie positiv). Dazu kommen Gesichtspunkte wie die Abhängigkeit von großen Internetkonzernen, ein begrenzendes Urheberrecht, Books on Demand, typografische Qualität … und letztlich auch die Frage, ob und welche Texte überhaupt bleiben sollten.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/textbleibe.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/textbleibe.html</guid>
-	<pubDate>Thu, 09 Mar 2017 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>

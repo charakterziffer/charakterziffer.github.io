@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="no-referrer">
+
+<title>Muster aus CSS-Farbverläufen // @cz+</title>
+<meta name="description" content="Der grüne Streifen am rechten Rand meines Blogs ist kein Bild, sondern Code. Dabei werden verschiedene Farbverläufe übereinander gelegt.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="https://charakterziffer.github.io/bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Muster aus CSS-Farbverläufen" />
+<meta property="og:description" content="Der grüne Streifen am rechten Rand meines Blogs ist kein Bild, sondern Code. Dabei werden verschiedene Farbverläufe übereinander gelegt." />
+<meta property="og:url" content="http://charakterziffer.github.io/css-muster.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="http://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</header>
+
+<main>
+	<article>
+<time datetime="2017-09-05">Di, 5. Sept. 2017</time>
+<h1>Muster aus CSS-Farbverläufen</h1>
+<p>Vor fünf Monaten habe ich das <a href="blogdesign-3.html">Aussehen meines Blogs überarbeitet</a>. Statt eines großflächigen Hintergrundbilds verwende ich seitdem einen grünen Randstreifen mit kristallinem Muster (nur sichtbar, wenn das Browserfenster breit genug ist). Ich brauche dafür keine Bilddatei mehr, sondern erzeuge das Muster durch Code. Es besteht aus mehreren, übereinander gelegten Farbverläufen.</p>
+
+<h2 id="ein-farbverlauf-in-css">Ein Farbverlauf in CSS</h2>
+
+<p>Mit der <a href="http://www.bjoernsworld.de/css/grundlagen.html">Auszeichnungssprache CSS</a> kann man die HTML-Elemente einer Website gestalten. Für einen einfachen Verlauf mit drei Farben sorgt der folgende Code:</p>
+
+<pre><code>background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%);
+</code></pre>
+
+<p>Erklärung: Ein ausgewähltes Element bekommt als Hintergrundbild (<code>background-image</code>) einen linearen Farbverlauf (<code>linear-gradient</code>). Dieser soll aber nicht standardmäßig von unten nach oben laufen, sondern von links nach rechts, also um 90° verdreht (<code>90deg</code>).</p>
+
+<p>Für die ersten 5% unseres Verlaufs wählen wir die Farbe Weiß (mit verkürzter <a href="https://wiki.selfhtml.org/wiki/CSS/Wertetypen/Farbangaben">Hexadezimalschreibweise</a> ist das <code>#fff 5%</code>). Das Weiß geht dann über in Rot (bei 30% des Verlaufs: <code>#e32 30%</code>). Ab da verblasst das Rot zu Hellgrau, was bei 80% des Farbverlaufs erreicht ist (<code>#ccc 80%</code>). Diese letzte Farbe behält der Verlauf bis 100%, also bis ganz nach rechts:</p>
+
+<style>
+<!--
+[class^="verlauf"] { position:relative; width:100%; height:0; margin:0;
+	padding-bottom:28.75%; line-height:0; border:1px solid #ccc; }
+
+.verlauf1 { background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%); }
+.verlauf2 { background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%); }
+.verlauf3 { background-image: repeating-linear-gradient(160deg, transparent, #deb 30%), repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%), repeating-linear-gradient(100deg, #fff, #839 25%); }
+.verlauf4 { background-image: repeating-linear-gradient(160deg, transparent, #fff 30%), repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%), repeating-linear-gradient(100deg, transparent, #fff 25%), linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%); }
+
+-->
+</style>
+
+<figure>
+<div class="verlauf1"></div>
+<figcaption>Beispiel 1: Farbverlauf von links nach rechts, von Weiß über Rot bis zu Grau.</figcaption>
+</figure>
+
+<h2 id="musterhafte-wiederholung">Musterhafte Wiederholung</h2>
+
+<p>Seit 2012/2013 unterstützen moderne Browser auch CSS-Farbverläufe, die sich wiederholen. Der folgende Verlauf umfasst nur etwa ein Viertel der Bildbreite und geht von violett über rosa nach grün. Danach beginnt er wieder bei Violett und wiederholt sich über die gesamte Fläche.</p>
+
+<figure>
+<div class="verlauf2"></div>
+<figcaption>Beispiel 2: Ein Farbverlauf von violett über rosa nach grün, der sich danach dreimal wiederholt</figcaption>
+</figure>
+
+<p>Für das CSS benötigen wir nun einen <code>repeating-linear-gradient</code>, einen <em>sich wiederholenden</em> linearen Verlauf. Den Winkel habe ich mit <code>100deg</code> leicht schräg gewählt. Der Code:</p>
+
+<pre><code>background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%);
+</code></pre>
+
+<p>Farbbeginn ist Violett (<code>#839</code>, ohne Prozentangabe), bei 10% liegt ein gelbliches Rosa (<code>#fdb 10%</code>) und bis 25% ändert sich das zu Grün (<code>#3a1 25%</code>). Die letzte Angabe legt auch fest, wie breit der Verlauf insgesamt ist, bevor er sich wiederholt.</p>
+
+<p>In diesem Beispiel ist zwischen grün und violett eine harte Kante; man sieht, wo der Verlauf neu anfängt. Würde man bei der ersten und letzten Angabe dieselbe Farbe festlegen, bekäme man zwischen den Wiederholungen einen weichen Übergang.</p>
+
+<h2 id="farbe-in-schichten">Farbe in Schichten</h2>
+
+<p>Der Trick meines grünen Randstreifens besteht darin, Teile des Farbverlaufs transparent zu lassen, dafür aber mehrere Verläufe mit unterschiedlichen Winkeln übereinander zu legen. Hier ein Beispiel mit drei Verläufen:</p>
+
+<figure>
+<div class="verlauf3"></div>
+<figcaption>Beispiel 3: Drei Farbverläufe mit unterschiedlichen Winkeln, teilweise transparent</figcaption>
+</figure>
+
+<p>Der oberste Verlauf geht von <code>transparent</code> nach <code>#deb</code> (hellgrün) und ist 30% breit. Darunter liegt ein Farbverlauf von <code>transparent</code> nach <code>#e32</code> (rot) und zurück nach <code>transparent</code> – dadurch entsteht keine harte Kante zwischen Ende und Anfang des Verlaufs.</p>
+
+<p>Ganz zuunterst und zu einem großen Teil verdeckt ist der Farbverlauf aus Beispiel 2, hier mit den Farben <code>#fff</code> (weiß) und <code>#839</code> (violett). Der gesamte Code, ergänzt um Winkel und Prozentangaben sieht so aus:</p>
+
+<pre><code>background-image:
+repeating-linear-gradient(160deg, transparent, #deb 30%),
+repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%),
+repeating-linear-gradient(100deg, #fff, #839 25%);
+</code></pre>
+
+<h2 id="kombiniere">Kombiniere!</h2>
+
+<p>Nun haben wir alle Zutaten für den Randstreifen zusammen. Es kommt nur noch auf die richtige Zusammenstellung und Farbgebung an. Man nehme den Verlauf aus Beispiel eins, aber mit den Farben Weiß, Hellgrün und Grün. Darüber lege man die drei Verläufe aus Beispiel 3, aber in transparent-weiß statt farbig:</p>
+
+<figure>
+<div class="verlauf4"></div>
+<figcaption>Beispiel 4: Über einem weiß-grünen Farbverlauf liegen drei transparente-weiße Verläufe, die sich wiederholen.</figcaption>
+</figure>
+
+<p>Der Code dazu ist folgender:</p>
+
+<pre><code>background-image:
+repeating-linear-gradient(160deg, transparent, #fff 30%),
+repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%),
+repeating-linear-gradient(100deg, transparent, #fff 25%),
+linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%);
+</code></pre>
+
+<p>Für meinen Blog habe ich die Maße und Winkel der Farbverläufe angepasst, das Weiß halbtransparent gemacht (mit der <a href="http://www.css3.de/hsl-farben-hsl-farbangaben-und-hsla.html">HSLA-Farbangabe </a> <code>hsla(0,0%,100%, 0.3)</code> statt <code>#fff</code>) und die Abstände des weiß-grünen Hintergrunds teilweise fest und teilweise abhängig von der Fensterbreite gesetzt. Deshalb verschwindet der Randstreifen scheinbar, wenn das Browserfenster schmaler wird (tatsächlich sieht man die weißen Verläufe auf weißem Hintergrund nicht mehr).</p>
+
+<h2 id="erst-der-anfang">Erst der Anfang</h2>
+
+<p>Das <em>Mozilla Developer Network</em> bietet einen ausführlichen, deutschsprachigen <a href="https://developer.mozilla.org/de/docs/Farbverl%C3%A4ufe_in_CSS">Artikel über CSS-Farbverläufe</a>, auch über radiale Verläufe. Wie unterschiedlich CSS-Muster sein können, zeigt Lea Verou in ihrer <a href="http://lea.verou.me/css3patterns/">CSS3-Muster-Galerie</a>. Hier kann man selbst im Code herumprobieren, zum Beispiel bei den einfacheren <a href="http://lea.verou.me/css3patterns/#diagonal-stripes">diagonalen Streifen</a>.</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+</p>
+</article>
+
+
+	
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p style="margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+
+<form action="http://www.formular-chef.de/fc.cgi"
+method="post" enctype="multipart/form-data">
+<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
+<input type="hidden" name="pflicht" value="comment">
+<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
+<input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
+<input type="hidden" name="antwortseite_template"
+value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
+
+<input type="hidden" name="post_id" value="/css-muster">
+<div>
+	<label for="name">Name</label>
+	<div><input name="name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off"></div>
+</div>
+<div>
+	<label for="comment">Kommentar*</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<div><input name="submit" type="submit" value="Abschicken"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="origamistier.html">← Ein gefalteter Stier</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="http://www.onlex.de/_counter.php?username=charakterziffer" async></script>
+</body>
+</html>
