@@ -236,10 +236,9 @@ aside { position: static; float: none; }
 aside, figure, blockquote, .hinterlegt, .klappkasten {
 	background: #fff; border: 1px solid #ccc; }
 
-h1, h2, h3, h4, h5, h6, .datum {
+h1, h2, h3, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
 time { margin-top: -.2em; }
-p + time { margin-top: 3.95em; } /* Abstand in Liste auf Startseite */
 header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
 	blockquote, a:link, a:visited { color: #000; }
 
@@ -249,7 +248,7 @@ header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
 blockquote > h1, blockquote > h2, blockquote > h3 { margin: 0 0 .25em; }
 blockquote > p { margin: 0 0 .3em; }
 
-img, table { page-break-inside: avoid; }
+img { page-break-inside: avoid; }
 
 .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] {
 	display: none; }
