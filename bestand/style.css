@@ -230,11 +230,13 @@ input[type='submit'] { -webkit-appearance: button; }
 
 @media print {
 @page { margin: 1.5cm 1.5cm 2cm; }
+body { background-image: none; }
 header, main, aside { width: 100%; }
 aside { position: static; float: none; }
 
-aside, figure, blockquote, .hinterlegt, .klappkasten {
-	background: #fff; border: 1px solid #ccc; }
+aside, figure, blockquote, .hinterlegt, .klappkasten, pre, code {
+	background: #fff; border: 1px solid #666; }
+pre > code { border: 0; }
 
 h1, h2, h3, .datum {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
@@ -253,7 +255,8 @@ img { page-break-inside: avoid; }
 .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] {
 	display: none; }
 a[href]:after { content: ' [' attr(href) ']';
-	font: italic 1rem/1.4 'Source Sans Pro',Calibri,Arial,sans-serif; }
+	font: italic 1rem/1.4 'Source Sans Pro',Calibri,Arial,sans-serif;
+	width: auto; vertical-align: inherit; }
 a[href^='#']:after, a[href^='javascript']:after,
 	a[href^='archiv.html?']:after { content: ''; }
 }
