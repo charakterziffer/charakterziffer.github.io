@@ -13,6 +13,28 @@
 </image>
 
 <item>
+	<title>Mit Spenden werben</title>
+	<description>&lt;p&gt;Ein Bekannter hat mich gestern in einer Kurznachricht gebeten, seinen Verein zu unterstützen, die &lt;a href=&quot;http://aidshilfe-wuppertal.de/&quot;&gt;AIDS-Hilfe Wuppertal&lt;/a&gt;. Eine große Bank macht noch bis 7.&lt;small&gt; &lt;/small&gt;November eine bundesweite Aktion, bei der sie tausend Vereinen jeweils 1000&lt;small&gt; &lt;/small&gt;€ spendet. Es gibt je nach Vereinsgröße fünf Kategorien, in denen jeweils die 200 Höchstplatzierten die Spende erhalten. Alles, was der Verein tun muss ist, sich zu registrieren und Stimmen für sich zu sammeln.&lt;/p&gt;
+
+&lt;p&gt;Ich bin nicht ganz sicher, was ich von der Aktion halten soll. Natürlich, wer könnte etwas dagegen haben, dass Vereine mit einer Geldspende unterstützt werden? Andererseits ist das auch eine sehr offensichtliche Werbeaktion für die Bank. Sie spart sich, eine vergleichbare oder deutlich höhere Summe in eine bundesweite Kampagne zu stecken – und entlohnt somit keine Fotografen, Mediendesigner, Werbetexter und andere Kreativberufe (hab ich erwähnt, dass ich in der Medienbranche arbeite?).&lt;/p&gt;
+
+&lt;h2 id=&quot;mehrere-tausend-werben-für-die-bank&quot;&gt;Mehrere Tausend werben für die Bank&lt;/h2&gt;
+
+&lt;p&gt;Stattdessen lässt die Bank die Vereine (zum überwiegenden Teil) kostenlos für sich arbeiten. Die Engagierten im Verein schreiben Freunde und Bekannte per Mail oder über Social Media an, weisen auf die Aktion hin, bitten um Stimmen und machen dabei auch immer Werbung für die Aktion, die der Bank das positive Image eines sozialen Wohltäters beschert (gerechtfertigt oder auch nicht).&lt;/p&gt;
+
+&lt;p&gt;Praktisch entsteht dabei unter den Vereinen eine Konkurrenz um Aufmerksamkeit, was ich für sehr kontraproduktiv halte. Statt gegeneinander zu agieren, sollten sich Vereine vernetzen und sehen, wie sie sich gegenseitig unterstützen können. Eine Aktion, die das fördert, wäre wirklich hilfreich.&lt;/p&gt;
+
+&lt;p&gt;Zum dritten werden mit höherer Wahrscheinlichkeit diejenigen Vereine „eine Spende gewinnen“, die sowieso schon eine breite Unterstützerbasis haben. Es zählt die Popularität. Hoffentlich sind das dann auch die Vereine, die wirklich gesellschaftliche Relevanz besitzen und mit dem Geld die beste positive Wirkung für unser Zusammenleben erreichen können. Im Augenblick liegen in den fünf Größen-Kategorien offensichtlich besonders Tierschutz- und Sportvereine recht weit vorne, daneben Tanz- und Musikgruppen.&lt;/p&gt;
+
+&lt;p&gt;Übrigens: Letztendlich habe ich meine Stimme trotzdem für den Verein meines Bekannten abgegeben. Werbung für die Bank mache ich hier aber nicht.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/spendenwerbung.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/spendenwerbung.html</guid>
+	<pubDate>Wed, 04 Oct 2017 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Muster aus CSS-Farbverläufen</title>
 	<description>&lt;p&gt;Vor fünf Monaten habe ich das &lt;a href=&quot;blogdesign-3.html&quot;&gt;Aussehen meines Blogs überarbeitet&lt;/a&gt;. Statt eines großflächigen Hintergrundbilds verwende ich seitdem einen grünen Randstreifen mit kristallinem Muster (nur sichtbar, wenn das Browserfenster breit genug ist). Ich brauche dafür keine Bilddatei mehr, sondern erzeuge das Muster durch Code. Es besteht aus mehreren, übereinander gelegten Farbverläufen.&lt;/p&gt;
 
@@ -314,36 +336,6 @@ Außerdem die großen Zacken in der Mitte der Figur nach unten falten (jeweils a
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/fuchs-7.html</guid>
 	<pubDate>Mon, 22 May 2017 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>@cz+ grafisch überarbeitet</title>
-	<description>&lt;p&gt;Gut drei Jahre ist es her, dass mein kleines Blog hier ein neues Gewand bekommen hat. Und so langsam hatte ich mich daran satt gesehen: Zu dominanter Hintergrund, zu gewöhnliche Schriftmischung, irgendwie zu beengt. Gründe genug für eine Überarbeitung. Im Gegensatz zur &lt;a href=&quot;neues-blogdesign.html&quot;&gt;letzten Umgestaltung&lt;/a&gt; hat sich technisch nicht viel verändert. Diesmal habe ich den Schwerpunkt auf die optische Erscheinung gelegt.&lt;/p&gt;
-
-&lt;p&gt;Das vorige Design ist mir mit der Zeit zu eng geworden. Mir gefällt der grüne Hintergrund noch immer sehr gut, zumal größere, farbkräftige Flächen im Internet eher ungewöhnlich sind. Zunehmend hatte ich aber den Eindruck, die grüne Fläche ist so stark, dass sie den Inhalt nicht nur rahmt, sondern regelrecht einsperrt und klein hält.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/blogdesign-2.jpg&quot; alt=&quot;mein Blog bis März 2017&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;raum-für-texte&quot;&gt;Raum für Texte&lt;/h2&gt;
-
-&lt;p&gt;Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 1&lt;small&gt; &lt;/small&gt;em (16px/12pt) auf 1,1&lt;small&gt; &lt;/small&gt;em (17,6px/13,2pt) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.&lt;/p&gt;
-
-&lt;p&gt;Ob ich die graue Randspalte erhalten soll, darüber war ich mir lange Zeit unschlüssig. Sie stört, wenn ich ein eher minimales Design haben möchte, das sich auf den eigentlichen Text fokussiert. Andererseits gefällt mir der einladende Kurztext und er dient auch der Navigation ins Archiv oder zum RSS-Feed. Also habe ich ihn als durchscheinenden Kasten auf die rechte Seite gesetzt. Wird das Browserfenster schmaler, verschwindet der Kasten nach unten und stattdessen erscheint rechts oben ein reduziertes Menü zu den wichtigsten Bereichen meines Blogs.&lt;/p&gt;
-
-&lt;h2 id=&quot;eigenständiges-design&quot;&gt;Eigenständiges Design&lt;/h2&gt;
-
-&lt;p&gt;Wenn man Gestaltungselemente reduziert oder abschwächt, besteht leicht die Gefahr, dass sich eine Website grafisch wenig von anderen unterscheidet und im Einheitsbrei untergeht. Ich wollte die charakteristischen Merkmale zwar zurückhaltend einsetzen, sie im Gegenzug aber möglichst einzigartig gestalten. Neben meinem Logo oben links lasse ich deshalb die Farbe Grün als Streifen am rechten Rand wieder auftauchen. Ja, ich weiß, &lt;a href=&quot;https://duckduckgo.com/?q=triangle+pattern&amp;amp;ia=images&amp;amp;iax=1&quot;&gt;Triangle Patterns&lt;/a&gt; liegen jetzt schon seit über drei Jahren im Trend und werden ihren Zenit sicher bald überschritten haben. Trotzdem: Ich fand es einfach zu reizvoll, mir wie im vorigen Design ein kristallines Muster zu basteln. Die Besonderheit diesmal: Es besteht nicht aus einer Bilddatei, sondern wurde &lt;a href=&quot;css-muster.html&quot;&gt;per CSS aus vier Farbverläufen&lt;/a&gt; zusammengesetzt.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/blogdesign-2-zu-3.jpg&quot; alt=&quot;Vergleich von Überschriften und Randspalte&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Weitaus einmaliger ist die Schriftart, die ich nun für Überschriften und Links verwende. Ich wollte mich ja schon länger von der &lt;em&gt;Bitter&lt;/em&gt; verabschieden, auch weil sie in Kombination mit meiner Textschrift &lt;em&gt;Source Sans Pro&lt;/em&gt; dank eines &lt;a href=&quot;https://wordpress.org/themes/twentythirteen/&quot;&gt;populären WordPress-Themes&lt;/a&gt; recht verbreitet ist. Um mich von anderen Websites abzugrenzen, verwende ich nun die &lt;em&gt;cz Slab&lt;/em&gt;, die ich selbst extra für dieses Blog gestaltet habe. Sie ist stark von &lt;a href=&quot;http://yanone.de/&quot;&gt;Yanone&lt;/a&gt;s genialer &lt;a href=&quot;https://www.fontshop.com/families/ff-antithesis&quot;&gt;Antithesis&lt;/a&gt; inspiriert, ist dabei aber etwas schmaler, fetter, angepasster und hat eine geringere x-Höhe.&lt;/p&gt;
-
-&lt;p&gt;Vom neuen Design erhoffe ich mir, dass es großzügiger, offener und leichter wirkt als sein Vorgänger. Wem die jetzige Schrift übrigens zu groß sein sollte, der kann die Zoom-Funktion seines Browsers nutzen und den Text mit der Tastenkombination &lt;kbd&gt;Strg&lt;/kbd&gt; + &lt;kbd&gt;-&lt;/kbd&gt; verkleinern (zurücksetzen dann mit &lt;kbd&gt;Strg&lt;/kbd&gt; + &lt;kbd&gt;0&lt;/kbd&gt;).&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/blogdesign-3.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/blogdesign-3.html</guid>
-	<pubDate>Tue, 11 Apr 2017 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
