@@ -49,6 +49,43 @@
 
 
 	<article>
+	<time datetime="2017-11-24">Fr, 24. Nov. 2017</time>
+	<h1><a href="kalender-2018.html">Kleiner Wandkalender für 2018</a></h1>
+	<p>Zugegeben, es erfordert Übung und braucht eine gewisse Gewohnheit, bis man bei meinem Kalenderdesign erkennt, welcher Tag nun ein Dienstag und welcher ein Samstag ist. Dafür vereint mein Halbmonatskalender (HMK) andere Vorteile, die ich noch bei keiner anderen Gestaltung gefunden habe:</p>
+
+<ul>
+  <li>
+    <p><strong>ausreichend Platz</strong> für tägliche Termine. In meinem HMK sind es rund 7,8<small> </small>cm², was mir für drei bis vier Anmerkungen pro Tag reicht.</p>
+  </li>
+  <li>
+    <p><strong>große Zahlen</strong>, die man aus einer gewissen Entfernung erkennen kann</p>
+  </li>
+  <li>
+    <p><strong>Kalendarium mit Überblick</strong>, so dass man zwei bis drei Wochen gleichzeitig überblicken kann.</p>
+  </li>
+  <li>
+    <p><strong>trotzdem platzsparend</strong> in der praktischen Größe DIN A5. So passt mein HMK in die kleine Nische neben meinem Arbeitsplatz.</p>
+  </li>
+  <li>
+    <p><strong>ansprechend gestaltet</strong>, also nicht nach Standard-Vorlage in der völlig überbeanspruchten Schrift Helvetica.</p>
+  </li>
+</ul>
+
+<p>Bei mir sind Ziffern und Monatsnamen dieses Jahr in <em>Gandhi Serif</em> gesetzt, die ich auch in meinem <a href="serifenschriften.html">Artikel über Serifenschriften</a> vorstelle. Das grundsätzliche Design wurde seit 2012 nur behutsam angepasst.</p>
+
+<p><img src="material/hmk2018.jpg" alt="Details meines Halbmonatskalenders 2018" /></p>
+
+<p>Nach dem Herunterladen das PDF auf zwölf A4-Seiten ausdrucken, auf Wunsch jedes Blatt halbieren, sortieren und die Einzelblätter zusammenheften. Ich nutze dafür eine praktische Vielzweckklammer („Foldback-Klammer“). Alternativ im Copy-Shop mit einer Spirale binden lassen – mit einer gebogenen Büroklammer als Aufhängung –, die Blätter an der oberen Kante leicht zusammenleimen oder einfach jede Seite mittig lochen und alles an einen Nagel hängen.</p>
+
+<p><a class="klickfeld" href="material/hmk2018.pdf">Kalender herunterladen<br /><em>(PDF-Datei, 220 kB)</em></a></p>
+
+<p>Übrigens freue ich mich sehr, wenn mein mein Halbmonatskalender empfohlen und weiterverbreitet wird. Zu diesem Zweck steht er unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">CC BY-NC-SA</a>). Falls jemand den Kalender bearbeiten möchte (zum Beispiel die optionalen Feiertage aufs eigene Bundesland anpassen), verschicke ich gerne die SVG-Dateien. Bitte mich einfach kurz anschreiben oder kommentieren.</p>
+
+	<p>---<br> <a href="kalender-2018.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2017-10-26">Do, 26. Okt. 2017</time>
 	<h1><a href="wechselbuch.html">Abwechselnd und mit Bleistift lesen</a></h1>
 	<p>Es gibt Bücher, die ich lesen möchte, weil sie literarisch eine gewisse Bedeutung haben (z.<small> </small>B. Ecos „Der Name der Rose“ oder Goethes „Faust“). Allerdings sind darunter einige, die … sagen wir: weniger zugänglich sind und für die ich eine gewisse Motivation brauche. Für genau diese Fälle habe ich mir eine Lesepartnerin gesucht.</p>
@@ -98,105 +135,6 @@
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2017-09-05">Di, 5. Sept. 2017</time>
-	<h1><a href="css-muster.html">Muster aus CSS-Farbverläufen</a></h1>
-	<p>Vor fünf Monaten habe ich das <a href="blogdesign-3.html">Aussehen meines Blogs überarbeitet</a>. Statt eines großflächigen Hintergrundbilds verwende ich seitdem einen grünen Randstreifen mit kristallinem Muster (nur sichtbar, wenn das Browserfenster breit genug ist). Ich brauche dafür keine Bilddatei mehr, sondern erzeuge das Muster durch Code. Es besteht aus mehreren, übereinander gelegten Farbverläufen.</p>
-
-<h2 id="ein-farbverlauf-in-css">Ein Farbverlauf in CSS</h2>
-
-<p>Mit der <a href="http://www.bjoernsworld.de/css/grundlagen.html">Auszeichnungssprache CSS</a> kann man die HTML-Elemente einer Website gestalten. Für einen einfachen Verlauf mit drei Farben sorgt der folgende Code:</p>
-
-<pre><code>background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%);
-</code></pre>
-
-<p>Erklärung: Ein ausgewähltes Element bekommt als Hintergrundbild (<code>background-image</code>) einen linearen Farbverlauf (<code>linear-gradient</code>). Dieser soll aber nicht standardmäßig von unten nach oben laufen, sondern von links nach rechts, also um 90° verdreht (<code>90deg</code>).</p>
-
-<p>Für die ersten 5% unseres Verlaufs wählen wir die Farbe Weiß (mit verkürzter <a href="https://wiki.selfhtml.org/wiki/CSS/Wertetypen/Farbangaben">Hexadezimalschreibweise</a> ist das <code>#fff 5%</code>). Das Weiß geht dann über in Rot (bei 30% des Verlaufs: <code>#e32 30%</code>). Ab da verblasst das Rot zu Hellgrau, was bei 80% des Farbverlaufs erreicht ist (<code>#ccc 80%</code>). Diese letzte Farbe behält der Verlauf bis 100%, also bis ganz nach rechts:</p>
-
-<style>
-<!--
-[class^="verlauf"] { position:relative; width:100%; height:0; margin:0;
-	padding-bottom:28.75%; line-height:0; border:1px solid #ccc; }
-
-.verlauf1 { background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%); }
-.verlauf2 { background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%); }
-.verlauf3 { background-image: repeating-linear-gradient(160deg, transparent, #deb 30%), repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%), repeating-linear-gradient(100deg, #fff, #839 25%); }
-.verlauf4 { background-image: repeating-linear-gradient(160deg, transparent, #fff 30%), repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%), repeating-linear-gradient(100deg, transparent, #fff 25%), linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%); }
-
--->
-</style>
-
-<figure>
-<div class="verlauf1"></div>
-<figcaption>Beispiel 1: Farbverlauf von links nach rechts, von Weiß über Rot bis zu Grau.</figcaption>
-</figure>
-
-<h2 id="musterhafte-wiederholung">Musterhafte Wiederholung</h2>
-
-<p>Seit 2012/2013 unterstützen moderne Browser auch CSS-Farbverläufe, die sich wiederholen. Der folgende Verlauf umfasst nur etwa ein Viertel der Bildbreite und geht von violett über rosa nach grün. Danach beginnt er wieder bei violett und wiederholt sich über die gesamte Fläche.</p>
-
-<figure>
-<div class="verlauf2"></div>
-<figcaption>Beispiel 2: Ein Farbverlauf von violett über rosa nach grün, der sich danach dreimal wiederholt</figcaption>
-</figure>
-
-<p>Für das CSS benötigen wir nun einen <code>repeating-linear-gradient</code>, einen <em>sich wiederholenden</em> linearen Verlauf. Den Winkel habe ich mit <code>100deg</code> leicht schräg gewählt. Der Code:</p>
-
-<pre><code>background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%);
-</code></pre>
-
-<p>Farbbeginn ist violett (<code>#839</code>, ohne Prozentangabe), bei 10% liegt ein gelbliches Rosa (<code>#fdb 10%</code>) und bis 25% ändert sich das zu grün (<code>#3a1 25%</code>). Die letzte Angabe legt auch fest, wie breit der Verlauf insgesamt ist, bevor er sich wiederholt.</p>
-
-<p>In diesem Beispiel ist zwischen grün und violett eine harte Kante; man sieht, wo der Verlauf neu anfängt. Würde man bei der ersten und letzten Angabe dieselbe Farbe festlegen, bekäme man zwischen den Wiederholungen einen weichen Übergang.</p>
-
-<h2 id="farbe-in-schichten">Farbe in Schichten</h2>
-
-<p>Der Trick meines grünen Randstreifens besteht darin, Teile des Farbverlaufs transparent zu lassen, dafür aber mehrere Verläufe mit unterschiedlichen Winkeln übereinander zu legen. Hier ein Beispiel mit drei Verläufen:</p>
-
-<figure>
-<div class="verlauf3"></div>
-<figcaption>Beispiel 3: Drei Farbverläufe mit unterschiedlichen Winkeln, teilweise transparent</figcaption>
-</figure>
-
-<p>Der oberste Verlauf geht von <code>transparent</code> nach <code>#deb</code> (hellgrün) und ist 30% breit. Darunter liegt ein Farbverlauf von <code>transparent</code> nach <code>#e32</code> (rot) und zurück nach <code>transparent</code> – dadurch entsteht keine harte Kante zwischen Ende und Anfang des Verlaufs.</p>
-
-<p>Ganz zuunterst und zu einem großen Teil verdeckt ist der Farbverlauf aus Beispiel 2, hier mit den Farben <code>#fff</code> (weiß) und <code>#839</code> (violett). Der gesamte Code, ergänzt um Winkel und Prozentangaben sieht so aus:</p>
-
-<pre><code>background-image:
-repeating-linear-gradient(160deg, transparent, #deb 30%),
-repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%),
-repeating-linear-gradient(100deg, #fff, #839 25%);
-</code></pre>
-
-<h2 id="kombiniere">Kombiniere!</h2>
-
-<p>Nun haben wir alle Zutaten für den Randstreifen zusammen. Es kommt nur noch auf die richtige Zusammenstellung und Farbgebung an. Man nehme den Verlauf aus Beispiel eins, aber mit den Farben Weiß, Hellgrün und Grün. Darüber lege man die drei Verläufe aus Beispiel 3, aber in transparent-weiß statt farbig:</p>
-
-<figure>
-<div class="verlauf4"></div>
-<figcaption>Beispiel 4: Über einem weiß-grünen Farbverlauf liegen drei transparente-weiße Verläufe, die sich wiederholen.</figcaption>
-</figure>
-
-<p>Der Code dazu ist folgender:</p>
-
-<pre><code>background-image:
-repeating-linear-gradient(160deg, transparent, #fff 30%),
-repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%),
-repeating-linear-gradient(100deg, transparent, #fff 25%),
-linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%);
-</code></pre>
-
-<p>Für meinen Blog habe ich die Maße und Winkel der Farbverläufe angepasst, das Weiß halbtransparent gemacht (mit der <a href="http://www.css3.de/hsl-farben-hsl-farbangaben-und-hsla.html">HSLA-Farbangabe </a> <code>hsla(0,0%,100%, 0.3)</code> statt <code>#fff</code>) und die Abstände des weiß-grünen Hintergrunds teilweise fest und teilweise abhängig von der Fensterbreite gesetzt. Deshalb verschwindet der Randstreifen scheinbar, wenn das Browserfenster schmaler wird (tatsächlich sieht man die weißen Verläufe auf weißem Hintergrund nicht mehr).</p>
-
-<h2 id="erst-der-anfang">Erst der Anfang</h2>
-
-<p>Das <em>Mozilla Developer Network</em> bietet einen ausführlichen, deutschsprachigen <a href="https://developer.mozilla.org/de/docs/Farbverl%C3%A4ufe_in_CSS">Artikel über CSS-Farbverläufe</a>, auch über radiale Verläufe. Wie unterschiedlich CSS-Muster sein können, zeigt Lea Verou in ihrer <a href="http://lea.verou.me/css3patterns/">CSS3-Muster-Galerie</a>. Hier kann man selbst im Code herumprobieren, zum Beispiel bei den einfacheren <a href="http://lea.verou.me/css3patterns/#diagonal-stripes">diagonalen Streifen</a>.</p>
-
-	<p>---<br> <a href="css-muster.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -219,7 +157,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2017-11-05T11:54:30+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2017-11-24T00:06:00+01:00</p>
 </main>
 
 <aside>
