@@ -75,11 +75,9 @@ div[style*='font-family:arial;'] { left: -9999px; }
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a:not(.klickfeld), form label {
 	font: bold 1em/1 czSlab,Georgia,serif; }
-h1, h2, h3 { -webkit-font-feature-settings: 'liga', 'kern';
-	font-feature-settings: 'liga', 'kern'; }
+h1, h2, h3 { font-feature-settings: 'liga', 'kern'; }
 b, strong, p a:not(.klickfeld), figcaption a, form label {
 	padding: 0 .06em; font-size: .95em;
-	-webkit-font-feature-settings: 'onum', 'liga', 'kern';
 	font-feature-settings: 'onum', 'liga', 'kern'; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
@@ -95,7 +93,6 @@ h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
 p, ul, ol { margin-bottom: -.25em;
-	-webkit-font-feature-settings: 'onum', 'liga', 'kern';
 	font-feature-settings: 'onum', 'liga', 'kern';
 	-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
@@ -106,7 +103,6 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 b, strong, i, em { color: #111; }
 i, em { font-style: italic; }
 sup, sub { line-height: 0; letter-spacing: .05em;
-	-webkit-font-feature-settings: 'liga', 'kern';
 	font-feature-settings: 'liga', 'kern'; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font-size: .8em; display: inline-block; position: relative;
@@ -117,7 +113,6 @@ kbd { font-size: .8em; display: inline-block; position: relative;
 /* time bei Datumsangabe eines Artikels, .datum bei Kommentaren */
 time, .datum {
 	display:block; float:right; padding-right:.4em; padding-left:1em;
-	-webkit-font-feature-settings: 'onum', 'liga', 'kern';
 	font-feature-settings: 'onum', 'liga', 'kern'; }
 time { margin-top: -.25em; color: #666; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
@@ -176,9 +171,7 @@ a:hover { color: #3a1; }
 a:active { color: #e32; }
 a:focus { outline: 1px dotted #333; }
 
-:target { background-color: transparent;
-	-webkit-animation: target-fade 2s; animation: target-fade 2s; }
-@-webkit-keyframes target-fade { 0% { background-color: #deb; } }
+:target { background-color: transparent; animation: target-fade 2s; }
 @keyframes target-fade { 0% { background-color: #deb; } }
 
 .klickfeld { width: 40%; margin: 1.06em 30%; padding: .35em .4em .4em;
@@ -257,6 +250,6 @@ img { page-break-inside: avoid; }
 a[href]:after { content: ' [' attr(href) ']';
 	font: italic 1rem/1.4 'Source Sans Pro',Calibri,Arial,sans-serif;
 	width: auto; vertical-align: inherit; }
-a[href^='#']:after, a[href^='javascript']:after,
+a[href^='#']:after, a[href^='javascript']:after, header a[href]:after,
 	a[href^='archiv.html?']:after { content: ''; }
 }
