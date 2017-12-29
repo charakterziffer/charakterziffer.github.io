@@ -244,6 +244,8 @@ blockquote > h1, blockquote > h2, blockquote > h3 { margin: 0 0 .25em; }
 blockquote > p { margin: 0 0 .3em; }
 
 img { page-break-inside: avoid; }
+article div { -webkit-print-color-adjust: exact !important;
+	color-adjust: exact !important; /* Hintergrundbilder auch drucken */}
 
 .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] {
 	display: none; }
