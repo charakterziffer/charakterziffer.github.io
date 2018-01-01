@@ -82,10 +82,10 @@ b, strong, p a:not(.klickfeld), figcaption a, form label {
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
 /* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
-hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea {
+hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea, aside {
 	width: 98.8%; }
 .hinterlegt > audio { width: 100%; }
-aside, img, figure { max-width: 98.8%; }
+img, figure { max-width: 98.8%; }
 time, .datum { padding-right: 1.2% }
 
 /* ÜBERSCHRIFTEN */
