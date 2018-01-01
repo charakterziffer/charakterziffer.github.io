@@ -82,7 +82,7 @@ b, strong, p a:not(.klickfeld), figcaption a, form label {
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
 /* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
-hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea, aside {
+aside, hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea {
 	width: 98.8%; }
 .hinterlegt > audio { width: 100%; }
 img, figure { max-width: 98.8%; }
@@ -130,12 +130,12 @@ hr { margin: 1.9em 0 1.23em; color: #ccc; }
 
 /* LISTEN, CODE, ZITATBLÖCKE */
 
-ul { margin: 1.3em 0 1.2em -1.55em; list-style: square; }
+ul, ol { margin: 1.3em 0 1.2em; padding-left: .95em; }
+ul ul, ul ol, ol ul, ol ol { margin: 0; }
+ul { list-style: square; }
 ul ul { list-style: circle; }
-ul li { margin-top: 0; }
-ul li p { margin: .75em 0; }
-ol { margin-left: -1.5em; }
 ol ol { list-style: lower-alpha; }
+li p { margin: .75em 0; }
 
 code, pre { margin: 1.5em 0 1.167em; padding: .05em .2em;
 	background-color:#f4f4f4; box-decoration-break: clone;
