@@ -81,6 +81,13 @@ b, strong, p a:not(.klickfeld), figcaption a, form label {
 	font-feature-settings: 'onum', 'liga', 'kern'; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
+/* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
+hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea {
+	width: 98.8%; }
+.hinterlegt > audio { width: 100%; }
+aside, img, figure { max-width: 98.8%; }
+time, .datum { padding-right: 1.2% }
+
 /* ÜBERSCHRIFTEN */
 
 h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */;
@@ -112,14 +119,14 @@ kbd { font-size: .8em; display: inline-block; position: relative;
 
 /* time bei Datumsangabe eines Artikels, .datum bei Kommentaren */
 time, .datum {
-	display:block; float:right; padding-right:.4em; padding-left:1em;
+	display:block; float:right; padding-left:1em;
 	font-feature-settings: 'onum', 'liga', 'kern'; }
 time { margin-top: -.25em; color: #666; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
 @media (max-width: 35em) { time { margin-top: -1.6em; } }
 .datum { margin-top: 1.3em; }
 
-hr { margin: 1.9em .4em 1.23em 0; color: #ccc; }
+hr { margin: 1.9em 0 1.23em; color: #ccc; }
 
 /* LISTEN, CODE, ZITATBLÖCKE */
 
@@ -142,13 +149,14 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 @media (max-width: 35em) {
 	blockquote { padding-left: .35em; border-width: .4em; } }
 
-.hinterlegt, .klappkasten { position: relative; margin: 1.1em 0 -.25em;
+.hinterlegt, .klappkasten {
+	position: relative; margin: 1.1em 0 -.25em;
 	padding: .25em .4em .4em; background-color: #deb; }
 .hinterlegt p { margin: 0; }
 .hinterlegt p + p { margin-top: .75em; }
 
 .klappkasten input { position: absolute; top: 0; left: 0;
-	width: 98.5%; height: 2.1em; opacity: 0; cursor: pointer; }
+	height: 2.1em; opacity: 0; cursor: pointer; }
 .klappkasten label { cursor: pointer; }
 
 .klappkasten label:before { content: '→'; padding-right: .3em; }
@@ -181,7 +189,7 @@ a:focus { outline: 1px dotted #333; }
 
 /* BILDER, AUDIO-ELEMENT */
 
-img, figure { max-width:98.5%; height:auto; line-height:0; border:0; }
+img, figure { height:auto; line-height:0; border:0; }
 img {-ms-interpolation-mode: bicubic; }
 p > img { margin: .6em 0 .25em; } /* Extra-Abstand */
 
@@ -197,19 +205,19 @@ figcaption { padding: .4em .6em .3em; font-style: italic;
 
 .icon-ccbysa:after { width:5.6em; content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2075%2015%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M3%202h18v11H3z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M.4.4h74.2v14H.4z%22%20fill%3D%22%23fff%22%20stroke%3D%22%23000%22%20stroke-width%3D%22.8%22%2F%3E%3Cpath%20d%3D%22M2%202h71v11H2z%22%2F%3E%3Cpath%20d%3D%22M2%202v11h20c2.5-3.7%202.5-7.7%200-11z%22%20fill%3D%22%23aaa%22%2F%3E%3Cg%20clip-path%3D%22url(%23a)%22%3E%3Cellipse%20cx%3D%2212.6%22%20cy%3D%227.5%22%20rx%3D%227%22%20ry%3D%226.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.4%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M11.5%206.8c-.2-.4-.5-.6-.9-.6-.6%200-1%20.5-1%201.3%200%20.9.3%201.3%201%201.3.4%200%20.8-.2%201-.6l.9.5c-.4.8-1.1%201.1-2%201.1-.7%200-1.2-.2-1.7-.6-.4-.4-.6-1-.6-1.7s.2-1.2.6-1.6c.5-.4%201-.6%201.7-.6.9%200%201.6.4%202%201.1zm4.4%200c-.2-.4-.5-.6-.8-.6-.7%200-1%20.4-1%201.3s.3%201.3%201%201.3c.4%200%20.8-.2.9-.6l1%20.5c-.4.8-1.1%201.1-2%201.1-.7%200-1.2-.2-1.7-.6-.4-.4-.6-1-.6-1.7s.2-1.2.6-1.6c.4-.4%201-.6%201.6-.6.9%200%201.6.4%202%201.1z%22%2F%3E%3Ctext%20style%3D%22line-height%3A1%22%20x%3D%2227%22%20y%3D%2210.4%22%20font-weight%3D%22bold%22%20font-size%3D%228.25%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20fill%3D%22%23fff%22%3EBY-SA%3C%2Ftext%3E%3C%2Fsvg%3E'); }
 
-audio { margin: .4em 0 -.15em; width:98.5%; }
+audio { margin: .4em 0 -.15em; }
 
 /* FORMULARE */
 
 input { font: inherit; font-size: .9em; line-height: 1.667; }
-textarea { width: 98.5%; padding: .1em 0 .1em .2em; overflow: auto;
+textarea { padding: .1em 0 .1em .2em; overflow: auto;
 	resize: vertical; font: inherit; }
 form > div { padding-top: .4em; clear: both; }
 
 form label { position: relative; float: left; top: .75em; width: 20%;
 	padding-bottom:1.4em; }
 form label:after { content: ': '; }
-form > div > div { float: right; width: 78%; padding-right: 2%; }
+form > div > div { float: right; width: 80%; }
 form input[type=text], form input[type=email], form input[type=url] {
 	width: 50%; }
 input[type='submit'] { -webkit-appearance: button; }
