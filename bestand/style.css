@@ -84,7 +84,6 @@ code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono
 /* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
 hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea {
 	width: 98.8%; }
-/* aside { width: 98.8%; max-width: 42.4em; } */
 .hinterlegt > audio { width: 100%; }
 img, figure { max-width: 98.8%; }
 time, .datum { padding-right: 1.2% }
