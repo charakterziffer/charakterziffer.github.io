@@ -76,8 +76,8 @@ div[style*='font-family:arial;'] { left: -9999px; }
 h1, h2, h3, b, strong, a:not([download]), form label {
 	font: bold 1em/1 czSlab,Georgia,serif; }
 h1, h2, h3 { font-feature-settings: 'liga', 'kern'; }
-b, strong, p a:not([download]), figcaption a, form label {
-	padding: 0 .06em; font-size: .95em;
+b, strong, p a:not([download]), figcaption a:not(.spezifität),
+	form label { padding: 0 .06em; font-size: .95em;
 	font-feature-settings: 'onum', 'liga', 'kern'; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
@@ -156,6 +156,7 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 
 .klappkasten input { position: absolute; top: 0; left: 0;
 	height: 2.1em; opacity: 0; cursor: pointer; }
+.klappkasten input:focus:not(:hover) { opacity: 1; }
 .klappkasten label { cursor: pointer; }
 
 .klappkasten label:before { content: '→'; padding-right: .3em; }
