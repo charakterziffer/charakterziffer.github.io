@@ -113,9 +113,9 @@
 
 <div class="no-print">
 <h2 id="kommentieren">Artikel kommentieren</h2>
-<p style="margin-bottom:0.7em;">Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+<p>Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
 
-<form action="http://www.formular-chef.de/fc.cgi"
+<form name="kommentarformular" id="kommentarformular" action="http://www.formular-chef.de/fc.cgi"
 method="post" enctype="multipart/form-data">
 <input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
 <input type="hidden" name="pflicht" value="comment">
@@ -143,7 +143,7 @@ value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
 	<label for="comment">Kommentar*</label><br>
 	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
 </div>
-<div><input name="submit" type="submit" value="Abschicken"></div>
+<div><input name="submit" id="submit" type="submit" value="Abschicken"></div>
 </form>
 
 <p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
