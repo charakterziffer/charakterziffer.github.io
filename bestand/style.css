@@ -41,27 +41,26 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 
 /*body { background: #fff linear-gradient(rgba(0,0,0,.2) .1em, transparent 0) 0 8px / auto .75em; } /* Grundlinienraster */
 
-header, main, aside { display: block; max-width: 43em; }
+header, main, aside, article, section { display: block; }
+header, main, aside { max-width: 43em; }
 
 header { margin-bottom: 2.8em; }
-header > a:not(.spezifität) { font-size:1.7em; color:#333; padding:0; }
-	/* Farbe #333 auch für a:visited, a:hover und a:focus*/
+header a:not(.spezifität) { color: #333; }
+	/* Alle Links im Header, auch für a:visited, a:hover und a:focus */
+header > a { font-size: 1.7em; padding: 0; }
 header img { float: left; margin-right: .4em; margin-top:-.02em;
 	width: 2em; }
 
 nav { float:right; position:relative; top:-1.6em; text-align:right; }
 nav ul { margin: 0; padding: 0; list-style: none; }
-nav li { display: inline-block; margin-bottom: .5em; }
+nav li { display: inline-block; margin-bottom: .4em; }
 nav li a { padding: .25em .4em .2em; }
-nav a, nav a:visited, nav a:hover, nav a:focus { color: #333; }
 nav a:hover, nav a:focus { background-color: #deb; }
 
 @media (min-width: 71.5em) { nav { display: none; } }
 @media (max-width: 35em) { nav { width: 11em; } }
 @media (max-width: 26em) { nav { width: 100%; text-align: left;
-	float: none; position: inherit; margin: .75em 0 -.5em -.25em; } }
-
-article, section { display: block; }
+	float: none; position: inherit; margin: .75em 0 -.9em -.25em; } }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 	background-color: hsla(0,0%,94%,.7); }
