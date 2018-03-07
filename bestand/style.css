@@ -86,7 +86,7 @@ hr, pre, blockquote, .hinterlegt, .klappkasten, audio, textarea {
 	width: 98.8%; }
 .hinterlegt > audio { width: 100%; }
 img, figure { max-width: 98.8%; }
-time, .datum { padding-right: 1.2% }
+time { padding-right: 1.2% }
 
 /* ÜBERSCHRIFTEN */
 
@@ -117,14 +117,13 @@ kbd { font-size: .8em; display: inline-block; position: relative;
 	background-color: #eee; border: 1px solid #888; border-radius: .2em;
 	box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
 
-/* time bei Datumsangabe eines Artikels, .datum bei Kommentaren */
-time, .datum {
-	display:block; float:right; padding-left:1em;
+/* bei Datumsangabe eines Artikels, im Archiv und bei Kommentaren */
+time { display: block; float: right; padding-left: 1em; color: #666;
 	font-feature-settings: 'onum', 'liga', 'kern'; }
-time { margin-top: -.25em; color: #666; }
+#kommentare time:first-of-type { margin-top: 1.2em; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
-@media (max-width: 35em) { time { margin-top: -1.6em; } }
-.datum { margin-top: 1.3em; }
+@media (max-width: 35em) { time { margin-top: -1.6em; }
+	#kommentare time { margin-top: 0; } }
 
 hr { margin: 1.9em 0 1.23em; color: #ccc; }
 
@@ -240,9 +239,8 @@ aside, figure, blockquote, .hinterlegt, .klappkasten, pre, code {
 	background: #fff; border: 1px solid #666; }
 pre > code { border: 0; }
 
-h1, h2, h3, .datum {
+h1, h2, h3, time {
 	page-break-after: avoid; page-break-inside: avoid; color: #111; }
-time { margin-top: -.2em; }
 header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
 	blockquote, a:link, a:visited { color: #000; }
 
