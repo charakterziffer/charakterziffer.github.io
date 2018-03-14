@@ -236,7 +236,7 @@ body { background-image: none; }
 header, main, aside { width: 100%; }
 aside { position: static; float: none; }
 
-aside, figure, blockquote, .hinterlegt, .klappkasten, pre, code {
+aside,figure,blockquote,.hinterlegt,.klappkasten,pre,code,a[download] {
 	background: #fff; border: 1px solid #666; }
 pre > code { border: 0; }
 
