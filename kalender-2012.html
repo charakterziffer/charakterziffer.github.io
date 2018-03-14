@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="de" prefix="og: http://ogp.me/ns#">
 <!--
+      Hallo Fremde(r),
 
-  Hallo Fremde(r),
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.​de oder sende einen
+      Tweet an @charakterziffer.
 
-  schön, dass du dich umschaust! Falls du Fragen hast oder wissen
-  möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
-  schreib doch einfach an postfach2b [ät] web.​de oder sende einen
-  Tweet an @charakterziffer.
-
-  Weiterhin viele schöne Entdeckungen!
-
+      Weiterhin viele schöne Entdeckungen!
 -->
 <head>
 <meta charset="UTF-8">
@@ -26,6 +24,10 @@
 <link href='bestand/style.css' rel='stylesheet'>
 <link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=http://charakterziffer.github.io/kalender-2012.html&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
 
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
 <link rel="icon" href="/bestand/favicon.png">
