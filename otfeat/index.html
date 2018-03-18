@@ -2,46 +2,38 @@
 <html lang="de"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="referrer" content="no-referrer">
+<meta name="referrer" content="strict-origin">
 
 <title>OpenType Feature Test</title>
-<meta name="description" content="Does your browser display OpenType features? Find it out on this test page">
-<meta name="author" content="Gerhard Großmann">
+<meta name="description" content="Does your browser display OpenType features? Find out on this test page.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
 <meta name="keywords" content="Otfeat, OpenType, open type, css3, test, feature, font">
 <meta name="robots" content="index, follow">
 
-<link rel="apple-touch-icon-precomposed" href="../bestand/touchicon.png">
-<link rel="icon" href="../bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
 <meta name="msapplication-TileColor" content="#228811">
-<meta name="msapplication-TileImage" content="../bestand/tileicon.png">
-<link rel="mask-icon" href="../bestand/safari-pin.svg" color="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
 
 <style>
 <!--
-@font-face {font-family: 'Otfeat'; src: url('otfeat.eot');
+@font-face { font-family: 'Otfeat'; src: url('otfeat.eot');
 src: url('otfeat.eot?#iefix') format('embedded-opentype'), url('otfeat.woff') format('woff'), url('otfeat.ttf') format('truetype'); }
 
-body { background: #cbb; color:#222; text-align: center; font-size:100.01%; }
-div.container { text-align: left; margin: 40px auto 60px;
-	border-radius:5px; background-color:#fff;
-	min-width:470px; max-width:620px; padding:0.5em 1.5em 2em; }
+body { background: #cbb; color: #222; text-align: center; }
 
-h1,h2 { font-family: 'Helvetica Neue',Arial,Helvetica,
-	'Liberation Sans',FreeSans,sans-serif;
-	font-weight:bold; color:#444;}
-h1 {font-size:2em; line-height:0.92em;
-	margin-bottom:-0.275em;}
-h2 {font-size:1.5em; line-height:0.98em;
-	margin-top:1.4em; margin-bottom:-0.4em}
+h1, h2 { font-family: 'Helvetica Neue',Arial,Helvetica,'Liberation Sans',
+	FreeSans,sans-serif; font-weight:bold; color:#444; }
+h1 { font-size: 2em; line-height: .92em; margin-bottom: -.275em; }
+h2 { font-size: 1.5em; line-height: .98em;
+	margin-top: 1.4em; margin-bottom: -.4em}
 
-p { font: 1em/1.4em Georgia,serif;
-	/*text-rendering: optimizeLegibility;*/ }
+p { font: 1em/1.4em Georgia,serif; }
+.floating { float: left; padding-top: .2em; margin-right: .6em; }
 
-.floating {float:left; padding-top:0.2em; margin-right:0.6em; }
-
-.sc { font-size:90%; letter-spacing:0.07em; }
-
-.otfeat {font: 2.9em/1.3em 'Otfeat',monospace; margin: 0.2em 0 -0.2em; color:#2c2c2c;}
+.otfeat { font: 2.9em/1.3em 'Otfeat',monospace; margin: .2em 0 -.2em; color:#2c2c2c;}
 
 .alloff { -webkit-font-feature-settings: "smcp" off, "c2sc" off, "c2pc" off, "pcap" off, "case" off, "salt" off, "ss01" off, "hist" off, "locl" off, "swsh" off, "titl" off, "unic" off, "ornm" off, "ital" off, "subs" off, "sinf" off, "sups" off, "mgrk" off, "nalt" off, "tnum" off, "pnum" off, "lnum" off, "onum" off, "zero" off, "kern" off, "cpsp" off, "liga" off, "dlig" off, "hlig" off, "clig" off, "calt" off, "cswh" off, "ordn" off, "numr" off, "dnom" off, "frac" off, "afrc" off, "fina" off;
 font-feature-settings: "smcp" off, "c2sc" off, "c2pc" off, "pcap" off, "case" off, "salt" off, "ss01" off, "hist" off, "locl" off, "swsh" off, "titl" off, "unic" off, "ornm" off, "ital" off, "subs" off, "sinf" off, "sups" off, "mgrk" off, "nalt" off, "tnum" off, "pnum" off, "lnum" off, "onum" off, "zero" off, "kern" off, "cpsp" off, "liga" off, "dlig" off, "hlig" off, "clig" off, "calt" off, "cswh" off, "ordn" off, "numr" off, "dnom" off, "frac" off, "afrc" off, "fina" off;}
@@ -53,7 +45,9 @@ font-feature-settings: "smcp", "c2sc", "c2pc", "pcap", "case", "salt", "ss01", "
 </head>
 <body>
 
-<div class="container">
+<div style="text-align:left; margin:40px auto 60px; border-radius: 5px;
+	background-color: #fff; min-width: 470px; max-width: 620px;
+	padding: 0.5em 1.5em 2em;">
 <h1>Testpage for OpenType Features</h1>
 <p>On this page I use my webfont <i>Otfeat</i>. It’s an icon font designed for testing OpenType features. For example:</p>
 <p><img class="floating" src="sc-off.png" alt="smcp OFF" title="smcp OFF">OFF – The box is empty/white. That’s the initial situation and shows: The feature (here: <i>smcp</i>, small capitals) is either turned off or your browser isn’t able to display this feature.</p>
@@ -95,7 +89,7 @@ kerning in Firefox).</p>
 
 <h2>Some details</h2>
 <p>This page was published on June 12th, 2012.</p>
-<p>With the <span class="sc">CSS</span>-setting <i>text-rendering: optimizeLegibility</i> it is possible, to activate some OpenType features in Safari (e. g. <i>liga</i> or <i>calt</i>).
+<p>With the <span style="font-size:90%;letter-spacing:.07em;">CSS</span>-setting <i>text-rendering: optimizeLegibility</i> it is possible, to activate some OpenType features in Safari (e. g. <i>liga</i> or <i>calt</i>).
  But after some testing I decided not to use this setting. Firstly it
 caused some rendering problems in Google’s Chrome (especially at test Nº
  3) and secondly once activated the features couldn’t be deactivated
