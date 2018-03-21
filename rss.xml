@@ -13,6 +13,53 @@
 </image>
 
 <item>
+	<title>Schriftwahl nach System</title>
+	<description>&lt;p&gt;Webfonts ermöglichen, den Text auf einer Internetseite in einer individuellen Schriftart darzustellen. Das nutzen Gestalter immer öfter, um auf Websites bereits durch die Typografie ein bestimmtes Erscheinungsbild zu vermitteln. Die geeignete &lt;a href=&quot;https://www.zachleat.com/web/comprehensive-webfonts/&quot;&gt;Ladestrategie für Webfonts (engl.)&lt;/a&gt; stellt sicher, dass der Text trotzdem ohne merkliche Verzögerung auftaucht.&lt;/p&gt;
+
+&lt;p&gt;Doch wie vermutlich zu jedem Trend gibt es auch zu Webfonts eine Gegenbewegung. Statt eine individuelle Schrift zu wählen, möchten manche Webdesigner einen Text so gewohnt und standardmäßig wie möglich aussehen lassen. Sie versuchen, die gleiche Schrift zu wählen, die das Betriebssystem des Nutzers verwendet (zum Beispiel in Programm-Menüs, bei Systemmeldungen, im Datei-Manager etc.). So wirkt eine Website oder Web-Anwendung mehr wie ein lokal installiertes Programm.&lt;/p&gt;
+
+&lt;h2 id=&quot;was-ist-die-systemschrift&quot;&gt;Was ist die Systemschrift?&lt;/h2&gt;
+
+&lt;p&gt;Und woher weiß ich, welche Schrift dem Nutzer in lokalen Programmen angezeigt wird? Nun, ich weiß es nicht, schließlich ist es in jedem Betriebssystem eine andere. Aber ich kann eine Reihenfolge typischer Systemschriften festlegen. Der Browser des Nutzers testet diese Liste durch. Er überspringt alle Schriften, die nicht installiert sind, und verwendet dann die erste Schrift, die beim Nutzer vorhanden ist. Wenn ich die Reihe vom Speziellen zum Allgemeinen sortiere, erwische ich mit hoher Wahrscheinlichkeit die Systemschrift meines Nutzers. Eine verbreitete Schriftliste (“Sytem Font Stack”) ist:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So oder ähnlich findet sich das in der &lt;a href=&quot;https://make.wordpress.org/core/2016/07/07/native-fonts-in-4-6/&quot;&gt;Bedienoberfläche von Wordpress&lt;/a&gt;, im populären &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/19098&quot;&gt;CSS-Frame­work Bootstrap&lt;/a&gt;, beim &lt;a href=&quot;https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f&quot;&gt;Reiseportal Booking.com&lt;/a&gt; oder auf der &lt;a href=&quot;http://markdotto.com/2018/02/07/github-system-fonts/&quot;&gt;Website von GitHub&lt;/a&gt;. Überall dort verzichtet der Anbieter auf typografische Eigenständigkeit, um dem Nutzer lieber die vertraute Schrift seines Betriebssystems vorzusetzen. Entsprechend unterschiedlich sieht der Text dann je nach System aus:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/systemfonts.png&quot; alt=&quot;Verschiedene Systemschriften&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mal ist die Schrift ein wenig fetter, mal ein bisschen runder, vielleicht allgemein größer und die Buchstaben stehen enger zusammen oder weiter auseinander. Ganz wie es der Nutzer von seinem Betriebssystem kennt …? Nicht unbedingt.&lt;/p&gt;
+
+&lt;h2 id=&quot;systemschrift-garantiert&quot;&gt;Systemschrift garantiert?&lt;/h2&gt;
+
+&lt;p&gt;Wer auf seinem Linux zum Beispiel &lt;a href=&quot;https://material.io/guidelines/style/typography.html&quot;&gt;Googles Schrift Roboto&lt;/a&gt; installiert hat, der bekommt diese angezeigt – und eben nicht die Standardschrift seines Betriebssystems. Apropos Roboto: Die wird von Google massiv als Erkennungszeichen genutzt, zum Beispiel auf YouTube, Google Maps oder in Google Mail. Möchte ich wirklich, dass meine Website von der Schrift her so aussieht wie ein Google-Produkt?&lt;/p&gt;
+
+&lt;p&gt;Auch wer bei seinem Betriebssystem die Schrift geändert hat (zum Beispiel seinen Mac lieber &lt;a href=&quot;https://github.com/jenskutilek/FiraSystemFontReplacement&quot;&gt;mit Fira Sans beschriftet&lt;/a&gt;), bekommt nicht die „native“ Systemschrift angezeigt. Das sollte in Zukunft aber der neue CSS-Wert &lt;code&gt;system-ui;&lt;/code&gt; verhindern. Dieser Platzhalter steht immer für die Schrift, die das Betriebssystem tatsächlich verwendet. Damit würde der Nutzer wirklich genau die gewohnte Schrift sehen – womöglich ist das aber &lt;a href=&quot;https://infinnie.github.io/blog/2017/systemui.html&quot;&gt;gar nicht, was der Designer beabsichtigt (engl.)&lt;/a&gt;. Im Moment wird &lt;code&gt;font-family: system-ui&lt;/code&gt; mittelgut unterstützt (je nach Nutzerschaft um die &lt;a href=&quot;https://caniuse.com/#search=system-ui&quot;&gt;70 bis 80&lt;small&gt; &lt;/small&gt;%&lt;/a&gt;), es funktioniert nicht im Firefox, Internet-Explorer und Microsoft Edge.&lt;/p&gt;
+
+&lt;h2 id=&quot;man-kann-nicht-nicht-gestalten&quot;&gt;Man kann nicht nicht gestalten&lt;/h2&gt;
+
+&lt;p&gt;Aber Moment! – und hier kommt der Meinungsteil dieses Blogartikels: Warum genau macht eigentlich jemand diese Verrenkungen? Warum die Schriftart des Systems nutzen? Um mir die Ladezeit einer Webschrift zu sparen? Dann könnte ich doch gleich eine bewusst ausgewählte &lt;em&gt;websafe&lt;/em&gt; Schrift wählen, zum Beispiel Verdana, Arial, Georgia, Trebuchet oder Times New Roman. Die sind auf wirklich vielen Geräten installiert und werden dann angezeigt. Oder vielleicht, weil meine Website so aussehen soll wie ein installiertes Programm? Das könnte ich bei Web-Apps, also tatsächlichen Anwendungen noch verstehen – aber selbst hier kann man mit einer bewusst ausgewählten Schrift mehr erreichen.&lt;/p&gt;
+
+&lt;p&gt;Ich glaube, meistens wird dieser &lt;em&gt;System Font Stack&lt;/em&gt; aus Unsicherheit und Feigheit gewählt. „Mmmh, wir brauchen was neutrales, das nicht stört oder unangenehm ist – nehmen wir doch die Schrift, die der Nutzer ständig sieht, die ist so &lt;em&gt;natürlich&lt;/em&gt; und &lt;em&gt;nativ&lt;/em&gt;.“ Nein, ist sie nicht. Alles ist Gestaltung, selbst wenn ich beschließe, etwas nicht besonders zu gestalten. Und wenn ich mir keine Gedanken darum mache und sicherheitshalber zu einem Standard-Design greife, dann habe ich meistens nicht die beste Lösung gefunden.&lt;/p&gt;
+
+&lt;p&gt;Was man mit System-Schriften dagegen in Kauf nimmt: Absätze brauchen unterschiedlich viel Platz, Text verschiebt sich, Zeilenabstände passen nicht optimal zur Schrift, Textgrößen sind nicht richtig aneinander angepasst, die eigens gestaltete &lt;a href=&quot;https://github.com/atomiks/30-seconds-of-css/issues/22&quot;&gt;Unterstreichung sitzt zu hoch&lt;/a&gt; und das allgemeine Schriftbild kann auf manchen Systemen eine unpassende Wirkung haben. Manchmal sind auch die gewünschten Strichstärken nicht vorhanden und werden vom Browser schlecht imitiert (z.&lt;small&gt; &lt;/small&gt;B. haben nur San Francisco und Segoe eine halbfette Semibold). Wer gute Typografie machen möchte, ist mit einer einschätzbaren, zum Inhalt passenden Schrift besser bedient.&lt;/p&gt;
+
+&lt;h2 id=&quot;der-neue-standard&quot;&gt;Der neue Standard?&lt;/h2&gt;
+
+&lt;p&gt;Im Moment sind die Default-Schriften im Browser meistens &lt;a href=&quot;https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults/&quot;&gt;Arial/Helvetica, Times (New Roman) und Courier (New)&lt;/a&gt;. Sie erscheinen, wenn der Gestalter nur die generischen Schriftkategorien &lt;code&gt;sans-serif&lt;/code&gt;, &lt;code&gt;serif&lt;/code&gt; oder &lt;code&gt;monospaced&lt;/code&gt; angibt. Vielleicht ändert sich das irgendwann und die Browserhersteller legen &lt;code&gt;system-ui&lt;/code&gt; als Standard-Schrift fest (ohne Serifen). So stellt es sich Sindre Sorhus im &lt;a href=&quot;https://github.com/sindresorhus/modern-normalize/issues/3&quot;&gt;Fehlerbericht zu seinem normalize.css (engl.)&lt;/a&gt; vor. Ich muss einräumen, dass das in den meisten Fällen eine Verbesserung wäre – aber halt nicht automatisch eine gute oder irgendwie „natürliche“ Gestaltung für einzelne Websites.&lt;/p&gt;
+
+&lt;p&gt;Ich behaupte nicht, dass eine Internetseite auf allen Geräten gleich aussehen muss; aber ich bin überzeugt, dass man bewusst gestalten sollte. Als scheinbar einfache Lösung verhindert der &lt;em&gt;System Font Stack&lt;/em&gt;, sich tatsächlich mit einem angemessenen Design auseinanderzusetzen. Die Standardeinstellung kann ein möglicher Anfangspunkt einer Gestaltung sein, aber nur in seltensten Fällen auch deren Ende.&lt;/p&gt;
+
+&lt;p&gt;Noch zwei Lesetipps (englisch): &lt;a href=&quot;https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b&quot;&gt;Using UI System Fonts in Web Design&lt;/a&gt; und &lt;a href=&quot;https://bitsofco.de/the-new-system-font-stack/&quot;&gt;The New System Font Stack?&lt;/a&gt; – beide Artikel befürworten eher die Verwendung von Systemschriften.&lt;/p&gt;
+</description>
+	<link>http://charakterziffer.github.io/systemfonts.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">http://charakterziffer.github.io/systemfonts.html</guid>
+	<pubDate>Thu, 22 Mar 2018 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Die Mandelprinzessin</title>
 	<description>&lt;p&gt;Es war einmal eine Prinzessin, die war schön wie eine Mandelblüte im Morgentau. Sie hatte quellblaue Augen und einen für ihr zartes Alter viel zu sinnlichen Mund. Reihenweise liefen ihr die Männer hinterher und sicherlich hätte sie sich zur Freude ihres Vaters schon bald fest gebunden, hätte sie nicht einen erschreckenden Makel: Ihr Lachen.&lt;/p&gt;
 
@@ -247,36 +294,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">http://charakterziffer.github.io/kalender-2018.html</guid>
 	<pubDate>Fri, 24 Nov 2017 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Abwechselnd und mit Bleistift lesen</title>
-	<description>&lt;p&gt;Es gibt Bücher, die ich lesen möchte, weil sie literarisch eine gewisse Bedeutung haben (z.&lt;small&gt; &lt;/small&gt;B. Ecos „Der Name der Rose“ oder Goethes „Faust“). Allerdings sind darunter einige, die … sagen wir: weniger zugänglich sind und für die ich eine gewisse Motivation brauche. Für genau diese Fälle habe ich mir eine Lesepartnerin gesucht.&lt;/p&gt;
-
-&lt;p&gt;Derzeit lese ich mit einer Freundin den Roman „Ulysses“ von James Joyce. Die Geschichte spielt am 16.&lt;small&gt; &lt;/small&gt;Juni 1904, wo der Leser die Hauptfiguren in 18 Episoden durch Dublin begleitet. Der Text ist sehr assoziativ geschrieben, springt gelegentlich unvermittelt, wagt sprachliche Experimente und die Handlung ist leider nicht gerade spannend. Dafür gibt es sehr viele Zitate und Anspielungen, die zu recherchieren dank Websites wie &lt;a href=&quot;http://m.joyceproject.com/&quot;&gt;http://m.joyceproject.com/&lt;/a&gt; großes Vergnügen bereitet.&lt;/p&gt;
-
-&lt;h2 id=&quot;notizen-im-buch&quot;&gt;Notizen im Buch&lt;/h2&gt;
-
-&lt;p&gt;Natürlich motiviert es schon, sich gemeinsam über ein Buch unterhalten zu können und es zeitgleich zu entdecken. Meine Lesefreundin und ich verwenden zusätzlich aber noch einen Bleistift. Während einer von uns in dem Buch liest, schreibt er zu auffälligen Textstellen kurze Kommentare an den Rand oder unterstreicht etwas:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/ulysses.jpg&quot; alt=&quot;Notizen auf Buchseiten&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Das können besonders schöne Ausdrücke sein, unklare Formulierungen, Quellen zu Zitaten, eigene Gedanken, Lob für den Autor, Querverweise im Buch, inhaltliche Zusammenfassungen, Bewertungen des vorangegangenen Kapitels … Kurz gesagt: alles, was uns beim Lesen auffällt oder für den anderen interessant sein könnte. Oft finden wir unterschiedliche Textstellen beachtenswert oder stellen uns Fragen, zu denen der andere vielleicht einen Gedanken beisteuern kann.&lt;/p&gt;
-
-&lt;p&gt;Weil wir das gleiche Exemplar von „Ulysses“ verwenden, sehen wir die Kommentare des anderen. Wir lesen abwechselnd so, dass man immer einen Teil dessen liest, was der andere schon kommentiert hat, sowie im nächsten Abschnitt selbst derjenige ist, der zum ersten Mal kommentiert. Unsere Leseportionen sind praktisch ineinander verschränkt. Etwa einmal im Monat treffen wir uns dann, übergeben das Buch und tauschen uns darüber aus (wobei einer immer schon ein Stückchen weitergelesen hat).&lt;/p&gt;
-
-&lt;h2 id=&quot;was-eignet-sich-als-abwechselnde-lektüre&quot;&gt;Was eignet sich als abwechselnde Lektüre?&lt;/h2&gt;
-
-&lt;p&gt;Es gibt einige Bedingungen für ein gutes „Wechselbuch“, das man mit dem Bleistift lesen möchte. Für die wichtigste Eigenschaft halte ich, dass die Geschichte mehr oder weniger episodisch aufgebaut ist. Wir hatten schon „Mister Aufziehvogel“ von Haruki Murakami als Wechselbuch gelesen, aber das hat nicht so gut geklappt. Ich wollte immer gleich wissen, wie es weitergeht, statt das Buch für einen Monat wegzugeben. Nach einem Wechsel war es auch nicht so leicht, wieder in die Geschichte einzusteigen (Inhaltsnotizen nach dem vorigen Kapitel haben geholfen). Vielleicht muss ein gutes Wechselbuch also tatsächlich ein bisschen langweilig sein …&lt;/p&gt;
-
-&lt;p&gt;Außerdem sollte das gewählte Buch schon einen gewissen Umfang haben. Wenn man nach zwei, drei Wechseln damit durch ist, ergeben sich meiner Meinung nach zu wenig Überschneidungen, in denen man die Kommentare des anderen genießen kann. Mit „In Swanns Welt“, dem ersten Band von Marcel Prousts Werks „Auf der Suche nach der verlorenen Zeit“, hat das recht gut geklappt. Das Buch hatte über 500 Seiten und mit einzelnen Leseportionen von ca. 120 Seiten haben wir gemeinsam gut 10 Monate gebraucht.&lt;/p&gt;
-
-&lt;p&gt;Zugegebenermaßen dauert es um einiges länger, ein Buch abwechselnd mit dem Bleistift zu lesen (für „Ulysses“ werden wir mehr als ein Jahr brauchen). Es besteht zudem die Gefahr, zwischendurch den Faden zu verlieren. Ein Wechselbuch ermutigt aber zu einer intensiven Lektüre und die Kommentare des anderen motivieren jedes Mal neu einzusteigen. Für eher sperrige Bücher, die man trotzdem gerne lesen möchte, ist so eine Bleistiftlektüre gemeinsam mit einem Lesepartner in meinen Augen eine wunderbare Sache.&lt;/p&gt;
-</description>
-	<link>http://charakterziffer.github.io/wechselbuch.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/wechselbuch.html</guid>
-	<pubDate>Thu, 26 Oct 2017 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

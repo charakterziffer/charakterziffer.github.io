@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde(r),
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.​de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<title>Schriftwahl nach System // @cz+</title>
+<meta name="description" content="Einige Designer sind stolz darauf, Websites in der Systemschrift des Nutzer darzustellen. Ich finde, gute Gestaltung wird so eher verhindert.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=http://charakterziffer.github.io/systemfonts.html&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Schriftwahl nach System" />
+<meta property="og:description" content="Einige Designer sind stolz darauf, Websites in der Systemschrift des Nutzer darzustellen. Ich finde, gute Gestaltung wird so eher verhindert." />
+<meta property="og:url" content="http://charakterziffer.github.io/systemfonts.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="http://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</header>
+
+<main>
+<article>
+<time datetime="2018-03-22">Do, 22. März 2018</time>
+<h1>Schriftwahl nach System</h1>
+<p>Webfonts ermöglichen, den Text auf einer Internetseite in einer individuellen Schriftart darzustellen. Das nutzen Gestalter immer öfter, um auf Websites bereits durch die Typografie ein bestimmtes Erscheinungsbild zu vermitteln. Die geeignete <a href="https://www.zachleat.com/web/comprehensive-webfonts/">Ladestrategie für Webfonts (engl.)</a> stellt sicher, dass der Text trotzdem ohne merkliche Verzögerung auftaucht.</p>
+
+<p>Doch wie vermutlich zu jedem Trend gibt es auch zu Webfonts eine Gegenbewegung. Statt eine individuelle Schrift zu wählen, möchten manche Webdesigner einen Text so gewohnt und standardmäßig wie möglich aussehen lassen. Sie versuchen, die gleiche Schrift zu wählen, die das Betriebssystem des Nutzers verwendet (zum Beispiel in Programm-Menüs, bei Systemmeldungen, im Datei-Manager etc.). So wirkt eine Website oder Web-Anwendung mehr wie ein lokal installiertes Programm.</p>
+
+<h2 id="was-ist-die-systemschrift">Was ist die Systemschrift?</h2>
+
+<p>Und woher weiß ich, welche Schrift dem Nutzer in lokalen Programmen angezeigt wird? Nun, ich weiß es nicht, schließlich ist es in jedem Betriebssystem eine andere. Aber ich kann eine Reihenfolge typischer Systemschriften festlegen. Der Browser des Nutzers testet diese Liste durch. Er überspringt alle Schriften, die nicht installiert sind, und verwendet dann die erste Schrift, die beim Nutzer vorhanden ist. Wenn ich die Reihe vom Speziellen zum Allgemeinen sortiere, erwische ich mit hoher Wahrscheinlichkeit die Systemschrift meines Nutzers. Eine verbreitete Schriftliste (“Sytem Font Stack”) ist:</p>
+
+<pre><code>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+</code></pre>
+
+<p>So oder ähnlich findet sich das in der <a href="https://make.wordpress.org/core/2016/07/07/native-fonts-in-4-6/">Bedienoberfläche von Wordpress</a>, im populären <a href="https://github.com/twbs/bootstrap/pull/19098">CSS-Frame­work Bootstrap</a>, beim <a href="https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f">Reiseportal Booking.com</a> oder auf der <a href="http://markdotto.com/2018/02/07/github-system-fonts/">Website von GitHub</a>. Überall dort verzichtet der Anbieter auf typografische Eigenständigkeit, um dem Nutzer lieber die vertraute Schrift seines Betriebssystems vorzusetzen. Entsprechend unterschiedlich sieht der Text dann je nach System aus:</p>
+
+<p><img src="material/systemfonts.png" alt="Verschiedene Systemschriften" /></p>
+
+<p>Mal ist die Schrift ein wenig fetter, mal ein bisschen runder, vielleicht allgemein größer und die Buchstaben stehen enger zusammen oder weiter auseinander. Ganz wie es der Nutzer von seinem Betriebssystem kennt …? Nicht unbedingt.</p>
+
+<h2 id="systemschrift-garantiert">Systemschrift garantiert?</h2>
+
+<p>Wer auf seinem Linux zum Beispiel <a href="https://material.io/guidelines/style/typography.html">Googles Schrift Roboto</a> installiert hat, der bekommt diese angezeigt – und eben nicht die Standardschrift seines Betriebssystems. Apropos Roboto: Die wird von Google massiv als Erkennungszeichen genutzt, zum Beispiel auf YouTube, Google Maps oder in Google Mail. Möchte ich wirklich, dass meine Website von der Schrift her so aussieht wie ein Google-Produkt?</p>
+
+<p>Auch wer bei seinem Betriebssystem die Schrift geändert hat (zum Beispiel seinen Mac lieber <a href="https://github.com/jenskutilek/FiraSystemFontReplacement">mit Fira Sans beschriftet</a>), bekommt nicht die „native“ Systemschrift angezeigt. Das sollte in Zukunft aber der neue CSS-Wert <code>system-ui;</code> verhindern. Dieser Platzhalter steht immer für die Schrift, die das Betriebssystem tatsächlich verwendet. Damit würde der Nutzer wirklich genau die gewohnte Schrift sehen – womöglich ist das aber <a href="https://infinnie.github.io/blog/2017/systemui.html">gar nicht, was der Designer beabsichtigt (engl.)</a>. Im Moment wird <code>font-family: system-ui</code> mittelgut unterstützt (je nach Nutzerschaft um die <a href="https://caniuse.com/#search=system-ui">70 bis 80<small> </small>%</a>), es funktioniert nicht im Firefox, Internet-Explorer und Microsoft Edge.</p>
+
+<h2 id="man-kann-nicht-nicht-gestalten">Man kann nicht nicht gestalten</h2>
+
+<p>Aber Moment! – und hier kommt der Meinungsteil dieses Blogartikels: Warum genau macht eigentlich jemand diese Verrenkungen? Warum die Schriftart des Systems nutzen? Um mir die Ladezeit einer Webschrift zu sparen? Dann könnte ich doch gleich eine bewusst ausgewählte <em>websafe</em> Schrift wählen, zum Beispiel Verdana, Arial, Georgia, Trebuchet oder Times New Roman. Die sind auf wirklich vielen Geräten installiert und werden dann angezeigt. Oder vielleicht, weil meine Website so aussehen soll wie ein installiertes Programm? Das könnte ich bei Web-Apps, also tatsächlichen Anwendungen noch verstehen – aber selbst hier kann man mit einer bewusst ausgewählten Schrift mehr erreichen.</p>
+
+<p>Ich glaube, meistens wird dieser <em>System Font Stack</em> aus Unsicherheit und Feigheit gewählt. „Mmmh, wir brauchen was neutrales, das nicht stört oder unangenehm ist – nehmen wir doch die Schrift, die der Nutzer ständig sieht, die ist so <em>natürlich</em> und <em>nativ</em>.“ Nein, ist sie nicht. Alles ist Gestaltung, selbst wenn ich beschließe, etwas nicht besonders zu gestalten. Und wenn ich mir keine Gedanken darum mache und sicherheitshalber zu einem Standard-Design greife, dann habe ich meistens nicht die beste Lösung gefunden.</p>
+
+<p>Was man mit System-Schriften dagegen in Kauf nimmt: Absätze brauchen unterschiedlich viel Platz, Text verschiebt sich, Zeilenabstände passen nicht optimal zur Schrift, Textgrößen sind nicht richtig aneinander angepasst, die eigens gestaltete <a href="https://github.com/atomiks/30-seconds-of-css/issues/22">Unterstreichung sitzt zu hoch</a> und das allgemeine Schriftbild kann auf manchen Systemen eine unpassende Wirkung haben. Manchmal sind auch die gewünschten Strichstärken nicht vorhanden und werden vom Browser schlecht imitiert (z.<small> </small>B. haben nur San Francisco und Segoe eine halbfette Semibold). Wer gute Typografie machen möchte, ist mit einer einschätzbaren, zum Inhalt passenden Schrift besser bedient.</p>
+
+<h2 id="der-neue-standard">Der neue Standard?</h2>
+
+<p>Im Moment sind die Default-Schriften im Browser meistens <a href="https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults/">Arial/Helvetica, Times (New Roman) und Courier (New)</a>. Sie erscheinen, wenn der Gestalter nur die generischen Schriftkategorien <code>sans-serif</code>, <code>serif</code> oder <code>monospaced</code> angibt. Vielleicht ändert sich das irgendwann und die Browserhersteller legen <code>system-ui</code> als Standard-Schrift fest (ohne Serifen). So stellt es sich Sindre Sorhus im <a href="https://github.com/sindresorhus/modern-normalize/issues/3">Fehlerbericht zu seinem normalize.css (engl.)</a> vor. Ich muss einräumen, dass das in den meisten Fällen eine Verbesserung wäre – aber halt nicht automatisch eine gute oder irgendwie „natürliche“ Gestaltung für einzelne Websites.</p>
+
+<p>Ich behaupte nicht, dass eine Internetseite auf allen Geräten gleich aussehen muss; aber ich bin überzeugt, dass man bewusst gestalten sollte. Als scheinbar einfache Lösung verhindert der <em>System Font Stack</em>, sich tatsächlich mit einem angemessenen Design auseinanderzusetzen. Die Standardeinstellung kann ein möglicher Anfangspunkt einer Gestaltung sein, aber nur in seltensten Fällen auch deren Ende.</p>
+
+<p>Noch zwei Lesetipps (englisch): <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b">Using UI System Fonts in Web Design</a> und <a href="https://bitsofco.de/the-new-system-font-stack/">The New System Font Stack?</a> – beide Artikel befürworten eher die Verwendung von Systemschriften.</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?kritik">#kritik&nbsp; </a>
+
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+</p>
+</article>
+
+
+	
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+
+<form name="kommentarformular" id="kommentarformular" action="http://www.formular-chef.de/fc.cgi"
+method="post" enctype="multipart/form-data">
+<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
+<input type="hidden" name="pflicht" value="comment">
+<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
+<input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
+<input type="hidden" name="antwortseite_template"
+value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
+
+<input type="hidden" name="post_id" value="/systemfonts">
+<div>
+	<label for="name">Name</label>
+	<div><input name="name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off"></div>
+</div>
+<div>
+	<label for="comment">Kommentar*</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<div><input name="submit" id="submit" type="submit" value="Abschicken"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt=Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="mandelprinzessin.html">← Die Mandelprinzessin</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="http://www.onlex.de/_counter.php?username=charakterziffer" async></script>
+</body>
+</html>

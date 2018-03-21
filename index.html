@@ -62,6 +62,52 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 
 
 	<article>
+	<time datetime="2018-03-22">Do, 22. März 2018</time>
+	<h1><a href="systemfonts.html">Schriftwahl nach System</a></h1>
+	<p>Webfonts ermöglichen, den Text auf einer Internetseite in einer individuellen Schriftart darzustellen. Das nutzen Gestalter immer öfter, um auf Websites bereits durch die Typografie ein bestimmtes Erscheinungsbild zu vermitteln. Die geeignete <a href="https://www.zachleat.com/web/comprehensive-webfonts/">Ladestrategie für Webfonts (engl.)</a> stellt sicher, dass der Text trotzdem ohne merkliche Verzögerung auftaucht.</p>
+
+<p>Doch wie vermutlich zu jedem Trend gibt es auch zu Webfonts eine Gegenbewegung. Statt eine individuelle Schrift zu wählen, möchten manche Webdesigner einen Text so gewohnt und standardmäßig wie möglich aussehen lassen. Sie versuchen, die gleiche Schrift zu wählen, die das Betriebssystem des Nutzers verwendet (zum Beispiel in Programm-Menüs, bei Systemmeldungen, im Datei-Manager etc.). So wirkt eine Website oder Web-Anwendung mehr wie ein lokal installiertes Programm.</p>
+
+<h2 id="was-ist-die-systemschrift">Was ist die Systemschrift?</h2>
+
+<p>Und woher weiß ich, welche Schrift dem Nutzer in lokalen Programmen angezeigt wird? Nun, ich weiß es nicht, schließlich ist es in jedem Betriebssystem eine andere. Aber ich kann eine Reihenfolge typischer Systemschriften festlegen. Der Browser des Nutzers testet diese Liste durch. Er überspringt alle Schriften, die nicht installiert sind, und verwendet dann die erste Schrift, die beim Nutzer vorhanden ist. Wenn ich die Reihe vom Speziellen zum Allgemeinen sortiere, erwische ich mit hoher Wahrscheinlichkeit die Systemschrift meines Nutzers. Eine verbreitete Schriftliste (“Sytem Font Stack”) ist:</p>
+
+<pre><code>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+</code></pre>
+
+<p>So oder ähnlich findet sich das in der <a href="https://make.wordpress.org/core/2016/07/07/native-fonts-in-4-6/">Bedienoberfläche von Wordpress</a>, im populären <a href="https://github.com/twbs/bootstrap/pull/19098">CSS-Frame­work Bootstrap</a>, beim <a href="https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f">Reiseportal Booking.com</a> oder auf der <a href="http://markdotto.com/2018/02/07/github-system-fonts/">Website von GitHub</a>. Überall dort verzichtet der Anbieter auf typografische Eigenständigkeit, um dem Nutzer lieber die vertraute Schrift seines Betriebssystems vorzusetzen. Entsprechend unterschiedlich sieht der Text dann je nach System aus:</p>
+
+<p><img src="material/systemfonts.png" alt="Verschiedene Systemschriften" /></p>
+
+<p>Mal ist die Schrift ein wenig fetter, mal ein bisschen runder, vielleicht allgemein größer und die Buchstaben stehen enger zusammen oder weiter auseinander. Ganz wie es der Nutzer von seinem Betriebssystem kennt …? Nicht unbedingt.</p>
+
+<h2 id="systemschrift-garantiert">Systemschrift garantiert?</h2>
+
+<p>Wer auf seinem Linux zum Beispiel <a href="https://material.io/guidelines/style/typography.html">Googles Schrift Roboto</a> installiert hat, der bekommt diese angezeigt – und eben nicht die Standardschrift seines Betriebssystems. Apropos Roboto: Die wird von Google massiv als Erkennungszeichen genutzt, zum Beispiel auf YouTube, Google Maps oder in Google Mail. Möchte ich wirklich, dass meine Website von der Schrift her so aussieht wie ein Google-Produkt?</p>
+
+<p>Auch wer bei seinem Betriebssystem die Schrift geändert hat (zum Beispiel seinen Mac lieber <a href="https://github.com/jenskutilek/FiraSystemFontReplacement">mit Fira Sans beschriftet</a>), bekommt nicht die „native“ Systemschrift angezeigt. Das sollte in Zukunft aber der neue CSS-Wert <code>system-ui;</code> verhindern. Dieser Platzhalter steht immer für die Schrift, die das Betriebssystem tatsächlich verwendet. Damit würde der Nutzer wirklich genau die gewohnte Schrift sehen – womöglich ist das aber <a href="https://infinnie.github.io/blog/2017/systemui.html">gar nicht, was der Designer beabsichtigt (engl.)</a>. Im Moment wird <code>font-family: system-ui</code> mittelgut unterstützt (je nach Nutzerschaft um die <a href="https://caniuse.com/#search=system-ui">70 bis 80<small> </small>%</a>), es funktioniert nicht im Firefox, Internet-Explorer und Microsoft Edge.</p>
+
+<h2 id="man-kann-nicht-nicht-gestalten">Man kann nicht nicht gestalten</h2>
+
+<p>Aber Moment! – und hier kommt der Meinungsteil dieses Blogartikels: Warum genau macht eigentlich jemand diese Verrenkungen? Warum die Schriftart des Systems nutzen? Um mir die Ladezeit einer Webschrift zu sparen? Dann könnte ich doch gleich eine bewusst ausgewählte <em>websafe</em> Schrift wählen, zum Beispiel Verdana, Arial, Georgia, Trebuchet oder Times New Roman. Die sind auf wirklich vielen Geräten installiert und werden dann angezeigt. Oder vielleicht, weil meine Website so aussehen soll wie ein installiertes Programm? Das könnte ich bei Web-Apps, also tatsächlichen Anwendungen noch verstehen – aber selbst hier kann man mit einer bewusst ausgewählten Schrift mehr erreichen.</p>
+
+<p>Ich glaube, meistens wird dieser <em>System Font Stack</em> aus Unsicherheit und Feigheit gewählt. „Mmmh, wir brauchen was neutrales, das nicht stört oder unangenehm ist – nehmen wir doch die Schrift, die der Nutzer ständig sieht, die ist so <em>natürlich</em> und <em>nativ</em>.“ Nein, ist sie nicht. Alles ist Gestaltung, selbst wenn ich beschließe, etwas nicht besonders zu gestalten. Und wenn ich mir keine Gedanken darum mache und sicherheitshalber zu einem Standard-Design greife, dann habe ich meistens nicht die beste Lösung gefunden.</p>
+
+<p>Was man mit System-Schriften dagegen in Kauf nimmt: Absätze brauchen unterschiedlich viel Platz, Text verschiebt sich, Zeilenabstände passen nicht optimal zur Schrift, Textgrößen sind nicht richtig aneinander angepasst, die eigens gestaltete <a href="https://github.com/atomiks/30-seconds-of-css/issues/22">Unterstreichung sitzt zu hoch</a> und das allgemeine Schriftbild kann auf manchen Systemen eine unpassende Wirkung haben. Manchmal sind auch die gewünschten Strichstärken nicht vorhanden und werden vom Browser schlecht imitiert (z.<small> </small>B. haben nur San Francisco und Segoe eine halbfette Semibold). Wer gute Typografie machen möchte, ist mit einer einschätzbaren, zum Inhalt passenden Schrift besser bedient.</p>
+
+<h2 id="der-neue-standard">Der neue Standard?</h2>
+
+<p>Im Moment sind die Default-Schriften im Browser meistens <a href="https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults/">Arial/Helvetica, Times (New Roman) und Courier (New)</a>. Sie erscheinen, wenn der Gestalter nur die generischen Schriftkategorien <code>sans-serif</code>, <code>serif</code> oder <code>monospaced</code> angibt. Vielleicht ändert sich das irgendwann und die Browserhersteller legen <code>system-ui</code> als Standard-Schrift fest (ohne Serifen). So stellt es sich Sindre Sorhus im <a href="https://github.com/sindresorhus/modern-normalize/issues/3">Fehlerbericht zu seinem normalize.css (engl.)</a> vor. Ich muss einräumen, dass das in den meisten Fällen eine Verbesserung wäre – aber halt nicht automatisch eine gute oder irgendwie „natürliche“ Gestaltung für einzelne Websites.</p>
+
+<p>Ich behaupte nicht, dass eine Internetseite auf allen Geräten gleich aussehen muss; aber ich bin überzeugt, dass man bewusst gestalten sollte. Als scheinbar einfache Lösung verhindert der <em>System Font Stack</em>, sich tatsächlich mit einem angemessenen Design auseinanderzusetzen. Die Standardeinstellung kann ein möglicher Anfangspunkt einer Gestaltung sein, aber nur in seltensten Fällen auch deren Ende.</p>
+
+<p>Noch zwei Lesetipps (englisch): <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b">Using UI System Fonts in Web Design</a> und <a href="https://bitsofco.de/the-new-system-font-stack/">The New System Font Stack?</a> – beide Artikel befürworten eher die Verwendung von Systemschriften.</p>
+
+	<p>---<br> <a href="systemfonts.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+	</article>
+
+	<article>
 	<time datetime="2018-02-21">Mi, 21. Feb. 2018</time>
 	<h1><a href="mandelprinzessin.html">Die Mandelprinzessin</a></h1>
 	<p>Es war einmal eine Prinzessin, die war schön wie eine Mandelblüte im Morgentau. Sie hatte quellblaue Augen und einen für ihr zartes Alter viel zu sinnlichen Mund. Reihenweise liefen ihr die Männer hinterher und sicherlich hätte sie sich zur Freude ihres Vaters schon bald fest gebunden, hätte sie nicht einen erschreckenden Makel: Ihr Lachen.</p>
@@ -173,90 +219,6 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 		</p>
 	</article>
 
-	<article>
-	<time datetime="2017-12-27">Mi, 27. Dez. 2017</time>
-	<h1><a href="lebensmittel.html">Unbekannte Lebensmittel (Vorsatz 2017)</a></h1>
-	<p>Nein, ich habe keinen Surströmming versucht (den stinkenden, schwedischen Dosenhering) und auch bei Innereien habe ich mich zurückgehalten. Schließlich ging es bei meinem guten Vorsatz 2017 nicht darum, mich zu besonders ekligen Esswaren zu überwinden. Fürs vergangene Jahr hatte mir vorgenommen, jede Woche ein mir unbekanntes Lebensmittel zu probieren. Dabei wollte ich „meinen Geschmack herausfordern, bewusster essen und vielfältiger einkaufen“, <a href="vorsaetze.html">schrieb ich vor einem Jahr</a>.</p>
-
-<p>Das hat ziemlich gut geklappt. Ich habe tatsächlich 52 Lebensmittel gefunden und war unter anderem zum ersten Mal in einem arabischen und chinesischen Supermarkt einkaufen. Wie bei allen Vorsätzen hat die Umsetzung nicht zu 100<small> </small>% geklappt und ich war gelegentlich eine Woche zu spät oder zu früh dran, aber was soll’s?</p>
-
-<p>Zum Jahresende möchte ich in einer kleinen Übersicht sammeln, was ich 2017 kulinarisch kennen gelernt haben. Es waren Dinge darunter, von denen ich nicht wusste, dass man sie essen kann (Lotusknollen) oder dass sie überhaupt existieren (Moltebeeren).</p>
-
-<style>
-<!--
-[class^="ukl"] { position: relative; width: 100%; height: 0; margin: 0;
-	padding-bottom: 36%; line-height: 0; background-size: 100% auto;
-	background-image: url('material/unbekannte-lebensmittel.jpg'); border: 0; }
-[class^="ukl"] a { visibility:hidden; }
-.ukl1 { background-position: 0 0; }
-.ukl2 { background-position: 0 50%; }
-.ukl3 { background-position: 0 100%; }
--->
-</style>
-
-<figure><div class="ukl1" title="Unbekannte Lebensmittel (bis zur 18. Woche 2017)"><a href="material/unbekannte-lebensmittel.jpg">Bild aller 52 Lebensmittel</a></div>
-<figcaption style="columns:10.7em;">
-<ol style="margin-top:0;">
-	<li>Sweetie</li> <li>Spitzkohl</li> <li>Weißdornbeeren</li>
-	<li>Lokum</li> <li>Wildschwein-Wurst</li> <li>Shiitake-Pilze</li>
-	<li>Skyr</li> <li>Birkensaft</li> <li>Kiwibeeren</li>
-	<li>Maniok</li> <li>Kartoffel-Tortilla</li> <li>Turrón</li>
-	<li>Kaktusfeige</li> <li>Tintenfisch</li> <li>Lupinen-Aufstrich</li>
-	<li>Schlangenfrucht</li> <li>Baranki</li> <li>Aprikosenkerne</li></ol>
-</figcaption>
-</figure>
-
-<h2 id="eine-frage-der-definition">Eine Frage der Definition</h2>
-
-<p>Schon bald nach meinem Beschluss habe ich gemerkt, das mein Vorsatz viel Spielraum lässt und ich ihn nicht ausreichend durchdacht habe. Denn was gilt eigentlich als unbekanntes Lebensmittel? Dürfen es nur Dinge sein, von denen ich noch nie gehört hatte (schließt Pfifferlinge aus)? Wie sieht es mit verwandten Sorten aus (Viola als Aubergine, Spitzkohl als Kohl)? Und sollte ich verarbeitete Nahrungsmittel von meinem Vorsatz ausschließen (Lokum, Hanfdessert und Reneklodenmarmelade)?</p>
-
-<p>Letztlich habe ich die Begrenzung eher locker genommen, es ging schließlich darum, etwas zu probieren und keine wissenschaftliche Feldforschung zu betreiben. Bei verarbeiteten Lebensmitteln war mir aber wichtig, dass sie ausreichend typisch sind. Es zählte also nicht, einfach 20 verschiedene Teekekse zu probieren; wohl aber japanische Mochi, türkisches Lokum und spanische Yemas de Santa Teresa (quasi Gattungen, die es von unterschiedlichen Herstellern oft in verschiedenen Varianten gibt).</p>
-
-<figure><div class="ukl2" title="Unbekannte Lebensmittel (Woche 19 bis 36)"><a href="material/unbekannte-lebensmittel.jpg">Bild aller 52 Lebensmittel</a></div>
-<figcaption style="columns:10.7em;">
-<ol style="margin-top:0;" start="19">
-	<li>Löwenzahn</li> <li>Wodka mit Feige</li> <li>Wasserkefir</li>
-	<li>Halva</li> <li>Yemas de Santa Teresa</li> <li>Viola</li>
-	<li>Halloumi</li> <li>Roquefort</li> <li>Renekloden</li>
-	<li>Aloe-Vera-Saft</li> <li>Szechuanpfeffer</li> <li>Stachelgurke</li>
-	<li>Arare</li> <li>Navette</li> <li>Aroniabeeren</li>
-	<li>Mangostan</li> <li>Gebrannte Kürbiskerne</li> <li>Palmenherzen</li>
-</ol>
-</figcaption>
-</figure>
-
-<h2 id="geschmackvolle-höhepunkte">Geschmackvolle Höhepunkte</h2>
-
-<p>Einige Lebensmittel sind mir besonders in Erinnerung geblieben. Die leckerste Frucht war meiner Meinung nach die <em>Kaktusfeige</em>, die ich unbedingt wieder mal probieren muss. Vom Aussehen her sind wohl die <em>Pitahaya</em> (pink geflammte Schale, Geschmack etwas batzig) und die <em>Lotusknolle</em> (mit symmetrischen Löchern, erinnerte mich an eine feste Gurke) die Gewinner dieses Jahres.</p>
-
-<p>Die <em>Kartoffel-Tortilla</em> habe ich mit zwei Freunden gekocht, das typisch spanische Gericht war sehr herzhaft. Besonders vielseitig fand ich <em>Topinambur</em>, das roh wie Kokos schmeckt, gekocht wie Süßkartoffeln und gebraten ein bisschen nach Karotte.</p>
-
-<p>Sehr enttäuscht hat mich der <em>Lupinen-Brotaufstrich</em>. Er schmeckte leicht bitter und bestand im Grunde genommen vor allem aus Kokosfett. Das mehlige <em>Halva</em> (russisch) war mir ein bisschen zu heftig, recht süß und ganz schön gehaltvoll. Es hat mich ans spanische <em>Turrón</em> erinnert, welches aber statt nach Sonnenblumenkernen nach Mandeln geschmeckt hat.</p>
-
-<p>Den <em>Szechuanpfeffer</em> habe ich von einem sehr freundlichen Mitarbeiter aus dem Botanischen Garten probieren dürfen. Die kleinen Körner prickeln im Mund und betäuben die Zungenspitze für eine Weile. Die <em>Schlangenfrucht</em> (Salak) hat mir mein Nachbar aus seinem Urlaub auf Bali mitgebracht, trocken erdbeerig süß. Und was ich von <em>Roquefort</em> halten soll, weiß ich nicht genau. Der Käse ist so ein Zwischending von salzig, scharf, würzig und ein bisschen eklig – vermutlich würde ich ihn aber wieder probieren.</p>
-
-<figure><div class="ukl3" title="Unbekannte Lebensmittel (Woche 37 bis 52)"><a href="material/unbekannte-lebensmittel.jpg">Bild aller 52 Lebensmittel</a></div>
-<figcaption style="columns:10.7em;">
-<ol style="margin-top:0;" start="37">
-	<li>Lotuswurzel</li> <li>Kombucha</li> <li>Mochi</li>
-	<li>Pfifferlinge</li> <li>Jackfrucht</li> <li>Berberitzen</li>
-	<li>Topinambur</li> <li>Hanfdessert</li> <li>Okraschoten</li>
-	<li>Kiwano</li> <li>Cherimoya</li> <li>Pitahaya</li>
-	<li style="hyphens: none;">Hibiskusblüten (kandiert)</li>
-	<li>Moltebeeren</li> <li>Litschi</li> <li>Maulbeeren</li></ol>
-</figcaption>
-</figure>
-
-<h2 id="Übers-essen-nachdenken">Übers Essen nachdenken</h2>
-
-<p>Auf der Suche nach unbekannten Lebensmitteln war ich 2017 oft mit einem ganz anderen Blick einkaufen. Ich ging oft ohne richtigen Plan durch einen Laden, um etwas zu finden, von dem ich noch gar nicht wusste, dass ich es gesucht hatte. Ich hab in russischen, chinesischen und arabischen Geschäften die Etiketten studiert, komisches Obst beschnuppert und Verkäufern ratlos Fragen gestellt. Ein paar Mal habe ich nach dem Einkauf gar nicht gewusst, was genau ich da jetzt mit nach Hause nehme (Okra? Sind das irgendwelche Blüten? Wie isst man eigentlich Maniok?). Und zwischendurch kam die Frage auf, wie ökologisch es eigentlich ist, exotische Dinge zu essen. Und ob es nicht viel mehr heimische Lebensmittel gäbe, die im Handel einfach kaum Beachtung finden? Es ist jedenfalls ein ziemlicher Wahnsinn, auf welche Esswaren aus aller Welt wir heutzutage Zugriff haben.</p>
-
-<p>Was ich mir für 2018 vornehme, weiß ich übrigens noch nicht genau. Vielleicht, jeden Tag ein bisschen an einem Schriftentwurf zu arbeiten, damit die Schrift in einem Jahr fertiggestellt ist.</p>
-
-	<p>---<br> <a href="lebensmittel.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-	</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1>Sonstiges</h1>
@@ -279,7 +241,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><b>§2</b> Dieses Blog verlinkt auf Websites Dritter („externe Links“). Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2018-03-18T17:21:18+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2018-03-22T00:00:05+01:00</p>
 </main>
 
 <aside>
