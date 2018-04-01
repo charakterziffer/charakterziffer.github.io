@@ -142,7 +142,7 @@ code, pre { margin: 1.5em 0 1.167em; padding: .05em .2em;
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
 pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap; }
 
-blockquote { margin: 1.35em 0 1.4em; padding: 0 .2em 0 .4em;
+blockquote { margin: 1.35em 0 1.4em; padding: 0 .4em;
 	border-left: .75em solid #deb; background-color: #f4f4f4; }
 blockquote + blockquote { margin-top: 1.75em; }
 blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
@@ -212,13 +212,13 @@ audio { margin: .4em 0 -.15em; }
 /* FORMULARE */
 
 input { font: inherit; font-size: .9em; line-height: 1.667; }
-textarea { padding: .1em 0 .1em .2em; overflow: auto;
-	resize: vertical; font: inherit; }
+textarea { padding: .1em .2em; overflow: auto; resize: vertical;
+	font: inherit; }
 form { margin-top: 1.5em; }
 form > div { padding-top: .4em; clear: both; }
 
 form label { position: relative; float: left; top: .75em; width: 20%;
-	padding-bottom:1.4em; }
+	padding-bottom: 1.4em; }
 form label:after { content: ': '; }
 form > div > div { float: right; width: 80%; }
 form input[type=text], form input[type=email], form input[type=url] {
