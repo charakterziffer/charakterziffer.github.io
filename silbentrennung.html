@@ -26,7 +26,7 @@
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=http://charakterziffer.github.io/silbentrennung.html&choe=UTF-8);
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/silbentrennung.html&choe=UTF-8);
 position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
 
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
@@ -41,13 +41,13 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
 <meta property="og:title" content="Silbentrennung im Browser" />
 <meta property="og:description" content="Silbentrennung ermöglicht einen ruhigeren Zeilenfall bzw. eine gleichmäßigere Textverteilung – auch auf Internetseiten. Es gibt verschiedene Methoden, Silbentrennung im Browser umzusetzen." />
-<meta property="og:url" content="http://charakterziffer.github.io/silbentrennung.html" />
+<meta property="og:url" content="https://charakterziffer.github.io/silbentrennung.html" />
 <meta property="og:type" content="article" />
 </head>
 
 <body>
 <header>
-<a title="Zur Startseite" href="http://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
 <nav class="no-hyphens no-print"><ul>
 	<li><a href="/archiv.html">Archiv</a></li>
 	<li><a href="/rss.xml">RSS</a></li>
@@ -68,13 +68,13 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 
 <h2 id="umsetzung-mit-javascript">Umsetzung mit Javascript</h2>
 
-<p>Hier in meinem Blog nutze ich das <a href="http://mnater.github.io/Hyphenator/">JavaScript-Programm Hyphenator.js</a>. Man definiert dazu zunächst die Sprache der Website: <code>&lt;html lang="de"&gt;</code></p>
+<p>Hier in meinem Blog nutze ich das <a href="https://mnater.github.io/Hyphenator/">JavaScript-Programm Hyphenator.js</a>. Man definiert dazu zunächst die Sprache der Website: <code>&lt;html lang="de"&gt;</code></p>
 
 <p>Alle Elemente, die von der Silbentrennung erfasst werden sollen, stattet man in der HTML-Datei mit der Klasse <em>.hyphenate</em> aus (beispielsweise <code>&lt;body class="hyphenate"&gt;</code>, Kind-Elemente werden automatisch mitverarbeitet). Elemente, die nicht getrennt werden sollen (z. B. Überschriften), bekommen die Klasse <em>.donthyphenate</em>.</p>
 
-<p>Mit Hilfe der Seite <a href="http://mnater.github.io/Hyphenator/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine eigene Hyphenator-Datei für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
+<p>Mit Hilfe der Seite <a href="https://mnater.github.io/Hyphenator/mergeAndPack.html">merge+pack</a> (engl.) stellt man sich jetzt sein gewünschtes Hyphenator-Skript zusammen. Man wählt unter anderem die benötigten Sprachmuster aus und ob Trennstriche beim Kopieren entfernt werden sollen. Meine eigene Hyphenator-Datei für deutsche Texte hat knapp 100 kB (eine zusätzliche Datei dieser Größe könnte ein Nachteil sein, Ladezeit!). Die js-Datei bindet man nun am Ende seiner HTML-Seite ein (vor dem <code>&lt;/body&gt;</code>):</p>
 
-<pre><code>&lt;script src="http://deine-adresse.de/PFAD/hyphenator.js" type="text/javascript"&gt;&lt;/script&gt;
+<pre><code>&lt;script src="https://deine-adresse.de/PFAD/hyphenator.js" type="text/javascript"&gt;&lt;/script&gt;
 </code></pre>
 
 <h2 id="alternative-die-css-eigenschaft-hyphens">Alternative: Die CSS-Eigenschaft „hyphens“</h2>
@@ -85,7 +85,7 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 -moz-hyphens: auto; hyphens: auto;
 </code></pre>
 
-<p>Laut <a href="http://caniuse.com/#feat=css-hyphens">caniuse.com</a> wird die CSS-Eigenschaft <em>hyphens</em> leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.</p>
+<p>Laut <a href="https://caniuse.com/#feat=css-hyphens">caniuse.com</a> wird die CSS-Eigenschaft <em>hyphens</em> leider bisher nur von Firefox (≥ 26), dem Internet Explorer (≥ 10) und Safari (≥ 7.0) unterstützt (jeweils mit Prefix) – also nicht von Chrome, Opera oder dem mobilen Android-Browser. Deswegen nutze ich hier auch noch die Javascript-Lösung.</p>
 
 <h2 id="was-nicht-funktioniert">Was nicht funktioniert</h2>
 
@@ -121,10 +121,10 @@ Dan­ke für den Tipp von Ana­tol Bro­der (<a href="https://twitter.com/penibe
 method="post" enctype="multipart/form-data">
 <input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
 <input type="hidden" name="pflicht" value="comment">
-<input type="hidden" name="fehler_template" value="http://charakterziffer.github.io/bestand/kommentar-fehler.html">
-<input type="hidden" name="email_template" value="http://charakterziffer.github.io/bestand/kommentar-mail.txt">
+<input type="hidden" name="fehler_template" value="https://charakterziffer.github.io/bestand/kommentar-fehler.html">
+<input type="hidden" name="email_template" value="https://charakterziffer.github.io/bestand/kommentar-mail.txt">
 <input type="hidden" name="antwortseite_template"
-value="http://charakterziffer.github.io/bestand/kommentar-danke.html">
+value="https://charakterziffer.github.io/bestand/kommentar-danke.html">
 
 <input type="hidden" name="post_id" value="/silbentrennung">
 <div>

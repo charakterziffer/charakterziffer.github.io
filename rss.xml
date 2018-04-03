@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel>
 <title>@cz+ // Blog von @charakterziffer</title>
-<link>http://charakterziffer.github.io/index.html</link>
+<link>https://charakterziffer.github.io/index.html</link>
 <description>140 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
 <language>de-de</language>
 <copyright>Gerhard Großmann</copyright>
-<atom:link href="http://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<atom:link href="https://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
 <image>
-	<url>http://charakterziffer.github.io/bestand/favicon.png</url>
+	<url>https://charakterziffer.github.io/bestand/favicon.png</url>
 	<title>@cz+ // Blog von @charakterziffer</title>
-	<link>http://charakterziffer.github.io/index.html</link>
+	<link>https://charakterziffer.github.io/index.html</link>
 </image>
 
 <item>
@@ -53,9 +53,9 @@
 
 &lt;p&gt;Noch zwei Lesetipps (englisch): &lt;a href=&quot;https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b&quot;&gt;Using UI System Fonts in Web Design&lt;/a&gt; und &lt;a href=&quot;https://bitsofco.de/the-new-system-font-stack/&quot;&gt;The New System Font Stack?&lt;/a&gt; – beide Artikel befürworten eher die Verwendung von Systemschriften.&lt;/p&gt;
 </description>
-	<link>http://charakterziffer.github.io/systemfonts.html</link>
+	<link>https://charakterziffer.github.io/systemfonts.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/systemfonts.html</guid>
+	<guid isPermaLink="true">https://charakterziffer.github.io/systemfonts.html</guid>
 	<pubDate>Thu, 22 Mar 2018 00:00:00 +0100</pubDate>
 </item>
 
@@ -103,9 +103,9 @@
 
 &lt;p&gt;So, und wie das im Märchen nun mal üblich ist, heirateten die beiden natürlich. Sie wohnen in einer kleinen Hütte abgelegen im Wald und betreiben Zwiebelanbau. Und wenn sie nicht gestorben sind, dann traut sich immer noch keiner in ihre Nähe, denn seit ihres Zusammentreffens gab es tagsüber nicht eine einzige Stunde, in der sie nicht gemeinsam genüsslich gekreischt hätten.&lt;/p&gt;
 </description>
-	<link>http://charakterziffer.github.io/mandelprinzessin.html</link>
+	<link>https://charakterziffer.github.io/mandelprinzessin.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/mandelprinzessin.html</guid>
+	<guid isPermaLink="true">https://charakterziffer.github.io/mandelprinzessin.html</guid>
 	<pubDate>Wed, 21 Feb 2018 00:00:00 +0100</pubDate>
 </item>
 
@@ -167,9 +167,9 @@
 
 &lt;p&gt;In einem früheren Blogbeitrag habe ich mich schon einmal damit beschäftigt, &lt;a href=&quot;retweet.html&quot;&gt;wann man etwas retweetet&lt;/a&gt; und wann man es besser sein lässt. Diese Twitterserie gibt es übrigens schon seit Dezember 2010. Als Blogeintrag gebündelt habe ich die Folgen &lt;a href=&quot;erfundene-fakten-1.html&quot;&gt;1–16&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-2.html&quot;&gt;17–28&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-3.html&quot;&gt;29–40&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-4.html&quot;&gt;41–50&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-5.html&quot;&gt;51–60&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-6.html&quot;&gt;61–70&lt;/a&gt; und &lt;a href=&quot;erfundene-fakten-7.html&quot;&gt;71–80&lt;/a&gt;.&lt;/p&gt;
 </description>
-	<link>http://charakterziffer.github.io/erfundene-fakten-7.html</link>
+	<link>https://charakterziffer.github.io/erfundene-fakten-7.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/erfundene-fakten-7.html</guid>
+	<guid isPermaLink="true">https://charakterziffer.github.io/erfundene-fakten-7.html</guid>
 	<pubDate>Fri, 19 Jan 2018 00:00:00 +0100</pubDate>
 </item>
 
@@ -252,9 +252,9 @@
 
 &lt;p&gt;Was ich mir für 2018 vornehme, weiß ich übrigens noch nicht genau. Vielleicht, jeden Tag ein bisschen an einem Schriftentwurf zu arbeiten, damit die Schrift in einem Jahr fertiggestellt ist.&lt;/p&gt;
 </description>
-	<link>http://charakterziffer.github.io/lebensmittel.html</link>
+	<link>https://charakterziffer.github.io/lebensmittel.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/lebensmittel.html</guid>
+	<guid isPermaLink="true">https://charakterziffer.github.io/lebensmittel.html</guid>
 	<pubDate>Wed, 27 Dec 2017 00:00:00 +0100</pubDate>
 </item>
 
@@ -290,9 +290,9 @@
 
 &lt;p&gt;Übrigens freue ich mich sehr, wenn mein mein Halbmonatskalender empfohlen und weiterverbreitet wird. Zu diesem Zweck steht er unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de&quot;&gt;CC BY-NC-SA&lt;/a&gt;). Falls jemand den Kalender bearbeiten möchte (zum Beispiel die optionalen Feiertage aufs eigene Bundesland anpassen), verschicke ich gerne die SVG-Dateien. Bitte mich einfach kurz anschreiben oder kommentieren.&lt;/p&gt;
 </description>
-	<link>http://charakterziffer.github.io/kalender-2018.html</link>
+	<link>https://charakterziffer.github.io/kalender-2018.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">http://charakterziffer.github.io/kalender-2018.html</guid>
+	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2018.html</guid>
 	<pubDate>Fri, 24 Nov 2017 00:00:00 +0100</pubDate>
 </item>
 
