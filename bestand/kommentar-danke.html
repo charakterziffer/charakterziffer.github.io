@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde(r),
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.​de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="referrer" content="no-referrer">
+<meta name="referrer" content="strict-origin">
 
 <title>Kommentar abgeschickt // @cz+</title>
 <meta name="description" content="Diese Seite erscheint, wenn ein Kommentar erfolgreich abgeschickt wurde.">
@@ -11,22 +21,60 @@
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
 <meta name="robots" content="index, follow">
 
-<link href='https://charakterziffer.github.io/bestand/style.css' rel='stylesheet'>
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://charakterziffer.github.io/rss.xml">
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/bestand/kommentar-danke&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
 
-<link rel="icon" href="https://charakterziffer.github.io/bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Kommentar abgeschickt" />
+<meta property="og:description" content="Diese Seite erscheint, wenn ein Kommentar erfolgreich abgeschickt wurde." />
+<meta property="og:url" content="https://charakterziffer.github.io/bestand/kommentar-danke" />
+<meta property="og:type" content="article" />
 </head>
 
 <body>
 <header>
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
 </header>
 
 <main>
-<h1>Dankesch&ouml;n!</h1>
-<p>Kommentare k&ouml;nnen ein Blog sehr bereichern, vielen Dank f&uuml;r Ihren Beitrag! In K&uuml;rze erhalte ich eine Mail mit Ihrem Kommentar. Ich lese ihn mir durch und ver&ouml;ffentliche ihn dann unter dem Originalartikel.</p>
-<p>Sie k&ouml;nnen nun <a href="https://charakterziffer.github.io##post_id##.html">zum vorigen Beitrag</a> zur&uuml;ckkehren, <a href="https://charakterziffer.github.io/">die Startseite</a> besuchen oder <a href="https://charakterziffer.github.io/archiv.html">im Archiv</a> st&ouml;bern.</p>
+<link href="style.css" rel="stylesheet" />
+
+<h1 id="dankeschön">Dankeschön!</h1>
+
+<p>Kommentare können ein Blog sehr bereichern, vielen Dank für deinen Beitrag! In Kürze erhalte ich eine Mail mit deinem Kommentar. Ich lese ihn mir durch und veröffentliche ihn dann unter dem Originalartikel.</p>
+
+<p>Du kannst nun <a href="##post_id##.html">zum vorigen Beitrag</a> zurückkehren, <a href="/index.html">die Startseite</a> besuchen oder <a href="/archiv.html">im Archiv</a> stöbern.</p>
+
+<p> </p>
+
 </main>
 
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" async></script>
 </body>
 </html>

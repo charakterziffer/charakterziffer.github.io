@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde(r),
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.​de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="referrer" content="no-referrer">
+<meta name="referrer" content="strict-origin">
 
-<title>Leeres Kommentarfeld // @cz+</title>
-<meta name="description" content="Diese Fehlerseite erscheint, wenn ein Kommentar abgeschickt werden sollte, ohne zuvor das eigentliche Kommentarfeld auszuf&uuml;llen.">
+<title>Fehler beim Kommentieren // @cz+</title>
+<meta name="description" content="Diese Fehlerseite erscheint, wenn beim Kommentieren irgendetwas nicht geklappt hat.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
 <meta name="robots" content="index, follow">
 
-<link href='https://charakterziffer.github.io/bestand/style.css' rel='stylesheet'>
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://charakterziffer.github.io/rss.xml">
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/bestand/kommentar-fehler&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
 
-<link rel="icon" href="https://charakterziffer.github.io/bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Fehler beim Kommentieren" />
+<meta property="og:description" content="Diese Fehlerseite erscheint, wenn beim Kommentieren irgendetwas nicht geklappt hat." />
+<meta property="og:url" content="https://charakterziffer.github.io/bestand/kommentar-fehler" />
+<meta property="og:type" content="article" />
 </head>
 
 <body>
 <header>
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
 </header>
 
 <main>
-<h1>Kein Kommentar …</h1>
-<p>Tut mir leid, aber haben Sie vielleicht vergessen, das eigentliche Kommentarfeld auszuf&uuml;llen? Bitte kehren Sie <a href="javascript:history.back();">zur&uuml;ck zum Formular</a> oder benutzen Sie Zur&uuml;ck-Funktion Ihres Browsers, um einen Kommentar zu erg&auml;nzen.</p>
-<p>Falls es zum wiederholten Mal nicht klappt und Sie einen Fehler vermuten, schreiben Sie mir bitte eine E-Mail an <i>postfach2b [ät] web.​de</i>. Dann gehe ich der Sache nach.</p>
+<link href="style.css" rel="stylesheet" />
+
+<h1 id="das-hat-nicht-geklappt">Das hat nicht geklappt</h1>
+
+<p>Tut mir leid, aber beim Kommentieren ist irgendetwas schiefgelaufen. Wolltest du innerhalb einer Minute zweimal zu kommentieren? Bitte warte ein bisschen, das dient dem Schutz vor einer Kommentarflut. Hast du vielleicht vergessen, das eigentliche Kommentarfeld auszufüllen? Eventuell liegt auch ein anderer technischer Fehler vor.</p>
+
+<p>Bitte kehre <a href="javascript:history.back();">zurück zum Formular</a> oder benutze die Zurück-Funktion deines Browsers, um es nochmal zu versuchen. Falls es zum wiederholten Mal nicht klappt und du einen Fehler vermutest, schreib mir bitte eine E-Mail an <em>postfach2b [ät] web.​de</em>. Dann gehe ich der Sache nach.</p>
+
+<p> </p>
+
 </main>
 
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" async></script>
 </body>
 </html>
