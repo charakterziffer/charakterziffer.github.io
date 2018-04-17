@@ -131,20 +131,17 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <h2 id="kommentieren">Artikel kommentieren</h2>
 <p>Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
 
-<form name="kommentarformular" id="kommentarformular" action="http://www.formular-chef.de/fc.cgi"
-method="post" enctype="multipart/form-data">
-<input type="hidden" name="empfaenger" value="postfach2b@web.de"/>
-<input type="hidden" name="pflicht" value="comment">
-<input type="hidden" name="fehler_template" value="https://charakterziffer.github.io/bestand/kommentar-fehler.html">
-<input type="hidden" name="email_template" value="https://charakterziffer.github.io/bestand/kommentar-mail.txt">
-<input type="hidden" name="antwortseite_template"
-value="https://charakterziffer.github.io/bestand/kommentar-danke.html">
-
+<form name="kommentarformular" id="kommentarformular" method="post" accept-charset="UTF-8" action="http://www.onlex.de/_formmailer.php?username=charakterziffer" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="post_id" value="/erfundene-fakten-7">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+	<script>document.getElementById('aktuelles-datum').value = new Date().toLocaleString().substr(0, 14)+'██ Uhr';</script>
+<input type="hidden" name="nummer" value="█">
+
 <div>
 	<label for="name">Name</label>
-	<div><input name="name" id="name" type="text" size="25" autocorrect="off">
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
 	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
 </div>
 <div>
 	<label for="mail">E-Mail</label>
@@ -153,12 +150,13 @@ value="https://charakterziffer.github.io/bestand/kommentar-danke.html">
 </div>
 <div>
 	<label for="link">Website</label>
-	<div><input name="link" id="link" type="url" size="25" autocorrect="off"></div>
+	<div><input name="link" id="link" type="text" size="25" autocorrect="off" ></div>
 </div>
 <div>
 	<label for="comment">Kommentar*</label><br>
 	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
 </div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Webadresse evtl. um http:// ergänzen. Mehrzeilige Kommentare in 'Apostrophe' einschließen.">
 <div><input name="submit" id="submit" type="submit" value="Abschicken"></div>
 </form>
 

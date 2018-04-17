@@ -70,8 +70,6 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 @media (min-width: 71.5em) { aside { position: absolute; top: .4em;
 	left: 48em; right: 1.5em; max-width: 24em; } }
 
-/* Werbediv von Formular-Chef verstecken */
-div[style*='font-family:arial;'] { left: -9999px; }
 /* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
 .onlex_counter { display: none; }
 
