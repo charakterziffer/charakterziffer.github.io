@@ -131,11 +131,10 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <h2 id="kommentieren">Artikel kommentieren</h2>
 <p>Kommentare werden überprüft, bevor sie veröffentlicht werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
 
-<form name="kommentarformular" id="kommentarformular" method="post" accept-charset="UTF-8" action="https://www.onlex.de/_formmailer.php?username=charakterziffer" enctype="application/x-www-form-urlencoded" onsubmit="javascript:var l = document.getElementById('link').value; if ( (l!='') && !(l.match(/^https?:\/\//g)) ) { document.getElementById('link').value = 'http://' + l;}">
-	<!-- Beim Abschicken: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. Das Feld link hat den type „text“ statt „url“, damit der Nutzer keine Fehlermeldung bekommt, wenn er das http:// vergisst. -->
+<form name="kommentarformular" id="kommentarformular" method="post" accept-charset="UTF-8" action="https://www.onlex.de/_formmailer.php?username=charakterziffer" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="post_id" value="/fuchs-7">
 <input type="hidden" name="date" id="aktuelles-datum" value="">
-	<script>document.getElementById('aktuelles-datum').value = new Date().toLocaleString().substr(0, 14)+'██ Uhr';</script>
+	<script>document.getElementById('aktuelles-datum').value = new Date().toLocaleString()+'██ Uhr';</script>
 <input type="hidden" name="nummer" value="█">
 
 <div>
@@ -151,7 +150,8 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 </div>
 <div>
 	<label for="link">Website</label>
-	<div><input name="link" id="link" type="text" size="25" autocorrect="off"></div>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
 </div>
 <div>
 	<label for="comment">Kommentar*</label><br>
