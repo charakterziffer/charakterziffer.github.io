@@ -75,7 +75,7 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
-	font: bold 1em/1 czSlab,Georgia,serif; }
+	font: bold 1em/1 czSlab,Georgia,serif; color: #333; }
 h1, h2, h3 { font-feature-settings: 'onum' 0, 'liga', 'kern'; }
 b, strong, p a, figcaption a, form label {
 	padding: 0 .06em; font-size: .95em;
@@ -92,11 +92,11 @@ time { padding-right: 1.2% }
 /* ÜBERSCHRIFTEN */
 
 h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */;
-	margin: 1.5em 0 .5em -.04em; color: #333; }
+	margin: 1.5em 0 .5em -.04em; }
 h2 { font-size: 1.4em; line-height: 1.071 /* 1.5÷1.4 */;
-	margin: 1.25em 0 -.179em -.02em; color: #333; }
+	margin: 1.25em 0 -.179em -.02em; }
 h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
-	margin: 1.2em 0 -.518em -.01em; color: #222; }
+	margin: 1.2em 0 -.518em -.01em; }
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
@@ -107,8 +107,7 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
 .no-hyphens { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
 
-b, strong, i, em { color: #000; }
-i, em { font-style: italic; }
+i, em { font-style: italic; color: #000; }
 sup, sub { line-height: 0; letter-spacing: .05em;
 	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
