@@ -3,8 +3,8 @@
 /* Farben: #281[+#270] (grün), #3a1 (hellgrün), #deb (blassgrün)
 	Akzente: #839 (lila), #e32 (rot), #fdb (blassrot)
 	Grautöne: #666 (Datum) #ccc (hr), #eee (figure),
-	#f4f4f4 (blockquote + code), hsla(0,0%,94%,.7) (aside)
-	Text: #222 (fett/kursiv #111), #222 und #333 (Titel) */
+		hsla(0,0%,94%,.7) (aside, blockquote, code)
+	Text: #222 (fett/kursiv #000), #333 (Titel h1 & h2) */
 
 /* Schriften: Source Sans Pro Regular & Italic, czSlab */
 @font-face { font-family: 'Source Sans Pro';
@@ -107,7 +107,7 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
 .no-hyphens { -webkit-hyphens:none; -ms-hyphens:none; hyphens:none; }
 
-b, strong, i, em { color: #111; }
+b, strong, i, em { color: #000; }
 i, em { font-style: italic; }
 sup, sub { line-height: 0; letter-spacing: .05em;
 	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
@@ -135,13 +135,14 @@ ul ul { list-style: circle; }
 ol ol { list-style: lower-alpha; }
 li p { margin: .75em 0; }
 
-code, pre { margin: 1.5em 0 1.167em; padding: .05em .2em;
-	background-color:#f4f4f4; border-radius: .1em;
+pre, code { margin: 1.5em 0 1.167em; padding: .05em .2em;
+	border-radius: .1em; background-color: hsla(0,0%,94%,.7);
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
-pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap; }
+pre > code { font-size: 1em; line-height: 1.667; white-space:pre-wrap;
+	background-color: transparent;}
 
 blockquote { margin: 1.35em 0 1.4em; padding: 0 .4em;
-	border-left: .75em solid #deb; background-color: #f4f4f4; }
+	border-left: .75em solid #deb; background-color: hsla(0,0%,94%,.7); }
 blockquote + blockquote { margin-top: 1.75em; }
 blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 @media (max-width: 35em) {
@@ -196,7 +197,7 @@ p > img { margin: .6em 0 .25em; } /* Extra-Abstand */
 figure { margin: 1.65em 0 1.45em; background-color: #eee; }
 figure img { max-width: 100%; }
 figcaption { padding: .4em .6em .3em; font-style: italic;
-	font-size: .9em; line-height: 1.667; color: #111;}
+	font-size: .9em; line-height: 1.667; color: #000;}
 
 .icon-rss:after, .icon-ccbysa:after { margin: 0 .15em 0 .4em;
 	padding: 0; vertical-align: -.15em; display: inline-block; }
@@ -241,7 +242,7 @@ aside,figure,blockquote,.hinterlegt,.klappkasten,pre,code,a[download] {
 pre > code { border: 0; }
 
 h1, h2, h3, time {
-	page-break-after: avoid; page-break-inside: avoid; color: #111; }
+	page-break-after: avoid; page-break-inside: avoid; color: #222; }
 header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
 	blockquote, a:link, a:visited { color: #000; }
 
