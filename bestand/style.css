@@ -4,7 +4,7 @@
 	Akzente: #839 (lila), #e32 (rot), #fdb (blassrot)
 	Grautöne: #666 (Datum) #ccc (hr), #eee (figure),
 		hsla(0,0%,94%,.7) (aside, blockquote, code)
-	Text: #222 (fett/kursiv #000), #333 (Titel h1 & h2) */
+	Text: #222 (kursiv #000), #333 (Titel h1 & h2) */
 
 /* Schriften: Source Sans Pro Regular & Italic, czSlab */
 @font-face { font-family: 'Source Sans Pro';
@@ -147,8 +147,8 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 @media (max-width: 35em) {
 	blockquote { padding-left: .35em; border-width: .4em; } }
 
-.hinterlegt, .klappkasten { position: relative; margin: 1.1em 0 -.25em;
-	padding: .25em .4em .4em; background-color: #deb; }
+.hinterlegt, .klappkasten { position: relative; margin: 1.2em 0 -.15em;
+	padding: .15em .4em .3em; background-color: #deb; }
 .hinterlegt { /* für Inline-Elemente wie h3, a oder span */
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .hinterlegt p { margin: 0; }
