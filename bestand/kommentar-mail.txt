@@ -1,0 +1,11 @@
+post_id: ##post_id##
+date: ##DATUM##, ##UHRZEIT## Uhr
+nummer: [NR]
+
+name: '##name##'
+mail: '##mail##'
+link: '##link##'
+
+comment: '##comment##'
+
+---
