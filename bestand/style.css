@@ -37,7 +37,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
 	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
 	linear-gradient(90deg, transparent 51rem, #deb 80%, #3a1 100%); }
-@media (max-width: 35em) {
+@media (max-width: 45em) {
 	body { padding: 1.4em 2% 2.1em 3%; line-height: 1.4; } }
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
@@ -61,8 +61,8 @@ nav li a { padding: .25em .4em .2em; }
 nav a:hover, nav a:focus { background-color: #deb; }
 
 @media (min-width: 71.5em) { nav { display: none; } }
-@media (max-width: 35em) { nav { width: 11em; } }
-@media (max-width: 26em) { nav { width: 100%; text-align: left;
+@media (max-width: 45em) { nav { width: 13em; } }
+@media (max-width: 32em) { nav { width: 100%; text-align: left;
 	float: none; position: inherit; margin: .75em 0 -.9em -.25em; } }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
@@ -120,7 +120,7 @@ kbd { font-size: .8em; display: inline-block; position: relative;
 time { display: block; float: right; padding-left: 1em; color: #666; }
 #kommentare time:first-of-type { margin-top: 1.2em; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
-@media (max-width: 35em) { time { margin-top: -1.6em; }
+@media (max-width: 32em) { time { margin-top: -1.6em; }
 	#kommentare time { margin-top: 0; } }
 
 hr { margin: 1.9em 0 1.23em; color: #ccc; }
@@ -144,7 +144,7 @@ blockquote { margin: 1.35em 0 1.4em; padding: 0 .4em;
 	border-left: .75em solid #deb; background-color: hsla(0,0%,94%,.7); }
 blockquote + blockquote { margin-top: 1.75em; }
 blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
-@media (max-width: 35em) {
+@media (max-width: 32em) {
 	blockquote { padding-left: .35em; border-width: .4em; } }
 
 .hinterlegt, .klappkasten { position: relative; margin: 1.2em 0 -.15em;
@@ -223,7 +223,7 @@ form input[type=text], form input[type=email], form input[type=url] {
 	width: 50%; }
 input[type='submit'] { -webkit-appearance: button; }
 
-@media (max-width: 35em) {
+@media (max-width: 32em) {
 	form label { float: none; top: 0; width: 100%; }
 	form > div > div { float: none; width: 98.5%; }
 	form input[type=text],form input[type=email],form input[type=url] { width: 100%; } }
