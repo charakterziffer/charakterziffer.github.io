@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde(r),
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.​de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<title>Mauszeiger selbstgemacht // @cz+</title>
+<meta name="description" content="Weil mir bestimmte Cursors fehlten, habe ich mein eigenes Mauszeiger-Set „cz-Viator“ gestaltet – hier zum kostenlosen Download.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.​de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/mauszeiger.html&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Mauszeiger selbstgemacht" />
+<meta property="og:description" content="Weil mir bestimmte Cursors fehlten, habe ich mein eigenes Mauszeiger-Set „cz-Viator“ gestaltet – hier zum kostenlosen Download." />
+<meta property="og:url" content="https://charakterziffer.github.io/mauszeiger.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum/Datenschutz</a></li>
+</ul></nav>
+</header>
+
+<main>
+<article>
+<time datetime="2018-05-16">Mi, 16. Mai 2018</time>
+<h1>Mauszeiger selbstgemacht</h1>
+<p>Der Mauszeiger verrät nicht nur, wo sich die Maus gerade auf dem Bildschirm befindet. Er verändert sich auch und zeigt an, ob man sich über einem Text befindet, ein Fenster vergrößern kann, ein Objekt verschiebt und vieles mehr. Hier einige Beispiele (Maus über die Felder bewegen):</p>
+
+<style>
+<!--
+.cursor-demo { padding: .75em 1em; display: grid;
+	grid-gap: 1em; grid-auto-rows: minmax(4.5em, auto);
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.cursor-demo > div { color: #666; background: #fff; display: flex;
+	justify-content: center; align-items: center; margin: 0;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.3); }
+
+@supports not (display: grid) {
+	.cursor-demo { display: flex; flex-wrap: wrap; }
+	.cursor-demo > div { flex: 1 1 9em; height: 4.5em; margin: .5em; } }
+@media (max-width: 49.6em) { .prio-3.prio-3 { display:none; } }
+@media (max-width: 25.2em) { .prio-2.prio-2 { display:none; } }
+
+.bildpaar { display: flex; flex-wrap: wrap; }
+.bildpaar > img { flex: 1 1 17em; } }
+-->
+</style>
+
+<figure class="cursor-demo">
+	<div style="cursor:help">help</div>
+	<div style="cursor:wait">wait</div>
+	<div style="cursor:not-allowed" class="prio-2">not-allowed</div>
+	<div style="cursor:zoom-in">zoom-in</div>
+	<div style="cursor:pointer">pointer</div>
+	<div style="cursor:nesw-resize" class="prio-3">nesw-resize</div>
+	<div style="cursor:progress" class="prio-3">progress</div>
+	<div style="cursor:move" class="prio-2">move</div>
+</figure>
+
+<p>Vor einer Weile habe ich bemerkt, dass einige Mauszeiger in meinem Standard-Set fehlen. Daraufhin habe ich mein eigenes Mauszeiger-Set gezeichnet:</p>
+
+<figure class="bildpaar">
+	<img src="material/cz-viator_white-1.svg" />
+	<img src="material/cz-viator_white-2.svg" />
+	<figcaption>Alle Mauszeiger meines Sets „cz-viator“. Die 15 eingerahmten Cursors sind auch für Windows verfügbar.</figcaption>
+</figure>
+
+<p>Ich habe es cz-Viator genannt, lateinisch für „Reisender“. Und weil ich schon dabei war, habe ich noch eine schwarze Variante angefertigt und unterschiedliche <em>Spinner</em> ausprobiert – die sich drehenden Teile, die eine (Hintergrund-)Aktivität signalisieren.</p>
+
+<figure class="bildpaar">
+	<img src="material/cz-viator_black.svg" />
+	<img src="material/cz-viator_spinner.gif" />
+	<figcaption>Einige Beispiel-Cursors aus der schwarzen Variante „cz-Viator (Black)“. Dazu vier animierte Cursor-Varianten, die optional verwendet werden können.</figcaption>
+</figure>
+
+<h2 id="meine-mauszeiger-verwenden">Meine Mauszeiger verwenden</h2>
+
+<p>Ursprünglich habe ich cz-Viator für mein Ubuntu-Betriebssystem erstellt. Da es aber auch für Windows-Nutzer interessant sein könnte, habe ich es dafür umgewandelt (wobei sich in Windows nur 15 der 60 Cursor nutzen lassen).</p>
+
+<p><a href="material/cz-viator.zip" download="" style="margin: 1.038em 5%; float:left;">
+	cz-Viator (weiß)<br /><i>für Linux</i>
+	<svg width=".98em" height=".87em" viewBox="0 0 98 87" preserveAspectRatio="xMinYMin meet"><g id="penguin" fill="#fff"><path d="M74.2 38.8c7.2 3 14.3 7 19.8 12.6 1.7 1.8 4.3 4.5 3.8 7-.6 3-6 3-10 3-4.5 0-8.3-.4-12-.8l.6 11.4c.3 5.2 2 11.6-2.4 13.6-2.9 1.3-9 .6-13 .6H34.2c-6.5 0-14.4 1-15.8-4-.7-2.6.4-7.6.6-10.6.3-3.4.4-6.8.8-10.8-6 0-15.6 2.9-19.8-.8 0-3 1.6-5.5 3.2-7.4a57.6 57.6 0 0 1 18.2-13L23 18.8c.4-5.2.7-8.7 3.4-11.6A23 23 0 0 1 35.2 2c11-3.9 27.2-2.1 34.2 5 2.7 2.8 3.3 6.1 3.6 11.6l1.2 20.2zM26.6 15.4c-.8 2.1-.4 5-.6 7.6-1 14.8-2.3 32-3 46.6-.1 3.2-.5 6.1.4 7.6 1.6 2.8 6 2.2 10.6 2.2h25.8c4.2 0 9.8.5 11.6-1.4 2-2.1.9-9.8.6-15.8l-1.8-39.8c-.1-2.6.2-5.5-.8-7.6-2.2-4.6-9.3-6.1-13.2-2.6-1.6 1.5-1.7 3.4-3 5-.9 1.2-1.9 3-5.2 2.8-5.6-.1-5.3-6.2-9-8.6-1.3-.8-4-1.3-6-1a8 8 0 0 0-6.4 5z"></path><path d="M35.2 28.4c4.1-1.1 4.4 4.8 1.4 5.2-3 .5-4.9-4.2-1.4-5.2zm25 0c4.3-1.3 4.5 4.8 1.4 5.2-1.4.3-3.6-.3-3.2-3.2 0-.7.5-1.5 1.8-2zm-15 9.6c4-.3 8.3 0 11.8 1.4 2 .9 4.4 2 4.4 4 0 4.3-8.7 5.8-13.4 5.8-4 0-13.2-1.3-13.4-5.6 0-2.2 2.2-3.4 4-4.2 2.2-.9 3.8-1.1 6.6-1.4z"></path></g></svg></a>
+<a href="material/cz-viator-black.zip" download="" style="margin: 1.038em 5%;">
+	cz-Viator (schwarz)<br /><i>für Linux</i>
+	<svg width=".98em" height=".87em" viewBox="0 0 98 87" preserveAspectRatio="xMinYMin meet"><g id="penguin2"><path d="M74.2 38.8c7.2 3 14.3 7 19.8 12.6 1.7 1.8 4.3 4.5 3.8 7-.6 3-6 3-10 3-4.5 0-8.3-.4-12-.8l.6 11.4c.3 5.2 2 11.6-2.4 13.6-2.9 1.3-9 .6-13 .6H34.2c-6.5 0-14.4 1-15.8-4-.7-2.6.4-7.6.6-10.6.3-3.4.4-6.8.8-10.8-6 0-15.6 2.9-19.8-.8 0-3 1.6-5.5 3.2-7.4a57.6 57.6 0 0 1 18.2-13L23 18.8c.4-5.2.7-8.7 3.4-11.6A23 23 0 0 1 35.2 2c11-3.9 27.2-2.1 34.2 5 2.7 2.8 3.3 6.1 3.6 11.6l1.2 20.2zM26.6 15.4c-.8 2.1-.4 5-.6 7.6-1 14.8-2.3 32-3 46.6-.1 3.2-.5 6.1.4 7.6 1.6 2.8 6 2.2 10.6 2.2h25.8c4.2 0 9.8.5 11.6-1.4 2-2.1.9-9.8.6-15.8l-1.8-39.8c-.1-2.6.2-5.5-.8-7.6-2.2-4.6-9.3-6.1-13.2-2.6-1.6 1.5-1.7 3.4-3 5-.9 1.2-1.9 3-5.2 2.8-5.6-.1-5.3-6.2-9-8.6-1.3-.8-4-1.3-6-1a8 8 0 0 0-6.4 5z"></path><path d="M35.2 28.4c4.1-1.1 4.4 4.8 1.4 5.2-3 .5-4.9-4.2-1.4-5.2zm25 0c4.3-1.3 4.5 4.8 1.4 5.2-1.4.3-3.6-.3-3.2-3.2 0-.7.5-1.5 1.8-2zm-15 9.6c4-.3 8.3 0 11.8 1.4 2 .9 4.4 2 4.4 4 0 4.3-8.7 5.8-13.4 5.8-4 0-13.2-1.3-13.4-5.6 0-2.2 2.2-3.4 4-4.2 2.2-.9 3.8-1.1 6.6-1.4z"></path></g></svg></a>
+<a href="material/cz-viator-WIN.zip" download="" style="margin: 1.038em 5%; float:left;">
+	cz-Viator (weiß)<br /><i>für Windows</i>
+	<svg width=".95em" height=".8em" viewBox="-5 0 24 24" preserveAspectRatio="xMinYMin meet"><path fill="#fff" d="M0 3.4l9.8-1.3v9.5H0m11-9.7L24 0v11.4H11M0 12.6h9.8v9.5L0 20.7m11-8.1h13V24l-12.9-1.8"></path></svg></a>
+<a href="material/cz-viator-black-WIN.zip" download="" style="margin: 1.038em 5%;">
+	cz-Viator (schwarz)<br /><i>für Windows</i>
+	<svg width=".95em" height=".8em" viewBox="-5 0 24 24" preserveAspectRatio="xMinYMin meet"><path d="M0 3.4l9.8-1.3v9.5H0m11-9.7L24 0v11.4H11M0 12.6h9.8v9.5L0 20.7m11-8.1h13V24l-12.9-1.8"></path></svg></a></p>
+
+<p>Auf Linux-Computern entpackt man den heruntergeladenen zip-Ordner und verschiebt ihn in den Ordner <em>.icons</em> im eigenen home-Verzeichnis. Je nach Linux-Variante kann man danach das Mauszeiger-Set über ein Tweak Tool oder in den Systemeinstellungen auswählen.</p>
+
+<p>Für Windows ebenfalls den zip-Ordner entpacken. Darin liegt eine Datei <em>INSTALL.inf</em>. Diese mit rechts anklicken und <em>Installieren</em> auswählen. Jetzt auf dem Desktop rechtsklicken, <em>Anpassen</em> wählen. Im neuen Fenster <em>Designs</em> und <em>Mauszeiger</em> auswählen. In der Liste unter <em>Schema</em> steht <em>cz-Viator</em> nun zur Auswahl.</p>
+
+<p>Genauer beschreibe ich die Installation auf englisch unter <a href="https://github.com/charakterziffer/cursor-toolbox#install">https://github.com/charakterziffer/cursor-toolbox#install</a>.</p>
+
+<h2 id="motivierende-lücke">Motivierende Lücke</h2>
+
+<p>Was mich motiviert hat, ein eigenes Cursor-Set zu gestalten? Mir war aufgefallen, dass mein Firefox-Browser keine Zoom-Lupe mehr anzeigt. Sonst verwandelte sich der Mauszeiger über Bildern, die man vergrößern kann, immer in ein Lupensymbol; jetzt blieb es bei einem normalen Pfeil. Der Grund war, dass im Firefox ein Fehler behoben wurde, nämlich dass statt eines Fallback-Cursors der entsprechende eigene Cursor gezeigt wird (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1328724">Bug 1328724</a>). Problem: Das verwendete Mauszeiger-Set <em>DMZ White</em> hatte gar keinen Zoom-Cursor.</p>
+
+<p>Meine erste Idee war, nach einem Update der Mauszeiger zu suchen. Das von mir verwendete <em>DMZ White</em> ist schließlich das Standard-Cursor-Set im doch recht verbreiteten Ubuntu Linux; außerdem ist es in vielen weiteren Linux-Varianten vorinstalliert. Eine Quelle, die noch gepflegt wird, konnte ich allerdings nicht finden.</p>
+
+<p>Als zweites habe ich <em>jimmac</em>, den Entwickler von <em>DMZ</em>, über Twitter angeschrieben, ob er sein Mauszeiger-Set nicht ergänzen möchte – leider ohne Antwort. Nach ein bisschen Suchen fand ich <a href="https://github.com/linuxmint/Cinnamon/pull/5859#issuecomment-257363722">einen alten Kommentar von ihm</a>, dass sein Cursor-Set nicht mehr aktualisiert werden würde. Er scheint nun lieber an<a href="https://github.com/GNOME/adwaita-icon-theme">Adwaita</a> zu arbeiten, die Standard-Icons von Gnome-Linux. Leider sind diese Cursor schwarz und gefallen mir nicht 100%ig.</p>
+
+<p>Da half nur eines: Selbermachen. Habe mir also die <a href="https://web.archive.org/web/20131022195536/http://jimmac.musichall.cz/themes.php?skin=7">Originalquellen</a> der DMZ-Mauszeiger und vergleichbare neuere Sets gesucht, aber statt nur die fehlenden Zeiger zu ergänzen dann doch gleich alles neu gezeichnet.</p>
+
+<p>Damit mein Set leicht angepasst oder verändert werden kann, habe ich es als Open Source mit der Linzenz GPLv3 veröffentlicht. Die Quelldateien finden sich unter <a href="https://github.com/charakterziffer/cursor-toolbox">https://github.com/charakterziffer/cursor-toolbox</a>. Damit lassen sich auch die anderen Spinner-Cursors erstellen.</p>
+
+<p style="font-size:0.75em;margin-top:3em"><a href="https://thenounproject.com/jsczcy/uploads/?i=23795">Pinguin</a> (im Download-Feld) CC-BY von Yi Chen (thenounproject.com), <a href="https://simpleicons.org/?q=windows">Windows-Logo</a> CC0 von simpleicons.org</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
+
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+</p>
+</article>
+
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Kommentare werden überprüft, bevor sie freigeschaltet werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/mauszeiger">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar*</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </p><p> ergänzen.">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="fuchs-8.html">← Die Blöße der Unwissenheit</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum/Datenschutz</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.​de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" async></script>
+</body>
+</html>

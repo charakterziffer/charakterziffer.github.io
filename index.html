@@ -65,6 +65,99 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2018-05-16">Mi, 16. Mai 2018</time>
+	<h1><a href="mauszeiger.html">Mauszeiger selbstgemacht</a></h1>
+	<p>Der Mauszeiger verrät nicht nur, wo sich die Maus gerade auf dem Bildschirm befindet. Er verändert sich auch und zeigt an, ob man sich über einem Text befindet, ein Fenster vergrößern kann, ein Objekt verschiebt und vieles mehr. Hier einige Beispiele (Maus über die Felder bewegen):</p>
+
+<style>
+<!--
+.cursor-demo { padding: .75em 1em; display: grid;
+	grid-gap: 1em; grid-auto-rows: minmax(4.5em, auto);
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.cursor-demo > div { color: #666; background: #fff; display: flex;
+	justify-content: center; align-items: center; margin: 0;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.3); }
+
+@supports not (display: grid) {
+	.cursor-demo { display: flex; flex-wrap: wrap; }
+	.cursor-demo > div { flex: 1 1 9em; height: 4.5em; margin: .5em; } }
+@media (max-width: 49.6em) { .prio-3.prio-3 { display:none; } }
+@media (max-width: 25.2em) { .prio-2.prio-2 { display:none; } }
+
+.bildpaar { display: flex; flex-wrap: wrap; }
+.bildpaar > img { flex: 1 1 17em; } }
+-->
+</style>
+
+<figure class="cursor-demo">
+	<div style="cursor:help">help</div>
+	<div style="cursor:wait">wait</div>
+	<div style="cursor:not-allowed" class="prio-2">not-allowed</div>
+	<div style="cursor:zoom-in">zoom-in</div>
+	<div style="cursor:pointer">pointer</div>
+	<div style="cursor:nesw-resize" class="prio-3">nesw-resize</div>
+	<div style="cursor:progress" class="prio-3">progress</div>
+	<div style="cursor:move" class="prio-2">move</div>
+</figure>
+
+<p>Vor einer Weile habe ich bemerkt, dass einige Mauszeiger in meinem Standard-Set fehlen. Daraufhin habe ich mein eigenes Mauszeiger-Set gezeichnet:</p>
+
+<figure class="bildpaar">
+	<img src="material/cz-viator_white-1.svg" />
+	<img src="material/cz-viator_white-2.svg" />
+	<figcaption>Alle Mauszeiger meines Sets „cz-viator“. Die 15 eingerahmten Cursors sind auch für Windows verfügbar.</figcaption>
+</figure>
+
+<p>Ich habe es cz-Viator genannt, lateinisch für „Reisender“. Und weil ich schon dabei war, habe ich noch eine schwarze Variante angefertigt und unterschiedliche <em>Spinner</em> ausprobiert – die sich drehenden Teile, die eine (Hintergrund-)Aktivität signalisieren.</p>
+
+<figure class="bildpaar">
+	<img src="material/cz-viator_black.svg" />
+	<img src="material/cz-viator_spinner.gif" />
+	<figcaption>Einige Beispiel-Cursors aus der schwarzen Variante „cz-Viator (Black)“. Dazu vier animierte Cursor-Varianten, die optional verwendet werden können.</figcaption>
+</figure>
+
+<h2 id="meine-mauszeiger-verwenden">Meine Mauszeiger verwenden</h2>
+
+<p>Ursprünglich habe ich cz-Viator für mein Ubuntu-Betriebssystem erstellt. Da es aber auch für Windows-Nutzer interessant sein könnte, habe ich es dafür umgewandelt (wobei sich in Windows nur 15 der 60 Cursor nutzen lassen).</p>
+
+<p><a href="material/cz-viator.zip" download="" style="margin: 1.038em 5%; float:left;">
+	cz-Viator (weiß)<br /><i>für Linux</i>
+	<svg width=".98em" height=".87em" viewBox="0 0 98 87" preserveAspectRatio="xMinYMin meet"><g id="penguin" fill="#fff"><path d="M74.2 38.8c7.2 3 14.3 7 19.8 12.6 1.7 1.8 4.3 4.5 3.8 7-.6 3-6 3-10 3-4.5 0-8.3-.4-12-.8l.6 11.4c.3 5.2 2 11.6-2.4 13.6-2.9 1.3-9 .6-13 .6H34.2c-6.5 0-14.4 1-15.8-4-.7-2.6.4-7.6.6-10.6.3-3.4.4-6.8.8-10.8-6 0-15.6 2.9-19.8-.8 0-3 1.6-5.5 3.2-7.4a57.6 57.6 0 0 1 18.2-13L23 18.8c.4-5.2.7-8.7 3.4-11.6A23 23 0 0 1 35.2 2c11-3.9 27.2-2.1 34.2 5 2.7 2.8 3.3 6.1 3.6 11.6l1.2 20.2zM26.6 15.4c-.8 2.1-.4 5-.6 7.6-1 14.8-2.3 32-3 46.6-.1 3.2-.5 6.1.4 7.6 1.6 2.8 6 2.2 10.6 2.2h25.8c4.2 0 9.8.5 11.6-1.4 2-2.1.9-9.8.6-15.8l-1.8-39.8c-.1-2.6.2-5.5-.8-7.6-2.2-4.6-9.3-6.1-13.2-2.6-1.6 1.5-1.7 3.4-3 5-.9 1.2-1.9 3-5.2 2.8-5.6-.1-5.3-6.2-9-8.6-1.3-.8-4-1.3-6-1a8 8 0 0 0-6.4 5z"></path><path d="M35.2 28.4c4.1-1.1 4.4 4.8 1.4 5.2-3 .5-4.9-4.2-1.4-5.2zm25 0c4.3-1.3 4.5 4.8 1.4 5.2-1.4.3-3.6-.3-3.2-3.2 0-.7.5-1.5 1.8-2zm-15 9.6c4-.3 8.3 0 11.8 1.4 2 .9 4.4 2 4.4 4 0 4.3-8.7 5.8-13.4 5.8-4 0-13.2-1.3-13.4-5.6 0-2.2 2.2-3.4 4-4.2 2.2-.9 3.8-1.1 6.6-1.4z"></path></g></svg></a>
+<a href="material/cz-viator-black.zip" download="" style="margin: 1.038em 5%;">
+	cz-Viator (schwarz)<br /><i>für Linux</i>
+	<svg width=".98em" height=".87em" viewBox="0 0 98 87" preserveAspectRatio="xMinYMin meet"><g id="penguin2"><path d="M74.2 38.8c7.2 3 14.3 7 19.8 12.6 1.7 1.8 4.3 4.5 3.8 7-.6 3-6 3-10 3-4.5 0-8.3-.4-12-.8l.6 11.4c.3 5.2 2 11.6-2.4 13.6-2.9 1.3-9 .6-13 .6H34.2c-6.5 0-14.4 1-15.8-4-.7-2.6.4-7.6.6-10.6.3-3.4.4-6.8.8-10.8-6 0-15.6 2.9-19.8-.8 0-3 1.6-5.5 3.2-7.4a57.6 57.6 0 0 1 18.2-13L23 18.8c.4-5.2.7-8.7 3.4-11.6A23 23 0 0 1 35.2 2c11-3.9 27.2-2.1 34.2 5 2.7 2.8 3.3 6.1 3.6 11.6l1.2 20.2zM26.6 15.4c-.8 2.1-.4 5-.6 7.6-1 14.8-2.3 32-3 46.6-.1 3.2-.5 6.1.4 7.6 1.6 2.8 6 2.2 10.6 2.2h25.8c4.2 0 9.8.5 11.6-1.4 2-2.1.9-9.8.6-15.8l-1.8-39.8c-.1-2.6.2-5.5-.8-7.6-2.2-4.6-9.3-6.1-13.2-2.6-1.6 1.5-1.7 3.4-3 5-.9 1.2-1.9 3-5.2 2.8-5.6-.1-5.3-6.2-9-8.6-1.3-.8-4-1.3-6-1a8 8 0 0 0-6.4 5z"></path><path d="M35.2 28.4c4.1-1.1 4.4 4.8 1.4 5.2-3 .5-4.9-4.2-1.4-5.2zm25 0c4.3-1.3 4.5 4.8 1.4 5.2-1.4.3-3.6-.3-3.2-3.2 0-.7.5-1.5 1.8-2zm-15 9.6c4-.3 8.3 0 11.8 1.4 2 .9 4.4 2 4.4 4 0 4.3-8.7 5.8-13.4 5.8-4 0-13.2-1.3-13.4-5.6 0-2.2 2.2-3.4 4-4.2 2.2-.9 3.8-1.1 6.6-1.4z"></path></g></svg></a>
+<a href="material/cz-viator-WIN.zip" download="" style="margin: 1.038em 5%; float:left;">
+	cz-Viator (weiß)<br /><i>für Windows</i>
+	<svg width=".95em" height=".8em" viewBox="-5 0 24 24" preserveAspectRatio="xMinYMin meet"><path fill="#fff" d="M0 3.4l9.8-1.3v9.5H0m11-9.7L24 0v11.4H11M0 12.6h9.8v9.5L0 20.7m11-8.1h13V24l-12.9-1.8"></path></svg></a>
+<a href="material/cz-viator-black-WIN.zip" download="" style="margin: 1.038em 5%;">
+	cz-Viator (schwarz)<br /><i>für Windows</i>
+	<svg width=".95em" height=".8em" viewBox="-5 0 24 24" preserveAspectRatio="xMinYMin meet"><path d="M0 3.4l9.8-1.3v9.5H0m11-9.7L24 0v11.4H11M0 12.6h9.8v9.5L0 20.7m11-8.1h13V24l-12.9-1.8"></path></svg></a></p>
+
+<p>Auf Linux-Computern entpackt man den heruntergeladenen zip-Ordner und verschiebt ihn in den Ordner <em>.icons</em> im eigenen home-Verzeichnis. Je nach Linux-Variante kann man danach das Mauszeiger-Set über ein Tweak Tool oder in den Systemeinstellungen auswählen.</p>
+
+<p>Für Windows ebenfalls den zip-Ordner entpacken. Darin liegt eine Datei <em>INSTALL.inf</em>. Diese mit rechts anklicken und <em>Installieren</em> auswählen. Jetzt auf dem Desktop rechtsklicken, <em>Anpassen</em> wählen. Im neuen Fenster <em>Designs</em> und <em>Mauszeiger</em> auswählen. In der Liste unter <em>Schema</em> steht <em>cz-Viator</em> nun zur Auswahl.</p>
+
+<p>Genauer beschreibe ich die Installation auf englisch unter <a href="https://github.com/charakterziffer/cursor-toolbox#install">https://github.com/charakterziffer/cursor-toolbox#install</a>.</p>
+
+<h2 id="motivierende-lücke">Motivierende Lücke</h2>
+
+<p>Was mich motiviert hat, ein eigenes Cursor-Set zu gestalten? Mir war aufgefallen, dass mein Firefox-Browser keine Zoom-Lupe mehr anzeigt. Sonst verwandelte sich der Mauszeiger über Bildern, die man vergrößern kann, immer in ein Lupensymbol; jetzt blieb es bei einem normalen Pfeil. Der Grund war, dass im Firefox ein Fehler behoben wurde, nämlich dass statt eines Fallback-Cursors der entsprechende eigene Cursor gezeigt wird (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1328724">Bug 1328724</a>). Problem: Das verwendete Mauszeiger-Set <em>DMZ White</em> hatte gar keinen Zoom-Cursor.</p>
+
+<p>Meine erste Idee war, nach einem Update der Mauszeiger zu suchen. Das von mir verwendete <em>DMZ White</em> ist schließlich das Standard-Cursor-Set im doch recht verbreiteten Ubuntu Linux; außerdem ist es in vielen weiteren Linux-Varianten vorinstalliert. Eine Quelle, die noch gepflegt wird, konnte ich allerdings nicht finden.</p>
+
+<p>Als zweites habe ich <em>jimmac</em>, den Entwickler von <em>DMZ</em>, über Twitter angeschrieben, ob er sein Mauszeiger-Set nicht ergänzen möchte – leider ohne Antwort. Nach ein bisschen Suchen fand ich <a href="https://github.com/linuxmint/Cinnamon/pull/5859#issuecomment-257363722">einen alten Kommentar von ihm</a>, dass sein Cursor-Set nicht mehr aktualisiert werden würde. Er scheint nun lieber an<a href="https://github.com/GNOME/adwaita-icon-theme">Adwaita</a> zu arbeiten, die Standard-Icons von Gnome-Linux. Leider sind diese Cursor schwarz und gefallen mir nicht 100%ig.</p>
+
+<p>Da half nur eines: Selbermachen. Habe mir also die <a href="https://web.archive.org/web/20131022195536/http://jimmac.musichall.cz/themes.php?skin=7">Originalquellen</a> der DMZ-Mauszeiger und vergleichbare neuere Sets gesucht, aber statt nur die fehlenden Zeiger zu ergänzen dann doch gleich alles neu gezeichnet.</p>
+
+<p>Damit mein Set leicht angepasst oder verändert werden kann, habe ich es als Open Source mit der Linzenz GPLv3 veröffentlicht. Die Quelldateien finden sich unter <a href="https://github.com/charakterziffer/cursor-toolbox">https://github.com/charakterziffer/cursor-toolbox</a>. Damit lassen sich auch die anderen Spinner-Cursors erstellen.</p>
+
+<p style="font-size:0.75em;margin-top:3em"><a href="https://thenounproject.com/jsczcy/uploads/?i=23795">Pinguin</a> (im Download-Feld) CC-BY von Yi Chen (thenounproject.com), <a href="https://simpleicons.org/?q=windows">Windows-Logo</a> CC0 von simpleicons.org</p>
+
+	<p>---<br /> <a href="mauszeiger.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2018-04-23">Mo, 23. Apr. 2018</time>
 	<h1><a href="fuchs-8.html">Die Blöße der Unwissenheit</a></h1>
 	<p>Etwas nicht zu wissen kann peinlich sein, oder ein Zeichen von Schwäche. Wenn ich eine Wissenlücke geschickt umschiffe und notfalls ein bisschen bluffe, dann stehe ich immer noch gut da und erfahre manchmal sogar noch, was ich nicht wusste. Andererseits ist es ganz schön anstrengend, sich aufs Glatteis zu begeben.</p>
@@ -176,55 +269,6 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 		</p>
 </article>
 
-<article>
-	<time datetime="2018-02-21">Mi, 21. Feb. 2018</time>
-	<h1><a href="mandelprinzessin.html">Die Mandelprinzessin</a></h1>
-	<p>Es war einmal eine Prinzessin, die war schön wie eine Mandelblüte im Morgentau. Sie hatte quellblaue Augen und einen für ihr zartes Alter viel zu sinnlichen Mund. Reihenweise liefen ihr die Männer hinterher und sicherlich hätte sie sich zur Freude ihres Vaters schon bald fest gebunden, hätte sie nicht einen erschreckenden Makel: Ihr Lachen.</p>
-
-<p>Die Prinzessin war eine so zarte Dame, dass ihr jeder Bewerber allerhöchstens ein sektperlendes Kichern zugetraut hätte, wenn er ihr eine Vergnüglichkeit ins Ohr flüsterte. Dem aber war nicht so, ganz im Gegenteil. Deshalb versuchte die Prinzessin bei den verspielten Flirts stets eine hartnäckige Melancholie zu kultivieren, was ihr bei den intelligenten und reizenden Männern jedoch nicht für lange Zeit gelang. So brach es nach spätestens fünf Minuten in einem espritgeladenen Gespräch aus ihr heraus, das Lachen.</p>
-
-<p>Und nicht das du denkst, unsere Prinzessin würde einfach nur laut aufkreischen, nein. Viel schlimmer: Ihre sonst liebliche Stimme klirrte spröde durch sämtliche Dissonanzen der abendländischen Tonleitern, steigerte sich in bedrohliche Lautstärken, die selbst einer verfluchten Furie die Mitleidstränen in die Augen getrieben hätten. Gar schrecklich schwangen sich die erheiterten Laute der Prinzessin zu einer schrägen Arie eines ganzen verdammt verstimmten Sinfonieorchesters.</p>
-
-<p>Als wäre das nicht genug gewesen! Zudem aber verzog das grauenhafte Lachen der schönen Prinzessin dermaßen das Gesicht, dass es einer ägyptischen Mumie gleich kam. Der Mund riss auf wie in Höllenqualen, die Augen stachen hervor, die Wangen legten sich in verschrumpelte Falten und das Gebiss schien einem Werwolf gleich nach Blut geifernd.</p>
-
-<p>Doch in dem Moment, als dem gegenübersitzenden Jüngling aufgrund der hässlichen Fratze der Schock in sämtliche Glieder gefahren war, war es schon wieder vorbei und die herzensgute Prinzessin legte beschämt und zum Zerfließen traurig die Hände in den Schoß, beugte den Kopf und wartete leise schluchzend, bis der zitternde Junker verstohlen den Raum verließ. Dann weinte die Prinzessin hauchzart und leise, und ihr Schluchzen mochte einem Unwissenden wie der heilige Gesang der himmlischen Heerscharen am Weihnachtstag dünken.</p>
-
-<p>So klang es nun oft aus dem hinteren Bogenfenster an der Westmauer: Erst schrecklich kreischend und trommelfellspaltend, danach harfensanft und lauschig weich. Und mit der Zeit klang es nur noch lauschig sanft und unendlich betrübt, denn die Kunde von der lachenden Prinzessin verbreitete sich weit über die Landesgrenzen hinaus und verschreckte jeden potenziellen Freier.</p>
-
-<p>Eines Tages hielt es die Prinzessin nicht mehr aus und kletterte engelsgleich heulend auf den schmalen Sims ihres Fensters. Gut siebzehn Meter ging es da nach unten, in einen dornigen Burggraben, in dem Glasbruch und spitze Granitsplitter einem feindlich gesinnten Heer eine unüberwindliche Grenze boten. Gerade als die mandelfeine Prinzessin ihrem lächerlichen Leben ein Ende setzen wollte, kam eine pechschwarze Krähe vorbeigeflogen und setzte sich auf den nahen Buchenbaum. »Prinzessinnen können nicht fliegen«, krächzte der Unglücksvogel.</p>
-
-<p>»Lieber guter Vogel, das weiß ich. Ich will mich auch gar nicht in die Lüfte erheben wie du, mit deinen glänzenden Federn. Ich will fallen.«</p>
-
-<p>»Fallen willst du? Da hinunter? Du bist eine Prinzessin und wirst dir sämtliche Knochen brechen.«</p>
-
-<p>»Ich hoffe es«, antwortete die Schöne und eine diamantene Träne suchte sich den Weg aus ihrem Augenwinkel die Wange hinab, sich am Jochbein aus dem Gesicht lösend und stürzte hinunter um unten in einer Distelblüte zu zerschellen. Die Prinzessin sah ihre Träne sterben und begann der Krähe leise ihr Leid zu klagen.</p>
-
-<p>Die Krähe hörte aufmerksam zu und antwortete: »Das ist leicht. Höre, denn auch ich habe eine gar furchtbare Stimme und kenne deine Sorge. Steig wieder hinein in dein Zimmer und warte sieben Tage, ich werde versuchen dir zu helfen. Wenn du nach Ablauf dieser Frist nicht der glücklichste Mensch dieser Erde sein solltest, dann darfst du dich gerne in den Burggraben stürzen.«</p>
-
-<p>So verabschiedete die Prinzessin den schwarzen Vogel und verbrachte die kommende Woche mit neuer Hoffnung. Sie heulte viel weniger und gelegentlich vernahm ein aufmerksamer Bediensteter von Zeit zu Zeit sogar ein belustigtes Kreischen.</p>
-
-<p>Die sieben Tage gingen dahin und am Abend des letzten war die Mandelprinzessin betrübter als je zuvor. Keine Nachricht von der Krähe, keine Rettung, keine Hoffnung. Sie öffnete erneut ihr Bogenfenster und setzte bereits einen ihrer hellblauen Stöckelschuhe auf den Sims, als eine Trompete die Ankunft eines Gastes verkündete. Neugierig stieg die Prinzessin wieder herab und begab sich in die Empfangshalle, wo sie ein bildschöner Jüngling in einem pechschwarzen Umhang erwartete.</p>
-
-<p>Er hatte haselnussbraune, sehr kurze Haare, trug einen französisch anmutenden Bart und in seinen dunklen Augen lag ein unbestimmter Glanz wie vom Grund eines Ziehbrunnens. »Ihr seid die Mandelprinzessin? Man nennt mich Johann, den Unglücklichen. Ich möchte um Eure Freundschaft bitten.«</p>
-
-<p>Die Prinzessin blickte den Schönen skeptisch an und fragte zurück: »Wie kommt Ihr darauf, ich sei Euch für eine Freundschaft geeignet?«</p>
-
-<p>»Ihr werdet es nicht glauben, doch eine Krähe hat mir von Euch berichtet. Außerdem seid Ihr nicht vergeben und mindestens so außergewöhnlich hübsch und klug wie ich selbst.«</p>
-
-<p>Ob des vermessenen Witzes konnte die Prinzessin nicht anders und ein heftiges Schmunzeln verzog ihr Gesicht. Auch entrang sich ihrer Kehle ein splitternder Laut, wenn auch nur sehr kurz. Da bekam Johann der Unglückliche ungläubige Augen und blickte die Prinzessin erwartungsvoll an. Diese jedoch begann sich auf der Stelle zu schämen, drehte sich um und rannte die Treppen hinauf, um endgültig aus ihrem Bogenfenster zu springen.</p>
-
-<p>Johann zögerte nur einen kurzen Moment, dann eilte er dem Mandelmädchen nach, bekam sie noch in ihrem Zimmer am Fußknöchel zu fassen, warf sie zu Boden und fiel gleich über sie. Er sah das verschreckte Fräulein an, wie sie ihn aus Rehaugen anschaute.</p>
-
-<p>Da konnte Johann nicht anders und ein heftiges Schmunzeln verzog sein Gesicht. Auch entrang sich seiner Kehle ein splitternder Laut, wenn auch nur kurz.</p>
-
-<p>Unten im Empfangssaal fuhr ein Küchenjunge zu Tode erschrocken zusammen, ließ zweiundzwanzig Stücke des königlichen Porzellans zu Bruch fallen und hatte das Gefühl, innerlich zu zerspringen. So unerhört grauenhaft war das berstende Schreien, das aus dem Zimmer der Prinzessin kam. Dort auf dem Teppich lagen zwei junge Menschen mit fratzenhaften Angesichtern, dämonengleich, und gaben reißende, spröde brechende, quälend ziselierte Laute von sich und doch lachten sie einfach nur gemeinsam.</p>
-
-<p>So, und wie das im Märchen nun mal üblich ist, heirateten die beiden natürlich. Sie wohnen in einer kleinen Hütte abgelegen im Wald und betreiben Zwiebelanbau. Und wenn sie nicht gestorben sind, dann traut sich immer noch keiner in ihre Nähe, denn seit ihres Zusammentreffens gab es tagsüber nicht eine einzige Stunde, in der sie nicht gemeinsam genüsslich gekreischt hätten.</p>
-
-	<p>---<br /> <a href="mandelprinzessin.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -268,7 +312,7 @@ E-Mail: postfach2b [ät] web.​de, SMS: <span style="margin-right:0.2em">0178</
 
 <p><strong>§ 3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Verwendung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über private Fanpost freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2018-05-14T11:40:10+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2018-05-16T00:00:01+02:00</p>
 
 </main>
 
