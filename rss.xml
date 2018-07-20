@@ -125,7 +125,7 @@
 @media (max-width: 25.2em) { .prio-2.prio-2 { display:none; } }
 
 .bildpaar { display: flex; flex-wrap: wrap; }
-.bildpaar &gt; img { flex: 1 1 17em; } }
+.bildpaar &gt; img { flex: 1 1 17em; object-fit: contain; } }
 --&gt;
 &lt;/style&gt;
 
