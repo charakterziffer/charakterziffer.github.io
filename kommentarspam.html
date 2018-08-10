@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde(r),
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<title>Kommentarspam verhindern // @cz+</title>
+<meta name="description" content="Spamroboter interpretieren HTML-Entitäten anscheinend nicht richtig (z.B. &amp;#58;). Könnte man daraus nicht einen Spamschutz basteln?">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="RSS-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/kommentarspam.html&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Kommentarspam verhindern" />
+<meta property="og:description" content="Spamroboter interpretieren HTML-Entitäten anscheinend nicht richtig (z.B. &amp;#58;). Könnte man daraus nicht einen Spamschutz basteln?" />
+<meta property="og:url" content="https://charakterziffer.github.io/kommentarspam.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum/Datenschutz</a></li>
+</ul></nav>
+</header>
+
+<main>
+<article>
+<time datetime="2018-08-10">Fr, 10. Aug. 2018</time>
+<h1>Kommentarspam verhindern</h1>
+<p>Etwa seit einem Vierteljahr bekomme ich in meinem Blog fast täglich Kommentare. Das würde mich sehr freuen, wenn es nicht unerwünschte Werbe-Einträge wären. Als Mail erhalte ich dann zum Beispiel folgenden Kommentar:</p>
+
+<pre><code>post_id: /sommerzeit
+date:
+&amp;#10;name: Kredit-Heinz
+link: http://kredit.tld/
+comment: Toller Blogartikel, bitte schreib noch mehr zu diesem interessanten Thema. Für eine schnelle Geldspritze besuche &lt;a href="http://kredit.tld/"&gt;unsere Kreditvergabe&lt;/a&gt; und kassiere sofort! Jetzt auf &lt;a href="http://kredit.tld/"&gt;http://kredit.tld/&lt;/a&gt;
+</code></pre>
+
+<p>Solche Spamkommentare pflege ich in mein Blog gar nicht erst ein, sondern lösche sie direkt aus meinem Postausgang. Kürzlich ist mir aber etwas aufgefallen, dass mir die Arbeit in Zukunft erleichtern könnte. Normalerweise sieht eine Mail mit einem handgetippten Kommentar nämlich so aus:</p>
+
+<pre><code>post_id: /kommentarspam
+date: 9.10.2018, 15:21:17
+
+name: Jana Vogelsang
+link: https://jana-bloggt.de/
+comment: Das mit dem Kommentarspam kenne ich. Ich habe jetzt ein CAPTCHA eingefügt, seitdem bekomme ich keinen Spam mehr. Vielleicht ist das eine Lösung für dich?
+</code></pre>
+
+<p>Im Vergleich mit den Werbekommentaren sind mir zwei Unterschiede aufgefallen.</p>
+
+<h2 id="werbespammer-verwenden-kein-javascript">Werbespammer verwenden kein JavaScript</h2>
+
+<p>Zunächst steht im Spamkommentar kein Datum. Ich füge es nämlich automatisch mit der Programmiersprache JavaScript ein, wenn im Kommentarformular die Schaltfläche „Veröffentlichen“ angeklickt wird. Die Werbespammer scheinen JavaScript nicht auszuführen.</p>
+
+<p>Theoretisch könnte ich also ein Script schreiben, so dass man nur kommentieren kann, wenn JavaScript aktiv ist. Ich könnte die Kommentareingabe zunächst unsichtbar machen und erst per JavaScript einblenden. Dann können Spammer das Feld gar nicht ausfüllen …</p>
+
+<p>Praktisch hat JavaScript aber einen Haken: Es gibt nämlich Leute, die JavaScript absichtlich abgeschaltet haben. Sie haben möglicherweise Sicherheitsbedenken, möchten <a href="https://irights.info/artikel/was-ist-und-wie-funktioniert-webtracking/23386">Web-Tracking</a> einschränken oder verwenden einen Browser, der JavaScript nicht nutzt (z.B. LYNX). JavaScript wäre also auch eine Hürde für <a href="https://blockmetry.com/blog/javascript-disabled">einige</a> richtige Leser.</p>
+
+<p>Aus demselben Grund verzichte ich in meinem Kommentarformular übrigens auf sogenannte CAPTCHAs. Das sind kleine Zusatzaufgaben, die für Menschen recht einfach sein sollen, für Spamroboter aber schwierig lösbar sind; beispielsweise einfache Rechenaufgaben („Wie viel ist 2<small>nbsp;</small>+<small>nbsp;</small>5?“) oder ein Bild, in dem man Buchstaben erkennen soll. Ich möchte aber, dass es möglichst einfach ist, in meinem Blog seine Meinung zu äußern – ohne sich vorher mit einem bescheuerten CAPTCHA beschäftigen zu müssen.</p>
+
+<h2 id="werbespammer-verstehen-keine-html-entitäten">Werbespammer verstehen keine HTML-Entitäten</h2>
+
+<p>Das zweite, was mir an den Spamkommentaren aufgefallen ist, war die <code>&amp;#10;</code> (oben vor <code>name</code>). Das ist eine HTML-Entität (“<a href="https://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz">HTML Entity</a>”), eine spezielle Schreibweise, die normalerweise jeder Internetbrowser versteht und richtig interpretiert. Im Quelltext einer Website kann man bestimmte Sonderzeichen anders eingeben, damit sie nicht falsch dargestellt werden. Statt einem <code>€</code> kann man <code>&amp;euro;</code> schreiben, statt <code>ä</code> ein <code>&amp;auml;</code>. Und weil ich wollte, dass in den Kommentarmails vor dem Namen eine Leerzeile steht, habe ich hier ein <code>&amp;#10;</code> eingefügt: das Zeichen für eine leere Zeile.</p>
+
+<figure><img src="material/kommentarspam.jpg" />
+<figcaption>Spamroboter können offensichtlich keine HTML Entities interpretieren. Aus „Ver&amp;ouml;ffentlichen“ machen sie kein „Veröffentlichen“ (Symbolbild).</figcaption>
+</figure>
+
+<p>Im Spamkommentar fehlt die Leerzeile und die <em>HTML Entity</em> bleibt stehen. Warum das so ist, weiß ich nicht genau. Ich vermute, für Werbekommentare werden kleine Programme verwendet, die das Internet automatisch nach Kommentarfeldern durchsuchen. Dann überfliegt das Programm die Namen der Textfelder, kopiert seine Werbenachricht hinein und schickt die Eingaben ab. Bei diesem Prozess kommt zu keiner Zeit ein richtiger Webbrowser zum Einsatz (wie Firefox, Safari, Opera oder Chrome) – der würde die HTML-Entitäten nämlich in die entsprechenden Sonderzeichen umwandeln.</p>
+
+<h2 id="unkomplizierter-barrierefreier-spamschutz">Unkomplizierter, barrierefreier Spamschutz</h2>
+
+<p>Kann man diese Unfähigkeit der Spamroboter nicht als Abwehrtechnik gegen sie einsetzen? Wie sorge ich dafür, dass ein Kommentar nur abgeschickt werden kann, wenn HTML-Entitäten richtig interpretiert werden? Natürlich bringt es nichts, wie oben im Bild einfach den Text auf der Veröffentlichen-Schaltfläche zu ändern, ein Spamprogramm findet den Knopf trotzdem. Aber wie wäre es, den Werbekommentar einfach an eine falsche Adresse weiterzuleiten?</p>
+
+<p>Mein Kommentarformular wird von dem Anbieter Onlex verarbeitet. Ich leite die Eingaben an eine Adresse wie <code>https://www.onlex.de/_formmailer.php</code> weiter und bekomme sie dann als Mail. Was, wenn ich die Adresse im Formular mit einer HTML-Entität spicke, zum Beispiel <code>https&amp;#58;//www.onlex.de/_formmailer.php</code>? Das <code>&amp;#58;</code> ersetzt den Doppelpunkt, sollte von echten Browsern aber wieder zurückverwandelt werden. Ein Spamprogramm bekommt nach dem Abschicken seines Kommentars dagegen eine Fehlermeldung: Adresse nicht gefunden. So wird kein Kommentar verschickt und der Werbemüll landet im Nirgendwo.</p>
+
+<p>Zumindest sollte es so funktionieren. Ich teste das seit drei Wochen und hoffe, dass normale Besucher damit keine Probleme haben. Falls ihr mir gerne einen Kommentar schreiben möchtet, es aber nicht klappt, dann schickt mir bitte eine Mail an <em>postfach2b [ät] web.de</em> (ohne Leerzeichen und das [ät] natürlich durch ein @ ersetzen). Ihr könnt hier auch einen Testkommentar verfassen und dazuschreiben, dass ich ihn nicht veröffentlichen soll. Dann sehe ich, dass es bei euch klappt.</p>
+
+<p>Weiß jemand mehr über Spamroboter und HTML-Eintitäten? Auch ein einfacher Link zu weiteren Infos wäre hilfreich. Ich konnte nichts dazu finden, kann mir aber nicht vorstellen, dass noch niemand diese einfache Spambremse entdeckt hat. Oder gibt es normale Browser, bei denen mein Spamschutz Probleme verursacht? Freue mich über ergänzende Kommentare!</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+</p>
+</article>
+
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Kommentare werden überprüft, bevor sie freigeschaltet werden. Alle Angaben sind freiwillig, es gibt keine Pflichtfelder (außer das Kommentarfeld selbst).</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https&#58;//www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/kommentarspam">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar*</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </p><p> ergänzen.">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="sommerzeit.html">← Was bringt die Sommerzeit?</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum/Datenschutz</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" async></script>
+</body>
+</html>

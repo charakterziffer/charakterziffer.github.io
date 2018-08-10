@@ -13,6 +13,65 @@
 </image>
 
 <item>
+	<title>Kommentarspam verhindern</title>
+	<description>&lt;p&gt;Etwa seit einem Vierteljahr bekomme ich in meinem Blog fast täglich Kommentare. Das würde mich sehr freuen, wenn es nicht unerwünschte Werbe-Einträge wären. Als Mail erhalte ich dann zum Beispiel folgenden Kommentar:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;post_id: /sommerzeit
+date:
+&amp;amp;#10;name: Kredit-Heinz
+link: http://kredit.tld/
+comment: Toller Blogartikel, bitte schreib noch mehr zu diesem interessanten Thema. Für eine schnelle Geldspritze besuche &amp;lt;a href=&quot;http://kredit.tld/&quot;&amp;gt;unsere Kreditvergabe&amp;lt;/a&amp;gt; und kassiere sofort! Jetzt auf &amp;lt;a href=&quot;http://kredit.tld/&quot;&amp;gt;http://kredit.tld/&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Solche Spamkommentare pflege ich in mein Blog gar nicht erst ein, sondern lösche sie direkt aus meinem Postausgang. Kürzlich ist mir aber etwas aufgefallen, dass mir die Arbeit in Zukunft erleichtern könnte. Normalerweise sieht eine Mail mit einem handgetippten Kommentar nämlich so aus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;post_id: /kommentarspam
+date: 9.10.2018, 15:21:17
+
+name: Jana Vogelsang
+link: https://jana-bloggt.de/
+comment: Das mit dem Kommentarspam kenne ich. Ich habe jetzt ein CAPTCHA eingefügt, seitdem bekomme ich keinen Spam mehr. Vielleicht ist das eine Lösung für dich?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Im Vergleich mit den Werbekommentaren sind mir zwei Unterschiede aufgefallen.&lt;/p&gt;
+
+&lt;h2 id=&quot;werbespammer-verwenden-kein-javascript&quot;&gt;Werbespammer verwenden kein JavaScript&lt;/h2&gt;
+
+&lt;p&gt;Zunächst steht im Spamkommentar kein Datum. Ich füge es nämlich automatisch mit der Programmiersprache JavaScript ein, wenn im Kommentarformular die Schaltfläche „Veröffentlichen“ angeklickt wird. Die Werbespammer scheinen JavaScript nicht auszuführen.&lt;/p&gt;
+
+&lt;p&gt;Theoretisch könnte ich also ein Script schreiben, so dass man nur kommentieren kann, wenn JavaScript aktiv ist. Ich könnte die Kommentareingabe zunächst unsichtbar machen und erst per JavaScript einblenden. Dann können Spammer das Feld gar nicht ausfüllen …&lt;/p&gt;
+
+&lt;p&gt;Praktisch hat JavaScript aber einen Haken: Es gibt nämlich Leute, die JavaScript absichtlich abgeschaltet haben. Sie haben möglicherweise Sicherheitsbedenken, möchten &lt;a href=&quot;https://irights.info/artikel/was-ist-und-wie-funktioniert-webtracking/23386&quot;&gt;Web-Tracking&lt;/a&gt; einschränken oder verwenden einen Browser, der JavaScript nicht nutzt (z.B. LYNX). JavaScript wäre also auch eine Hürde für &lt;a href=&quot;https://blockmetry.com/blog/javascript-disabled&quot;&gt;einige&lt;/a&gt; richtige Leser.&lt;/p&gt;
+
+&lt;p&gt;Aus demselben Grund verzichte ich in meinem Kommentarformular übrigens auf sogenannte CAPTCHAs. Das sind kleine Zusatzaufgaben, die für Menschen recht einfach sein sollen, für Spamroboter aber schwierig lösbar sind; beispielsweise einfache Rechenaufgaben („Wie viel ist 2&lt;small&gt;nbsp;&lt;/small&gt;+&lt;small&gt;nbsp;&lt;/small&gt;5?“) oder ein Bild, in dem man Buchstaben erkennen soll. Ich möchte aber, dass es möglichst einfach ist, in meinem Blog seine Meinung zu äußern – ohne sich vorher mit einem bescheuerten CAPTCHA beschäftigen zu müssen.&lt;/p&gt;
+
+&lt;h2 id=&quot;werbespammer-verstehen-keine-html-entitäten&quot;&gt;Werbespammer verstehen keine HTML-Entitäten&lt;/h2&gt;
+
+&lt;p&gt;Das zweite, was mir an den Spamkommentaren aufgefallen ist, war die &lt;code&gt;&amp;amp;#10;&lt;/code&gt; (oben vor &lt;code&gt;name&lt;/code&gt;). Das ist eine HTML-Entität (“&lt;a href=&quot;https://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz&quot;&gt;HTML Entity&lt;/a&gt;”), eine spezielle Schreibweise, die normalerweise jeder Internetbrowser versteht und richtig interpretiert. Im Quelltext einer Website kann man bestimmte Sonderzeichen anders eingeben, damit sie nicht falsch dargestellt werden. Statt einem &lt;code&gt;€&lt;/code&gt; kann man &lt;code&gt;&amp;amp;euro;&lt;/code&gt; schreiben, statt &lt;code&gt;ä&lt;/code&gt; ein &lt;code&gt;&amp;amp;auml;&lt;/code&gt;. Und weil ich wollte, dass in den Kommentarmails vor dem Namen eine Leerzeile steht, habe ich hier ein &lt;code&gt;&amp;amp;#10;&lt;/code&gt; eingefügt: das Zeichen für eine leere Zeile.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/kommentarspam.jpg&quot; /&gt;
+&lt;figcaption&gt;Spamroboter können offensichtlich keine HTML Entities interpretieren. Aus „Ver&amp;amp;ouml;ffentlichen“ machen sie kein „Veröffentlichen“ (Symbolbild).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Im Spamkommentar fehlt die Leerzeile und die &lt;em&gt;HTML Entity&lt;/em&gt; bleibt stehen. Warum das so ist, weiß ich nicht genau. Ich vermute, für Werbekommentare werden kleine Programme verwendet, die das Internet automatisch nach Kommentarfeldern durchsuchen. Dann überfliegt das Programm die Namen der Textfelder, kopiert seine Werbenachricht hinein und schickt die Eingaben ab. Bei diesem Prozess kommt zu keiner Zeit ein richtiger Webbrowser zum Einsatz (wie Firefox, Safari, Opera oder Chrome) – der würde die HTML-Entitäten nämlich in die entsprechenden Sonderzeichen umwandeln.&lt;/p&gt;
+
+&lt;h2 id=&quot;unkomplizierter-barrierefreier-spamschutz&quot;&gt;Unkomplizierter, barrierefreier Spamschutz&lt;/h2&gt;
+
+&lt;p&gt;Kann man diese Unfähigkeit der Spamroboter nicht als Abwehrtechnik gegen sie einsetzen? Wie sorge ich dafür, dass ein Kommentar nur abgeschickt werden kann, wenn HTML-Entitäten richtig interpretiert werden? Natürlich bringt es nichts, wie oben im Bild einfach den Text auf der Veröffentlichen-Schaltfläche zu ändern, ein Spamprogramm findet den Knopf trotzdem. Aber wie wäre es, den Werbekommentar einfach an eine falsche Adresse weiterzuleiten?&lt;/p&gt;
+
+&lt;p&gt;Mein Kommentarformular wird von dem Anbieter Onlex verarbeitet. Ich leite die Eingaben an eine Adresse wie &lt;code&gt;https://www.onlex.de/_formmailer.php&lt;/code&gt; weiter und bekomme sie dann als Mail. Was, wenn ich die Adresse im Formular mit einer HTML-Entität spicke, zum Beispiel &lt;code&gt;https&amp;amp;#58;//www.onlex.de/_formmailer.php&lt;/code&gt;? Das &lt;code&gt;&amp;amp;#58;&lt;/code&gt; ersetzt den Doppelpunkt, sollte von echten Browsern aber wieder zurückverwandelt werden. Ein Spamprogramm bekommt nach dem Abschicken seines Kommentars dagegen eine Fehlermeldung: Adresse nicht gefunden. So wird kein Kommentar verschickt und der Werbemüll landet im Nirgendwo.&lt;/p&gt;
+
+&lt;p&gt;Zumindest sollte es so funktionieren. Ich teste das seit drei Wochen und hoffe, dass normale Besucher damit keine Probleme haben. Falls ihr mir gerne einen Kommentar schreiben möchtet, es aber nicht klappt, dann schickt mir bitte eine Mail an &lt;em&gt;postfach2b [ät] web.de&lt;/em&gt; (ohne Leerzeichen und das [ät] natürlich durch ein @ ersetzen). Ihr könnt hier auch einen Testkommentar verfassen und dazuschreiben, dass ich ihn nicht veröffentlichen soll. Dann sehe ich, dass es bei euch klappt.&lt;/p&gt;
+
+&lt;p&gt;Weiß jemand mehr über Spamroboter und HTML-Eintitäten? Auch ein einfacher Link zu weiteren Infos wäre hilfreich. Ich konnte nichts dazu finden, kann mir aber nicht vorstellen, dass noch niemand diese einfache Spambremse entdeckt hat. Oder gibt es normale Browser, bei denen mein Spamschutz Probleme verursacht? Freue mich über ergänzende Kommentare!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/kommentarspam.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/kommentarspam.html</guid>
+	<pubDate>Fri, 10 Aug 2018 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Was bringt die Sommerzeit?</title>
 	<description>&lt;p&gt;Auf der Website der EU-Kommission kann jeder noch bis 16. August 2018 an einer &lt;a href=&quot;https://ec.europa.eu/eusurvey/runner/2018-summertime-arrangements?surveylanguage=DE&quot;&gt;Umfrage zum Thema Sommerzeit&lt;/a&gt; teilnehmen. Falls einem die Zeitumstellung nicht gefällt, kann man auch angeben, ob man die Sommer- oder Winterzeit bevorzugt. Das Interesse am Thema Zeitumstellung scheint groß zu sein, jedenfalls war die Umfrage in den ersten Tagen vor lauter Seitenaufrufen kaum erreichbar.&lt;/p&gt;
 
@@ -264,53 +323,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/fuchs-8.html</guid>
 	<pubDate>Mon, 23 Apr 2018 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Schriftwahl nach System</title>
-	<description>&lt;p&gt;Webfonts ermöglichen, den Text auf einer Internetseite in einer individuellen Schriftart darzustellen. Das nutzen Gestalter immer öfter, um auf Websites bereits durch die Typografie ein bestimmtes Erscheinungsbild zu vermitteln. Die geeignete &lt;a href=&quot;https://www.zachleat.com/web/comprehensive-webfonts/&quot;&gt;Ladestrategie für Webfonts (engl.)&lt;/a&gt; stellt sicher, dass der Text trotzdem ohne merkliche Verzögerung auftaucht.&lt;/p&gt;
-
-&lt;p&gt;Doch wie vermutlich zu jedem Trend gibt es auch zu Webfonts eine Gegenbewegung. Statt eine individuelle Schrift zu wählen, möchten manche Webdesigner einen Text so gewohnt und standardmäßig wie möglich aussehen lassen. Sie versuchen, die gleiche Schrift zu wählen, die das Betriebssystem des Nutzers verwendet (zum Beispiel in Programm-Menüs, bei Systemmeldungen, im Datei-Manager etc.). So wirkt eine Website oder Web-Anwendung mehr wie ein lokal installiertes Programm.&lt;/p&gt;
-
-&lt;h2 id=&quot;was-ist-die-systemschrift&quot;&gt;Was ist die Systemschrift?&lt;/h2&gt;
-
-&lt;p&gt;Und woher weiß ich, welche Schrift dem Nutzer in lokalen Programmen angezeigt wird? Nun, ich weiß es nicht, schließlich ist es in jedem Betriebssystem eine andere. Aber ich kann eine Reihenfolge typischer Systemschriften festlegen. Der Browser des Nutzers testet diese Liste durch. Er überspringt alle Schriften, die nicht installiert sind, und verwendet dann die erste Schrift, die beim Nutzer vorhanden ist. Wenn ich die Reihe vom Speziellen zum Allgemeinen sortiere, erwische ich mit hoher Wahrscheinlichkeit die Systemschrift meines Nutzers. Eine verbreitete Schriftliste (“Sytem Font Stack”) ist:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So oder ähnlich findet sich das in der &lt;a href=&quot;https://make.wordpress.org/core/2016/07/07/native-fonts-in-4-6/&quot;&gt;Bedienoberfläche von Wordpress&lt;/a&gt;, im populären &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/19098&quot;&gt;CSS-Frame­work Bootstrap&lt;/a&gt;, beim &lt;a href=&quot;https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f&quot;&gt;Reiseportal Booking.com&lt;/a&gt; oder auf der &lt;a href=&quot;http://markdotto.com/2018/02/07/github-system-fonts/&quot;&gt;Website von GitHub&lt;/a&gt;. Überall dort verzichtet der Anbieter auf typografische Eigenständigkeit, um dem Nutzer lieber die vertraute Schrift seines Betriebssystems vorzusetzen. Entsprechend unterschiedlich sieht der Text dann je nach System aus:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/systemfonts.png&quot; alt=&quot;Verschiedene Systemschriften&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Mal ist die Schrift ein wenig fetter, mal ein bisschen runder, vielleicht allgemein größer und die Buchstaben stehen enger zusammen oder weiter auseinander. Ganz wie es der Nutzer von seinem Betriebssystem kennt …? Nicht unbedingt.&lt;/p&gt;
-
-&lt;h2 id=&quot;systemschrift-garantiert&quot;&gt;Systemschrift garantiert?&lt;/h2&gt;
-
-&lt;p&gt;Wer auf seinem Linux zum Beispiel &lt;a href=&quot;https://material.io/guidelines/style/typography.html&quot;&gt;Googles Schrift Roboto&lt;/a&gt; installiert hat, der bekommt diese angezeigt – und eben nicht die Standardschrift seines Betriebssystems. Apropos Roboto: Die wird von Google massiv als Erkennungszeichen genutzt, zum Beispiel auf YouTube, Google Maps oder in Google Mail. Möchte ich wirklich, dass meine Website von der Schrift her so aussieht wie ein Google-Produkt?&lt;/p&gt;
-
-&lt;p&gt;Auch wer bei seinem Betriebssystem die Schrift geändert hat (zum Beispiel seinen Mac lieber &lt;a href=&quot;https://github.com/jenskutilek/FiraSystemFontReplacement&quot;&gt;mit Fira Sans beschriftet&lt;/a&gt;), bekommt nicht die „native“ Systemschrift angezeigt. Das sollte in Zukunft aber der neue CSS-Wert &lt;code&gt;system-ui;&lt;/code&gt; verhindern. Dieser Platzhalter steht immer für die Schrift, die das Betriebssystem tatsächlich verwendet. Damit würde der Nutzer wirklich genau die gewohnte Schrift sehen – womöglich ist das aber &lt;a href=&quot;https://infinnie.github.io/blog/2017/systemui.html&quot;&gt;gar nicht, was der Designer beabsichtigt (engl.)&lt;/a&gt;. Im Moment wird &lt;code&gt;font-family: system-ui&lt;/code&gt; mittelgut unterstützt (je nach Nutzerschaft um die &lt;a href=&quot;https://caniuse.com/#search=system-ui&quot;&gt;70 bis 80&lt;small&gt; &lt;/small&gt;%&lt;/a&gt;), es funktioniert nicht im Firefox, Internet-Explorer und Microsoft Edge.&lt;/p&gt;
-
-&lt;h2 id=&quot;man-kann-nicht-nicht-gestalten&quot;&gt;Man kann nicht nicht gestalten&lt;/h2&gt;
-
-&lt;p&gt;Aber Moment! – und hier kommt der Meinungsteil dieses Blogartikels: Warum genau macht eigentlich jemand diese Verrenkungen? Warum die Schriftart des Systems nutzen? Um mir die Ladezeit einer Webschrift zu sparen? Dann könnte ich doch gleich eine bewusst ausgewählte &lt;em&gt;websafe&lt;/em&gt; Schrift wählen, zum Beispiel Verdana, Arial, Georgia, Trebuchet oder Times New Roman. Die sind auf wirklich vielen Geräten installiert und werden dann angezeigt. Oder vielleicht, weil meine Website so aussehen soll wie ein installiertes Programm? Das könnte ich bei Web-Apps, also tatsächlichen Anwendungen noch verstehen – aber selbst hier kann man mit einer bewusst ausgewählten Schrift mehr erreichen.&lt;/p&gt;
-
-&lt;p&gt;Ich glaube, meistens wird dieser &lt;em&gt;System Font Stack&lt;/em&gt; aus Unsicherheit und Feigheit gewählt. „Mmmh, wir brauchen was neutrales, das nicht stört oder unangenehm ist – nehmen wir doch die Schrift, die der Nutzer ständig sieht, die ist so &lt;em&gt;natürlich&lt;/em&gt; und &lt;em&gt;nativ&lt;/em&gt;.“ Nein, ist sie nicht. Alles ist Gestaltung, selbst wenn ich beschließe, etwas nicht besonders zu gestalten. Und wenn ich mir keine Gedanken darum mache und sicherheitshalber zu einem Standard-Design greife, dann habe ich meistens nicht die beste Lösung gefunden.&lt;/p&gt;
-
-&lt;p&gt;Was man mit System-Schriften dagegen in Kauf nimmt: Absätze brauchen unterschiedlich viel Platz, Text verschiebt sich, Zeilenabstände passen nicht optimal zur Schrift, Textgrößen sind nicht richtig aneinander angepasst, die eigens gestaltete &lt;a href=&quot;https://github.com/atomiks/30-seconds-of-css/issues/22&quot;&gt;Unterstreichung sitzt zu hoch&lt;/a&gt; und das allgemeine Schriftbild kann auf manchen Systemen eine unpassende Wirkung haben. Manchmal sind auch die gewünschten Strichstärken nicht vorhanden und werden vom Browser schlecht imitiert (z.&lt;small&gt; &lt;/small&gt;B. haben nur San Francisco und Segoe eine halbfette Semibold). Wer gute Typografie machen möchte, ist mit einer einschätzbaren, zum Inhalt passenden Schrift besser bedient.&lt;/p&gt;
-
-&lt;h2 id=&quot;der-neue-standard&quot;&gt;Der neue Standard?&lt;/h2&gt;
-
-&lt;p&gt;Im Moment sind die Default-Schriften im Browser meistens &lt;a href=&quot;https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults/&quot;&gt;Arial/Helvetica, Times (New Roman) und Courier (New)&lt;/a&gt;. Sie erscheinen, wenn der Gestalter nur die generischen Schriftkategorien &lt;code&gt;sans-serif&lt;/code&gt;, &lt;code&gt;serif&lt;/code&gt; oder &lt;code&gt;monospaced&lt;/code&gt; angibt. Vielleicht ändert sich das irgendwann und die Browserhersteller legen &lt;code&gt;system-ui&lt;/code&gt; als Standard-Schrift fest (ohne Serifen). So stellt es sich Sindre Sorhus im &lt;a href=&quot;https://github.com/sindresorhus/modern-normalize/issues/3&quot;&gt;Fehlerbericht zu seinem normalize.css (engl.)&lt;/a&gt; vor. Ich muss einräumen, dass das in den meisten Fällen eine Verbesserung wäre – aber halt nicht automatisch eine gute oder irgendwie „natürliche“ Gestaltung für einzelne Websites.&lt;/p&gt;
-
-&lt;p&gt;Ich behaupte nicht, dass eine Internetseite auf allen Geräten gleich aussehen muss; aber ich bin überzeugt, dass man bewusst gestalten sollte. Als scheinbar einfache Lösung verhindert der &lt;em&gt;System Font Stack&lt;/em&gt;, sich tatsächlich mit einem angemessenen Design auseinanderzusetzen. Die Standardeinstellung kann ein möglicher Anfangspunkt einer Gestaltung sein, aber nur in seltensten Fällen auch deren Ende.&lt;/p&gt;
-
-&lt;p&gt;Noch zwei Lesetipps (englisch): &lt;a href=&quot;https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b&quot;&gt;Using UI System Fonts in Web Design&lt;/a&gt; und &lt;a href=&quot;https://bitsofco.de/the-new-system-font-stack/&quot;&gt;The New System Font Stack?&lt;/a&gt; – beide Artikel befürworten eher die Verwendung von Systemschriften.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/systemfonts.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/systemfonts.html</guid>
-	<pubDate>Thu, 22 Mar 2018 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
