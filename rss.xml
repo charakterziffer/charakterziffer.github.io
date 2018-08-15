@@ -49,7 +49,7 @@ comment: Das mit dem Kommentarspam kenne ich. Ich habe jetzt ein CAPTCHA eingef�
 
 &lt;p&gt;Das zweite, was mir an den Spamkommentaren aufgefallen ist, war die &lt;code&gt;&amp;amp;#10;&lt;/code&gt; (oben vor &lt;code&gt;name&lt;/code&gt;). Das ist eine HTML-Entität (“&lt;a href=&quot;https://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz&quot;&gt;HTML Entity&lt;/a&gt;”), eine spezielle Schreibweise, die normalerweise jeder Internetbrowser versteht und richtig interpretiert. Im Quelltext einer Website kann man bestimmte Sonderzeichen anders eingeben, damit sie nicht falsch dargestellt werden. Statt einem &lt;code&gt;€&lt;/code&gt; kann man &lt;code&gt;&amp;amp;euro;&lt;/code&gt; schreiben, statt &lt;code&gt;ä&lt;/code&gt; ein &lt;code&gt;&amp;amp;auml;&lt;/code&gt;. Und weil ich wollte, dass in den Kommentarmails vor dem Namen eine Leerzeile steht, habe ich hier ein &lt;code&gt;&amp;amp;#10;&lt;/code&gt; eingefügt: das Zeichen für eine leere Zeile.&lt;/p&gt;
 
-&lt;figure&gt;&lt;img src=&quot;material/kommentarspam.jpg&quot; /&gt;
+&lt;figure&gt;&lt;img src=&quot;material/kommentarspam.jpg&quot; alt=&quot;Mauszeiger über einer falsch beschrifteten Schaltfläche&quot; /&gt;
 &lt;figcaption&gt;Spamroboter können offensichtlich keine HTML Entities interpretieren. Aus „Ver&amp;amp;ouml;ffentlichen“ machen sie kein „Veröffentlichen“ (Symbolbild).&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -97,7 +97,7 @@ comment: Das mit dem Kommentarspam kenne ich. Ich habe jetzt ein CAPTCHA eingef�
 
 &lt;p&gt;Ich habe mal drei Städte in Europa verglichen, nämlich Helsinki (weit im Nordosten, Finnland), Regensburg (meine Heimat, recht mittig) und Faro (südwestlich, Portugal). Folgendes Diagramm verdeutlicht die Sonnenaufgangs- und -untergangszeiten:&lt;/p&gt;
 
-&lt;figure&gt;&lt;img src=&quot;material/tageslicht.svg&quot; /&gt;
+&lt;figure&gt;&lt;img src=&quot;material/tageslicht.svg&quot; alt=&quot;Diagramm mit drei Streifen, welche die Tageslichtzeiten für Helsinki, Regensburg und Faro verdeutlichen&quot; /&gt;
 &lt;figcaption&gt;In Helsinki schwankt der lichte Tag zwischen 9:23–15:12 Uhr (Winter) und 3:53–22:49 Uhr (Sommer). Regensburg hat im Winter Tageslicht von 8:02–16:16 Uhr, im Sommer von 5:07–21:19 Uhr. In Faro liegen Sonnenaufgang und -untergang zwischen 7:41–17:18 Uhr (Winter) und 6:12–20:54 Uhr (Sommer). Jeweils mit Zeitumstellung. Datenquelle:&lt;a href=&quot;https://www.timeanddate.de/sonne/&quot;&gt;Time and Date&lt;/a&gt;, wo es sehr verständliche Jahresdiagramme gibt.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -202,16 +202,16 @@ comment: Das mit dem Kommentarspam kenne ich. Ich habe jetzt ein CAPTCHA eingef�
 &lt;p&gt;Vor einer Weile habe ich bemerkt, dass einige Mauszeiger in meinem Standard-Set fehlen. Daraufhin habe ich mein eigenes Mauszeiger-Set gezeichnet:&lt;/p&gt;
 
 &lt;figure class=&quot;bildpaar&quot;&gt;
-	&lt;img src=&quot;material/cz-viator_white-1.svg&quot; /&gt;
-	&lt;img src=&quot;material/cz-viator_white-2.svg&quot; /&gt;
+	&lt;img src=&quot;material/cz-viator_white-1.svg&quot; alt=&quot;Weiße Mauszeiger aus meinem Cursor-Set. Die für Windows verfügbaren sind umrahmt.&quot; /&gt;
+	&amp;lt;img src=&quot;material/cz-viator_white-2.svg&quot; alt &quot;Weitere Mauszeiger aus meinem Cursor-Set.&quot;&amp;gt;
 	&lt;figcaption&gt;Alle Mauszeiger meines Sets „cz-viator“. Die 15 eingerahmten Cursors sind auch für Windows verfügbar.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Ich habe es cz-Viator genannt, lateinisch für „Reisender“. Und weil ich schon dabei war, habe ich noch eine schwarze Variante angefertigt und unterschiedliche &lt;em&gt;Spinner&lt;/em&gt; ausprobiert – die sich drehenden Teile, die eine (Hintergrund-)Aktivität signalisieren.&lt;/p&gt;
 
 &lt;figure class=&quot;bildpaar&quot;&gt;
-	&lt;img src=&quot;material/cz-viator_black.svg&quot; /&gt;
-	&lt;img src=&quot;material/cz-viator_spinner.gif&quot; /&gt;
+	&lt;img src=&quot;material/cz-viator_black.svg&quot; alt=&quot;Einige schwarze Mauszeiger&quot; /&gt;
+	&lt;img src=&quot;material/cz-viator_spinner.gif&quot; alt=&quot;Vier animierte weiße Mauszeiger&quot; /&gt;
 	&lt;figcaption&gt;Einige Beispiel-Cursors aus der schwarzen Variante „cz-Viator (Black)“. Dazu vier animierte Cursor-Varianten, die optional verwendet werden können.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
