@@ -13,6 +13,53 @@
 </image>
 
 <item>
+	<title>Couscous mit Gemüse</title>
+	<description>&lt;p&gt;Ich mag Gerichte, die sich mit wenig Aufwand zubereiten lassen und die trotzdem gesund sind. Um Couscous mit Gemüse zu kochen, brauche ich nur etwa 20 Minuten. Das Rezept lässt sich problemlos variieren, fehlende Zutaten (z.&lt;small&gt; &lt;/small&gt;B. Kreuzkümmel) nach Geschmack ersetzen, die Mengen nach Belieben anpassen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/couscous.jpg&quot; alt=&quot;Couscousgemüse im Teller angerichtet&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;zutaten-für-4-portionen&quot;&gt;Zutaten (für 4 Portionen)&lt;/h2&gt;
+
+&lt;div style=&quot;columns: 13em; margin: 1em 0 -0.25em;&quot;&gt;
+2–3 Paprikaschoten&lt;br /&gt;
+1 große Zucchini&lt;small&gt;&amp;nbsp;&lt;/small&gt;¹&lt;br /&gt;
+Öl zum Anbraten&lt;br /&gt;
+250&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Couscous&lt;br /&gt;
+350&lt;small&gt;&amp;nbsp;&lt;/small&gt;ml Gemüsebrühe (Wassermenge hängt vom Couscous ab)&lt;br /&gt;
+200&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Kirschtomaten&lt;br /&gt;
+1 Pck. Fetakäse&lt;br /&gt;
+Curry&lt;br /&gt;
+Pfeffer&lt;br /&gt;
+1 Spritzer Limettensaft&lt;small&gt;&amp;nbsp;&lt;/small&gt;²&lt;br /&gt;
+Salz, Paprikapulver, Kreuzkümmel, evtl. Kurkuma&lt;br /&gt;
+optional: getrocknete Aprikosen oder Rosinen&lt;br /&gt;
+&lt;br /&gt;
+¹ alternativ: 1 Aubergine&lt;br /&gt;
+² alternativ: Zitronen- oder Orangensaft&lt;/div&gt;
+
+&lt;h2 id=&quot;zubereitung&quot;&gt;Zubereitung&lt;/h2&gt;
+
+&lt;p&gt;Das Gemüse waschen, die Paprikaschoten entkernen. Paprika und Zucchini kleinschneiden. Eine Pfanne heiß werden lassen, etwas Öl hinein und die Paprikastückchen darin anbraten. Wenig später die Zucchini dazugeben und mitbraten.&lt;/p&gt;
+
+&lt;p&gt;Den Couscous in einen Suppenteller oder in ein Schüsselchen geben (die Menge sollte maximal zwei Drittel des Behältnisses füllen), darunter das Brühpulver für die Gemüsebrühe mischen. Das Wasser (z.&lt;small&gt; &lt;/small&gt;B. im Wasserkocher) erhitzen, über den Couscous gießen und ein wenig verrühren. Jetzt muss der Couscous etwa 5 Minuten quellen (länger schadet nicht).&lt;/p&gt;
+
+&lt;p&gt;Derweil die gewaschenen Kirchtomaten schneiden, ich bevorzuge dicke Scheiben. Den Fetakäse fein würfeln.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/couscous2.jpg&quot; alt=&quot;Couscous quillt im Teller; Tomatenscheiben und Fetawürfel, Gewürze in der Pfanne anrösten&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Wenn Paprika und Zucchini leicht Farbe bekommen haben, in der Mitte der Pfanne etwas Platz machen. Auf die freie Fläche ordentlich Curry geben (ich nehme etwa 1&lt;small&gt; &lt;/small&gt;TL, für manche zu viel), Pfeffer dazu. Beide Gewürze kurz anrösten, das verstärkt ihr Aroma. Nun alles mischen und die Kirschtomaten dazugeben. Weiterbraten lassen.&lt;/p&gt;
+
+&lt;p&gt;Jetzt geht’s ans Würzen: mit Limettensaft, Salz, Paprikapulver, Kreuzkümmel und eventuell extra Kurkuma (ist eigentlich schon im Curry dabei). Ich versuche eine Balance zu finden, so dass kein Gewürz zu sehr hervorsticht, man aber salzig, scharf, sauer und eine warme Süße schmecken kann. An dieser Stelle können getrocknete Aprikosen (zerkleinert) oder ein paar Rosinen ergänzt werden. Es darf ruhig intensiver schmecken, der Couscous und Fetakäse schwächen alles wieder etwas ab.&lt;/p&gt;
+
+&lt;p&gt;Apropos Couscous: Nachdem er gequollen hat, einfach mit in die Gemüsepfanne geben und unterrühren. Vorsicht: Hitze etwas reduzieren, damit der Couscous nicht anbrennt. Am Schluss verteile ich die Fetawürfel vorsichtig auf der Mischung und lasse sie noch einige Augenblicke warm werden. Sie schmelzen an der Pfanne fest, also besser erst vor dem Servieren richtig unterheben.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/couscous.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/couscous.html</guid>
+	<pubDate>Sat, 15 Sep 2018 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Kommentarspam verhindern</title>
 	<description>&lt;p&gt;Etwa seit einem Vierteljahr bekomme ich in meinem Blog fast täglich Kommentare. Das würde mich sehr freuen, wenn es nicht unerwünschte Werbe-Einträge wären. Als Mail erhalte ich dann zum Beispiel folgenden Kommentar:&lt;/p&gt;
 
@@ -256,73 +303,6 @@ comment: Das mit dem Kommentarspam kenne ich. Ich habe jetzt ein CAPTCHA eingef�
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/mauszeiger.html</guid>
 	<pubDate>Wed, 16 May 2018 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Die Blöße der Unwissenheit</title>
-	<description>&lt;p&gt;Etwas nicht zu wissen kann peinlich sein, oder ein Zeichen von Schwäche. Wenn ich eine Wissenlücke geschickt umschiffe und notfalls ein bisschen bluffe, dann stehe ich immer noch gut da und erfahre manchmal sogar noch, was ich nicht wusste. Andererseits ist es ganz schön anstrengend, sich aufs Glatteis zu begeben.&lt;/p&gt;
-
-&lt;p&gt;Schön, wenn man jemanden kennt, der einen nicht auslacht oder die Augen verdreht, weil man gerade nicht so richtig Ahnung hat. Noch besser, wenn derjenige dann weiterhilft und vielleicht noch einen guten Rat in der Tasche hat. Oft bekommt man eine andere Perspektive oder einen neuen Anstoß, um weiterzumachen.&lt;/p&gt;
-
-&lt;p&gt;Wen fragt ihr um Rat, wenn ihr euch in einer Sache unsicher seid? Die Ballerina in meiner Twitterserie wendet sich vertrauensvoll an den Fuchs. Die letzten Tweets dieser Reihe:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⏱ „Wenn intensives Nachdenken nichts bringt, dann hilft Geduld“, sprach der #Fuchs zur Ballerina. „Warte ab und die Idee kommt von allein.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/878161681221689346&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⧉ „Sich selbst einzuschätzen ist schwer“, sprach der #Fuchs zur Ballerina. „Frag andere nach ihrer Meinung, das gibt dir eine Orientierung.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/890159989066739712&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;𝈎 „Ich weiß, dass dein Opa dich toll findet“, sprach der #Fuchs zur Ballerina. „Kritik hilft dir aber nur, wenn sie wirklich ehrlich ist.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/902804577656991745&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;✗ „Wer einen Fehler zugibt, sollte nicht bestraft werden“, sprach der #Fuchs zur Ballerina. „Besser du belohnst die Einsicht desjenigen.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/915908208505614337&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;※ „Pass auf“, warnte der #Fuchs die Ballerina, „dass du mit einem überzogenen Anspruch an deine Arbeit nicht dein eigener Feind wirst.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/928653296960704513&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;䷇ „Vergiss nicht: Eine Aufführung ist immer Team-Arbeit“, sprach der #Fuchs zur Ballerina. „Achte alle, die dich glänzen lassen.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/941979521900826626&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ⓧ „Klar, kannst du dich auf der Bühne ausziehen“, sprach der #Fuchs zur Ballerina. „Ist es für dich stimmig und fühlst du dich dabei wohl?“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/955733936021352454&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;(Dabei hat der Fuchs &lt;a href=&quot;fuchs-1.html&quot;&gt;Anfang 2011&lt;/a&gt; noch behauptet: „Mag sein, dass Kunst alles darf, das heißt aber nicht, dass sie alles machen muss. Bleib angezogen.“)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;䷂ „Wenn man’s kann, ist es nicht schwierig“, sprach der #Fuchs zur Ballerina. „Doch sei nicht überheblich, auch du musstest es erst lernen.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/965864758430912514&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⁕ „Verschieb lieber etwas und nimm dir mehr Zeit“, sprach der #Fuchs zur Ballerina. „Besser als schusselige Arbeit, womöglich mit Fehlern.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/979333631368990720&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⛂ „Eine echte Schwäche wäre, Unwissenheit niemals einzugestehen“, sprach der #Fuchs zur Ballerina. (&lt;a href=&quot;https://twitter.com/charakterziffer/&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Die anderen Blogeinträge zu dieser Twitterserie:&lt;/p&gt;
-
-&lt;p&gt;1. &lt;a href=&quot;fuchs-1.html&quot;&gt;… sprach der #Fuchs zur Ballerina&lt;/a&gt;&lt;br /&gt;
-2. &lt;a href=&quot;fuchs-2.html&quot;&gt;Weisheiten für sensible Künstler&lt;/a&gt;&lt;br /&gt;
-3. &lt;a href=&quot;fuchs-3.html&quot;&gt;Ballerinas Selbstzweifel&lt;/a&gt;&lt;br /&gt;
-4. &lt;a href=&quot;fuchs-4.html&quot;&gt;Ein Fuchs für alle Fälle&lt;/a&gt;&lt;br /&gt;
-5. &lt;a href=&quot;fuchs-5.html&quot;&gt;Pirouetten und andere Probleme&lt;/a&gt;&lt;br /&gt;
-6. &lt;a href=&quot;fuchs-6.html&quot;&gt;Ausgefuchste Antworten&lt;/a&gt;&lt;br /&gt;
-7. &lt;a href=&quot;fuchs-7.html&quot;&gt;Vorgaben hinter sich lassen&lt;/a&gt;&lt;/p&gt;
-
-</description>
-	<link>https://charakterziffer.github.io/fuchs-8.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/fuchs-8.html</guid>
-	<pubDate>Mon, 23 Apr 2018 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
