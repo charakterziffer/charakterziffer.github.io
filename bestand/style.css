@@ -233,7 +233,7 @@ input[type='submit'] { -webkit-appearance: button; }
 	form > div > div { float: none; width: 98.5%; }
 	form input[type=text],form input[type=email],form input[type=url] { width: 100%; } }
 
-/* ANPASSUNGEN FÜR DEN AUSDRUCK */
+/* ANPASSUNGEN FÜR DEN DRUCK */
 
 @media print {
 @page { margin: 1.5cm 1.5cm 2cm; }
@@ -242,7 +242,7 @@ header, main, aside { width: 100%; }
 aside { position: static; float: none; }
 
 aside,figure,blockquote,.hinterlegt,.klappkasten,pre,code,a[download] {
-	background: #fff; border: 1px solid #666; }
+	background: #fff; border: 1px solid #666; page-break-inside: avoid; }
 pre > code { border: 0; }
 
 h1, h2, h3, time {
