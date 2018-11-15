@@ -250,6 +250,8 @@ h1, h2, h3, time {
 header > a:not(.spezifität), p, ul, ol, code, pre, figcaption,
 	blockquote, a:link, a:visited { color: #000; }
 
+p, ul, ol { widows: 2; orphans: 2; }
+
 /* Klappkästen im Druck geöffnet anzeigen */
 .klappkasten p { max-height: 17em; margin: .2em; }
 .klappkasten p + p, blockquote + blockquote { margin-top: .7em }
