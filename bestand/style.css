@@ -27,8 +27,7 @@
 
 /* GRUNDSÄTZLICHES LAYOUT */
 
-html { font-size: 100.01%; box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+* { box-sizing: border-box; }
 body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	font: 400 1.1em/1.5 'Source Sans Pro',Calibri,Arial,sans-serif;
 	font-feature-settings: 'onum', 'liga', 'kern';
