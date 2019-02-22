@@ -15,8 +15,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="referrer" content="strict-origin">
 
-<title>Extra // @cz+</title>
-<meta name="description" content="Hier sammle ich Dinge, die für einen vollständigen Artikel ungeeignet sind oder nicht in den zeitlichen Verlauf eines Blogs passen.">
+<title>Nützliches aus meiner userContent.css // @cz+</title>
+<meta name="description" content="Einige Kritiken, die ich zu Büchern geschrieben und bei Bookcrossing veröffentlicht habe.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
 <meta name="robots" content="index, follow">
@@ -26,7 +26,7 @@
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/extra/&choe=UTF-8);
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/extra/user-content&choe=UTF-8);
 position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
 
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
@@ -39,9 +39,9 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@charakterziffer" />
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
-<meta property="og:title" content="Extra" />
-<meta property="og:description" content="Hier sammle ich Dinge, die für einen vollständigen Artikel ungeeignet sind oder nicht in den zeitlichen Verlauf eines Blogs passen." />
-<meta property="og:url" content="https://charakterziffer.github.io/extra/" />
+<meta property="og:title" content="Nützliches aus meiner userContent.css" />
+<meta property="og:description" content="Einige Kritiken, die ich zu Büchern geschrieben und bei Bookcrossing veröffentlicht habe." />
+<meta property="og:url" content="https://charakterziffer.github.io/extra/user-content" />
 <meta property="og:type" content="article" />
 </head>
 
@@ -62,38 +62,32 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 
 <link href="../bestand/extra.css" rel="stylesheet" />
 
-<h1 id="darfs-ein-bisschen-mehr-sein">Darf’s ein bisschen mehr sein?</h1>
+<h1 id="nützliches-aus-meiner-usercontentcss">Nützliches aus meiner userContent.css</h1>
 
-<p>Hier sammle ich Dinge, die ich nicht in den chronologischen Verlauf meines Blogs einordnen möchte oder die mir nicht für einen kompletten Artikel ausreichen:</p>
+<p>Mit der Datei userContent.css kann man Websites im Firefox nach seinen Bedürfnissen umgestalten, siehe mein Artikel über <a href="/user-css.html">User-CSS</a>. Einige meiner Modifikationen sind:</p>
 
-<h2 id="nützliches-aus-meiner-usercontentcss">Nützliches aus meiner userContent.css</h2>
-<time datetime="2019-02-22">Fr, 22. Feb. 2019</time>
+<pre><code>/* DIVERSE SEITEN: Silbentrennung aktivieren */
+@-moz-document domain(medium.com), domain(wikipedia.org), domain(smashingmagazine.com), domain(deutschlandfunknova.de) {
+body { hyphens: auto; }
+h1, h2, h3, h4, h5, h6, code, pre, samp, kbd, var, abbr, acronym, sub, sup, textarea, label { hyphens: none !important; } }
 
-<p>Mit der Datei userContent.css kann man Websites im Firefox nach seinen Bedürfnissen umgestalten, siehe mein Artikel über <a href="/user-css.html">User-CSS</a>. Ich aktiviere damit zum Beispiel die Silbentrennung und verstecke Anmelde-Aufforderungen. <a href="user-content.html">→ Auswahl meines angepassten CSS</a></p>
+/* FACEBOOK.COM: Einlogg-Aufforderungen verstecken,
+fixierte Menüleiste mitscrollbar machen */
+@-moz-document domain(facebook.com) {
+.timelineLoggedOutSignUp, #pagelet_growth_expanding_cta, ._5hn6 {
+	display:none; }
+#headerArea, .fbPageBanner { display: none; }
+.fixed_elem, ._k { position: relative !important; } }
 
-<h2 id="highlights">Highlights</h2>
-<time datetime="2018-12-23">So, 23. Dez. 2018</time>
+/* PINTEREST.COM: Einlogg-Aufforderung ausblenden */
+@-moz-document domain(pinterest.com), domain(pinterest.de) {
+footer { display:none !important; } }
 
-<p>Blogartikel, die ich für besonders lesenswert halte, habe ich in meinen zwei Jubiläums-Einträgen gesammelt. So bieten <a href="/blogeintrag-50.html">mein 50.</a> und mein <a href="/blogeintrag-100.html">100. Blogartikel</a> einen schnellen Zugriff auf meine persönlichen Favoriten.</p>
-
-<h2 id="buchkritiken">Buchkritiken</h2>
-<time datetime="2018-12-11">Di, 11. Dez. 2018</time>
-
-<p>Viele meiner Bücher bekomme ich über Bookcrossing. Man registriert ein Buch, das man nicht behalten möchte, dort auf der Website. Es bekommt dann eine Nummer („Bookcrossing-ID“), unter der man online Kommentare dazu schreiben und lesen kann. <a href="buchkritiken.html">→ Einige meiner Buchkritiken</a></p>
-
-<h2 id="bookmarklet-für-deutschlandfunknovade">Bookmarklet für deutschlandfunknova.de</h2>
-<time datetime="2018-08-14">Di, 14. Aug. 2018</time>
-
-<p>Wer Audios von der Dlf-Nova-Website laden möchte, hat es nicht einfach. Mein Bookmarklet verwandelt die grünen Playbuttons in direkte Links zur mp3-Datei.</p>
-
-<p><a href="javascript:document.querySelectorAll('button[data-mp3]').forEach(i=&gt;i.outerHTML='&lt;a%20href=%22'+i.getAttribute(%22data-mp3%22)+'%22%20class=%22button%20button--play%20button--solid%22%20style=%22font:2rem/1%20nova%22&gt;%EE%A0%9C&lt;/a&gt;')" download="">Nova 🔗</a></p>
-
-<p>Anwendung: Den Button in die Lesezeichenleiste des Browsers ziehen. Anklicken, während die Website von Deutschlandfunk Nova angezeigt wird.</p>
-
-<h2 id="opentype-feature-test">OpenType Feature Test</h2>
-<time datetime="2012-06-12">Di, 12. Juni 2012</time>
-
-<p>Eine englischsprachige Seite über meine <a href="otfeat.html">Schrift Otfeat</a>. Sie zeigt, welche OpenType-Features gerade aktiv sind bzw. überhaupt unterstützt werden.</p>
+/* WIKIPEDIA.ORG: Quellenangaben mehrspaltig */
+@-moz-document domain(wikipedia.org) {
+.references { columns: 15em; column-gap: 3em;
+	margin: 1em 0 0 1em !important; } }
+</code></pre>
 
 </main>
 
