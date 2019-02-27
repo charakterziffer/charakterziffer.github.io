@@ -47,8 +47,7 @@ header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
 
 header { margin-bottom: 2.8em; }
-header a:any-link { color: #333; }
-	/* Alle Links im Header, auch für a:visited, a:hover und a:focus */
+header a { color: #333 !important; } /* auch a:visited,:hover,:focus */
 header > a { font-size: 1.7em; padding: 0; }
 header img { float: left; margin-right: .4em; margin-top: -.02em;
 	width: 2em; }
@@ -246,8 +245,8 @@ pre > code { border: 0; }
 
 h1, h2, h3, time {
 	page-break-after: avoid; page-break-inside: avoid; color: #222; }
-header > a:any-link, p, ul, ol, code, pre, figcaption,
-	blockquote, a:link, a:visited { color: #000; }
+header > a, p, ul, ol, code, pre, figcaption, blockquote,
+	a:link, a:visited { color: #000; }
 
 p, ul, ol { widows: 2; orphans: 2; }
 
