@@ -245,8 +245,8 @@ pre > code { border: 0; }
 
 h1, h2, h3, time {
 	page-break-after: avoid; page-break-inside: avoid; color: #222; }
-header > a, p, ul, ol, code, pre, figcaption, blockquote,
-	a:link, a:visited { color: #000; }
+p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited {
+	color: #000; }
 
 p, ul, ol { widows: 2; orphans: 2; }
 
