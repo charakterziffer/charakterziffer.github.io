@@ -124,9 +124,9 @@ time { display: block; float: right; padding-left: 1em; color: #666; }
 
 hr { margin: 1.9em 0 1.23em; color: #ccc; }
 
-::selection { background: #deb; }
+/* ::selection { background: #deb; }
 .hinterlegt::selection, a[download]::selection, .klappkasten ::selection,
-.hinterlegt ::selection, a[download] ::selection { background: #fff; }
+.hinterlegt ::selection, a[download] ::selection { background: #fff; } */
 
 /* LISTEN, CODE, ZITATBLÖCKE */
 
