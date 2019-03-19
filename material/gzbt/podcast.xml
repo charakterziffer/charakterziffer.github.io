@@ -37,7 +37,7 @@
 		<title>Folge 3: In einem Atemzug</title>
 		<pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
 		<itunes:author>Gerhard Großmann</itunes:author>
-		<itunes:category text="Performing Arts" />
+		<category>Performing Arts</category>
 		<description>Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus.</description>
 		<enclosure length="780895" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3"/>
 		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3</guid>
@@ -48,7 +48,7 @@
 		<title>Folge 2: Royal Diana</title>
 		<pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
 		<itunes:author>Gerhard Großmann</itunes:author>
-		<itunes:category text="Performing Arts" />
+		<category>Performing Arts</category>
 		<description>Nein, der Titel hat nichts mit Prinzessin Diana zu tun, der bereits verstorbenen Ehefrau des englischen Thronfolgers Charles. Sondern es ist die Typenbezeichnung der Schreibmaschine aus meinem Keller.</description>
 		<enclosure length="1257175" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-02_royal-diana.mp3"/>
 		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-02_royal-diana.mp3</guid>
@@ -59,7 +59,7 @@
 		<title>Folge 1: Kriminalstück</title>
 		<pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
 		<itunes:author>Gerhard Großmann</itunes:author>
-		<itunes:category text="Performing Arts" />
+		<category>Performing Arts</category>
 		<description>In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen.</description>
 		<enclosure length="1004214" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3"/>
 		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3</guid>
