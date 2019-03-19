@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+<channel>
+	<title>Gerhard zählt bis Tausend</title>
+	<description>Eine experimentelle Audioserie von Gerhard Großmann (@charakterziffer). In jeder Folge zähle ich ein Stück weiter bis 1000, jedes Mal auf eine andere Art.</description>
+	<language>de-DE</language>
+
+	<image>
+		<url>https://charakterziffer.github.io/material/gzbt/cover.jpg</url>
+		<title>Gerhard zählt bis Tausend</title>
+		<link>https://charakterziffer.github.io/1000.html</link>
+	</image>
+	<itunes:image href="https://charakterziffer.github.io/material/gzbt/cover.jpg" />
+
+	<link>https://charakterziffer.github.io/1000.html</link>
+	<atom:link href="https://charakterziffer.github.io/material/gzbt/podcast.xml" rel="self" type="application/rss+xml" />
+
+	<copyright>© 2019 Gerhard Großmann (@charakterziffer)</copyright>
+	<itunes:author>Gerhard Großmann</itunes:author>
+	<itunes:owner>
+		<itunes:name>Gerhard Großmann (@charakterziffer)</itunes:name>
+		<itunes:email>postfach2b@web.de</itunes:email>
+	</itunes:owner>
+	<itunes:explicit>clean</itunes:explicit>
+	<category>Performing Arts</category>
+	<itunes:category text="Performing Arts" />
+
+	<lastBuildDate>Thu, 19 Mar 2019 14:30:00 +0100</lastBuildDate>
+
+	<item>
+		<title>Folge 3: In einem Atemzug</title>
+		<pubDate>Thu, 19 Mar 2019 14:30:00 +0100</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<description>Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus.</description>
+		<enclosure length="780895" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3</guid>
+		<itunes:duration>00:01:06</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 2: Royal Diana</title>
+		<pubDate>Thu, 19 Mar 2019 14:30:00 +0100</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<description>Nein, der Titel hat nichts mit Prinzessin Diana zu tun, der bereits verstorbenen Ehefrau des englischen Thronfolgers Charles. Sondern es ist die Typenbezeichnung der Schreibmaschine aus meinem Keller.</description>
+		<enclosure length="1257175" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-02_royal-diana.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-02_royal-diana.mp3</guid>
+		<itunes:duration>00:01:49</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 1: Kriminalstück</title>
+		<pubDate>Thu, 19 Mar 2019 14:30:00 +0100</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<description>In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen.</description>
+		<enclosure length="1004214" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3</guid>
+		<itunes:duration>00:01:29</itunes:duration>
+	</item>
+
+	</channel>
+</rss>
