@@ -13,6 +13,72 @@
 </image>
 
 <item>
+	<title>Podcast&amp;colon; „Gerhard zählt bis Tausend“</title>
+	<description>&lt;!-- Standard-Bild überschreiben, unklar ob’s klappt; Podcast-Feed --&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://charakterziffer.github.io/material/gzbt/cover.jpg&quot; /&gt;
+
+&lt;link href=&quot;https://charakterziffer.github.io/material/gzbt/podcast.xml&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;Podcast-Feed&quot; /&gt;
+
+&lt;p class=&quot;hinterlegt&quot;&gt;
+&lt;a href=&quot;https://charakterziffer.github.io/material/gzbt/podcast.xml&quot;&gt;RSS-Feed&lt;/a&gt; des Podcasts, &lt;a href=&quot;https://itunes.apple.com/de/podcast/id1456784246?l=de&quot;&gt;Link bei iTunes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Welche ungewöhnlichen Podcastformate gibt es eigentlich? Das haben sich die Moderatoren des &lt;a href=&quot;https://viertausendhertz.de/frq41/&quot;&gt;Frequenz-Podcasts in Folge 41&lt;/a&gt; gefragt. Sehr oft sind die Episoden ja Interviews oder recht langes „Gelaber“ (davon habe ich als &lt;a href=&quot;podcasts.html&quot;&gt;exzessiver Podcasthörer&lt;/a&gt; auch einiges abonniert). Doch was könnte überhaupt ein &lt;em&gt;ungewöhnliches&lt;/em&gt; Audioformat sein? Etwas in Richtung Klangkunst? Und wie lässt sich ein Format zu einer Serie entwickeln? Diese Überlegungen fand ich derart inspirierend, dass ich einfach selbst ein Podcastformat entwickelt habe.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/gzbt/cover-145px.jpg&quot; alt=&quot;Grünes Coverbild meiner Podcastserie&quot; style=&quot;float:left; margin:.3em 1em .4em -.1em; max-width:30vw;&quot; /&gt;
+Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1000. Weil das eine ganze Weile dauert, mache ich das nach und nach, jeweils fünfzig Zahlen in einer Podcastfolge. Der Text steht damit von vornherein für jede Folge fest. Die Herausforderung besteht nun darin, jedes Mal &lt;em&gt;anders&lt;/em&gt; zu zählen – was immer das bedeutet. Ich werde ja sehen, ob mir genug Ideen für zwanzig Podcast-Episoden einfallen.&lt;/p&gt;
+
+&lt;p&gt;Alle Folgen wird es nach Erscheinen hier zum Anhören geben (ich plane zwei Folgen pro Woche). Mit dem Link unter jedem Player lassen sich die mp3-Dateien direkt öffnen und herunterladen (Rechtsklick &amp;gt; Speichern unter …).&lt;/p&gt;
+
+&lt;p&gt;Wer die Serie in seinem Podcatcher abonnieren möchte, trage dort die Feed-Adresse &lt;a href=&quot;https://charakterziffer.github.io/material/gzbt/podcast.xml&quot;&gt;&lt;code&gt;charakterziffer.github.io/material/gzbt/podcast.xml&lt;/code&gt;&lt;/a&gt; ein. Nutzer:innen von iTunes können die Adresse &lt;a href=&quot;https://itunes.apple.com/de/podcast/id1456784246?l=de&quot;&gt;&lt;code&gt;itunes.apple.com/de/podcast/id1456784246&lt;/code&gt;&lt;/a&gt; verwenden.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;folge-1-kriminalstück&quot;&gt;Folge 1: Kriminalstück&lt;/h2&gt;
+
+&lt;p&gt;In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
+– 22. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot;&gt;Direktlink zur Datei&lt;/a&gt; (1,0 MB)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;folge-2-royal-diana&quot;&gt;Folge 2: Royal Diana&lt;/h2&gt;
+
+&lt;p&gt;Nein, der Titel hat nichts mit Prinzessin Diana zu tun, der bereits verstorbenen Ehefrau des englischen Thronfolgers Charles. Sondern es ist die Typenbezeichnung der Schreibmaschine aus meinem Keller.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/gzbt/gzbt-02_royal-diana.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
+– 22. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-02_royal-diana.mp3&quot;&gt;Direktlink zur Datei&lt;/a&gt; (1,3 MB)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;folge-3-in-einem-atemzug&quot;&gt;Folge 3: In einem Atemzug&lt;/h2&gt;
+
+&lt;p&gt;Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/gzbt/gzbt-03_in-einem-atemzug.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
+– 22. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-03_in-einem-atemzug.mp3&quot;&gt;Direktlink&lt;/a&gt; (0,8 MB)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;weitere-folgen&quot;&gt;Weitere Folgen&lt;/h2&gt;
+
+&lt;p&gt;Ich habe noch so einige Ideen. Ob ich alle 20 Folgen tatsächlich produziere, hängt aber vom Interesse an dieser Serie ab. Ich bin da auf eure direkte Rückmeldung angewiesen, weil ich Website-Besucher:innen oder die Abonnent:innen des Podcasts nicht tracken möchte.&lt;/p&gt;
+
+&lt;p&gt;Falls ihr also mehr Folgen dieser Serie hören möchtet: Bitte unten kommentieren, mir an &lt;em&gt;postfach2b [ät] web.de&lt;/em&gt; schreiben oder sonst irgendwie Rückmeldung geben. Andernfalls gehe ich davon aus, dass „Gerhard zählt bis Tausend“ nicht interessant genug ist, um fertig produziert zu werden. Ach ja: Wer Ideen hat, Fehler findet oder den Podcast ausführlich kritisieren möchte, kann das natürlich auch schreiben.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/1000.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/1000.html</guid>
+	<pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Handgeschriebene Briefe</title>
 	<description>&lt;p&gt;Etwa alle fünf Wochen schreibe ich mal wieder einen persönlichen Brief. Anlass kann ein Geburtstag oder Feiertag sein, eine Antwort auf eine Glückwunschkarte; oft ist es Post für eine meiner zwei Briefbekanntschaften. In der Regel schreibe ich drei bis acht Seiten (meist DIN A5), stecke sie in einen Umschlag und schicke sie per Post auf die Reise.&lt;/p&gt;
 
@@ -298,60 +364,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2019.html</guid>
 	<pubDate>Mon, 19 Nov 2018 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Keimzelle neuer Welten</title>
-	<description>&lt;p&gt;Science-Fiction-Geschichten sind oftmals gar nicht so weit von unserer Wirklichkeit entfernt. Nur ein kleines, entscheidendes Detail ist anders, das dann aber gehörige Folgen nach sich zieht. Zum Beispiel gelten im Film &lt;a href=&quot;https://www.moviepilot.de/movies/equilibrium-2&quot;&gt;Equilibrium&lt;/a&gt; Gefühle als etwas Gefährliches, das verboten werden muss. &lt;a href=&quot;https://www.kino.de/film/minority-report-2002/&quot;&gt;Minority Report&lt;/a&gt; spielt die Idee durch, dass man Verbrechen vorhersehen könnte. Und in &lt;a href=&quot;https://www.bpb.de/gesellschaft/bildung/filmbildung/filmkanon/43611/blade-runner&quot;&gt;Blade Runner&lt;/a&gt; sind Roboter so menschenähnlich, dass sich die Frage nach ihren Rechten stellt. Eine kleine Veränderung hinterfragt die ganze Gesellschaft.&lt;/p&gt;
-
-&lt;p&gt;Ganz so weitreichend sind die Auswirkungen nicht, die meine Erfundenen Fakten hätten, wenn sie wahr wären. Aber vielleicht eröffnen auch sie einen kleinen Blick in eine Welt, in der Gewohntes ganz anders wäre.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🌹 Erfundenes Faktum № 81: Bis ins späte Mittelalter signalisierte man mit roten Rosen den Edelfrauen, für wie zickig (dornig) man sie hielt. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/963729094553886721&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🜛 Erfundenes Faktum № 82: Krötenschleim kann in einem Zaubertrank durch Agar-Agar ersetzt werden, ohne die Wirkung zu beeinträchtigen. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/972042185083375616&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🥨 Erfundenes Faktum № 83: Wegen ihrer Form fördert der Verzehr von Brezeln die Intelligenz und das räumliche Vorstellungsvermögen. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/984730549699928064&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🤡 Erfundenes Faktum № 84: Damit man es besser von Record (⏺) unterscheiden kann, wurde 1973 beim Symbol „Pausenclown“ die rote Nase entfernt – nur die vereinfachten Augen blieben übrig (⏸). (&lt;a href=&quot;https://twitter.com/charakterziffer/status/994524370952445953&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🐝 Erfundenes Faktum № 85: Bienen fliegen deswegen so oft ins menschliche Gesicht, weil UV-Licht-reflektierende Augen wie Blumen wirken. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1004737505244209152&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🦇 Erfundenes Faktum № 86: Man kann die Wahrnehmung von Geisterwesen sehr leicht trainieren, indem man längere Zeit seine Brille nicht putzt. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1017330902173736961&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;◎ Erfundenes Faktum № 87: Bei über 34,7 °C streckt sich der menschliche Augapfel weit genug, um 0,25 Dioptrin Weitsichtigkeit auszugleichen. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1024948405938921472&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⍯ Erfundenes Faktum № 88: Die Hintergründe eines Ereignisses sind umso wahrhaftiger, je besser sie ins eigene Weltbild passen. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1035435835619991559&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🍎 Erfundenes Faktum № 89: Wer unter einem Apfelbaum steht, verstärkt an dieser Stelle die Erdanziehung und erhöht somit die Wahrscheinlichkeit, dass ihm ein Apfel auf den Kopf fällt. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1044185331883495425&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;∥ Erfundenes Faktum № 90: Die meisten Science-Fiction-Geschichten beruhen auf Ideen, die aus Parallel-Universen übermittelt wurden. (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1055055664475750400&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Diese Twitterserie gibt es übrigens schon seit Dezember 2010. Als Blogeintrag gebündelt habe ich die Folgen &lt;a href=&quot;erfundene-fakten-1.html&quot;&gt;1–16&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-2.html&quot;&gt;17–28&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-3.html&quot;&gt;29–40&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-4.html&quot;&gt;41–50&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-5.html&quot;&gt;51–60&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-6.html&quot;&gt;61–70&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-7.html&quot;&gt;71–80&lt;/a&gt; und &lt;a href=&quot;erfundene-fakten-8.html&quot;&gt;81–90&lt;/a&gt;.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/erfundene-fakten-8.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/erfundene-fakten-8.html</guid>
-	<pubDate>Wed, 24 Oct 2018 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
