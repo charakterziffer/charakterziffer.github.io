@@ -14,7 +14,7 @@
 
 <item>
 	<title>Podcast&amp;colon; „Gerhard zählt bis Tausend“</title>
-	<description>&lt;!-- Standard-Bild überschreiben, unklar ob’s klappt; Podcast-Feed --&gt;
+	<description>&lt;!-- Standard-Bild überschreiben; Podcast-Feed --&gt;
 &lt;meta property=&quot;og:image&quot; content=&quot;https://charakterziffer.github.io/material/gzbt/cover.jpg&quot; /&gt;
 
 &lt;link href=&quot;https://charakterziffer.github.io/material/gzbt/podcast.xml&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;Podcast-Feed&quot; /&gt;
