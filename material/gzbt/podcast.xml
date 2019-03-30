@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Wed, 27 Mar 2019 10:20:00 +0100</lastBuildDate>
+	<lastBuildDate>Sat, 30 Mar 2019 21:00:00 +0100</lastBuildDate>
+
+	<item>
+		<title>Folge 5: Gute Nacht!</title>
+		<pubDate>Sat, 30 Mar 2019 21:00:00 +0100</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen zählen. Mööhh.</description>
+		<enclosure length="2699175" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-05_gute-nacht.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-05_gute-nacht.mp3</guid>
+		<itunes:duration>00:03:52</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 4: Falsche Nummer</title>
