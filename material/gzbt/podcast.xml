@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Sat, 30 Mar 2019 21:00:00 +0100</lastBuildDate>
+	<lastBuildDate>Thu, 04 Apr 2019 09:30:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 6: Umgekehrt</title>
+		<pubDate>Thu, 04 Apr 2019 09:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Hilfe, nach fünf Folgen habe ich mir die Zunge verrenkt! Jetzt kommen alle Zahlen rückwärts aus meinem Mund – dann halt umgekehrt: jistfnüf-dnunia-tädnujafst, …</description>
+		<enclosure length="2083038" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-06_umgekehrt.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-06_umgekehrt.mp3</guid>
+		<itunes:duration>00:02:58</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 5: Gute Nacht!</title>
