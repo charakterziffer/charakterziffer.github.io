@@ -25,73 +25,50 @@
 &lt;p&gt;Welche ungewöhnlichen Podcastformate gibt es eigentlich? Das haben sich die Moderatoren des &lt;a href=&quot;https://viertausendhertz.de/frq41/&quot;&gt;Frequenz-Podcasts in Folge 41&lt;/a&gt; gefragt. Sehr oft sind Podcast-Episoden entweder Interviews oder recht langes „Gelaber“ (als &lt;a href=&quot;podcasts.html&quot;&gt;exzessiver Podcasthörer&lt;/a&gt; habe ich derartiges abonniert). Doch was könnte überhaupt ein &lt;em&gt;ungewöhnliches&lt;/em&gt; Audioformat sein? Etwas in Richtung Klangkunst? Und wie lässt sich ein Format zu einer Serie entwickeln? Diese Überlegungen fand ich derart inspirierend, dass ich einfach selbst ein Podcastformat entwickelt habe.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;material/gzbt/cover-145px.jpg&quot; alt=&quot;Grünes Coverbild meiner Podcastserie&quot; style=&quot;float:left; margin:.3em 1em .4em -.1em; max-width:30vw;&quot; /&gt;
-Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1000. Weil das eine ganze Weile dauert, mache ich das nach und nach, jeweils fünfzig Zahlen in einer Podcastfolge. Der Text steht damit von vornherein für jede Folge fest. Die Herausforderung besteht nun darin, jedes Mal &lt;em&gt;anders&lt;/em&gt; zu zählen – was immer das bedeutet. Ich werde ja sehen, ob mir genug Ideen für zwanzig Podcast-Episoden einfallen.&lt;/p&gt;
-
-&lt;p&gt;Alle Folgen wird es nach Erscheinen hier zum Anhören geben (ich plane zwei Folgen pro Woche). Mit dem Link unter jedem Player lassen sich die mp3-Dateien direkt öffnen und herunterladen (Rechtsklick &amp;gt; Speichern unter …).&lt;/p&gt;
+Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1000. Weil das eine ganze Weile dauert, mache ich das nach und nach, jeweils fünfzig Zahlen in einer Podcastfolge. Der Text steht damit von vornherein für jede Folge fest. Die Herausforderung besteht nun darin, jedes Mal &lt;em&gt;anders&lt;/em&gt; zu zählen – was immer das bedeutet. Ich werde ja sehen, ob mir genug Ideen für zwanzig Podcast-Episoden einfallen – geplant sind ca. zwei Folgen pro Woche.&lt;/p&gt;
 
 &lt;p class=&quot;hinterlegt&quot;&gt;
-&lt;b&gt;Update 30. März 2019:&lt;/b&gt;&lt;br /&gt;
+&lt;b&gt;Eure Mithilfe benötigt&lt;/b&gt;&lt;br /&gt;
 Falls es eine Folge 19 gibt, würde ich darin gerne euch Hörer zählen lassen. Bitte schickt mir aus der folgenden Liste fünf Zahlen als Audio-Aufnahme (E-Mail: postfach2b [ät] web.de). Es müssen keine aufeinanderfolgenden Zahlen sein:&lt;br /&gt;
 901 902 903 904 905 906 907 908 909 910 911 912 913 914 915 916 917 918 919 920 921 922 923 924 925 926 927 928 929 930 931 932 933 934 935 936 937 938 939 940 941 942 943 944 945 946 947 948 949 950&lt;/p&gt;
 
 &lt;p&gt;Wer die Serie in seinem Podcatcher abonnieren möchte, trage dort die Feed-Adresse &lt;a href=&quot;https://charakterziffer.github.io/material/gzbt/podcast.xml&quot;&gt;&lt;code&gt;charakterziffer.github.io/material/gzbt/podcast.xml&lt;/code&gt;&lt;/a&gt; ein. Nutzer:innen von iTunes können die Adresse &lt;a href=&quot;https://itunes.apple.com/de/podcast/id1456784246?l=de&quot;&gt;&lt;code&gt;itunes.apple.com/de/podcast/id1456784246&lt;/code&gt;&lt;/a&gt; verwenden.&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-1-kriminalstück&quot;&gt;Folge 1: Kriminalstück&lt;/h2&gt;
-
-&lt;p&gt;In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;div class=&quot;klappkasten&quot; style=&quot;background-color:#eee&quot;&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;K1&quot; /&gt;
+&lt;label for=&quot;K1&quot;&gt;&lt;h2 style=&quot;margin: -.9em 0 0 .7em;&quot;&gt;Folgen 1 bis 5 ausklappen&lt;/h2&gt;&lt;/label&gt;
+&lt;p&gt;&lt;b id=&quot;folge-1-kriminalstück&quot;&gt;Folge 1: Kriminalstück&lt;/b&gt; (22. März 2018)&lt;br /&gt;
+In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen. – &lt;a href=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot;&gt;mp3-Datei&lt;/a&gt; (1,0 MB)&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 22. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot;&gt;Direktlink zur Datei&lt;/a&gt; (1,0 MB)&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-2-royal-diana&quot;&gt;Folge 2: Royal Diana&lt;/h2&gt;
-
-&lt;p&gt;Nein, der Titel hat nichts mit Prinzessin Diana zu tun, der bereits verstorbenen Ehefrau des englischen Thronfolgers Charles. Sondern es ist die Typenbezeichnung der Schreibmaschine aus meinem Keller.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-2-royal-diana&quot;&gt;Folge 2: Royal Diana&lt;/b&gt; (22. März 2018)&lt;br /&gt;
+Nein, der Titel hat nichts mit Prinzessin Diana zu tun, der bereits verstorbenen Ehefrau des englischen Thronfolgers Charles. Sondern es ist die Typenbezeichnung der Schreibmaschine aus meinem Keller. – &lt;a href=&quot;material/gzbt/gzbt-02_royal-diana.mp3&quot;&gt;mp3-Datei (1,3 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-02_royal-diana.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 22. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-02_royal-diana.mp3&quot;&gt;Direktlink zur Datei&lt;/a&gt; (1,3 MB)&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-3-in-einem-atemzug&quot;&gt;Folge 3: In einem Atemzug&lt;/h2&gt;
-
-&lt;p&gt;Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-3-in-einem-atemzug&quot;&gt;Folge 3: In einem Atemzug&lt;/b&gt; (22. März 2018)&lt;br /&gt;
+Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus. – &lt;a href=&quot;material/gzbt/gzbt-03_in-einem-atemzug.mp3&quot;&gt;mp3-Datei (0,8 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-03_in-einem-atemzug.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 22. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-03_in-einem-atemzug.mp3&quot;&gt;Direktlink&lt;/a&gt; (0,8 MB)&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-4-falsche-nummer&quot;&gt;Folge 4: Falsche Nummer&lt;/h2&gt;
-
-&lt;p&gt;Unter 151 152 153 scheint der Anrufer nicht den gewünschten Gesprächspartner zu erreichen. Aber darüber kann man ja reden.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-4-falsche-nummer&quot;&gt;Folge 4: Falsche Nummer&lt;/b&gt; (27. März 2018)&lt;br /&gt;
+Unter 151 152 153 scheint der Anrufer nicht den gewünschten Gesprächspartner zu erreichen. Aber darüber kann man ja reden. – &lt;a href=&quot;material/gzbt/gzbt-04_falsche-nummer.mp3&quot;&gt;mp3-Datei (1,6 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-04_falsche-nummer.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 27. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-04_falsche-nummer.mp3&quot;&gt;Direktlink&lt;/a&gt; (1,6 MB)&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-5-gute-nacht&quot;&gt;Folge 5: Gute Nacht!&lt;/h2&gt;
-
-&lt;p&gt;Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen zählen. Mööhh.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-5-gute-nacht&quot;&gt;Folge 5: Gute Nacht!&lt;/b&gt; (30. März 2018)&lt;br /&gt;
+Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen zählen. Mööhh. – &lt;a href=&quot;material/gzbt/gzbt-05_gute-nacht.mp3&quot;&gt;mp3-Datei (2,7 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-05_gute-nacht.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 30. März 2018 · &lt;a href=&quot;material/gzbt/gzbt-05_gute-nacht.mp3&quot;&gt;Direktlink&lt;/a&gt; (2,7 MB)&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;!-- Folgen 1 bis 5, Klappkasten K1--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;folge-6-umgekehrt&quot;&gt;Folge 6: Umgekehrt&lt;/h2&gt;
 
@@ -100,7 +77,7 @@ Falls es eine Folge 19 gibt, würde ich darin gerne euch Hörer zählen lassen. 
 &lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-06_umgekehrt.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 4. April 2018 · &lt;a href=&quot;material/gzbt/gzbt-06_umgekehrt.mp3&quot;&gt;Direktlink&lt;/a&gt; (2,1 MB)&lt;/p&gt;
+– 4. April 2018 · &lt;a href=&quot;material/gzbt/gzbt-06_umgekehrt.mp3&quot;&gt;mp3-Datei (2,1 MB)&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
