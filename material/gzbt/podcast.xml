@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Thu, 04 Apr 2019 09:30:00 +0200</lastBuildDate>
+	<lastBuildDate>Thu, 08 Apr 2019 12:00:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 7: Diridari</title>
+		<pubDate>Thu, 04 Apr 2019 09:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ein kurzer Blick in die Finanzen (praktisch umgesetzt mithilfe eines Einmachglases voll restlicher Urlaubswährung).</description>
+		<enclosure length="1263286" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-07_diridari.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-07_diridari.mp3</guid>
+		<itunes:duration>00:01:39</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 6: Umgekehrt</title>
