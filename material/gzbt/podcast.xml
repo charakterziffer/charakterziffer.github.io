@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Fri, 12 Apr 2019 12:00:00 +0200</lastBuildDate>
+	<lastBuildDate>Mon, 15 Apr 2019 12:00:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 9: Europa</title>
+		<pubDate>Mon, 15 Apr 2019 12:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Den Zahlenbereich von 401 bis 450 widme ich allen Europäern. Sich auf Augenhöhe begegnen, die Andersartigkeit des Gegenübers annehmen und Aufgaben gemeinsam angehen – so funktioniert für mich Frieden.</description>
+		<enclosure length="2642415" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-09_europa.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-09_europa.mp3</guid>
+		<itunes:duration>00:03:38</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 8: Arithmophobia</title>
