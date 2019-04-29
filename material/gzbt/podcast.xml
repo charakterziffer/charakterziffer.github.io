@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Thu, 25 Apr 2019 16:45:00 +0200</lastBuildDate>
+	<lastBuildDate>Mon, 29 Apr 2019 09:00:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 12: Zugleich</title>
+		<pubDate>Mon, 29 Apr 2019 09:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Mithilfe meiner 49 Doppelgänger konnte ich diese Folge in Null-Komma-Nichts einsprechen.</description>
+		<enclosure length="366967" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-12_zugleich.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-12_zugleich.mp3</guid>
+		<itunes:duration>00:00:29</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 11: Beethoven</title>

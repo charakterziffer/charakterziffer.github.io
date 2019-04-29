@@ -103,9 +103,9 @@ Falls es eine Folge 19 gibt, würde ich darin gerne euch Hörer zählen lassen. 
 
 &lt;div class=&quot;klappkasten&quot; style=&quot;background-color:#eee&quot;&gt;
 &lt;input type=&quot;checkbox&quot; id=&quot;K1&quot; /&gt;
-&lt;label for=&quot;K1&quot;&gt;&lt;h2 style=&quot;margin: -.9em 0 0 .7em;&quot;&gt;Folgen 1 bis 5 ausklappen&lt;/h2&gt;&lt;/label&gt;
+&lt;label for=&quot;K1&quot;&gt;&lt;h2 style=&quot;margin: -.9em 0 0 .7em;&quot;&gt;Folgen 1 bis 10 ausklappen&lt;/h2&gt;&lt;/label&gt;
 &lt;p&gt;&lt;b id=&quot;folge-1-kriminalstück&quot;&gt;Folge 1: Kriminalstück&lt;/b&gt; (22. März 2019)&lt;br /&gt;
-In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen. – &lt;a href=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot;&gt;mp3-Datei&lt;/a&gt; (1,0 MB)&lt;br /&gt;
+In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen. – &lt;a href=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot;&gt;mp3-Datei (1,0 MB)&lt;/a&gt;&lt;br /&gt;
 &lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
@@ -134,63 +134,38 @@ Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen 
 	&lt;source src=&quot;material/gzbt/gzbt-05_gute-nacht.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;/div&gt;
-&lt;p&gt;&lt;!-- Folgen 1 bis 5, Klappkasten K1--&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-6-umgekehrt&quot;&gt;Folge 6: Umgekehrt&lt;/h2&gt;
-
-&lt;p&gt;Hilfe, nach fünf Folgen habe ich mir die Zunge verrenkt! Jetzt kommen alle Zahlen rückwärts aus meinem Mund – dann halt umgekehrt: jistfnüf-dnunia-tädnujafst, …&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-6-umgekehrt&quot;&gt;Folge 6: Umgekehrt&lt;/b&gt; (4. April 2019)&lt;br /&gt;
+Hilfe, nach fünf Folgen habe ich mir die Zunge verrenkt! Jetzt kommen alle Zahlen rückwärts aus meinem Mund – dann halt umgekehrt: jistfnüf-dnunia-tädnujafst, … – &lt;a href=&quot;material/gzbt/gzbt-06_umgekehrt.mp3&quot;&gt;mp3-Datei (2,1 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-06_umgekehrt.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 4. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-06_umgekehrt.mp3&quot;&gt;mp3-Datei (2,1 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-7-diridari&quot;&gt;Folge 7: Diridari&lt;/h2&gt;
-
-&lt;p&gt;Ein kurzer Blick in die Finanzen (praktisch umgesetzt mithilfe eines Einmachglases voll restlicher Urlaubswährung).&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-7-diridari&quot;&gt;Folge 7: Diridari&lt;/b&gt; (8. April 2019)&lt;br /&gt;
+Ein kurzer Blick in die Finanzen (praktisch umgesetzt mithilfe eines Einmachglases voll restlicher Urlaubswährung). – &lt;a href=&quot;material/gzbt/gzbt-07_diridari.mp3&quot;&gt;mp3-Datei (1,3 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-07_diridari.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 8. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-07_diridari.mp3&quot;&gt;mp3-Datei (1,3 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-8-arithmophobia&quot;&gt;Folge 8: Arithmophobia&lt;/h2&gt;
-
-&lt;p&gt;Gerade so entkommen, geflohen in den dunklen Wald. Ich wusste es: Unheimliche Mächte wollen diesen Podcast verhindern. – War da ein Geräusch?&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-8-arithmophobia&quot;&gt;Folge 8: Arithmophobia&lt;/b&gt; (12. April 2019)&lt;br /&gt;
+Gerade so entkommen, geflohen in den dunklen Wald. Ich wusste es: Unheimliche Mächte wollen diesen Podcast verhindern. – War da ein Geräusch? – &lt;a href=&quot;material/gzbt/gzbt-08_arithmophobia.mp3&quot;&gt;mp3-Datei (1,7 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-08_arithmophobia.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 12. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-08_arithmophobia.mp3&quot;&gt;mp3-Datei (1,7 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
 
-&lt;h2 id=&quot;folge-9-europa&quot;&gt;Folge 9: Europa&lt;/h2&gt;
-
-&lt;p&gt;Den Zahlenbereich von 401 bis 450 widme ich allen Europäern. Sich auf Augenhöhe begegnen, die Andersartigkeit des Gegenübers annehmen und Aufgaben gemeinsam angehen – so funktioniert für mich Frieden.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-9-europa&quot;&gt;Folge 9: Europa&lt;/b&gt; (15. April 2019)&lt;br /&gt;
+Den Zahlenbereich von 401 bis 450 widme ich allen Europäern. Sich auf Augenhöhe begegnen, die Andersartigkeit des Gegenübers annehmen und Aufgaben gemeinsam angehen – so funktioniert für mich Frieden. – &lt;a href=&quot;material/gzbt/gzbt-09_europa.mp3&quot;&gt;mp3-Datei (2,6 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-09_europa.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 15. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-09_europa.mp3&quot;&gt;mp3-Datei (2,6 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-10-diskutabel&quot;&gt;Folge 10: Diskutabel&lt;/h2&gt;
-
-&lt;p&gt;Ein diplomatischer Moderator, ein tumber Stammtischbruder und eine differenzierungsfreudige Besserwisserin – damit lässt sich doch eine Gesprächsrunde bestreiten.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-10-diskutabel&quot;&gt;Folge 10: Diskutabel&lt;/b&gt; (22. April 2019)&lt;br /&gt;
+Ein diplomatischer Moderator, ein tumber Stammtischbruder und eine differenzierungsfreudige Besserwisserin – damit lässt sich doch eine Gesprächsrunde bestreiten. – &lt;a href=&quot;material/gzbt/gzbt-10_diskutabel.mp3&quot;&gt;mp3-Datei (1,4 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-10_diskutabel.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 22. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-10_diskutabel.mp3&quot;&gt;mp3-Datei (1,4 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;!-- Folgen 1 bis 10, Klappkasten K1--&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -202,6 +177,17 @@ Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen 
 	&lt;source src=&quot;material/gzbt/gzbt-11_beethoven.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
 – 25. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-11_beethoven.mp3&quot;&gt;mp3-Datei (1,6 MB)&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;folge-12-zugleich&quot;&gt;Folge 12: Zugleich&lt;/h2&gt;
+
+&lt;p&gt;Mithilfe meiner 49 Doppelgänger konnte ich diese Folge in Null-Komma-Nichts einsprechen.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/gzbt/gzbt-12_zugleich.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
+– 29. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-12_zugleich.mp3&quot;&gt;mp3-Datei (0,4 MB)&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
