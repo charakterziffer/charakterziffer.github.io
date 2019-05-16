@@ -31,17 +31,17 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Sun, 12 May 2019 11:00:00 +0200</lastBuildDate>
+	<lastBuildDate>Thu, 16 May 2019 08:00:00 +0200</lastBuildDate>
 
 	<item>
-		<title>Folge 15: Wie spät?</title>
-		<pubDate>Sun, 12 May 2019 11:00:00 +0200</pubDate>
+		<title>Folge 16: Aufwärts</title>
+		<pubDate>Thu, 16 May 2019 08:00:00 +0200</pubDate>
 		<itunes:author>Gerhard Großmann</itunes:author>
 		<category>Performing Arts</category>
-		<description>Hört, ihr Leut, und lasst euch sagen, unsre Glock’ hat siebenhunderteins geschlagen.</description>
-		<enclosure length="1776040" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-15_wie-spaet.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-15_wie-spaet.mp3</guid>
-		<itunes:duration>00:02:19</itunes:duration>
+		<description>Wer ganz nach oben will, muss manchmal Treppensteigen.</description>
+		<enclosure length="1180364" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-16_aufwaerts.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-16_aufwaerts.mp3</guid>
+		<itunes:duration>00:01:40</itunes:duration>
 	</item>
 
 	<item>
