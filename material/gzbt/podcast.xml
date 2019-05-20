@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Thu, 16 May 2019 08:00:00 +0200</lastBuildDate>
+	<lastBuildDate>Mon, 20 May 2019 08:00:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 17: Im Spiel</title>
+		<pubDate>Mon, 20 May 2019 08:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ein Sportereignis kann ganz schön ereignislos sein. Hoffen wir mal, dass der Reporter in den kommenden zwei Minuten einen Treffer miterleben kann.</description>
+		<enclosure length="1506857" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-17_im-spiel.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-17_im-spiel.mp3</guid>
+		<itunes:duration>00:02:00</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 16: Aufwärts</title>

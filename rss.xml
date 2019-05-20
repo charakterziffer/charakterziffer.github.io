@@ -92,13 +92,13 @@
 &lt;p&gt;Welche ungewöhnlichen Podcastformate gibt es eigentlich? Das haben sich die Moderatoren des &lt;a href=&quot;https://viertausendhertz.de/frq41/&quot;&gt;Frequenz-Podcasts in Folge 41&lt;/a&gt; gefragt. Sehr oft sind Podcast-Episoden entweder Interviews oder recht langes „Gelaber“ (als &lt;a href=&quot;podcasts.html&quot;&gt;exzessiver Podcasthörer&lt;/a&gt; habe ich derartiges abonniert). Doch was könnte überhaupt ein &lt;em&gt;ungewöhnliches&lt;/em&gt; Audioformat sein? Etwas in Richtung Klangkunst? Und wie lässt sich ein Format zu einer Serie entwickeln? Diese Überlegungen fand ich derart inspirierend, dass ich einfach selbst ein Podcastformat entwickelt habe.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;material/gzbt/cover-145px.jpg&quot; alt=&quot;Grünes Coverbild meiner Podcastserie&quot; style=&quot;float:left; margin:.3em 1em .4em -.1em; max-width:30vw;&quot; /&gt;
-Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1000. Weil das eine ganze Weile dauert, mache ich das nach und nach, jeweils fünfzig Zahlen in einer Podcastfolge. Der Text steht damit von vornherein für jede Folge fest. Die Herausforderung besteht nun darin, jedes Mal &lt;em&gt;anders&lt;/em&gt; zu zählen – was immer das bedeutet. Ich werde ja sehen, ob mir genug Ideen für zwanzig Podcast-Episoden einfallen – geplant sind ca. zwei Folgen pro Woche.&lt;/p&gt;
+Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1000. Weil das eine ganze Weile dauert, mache ich das nach und nach, jeweils fünfzig Zahlen in einer Podcastfolge. Der Text steht damit von vornherein für jede Folge fest. Die Herausforderung besteht nun darin, jedes Mal &lt;em&gt;anders&lt;/em&gt; zu zählen – was immer das bedeutet. Mit ein bisschen Überlegen sind mir nach und nach genug Ideen für zwanzig Podcast-Episoden eingefallen, so dass ich zwei Folgen pro Woche veröffentlichen konnte.&lt;/p&gt;
 
 &lt;p&gt;Wer die Serie in seinem Podcatcher abonnieren möchte, trage dort die Feed-Adresse &lt;a href=&quot;https://charakterziffer.github.io/material/gzbt/podcast.xml&quot;&gt;&lt;code&gt;charakterziffer.github.io/material/gzbt/podcast.xml&lt;/code&gt;&lt;/a&gt; ein. Nutzer:innen von iTunes können die Adresse &lt;a href=&quot;https://itunes.apple.com/de/podcast/id1456784246?l=de&quot;&gt;&lt;code&gt;itunes.apple.com/de/podcast/id1456784246&lt;/code&gt;&lt;/a&gt; verwenden.&lt;/p&gt;
 
 &lt;div class=&quot;klappkasten&quot; style=&quot;background-color:#eee&quot;&gt;
 &lt;input type=&quot;checkbox&quot; id=&quot;K1&quot; /&gt;
-&lt;label for=&quot;K1&quot;&gt;&lt;h2 style=&quot;margin: -.9em 0 0 .7em;&quot;&gt;Folgen 1 bis 10 ausklappen&lt;/h2&gt;&lt;/label&gt;
+&lt;label for=&quot;K1&quot;&gt;&lt;h2 style=&quot;margin: -.9em 0 0 .7em;&quot;&gt;Folgen 1 bis 15 ausklappen&lt;/h2&gt;&lt;/label&gt;
 &lt;p&gt;&lt;b id=&quot;folge-1-kriminalstück&quot;&gt;Folge 1: Kriminalstück&lt;/b&gt; (22. März 2019)&lt;br /&gt;
 In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen. – &lt;a href=&quot;material/gzbt/gzbt-01_kriminalstueck.mp3&quot;&gt;mp3-Datei (1,0 MB)&lt;/a&gt;&lt;br /&gt;
 &lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
@@ -147,7 +147,6 @@ Gerade so entkommen, geflohen in den dunklen Wald. Ich wusste es: Unheimliche M�
 	&lt;source src=&quot;material/gzbt/gzbt-08_arithmophobia.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-
 &lt;p&gt;&lt;b id=&quot;folge-9-europa&quot;&gt;Folge 9: Europa&lt;/b&gt; (15. April 2019)&lt;br /&gt;
 Den Zahlenbereich von 401 bis 450 widme ich allen Europäern. Sich auf Augenhöhe begegnen, die Andersartigkeit des Gegenübers annehmen und Aufgaben gemeinsam angehen – so funktioniert für mich Frieden. – &lt;a href=&quot;material/gzbt/gzbt-09_europa.mp3&quot;&gt;mp3-Datei (2,6 MB)&lt;/a&gt;&lt;br /&gt;
 &lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
@@ -159,63 +158,38 @@ Ein diplomatischer Moderator, ein tumber Stammtischbruder und eine differenzieru
 &lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-10_diskutabel.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;!-- Folgen 1 bis 10, Klappkasten K1--&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-11-beethoven&quot;&gt;Folge 11: Beethoven&lt;/h2&gt;
-
-&lt;p&gt;Die „Schicksalssinfonie“ ist nicht so ganz meine Tonlage – aber hey! Die Hälfte auf dem Weg bis 1000 ist geschafft, dann kann ich mich auch mal an größere Werke wagen.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-11-beethoven&quot;&gt;Folge 11: Beethoven&lt;/b&gt; (25. April 2019)&lt;br /&gt;
+Die „Schicksalssinfonie“ ist nicht so ganz meine Tonlage – aber hey! Die Hälfte auf dem Weg bis 1000 ist geschafft, dann kann ich mich auch mal an größere Werke wagen. – &lt;a href=&quot;material/gzbt/gzbt-11_beethoven.mp3&quot;&gt;mp3-Datei (1,6 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-11_beethoven.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 25. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-11_beethoven.mp3&quot;&gt;mp3-Datei (1,6 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-12-zugleich&quot;&gt;Folge 12: Zugleich&lt;/h2&gt;
-
-&lt;p&gt;Mithilfe meiner 49 Doppelgänger konnte ich diese Folge in Null-Komma-Nichts einsprechen.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-12-zugleich&quot;&gt;Folge 12: Zugleich&lt;/b&gt; (29. April 2019)&lt;br /&gt;
+Mithilfe meiner 49 Doppelgänger konnte ich diese Folge in Null-Komma-Nichts einsprechen. – &lt;a href=&quot;material/gzbt/gzbt-12_zugleich.mp3&quot;&gt;mp3-Datei (0,4 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-12_zugleich.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 29. April 2019 · &lt;a href=&quot;material/gzbt/gzbt-12_zugleich.mp3&quot;&gt;mp3-Datei (0,4 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-13-zahllergie&quot;&gt;Folge 13: Zahllergie&lt;/h2&gt;
-
-&lt;p&gt;Zwischen 601 und 650 wird es Zeit, die Taschentücher auszupacken. Diese Zahlen kitzeln nämlich gar schrecklich in der Nase und kratzen im Hals.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-13-zahllergie&quot;&gt;Folge 13: Zahllergie&lt;/b&gt; (3. Mai 2019)&lt;br /&gt;
+Zwischen 601 und 650 wird es Zeit, die Taschentücher auszupacken. Diese Zahlen kitzeln nämlich gar schrecklich in der Nase und kratzen im Hals. – &lt;a href=&quot;material/gzbt/gzbt-13_zahllergie.mp3&quot;&gt;mp3-Datei (1,8 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-13_zahllergie.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 3. Mai 2019 · &lt;a href=&quot;material/gzbt/gzbt-13_zahllergie.mp3&quot;&gt;mp3-Datei (1,8 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-14-2-rechts-2-links&quot;&gt;Folge 14: 2 rechts, 2 links&lt;/h2&gt;
-
-&lt;p&gt;Okay, okay: Jede Folge mit so einem spannenden Cliffhanger enden zu lassen, ist eine ganz linke Masche. Zum Ausgleich gibt es diesmal auch rechte Maschen. Diese Folge möglichst so anhören, dass der Stereoklang deutlich wird – zum Beispiel mit Kopfhörer oder zwischen den Lautsprechern sitzend.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+&lt;p&gt;&lt;b id=&quot;folge-14-2-rechts-2-links&quot;&gt;Folge 14: 2 rechts, 2 links&lt;/b&gt; (8. Mai 2019)&lt;br /&gt;
+Okay, okay: Jede Folge mit so einem spannenden Cliffhanger enden zu lassen, ist eine ganz linke Masche. Zum Ausgleich gibt es diesmal auch rechte Maschen. Diese Folge möglichst so anhören, dass der Stereoklang deutlich wird – zum Beispiel mit Kopfhörer oder zwischen den Lautsprechern sitzend. – &lt;a href=&quot;material/gzbt/gzbt-14_2-rechts-2-links.mp3&quot;&gt;mp3-Datei (1,3 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/gzbt/gzbt-14_2-rechts-2-links.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 8. Mai 2019 · &lt;a href=&quot;material/gzbt/gzbt-14_2-rechts-2-links.mp3&quot;&gt;mp3-Datei (1,3 MB)&lt;/a&gt;&lt;/p&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;folge-15-wie-spät&quot;&gt;Folge 15: Wie spät?&lt;/h2&gt;
-
-&lt;p&gt;Hört, ihr Leut, und lasst euch sagen, unsre Glock’ hat siebenhunderteins geschlagen.&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
-	&lt;source src=&quot;material/gzbt/gzbt-15_wie-spaet.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
-– 12. Mai 2019 · &lt;a href=&quot;material/gzbt/gzbt-15_wie-spaet.mp3&quot;&gt;mp3-Datei (1,8 MB)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b id=&quot;folge-15-wie-spät&quot;&gt;Folge 15: Wie spät?&lt;/b&gt; (12. Mai 2019)&lt;br /&gt;
+Hört, ihr Leut, und lasst euch sagen, unsre Glock’ hat siebenhunderteins geschlagen. – &lt;a href=&quot;material/gzbt/gzbt-15_wie-spaet.mp3&quot;&gt;mp3-Datei (1,8 MB)&lt;/a&gt;&lt;br /&gt;
+&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/gzbt/gzbt-16_aufwaerts.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;!-- Folgen 1 bis 15, Klappkasten K1--&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -230,11 +204,32 @@ Ein diplomatischer Moderator, ein tumber Stammtischbruder und eine differenzieru
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;weitere-folgen&quot;&gt;Weitere Folgen&lt;/h2&gt;
+&lt;h2 id=&quot;folge-17-im-spiel&quot;&gt;Folge 17: Im Spiel&lt;/h2&gt;
 
-&lt;p&gt;Ich habe noch so einige Ideen. Ob ich alle 20 Folgen tatsächlich produziere, hängt aber vom Interesse an dieser Serie ab. Ich bin da auf eure direkte Rückmeldung angewiesen, weil ich Website-Besucher:innen oder die Abonnent:innen des Podcasts nicht tracken möchte.&lt;/p&gt;
+&lt;p&gt;Ein Sportereignis kann ganz schön ereignislos sein. Hoffen wir mal, dass der Reporter in den kommenden zwei Minuten einen Treffer miterleben kann.&lt;/p&gt;
 
-&lt;p&gt;Falls ihr also mehr Folgen dieser Serie hören möchtet: Bitte unten kommentieren, mir an &lt;em&gt;postfach2b [ät] web.de&lt;/em&gt; schreiben oder sonst irgendwie Rückmeldung geben. Andernfalls gehe ich davon aus, dass „Gerhard zählt bis Tausend“ nicht interessant genug ist, um fertig produziert zu werden. Ach ja: Wer Ideen hat, Fehler findet oder den Podcast ausführlich kritisieren möchte, kann das natürlich auch schreiben.&lt;/p&gt;
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/gzbt/gzbt-17_im-spiel.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das Audio-Element nicht zu unterstützen. Du kannst die Datei herunterladen und auf deinem Gerät anhören.&lt;/audio&gt;
+– 20. Mai 2019 · &lt;a href=&quot;material/gzbt/gzbt-17_im-spiel.mp3&quot;&gt;mp3-Datei (1,5 MB)&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;weitere-ideen&quot;&gt;Weitere Ideen&lt;/h2&gt;
+
+&lt;p&gt;Schließlich hatte ich sogar ausreichend Einfälle, um aussuchen zu können, welche davon ich produziere – und welche nicht:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zahlen zu singen war mir zu ähnlich zur Beethoven-Folge 11;&lt;/li&gt;
+  &lt;li&gt;eine Märchenerzählung war mir nicht erkennbar genug;&lt;/li&gt;
+  &lt;li&gt;die Zahlen wie im Porno zu stöhnen war mir zu intim (aber sicher lustig!);&lt;/li&gt;
+  &lt;li&gt;ein schmachtender Liebesdialog (vielleicht am Bahnhof) war mir zu ähnlich zur Telefon-Folge 4.&lt;/li&gt;
+  &lt;li&gt;besoffen zu spielen (mit entkorken, eingießen und anstoßen) hat einfach nicht mehr reingepasst.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vielen Dank für eure Rückmeldungen! Hätte nicht gedacht, dass das doch recht unsinnige Konzept des Zählens so gut ankommt. Okay, ich bekam (ganz am Anfang) ein „Wer soll sich denn den Scheiß anhören?“ – aber das ist ja auch irgendwie eine berechtigte Frage :-)&lt;/p&gt;
+
+&lt;p&gt;Ich freue mich sehr über weitere Kommentare! Einfach unten eintragen, mir eine Mail an &lt;em&gt;postfach2b [ät] web.de&lt;/em&gt; schicken oder sonst irgendwie Kontakt aufnehmen. Wer den Podcast ausführlich kritisieren möchte, kann das ebenfalls gern tun.&lt;/p&gt;
 </description>
 	<link>https://charakterziffer.github.io/1000.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
