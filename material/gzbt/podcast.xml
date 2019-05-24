@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Mon, 20 May 2019 08:00:00 +0200</lastBuildDate>
+	<lastBuildDate>Fri, 24 May 2019 08:30:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 18: Tränenreich</title>
+		<pubDate>Fri, 24 May 2019 08:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ja, das Ende ist nah – da kann man auch schon mal 851 bis 900 Tränen vergießen.</description>
+		<enclosure length="2610061" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-18_traenenreich.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-18_traenenreich.mp3</guid>
+		<itunes:duration>00:03:32</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 17: Im Spiel</title>
