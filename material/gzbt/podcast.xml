@@ -31,7 +31,18 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Fri, 24 May 2019 08:30:00 +0200</lastBuildDate>
+	<lastBuildDate>Tue, 28 May 2019 10:30:00 +0200</lastBuildDate>
+
+	<item>
+		<title>Folge 19: Ihr zählt!</title>
+		<pubDate>Tue, 28 May 2019 10:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Kurz vor der finalen Folge 20 gönne ich mir eine Pause. Freundlicherweise haben sehr nette Menschen diesmal das Zählen für mich übernommen – nämlich Bernhard, Lisa, Gian-Luca, Martin, Brigitte, Charlotte, Katrin, Fernando, Stefan und Talia (in der Reihenfolge ihres Auftretens).</description>
+		<enclosure length="1506633" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-19_ihr-zaehlt.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-19_ihr-zaehlt.mp3</guid>
+		<itunes:duration>00:01:59</itunes:duration>
+	</item>
 
 	<item>
 		<title>Folge 18: Tränenreich</title>
