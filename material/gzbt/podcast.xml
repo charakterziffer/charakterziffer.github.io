@@ -31,193 +31,17 @@
 		<itunes:category text="Performing Arts"/>
 	</itunes:category>
 
-	<lastBuildDate>Tue, 28 May 2019 10:30:00 +0200</lastBuildDate>
+	<lastBuildDate>Sat, 1 June 2019 09:15:00 +0200</lastBuildDate>
 
 	<item>
-		<title>Folge 19: Ihr zählt!</title>
-		<pubDate>Tue, 28 May 2019 10:30:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Kurz vor der finalen Folge 20 gönne ich mir eine Pause. Freundlicherweise haben sehr nette Menschen diesmal das Zählen für mich übernommen – nämlich Bernhard, Lisa, Gian-Luca, Martin, Brigitte, Charlotte, Katrin, Fernando, Stefan und Talia (in der Reihenfolge ihres Auftretens).</description>
-		<enclosure length="1506633" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-19_ihr-zaehlt.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-19_ihr-zaehlt.mp3</guid>
-		<itunes:duration>00:01:59</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 18: Tränenreich</title>
-		<pubDate>Fri, 24 May 2019 08:30:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Ja, das Ende ist nah – da kann man auch schon mal 851 bis 900 Tränen vergießen.</description>
-		<enclosure length="2610267" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-18_traenenreich.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-18_traenenreich.mp3</guid>
-		<itunes:duration>00:03:32</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 17: Im Spiel</title>
-		<pubDate>Mon, 20 May 2019 08:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Ein Sportereignis kann ganz schön ereignislos sein. Hoffen wir mal, dass der Reporter in den kommenden zwei Minuten einen Treffer miterleben kann.</description>
-		<enclosure length="1507063" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-17_im-spiel.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-17_im-spiel.mp3</guid>
-		<itunes:duration>00:02:00</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 16: Aufwärts</title>
-		<pubDate>Thu, 16 May 2019 08:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Wer ganz nach oben will, muss manchmal Treppensteigen.</description>
-		<enclosure length="1180538" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-16_aufwaerts.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-16_aufwaerts.mp3</guid>
-		<itunes:duration>00:01:40</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 15: Wie spät?</title>
-		<pubDate>Sun, 12 May 2019 11:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Hört, ihr Leut, und lasst euch sagen, unsre Glock’ hat siebenhunderteins geschlagen.</description>
-		<enclosure length="1776214" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-15_wie-spaet.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-15_wie-spaet.mp3</guid>
-		<itunes:duration>00:02:19</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 14: 2 rechts, 2 links</title>
-		<pubDate>Wed, 08 May 2019 12:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Okay, okay: Jede Folge mit so einem spannenden Cliffhanger enden zu lassen, ist eine ganz linke Masche. Zum Ausgleich gibt es diesmal auch rechte Maschen. Diese Folge möglichst so anhören, dass der Stereoklang deutlich wird – zum Beispiel mit Kopfhörer oder zwischen den Lautsprechern sitzend.</description>
-		<enclosure length="1283280" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-14_2-rechts-2-links.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-14_2-rechts-2-links.mp3</guid>
-		<itunes:duration>00:01:42</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 13: Zahllergie</title>
-		<pubDate>Fri, 03 May 2019 00:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Zwischen 601 und 650 wird es Zeit, die Taschentücher auszupacken. Diese Zahlen kitzeln nämlich gar schrecklich in der Nase und kratzen im Hals.</description>
-		<enclosure length="1815800" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-13_zahllergie.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-13_zahllergie.mp3</guid>
-		<itunes:duration>00:02:27</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 12: Zugleich</title>
-		<pubDate>Mon, 29 Apr 2019 09:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Mithilfe meiner 49 Doppelgänger konnte ich diese Folge in Null-Komma-Nichts einsprechen.</description>
-		<enclosure length="367173" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-12_zugleich.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-12_zugleich.mp3</guid>
-		<itunes:duration>00:00:29</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 11: Beethoven</title>
-		<pubDate>Thu, 25 Apr 2019 16:45:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Die „Schicksalssinfonie“ ist nicht so ganz meine Tonlage – aber hey! Die Hälfte auf dem Weg bis 1000 ist geschafft, dann kann ich mich auch mal an größere Werke wagen.</description>
-		<enclosure length="1586675" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-11_beethoven.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-11_beethoven.mp3</guid>
-		<itunes:duration>00:02:06</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 10: Diskutabel</title>
-		<pubDate>Sat, 22 Apr 2019 19:45:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Ein diplomatischer Moderator, ein tumber Stammtischbruder und eine differenzierungsfreudige Besserwisserin – damit lässt sich doch eine Gesprächsrunde bestreiten.</description>
-		<enclosure length="1395925" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-10_diskutabel.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-10_diskutabel.mp3</guid>
-		<itunes:duration>00:01:57</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 9: Europa</title>
-		<pubDate>Mon, 15 Apr 2019 12:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Den Zahlenbereich von 401 bis 450 widme ich allen Europäern. Sich auf Augenhöhe begegnen, die Andersartigkeit des Gegenübers annehmen und Aufgaben gemeinsam angehen – so funktioniert für mich Frieden.</description>
-		<enclosure length="2642621" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-09_europa.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-09_europa.mp3</guid>
-		<itunes:duration>00:03:38</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 8: Arithmophobia</title>
-		<pubDate>Fri, 12 Apr 2019 12:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Gerade so entkommen, geflohen in den dunklen Wald. Ich wusste es: Unheimliche Mächte wollen diesen Podcast verhindern. – War da ein Geräusch?</description>
-		<enclosure length="1651987" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-08_arithmophobia.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-08_arithmophobia.mp3</guid>
-		<itunes:duration>00:02:24</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 7: Diridari</title>
-		<pubDate>Mon, 08 Apr 2019 12:00:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Ein kurzer Blick in die Finanzen (praktisch umgesetzt mithilfe eines Einmachglases voll restlicher Urlaubswährung).</description>
-		<enclosure length="1263460" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-07_diridari.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-07_diridari.mp3</guid>
-		<itunes:duration>00:01:39</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 6: Umgekehrt</title>
-		<pubDate>Thu, 04 Apr 2019 09:30:00 +0200</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Hilfe, nach fünf Folgen habe ich mir die Zunge verrenkt! Jetzt kommen alle Zahlen rückwärts aus meinem Mund – dann halt umgekehrt: jistfnüf-dnunia-tädnujafst, …</description>
-		<enclosure length="2083212" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-06_umgekehrt.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-06_umgekehrt.mp3</guid>
-		<itunes:duration>00:02:58</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 5: Gute Nacht!</title>
-		<pubDate>Sat, 30 Mar 2019 21:00:00 +0100</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen zählen. Mööhh.</description>
-		<enclosure length="2699381" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-05_gute-nacht.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-05_gute-nacht.mp3</guid>
-		<itunes:duration>00:03:52</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 4: Falsche Nummer</title>
-		<pubDate>Wed, 27 Mar 2019 10:20:00 +0100</pubDate>
-		<itunes:author>Gerhard Großmann</itunes:author>
-		<category>Performing Arts</category>
-		<description>Unter 151 152 153 scheint der Anrufer nicht den gewünschten Gesprächspartner zu erreichen. Aber darüber kann man ja reden.</description>
-		<enclosure length="1556862" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-04_falsche-nummer.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-04_falsche-nummer.mp3</guid>
-		<itunes:duration>00:02:04</itunes:duration>
-	</item>
-
-	<item>
-		<title>Folge 3: In einem Atemzug</title>
+		<title>Folge 1: Kriminalstück</title>
 		<pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
 		<itunes:author>Gerhard Großmann</itunes:author>
 		<category>Performing Arts</category>
-		<description>Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus.</description>
-		<enclosure length="781101" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3</guid>
-		<itunes:duration>00:01:06</itunes:duration>
+		<description>In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen.</description>
+		<enclosure length="1004420" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3</guid>
+		<itunes:duration>00:01:29</itunes:duration>
 	</item>
 
 	<item>
@@ -232,15 +56,201 @@
 	</item>
 
 	<item>
-		<title>Folge 1: Kriminalstück</title>
+		<title>Folge 3: In einem Atemzug</title>
 		<pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
 		<itunes:author>Gerhard Großmann</itunes:author>
 		<category>Performing Arts</category>
-		<description>In der erste Folge zähle ich von eins bis fünfzig mit der Betonung, als würde ich einen Krimi vorlesen.</description>
-		<enclosure length="1004420" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3"/>
-		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-01_kriminalstueck.mp3</guid>
-		<itunes:duration>00:01:29</itunes:duration>
+		<description>Die Zahlen 101 bis 150 erledige ich in dieser Folge mit nur einmal einatmen – außer, mir geht vorher die Luft aus.</description>
+		<enclosure length="781101" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-03_in-einem-atemzug.mp3</guid>
+		<itunes:duration>00:01:06</itunes:duration>
 	</item>
 
+	<item>
+		<title>Folge 4: Falsche Nummer</title>
+		<pubDate>Wed, 27 Mar 2019 10:20:00 +0100</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Unter 151 152 153 scheint der Anrufer nicht den gewünschten Gesprächspartner zu erreichen. Aber darüber kann man ja reden.</description>
+		<enclosure length="1556862" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-04_falsche-nummer.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-04_falsche-nummer.mp3</guid>
+		<itunes:duration>00:02:04</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 5: Gute Nacht!</title>
+		<pubDate>Sat, 30 Mar 2019 21:00:00 +0100</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Licht aus und ab ins Bett. Und wer nicht gleich einschläft, kann ja Schäfchen zählen. Mööhh.</description>
+		<enclosure length="2699381" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-05_gute-nacht.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-05_gute-nacht.mp3</guid>
+		<itunes:duration>00:03:52</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 6: Umgekehrt</title>
+		<pubDate>Thu, 04 Apr 2019 09:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Hilfe, nach fünf Folgen habe ich mir die Zunge verrenkt! Jetzt kommen alle Zahlen rückwärts aus meinem Mund – dann halt umgekehrt: jistfnüf-dnunia-tädnujafst, …</description>
+		<enclosure length="2083212" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-06_umgekehrt.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-06_umgekehrt.mp3</guid>
+		<itunes:duration>00:02:58</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 7: Diridari</title>
+		<pubDate>Mon, 08 Apr 2019 12:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ein kurzer Blick in die Finanzen (praktisch umgesetzt mithilfe eines Einmachglases voll restlicher Urlaubswährung).</description>
+		<enclosure length="1263460" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-07_diridari.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-07_diridari.mp3</guid>
+		<itunes:duration>00:01:39</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 8: Arithmophobia</title>
+		<pubDate>Fri, 12 Apr 2019 12:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Gerade so entkommen, geflohen in den dunklen Wald. Ich wusste es: Unheimliche Mächte wollen diesen Podcast verhindern. – War da ein Geräusch?</description>
+		<enclosure length="1651987" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-08_arithmophobia.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-08_arithmophobia.mp3</guid>
+		<itunes:duration>00:02:24</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 9: Europa</title>
+		<pubDate>Mon, 15 Apr 2019 12:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Den Zahlenbereich von 401 bis 450 widme ich allen Europäern. Sich auf Augenhöhe begegnen, die Andersartigkeit des Gegenübers annehmen und Aufgaben gemeinsam angehen – so funktioniert für mich Frieden.</description>
+		<enclosure length="2642621" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-09_europa.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-09_europa.mp3</guid>
+		<itunes:duration>00:03:38</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 10: Diskutabel</title>
+		<pubDate>Sat, 22 Apr 2019 19:45:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ein diplomatischer Moderator, ein tumber Stammtischbruder und eine differenzierungsfreudige Besserwisserin – damit lässt sich doch eine Gesprächsrunde bestreiten.</description>
+		<enclosure length="1395925" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-10_diskutabel.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-10_diskutabel.mp3</guid>
+		<itunes:duration>00:01:57</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 11: Beethoven</title>
+		<pubDate>Thu, 25 Apr 2019 16:45:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Die „Schicksalssinfonie“ ist nicht so ganz meine Tonlage – aber hey! Die Hälfte auf dem Weg bis 1000 ist geschafft, dann kann ich mich auch mal an größere Werke wagen.</description>
+		<enclosure length="1586675" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-11_beethoven.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-11_beethoven.mp3</guid>
+		<itunes:duration>00:02:06</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 12: Zugleich</title>
+		<pubDate>Mon, 29 Apr 2019 09:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Mithilfe meiner 49 Doppelgänger konnte ich diese Folge in Null-Komma-Nichts einsprechen.</description>
+		<enclosure length="367173" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-12_zugleich.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-12_zugleich.mp3</guid>
+		<itunes:duration>00:00:29</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 13: Zahllergie</title>
+		<pubDate>Fri, 03 May 2019 00:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Zwischen 601 und 650 wird es Zeit, die Taschentücher auszupacken. Diese Zahlen kitzeln nämlich gar schrecklich in der Nase und kratzen im Hals.</description>
+		<enclosure length="1815800" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-13_zahllergie.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-13_zahllergie.mp3</guid>
+		<itunes:duration>00:02:27</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 14: 2 rechts, 2 links</title>
+		<pubDate>Wed, 08 May 2019 12:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Okay, okay: Jede Folge mit so einem spannenden Cliffhanger enden zu lassen, ist eine ganz linke Masche. Zum Ausgleich gibt es diesmal auch rechte Maschen. Diese Folge möglichst so anhören, dass der Stereoklang deutlich wird – zum Beispiel mit Kopfhörer oder zwischen den Lautsprechern sitzend.</description>
+		<enclosure length="1283280" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-14_2-rechts-2-links.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-14_2-rechts-2-links.mp3</guid>
+		<itunes:duration>00:01:42</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 15: Wie spät?</title>
+		<pubDate>Sun, 12 May 2019 11:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Hört, ihr Leut, und lasst euch sagen, unsre Glock’ hat siebenhunderteins geschlagen.</description>
+		<enclosure length="1776214" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-15_wie-spaet.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-15_wie-spaet.mp3</guid>
+		<itunes:duration>00:02:19</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 16: Aufwärts</title>
+		<pubDate>Thu, 16 May 2019 08:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Wer ganz nach oben will, muss manchmal Treppensteigen.</description>
+		<enclosure length="1180538" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-16_aufwaerts.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-16_aufwaerts.mp3</guid>
+		<itunes:duration>00:01:40</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 17: Im Spiel</title>
+		<pubDate>Mon, 20 May 2019 08:00:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ein Sportereignis kann ganz schön ereignislos sein. Hoffen wir mal, dass der Reporter in den kommenden zwei Minuten einen Treffer miterleben kann.</description>
+		<enclosure length="1507063" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-17_im-spiel.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-17_im-spiel.mp3</guid>
+		<itunes:duration>00:02:00</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 18: Tränenreich</title>
+		<pubDate>Fri, 24 May 2019 08:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Ja, das Ende ist nah – da kann man auch schon mal 851 bis 900 Tränen vergießen.</description>
+		<enclosure length="2610267" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-18_traenenreich.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-18_traenenreich.mp3</guid>
+		<itunes:duration>00:03:32</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 19: Ihr zählt!</title>
+		<pubDate>Tue, 28 May 2019 10:30:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Kurz vor der finalen Folge 20 gönne ich mir eine Pause. Freundlicherweise haben sehr nette Menschen diesmal das Zählen für mich übernommen – nämlich Bernhard, Lisa, Gian-Luca, Martin, Brigitte, Charlotte, Katrin, Fernando, Stefan und Talia (in der Reihenfolge ihres Auftretens).</description>
+		<enclosure length="1506633" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-19_ihr-zaehlt.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-19_ihr-zaehlt.mp3</guid>
+		<itunes:duration>00:01:59</itunes:duration>
+	</item>
+
+	<item>
+		<title>Folge 20: Revue</title>
+		<pubDate>Sat, 1 June 2019 09:15:00 +0200</pubDate>
+		<itunes:author>Gerhard Großmann</itunes:author>
+		<category>Performing Arts</category>
+		<description>Jipiiieh, in der letzten Folge komme ich endlich bei 1000 an! Und weil es bis dahin schön war, blicke ich hier auf alle vorangehenden Folgen zurück – quasi ein Konzentrat meiner gesamten Serie.</description>
+		<enclosure length="2111730" type="audio/mpeg" url="https://charakterziffer.github.io/material/gzbt/gzbt-20_revue.mp3"/>
+		<guid>https://charakterziffer.github.io/material/gzbt/gzbt-20_revue.mp3</guid>
+		<itunes:duration>00:03:02</itunes:duration>
+	</item>
 	</channel>
 </rss>
