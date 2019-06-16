@@ -67,21 +67,21 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 
 <p>Mit der <a href="http://www.bjoernsworld.de/css/grundlagen.html">Auszeichnungssprache CSS</a> kann man die HTML-Elemente einer Website gestalten. Für einen einfachen Verlauf mit drei Farben sorgt der folgende Code:</p>
 
-<pre><code>background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%);
+<pre><code>background-image: linear-gradient(90deg, #fff 5%, #839 30%, #ccc 80%);
 </code></pre>
 
 <p>Erklärung: Ein ausgewähltes Element bekommt als Hintergrundbild (<code>background-image</code>) einen linearen Farbverlauf (<code>linear-gradient</code>). Dieser soll aber nicht standardmäßig von unten nach oben laufen, sondern von links nach rechts, also um 90° verdreht (<code>90deg</code>).</p>
 
-<p>Für die ersten 5% unseres Verlaufs wählen wir die Farbe Weiß (mit verkürzter <a href="https://wiki.selfhtml.org/wiki/CSS/Wertetypen/Farbangaben">Hexadezimalschreibweise</a> ist das <code>#fff 5%</code>). Das Weiß geht dann über in Rot (bei 30% des Verlaufs: <code>#e32 30%</code>). Ab da verblasst das Rot zu Hellgrau, was bei 80% des Farbverlaufs erreicht ist (<code>#ccc 80%</code>). Diese letzte Farbe behält der Verlauf bis 100%, also bis ganz nach rechts:</p>
+<p>Für die ersten 5% unseres Verlaufs wählen wir die Farbe Weiß (mit verkürzter <a href="https://wiki.selfhtml.org/wiki/CSS/Wertetypen/Farbangaben">Hexadezimalschreibweise</a> ist das <code>#fff 5%</code>). Das Weiß geht dann über in Lila (bei 30% des Verlaufs: <code>#839 30%</code>). Ab da verblasst das Lila zu Grau, was bei 80% des Farbverlaufs erreicht ist (<code>#ccc 80%</code>). Diese letzte Farbe behält der Verlauf bis 100%, also bis ganz nach rechts:</p>
 
 <style>
 <!--
 [class^="verlauf"] { position:relative; width:100%; height:0; margin:0;
 	padding-bottom:28.75%; line-height:0; border:1px solid #ccc; }
 
-.verlauf1 { background-image: linear-gradient(90deg, #fff 5%, #e32 30%, #ccc 80%); }
-.verlauf2 { background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%); }
-.verlauf3 { background-image: repeating-linear-gradient(160deg, transparent, #deb 30%), repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%), repeating-linear-gradient(100deg, #fff, #839 25%); }
+.verlauf1 { background-image: linear-gradient(90deg, #fff 5%, #839 30%, #ccc 80%); }
+.verlauf2 { background-image: repeating-linear-gradient(100deg, #839, #eee 10%, #3a1 25%); }
+.verlauf3 { background-image: repeating-linear-gradient(160deg, transparent, #deb 30%), repeating-linear-gradient(40deg, transparent, #839 20%, transparent 23%), repeating-linear-gradient(100deg, #fff, #e32 25%); }
 .verlauf4 { background-image: repeating-linear-gradient(160deg, transparent, #fff 30%), repeating-linear-gradient(40deg, transparent, #fff 20%, transparent 23%), repeating-linear-gradient(100deg, transparent, #fff 25%), linear-gradient(90deg, #fff 5%, #deb 30%, #3a1 80%); }
 
 -->
@@ -89,24 +89,24 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 
 <figure>
 <div class="verlauf1"></div>
-<figcaption>Beispiel 1: Farbverlauf von links nach rechts, von Weiß über Rot bis zu Grau.</figcaption>
+<figcaption>Beispiel 1: Farbverlauf von links nach rechts, von Weiß über Lila bis zu Grau.</figcaption>
 </figure>
 
 <h2 id="musterhafte-wiederholung">Musterhafte Wiederholung</h2>
 
-<p>Seit 2012/2013 unterstützen moderne Browser auch CSS-Farbverläufe, die sich wiederholen. Der folgende Verlauf umfasst nur etwa ein Viertel der Bildbreite und geht von violett über rosa nach grün. Danach beginnt er wieder bei violett und wiederholt sich über die gesamte Fläche.</p>
+<p>Seit 2012/2013 unterstützen moderne Browser auch CSS-Farbverläufe, die sich wiederholen. Der folgende Verlauf umfasst nur etwa ein Viertel der Bildbreite und geht von violett über hellgrau nach grün. Danach beginnt er wieder bei violett und wiederholt sich über die gesamte Fläche.</p>
 
 <figure>
 <div class="verlauf2"></div>
-<figcaption>Beispiel 2: Ein Farbverlauf von violett über rosa nach grün, der sich danach dreimal wiederholt</figcaption>
+<figcaption>Beispiel 2: Ein Farbverlauf von violett über hellgrau nach grün, der sich danach dreimal wiederholt</figcaption>
 </figure>
 
 <p>Für das CSS benötigen wir nun einen <code>repeating-linear-gradient</code>, einen <em>sich wiederholenden</em> linearen Verlauf. Den Winkel habe ich mit <code>100deg</code> leicht schräg gewählt. Der Code:</p>
 
-<pre><code>background-image: repeating-linear-gradient(100deg, #839, #fdb 10%, #3a1 25%);
+<pre><code>background-image: repeating-linear-gradient(100deg, #839, #eee 10%, #3a1 25%);
 </code></pre>
 
-<p>Farbbeginn ist violett (<code>#839</code>, ohne Prozentangabe), bei 10% liegt ein gelbliches Rosa (<code>#fdb 10%</code>) und bis 25% ändert sich das zu grün (<code>#3a1 25%</code>). Die letzte Angabe legt auch fest, wie breit der Verlauf insgesamt ist, bevor er sich wiederholt.</p>
+<p>Farbbeginn ist violett (<code>#839</code>, ohne Prozentangabe), bei 10% liegt ein helles Grau (<code>#eee 10%</code>) und bis 25% ändert sich das zu grün (<code>#3a1 25%</code>). Die letzte Angabe legt auch fest, wie breit der Verlauf insgesamt ist, bevor er sich wiederholt.</p>
 
 <p>In diesem Beispiel ist zwischen grün und violett eine harte Kante; man sieht, wo der Verlauf neu anfängt. Würde man bei der ersten und letzten Angabe dieselbe Farbe festlegen, bekäme man zwischen den Wiederholungen einen weichen Übergang.</p>
 
@@ -119,14 +119,14 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <figcaption>Beispiel 3: Drei Farbverläufe mit unterschiedlichen Winkeln, teilweise transparent</figcaption>
 </figure>
 
-<p>Der oberste Verlauf geht von <code>transparent</code> nach <code>#deb</code> (hellgrün) und ist 30% breit. Darunter liegt ein Farbverlauf von <code>transparent</code> nach <code>#e32</code> (rot) und zurück nach <code>transparent</code> – dadurch entsteht keine harte Kante zwischen Ende und Anfang des Verlaufs.</p>
+<p>Der oberste Verlauf geht von <code>transparent</code> nach <code>#deb</code> (hellgrün) und ist 30% breit. Darunter liegt ein Farbverlauf von <code>transparent</code> nach <code>#839</code> (lila) und zurück nach <code>transparent</code> – dadurch entsteht keine harte Kante zwischen Ende und Anfang des Verlaufs.</p>
 
-<p>Ganz zuunterst und zu einem großen Teil verdeckt ist der Farbverlauf aus Beispiel 2, hier mit den Farben <code>#fff</code> (weiß) und <code>#839</code> (violett). Der gesamte Code, ergänzt um Winkel und Prozentangaben sieht so aus:</p>
+<p>Ganz zuunterst und zu einem großen Teil verdeckt ist der Farbverlauf aus Beispiel 2, hier mit den Farben <code>#fff</code> (weiß) und <code>#e32</code> (rot). Der gesamte Code, ergänzt um Winkel und Prozentangaben sieht so aus:</p>
 
 <pre><code>background-image:
 repeating-linear-gradient(160deg, transparent, #deb 30%),
-repeating-linear-gradient(40deg, transparent, #e32 20%, transparent 23%),
-repeating-linear-gradient(100deg, #fff, #839 25%);
+repeating-linear-gradient(40deg, transparent, #839 20%, transparent 23%),
+repeating-linear-gradient(100deg, #fff, #e32 25%);
 </code></pre>
 
 <h2 id="kombiniere">Kombiniere!</h2>
