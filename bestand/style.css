@@ -175,10 +175,10 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 /* LINKS (Schrift: Siehe oben bei b, strong) */
 
 a { text-decoration: none; color: #281; }
-.hinterlegt a, figcaption a, blockquote a { color: #270; }
+aside a, .hinterlegt a, figcaption a, blockquote a { color: #270; }
 a:visited { color: #839; }
 a:hover { color: #3a1; }
-.hinterlegt a:hover, figcaption a:hover, blockquote a:hover {
+aside a:hover,.hinterlegt a:hover,figcaption a:hover,blockquote a:hover {
 	color: #281; }
 a:active { color: #e32; }
 a:focus { outline: 1px dotted #333; }
