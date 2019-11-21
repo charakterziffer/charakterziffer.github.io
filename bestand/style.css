@@ -125,9 +125,10 @@ time { display: block; float: right; padding-left: 1em; color: #666; }
 
 hr { margin: 1.9em 0 1.23em; color: #ccc; }
 
-/* ::selection { background: #deb; }
+/* Angepasste Farbe für ::selection? Dagegen spricht https://alistapart.com/article/paint-the-picture-not-the-frame/#section6 */
+::selection { background: #deb; color: #000; }
 .hinterlegt::selection, a[download]::selection, .klappkasten ::selection,
-.hinterlegt ::selection, a[download] ::selection { background: #fff; } */
+.hinterlegt ::selection, a[download] ::selection { background: #fff; }
 
 /* LISTEN, CODE, ZITATBLÖCKE */
 
