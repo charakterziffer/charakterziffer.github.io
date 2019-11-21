@@ -181,7 +181,7 @@ a:hover { color: #3a1; }
 aside a:hover,.hinterlegt a:hover,figcaption a:hover,blockquote a:hover {
 	color: #281; }
 a:active { color: #e32; }
-a:focus { outline: 1px dotted #333; }
+a:focus { outline: 2px dotted #666; outline-offset: 1px; }
 
 :target { background-color: transparent; animation: target-fade 2s; }
 @keyframes target-fade { 0% { background-color: #deb; } }
