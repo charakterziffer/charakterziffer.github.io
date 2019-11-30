@@ -11,18 +11,15 @@
 	font-style: normal; font-weight: 400;
 	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
 	url(SourceSansPro-Rg.woff2) format('woff2'),
-	url(SourceSansPro-Rg.woff) format('woff');
 	font-display: fallback; }
 @font-face { font-family: 'Source Sans Pro';
 	font-style: italic; font-weight: 400;
 	src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'),
 	url(SourceSansPro-It.woff2) format('woff2'),
-	url(SourceSansPro-It.woff) format('woff');
 	font-display: fallback; }
 @font-face { font-family: 'czSlab';
 	font-style: normal; font-weight: bold;
 	src: url(czSlab.woff2) format('woff2'),
-	url(czSlab.woff) format('woff');
 	font-display: fallback; }
 
 /* GRUNDSÄTZLICHES LAYOUT */
