@@ -13,6 +13,75 @@
 </image>
 
 <item>
+	<title>Sollte man die Farbe von markiertem Text mit CSS ändern?</title>
+	<description>&lt;p&gt;Immer mal wieder verbessere ich Kleinigkeiten an meiner Website (siehe meine &lt;a href=&quot;https://github.com/charakterziffer/charakterziffer.github.io/commits/master&quot;&gt;Commits auf GitHub&lt;/a&gt;). Mitte März habe ich die blassgrüne Hintergrundfarbe für markierten Text rückgängig gemacht – also die Hervorhebung, wenn eine Textstelle mit Maus oder Touchgeste auswählt wird.&lt;/p&gt;
+
+&lt;p&gt;Ich hatte nämlich den interessanten Artikel &lt;a href=&quot;https://alistapart.com/article/paint-the-picture-not-the-frame/&quot;&gt;Paint the Picture Not the Frame&lt;/a&gt; gelesen. Er plädiert dafür, grundlegende Elemente des Browsers nicht umzugestalten, weil es Nutzer:innen frustriert, nicht die gewohnte Gestaltung/​Funktion vorzufinden. Die Beispiele im Artikel waren ein Button, um zum Seitenanfang zu springen; die Scroll-Leiste am Fensterrand; das Scrollen überhaupt (Geschwindigkeit, Haltepunkte); die Textgröße; ausreichend hoher Farbkontrast; den Eingabe-Fokus zu verschieben; die Zwischenablage und Browser-Chronik zu verändern …&lt;/p&gt;
+
+&lt;p&gt;Und eben auch die Hervorhebung bei markierten Elementen. Der Browser stellt sie nämlich so dar, wie es für den gesamten Computer üblich ist – also genau wie im Dateiexplorer, im Schreibprogramm, im Musikplayer, etc. Die Standardfarben in meinem Ubuntu-Betriebssystem für Markierungen sind weiße Schrift auf orangem Hintergrund:&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/markierung-ubuntu.png&quot; alt=&quot;Markierungen in verschiedenen Programmen meines Ubuntu-Betriebssystems&quot; /&gt;
+	&lt;figcaption&gt;Verschiedene Programme auf meinem Ubuntu-Rechner zeigen ausgewählten Text (fast) alle identisch an. Der Firefox-Browser ist unten links.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;gewohnt-guter-standard&quot;&gt;Gewohnt guter Standard&lt;/h2&gt;
+
+&lt;p&gt;Ich hatte die Markierung ursprünglich im September 2018 an die Farben meines Blogs angepasst, also ein blassgrüner Hintergrund für markierte Elemente. Das geht mit der CSS-Eigenschaft &lt;code&gt;::selection&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aber das Argument mit der Einheitlichkeit im Betriebssystem hat mich sehr überzeugt. Im &lt;a href=&quot;https://alistapart.com/article/paint-the-picture-not-the-frame/#section6&quot;&gt;genannten Artikel&lt;/a&gt; heißt es dazu (frei übersetzt aus dem Englischen):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Die einheitliche Hervorhebungsfarbe des Betriebssystems zu missachten ist ähnliche beunruhigend wie umgestaltete Scrollleisten. Es verändert das erwartete Verhalten von etwas, das überall sonst zuverlässig funktioniert. Möglicherweise ist das verwirrend und befremdlich, dazu könnte es die ausdrücklichen Vorlieben von jemandem verweigern.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Und beim folgenden Absatz musste ich an einen guten Bekannten denken, der es beim Lesen im Internet wirklich so macht:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Einige Menschen markieren den Text, während sie lesen. Wenn deine eigens gestaltete Markierung wenig Kontrast zwischen Textfarbe und Hintergrund hat, kann die Person, die auf deiner Website oder in deiner Web-App liest, vielleicht den Text nicht mehr erkennen, den sie markiert. Im Endeffekt verschwindet der Text, den sie zu lesen versucht.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ja schon, aber das gilt ja nur bei schwachem Kontrast. Ich sollte meinen normalen, unmarkierten Lesetext ja auch nicht in Hellgrau auf Weiß setzen.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Anderen Leuten ist dein ästhetisches Feingefühl schlichtweg egal. Sowohl macOS als auch Windows erlauben es, eine selbstgewählte Hervorhebungsfarbe zu bestimmen. Wenn jemand ganz bewusst eine andere Farbe als die Standardmarkierung bevorzugt, dann könnte die geänderte Markierung dessen festgelegte Einstellung überschreiben.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hmm. Was soll denn nun mehr gelten: Dass meine Website so aussieht, wie ich sie gerne hätte (und wie ich glaube, dass sie ein stimmiges Gesamtbild gibt) oder so, wie sie die Nutzer:innen gerne hätten? Ich würde mir wünschen, eine von mir bestimmte Farbe würde nur verwendet werden, solange ein:e Nutzer:in keine andere festgelegt hat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Für mich überwiegen die potentiellen Risiken bei weitem die Eitelkeit einer angepassten Hervorhebungsfarbe – besser sie einfach so belassen.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ach, ich weiß nicht. Wie wahrscheinlich treten diese potentiellen Risiken denn überhaupt auf? Darum ging ich mit meiner Markierung vor drei Wochen doch wieder …&lt;/p&gt;
+
+&lt;h2 id=&quot;zurück-zur-eigenen-farbe&quot;&gt;Zurück zur eigenen Farbe&lt;/h2&gt;
+
+&lt;p&gt;In letzter Zeit hatte ich auf einigen Websites gesehen, wie gut eine eigene Markierung zum stimmigen Design beträgt, zum Beispiel bei &lt;a href=&quot;https://css-tricks.com&quot;&gt;CSS Tricks&lt;/a&gt; (leuchtend violette Hervorhebung), &lt;a href=&quot;https://frankrausch.com&quot;&gt;Frank Rausch&lt;/a&gt; (Weiß auf dunklem Seitengrund) oder &lt;a href=&quot;https://bitsofco.de&quot;&gt;Bits of Code&lt;/a&gt; (warmgelbe Signalfarbe).&lt;/p&gt;
+
+&lt;p&gt;Das Argument, etwas sei ungewohnt und verwirrend, spricht außerdem in letzter Konsequenz gegen jede Art der individuellen Gestaltung. Möchten wir in einer Welt leben, in der jedes Auto, jeder Stuhl, jeder Pullover absolut identisch aussieht? Wir als Gestalter:innen können die mögliche Verwirrung doch gering halten, indem die Funktion trotz der Umgestaltung erkennbar bleibt. Genau das ist doch unsere Aufgabe: die Balance zu finden zwischen außergewöhnlich und vertraut.&lt;/p&gt;
+
+&lt;p&gt;Markierter Text muss also hervorgehoben aussehen und nicht zurückgenommen. Damit der Kontrast stimmt, sollten für &lt;code&gt;::selection&lt;/code&gt; neben der Hintergrundfarbe immer auch die Textfarbe definiert werden (das gilt grundsätzlich immer, wenn man in CSS eine &lt;code&gt;background-color&lt;/code&gt; festlegt).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;::selection { background-color: #deb; color: #000; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mit diesem CSS-Befehl wird der Hintergrund hellgrün, die Schriftfarbe schwarz &lt;span style=&quot;background-color: #deb; color: #000;&quot;&gt;(wie hier)&lt;/span&gt;. Vergisst man, die Textfarbe anzupassen, könnten Nutzer:innen irgendwo einen Text markieren, der eine sehr ähnliche Farbe hat wie der Hervorhebungshintergrund. Dann würde der markierte Text verschwinden …&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot;&gt;Aufpassen muss man noch, wenn man auf seiner Website Elemente verwendet, die einer Markierung bereits ziemlich ähnlich sehen. In einem grünen Kasten wie diesem wäre eine ebenfalls grüne Hervorhebung nicht sichtbar. Für diese Fälle habe ich die Markierfarbe also auf Weiß geändert &lt;span style=&quot;background-color: #fff; color: #000;&quot;&gt;(Beispiel)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;noch-immer-unschlüssig&quot;&gt;Noch immer unschlüssig&lt;/h2&gt;
+
+&lt;p&gt;Völlig überzeugt bin ich immer noch nicht. Vorerst halte ich es aber wie bei dem Argument gegen geänderte Linkfarben. Die sollten ja auch am besten &lt;span style=&quot;text-decoration: underline; color: #00E;&quot;&gt;blau und unterstrichen&lt;/span&gt; sein, damit man sie sofort als Verlinkungen erkennt. Ich meine: Wenn die Funktion ersichtlich bleibt, darf man ruhig von der Standardgestaltung abweichen.&lt;/p&gt;
+
+&lt;p&gt;Andererseits kann ich mir natürlich vorstellen, dass jemand sein Betriebssystem wegen schlechter Augen so eingerichtet hat, dass markierter Text knallgelb auf schwarzem Hintergrund steht. Und dann komm ich daher mit meinem blassen Grün … Und auf Windows im Modus mit hohem Farbkontrast scheint meine Hervorhebung auch nicht zu funktionieren. Naja, vielleicht ändere ich es doch irgendwann wieder zurück.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/css-selection.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/css-selection.html</guid>
+	<pubDate>Sat, 14 Dec 2019 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Adventskalender mit Brush Lettering</title>
 	<description>&lt;p&gt;Eigentlich hatte ich mir als guten Vorsatz für 2019 vorgenommen, jeden Tag ein bisschen Yoga zu betreiben (letztes Jahr: &lt;a href=&quot;tagesvers.html&quot;&gt;tägliche Erinnerungsverse&lt;/a&gt;). Ich habe mir Yoga auch bis Juni angeschaut und ausprobiert, bin damit aber nicht so richtig warm geworden. Darum habe ich mir ab Juli den neuen Vorsatz gemacht, täglich ein bisschen &lt;em&gt;Brush Lettering&lt;/em&gt; zu üben, also dekoratives Schreiben mit einem Pinsel. Gut für euch, denn eines meiner Projekte war ein Adventskalender, den ich hier zum Selberbasteln veröffentliche.&lt;/p&gt;
 
@@ -213,24 +282,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/origamimoewe.html</guid>
 	<pubDate>Thu, 22 Aug 2019 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Von oben herab</title>
-	<description>&lt;p&gt;Mittlerweile sind Flugdrohnen verhältnismäßig günstig und leicht zu bedienen, so dass auch Hobbyfilmer damit Filmaufnahmen aus der Luft anfertigen können. Dabei entstehen ungewohnte Perspektiven und Ausblicke über den gewohnten Horizont hinaus.&lt;/p&gt;
-
-&lt;figure style=&quot;position:relative; height:0; width:98.8%; padding-bottom:55.5%&quot;&gt;&lt;iframe style=&quot;position:absolute; top:0; left:0; width:100%; height:100%; border:0;&quot; title=&quot;Eingebettetes Video&quot; src=&quot;data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3E%3Cp%3EDieses%20Video%20stammt%20von%20YouTube.%20Beim%20Abspielen%20l%C3%A4dt%20YouTube%20u.%20a.%20Schriftarten,%20die%20Videodaten%20und%20speichert%20ggf.%20einen%20Cookie%20in%20deinem%20Browser.%20Dadurch%20kann%20YouTube%20deine%20Aktivit%C3%A4ten%20auf%20seiner%20Plattform%20verfolgen.%20Teils%20kannst%20du%20das%20verhindern%2C%20indem%20du%20Cookies%20von%20Drittanbietern%20in%20den%20Browser-Einstellungen%20blockierst.%3Cp%3ETrotz%20YouTube-Tracking%20das%20%3Ca%20href%3D%27https%3A%2F%2Fwww.youtube-nocookie.com%2Fembed%2FIU_IQ9bSBiM%3Fmodestbranding%3D0%26rel%3D0%26showsearch%3D0%26showinfo%3D1%26hl%3Dde%26cc_load_policy%3D1%26autoplay%3D1%26playsinline%3D1%26theme%3Ddark%26fs%3D1%26loop%3D0%27%3EVideo%20abspielen%3C%2Fa%3E%3F%2Fbody%3E%3C%2Fhtml%3E&quot; srcdoc=&quot;&amp;lt;p&amp;gt;Dieses Video stammt von YouTube. Beim Abspielen lädt YouTube u.&amp;lt;small&amp;gt;&amp;nbsp;&amp;lt;/small&amp;gt;a. Schriftarten, die Videodaten und speichert ggf. einen Cookie in deinem Browser. Dadurch kann YouTube deine Aktivitäten auf seiner Plattform verfolgen. Teils kannst du das verhindern, indem du Cookies von Drittanbietern in den Browser-Einstellungen blockierst.&amp;lt;p&amp;gt;Trotz YouTube-Tracking das &amp;lt;a href='https://www.youtube-nocookie.com/embed/IU_IQ9bSBiM?modestbranding=0&amp;amp;rel=0&amp;amp;showsearch=0&amp;amp;showinfo=1&amp;amp;hl=de&amp;amp;cc_load_policy=1&amp;amp;autoplay=1&amp;amp;playsinline=1&amp;amp;theme=dark&amp;amp;fs=1&amp;amp;loop=0'&amp;gt;Video abspielen&amp;lt;/a&amp;gt;?&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;
-
-&lt;p&gt;Das 4-minütige Video von den Azoren stammt von &lt;a href=&quot;https://www.youtube.com/channel/UCnStz8S6H5pptOUo6wMBj6g/&quot;&gt;Tom Vetterl&lt;/a&gt; und ich finde die Bilder wirklich beeindruckend – aber irgendetwas hat mich daran gestört. Nach einer Weile kam ich drauf: Die Perspektive von oben erschwert es mir, mich in die gefilmte Person hineinzuversetzen. Statt mit dem Protagonisten auf Augenhöhe die Landschaft zu erleben, schaue ich auf ihn herab. Ich bin nicht richtig dabei, sondern beobachte nur, wie jemand anderes die Wanderung erlebt. Der Blickwinkel macht Zuschauer:innen zu distanzierten Betrachter:innen.&lt;/p&gt;
-
-&lt;p&gt;Wie gesagt: Die Vogelperspektive hat einen hohen Schauwert und vieles lässt sich erst aus gewisser Höhe erkennen (die Struktur von Gischt, die Kronen einzelner Bäume, …). Falls ihr vom Drohnenfilmen begeistert seid, macht euch aber bitte Gedanken, ob das „Schweben über den Dingen“ dem entspricht, was ihr vermitteln/​erreichen möchtet. Die noch recht neue Drohnenperspektive allein reicht nicht aus für einen Film mit Tiefe. Falls es darum geht, euer Publikum in die Umgebung und das Erlebnis miteinzubeziehen, ist der Kamerablick von oben herab nicht die richtige.&lt;/p&gt;
-
-&lt;p&gt;Das Azoren-Video habe ich für diesen Blogpost übrigens deshalb ausgewählt, weil es sehr gut gefilmt ist und es die Perspektive von oben fast konsequent beibehält. &lt;a href=&quot;https://www.youtube.com/watch?v=82OPZXmPSOs&quot;&gt;In einem anderen Video&lt;/a&gt; beweist Tom Vetterl außerdem, dass er durch eine andere Kameraperspektive seine Zuschauer:innen sehr wohl mitnehmen kann – und sofort bin ich mitten im Geschehen dabei.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/drohnenfilm.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/drohnenfilm.html</guid>
-	<pubDate>Tue, 23 Jul 2019 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

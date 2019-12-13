@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde:r,
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<title>Sollte man die Farbe von markiertem Text mit CSS ändern? // @cz+</title>
+<meta name="description" content="Die CSS-Eigenschaft `::selection` ermöglicht, einen markierten Text anders aussehen zu lassen. Doch sollte man hier vom Standard abweichen?">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="Artikel-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/css-selection.html&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Sollte man die Farbe von markiertem Text mit CSS ändern?" />
+<meta property="og:description" content="Die CSS-Eigenschaft `::selection` ermöglicht, einen markierten Text anders aussehen zu lassen. Doch sollte man hier vom Standard abweichen?" />
+<meta property="og:url" content="https://charakterziffer.github.io/css-selection.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/extra/index.html">★Extra</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</header>
+
+<main>
+<article>
+<time datetime="2019-12-14">Sa, 14. Dez. 2019</time>
+<h1>Sollte man die Farbe von markiertem Text mit CSS ändern?</h1>
+<p>Immer mal wieder verbessere ich Kleinigkeiten an meiner Website (siehe meine <a href="https://github.com/charakterziffer/charakterziffer.github.io/commits/master">Commits auf GitHub</a>). Mitte März habe ich die blassgrüne Hintergrundfarbe für markierten Text rückgängig gemacht – also die Hervorhebung, wenn eine Textstelle mit Maus oder Touchgeste auswählt wird.</p>
+
+<p>Ich hatte nämlich den interessanten Artikel <a href="https://alistapart.com/article/paint-the-picture-not-the-frame/">Paint the Picture Not the Frame</a> gelesen. Er plädiert dafür, grundlegende Elemente des Browsers nicht umzugestalten, weil es Nutzer:innen frustriert, nicht die gewohnte Gestaltung/​Funktion vorzufinden. Die Beispiele im Artikel waren ein Button, um zum Seitenanfang zu springen; die Scroll-Leiste am Fensterrand; das Scrollen überhaupt (Geschwindigkeit, Haltepunkte); die Textgröße; ausreichend hoher Farbkontrast; den Eingabe-Fokus zu verschieben; die Zwischenablage und Browser-Chronik zu verändern …</p>
+
+<p>Und eben auch die Hervorhebung bei markierten Elementen. Der Browser stellt sie nämlich so dar, wie es für den gesamten Computer üblich ist – also genau wie im Dateiexplorer, im Schreibprogramm, im Musikplayer, etc. Die Standardfarben in meinem Ubuntu-Betriebssystem für Markierungen sind weiße Schrift auf orangem Hintergrund:</p>
+
+<figure><img src="material/markierung-ubuntu.png" alt="Markierungen in verschiedenen Programmen meines Ubuntu-Betriebssystems" />
+	<figcaption>Verschiedene Programme auf meinem Ubuntu-Rechner zeigen ausgewählten Text (fast) alle identisch an. Der Firefox-Browser ist unten links.</figcaption>
+</figure>
+
+<h2 id="gewohnt-guter-standard">Gewohnt guter Standard</h2>
+
+<p>Ich hatte die Markierung ursprünglich im September 2018 an die Farben meines Blogs angepasst, also ein blassgrüner Hintergrund für markierte Elemente. Das geht mit der CSS-Eigenschaft <code>::selection</code>.</p>
+
+<p>Aber das Argument mit der Einheitlichkeit im Betriebssystem hat mich sehr überzeugt. Im <a href="https://alistapart.com/article/paint-the-picture-not-the-frame/#section6">genannten Artikel</a> heißt es dazu (frei übersetzt aus dem Englischen):</p>
+
+<blockquote>
+  <p>Die einheitliche Hervorhebungsfarbe des Betriebssystems zu missachten ist ähnliche beunruhigend wie umgestaltete Scrollleisten. Es verändert das erwartete Verhalten von etwas, das überall sonst zuverlässig funktioniert. Möglicherweise ist das verwirrend und befremdlich, dazu könnte es die ausdrücklichen Vorlieben von jemandem verweigern.</p>
+</blockquote>
+
+<p>Und beim folgenden Absatz musste ich an einen guten Bekannten denken, der es beim Lesen im Internet wirklich so macht:</p>
+
+<blockquote>
+  <p>Einige Menschen markieren den Text, während sie lesen. Wenn deine eigens gestaltete Markierung wenig Kontrast zwischen Textfarbe und Hintergrund hat, kann die Person, die auf deiner Website oder in deiner Web-App liest, vielleicht den Text nicht mehr erkennen, den sie markiert. Im Endeffekt verschwindet der Text, den sie zu lesen versucht.</p>
+</blockquote>
+
+<p>Ja schon, aber das gilt ja nur bei schwachem Kontrast. Ich sollte meinen normalen, unmarkierten Lesetext ja auch nicht in Hellgrau auf Weiß setzen.</p>
+
+<blockquote>
+  <p>Anderen Leuten ist dein ästhetisches Feingefühl schlichtweg egal. Sowohl macOS als auch Windows erlauben es, eine selbstgewählte Hervorhebungsfarbe zu bestimmen. Wenn jemand ganz bewusst eine andere Farbe als die Standardmarkierung bevorzugt, dann könnte die geänderte Markierung dessen festgelegte Einstellung überschreiben.</p>
+</blockquote>
+
+<p>Hmm. Was soll denn nun mehr gelten: Dass meine Website so aussieht, wie ich sie gerne hätte (und wie ich glaube, dass sie ein stimmiges Gesamtbild gibt) oder so, wie sie die Nutzer:innen gerne hätten? Ich würde mir wünschen, eine von mir bestimmte Farbe würde nur verwendet werden, solange ein:e Nutzer:in keine andere festgelegt hat.</p>
+
+<blockquote>
+  <p>Für mich überwiegen die potentiellen Risiken bei weitem die Eitelkeit einer angepassten Hervorhebungsfarbe – besser sie einfach so belassen.</p>
+</blockquote>
+
+<p>Ach, ich weiß nicht. Wie wahrscheinlich treten diese potentiellen Risiken denn überhaupt auf? Darum ging ich mit meiner Markierung vor drei Wochen doch wieder …</p>
+
+<h2 id="zurück-zur-eigenen-farbe">Zurück zur eigenen Farbe</h2>
+
+<p>In letzter Zeit hatte ich auf einigen Websites gesehen, wie gut eine eigene Markierung zum stimmigen Design beträgt, zum Beispiel bei <a href="https://css-tricks.com">CSS Tricks</a> (leuchtend violette Hervorhebung), <a href="https://frankrausch.com">Frank Rausch</a> (Weiß auf dunklem Seitengrund) oder <a href="https://bitsofco.de">Bits of Code</a> (warmgelbe Signalfarbe).</p>
+
+<p>Das Argument, etwas sei ungewohnt und verwirrend, spricht außerdem in letzter Konsequenz gegen jede Art der individuellen Gestaltung. Möchten wir in einer Welt leben, in der jedes Auto, jeder Stuhl, jeder Pullover absolut identisch aussieht? Wir als Gestalter:innen können die mögliche Verwirrung doch gering halten, indem die Funktion trotz der Umgestaltung erkennbar bleibt. Genau das ist doch unsere Aufgabe: die Balance zu finden zwischen außergewöhnlich und vertraut.</p>
+
+<p>Markierter Text muss also hervorgehoben aussehen und nicht zurückgenommen. Damit der Kontrast stimmt, sollten für <code>::selection</code> neben der Hintergrundfarbe immer auch die Textfarbe definiert werden (das gilt grundsätzlich immer, wenn man in CSS eine <code>background-color</code> festlegt).</p>
+
+<pre><code>::selection { background-color: #deb; color: #000; }
+</code></pre>
+
+<p>Mit diesem CSS-Befehl wird der Hintergrund hellgrün, die Schriftfarbe schwarz <span style="background-color: #deb; color: #000;">(wie hier)</span>. Vergisst man, die Textfarbe anzupassen, könnten Nutzer:innen irgendwo einen Text markieren, der eine sehr ähnliche Farbe hat wie der Hervorhebungshintergrund. Dann würde der markierte Text verschwinden …</p>
+
+<p class="hinterlegt">Aufpassen muss man noch, wenn man auf seiner Website Elemente verwendet, die einer Markierung bereits ziemlich ähnlich sehen. In einem grünen Kasten wie diesem wäre eine ebenfalls grüne Hervorhebung nicht sichtbar. Für diese Fälle habe ich die Markierfarbe also auf Weiß geändert <span style="background-color: #fff; color: #000;">(Beispiel)</span>.</p>
+
+<h2 id="noch-immer-unschlüssig">Noch immer unschlüssig</h2>
+
+<p>Völlig überzeugt bin ich immer noch nicht. Vorerst halte ich es aber wie bei dem Argument gegen geänderte Linkfarben. Die sollten ja auch am besten <span style="text-decoration: underline; color: #00E;">blau und unterstrichen</span> sein, damit man sie sofort als Verlinkungen erkennt. Ich meine: Wenn die Funktion ersichtlich bleibt, darf man ruhig von der Standardgestaltung abweichen.</p>
+
+<p>Andererseits kann ich mir natürlich vorstellen, dass jemand sein Betriebssystem wegen schlechter Augen so eingerichtet hat, dass markierter Text knallgelb auf schwarzem Hintergrund steht. Und dann komm ich daher mit meinem blassen Grün … Und auf Windows im Modus mit hohem Farbkontrast scheint meine Hervorhebung auch nicht zu funktionieren. Naja, vielleicht ändere ich es doch irgendwann wieder zurück.</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?kritik">#kritik&nbsp; </a>
+
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+</p>
+</article>
+
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/css-selection">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </p><p> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="adventslettering.html">← Adventskalender mit Brush Lettering</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum/Datenschutz</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener noreferrer">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em> (gern mit <a href="/bestand/pub-0x9BA6621B.asc">meinem PGP-Schlüssel</a> verschlüsselt).</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
+</body>
+</html>
