@@ -158,8 +158,8 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 
 .klappkasten input { position: absolute; top: 0; left: 0;
 	height: 2.1em; opacity: 0; cursor: pointer; }
-.klappkasten input:focus:not(:hover) { opacity: 1; }
 .klappkasten label { cursor: pointer; }
+.klappkasten:focus-within { outline:2px dotted #666; outline-offset:1px; }
 
 .klappkasten label::before { content: '→'; padding-right: .3em; }
 .klappkasten input:checked ~ label::before { content: '↓'; }
