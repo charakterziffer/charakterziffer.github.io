@@ -73,7 +73,7 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 h1, h2, h3, b, strong, a, form label {
 	font: bold 1em/1 czSlab,Georgia,serif; color: #333; }
 h1, h2, h3 { font-feature-settings: 'onum' 0, 'liga', 'kern';
-	letter-spacing: -.012em; }
+	letter-spacing: -.01em; }
 b, strong, p a, figcaption a, form label {
 	padding: 0 .06em; font-size: .95em;
 	font-feature-settings: 'onum', 'liga', 'kern'; }
