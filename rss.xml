@@ -13,6 +13,52 @@
 </image>
 
 <item>
+	<title>Verblüffend einfaches Miniheft</title>
+	<description>&lt;p&gt;Es gibt Dinge, die regen meine Kreativität an und ich komme gleich auf gute Ideen. Eines dieser Dinge ist das folgende Miniheft. Es lässt sich sehr leicht aus einem einzelnen Papierbogen herstellen. Die Anleitung gibt’s diesmal als kurzes Video:&lt;/p&gt;
+
+&lt;style&gt;
+video { width: 100%; height: auto; }
+::cue { font: 1.15em/1.33 'Source Sans Pro',Calibri,sans-serif;
+	font-size: clamp(.95em,3.3vw,1.35em); }
+&lt;/style&gt;
+
+&lt;figure&gt;
+&lt;video src=&quot;material/miniheft.mp4&quot; width=&quot;750px&quot; height=&quot;422px&quot; controls=&quot;&quot; poster=&quot;material/miniheft.jpg&quot; playsinline=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;track label=&quot;Deutsch&quot; kind=&quot;captions&quot; srclang=&quot;de&quot; default=&quot;&quot; src=&quot;material/miniheft-de.vtt&quot; /&gt;
+	&lt;track label=&quot;English&quot; kind=&quot;captions&quot; srclang=&quot;en&quot; src=&quot;material/miniheft-en.vtt&quot; /&gt;
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Das einfache Heftchen lädt dazu ein, bekritzelt und beschrieben zu werden. Wie wäre es zum Beispiel mit einem Tagebüchlein? Oder gemalten Glückwünschen für eine liebe Person? Die acht kleinen Seiten bieten viele Möglichkeiten:&lt;/p&gt;
+
+&lt;ul style=&quot;columns:14em; margin:1em 0 -0.25em;&quot;&gt;
+&lt;li style=&quot;margin-top:0;&quot;&gt;Einfache Rezepte&lt;/li&gt;
+&lt;li&gt;Gedanken zu einem Thema&lt;/li&gt;
+&lt;li&gt;eine gezeichnete Anleitung&lt;/li&gt;
+&lt;li&gt;bewegende Gedichte&lt;/li&gt;
+&lt;li&gt;Collagen aus Foto-Schnippseln&lt;/li&gt;
+&lt;li&gt;die kommende Gartenplanung&lt;/li&gt;
+&lt;li&gt;eine ganze Comic-Serie&lt;/li&gt;
+&lt;li&gt;Liedtexte zum Mitsingen&lt;/li&gt;
+&lt;li&gt;eine Sammlung von tollen Farben&lt;/li&gt;
+&lt;li&gt;schöne Erinnerungen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sehr praktisch: Wenn man sein Heftchen fertig gestaltet hat, kann man es wieder auffalten und das einzelne Blatt mit einem Kopierer vervielfältigen. So entstehen schnell mehrere Exemplare, die sich gut als Geschenk eignen.&lt;/p&gt;
+
+&lt;p&gt;Für diesen Blog-Artikel habe ich selbst zwei Minihefte geschrieben. Das erste gibt fünf Tipps für bessere Typografie, das zweite enthält gezeichnete Liebeserklärungen. Zum Nachbasteln unten die PDF-Datei herunterladen und die entsprechende Seite ausdrucken. Beim Falten bitte darauf achten, dass die Titelseite immer außen bleibt.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/minihefte.pdf&quot; download=&quot;&quot;&gt;Druckvorlage herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 2,2 MB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Übrigens: Auf Englisch heißen gebastelte Heftchen auch &lt;em&gt;zines&lt;/em&gt; [gesprochen: „siens“], eine Kurzform von &lt;em&gt;magazines&lt;/em&gt; – sozusagen kleine, selbstgemachte Zeitschriften.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/miniheft.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/miniheft.html</guid>
+	<pubDate>Mon, 18 May 2020 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Kunst ohne Publikum</title>
 	<description>&lt;p&gt;Sind Künstler:innen eigentlich eitel? Wollen beklatscht und &lt;a href=&quot;beruehmt.html&quot;&gt;berühmt werden?&lt;/a&gt; Oder sind sie vielleicht aus tiefstem Herzen freundlich? Wollen beglücken, erstaunen, verzaubern?&lt;/p&gt;
 
@@ -279,75 +325,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/10-jahre-twitter.html</guid>
 	<pubDate>Fri, 17 Jan 2020 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Sollte man die Farbe von markiertem Text mit CSS ändern?</title>
-	<description>&lt;p&gt;Immer mal wieder verbessere ich Kleinigkeiten an meiner Website (siehe meine &lt;a href=&quot;https://github.com/charakterziffer/charakterziffer.github.io/commits/master&quot;&gt;Commits auf GitHub&lt;/a&gt;). Mitte März habe ich die blassgrüne Hintergrundfarbe für markierten Text rückgängig gemacht – also die Hervorhebung, wenn eine Textstelle mit Maus oder Touchgeste auswählt wird.&lt;/p&gt;
-
-&lt;p&gt;Ich hatte nämlich den interessanten Artikel &lt;a href=&quot;https://alistapart.com/article/paint-the-picture-not-the-frame/&quot;&gt;Paint the Picture Not the Frame&lt;/a&gt; gelesen. Er plädiert dafür, grundlegende Elemente des Browsers nicht umzugestalten, weil es Nutzer:innen frustriert, nicht die gewohnte Gestaltung/​Funktion vorzufinden. Die Beispiele im Artikel waren ein Button, um zum Seitenanfang zu springen; die Scroll-Leiste am Fensterrand; das Scrollen überhaupt (Geschwindigkeit, Haltepunkte); die Textgröße; ausreichend hoher Farbkontrast; den Eingabe-Fokus zu verschieben; die Zwischenablage und Browser-Chronik zu verändern …&lt;/p&gt;
-
-&lt;p&gt;Und eben auch die Hervorhebung bei markierten Elementen. Der Browser stellt sie nämlich so dar, wie es für den gesamten Computer üblich ist – also genau wie im Dateiexplorer, im Schreibprogramm, im Musikplayer, etc. Die Standardfarben in meinem Ubuntu-Betriebssystem für Markierungen sind weiße Schrift auf orangem Hintergrund:&lt;/p&gt;
-
-&lt;figure&gt;&lt;img src=&quot;material/markierung-ubuntu.png&quot; alt=&quot;Markierungen in verschiedenen Programmen meines Ubuntu-Betriebssystems&quot; /&gt;
-	&lt;figcaption&gt;Verschiedene Programme auf meinem Ubuntu-Rechner zeigen ausgewählten Text (fast) alle identisch an. Der Firefox-Browser ist unten links.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;gewohnt-guter-standard&quot;&gt;Gewohnt guter Standard&lt;/h2&gt;
-
-&lt;p&gt;Ich hatte die Markierung ursprünglich im September 2018 an die Farben meines Blogs angepasst, also ein blassgrüner Hintergrund für markierte Elemente. Das geht mit der CSS-Eigenschaft &lt;code&gt;::selection&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Aber das Argument mit der Einheitlichkeit im Betriebssystem hat mich sehr überzeugt. Im &lt;a href=&quot;https://alistapart.com/article/paint-the-picture-not-the-frame/#section6&quot;&gt;genannten Artikel&lt;/a&gt; heißt es dazu (frei übersetzt aus dem Englischen):&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Die einheitliche Hervorhebungsfarbe des Betriebssystems zu missachten ist ähnlich beunruhigend wie umgestaltete Scrollleisten. Es verändert das erwartete Verhalten von etwas, das überall sonst zuverlässig funktioniert. Möglicherweise ist das verwirrend und befremdlich, dazu könnte es die ausdrücklichen Vorlieben von jemandem verweigern.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Und beim folgenden Absatz musste ich an einen guten Bekannten denken, der es beim Lesen im Internet wirklich so macht:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Einige Menschen markieren den Text, während sie lesen. Wenn deine eigens gestaltete Markierung wenig Kontrast zwischen Textfarbe und Hintergrund hat, kann die Person, die auf deiner Website oder in deiner Web-App liest, vielleicht den Text nicht mehr erkennen, den sie markiert. Im Endeffekt verschwindet der Text, den sie zu lesen versucht.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ja schon, aber das gilt ja nur bei schwachem Kontrast. Ich sollte meinen normalen, unmarkierten Lesetext ja auch nicht in Hellgrau auf Weiß setzen.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Anderen Leuten ist dein ästhetisches Feingefühl schlichtweg egal. Sowohl macOS als auch Windows erlauben es, eine selbstgewählte Hervorhebungsfarbe zu bestimmen. Wenn jemand ganz bewusst eine andere Farbe als die Standardmarkierung bevorzugt, dann könnte die geänderte Markierung dessen festgelegte Einstellung überschreiben.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Hmm. Was soll denn nun mehr gelten: Dass meine Website so aussieht, wie ich sie gerne hätte (und wie ich glaube, dass sie ein stimmiges Gesamtbild gibt) oder so, wie sie die Nutzer:innen gerne hätten? Ich würde mir wünschen, eine von mir bestimmte Farbe würde nur verwendet werden, solange ein:e Nutzer:in keine andere festgelegt hat.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Für mich überwiegen die potentiellen Risiken bei weitem die Eitelkeit einer angepassten Hervorhebungsfarbe – besser sie einfach so belassen.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ach, ich weiß nicht. Wie wahrscheinlich treten diese potentiellen Risiken denn überhaupt auf? Darum ging ich mit meiner Markierung vor drei Wochen doch wieder …&lt;/p&gt;
-
-&lt;h2 id=&quot;zurück-zur-eigenen-farbe&quot;&gt;Zurück zur eigenen Farbe&lt;/h2&gt;
-
-&lt;p&gt;In letzter Zeit hatte ich auf einigen Websites gesehen, wie gut eine eigene Markierung zum stimmigen Design beträgt, zum Beispiel bei &lt;a href=&quot;https://css-tricks.com&quot;&gt;CSS Tricks&lt;/a&gt; (leuchtend violette Hervorhebung), &lt;a href=&quot;https://frankrausch.com&quot;&gt;Frank Rausch&lt;/a&gt; (Weiß auf dunklem Seitengrund) oder &lt;a href=&quot;https://bitsofco.de&quot;&gt;Bits of Code&lt;/a&gt; (warmgelbe Signalfarbe).&lt;/p&gt;
-
-&lt;p&gt;Das Argument, etwas sei ungewohnt und verwirrend, spricht außerdem in letzter Konsequenz gegen jede Art der individuellen Gestaltung. Möchten wir in einer Welt leben, in der jedes Auto, jeder Stuhl, jeder Pullover absolut identisch aussieht? Wir als Gestalter:innen können die mögliche Verwirrung doch gering halten, indem die Funktion trotz der Umgestaltung erkennbar bleibt. Genau das ist doch unsere Aufgabe: die Balance zu finden zwischen außergewöhnlich und vertraut.&lt;/p&gt;
-
-&lt;p&gt;Markierter Text muss also hervorgehoben aussehen und nicht zurückgenommen. Damit der Kontrast stimmt, sollten für &lt;code&gt;::selection&lt;/code&gt; neben der Hintergrundfarbe immer auch die Textfarbe definiert werden (das gilt grundsätzlich immer, wenn man in CSS eine &lt;code&gt;background-color&lt;/code&gt; festlegt).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;::selection { background-color: #deb; color: #000; }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Mit diesem CSS-Befehl wird der Hintergrund hellgrün, die Schriftfarbe schwarz &lt;span style=&quot;background-color: #deb; color: #000;&quot;&gt;(wie hier)&lt;/span&gt;. Vergisst man, die Textfarbe anzupassen, könnten Nutzer:innen irgendwo einen Text markieren, der eine sehr ähnliche Farbe hat wie der Hervorhebungshintergrund. Dann würde der markierte Text verschwinden …&lt;/p&gt;
-
-&lt;p class=&quot;hinterlegt&quot;&gt;Aufpassen muss man noch, wenn man auf seiner Website Elemente verwendet, die einer Markierung bereits ziemlich ähnlich sehen. In einem grünen Kasten wie diesem wäre eine ebenfalls grüne Hervorhebung nicht sichtbar. Für diese Fälle habe ich die Markierfarbe also auf Weiß geändert &lt;span style=&quot;background-color: #fff; color: #000;&quot;&gt;(Beispiel)&lt;/span&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;noch-immer-unschlüssig&quot;&gt;Noch immer unschlüssig&lt;/h2&gt;
-
-&lt;p&gt;Völlig überzeugt bin ich immer noch nicht. Vorerst halte ich es aber wie bei dem Argument gegen geänderte Linkfarben. Die sollten ja auch am besten &lt;a href=&quot;https://www.nngroup.com/articles/guidelines-for-visualizing-links/&quot; style=&quot;font:inherit; text-decoration: underline; color: #00E;&quot;&gt;blau und unterstrichen&lt;/a&gt; sein, damit man sie sofort als Verlinkungen erkennt. Ich meine: Wenn die Funktion ersichtlich bleibt, darf man ruhig von der Standardgestaltung abweichen.&lt;/p&gt;
-
-&lt;p&gt;Andererseits kann ich mir natürlich vorstellen, dass jemand sein Betriebssystem wegen schlechter Augen so eingerichtet hat, dass markierter Text knallgelb auf schwarzem Hintergrund steht. Und dann komm ich daher mit meinem blassen Grün … Und auf Windows im Modus mit hohem Farbkontrast scheint meine Hervorhebung auch nicht zu funktionieren. Naja, vielleicht ändere ich es doch irgendwann wieder zurück.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/css-selection.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/css-selection.html</guid>
-	<pubDate>Sat, 14 Dec 2019 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
