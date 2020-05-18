@@ -2,9 +2,9 @@
 
 /* Farben: #281[+#270] (grün), #3a1 (hellgrün), #deb (blassgrün)
 	Akzente: #839 (lila), #ece (blasslila), #c2b (pink)
-	Grautöne: #666 (Datum) #ccc (hr), #eee (figure),
-		hsla(0,0%,94%,.7) (aside, blockquote, code)
-	Text: #222 (kursiv #000), #333 (Titel h1 & h2) */
+	Grautöne: #666 (Datum), #ccc (hr) und hsla(0,0%,92%,.7)
+		(aside, code, figure, blockquote, kbd)
+	Text: #222, #000 (kursiv & fett), #333 (Titel h1 & h2) */
 
 /* Schriften: Source Sans Pro Regular & Italic, czSlab */
 @font-face { font-family: 'Source Sans Pro';
@@ -62,7 +62,7 @@ nav a:hover, nav a:focus { background-color: #deb; }
 	float: none; position: inherit; margin: .75em 0 -.9em -.25em; } }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
-	background-color: hsla(0,0%,94%,.7); }
+	background-color: hsla(0,0%,92%,.7); }
 @media (min-width: 71.5em) { aside { position: absolute; top: .4em;
 	left: 48em; right: 1.5em; max-width: 24em; } }
 
@@ -71,7 +71,7 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
-	font: bold 1em/1 czSlab,Georgia,serif; color: #333; }
+	font: bold 1em/1 czSlab,Georgia,serif; }
 h1, h2, h3 { font-feature-settings: 'onum' 0, 'liga', 'kern';
 	letter-spacing: -.01em; }
 b, strong, p a, figcaption a, form label {
@@ -89,9 +89,9 @@ time { padding-right: 1.2% }
 /* ÜBERSCHRIFTEN */
 
 h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */;
-	margin: 1.5em 0 .5em -.04em; }
+	margin: 1.5em 0 .5em -.04em; color: #333; }
 h2 { font-size: 1.4em; line-height: 1.071 /* 1.5÷1.4 */;
-	margin: 1.25em 0 -.179em -.02em; }
+	margin: 1.25em 0 -.179em -.02em; color: #333; }
 h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
 	margin: 1.2em 0 -.518em -.01em; }
 
@@ -111,7 +111,7 @@ sup, sub { line-height: 0; letter-spacing: .05em;
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font-size: .8em; display: inline-block; position: relative;
 	top: -.1em; margin: 0 .2em; padding: .15em .35em .2em;
-	background-color: #eee; border: 1px solid #888; border-radius: .2em;
+	background-color: hsla(0,0%,92%,.7); border: 1px solid #888; border-radius: .2em;
 	box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
 
 /* bei Datumsangabe eines Artikels, im Archiv und bei Kommentaren */
@@ -138,13 +138,13 @@ ol ol { list-style: lower-alpha; }
 li p { margin: .75em 0; }
 
 pre, code { margin: 1.5em 0 1.167em; padding: .05em .2em;
-	border-radius: .1em; background-color: hsla(0,0%,94%,.7);
+	border-radius: .1em; background-color: hsla(0,0%,92%,.7);
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
 pre > code { font-size: 1em; line-height: 1.667; white-space: pre-wrap;
 	background-color: transparent; }
 
 blockquote { margin: 1.35em 0 1.4em; padding: 0 .4em;
-	border-left: .75em solid #deb; background-color: hsla(0,0%,94%,.7); }
+	border-left: .75em solid #deb; background-color: hsla(0,0%,92%,.7); }
 blockquote + blockquote { margin-top: 1.75em; }
 blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 @media (max-width: 32em) {
@@ -197,7 +197,7 @@ a[download]:hover { border-color: #839; box-shadow: none; }
 img, figure { line-height: 0; border: 0; }
 p > img { margin: .6em 0 .25em; } /* Extra-Abstand */
 
-figure { margin: 1.65em 0 1.45em; background-color: #eee; }
+figure { margin: 1.65em 0 1.45em; background-color: hsla(0,0%,92%,.7); }
 figure img { max-width: 100%; }
 figcaption { padding: .4em .6em .3em; font-style: italic;
 	font-size: .9em; line-height: 1.667; color: #000; }
