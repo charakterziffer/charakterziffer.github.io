@@ -7,6 +7,7 @@ header img, a[download], blockquote { filter: hue-rotate(182deg); }
 
 aside { display: none; }
 nav { display: inherit; }
+nav li:nth-child(2) a { color: #c2b !important; }
 
 time { float: left; padding: 0; margin-top: 1em; }
 time::after { content:"·"; padding: 0 .3em;}
