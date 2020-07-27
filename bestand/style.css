@@ -45,7 +45,7 @@ header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
 
 header { margin-bottom: 2.8em; }
-header a { color: #333 !important; } /* auch a:visited,:hover,:focus */
+header a { color: #333 !important; font-size: 1.05em; }
 header > a { font-size: 1.7em; padding: 0; }
 header img { float: left; margin-right: .4em; margin-top: -.02em;
 	width: 2em; }
@@ -71,12 +71,11 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
-	font: bold 1em/1 czSlab,Georgia,serif; }
+	font: bold .95em/1 czSlab,Georgia,serif; }
 h1, h2, h3 { letter-spacing: -.01em;
 	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
-b, strong, p a, ul a, ol a, figcaption a, form label {
-	padding: 0 .06em; font-size: .95em;
-	font-feature-settings: 'onum', 'liga', 'kern'; }
+b, strong, a, form label {
+	padding: 0 .06em;	font-feature-settings: 'onum', 'liga', 'kern'; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
 /* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
