@@ -74,7 +74,7 @@ h1, h2, h3, b, strong, a, form label {
 	font: bold 1em/1 czSlab,Georgia,serif; }
 h1, h2, h3 { letter-spacing: -.01em;
 	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
-b, strong, p a, figcaption a, form label {
+b, strong, p a, ul a, ol a, figcaption a, form label {
 	padding: 0 .06em; font-size: .95em;
 	font-feature-settings: 'onum', 'liga', 'kern'; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
