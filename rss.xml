@@ -13,6 +13,49 @@
 </image>
 
 <item>
+	<title>Licht macht dick</title>
+	<description>&lt;p&gt;Im Bereich Typografie gibt es viele optische Täuschungen, die bei der Gestaltung von Buchstaben ausgeglichen werden müssen. So sitzt der waagrechte Mittelstrich im Buchstaben &lt;em&gt;H&lt;/em&gt; ein bisschen höher als die geometrische Mitte – sonst wirkt es für uns Menschen so, als läge er zu tief. Spitze und runde Buchstaben wie &lt;em&gt;A&lt;/em&gt; oder &lt;em&gt;O&lt;/em&gt; ragen ein wenig über die Buchstabenhöhe hinaus, damit sie in unseren Augen genauso groß erscheinen, wie Buchstaben mit einem geraden Abschluss (z.B. &lt;em&gt;E&lt;/em&gt;, &lt;em&gt;H&lt;/em&gt; oder &lt;em&gt;X&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Eine Täuschung finde ich besonders absurd. Sie spielt bei der Anwendung von Schrift eine Rolle und ich kenne sie unter dem Begriff „Überstrahlung“. Hier eine Demonstration: Welche dieser zwei Linien erscheint dicker?&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+#ubstrahlg { text-align: center;
+background: linear-gradient(#fff, #fff 50%, #000 50%, #000); }
+@media (min-width: 30.7em) { #ubstrahlg {
+background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
+--&gt;
+&lt;/style&gt;
+
+&lt;figure id=&quot;ubstrahlg&quot;&gt;
+	&lt;img src=&quot;material/ueberstrahlung-1.png&quot; alt=&quot;Eine senkrechte Linie, schwarz auf weißem Grund&quot; width=&quot;225&quot; height=&quot;270&quot; /&gt;&lt;img src=&quot;material/ueberstrahlung-2.png&quot; alt=&quot;Die gleiche Linie, nur diesmal in weiß auf schwarzem Grund&quot; width=&quot;225&quot; height=&quot;270&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Mathematisch gemessen sind beide Linien genau 20 Bildschirm-Pixel breit und haben damit die gleiche Dicke. Trotzdem sieht die weiße Linie geringfügig dicker aus (und länger). Woran liegt das?&lt;/p&gt;
+
+&lt;p&gt;Die Bezeichnung „Überstrahlung“ verrät schon ein wenig, worum es geht: Helle Flächen überstrahlen dunklere und wirken dadurch größer. Die Täuschung tritt bei reflektierenden oder selbstleuchtenden Oberflächen auf, beispielsweise auf Straßenschildern oder Bildschirmen. Bei einer schwarzen Linie auf hellem Grund leuchtet der Hintergrund ein wenig in die schwarze Fläche hinein und scheint von dort etwas wegzunehmen – die Linie wirkt dünner. Umgekehrt leuchtet eine helle Linie über ihre Begrenzung hinaus noch etwas in einen dunklen Hintergrund hinein – und erscheint damit dicker.&lt;/p&gt;
+
+&lt;p&gt;Der Effekt ist lange bekannt. Gut erklärt hat ihn auch Frank Rausch in Antje Domanns lesenswerten Artikel über &lt;a href=&quot;https://page-online.de/kreation/lesbarkeit-gute-texte-in-print-web-und-raum/&quot;&gt;Lesbarkeit in verschiedenen Situationen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;die-täuschung-ausgleichen&quot;&gt;Die Täuschung ausgleichen&lt;/h2&gt;
+
+&lt;p&gt;Schriftarten, die speziell für reflektierende oder hinterleuchtete Beschilderung gestaltet wurden, bringen manchmal eine Variante mit, die den Überstrahlungs-Effekt ausgleicht. Zum Beispiel hat die Schrift &lt;em&gt;Wayfinding Pro&lt;/em&gt; eine Negativ-Version, die geringfügig dünner ist als der reguläre Schnitt. Damit können helle und dunkle Schilder nebeneinander hängen, ohne dass die Schrift auf einem davon dicker aussieht. Wie man die Negativ-Version anwendet, erklärt eine &lt;a href=&quot;https://fdi-type.de/faq/font-usage/what-are-the-positive-and-negative-styles-of-wayfinding-sans-pro-for-r2/&quot;&gt;FAQ-Seite des Schriftverlags FDI&lt;/a&gt; (engl.).&lt;/p&gt;
+
+&lt;p&gt;Auch auf Websites ist es möglich, die Wirkung der Überstrahlung abzumildern. In Webkit-Browsern (Chrome, Edge, Safari) funktioniert es, dem invers gesetzten Text (d.&lt;small&gt; &lt;/small&gt;h. helle Schrift auf dunklem Grund) die CSS-Eigenschaft &lt;code&gt;-webkit-font-smoothing: antialiased&lt;/code&gt; zu geben. Details dazu im Artikel  &lt;a href=&quot;https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/&quot;&gt;Please Stop “Fixing” Font Smoothing &lt;/a&gt; (engl.). Genau wie der Autor Dmitry Fadeyev würde ich diese Methode aber nicht empfehlen, da sie nur für wenige Szenarien funktioniert und kein gültiger Webstandard ist.&lt;/p&gt;
+
+&lt;p&gt;Inzwischen verwenden &lt;a href=&quot;https://caniuse.com/#feat=variable-fonts&quot;&gt;rund 90&lt;small&gt; &lt;/small&gt;% der Internet-Nutzer:innen&lt;/a&gt; einen Browser, der &lt;em&gt;variable Schriften&lt;/em&gt; unterstützt. Mit solchen Schriften kann man die Strichstärke leicht anpassen, z.&lt;small&gt; &lt;/small&gt;B. bei inversem Text auf &lt;code&gt;font-weight: 350&lt;/code&gt; verringern (wenn die positiv gesetzte Schrift &lt;code&gt;font-weight: 400&lt;/code&gt; besitzt). Je nach Helligkeitswerten und Schrift muss man mit den Werten ein wenig herumprobieren, bis beide Farbvarianten gleich dick aussehen. Eine Anleitung mit praktischer Demo bietet der Artikel &lt;a href=&quot;https://css-tricks.com/dark-mode-and-variable-fonts/&quot;&gt;Dark Mode and Variable Fonts&lt;/a&gt; (engl.).&lt;/p&gt;
+
+&lt;p&gt;Diese Lösung finde ich vor allem dann wichtig, wenn dunkler Text auf hellem Grund und seine umgekehrte Variante nah beieinander stehen. Dann haben Leser:innen den direkten Vergleich und man sollte die Überstrahlung ausgleichen, damit der helle Text nicht zu fett aussieht.&lt;/p&gt;
+
+&lt;p&gt;Übrigens: Durch das Überstrahlen scheinen helle Buchstaben auf dunklem Grund auch ein wenig zusammenzulaufen und aneinander zu kleben. Dagegen hilft, die Buchstaben ganz leicht (!) zu sperren, im CSS z.&lt;small&gt; &lt;/small&gt;B. mit &lt;code&gt;letter-spacing: .01em;&lt;/code&gt;. Bei allen optischen Phänomenen zählt das Augenmaß weit mehr als mathematische Genauigkeit, getreu dem Zitat des Malers Josef Albers: „Nur der Schein trügt nicht.“&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/ueberstrahlung.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/ueberstrahlung.html</guid>
+	<pubDate>Tue, 04 Aug 2020 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Please, don’t like me!</title>
 	<description>&lt;p&gt;Mit Facebook, Twitter &amp;amp; Co hat sich eine neue Form der Rückmeldung etabliert, nämlich das Liken. Wenn mir ein Beitrag gefällt, klicke ich auf ein kleines Herzchen oder vergebe ein Daumen-hoch. Auf sehr einfache Weise kann ich meine Zustimmung, Wertschätzung oder Bewunderung ausdrücken.&lt;/p&gt;
 
@@ -254,82 +297,6 @@ video { width: 100%; height: auto; }
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/stoffkrokodil.html</guid>
 	<pubDate>Wed, 08 Apr 2020 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Gleichmäßig wirkende Graustufen</title>
-	<description>&lt;style&gt; p { font-feature-settings: 'onum' 0, 'liga', 'kern'; } &lt;/style&gt;
-
-&lt;!-- SVG-Symbol ⁹√ für weiter unten --&gt;
-&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;display:none&quot;&gt;
-  &lt;symbol id=&quot;9sqr&quot; preserveAspectRatio=&quot;xMinYMin meet&quot; viewBox=&quot;0 0 12 20&quot;&gt;&lt;title&gt;neunte Wurzel aus&lt;/title&gt;
-  &lt;path d=&quot;M3.512 0C2.054 0 .935 1.14.935 2.637c0 1.48.88 2.497 2.438 2.497.739 0 1.398-.28 1.957-.82-.12 2-1.058 2.938-2.217 2.938-.54 0-.959-.22-1.339-.48l-.54.9c.46.32 1.02.6 1.919.6 1.918 0 3.396-1.4 3.396-4.335C6.55 1.479 5.37 0 3.512 0zm.02 1.02c.98 0 1.679.78 1.798 2.317-.599.64-1.118.86-1.718.86-.959 0-1.498-.66-1.498-1.58 0-.94.6-1.6 1.418-1.6zm5.658.7L5.634 16.922c-.08.42-.16.86-.24 1.28h-.08c-.1-.42-.2-.86-.34-1.28L2.658 10.01 0 11.191l.38.9 1.418-.64L4.795 20h1.258L10.39 1.72h-1.2z&quot; /&gt;&lt;/symbol&gt;
-&lt;/svg&gt;
-
-&lt;p class=&quot;hinterlegt&quot;&gt;Achtung, es folgt ein ziemlich nerdiger Blogartikel mit einigem an Mathematik!&lt;/p&gt;
-
-&lt;p&gt;Angenommen, eine Infografik soll verschiedene Intensitätswerte ausdrücken, von ganz schwach bis sehr stark. Klingt zunächst ziemlich einfach und sofort hat man eine Palette gebastelt, bei der die Farbdichte von 5&lt;small&gt; &lt;/small&gt;% bis 95&lt;small&gt; &lt;/small&gt;% gleichmäßig zunimmt:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-1.svg&quot; alt=&quot;Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Doch komisch: Obwohl die Helligkeit von einer Stufe zur nächsten jeweils um 10&lt;small&gt; &lt;/small&gt;% abnimmt, wirkt die Verteilung überhaupt nicht gleichmäßig. Gerade an den Enden der Skala scheinen die Unterschiede stärker zu sein. Zwischen 5&lt;small&gt; &lt;/small&gt;% und 15&lt;small&gt; &lt;/small&gt;% scheint die Helligkeit mehr abzunehmen als in der Mitte von 35&lt;small&gt; &lt;/small&gt;% bis 65&lt;small&gt; &lt;/small&gt;% Grau. Auch von 85&lt;small&gt; &lt;/small&gt;% zu 95&lt;small&gt; &lt;/small&gt;% wirken die Unterschiede größer.&lt;/p&gt;
-
-&lt;h2 id=&quot;unsere-wahrnehmung-ist-relativ&quot;&gt;Unsere Wahrnehmung ist relativ&lt;/h2&gt;
-
-&lt;p&gt;Mathematisch lineare Graustufen erscheinen uns Menschen ungleichmäßig, weil wir Intensitäten nicht absolut wahrnehmen, sondern immer im Verhältnis zueinander. Als Vergleich ein Beispiel aus der Akustik: Zwischen absoluter Stille und einem Uhrticken erscheint uns der Lautstärkeunterschied viel größer als zwischen einem hupenden Auto und einem hupenden Auto, auf dem noch eine Uhr tickt. Dabei ist der Lautstärke-Unterschied in beiden Fällen gleich groß, nämlich die Lautstärke einer tickenden Uhr.&lt;/p&gt;
-
-&lt;p&gt;Um die Intensitäten der grauen Felder in der Skala vergleichen zu können, muss man die Prozente erst mal in ein Schwarz-Weiß-Verhältnis umrechnen (genannt &lt;em&gt;v&lt;/em&gt;). Man stelle sich vor, auf jedem Feld liegen 100 Kügelchen, entweder schwarz oder weiß. Zum Beispiel beinhaltet die Fläche mit 15&lt;small&gt; &lt;/small&gt;% dann 15 schwarze Kügelchen und 85 weiße (= 100 – 15). Das Verhältnis von Schwarz zu Weiß ist für dieses Feld 15 zu 85 oder als Dezimalzahl ausgedrückt 0,18 (= 15 ÷ 85). Auf unsere Grauskala übertragen sieht das dann folgendermaßen aus:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-2.svg&quot; alt=&quot;Grauskala mit 10 Helligkeitsstufen und den entsprechenden Schwarz-Weiß-Verhältnissen&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Mit den Schwarz-Weiß-Verhältnissen lässt sich jetzt nachrechnen, wie stark die Farbdichte von Stufe zu Stufe zunimmt – und zwar relativ betrachtet: Mit welchem Faktor muss man das Schwarz-Weiß-Verhältnis eines Feldes multiplizieren, um zum nächsten Feld zu kommen? Zur Info: Ich habe mit den genauen Brüchen gerechnet, nicht mit den gerundeten Zahlen in der Skizze; also nicht 0,18÷0,05 sondern (15/85)÷(5/95).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-3.svg&quot; alt=&quot;Grauskala, zwischen den Feldern jeweils der Faktor von einer Farbdichte zur nächsten&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Und jetzt bestätigt, was wir am Anfang wahrgenommen haben: Am linken und rechten Rand der Skala sind die Faktoren zwischen den Felder viel größer (3,35) als in der Mitte (1,48). Der Grauwert ändert sich außen tatsächlich stärker als innen – zumindest relativ, so wie wir Menschen es eben sehen.&lt;/p&gt;
-
-&lt;h2 id=&quot;gleichmäßig-abnehmende-helligkeit&quot;&gt;Gleichmäßig abnehmende Helligkeit&lt;/h2&gt;
-
-&lt;p&gt;Das Ziel ist natürlich, eine Grauskala zu bestimmen, bei der die Unterschiede zwischen den Stufen gleichmäßig erscheinen, also jeweils den gleichen Faktor haben. Voraussetzung für die Berechnung ist, dass die erste und letzte Stufe nicht ganz 0 oder 100 sind, sonst liegen deren Schwarz-Weiß-Verhältnisse bei 0/100 bzw. 100/0 (mit 0 und unendlich lässt sich schwer rechnen). Bleiben wir also bei 5&lt;small&gt; &lt;/small&gt;% für „Weiß“ und 95&lt;small&gt; &lt;/small&gt;% für „Schwarz“.&lt;/p&gt;
-
-&lt;p&gt;Es ergeben sich die Schwarz-Weiß-Verhältnisse (&lt;em&gt;v&lt;/em&gt;) wie oben: 5/95 (0,05…) für Weiß und 95/5 (19,0) für Schwarz. Zwischen diesen Verhältnissen liegt ein Gesamtfaktor von 361 (= 95/5 ÷ 5/95). Diesen Faktor verteilen wir jetzt auf neun Zwischenschritte (genannt &lt;em&gt;w&lt;/em&gt;), nämlich vom ersten bis zum zehnten Feld: Weiß × w = Feld&lt;sub&gt;2&lt;/sub&gt;; Feld&lt;sub&gt;2&lt;/sub&gt; × w = Feld&lt;sub&gt;3&lt;/sub&gt;; … Feld&lt;sub&gt;9&lt;/sub&gt; × w = Schwarz. Abgekürzt: Weiß × w&lt;sup&gt;9&lt;/sup&gt; = Schwarz.&lt;/p&gt;
-
-&lt;p&gt;Der Zwischenfaktor w lässt sich jetzt berechnen mit &lt;svg width=&quot;.65em&quot; height=&quot;1.1em&quot; style=&quot;position:relative; top:.1em; left:.1em&quot;&gt;&lt;use xlink:href=&quot;#9sqr&quot;&gt;&lt;/use&gt;&lt;/svg&gt;(Schwarz&lt;small&gt; &lt;/small&gt;÷&lt;small&gt; &lt;/small&gt;Weiß). In unserem Beispiel: w = &lt;svg width=&quot;.65em&quot; height=&quot;1.1em&quot; style=&quot;position:relative; top:.1em; left:.1em&quot;&gt;&lt;use xlink:href=&quot;#9sqr&quot;&gt;&lt;/use&gt;&lt;/svg&gt;380 = 380&lt;sup&gt;1/9&lt;/sup&gt; = 1,92383… – das klingt plausibel, denn es liegt zwischen den extremen Faktoren 3,60 und 1,48. Dann wollen wir mal rückwärts gehen:&lt;/p&gt;
-
-&lt;h2 id=&quot;der-richtige-faktor&quot;&gt;Der richtige Faktor&lt;/h2&gt;
-
-&lt;p&gt;Mit dem berechneten Faktor &lt;em&gt;w&lt;/em&gt; gerundet auf 1,924 ergibt sich eine Grauskala mit den folgenden Schwarz-Weiß-Verhältnissen &lt;em&gt;v&lt;/em&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-4.svg&quot; alt=&quot;Grauskala mit angeglichenen Schwarz-Weiß-Verhältnissen, jeweils mit dem gleichen Faktor dazwischen&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(Bitte wieder berücksichtigen, dass die Zahlen in der Skizze gerundet sind! Ich habe die Berechnung nicht mit 0,05 gestartet, sondern mit dem genauen Bruch 5/95.)&lt;/p&gt;
-
-&lt;p&gt;Das Schwarz-Weiß-Verhältnis &lt;em&gt;v&lt;/em&gt; haben wir ja erhalten aus Schwarzanteil ÷ Weißanteil, wobei der Weißanteil die Menge zu den fehlenden 100&lt;small&gt; &lt;/small&gt;% war. Wir können uns die Prozentzahl von Schwarz (genannt &lt;em&gt;x&lt;/em&gt;) berechnen aus der Formel für das Schwarz-Weiß-Verhältnis v = x ÷ (100 – x), umgestellt: x = 100v ÷ (1 + v). Und schon können wir die eben erstellte Grauskala mit Prozentwerten füllen:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-5.svg&quot; alt=&quot;Grauskala mit 10 Helligkeitsstufen, die Prozentwerte diesmal berechnet für eine gleichmäßig wirkende Verteilung&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Zum Vergleich nochmal die anfängliche Skala:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-1.svg&quot; alt=&quot;Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Und, erscheint die korrigierte Version nicht viel gleichmäßiger? Übrigens habe ich die Infos zu diesem Phänomen und die ganze Berechnung aus Jacques Bertins Standardwerk „Graphische Semiologie“ (dt. 1974). Dort findet sich dieses Thema auf den Seiten 82/83 unter der Überschrift „Konstruktion äquidistanter Helligkeitswert-Stufen“.&lt;/p&gt;
-
-&lt;p&gt;Der Autor empfiehlt am Ende der Berechnung noch eine Korrektur der hellen Farbwerte vorzunehmen und kommt letztlich zur Prozentreihe Weiß, 9, 19, 31, 45, 60, 74, 84, 91 und Schwarz. Ich vermute aber, das hat mit dem nicht ganz reinweißen Papier zu tun. Hier am Bildschirm würde ich persönlich eher die dunkleren Grautöne ein wenig aufhellen.&lt;/p&gt;
-
-&lt;h2 id=&quot;abschließendes-beispiel&quot;&gt;Abschließendes Beispiel&lt;/h2&gt;
-
-&lt;p&gt;Als schnelle Zusammenfassung noch ein zweites Beispiel. Gesucht ist eine siebenstufige Skala von 3%-Weiß zu 99%-Schwarz. Der Gesamtfaktor zwischen dem Schwarz (v = 99/1) und Weiß (v = 3/97) ist (99/1)÷(3/97) = 3201. Das dann verteilt auf sechs Zwischenschritte w = 3201&lt;sup&gt;1/6&lt;/sup&gt; = 3,83896…, was ich mal auf 3,839 runde.&lt;/p&gt;
-
-&lt;p&gt;Beginnende mit 3/97 für Weiß ergeben sich folgende Schwarz-Weiß-Verhältnisse: 0,03 / 0,12 / 0,46 / 1,75 / 6,72 / 25,8 / 99,0. Daraus lassen sich schließlich mit x = 100v ÷ (1 + v) folgende Prozentwerte berechnen: 3% / 11% / 31% / 64% / 87% / 96% / 99%. Und so siehst das ganze aus:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/grauskala-6.svg&quot; alt=&quot;Grauskala mit 7 Helligkeitsstufen von 3% bis 99%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(Und hier müsste man auf jeden Fall die dunklen Werte anpassen – glaube nie der reinen Mathematik, wenn es um Wahrnehmung geht!) Wer übrigens keine Lust auf diese Rechnerei hat, es mit der Helligkeitszunahme nicht ganz so genau nehmen muss oder für eine Infografik mehr braucht, als eine monochrome Farbskala, dem hilft der &lt;a href=&quot;https://learnui.design/tools/data-color-picker.html&quot;&gt;Data Color Picker&lt;/a&gt; oder der &lt;a href=&quot;https://gka.github.io/palettes&quot;&gt;Chroma.js Color Palette Helper&lt;/a&gt;.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/graustufen.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/graustufen.html</guid>
-	<pubDate>Thu, 20 Feb 2020 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>

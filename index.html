@@ -66,6 +66,48 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2020-08-04">Di, 4. Aug. 2020</time>
+	<h1><a href="ueberstrahlung.html">Licht macht dick</a></h1>
+	<p>Im Bereich Typografie gibt es viele optische Täuschungen, die bei der Gestaltung von Buchstaben ausgeglichen werden müssen. So sitzt der waagrechte Mittelstrich im Buchstaben <em>H</em> ein bisschen höher als die geometrische Mitte – sonst wirkt es für uns Menschen so, als läge er zu tief. Spitze und runde Buchstaben wie <em>A</em> oder <em>O</em> ragen ein wenig über die Buchstabenhöhe hinaus, damit sie in unseren Augen genauso groß erscheinen, wie Buchstaben mit einem geraden Abschluss (z.B. <em>E</em>, <em>H</em> oder <em>X</em>).</p>
+
+<p>Eine Täuschung finde ich besonders absurd. Sie spielt bei der Anwendung von Schrift eine Rolle und ich kenne sie unter dem Begriff „Überstrahlung“. Hier eine Demonstration: Welche dieser zwei Linien erscheint dicker?</p>
+
+<style>
+<!--
+#ubstrahlg { text-align: center;
+background: linear-gradient(#fff, #fff 50%, #000 50%, #000); }
+@media (min-width: 30.7em) { #ubstrahlg {
+background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
+-->
+</style>
+
+<figure id="ubstrahlg">
+	<img src="material/ueberstrahlung-1.png" alt="Eine senkrechte Linie, schwarz auf weißem Grund" width="225" height="270" /><img src="material/ueberstrahlung-2.png" alt="Die gleiche Linie, nur diesmal in weiß auf schwarzem Grund" width="225" height="270" />
+</figure>
+
+<p>Mathematisch gemessen sind beide Linien genau 20 Bildschirm-Pixel breit und haben damit die gleiche Dicke. Trotzdem sieht die weiße Linie geringfügig dicker aus (und länger). Woran liegt das?</p>
+
+<p>Die Bezeichnung „Überstrahlung“ verrät schon ein wenig, worum es geht: Helle Flächen überstrahlen dunklere und wirken dadurch größer. Die Täuschung tritt bei reflektierenden oder selbstleuchtenden Oberflächen auf, beispielsweise auf Straßenschildern oder Bildschirmen. Bei einer schwarzen Linie auf hellem Grund leuchtet der Hintergrund ein wenig in die schwarze Fläche hinein und scheint von dort etwas wegzunehmen – die Linie wirkt dünner. Umgekehrt leuchtet eine helle Linie über ihre Begrenzung hinaus noch etwas in einen dunklen Hintergrund hinein – und erscheint damit dicker.</p>
+
+<p>Der Effekt ist lange bekannt. Gut erklärt hat ihn auch Frank Rausch in Antje Domanns lesenswerten Artikel über <a href="https://page-online.de/kreation/lesbarkeit-gute-texte-in-print-web-und-raum/">Lesbarkeit in verschiedenen Situationen</a>.</p>
+
+<h2 id="die-täuschung-ausgleichen">Die Täuschung ausgleichen</h2>
+
+<p>Schriftarten, die speziell für reflektierende oder hinterleuchtete Beschilderung gestaltet wurden, bringen manchmal eine Variante mit, die den Überstrahlungs-Effekt ausgleicht. Zum Beispiel hat die Schrift <em>Wayfinding Pro</em> eine Negativ-Version, die geringfügig dünner ist als der reguläre Schnitt. Damit können helle und dunkle Schilder nebeneinander hängen, ohne dass die Schrift auf einem davon dicker aussieht. Wie man die Negativ-Version anwendet, erklärt eine <a href="https://fdi-type.de/faq/font-usage/what-are-the-positive-and-negative-styles-of-wayfinding-sans-pro-for-r2/">FAQ-Seite des Schriftverlags FDI</a> (engl.).</p>
+
+<p>Auch auf Websites ist es möglich, die Wirkung der Überstrahlung abzumildern. In Webkit-Browsern (Chrome, Edge, Safari) funktioniert es, dem invers gesetzten Text (d.<small> </small>h. helle Schrift auf dunklem Grund) die CSS-Eigenschaft <code>-webkit-font-smoothing: antialiased</code> zu geben. Details dazu im Artikel  <a href="https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/">Please Stop “Fixing” Font Smoothing </a> (engl.). Genau wie der Autor Dmitry Fadeyev würde ich diese Methode aber nicht empfehlen, da sie nur für wenige Szenarien funktioniert und kein gültiger Webstandard ist.</p>
+
+<p>Inzwischen verwenden <a href="https://caniuse.com/#feat=variable-fonts">rund 90<small> </small>% der Internet-Nutzer:innen</a> einen Browser, der <em>variable Schriften</em> unterstützt. Mit solchen Schriften kann man die Strichstärke leicht anpassen, z.<small> </small>B. bei inversem Text auf <code>font-weight: 350</code> verringern (wenn die positiv gesetzte Schrift <code>font-weight: 400</code> besitzt). Je nach Helligkeitswerten und Schrift muss man mit den Werten ein wenig herumprobieren, bis beide Farbvarianten gleich dick aussehen. Eine Anleitung mit praktischer Demo bietet der Artikel <a href="https://css-tricks.com/dark-mode-and-variable-fonts/">Dark Mode and Variable Fonts</a> (engl.).</p>
+
+<p>Diese Lösung finde ich vor allem dann wichtig, wenn dunkler Text auf hellem Grund und seine umgekehrte Variante nah beieinander stehen. Dann haben Leser:innen den direkten Vergleich und man sollte die Überstrahlung ausgleichen, damit der helle Text nicht zu fett aussieht.</p>
+
+<p>Übrigens: Durch das Überstrahlen scheinen helle Buchstaben auf dunklem Grund auch ein wenig zusammenzulaufen und aneinander zu kleben. Dagegen hilft, die Buchstaben ganz leicht (!) zu sperren, im CSS z.<small> </small>B. mit <code>letter-spacing: .01em;</code>. Bei allen optischen Phänomenen zählt das Augenmaß weit mehr als mathematische Genauigkeit, getreu dem Zitat des Malers Josef Albers: „Nur der Schein trügt nicht.“</p>
+
+	<p>---<br /> <a href="ueberstrahlung.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2020-06-19">Fr, 19. Juni 2020</time>
 	<h1><a href="likes.html">Please, don’t like me!</a></h1>
 	<p>Mit Facebook, Twitter &amp; Co hat sich eine neue Form der Rückmeldung etabliert, nämlich das Liken. Wenn mir ein Beitrag gefällt, klicke ich auf ein kleines Herzchen oder vergebe ein Daumen-hoch. Auf sehr einfache Weise kann ich meine Zustimmung, Wertschätzung oder Bewunderung ausdrücken.</p>
@@ -182,79 +224,6 @@ video { width: 100%; height: auto; }
 		</p>
 </article>
 
-<article>
-	<time datetime="2020-04-28">Di, 28. Apr. 2020</time>
-	<h1><a href="fuchs-10.html">Kunst ohne Publikum</a></h1>
-	<p>Sind Künstler:innen eigentlich eitel? Wollen beklatscht und <a href="beruehmt.html">berühmt werden?</a> Oder sind sie vielleicht aus tiefstem Herzen freundlich? Wollen beglücken, erstaunen, verzaubern?</p>
-
-<p>Kann Kunst ohne Publikum existieren? Van Gogh malte, ohne dass sich jemand zu seinen Lebzeiten für seine Bilder interessierte. Kafka wollte sogar, dass seine Geschichten nach seinem Tod verbrannt werden.</p>
-
-<p>Um die Ausbreitung des Corona-Virus zu verringern, sind Großveranstaltungen und Versammlungen abgesagt. Das betrifft gerade den Bereich der Kunst: Theater, Museen, Konzerte, Lesungen, … Klar, es gibt tolle Projekte online, zum Beispiel virtuelle Museumstouren, gestreamte Clubmusik, Video-Theater. Es vermittelt aber nur einen Teil des Erlebnisses, allein daheim vor seinem Monitor zu sitzen statt mit anderen gemeinsam mitzufiebern, zu lachen, andächtig zu lauschen, bewegt zu applaudieren.</p>
-
-<p>Kunst existiert ohne (körperlich anwesendes) Publikum – aber nur eingeschränkt und wer weiß, wie lange. Denn auch Künstler:innen müssen essen und Miete zahlen, möchten verreisen und Klamotten kaufen. Eine Online-Vorstellung bringt Aufmerksamkeit, aber eher selten Einkünfte.</p>
-
-<p>Und wie ist es andersherum: Kann das Publikum, können wir Menschen ohne Kunst existieren? Wer weiß, wie lange.</p>
-
-<h2 id="was-der-fuchs-dazu-meint">Was der #Fuchs dazu meint.</h2>
-
-<p>Sehr viele Fragen bisher, Zeit für ein paar Antworten. Die gibt hier der Fuchs aus meiner Twitterserie. Seine Ratschläge sind immer Entgegnungen auf Unsicherheiten der sensiblen Ballerina:</p>
-
-<blockquote>
-  <p>😶 „Selbst wenn du kaum Rückmeldungen bekommst, halte durch.“, sprach der #Fuchs zur Ballerina. „Oft vernachlässigen es die Zuschauer, ihre Begeisterung auch mitzuteilen.“ (<a href="https://twitter.com/charakterziffer/status/1130714483905761281">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⌖ „Ich weiß, auch mein Tag hat nur 24 Stunden“, sprach der #Fuchs zur Ballerina. „Achte auf dich und dann konzentrier dich darauf, was wirklich erledigt werden muss.“ (<a href="https://twitter.com/charakterziffer/status/1141027040801546240">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>🔨 „Manchmal darfst du ruhig rücksichtslos sein“, sprach der #Fuchs zur Ballerina. „Einigen Leuten muss man nämlich in den Arsch treten, um sie für eine gute Sache zu motivieren.“ (<a href="https://twitter.com/charakterziffer/status/1154679604025708544">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>🦊 „Doch, du sollst sogar beraten“, sprach die Ballerina zum #Fuchs. „Aber wenn dein Auftraggeber unbedingt die schlechte Idee umsetzen will, dann beiß die Zähne zusammen. Du weißt, dass du es besser könntest.“ (<a href="https://twitter.com/charakterziffer/status/1167365439489499136">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⥀ „Ja, dir geht es gerade nicht gut“, sprach der #Fuchs zur Ballerina. „Aber dreh dich nicht zu sehr um dich selbst, sonst verlierst du den Blick für das Schöne in deiner Umgebung.“ (<a href="https://twitter.com/charakterziffer/status/1176450921825521667">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⽿ „Klar kannst du dich gleich rechtfertigen“, sprach der #Fuchs zur Ballerina. „Besser aber, du hörst deinem Kritiker erst einmal zu. Wenn du die Anmerkung später unbrauchbar findest, kannst du sie immer noch verwerfen.“ (<a href="https://twitter.com/charakterziffer/status/1192754612194938880">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>𝌗 „Da hilft nur abwarten“, sprach der #Fuchs zur Ballerina. „Es gibt einfach Tage, wo du mit nichts zufrieden bist und keine Motivation findest. Versuche es anzunehmen und gestatte dir ein wenig Ruhe.“ (<a href="https://twitter.com/charakterziffer/status/1204356353847963648">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>Ꞝ „Versuche nicht, alles auf einmal auszudrücken – das ergibt nur Banalität“, sprach der #Fuchs zur Ballerina. „Konzentriere dich lieber auf das Besondere – auch wenn du dann einiges weglassen musst.“ (<a href="https://twitter.com/charakterziffer/status/1219977160284418051">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>꘏ „Schlag dem Regisseur nie etwas vor, das du nicht auch tanzen möchtest“, sprach der #Fuchs zur Ballerina. „Sonst entscheidet er sich vielleicht genau dafür.“ (<a href="https://twitter.com/charakterziffer/status/1242409056322584577">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⸺ „Es lag doch gar nicht an deiner Performance“, sprach der #Fuchs zur Ballerina. „Es ist das Videostreaming, dass dich unzufrieden macht. Du und dein Publikum, ihr seid euch damit einfach nicht nah genug.“ […] (<a href="https://twitter.com/charakterziffer/status/1255035316639072256">#</a>)</p>
-</blockquote>
-
-<p>Der Fuchs hat übrigens schon lange Jahre Erfahrung mit den Fragen der Ballerina. Die anderen Blogeinträge zu dieser Twitterserie:</p>
-
-<p>1. <a href="fuchs-1.html">… sprach der #Fuchs zur Ballerina</a><br />
-2. <a href="fuchs-2.html">Weisheiten für sensible Künstler</a><br />
-3. <a href="fuchs-3.html">Ballerinas Selbstzweifel</a><br />
-4. <a href="fuchs-4.html">Ein Fuchs für alle Fälle</a><br />
-5. <a href="fuchs-5.html">Pirouetten und andere Probleme</a><br />
-6. <a href="fuchs-6.html">Ausgefuchste Antworten</a><br />
-7. <a href="fuchs-7.html">Vorgaben hinter sich lassen</a><br />
-8. <a href="fuchs-8.html">Die Blöße der Unwissenheit</a><br />
-9. <a href="fuchs-9.html">Nicht originell genug?</a></p>
-
-	<p>---<br /> <a href="fuchs-10.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -288,7 +257,7 @@ E-Mail: postfach2b [ät] web.de (<a href="bestand/pub-0x9BA6621B.asc">PGP-Schlü
 
 <p><strong>§ 3<small> </small>Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2020-07-27T13:27:31+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2020-08-03T23:58:40+02:00</p>
 
 </main>
 

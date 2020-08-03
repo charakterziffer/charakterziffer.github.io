@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde:r,
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<title>Licht macht dick // @cz+</title>
+<meta name="description" content="Nein, es geht hier nicht um eine sensationelle Sonnen-Diät, sondern um ein optisches Phänomen&#58; Helle Flächen überstrahlen dunkle – und wirken größer.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="Artikel-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/ueberstrahlung.html&choe=UTF-8);
+position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
+
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="mask-icon" href="/bestand/safari-pin.svg" color="#228811">
+<meta name="theme-color" content="#228811">
+<meta name="msapplication-TileColor" content="#228811">
+<meta name="msapplication-TileImage" content="/bestand/tileicon.png">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Licht macht dick" />
+<meta property="og:description" content="Nein, es geht hier nicht um eine sensationelle Sonnen-Diät, sondern um ein optisches Phänomen&#58; Helle Flächen überstrahlen dunkle – und wirken größer." />
+<meta property="og:url" content="https://charakterziffer.github.io/ueberstrahlung.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/extra/index.html">★Extra</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</header>
+
+<main>
+<article>
+<time datetime="2020-08-04">Di, 4. Aug. 2020</time>
+<h1>Licht macht dick</h1>
+<p>Im Bereich Typografie gibt es viele optische Täuschungen, die bei der Gestaltung von Buchstaben ausgeglichen werden müssen. So sitzt der waagrechte Mittelstrich im Buchstaben <em>H</em> ein bisschen höher als die geometrische Mitte – sonst wirkt es für uns Menschen so, als läge er zu tief. Spitze und runde Buchstaben wie <em>A</em> oder <em>O</em> ragen ein wenig über die Buchstabenhöhe hinaus, damit sie in unseren Augen genauso groß erscheinen, wie Buchstaben mit einem geraden Abschluss (z.B. <em>E</em>, <em>H</em> oder <em>X</em>).</p>
+
+<p>Eine Täuschung finde ich besonders absurd. Sie spielt bei der Anwendung von Schrift eine Rolle und ich kenne sie unter dem Begriff „Überstrahlung“. Hier eine Demonstration: Welche dieser zwei Linien erscheint dicker?</p>
+
+<style>
+<!--
+#ubstrahlg { text-align: center;
+background: linear-gradient(#fff, #fff 50%, #000 50%, #000); }
+@media (min-width: 30.7em) { #ubstrahlg {
+background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
+-->
+</style>
+
+<figure id="ubstrahlg">
+	<img src="material/ueberstrahlung-1.png" alt="Eine senkrechte Linie, schwarz auf weißem Grund" width="225" height="270" /><img src="material/ueberstrahlung-2.png" alt="Die gleiche Linie, nur diesmal in weiß auf schwarzem Grund" width="225" height="270" />
+</figure>
+
+<p>Mathematisch gemessen sind beide Linien genau 20 Bildschirm-Pixel breit und haben damit die gleiche Dicke. Trotzdem sieht die weiße Linie geringfügig dicker aus (und länger). Woran liegt das?</p>
+
+<p>Die Bezeichnung „Überstrahlung“ verrät schon ein wenig, worum es geht: Helle Flächen überstrahlen dunklere und wirken dadurch größer. Die Täuschung tritt bei reflektierenden oder selbstleuchtenden Oberflächen auf, beispielsweise auf Straßenschildern oder Bildschirmen. Bei einer schwarzen Linie auf hellem Grund leuchtet der Hintergrund ein wenig in die schwarze Fläche hinein und scheint von dort etwas wegzunehmen – die Linie wirkt dünner. Umgekehrt leuchtet eine helle Linie über ihre Begrenzung hinaus noch etwas in einen dunklen Hintergrund hinein – und erscheint damit dicker.</p>
+
+<p>Der Effekt ist lange bekannt. Gut erklärt hat ihn auch Frank Rausch in Antje Domanns lesenswerten Artikel über <a href="https://page-online.de/kreation/lesbarkeit-gute-texte-in-print-web-und-raum/">Lesbarkeit in verschiedenen Situationen</a>.</p>
+
+<h2 id="die-täuschung-ausgleichen">Die Täuschung ausgleichen</h2>
+
+<p>Schriftarten, die speziell für reflektierende oder hinterleuchtete Beschilderung gestaltet wurden, bringen manchmal eine Variante mit, die den Überstrahlungs-Effekt ausgleicht. Zum Beispiel hat die Schrift <em>Wayfinding Pro</em> eine Negativ-Version, die geringfügig dünner ist als der reguläre Schnitt. Damit können helle und dunkle Schilder nebeneinander hängen, ohne dass die Schrift auf einem davon dicker aussieht. Wie man die Negativ-Version anwendet, erklärt eine <a href="https://fdi-type.de/faq/font-usage/what-are-the-positive-and-negative-styles-of-wayfinding-sans-pro-for-r2/">FAQ-Seite des Schriftverlags FDI</a> (engl.).</p>
+
+<p>Auch auf Websites ist es möglich, die Wirkung der Überstrahlung abzumildern. In Webkit-Browsern (Chrome, Edge, Safari) funktioniert es, dem invers gesetzten Text (d.<small> </small>h. helle Schrift auf dunklem Grund) die CSS-Eigenschaft <code>-webkit-font-smoothing: antialiased</code> zu geben. Details dazu im Artikel  <a href="https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/">Please Stop “Fixing” Font Smoothing </a> (engl.). Genau wie der Autor Dmitry Fadeyev würde ich diese Methode aber nicht empfehlen, da sie nur für wenige Szenarien funktioniert und kein gültiger Webstandard ist.</p>
+
+<p>Inzwischen verwenden <a href="https://caniuse.com/#feat=variable-fonts">rund 90<small> </small>% der Internet-Nutzer:innen</a> einen Browser, der <em>variable Schriften</em> unterstützt. Mit solchen Schriften kann man die Strichstärke leicht anpassen, z.<small> </small>B. bei inversem Text auf <code>font-weight: 350</code> verringern (wenn die positiv gesetzte Schrift <code>font-weight: 400</code> besitzt). Je nach Helligkeitswerten und Schrift muss man mit den Werten ein wenig herumprobieren, bis beide Farbvarianten gleich dick aussehen. Eine Anleitung mit praktischer Demo bietet der Artikel <a href="https://css-tricks.com/dark-mode-and-variable-fonts/">Dark Mode and Variable Fonts</a> (engl.).</p>
+
+<p>Diese Lösung finde ich vor allem dann wichtig, wenn dunkler Text auf hellem Grund und seine umgekehrte Variante nah beieinander stehen. Dann haben Leser:innen den direkten Vergleich und man sollte die Überstrahlung ausgleichen, damit der helle Text nicht zu fett aussieht.</p>
+
+<p>Übrigens: Durch das Überstrahlen scheinen helle Buchstaben auf dunklem Grund auch ein wenig zusammenzulaufen und aneinander zu kleben. Dagegen hilft, die Buchstaben ganz leicht (!) zu sperren, im CSS z.<small> </small>B. mit <code>letter-spacing: .01em;</code>. Bei allen optischen Phänomenen zählt das Augenmaß weit mehr als mathematische Genauigkeit, getreu dem Zitat des Malers Josef Albers: „Nur der Schein trügt nicht.“</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+</p>
+</article>
+
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/ueberstrahlung">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </p><p> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="likes.html">← Please, don’t like me!</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum/Datenschutz</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener noreferrer">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em> (gern mit <a href="/bestand/pub-0x9BA6621B.asc">meinem PGP-Schlüssel</a> verschlüsselt).</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
+</body>
+</html>
