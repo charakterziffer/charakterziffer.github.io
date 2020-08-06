@@ -48,6 +48,8 @@ background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
 &lt;p&gt;Diese Lösung finde ich vor allem dann wichtig, wenn dunkler Text auf hellem Grund und seine umgekehrte Variante nah beieinander stehen. Dann haben Leser:innen den direkten Vergleich und man sollte die Überstrahlung ausgleichen, damit der helle Text nicht zu fett aussieht.&lt;/p&gt;
 
 &lt;p&gt;Übrigens: Durch das Überstrahlen scheinen helle Buchstaben auf dunklem Grund auch ein wenig zusammenzulaufen und aneinander zu kleben. Dagegen hilft, die Buchstaben ganz leicht (!) zu sperren, im CSS z.&lt;small&gt; &lt;/small&gt;B. mit &lt;code&gt;letter-spacing: .01em;&lt;/code&gt;. Bei allen optischen Phänomenen zählt das Augenmaß weit mehr als mathematische Genauigkeit, getreu dem Zitat des Malers Josef Albers: „Nur der Schein trügt nicht.“&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update 6. Aug. 2020:&lt;/strong&gt; Eben habe ich noch &lt;a href=&quot;https://www.daltonmaag.com/library/darkmode&quot;&gt;die Schrift „Darkmode“&lt;/a&gt; entdeckt. Sie erschien im Mai 2020 und besitzt als &lt;em&gt;variable font&lt;/em&gt; eine Einstellung extra für invers gesetzte Texte (leider steht auf der Erklärseite kein englischer Fachbegriff für den Überstrahlungs-Effekt).&lt;/p&gt;
 </description>
 	<link>https://charakterziffer.github.io/ueberstrahlung.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
