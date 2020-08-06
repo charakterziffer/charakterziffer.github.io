@@ -45,9 +45,8 @@ header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
 
 header { display: flex; flex-wrap: wrap; margin-bottom: 2.8em; }
-header a { color: #333 !important; font-size: 1.05em; flex: 1;
-	align-self: center; }
-header > a { font-size: 1.7em; padding: 0; }
+header a { color: #333 !important; font-size: 1.05em; }
+header > a { flex:1; align-self: center; font-size: 1.7em; padding:0; }
 header img { float: left; margin-right: .4em; margin-top: -.02em;
 	width: 2em; }
 
