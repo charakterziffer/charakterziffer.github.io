@@ -48,13 +48,27 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <body>
 <header>
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<div>
+<form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
+<input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
+<input type="hidden" id="q" name="q">
+<input type="hidden" name="kl" value="de-de">
+<input type="hidden" name="kj" value="281">
+<input type="hidden" name="kx" value="666">
+<input type="hidden" name="k9" value="281">
+<input type="hidden" name="kaa" value="839">
+<input type="hidden" name="k18" value="1">
+<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="k1" value="-1">
+<input type="submit" value="🔍" aria-label="Suchen">
+</form>
 <nav class="no-hyphens no-print"><ul>
 	<li><a href="/archiv.html">Archiv</a></li>
 	<li><a href="/extra/index.html">★Extra</a></li>
 	<li><a href="/rss.xml">RSS</a></li>
-	<li><a href="https://twitter.com/charakterziffer" target="_blank" rel="noopener noreferrer">Twitter</a></li>
 	<li><a href="/index.html#impressum">Impressum</a></li>
 </ul></nav>
+</div>
 </header>
 
 <main>

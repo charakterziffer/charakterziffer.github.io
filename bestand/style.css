@@ -44,22 +44,29 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
 
-header { margin-bottom: 2.8em; }
-header a { color: #333 !important; font-size: 1.05em; }
+header { display: flex; flex-wrap: wrap; margin-bottom: 2.8em; }
+header a { color: #333 !important; font-size: 1.05em; flex: 1;
+	align-self: center; }
 header > a { font-size: 1.7em; padding: 0; }
 header img { float: left; margin-right: .4em; margin-top: -.02em;
 	width: 2em; }
 
-nav { float: right; position: relative; top: -1.6em; text-align: right; }
+header > div:nth-child(2) {
+	display: flex; flex-direction: column; align-items: flex-end; }
+#suchform { display: flex; margin: 0 .5em .5em 0; }
+#keyword { width: inherit; }
+
 nav ul { margin: 0; padding: 0; list-style: none; }
 nav li { display: inline-block; margin-bottom: .4em; }
 nav li a { padding: .25em .4em .2em; }
 nav a:hover, nav a:focus { background-color: #deb; }
 
 @media (min-width: 71.5em) { nav { display: none; } }
-@media (max-width: 45em) { nav { width: 13em; } }
-@media (max-width: 32em) { nav { width: 100%; text-align: left;
-	float: none; position: inherit; margin: .75em 0 -.9em -.25em; } }
+
+@media (max-width: 37em) {
+	header { display: inherit; }
+	header > div:nth-child(2) { align-items: flex-start; margin-top: 1.5em; }
+	nav { margin-left: -.4em; } }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 	background-color: hsla(0,0%,92%,.7); }
