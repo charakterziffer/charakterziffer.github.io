@@ -78,6 +78,86 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2020-08-24">Mo, 24. Aug. 2020</time>
+	<h1><a href="blogsuche.html">Mein Blog durchsuchen mit DuckDuckGo</a></h1>
+	<p>Ende November werden es zehn Jahre, dass ich mit dem Bloggen begonnen habe; da haben sich eine ganze Menge Artikel zu sehr unterschiedlichen Themen angesammelt. Alle Texte finden sich mit einer kurzen Inhaltsangabe zwar auf meiner <a href="archiv.html">Archivseite</a>, aber es dauert schon eine Weile diese Liste durchzusehen.</p>
+
+<p>Blogartikel, die ich persönlich für besonders lesenswert halte, habe ich in zwei Jubiläums-Einträgen gesammelt. So bieten <a href="blogeintrag-50.html">mein 50.</a> und mein <a href="blogeintrag-100.html">100. Blogartikel</a> einen schnellen Zugriff auf meine Favoriten. Was aber, wenn jemand nach einem bestimmten Stichwort sucht? Zum Beispiel weil sie oder ihn Pflanzen, Fußball oder Origami interessieren?</p>
+
+<h2 id="ein-einfaches-suchformular">Ein einfaches Suchformular</h2>
+
+<p>Für diesen Fall habe ich seit diesem Monat auch eine Suchfunktion in meinem Blog. Es ist im Grunde nur ein einfaches HTML-Formular mit einem Textfeld (<code>id="q"</code>) und einer Schaltfläche mit Lupe:</p>
+
+<pre><code>&lt;form method="GET" action="ergebnisseite.php"&gt;
+   &lt;input type="text" id="q"&gt;
+   &lt;input type="submit" value="🔍"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Beim Klick auf die Lupe würde normalerweise das Suchwort an den Server geschickt, wo meine Website gespeichert ist. Dann fände eine Datenbank-Abfrage statt, die entsprechenden Treffer würden gesammelt und mit PHP dynamisch auf einer Ergebnisseite aufgelistet.</p>
+
+<p>Doch da gibt es ein Problem: Mein Blog ist statisch. Das heißt, alle Seiten sind fertig gebaut, es gibt keine Datenbank mit einzelnen Inhalten, keinen Server mit dynamischem PHP und keine Ergebnisseite, die abhängig vom Suchbegriff jedes Mal etwas anderes anzeigen könnte. Meine Website kann sich nicht selbst durchsuchen.</p>
+
+<h2 id="für-die-funktion-externe-suchmaschine">Für die Funktion: Externe Suchmaschine</h2>
+
+<p>Zum Glück gibt es ja schon Suchmaschinen, die mein Blog nach einem Stichwort durchforsten könnten. Die meisten Leute verwenden zur Internetsuche vermutlich Google. Dort gibt es – wie bei <a href="https://www.bing.com/">Bing</a>, <a href="https://www.ecosia.org/">Ecosia</a> oder <a href="https://metager.de/">MetaGer</a> – Parameter, um nur auf einer bestimmten Seite zu suchen. Gibt man ins Google-Feld zum Beispiel folgendes ein: <a href="https://www.google.de/search?q=giraffe+site%3Atagesschau.de">Giraffe site:tagesschau.de</a> – dann spuckt Google zum Suchwort „Giraffe“ nur Treffer von <em>tagesschau.de</em> aus.</p>
+
+<p>Für meine Blogsuche wollte ich allerdings keine Suchmaschine verwenden, die jeden Klick registriert, Datenprofile ihrer Nutzer:innen anlegt und kaum erkennbare Werbung unter die Suchtreffer mischt. Darum habe ich mich für DuckDuckGo entschieden. Dieser Anbieter verspricht, keine Daten zu sammeln, um Suchergebnisse oder Werbung auf einzelne Nutzer hin anzupassen. Ich nutze DuckDuckGo im Alltag schon länger, denn es bietet mit sogenannten <a href="https://duckduckgo.com/bang">!bangs</a> (engl.) die Möglichkeit, schnell zwischen verschiedenen Suchmaschinen zu wechseln.</p>
+
+<p>Beim obigen Suchformular trägt man also die Adresse <em>duckduckgo.com</em> ein. Außerdem habe ich einen Platzhalter-Text (<code>placeholder</code>) und Beschreibungen für eine bessere Barrierefreiheit ergänzt (<code>aria-label</code>):</p>
+
+<pre><code>&lt;form method="GET" action="https://duckduckgo.com/"&gt;
+   &lt;input type="text" id="q" placeholder="Suche mit DuckDuckGo"
+   aria-label="Seite extern durchsuchen mit DuckDuckGo"&gt;
+   &lt;input type="submit" value="🔍" aria-label="Suchen"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Na, sieht schon etwas komplizierter aus? Versuch ruhig mal, den Code zu lesen und zu verstehen, was die einzelnen Teile bedeuten. Vielleicht fällt dir dann auf, dass DuckDuckGo noch gar weiß, dass es doch nur auf <em>charakterziffer.github.io</em> suchen soll.</p>
+
+<p>Dafür nennen wir das Suchfeld mit der <code>id="q"</code> erst mal um in <code>id="keyword"</code>. Dann fügen wir ein neues Feld mit <code>id="q"</code> (und <code>name="q"</code>) ein, verstecken es aber mit <code>type=hidden</code>:</p>
+
+<pre><code>…
+&lt;input type="text" id="keyword" placeholder="Suche mit DuckDuckGo"
+aria-label="Seite extern durchsuchen mit DuckDuckGo"&gt;
+&lt;input type="hidden" id="q" name="q"&gt;
+…
+</code></pre>
+
+<p>DuckDuckGo interessiert nur der Inhalt des versteckten <code>q</code>-Feldes. Sobald man auf den Knopf mit der Lupe drückt, soll der Suchbegriff aus dem <code>keyword</code>-Feld in das entscheidende Feld <code>q</code> geschrieben werden und dazu das <em>site:charakterziffer.github.io</em>, um nur in meinem Blog zu suchen:</p>
+
+<pre><code>onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'"
+</code></pre>
+
+<p>Dieser Code bedeutet im Einzelnen: Beim Abschicken (<code>onsubmit</code>) führe folgendes <code>javascript</code> aus, nämlich: Suche auf der Website (im <code>document</code>) nach dem Feld mit der <em>id="q"</em> (<code>getElementById('q')</code>) und gib ihm den Inhalt (bzw. „Wert“, <code>value</code>) aus dem Feld mit <em>id="keyword"</em> + dem <code>site:charakterziffer.github.io'</code>. Damit wird das Suchwort und die site-Angabe gleichzeitig an DuckDuckGo verschickt.</p>
+
+<h2 id="das-ganze-suchformular">Das ganze Suchformular</h2>
+
+<p>… sieht jetzt schon etwas umfangreicher aus:</p>
+
+<pre><code>&lt;form method="GET" action="https://duckduckgo.com/"
+onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'"&gt;
+
+   &lt;input type="text" id="keyword" placeholder="Suche mit DuckDuckGo"
+   aria-label="Seite extern durchsuchen mit DuckDuckGo"&gt;
+   &lt;input type="hidden" id="q" name="q"&gt;
+   &lt;input type="submit" value="🔍" aria-label="Suchen"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Aber das war’s dann auch schon. Zumindest fast: Für’s Auge habe ich noch einige Parameter ergänzt, mit denen DuckDuckGo die Farben und Funktion der Ergebnisseite anpasst. Aber ich denke, wir hatten in diesem Blogartikel schon genug Code. Wer’s genau wissen will, kann in den Quelltext meiner Website gucken und sich auf der <a href="https://duckduckgo.com/params">Erklärseite zu den Parametern</a> einlesen.</p>
+
+<p>Natürlich sind die Suchergebnisse nun extern auf <em>duckduckgo.com</em> und nicht unter der Adresse meines eigenen Blogs – denn das ist ja statisch und kann keine spontan zusammengestellten Suchtreffer anzeigen. Damit kann ich aber ganz gut leben.</p>
+
+<p>Ich hoffe, das Suchfeld oben rechts bietet allen Leser:innen eine praktische Möglichkeit, bestimmte Inhalte in meinem Blog zu finden – selbst wenn ein Artikel schon etwas älter ist und im Archiv weiter unten steht.</p>
+
+<p>PS: Wer für sein eigenes Blog lieber eine externe Suche mit Google machen möchte, trage im HTML-Formular als Zieladresse einfach <code>https://www.google.com/search</code> ein, beziehungsweise für Bing <code>https://www.bing.com/search</code>.</p>
+
+	<p>---<br /> <a href="blogsuche.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2020-08-04">Di, 4. Aug. 2020</time>
 	<h1><a href="ueberstrahlung.html">Licht macht dick</a></h1>
 	<p>Im Bereich Typografie gibt es viele optische Täuschungen, die bei der Gestaltung von Buchstaben ausgeglichen werden müssen. So sitzt der waagrechte Mittelstrich im Buchstaben <em>H</em> ein bisschen höher als die geometrische Mitte – sonst wirkt es für uns Menschen so, als läge er zu tief. Spitze und runde Buchstaben wie <em>A</em> oder <em>O</em> ragen ein wenig über die Buchstabenhöhe hinaus, damit sie in unseren Augen genauso groß erscheinen, wie Buchstaben mit einem geraden Abschluss (z.B. <em>E</em>, <em>H</em> oder <em>X</em>).</p>
@@ -195,51 +275,6 @@ background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
 		</p>
 </article>
 
-<article>
-	<time datetime="2020-05-18">Mo, 18. Mai 2020</time>
-	<h1><a href="miniheft.html">Verblüffend einfaches Miniheft</a></h1>
-	<p>Es gibt Dinge, die regen meine Kreativität an und ich komme gleich auf gute Ideen. Eines dieser Dinge ist das folgende Miniheft. Es lässt sich sehr leicht aus einem einzelnen Papierbogen herstellen. Die Anleitung gibt’s diesmal als kurzes Video:</p>
-
-<style>
-video { width: 100%; height: auto; }
-::cue { font: 1.15em/1.33 'Source Sans Pro',Calibri,sans-serif;
-	font-size: clamp(.95em,3.3vw,1.35em); }
-</style>
-
-<figure>
-<video src="material/miniheft.mp4" width="750px" height="422px" controls="" poster="material/miniheft.jpg" playsinline="" preload="metadata">
-	<track label="Deutsch" kind="captions" srclang="de" default="" src="material/miniheft-de.vtt" />
-	<track label="English" kind="captions" srclang="en" src="material/miniheft-en.vtt" />
-</video>
-</figure>
-
-<p>Das einfache Heftchen lädt dazu ein, bekritzelt und beschrieben zu werden. Wie wäre es zum Beispiel mit einem Tagebüchlein? Oder gemalten Glückwünschen für eine liebe Person? Die acht kleinen Seiten bieten viele Möglichkeiten:</p>
-
-<ul style="columns:14em; margin:1em 0 -0.25em;">
-<li style="margin-top:0;">Einfache Rezepte</li>
-<li>Gedanken zu einem Thema</li>
-<li>eine gezeichnete Anleitung</li>
-<li>bewegende Gedichte</li>
-<li>Collagen aus Foto-Schnippseln</li>
-<li>die kommende Gartenplanung</li>
-<li>eine ganze Comic-Serie</li>
-<li>Liedtexte zum Mitsingen</li>
-<li>eine Sammlung von tollen Farben</li>
-<li>schöne Erinnerungen</li>
-</ul>
-
-<p>Sehr praktisch: Wenn man sein Heftchen fertig gestaltet hat, kann man es wieder auffalten und das einzelne Blatt mit einem Kopierer vervielfältigen. So entstehen schnell mehrere Exemplare, die sich gut als Geschenk eignen.</p>
-
-<p>Für diesen Blog-Artikel habe ich selbst zwei Minihefte geschrieben. Das erste gibt fünf Tipps für bessere Typografie, das zweite enthält gezeichnete Liebeserklärungen. Zum Nachbasteln unten die PDF-Datei herunterladen und die entsprechende Seite ausdrucken. Beim Falten bitte darauf achten, dass die Titelseite immer außen bleibt.</p>
-
-<p><a href="material/minihefte.pdf" download="">Druckvorlage herunterladen<br /><em>(PDF-Datei, 2,2 MB)</em></a></p>
-
-<p>Übrigens: Auf Englisch heißen gebastelte Heftchen auch <em>zines</em> [gesprochen: „siens“], eine Kurzform von <em>magazines</em> – sozusagen kleine, selbstgemachte Zeitschriften.</p>
-
-	<p>---<br /> <a href="miniheft.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -273,7 +308,7 @@ E-Mail: postfach2b [ät] web.de (<a href="bestand/pub-0x9BA6621B.asc">PGP-Schlü
 
 <p><strong>§ 3<small> </small>Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2020-08-23T23:54:40+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2020-08-23T23:58:06+02:00</p>
 
 </main>
 

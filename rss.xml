@@ -13,6 +13,87 @@
 </image>
 
 <item>
+	<title>Mein Blog durchsuchen mit DuckDuckGo</title>
+	<description>&lt;p&gt;Ende November werden es zehn Jahre, dass ich mit dem Bloggen begonnen habe; da haben sich eine ganze Menge Artikel zu sehr unterschiedlichen Themen angesammelt. Alle Texte finden sich mit einer kurzen Inhaltsangabe zwar auf meiner &lt;a href=&quot;archiv.html&quot;&gt;Archivseite&lt;/a&gt;, aber es dauert schon eine Weile diese Liste durchzusehen.&lt;/p&gt;
+
+&lt;p&gt;Blogartikel, die ich persönlich für besonders lesenswert halte, habe ich in zwei Jubiläums-Einträgen gesammelt. So bieten &lt;a href=&quot;blogeintrag-50.html&quot;&gt;mein 50.&lt;/a&gt; und mein &lt;a href=&quot;blogeintrag-100.html&quot;&gt;100. Blogartikel&lt;/a&gt; einen schnellen Zugriff auf meine Favoriten. Was aber, wenn jemand nach einem bestimmten Stichwort sucht? Zum Beispiel weil sie oder ihn Pflanzen, Fußball oder Origami interessieren?&lt;/p&gt;
+
+&lt;h2 id=&quot;ein-einfaches-suchformular&quot;&gt;Ein einfaches Suchformular&lt;/h2&gt;
+
+&lt;p&gt;Für diesen Fall habe ich seit diesem Monat auch eine Suchfunktion in meinem Blog. Es ist im Grunde nur ein einfaches HTML-Formular mit einem Textfeld (&lt;code&gt;id=&quot;q&quot;&lt;/code&gt;) und einer Schaltfläche mit Lupe:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;GET&quot; action=&quot;ergebnisseite.php&quot;&amp;gt;
+   &amp;lt;input type=&quot;text&quot; id=&quot;q&quot;&amp;gt;
+   &amp;lt;input type=&quot;submit&quot; value=&quot;🔍&quot;&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Beim Klick auf die Lupe würde normalerweise das Suchwort an den Server geschickt, wo meine Website gespeichert ist. Dann fände eine Datenbank-Abfrage statt, die entsprechenden Treffer würden gesammelt und mit PHP dynamisch auf einer Ergebnisseite aufgelistet.&lt;/p&gt;
+
+&lt;p&gt;Doch da gibt es ein Problem: Mein Blog ist statisch. Das heißt, alle Seiten sind fertig gebaut, es gibt keine Datenbank mit einzelnen Inhalten, keinen Server mit dynamischem PHP und keine Ergebnisseite, die abhängig vom Suchbegriff jedes Mal etwas anderes anzeigen könnte. Meine Website kann sich nicht selbst durchsuchen.&lt;/p&gt;
+
+&lt;h2 id=&quot;für-die-funktion-externe-suchmaschine&quot;&gt;Für die Funktion: Externe Suchmaschine&lt;/h2&gt;
+
+&lt;p&gt;Zum Glück gibt es ja schon Suchmaschinen, die mein Blog nach einem Stichwort durchforsten könnten. Die meisten Leute verwenden zur Internetsuche vermutlich Google. Dort gibt es – wie bei &lt;a href=&quot;https://www.bing.com/&quot;&gt;Bing&lt;/a&gt;, &lt;a href=&quot;https://www.ecosia.org/&quot;&gt;Ecosia&lt;/a&gt; oder &lt;a href=&quot;https://metager.de/&quot;&gt;MetaGer&lt;/a&gt; – Parameter, um nur auf einer bestimmten Seite zu suchen. Gibt man ins Google-Feld zum Beispiel folgendes ein: &lt;a href=&quot;https://www.google.de/search?q=giraffe+site%3Atagesschau.de&quot;&gt;Giraffe site:tagesschau.de&lt;/a&gt; – dann spuckt Google zum Suchwort „Giraffe“ nur Treffer von &lt;em&gt;tagesschau.de&lt;/em&gt; aus.&lt;/p&gt;
+
+&lt;p&gt;Für meine Blogsuche wollte ich allerdings keine Suchmaschine verwenden, die jeden Klick registriert, Datenprofile ihrer Nutzer:innen anlegt und kaum erkennbare Werbung unter die Suchtreffer mischt. Darum habe ich mich für DuckDuckGo entschieden. Dieser Anbieter verspricht, keine Daten zu sammeln, um Suchergebnisse oder Werbung auf einzelne Nutzer hin anzupassen. Ich nutze DuckDuckGo im Alltag schon länger, denn es bietet mit sogenannten &lt;a href=&quot;https://duckduckgo.com/bang&quot;&gt;!bangs&lt;/a&gt; (engl.) die Möglichkeit, schnell zwischen verschiedenen Suchmaschinen zu wechseln.&lt;/p&gt;
+
+&lt;p&gt;Beim obigen Suchformular trägt man also die Adresse &lt;em&gt;duckduckgo.com&lt;/em&gt; ein. Außerdem habe ich einen Platzhalter-Text (&lt;code&gt;placeholder&lt;/code&gt;) und Beschreibungen für eine bessere Barrierefreiheit ergänzt (&lt;code&gt;aria-label&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;GET&quot; action=&quot;https://duckduckgo.com/&quot;&amp;gt;
+   &amp;lt;input type=&quot;text&quot; id=&quot;q&quot; placeholder=&quot;Suche mit DuckDuckGo&quot;
+   aria-label=&quot;Seite extern durchsuchen mit DuckDuckGo&quot;&amp;gt;
+   &amp;lt;input type=&quot;submit&quot; value=&quot;🔍&quot; aria-label=&quot;Suchen&quot;&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Na, sieht schon etwas komplizierter aus? Versuch ruhig mal, den Code zu lesen und zu verstehen, was die einzelnen Teile bedeuten. Vielleicht fällt dir dann auf, dass DuckDuckGo noch gar weiß, dass es doch nur auf &lt;em&gt;charakterziffer.github.io&lt;/em&gt; suchen soll.&lt;/p&gt;
+
+&lt;p&gt;Dafür nennen wir das Suchfeld mit der &lt;code&gt;id=&quot;q&quot;&lt;/code&gt; erst mal um in &lt;code&gt;id=&quot;keyword&quot;&lt;/code&gt;. Dann fügen wir ein neues Feld mit &lt;code&gt;id=&quot;q&quot;&lt;/code&gt; (und &lt;code&gt;name=&quot;q&quot;&lt;/code&gt;) ein, verstecken es aber mit &lt;code&gt;type=hidden&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;…
+&amp;lt;input type=&quot;text&quot; id=&quot;keyword&quot; placeholder=&quot;Suche mit DuckDuckGo&quot;
+aria-label=&quot;Seite extern durchsuchen mit DuckDuckGo&quot;&amp;gt;
+&amp;lt;input type=&quot;hidden&quot; id=&quot;q&quot; name=&quot;q&quot;&amp;gt;
+…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;DuckDuckGo interessiert nur der Inhalt des versteckten &lt;code&gt;q&lt;/code&gt;-Feldes. Sobald man auf den Knopf mit der Lupe drückt, soll der Suchbegriff aus dem &lt;code&gt;keyword&lt;/code&gt;-Feld in das entscheidende Feld &lt;code&gt;q&lt;/code&gt; geschrieben werden und dazu das &lt;em&gt;site:charakterziffer.github.io&lt;/em&gt;, um nur in meinem Blog zu suchen:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;onsubmit=&quot;javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Dieser Code bedeutet im Einzelnen: Beim Abschicken (&lt;code&gt;onsubmit&lt;/code&gt;) führe folgendes &lt;code&gt;javascript&lt;/code&gt; aus, nämlich: Suche auf der Website (im &lt;code&gt;document&lt;/code&gt;) nach dem Feld mit der &lt;em&gt;id=&quot;q&quot;&lt;/em&gt; (&lt;code&gt;getElementById('q')&lt;/code&gt;) und gib ihm den Inhalt (bzw. „Wert“, &lt;code&gt;value&lt;/code&gt;) aus dem Feld mit &lt;em&gt;id=&quot;keyword&quot;&lt;/em&gt; + dem &lt;code&gt;site:charakterziffer.github.io'&lt;/code&gt;. Damit wird das Suchwort und die site-Angabe gleichzeitig an DuckDuckGo verschickt.&lt;/p&gt;
+
+&lt;h2 id=&quot;das-ganze-suchformular&quot;&gt;Das ganze Suchformular&lt;/h2&gt;
+
+&lt;p&gt;… sieht jetzt schon etwas umfangreicher aus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;GET&quot; action=&quot;https://duckduckgo.com/&quot;
+onsubmit=&quot;javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'&quot;&amp;gt;
+
+   &amp;lt;input type=&quot;text&quot; id=&quot;keyword&quot; placeholder=&quot;Suche mit DuckDuckGo&quot;
+   aria-label=&quot;Seite extern durchsuchen mit DuckDuckGo&quot;&amp;gt;
+   &amp;lt;input type=&quot;hidden&quot; id=&quot;q&quot; name=&quot;q&quot;&amp;gt;
+   &amp;lt;input type=&quot;submit&quot; value=&quot;🔍&quot; aria-label=&quot;Suchen&quot;&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aber das war’s dann auch schon. Zumindest fast: Für’s Auge habe ich noch einige Parameter ergänzt, mit denen DuckDuckGo die Farben und Funktion der Ergebnisseite anpasst. Aber ich denke, wir hatten in diesem Blogartikel schon genug Code. Wer’s genau wissen will, kann in den Quelltext meiner Website gucken und sich auf der &lt;a href=&quot;https://duckduckgo.com/params&quot;&gt;Erklärseite zu den Parametern&lt;/a&gt; einlesen.&lt;/p&gt;
+
+&lt;p&gt;Natürlich sind die Suchergebnisse nun extern auf &lt;em&gt;duckduckgo.com&lt;/em&gt; und nicht unter der Adresse meines eigenen Blogs – denn das ist ja statisch und kann keine spontan zusammengestellten Suchtreffer anzeigen. Damit kann ich aber ganz gut leben.&lt;/p&gt;
+
+&lt;p&gt;Ich hoffe, das Suchfeld oben rechts bietet allen Leser:innen eine praktische Möglichkeit, bestimmte Inhalte in meinem Blog zu finden – selbst wenn ein Artikel schon etwas älter ist und im Archiv weiter unten steht.&lt;/p&gt;
+
+&lt;p&gt;PS: Wer für sein eigenes Blog lieber eine externe Suche mit Google machen möchte, trage im HTML-Formular als Zieladresse einfach &lt;code&gt;https://www.google.com/search&lt;/code&gt; ein, beziehungsweise für Bing &lt;code&gt;https://www.bing.com/search&lt;/code&gt;.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/blogsuche.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/blogsuche.html</guid>
+	<pubDate>Mon, 24 Aug 2020 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Licht macht dick</title>
 	<description>&lt;p&gt;Im Bereich Typografie gibt es viele optische Täuschungen, die bei der Gestaltung von Buchstaben ausgeglichen werden müssen. So sitzt der waagrechte Mittelstrich im Buchstaben &lt;em&gt;H&lt;/em&gt; ein bisschen höher als die geometrische Mitte – sonst wirkt es für uns Menschen so, als läge er zu tief. Spitze und runde Buchstaben wie &lt;em&gt;A&lt;/em&gt; oder &lt;em&gt;O&lt;/em&gt; ragen ein wenig über die Buchstabenhöhe hinaus, damit sie in unseren Augen genauso groß erscheinen, wie Buchstaben mit einem geraden Abschluss (z.B. &lt;em&gt;E&lt;/em&gt;, &lt;em&gt;H&lt;/em&gt; oder &lt;em&gt;X&lt;/em&gt;).&lt;/p&gt;
 
@@ -250,57 +331,6 @@ video { width: 100%; height: auto; }
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/fuchs-10.html</guid>
 	<pubDate>Tue, 28 Apr 2020 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Ein Stoffkrokodil als Nähprojekt</title>
-	<description>&lt;p&gt;Schon im Februar hatte ich mir Stoff gekauft, um ein kleines Projekt zu nähen: ein Krokodilkissen. Nun bin ich endlich dazu gekommen, meine Nähmaschine aufzubauen und aus dem Bleistiftentwurf ein neues Stofftier zu machen.&lt;/p&gt;
-
-&lt;p&gt;Wer das Krokodil nachnähen möchte, braucht folgende Materialien: hellgrünen Stoff (zweimal ca. 40×22&lt;small&gt; &lt;/small&gt;cm), ein Rest schwarzer Filz (für die Augen), grüner Filz (ca. 15×5&lt;small&gt; &lt;/small&gt;cm – oder das Doppelte/Vierfache). Dazu einen Knopf für die Nase und optional Stoff für einen Buchstaben (ca. 10×10&lt;small&gt; &lt;/small&gt;cm). Hier das &lt;a href=&quot;material/stoffkrokodil-schnittmuster.pdf&quot;&gt;Schnittmuster als PDF&lt;/a&gt;.&lt;/p&gt;
-
-&lt;style&gt;
-&lt;!--
-[class^=&quot;kroko&quot;] { position: relative; width: 98.5%; height: 0;
-	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
-	line-height: 0; border: 0; background-size: 100% auto;
-	background-image: url('material/stoffkrokodil.jpg'); }
-[class^=&quot;kroko&quot;] a { visibility:hidden; }
-.kroko1 { background-position: 0 0; }
-.kroko2 { background-position: 0 25%; }
-.kroko3 { background-position: 0 50%; }
-.kroko4 { background-position: 0 75%; }
-.kroko5 { background-position: 0 100%; }
---&gt;
-&lt;/style&gt;
-
-&lt;div class=&quot;kroko1&quot; title=&quot;Zeichenvorlage, Stoffe, zugeschnittene Grundform&quot;&gt;&lt;a href=&quot;material/stoffkrokodil.jpg&quot;&gt;Komplettes Bild&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Den gepunkteten Stoff doppelt legen (schöne Seite innen) und den Umriss des Krokodils mit Bleistift aufzeichnen. Zum Umriss etwa 1&lt;small&gt; &lt;/small&gt;cm Naht dazurechnen und mit dieser Zugabe ausschneiden.&lt;/p&gt;
-
-&lt;div class=&quot;kroko2&quot; title=&quot;Filzteile, Buchstabe mit Saum bügeln, Buchstabe festnähen&quot;&gt;&lt;a href=&quot;material/stoffkrokodil.jpg&quot;&gt;Komplettes Bild&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Aus dem grünen Filz die Dreiecke für den Rücken ausschneiden. Für ordentlich dicke Rückenschuppen habe ich den Filz vierfach genommen und an der offenen Kante mit buntem Garn zusammengenäht.&lt;/p&gt;
-
-&lt;p&gt;Den Buchstaben mit Nahtzugabe ausschneiden. Die Naht vor allem an den inneren Rundungen und den Ecken einschneiden, sorgfältig umfalten, glattbügeln und grob feststeppen. Dann den Buchstaben auf der vorderen Krokodilhälfte fixieren und am Rand entlang festnähen (hab ich gemächlich von Hand gemacht, so gut bin ich mit der Nähmaschine nicht).&lt;/p&gt;
-
-&lt;div class=&quot;kroko3&quot; title=&quot;Grundform zusammennähen, Überstände kürzen, Augen aufnähen&quot;&gt;&lt;a href=&quot;material/stoffkrokodil.jpg&quot;&gt;Komplettes Bild&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Die Filzzacken am Rücken mit der Spitze nach unten an einem Umriss feststeppen. Den zweiten Umriss darauf steppen/feststecken, so dass die Außenseiten innen sind und die Bleistiftlinie oben liegt. Jetzt möglichst auf der Bleistiftlinie mit der Nähmaschine nähen. Weil das Stoffkrokodil noch gefüllt werden muss, den Bauch noch nicht zunähen!&lt;/p&gt;
-
-&lt;p&gt;Danach die überstehenden Nähte ein bisschen kürzen, an Ecken abschneiden oder einschneiden (natürlich nicht den Faden). Nun das Krokodil umdrehen, die Nähte vorsichtig flachbügeln und die weiteren Verzierungen aufnähen, also die Augen und einen Knopf als Nase.&lt;/p&gt;
-
-&lt;div class=&quot;kroko4&quot; title=&quot;Zähne aufzeichnen und sticken, Krokodil füllen und zunähen&quot;&gt;&lt;a href=&quot;material/stoffkrokodil.jpg&quot;&gt;Komplettes Bild&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Die Spitzen der Zähne mit einem Zahnstocher (☺) durchstechen, mit einem Bleistift als feine Punkte aufs Krokodilgesicht übertragen, dann mit einem dickeren Faden aufsticken. Nun ordentlich Füllmaterial ins Krokodil stopfen, vor allem in Schwanz, Füße, Schnauze und Augen. Am Schluss noch den Bauch zunähen.&lt;/p&gt;
-
-&lt;div class=&quot;kroko5&quot; title=&quot;Das fertige Krokodil mit einer selbstgenähten Mundschutzmaske&quot;&gt;&lt;a href=&quot;material/stoffkrokodil.jpg&quot;&gt;Komplettes Bild&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Und weil ich die Nähmaschine schon ausgepackt hatte, habe ich in Zeiten des Corona-Virus gleich noch zwei Mundschutze genäht (eigentlich nicht fürs Krokodil gedacht).&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/stoffkrokodil.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/stoffkrokodil.html</guid>
-	<pubDate>Wed, 08 Apr 2020 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
