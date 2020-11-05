@@ -13,6 +13,48 @@
 </image>
 
 <item>
+	<title>Bewährt seit zehn Jahren</title>
+	<description>&lt;p&gt;Ich mag große Wandkalender, in denen ich meine Termine auffällig und übersichtlich eintragen kann. Das Problem war aber schon vor zehn Jahren, dass ich einfach keine so große Wandfläche in der Nähe meines Arbeitsplatzes habe. Und so habe ich das Konzept für meine Halbmonatskalender erarbeitet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/hmk2021.jpg&quot; alt=&quot;Details meines Halbmonatskalenders 2021&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Vorteile des Designs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;große Zahlen&lt;/strong&gt;, die sich gut lesen lassen, obwohl der Kalender drüben an der Wand hängt.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;kompakt&lt;/strong&gt; im Format DIN A5, braucht nicht den Platz eines riesigen Posters.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;2–3 Wochen im Überblick&lt;/strong&gt;, um einige Tage voraus- und zurückzuschauen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Platz zum Reinschreiben&lt;/strong&gt;, nämlich rund 8&lt;small&gt; &lt;/small&gt;cm² für kurze tägliche Notizen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;frisches Konzept&lt;/strong&gt; und nicht die 08/15-Vorlage in der abgenutzten Allerweltschrift Helvetica/Arial.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Natürlich hat das Kalenderdesign auch einen kleinen Nachteil: Es ist ungewohnt und man braucht ein wenig, bis man lernt, welches Kästchen für welchen Wochentag steht.&lt;/p&gt;
+
+&lt;p&gt;Als Schriftart habe ich dieses Jahr die &lt;a href=&quot;https://www.fontsquirrel.com/fonts/source-serif-pro&quot;&gt;Source Serif Pro&lt;/a&gt; von Frank Grießhammer gewählt. Außerdem gibt’s den Kalender wie schon für 2019 in Farbe.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/hmk2021.pdf&quot; download=&quot;&quot;&gt;Farb-Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 284 kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Wer Graustufen lieber hat, kann auch die &lt;a href=&quot;material/hmk2021sw.pdf&quot;&gt;Schwarz-Weiß-Version&lt;/a&gt; herunterladen (PDF, 280 kB). Dann auf zwölf A4-Seiten ausdrucken, auf Wunsch jedes Blatt halbieren, sortieren und die Einzelblätter zusammenheften – mit Vielzweckklammer, im Copy-Shop spiralbinden lassen, obere Kante leicht leimen oder einfach jede Seite mittig lochen und aufhängen.&lt;/p&gt;
+
+&lt;p&gt;Über Weiterempfehlungen meines Kalender freue ich mich sehr. Dazu steht er unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de&quot;&gt;CC BY-NC-SA&lt;/a&gt;). Wer den Kalender bearbeiten möchte (beispielsweise die optionalen Feiertage aufs eigene Bundesland anpassen), möge mich bitte kurz anschreiben oder hier kommentieren. Dann verschicke ich gerne die SVG-Dateien.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/kalender-2021.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2021.html</guid>
+	<pubDate>Fri, 06 Nov 2020 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Chorplakate und ihre Idee</title>
 	<description>&lt;p&gt;Sofern uns zu hohe Coronazahlen keinen Strich durch die Rechnung machen, werden wir kommenden Sonntag (25.10.2020) mit dem Chor St. Johannes in der Regensburger Dreieinigkeitskirche singen. Wie schon in den Jahren zuvor, habe ich auch für dieses Konzert das Plakat und Programmblatt gestaltet.&lt;/p&gt;
 
@@ -241,79 +283,6 @@ background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/ueberstrahlung.html</guid>
 	<pubDate>Tue, 04 Aug 2020 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Please, don’t like me!</title>
-	<description>&lt;p&gt;Mit Facebook, Twitter &amp;amp; Co hat sich eine neue Form der Rückmeldung etabliert, nämlich das Liken. Wenn mir ein Beitrag gefällt, klicke ich auf ein kleines Herzchen oder vergebe ein Daumen-hoch. Auf sehr einfache Weise kann ich meine Zustimmung, Wertschätzung oder Bewunderung ausdrücken.&lt;/p&gt;
-
-&lt;h2 id=&quot;likes-sind-mehrdeutig&quot;&gt;Likes sind mehrdeutig&lt;/h2&gt;
-
-&lt;p&gt;Äh … Moment. Heißt ein Like jetzt, dass jemand den Beitrag inhaltlich gut findet? Oder dass derjenige zwar anderer Meinung ist, ihm aber die gelungene Beschreibung gefällt? Oder dass die Person einfach ihre Solidarität signalisieren will? Oder was? Ein Like ist ziemlich unbestimmt. Beispiel:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🦄 Unfassbar: Hier werden unschuldige Einhörner abgeschlachtet! #Fabeltiermörder&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ist jemand, der diesen Tweet liked, genauso empört wie die Verfasserin? Oder eher ein zufriedener Einhornhasser, dem die Ausrottung nicht schnell genug gehen kann?&lt;/p&gt;
-
-&lt;h2 id=&quot;likes-bringen-niemanden-weiter&quot;&gt;Likes bringen niemanden weiter&lt;/h2&gt;
-
-&lt;p&gt;Ein einfaches Like sagt nichts außer einem sehr wagen „Ich mag daran etwas“. Entsprechend empfinde ich den Klick aufs Herzchen als nahezu bedeutungslos. Ich schreibe schließlich nicht, damit es irgendwem gefällt, sondern weil ich eine Diskussion in Gang bringen möchte, Wissen verbreiten oder zum Nachdenken anregen will. Gerne kassiere ich sogar Widerspruch und gut begründete, andere Meinungen.&lt;/p&gt;
-
-&lt;p&gt;Ein Like ist höchstens ein wohlmeinendes &lt;em&gt;Aha&lt;/em&gt;. Mir signalisiert es, dass dir zwar gefällt, was ich geschrieben habe, du dir aber nicht die Mühe machst, dich weiter damit auseinanderzusetzen. Und das ist genau das Gegenteil von dem, was ich erreichen möchte. Möglicherweise verhindert die Möglichkeit zum Liken sogar konstruktive Kommentare. Nach dem Motto: Einmal liken und abgehakt.&lt;/p&gt;
-
-&lt;p&gt;Dabei hätten Antworten nicht nur für mich, sondern für alle Leser:innen einen Mehrwert. Da Kommentare öffentlich unter meinem Text erscheinen, können sie neue Aspekte aufgreifen, mich korrigieren und ergänzen. Sie zeichnen womöglich ein vielschichtigeres Bild, als mein Ursprungstext es könnte. Und davon hat jeder mehr, als von einem inhaltsleeren Herzchenklick.&lt;/p&gt;
-
-&lt;h2 id=&quot;likes-erzeugen-druck&quot;&gt;Likes erzeugen Druck&lt;/h2&gt;
-
-&lt;p&gt;So inhaltsleer ist das Like aber nicht für alle. Influencer:innen auf Instagram, die mit ihren Postings auf der Fotoplattform Geld verdienen, zeigen einen Unternehmen durch die Menge an Likes, wie viel Verbreitung sie bieten können. Likes können in diesem Fall richtig Geld bedeuten.&lt;/p&gt;
-
-&lt;p&gt;Andere Nutzer:innen machen an der Anzahl Likes fest, wie wertvoll ihr Beitrag angeblich ist oder sogar, wie beliebt sie sich selbst fühlen. Gerade bei Jugendlichen scheinen Likes so viel Druck zu erzeugen, dass seit letztem Jahr &lt;a href=&quot;https://www.tagesschau.de/wirtschaft/instagram-121.html&quot;&gt;Instagram testet, die Anzahl der Likes zu verbergen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ist es nicht tragisch, wenn (ausbleibende) Likes das Selbstwertgefühl mancher Nutzer:innen schwächen? Dabei hängen Popularität und Qualität doch nur indirekt zusammen – es kommen viele weitere Faktoren ins Spiel, ob ein Post viele Likes bekommt oder nicht (z.&lt;small&gt; &lt;/small&gt;B. Sichtbarkeit durch Algorithmen oder Weiterverbreitung, Tageszeit, Konkurrenzthemen).&lt;/p&gt;
-
-&lt;h2 id=&quot;likes-fördern-oberflächlichkeit--und-hass&quot;&gt;Likes fördern Oberflächlichkeit – und Hass&lt;/h2&gt;
-
-&lt;p&gt;Zugegeben, die These in der vorigen Überschrift ist etwas steil. Aber wofür werden denn Likes vergeben? Ich behaupte, zum einen für oberflächlichen Flausch-Inhalte wie Katzenbilder, lustige Faultiere, niedliche Entenküken oder tapsige Pandabären. Und ehrlich gesagt finde ich das für solche Inhalte völlig in Ordnung, ein belangloses Like zu vergeben. Das stiftet ein wohliges Gemeinschaftsgefühl und tut keinem weh … Außer wenn es bewirkt, dass Autor:innen dann lieber Kuschel-Content veröffentlichen, weil sie für tiefgängige Essays oder kritische Reportagefotos weniger Herzchen erhalten.&lt;/p&gt;
-
-&lt;p&gt;Was ich ganz sicher nicht möchte ist, dass Autor:innen ihre Beiträge bis an den Rand der Verfälschung zuspitzen (oder darüber hinaus), weil auch provokante Inhalte mehr Likes generieren. Aus der Gemeinschaft der Likenden wird hier dann vielleicht eine vereinte Hassgruppe, deren Mitglieder sich gegenseitig hochschaukeln. Dann doch besser (streng moderierte) Kommentare, um auch ausgleichenden Stimmen Gewicht zu verleihen.&lt;/p&gt;
-
-&lt;h2 id=&quot;likes-steigern-verbreitung-aber-nur-zweitklassig&quot;&gt;Likes steigern Verbreitung, aber nur zweitklassig&lt;/h2&gt;
-
-&lt;p&gt;Auf vielen Plattformen begünstigen Likes die Sichtbarkeit eines Beitrags. Zum Beispiel mischt Twitter in die algorithmisch sortierte Timeline immer mal wieder ein „XY gefällt das“, gefolgt von einem Tweet, der ein Like bekommen hat. So erreichen „beherzte“ Tweets auch Nutzer:innen, die dem Verfasser oder der Verfasserin selbst gar nicht folgen.&lt;/p&gt;
-
-&lt;p&gt;Nur: Je nach Plattform gibt es deutlich bessere Möglichkeiten, einem Beitrag mehr Aufmerksamkeit zu verschaffen. Ein Retweet auf Twitter zum Beispiel sorgt garantiert für mehr Sichtbarkeit und ist für Tweet-Schreiber:innen weitaus nützlicher.&lt;/p&gt;
-
-&lt;h2 id=&quot;likes-als-beruhigungspille&quot;&gt;Likes als Beruhigungspille&lt;/h2&gt;
-
-&lt;p&gt;Vielleicht ist ein Like auch weniger für Autor:innen gedacht, sondern für die Leser:innen. Wie oben schon erwähnt, kann man sich wie in einer großen Gemeinschaft fühlen, wenn man zu den schon angezeigten 3.628 Herzchen noch sein eigenes Like dazuklickt.&lt;/p&gt;
-
-&lt;p&gt;In einem Konzert zu sitzen, bei dem zwischen einzelnen Stücken/​Sätzen nicht geklatscht werden soll, ist ein komisches Gefühl. Vielleicht ist es vergleichbar, wie nach einen schönen Text weiterzusurfen, ohne zumindest eine scheinbare Anerkennung zu hinterlassen. So wie ein gemeinsamer Applaus eine gelungene Darbietung abschließt, könnte man einen schönen Text per Herzklick goutieren.&lt;/p&gt;
-
-&lt;h2 id=&quot;wofür-also-likes&quot;&gt;Wofür also Likes?&lt;/h2&gt;
-
-&lt;p&gt;Ich fasse mal zusammen, wofür &lt;em&gt;ich&lt;/em&gt; Likes geeignet halte:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Flausch-Inhalte, bei denen niemand eine vertiefende Auseinandersetzung erwartet.&lt;/li&gt;
-  &lt;li&gt;Als zustimmende Lesebestätigung (entspricht „okay, passt“)&lt;/li&gt;
-  &lt;li&gt;und … äh ne, das war’s schon.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Und daraus folgend die Bitte: &lt;em&gt;Please don’t like me&lt;/em&gt;, bitte like mich nicht. Falls du es aber zur eigenen Beruhigung brauchst, darfst du gerne auf das Herzchen hier klicken.&lt;input id=&quot;toggle-heart&quot; type=&quot;checkbox&quot; aria-label=&quot;Like-Button&quot; style=&quot;position: absolute; left:-100vw;&quot; /&gt;&lt;label for=&quot;toggle-heart&quot; style=&quot;display: block; width: 50px; height: 48px; float: left; cursor: pointer;&quot;&gt;&lt;/label&gt; Technisch hat es jedoch keine Funktion – niemand erfährt, was du damit gemacht hast. Ich freue mich viel mehr über einen ermunternden, kritischen oder nachdenklichen Kommentar.&lt;/p&gt;
-
-&lt;style&gt;
-#toggle-heart + label { background-position: 0 0; transition: background-position 0s steps(14); background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;750&quot; height=&quot;50&quot;&gt;&lt;circle cx=&quot;75&quot; cy=&quot;24.4&quot; r=&quot;2&quot; fill=&quot;%23839&quot;/&gt;&lt;circle cx=&quot;125&quot; cy=&quot;24.4&quot; r=&quot;4&quot; fill=&quot;%23ad0781&quot;/&gt;&lt;circle cx=&quot;175&quot; cy=&quot;24.4&quot; r=&quot;7.5&quot; fill=&quot;%23c5005f&quot;/&gt;&lt;circle cx=&quot;225&quot; cy=&quot;24.4&quot; r=&quot;11&quot; opacity=&quot;.7&quot; fill=&quot;%23d00037&quot;/&gt;&lt;circle cx=&quot;275&quot; cy=&quot;24.4&quot; r=&quot;13&quot; opacity=&quot;.5&quot; fill=&quot;%23c00&quot;/&gt;&lt;circle cx=&quot;325&quot; cy=&quot;24.4&quot; r=&quot;14.7&quot; opacity=&quot;.4&quot; fill=&quot;%23d93a00&quot;/&gt;&lt;circle cx=&quot;375&quot; cy=&quot;24.4&quot; r=&quot;16&quot; opacity=&quot;.3&quot; fill=&quot;%23e35900&quot;/&gt;&lt;circle cx=&quot;425&quot; cy=&quot;24.4&quot; r=&quot;17&quot; opacity=&quot;.3&quot; fill=&quot;%23ec7500&quot;/&gt;&lt;circle cx=&quot;475&quot; cy=&quot;24.4&quot; r=&quot;17.8&quot; opacity=&quot;.3&quot; fill=&quot;%23f49000&quot;/&gt;&lt;circle cx=&quot;525&quot; cy=&quot;24.4&quot; r=&quot;18.3&quot; opacity=&quot;.2&quot; fill=&quot;%23f9aa00&quot;/&gt;&lt;circle cx=&quot;575&quot; cy=&quot;24.4&quot; r=&quot;18.7&quot; opacity=&quot;.2&quot; fill=&quot;%23fdc400&quot;/&gt;&lt;circle cx=&quot;625&quot; cy=&quot;24.4&quot; r=&quot;18.9&quot; opacity=&quot;.1&quot; fill=&quot;%23fd0&quot;/&gt;&lt;circle cx=&quot;675&quot; cy=&quot;24.4&quot; r=&quot;19&quot; opacity=&quot;.1&quot; fill=&quot;%23fe3&quot;/&gt;&lt;g stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M25 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;none&quot; stroke=&quot;%23666&quot;/&gt;&lt;path d=&quot;M75 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;none&quot; stroke=&quot;%237e5e56&quot;/&gt;&lt;path d=&quot;M125 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;none&quot; stroke=&quot;%23754236&quot;/&gt;&lt;path d=&quot;M175 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;none&quot; stroke=&quot;%23803626&quot;/&gt;&lt;path d=&quot;M225 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;%23d00037&quot; stroke=&quot;%23852415&quot;/&gt;&lt;path d=&quot;M275 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;%23c00&quot; stroke=&quot;%238c0000&quot;/&gt;&lt;path d=&quot;M325 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;%23c00&quot; stroke=&quot;%23950000&quot;/&gt;&lt;path d=&quot;M375 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM425 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM475 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM525 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM575 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM625 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM675 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13zM725 35s-11-7-11-13c0-3 2-7 5-7 4 0 6 4 6 4s2-4 6-4c3 0 5 4 5 7 0 6-11 13-11 13z&quot; fill=&quot;%23c00&quot; stroke=&quot;%23a40000&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;'); }
-#toggle-heart:focus + label { outline: 2px dotted #666; outline-offset: -7px; }
-#toggle-heart:checked + label { transition-duration: .4s; background-position: -700px 0; }
-&lt;/style&gt;
-
-</description>
-	<link>https://charakterziffer.github.io/likes.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/likes.html</guid>
-	<pubDate>Fri, 19 Jun 2020 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
