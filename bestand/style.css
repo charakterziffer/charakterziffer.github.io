@@ -41,7 +41,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
 
-/*body { background: #fff linear-gradient(rgba(0,0,0,.2) .1em, transparent 0) 0 8px / auto .75em; } /* Grundlinienraster */
+/*body { background: #fff linear-gradient(rgba(0,0,0,.2) .1em, transparent 0) 0 11px / auto .75em; } /* Grundlinienraster */
 
 header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
