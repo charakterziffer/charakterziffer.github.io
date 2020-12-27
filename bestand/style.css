@@ -10,13 +10,11 @@
 @font-face { font-family: 'Source Sans 3';
 	font-style: normal; font-weight: 400;
 	src: local('Source Sans 3'), local('SourceSans3-Regular'),
-	local('Source Sans Pro'), local('SourceSansPro-Regular'),
 	url(SourceSans3-Rg.woff2) format('woff2');
 	font-display: fallback; }
 @font-face { font-family: 'Source Sans 3';
 	font-style: italic; font-weight: 400;
 	src: local('Source Sans 3 Italic'), local('SourceSans3-Italic'),
-	local('Source Sans Pro Italic'), local('SourceSansPro-Italic'),
 	url(SourceSans3-It.woff2) format('woff2');
 	font-display: fallback; }
 @font-face { font-family: 'czSlab';
@@ -28,7 +26,7 @@
 
 *, ::before, ::after { box-sizing: border-box; }
 body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
-	font: 400 1.1em/1.5 'Source Sans 3',Calibri,Arial,sans-serif;
+	font: 400 1.1em/1.5 'Source Sans 3','Source Sans Pro',Segoe UI,Calibri,sans-serif;
 	font-feature-settings: 'onum', 'liga', 'kern';
 	color: #222; background-color: #fff;
 	background-image: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
@@ -271,7 +269,7 @@ article div { -webkit-print-color-adjust: exact !important;
 .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] {
 	display: none; }
 a[href]::after { content: ' [' attr(href) ']';
-	font: italic 1rem/1.4 'Source Sans 3',Calibri,Arial,sans-serif;
+	font: italic 1rem/1.4 'Source Sans 3','Source Sans Pro',Segoe UI,Calibri,sans-serif;
 	font-feature-settings: 'onum', 'liga', 'kern';
 	width: auto; vertical-align: inherit; }
 a[href^='#']::after, a[href^='javascript']::after, header a[href]::after,
