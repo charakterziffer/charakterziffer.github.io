@@ -13,6 +13,28 @@
 </image>
 
 <item>
+	<title>Einfach mal anfangen!</title>
+	<description>&lt;p&gt;Klar, man kann alles genau planen, sich Gedanken machen, abwägen, theoretisieren, sturkturieren, projektieren und sich eine gute Strategie überlegen. Und bestimmt geht bei dem geplanten Vorhaben dann weniger schief. Vielleicht wird es aber auch gar nichts, weil man sich vor allem die Schwierigkeiten konzentriert, auf die offenen Fragen und zu klärenden Dinge. Und irgendwie hat man noch gar nichts zu Papier gebracht, obwohl man gefühlt schon so viel Arbeit reingesteckt hat.&lt;/p&gt;
+
+&lt;p&gt;Da hilft nur eins: anfangen. Erst mal grob, nur mal die Idee skizzieren, das unbestimmte Gefühl einfangen. Die Details kommen dann schon noch – oder vielleicht auch nicht, wir werden sehen. Womöglich wird es erst mal nicht schön und trifft so gar nicht, was man sich eigentlich vorgestellt hat. Aber nicht schlimm: Es ist der erste Versuch. Überarbeitungen sind immer einfacher, als mit Nichts anzufangen.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/rakete.png&quot; alt=&quot;Zeichnung einer Rakete im All&quot; /&gt;
+	&lt;figcaption&gt;Beim Zeichnen dieser Rakete hab ich ausnahmsweise mal mit dem dicksten Stift begonnen und mit dem schwächsten aufgehört. Also keine feine, behutsame Vorskizze, sondern mit Schmackes losgelegt!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Was gibt es nicht alles für motivierende Sprichwörter, die das Anfangen betreffen: &lt;q&gt;Der Anfang ist die Hälfte des Ganzen&lt;/q&gt; &lt;em&gt;(Aristoteles)&lt;/em&gt;, &lt;q&gt;In einem Jahr wirst du dir wünschen, du hättest heute angefangen.&lt;/q&gt; &lt;em&gt;(Karen Lamb)&lt;/em&gt;, &lt;q&gt;Wanderer, es gibt keinen Weg, der Weg entsteht im Gehen.&lt;/q&gt; &lt;em&gt;(Antonio Machado)&lt;/em&gt;. Und natürlich von Hermann Hesse: &lt;q&gt;Jedem Anfang wohnt ein Zauber inne&lt;/q&gt;. Um diesen Zauber zu spüren, dürfen die möglichen Hindernisse nicht zu viel Aufmerksamkeit bekommen.&lt;/p&gt;
+
+&lt;p&gt;Ich wünsche euch für dieses Jahr viele zauberhafte Anfänge. Gebt einem Impuls ruhig nach und schaut, wohin er euch führt. Möge durch euer Anfangen viel Gutes entstehen!&lt;/p&gt;
+
+&lt;p&gt;Und nun halte ich es mit einem Spruch von Sheryl Sandberg, der genauso das Beenden betrifft: &lt;q lang=&quot;en&quot;&gt;Done is better than perfect&lt;/q&gt; – besser vollbracht als vollkommen. Man muss irgendwann aufhören, an den Details zu fummeln, hin und her zu überlegen, weiterzufeilen. Sondern einfach enden, das Entstandene aus der Hand geben und veröffentlichen. Hier bitte!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/anfangen.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/anfangen.html</guid>
+	<pubDate>Mon, 25 Jan 2021 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Monate voller Verzicht (Vorsatz&amp;nbsp;2020)</title>
 	<description>&lt;p&gt;Im Rückblick passt mein guter Vorsatz dieses Jahr wie die Faust aufs Auge. Ich hatte beschlossen, jeden Monat auf etwas Bestimmtes zu verzichten – was dann coronabedingt zeitweilig die ganze Welt machen musste. Bei mir waren es Gewohnheiten, die ich einen Monat lang mal hinterfragen wollte, um zu sehen, wie und ob sie mir gut tun.&lt;/p&gt;
 
@@ -225,87 +247,6 @@ Salz, Pfeffer&lt;br /&gt;
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/spinatsouffle.html</guid>
 	<pubDate>Wed, 30 Sep 2020 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Mein Blog durchsuchen mit DuckDuckGo</title>
-	<description>&lt;p&gt;Ende November werden es zehn Jahre, dass ich mit dem Bloggen begonnen habe; da haben sich eine ganze Menge Artikel zu sehr unterschiedlichen Themen angesammelt. Alle Texte finden sich mit einer kurzen Inhaltsangabe zwar auf meiner &lt;a href=&quot;archiv.html&quot;&gt;Archivseite&lt;/a&gt;, aber es dauert schon eine Weile diese Liste durchzusehen.&lt;/p&gt;
-
-&lt;p&gt;Blogartikel, die ich persönlich für besonders lesenswert halte, habe ich in zwei Jubiläums-Einträgen gesammelt. So bieten &lt;a href=&quot;blogeintrag-50.html&quot;&gt;mein 50.&lt;/a&gt; und mein &lt;a href=&quot;blogeintrag-100.html&quot;&gt;100. Blogartikel&lt;/a&gt; einen schnellen Zugriff auf meine Favoriten. Was aber, wenn jemand nach einem bestimmten Stichwort sucht? Zum Beispiel weil sie oder ihn Pflanzen, Fußball oder Origami interessieren?&lt;/p&gt;
-
-&lt;h2 id=&quot;ein-einfaches-suchformular&quot;&gt;Ein einfaches Suchformular&lt;/h2&gt;
-
-&lt;p&gt;Für diesen Fall habe ich seit diesem Monat auch eine Suchfunktion in meinem Blog. Es ist im Grunde nur ein einfaches HTML-Formular mit einem Textfeld (&lt;code&gt;id=&quot;q&quot;&lt;/code&gt;) und einer Schaltfläche mit Lupe:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;GET&quot; action=&quot;ergebnisseite.php&quot;&amp;gt;
-   &amp;lt;input type=&quot;text&quot; id=&quot;q&quot;&amp;gt;
-   &amp;lt;input type=&quot;submit&quot; value=&quot;🔍&quot;&amp;gt;
-&amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Beim Klick auf die Lupe würde normalerweise das Suchwort an den Server geschickt, wo meine Website gespeichert ist. Dann fände eine Datenbank-Abfrage statt, die entsprechenden Treffer würden gesammelt und mit PHP dynamisch auf einer Ergebnisseite aufgelistet.&lt;/p&gt;
-
-&lt;p&gt;Doch da gibt es ein Problem: Mein Blog ist statisch. Das heißt, alle Seiten sind fertig gebaut, es gibt keine Datenbank mit einzelnen Inhalten, keinen Server mit dynamischem PHP und keine Ergebnisseite, die abhängig vom Suchbegriff jedes Mal etwas anderes anzeigen könnte. Meine Website kann sich nicht selbst durchsuchen.&lt;/p&gt;
-
-&lt;h2 id=&quot;für-die-funktion-externe-suchmaschine&quot;&gt;Für die Funktion: Externe Suchmaschine&lt;/h2&gt;
-
-&lt;p&gt;Zum Glück gibt es ja schon Suchmaschinen, die mein Blog nach einem Stichwort durchforsten könnten. Die meisten Leute verwenden zur Internetsuche vermutlich Google. Dort gibt es – wie bei &lt;a href=&quot;https://www.bing.com/&quot;&gt;Bing&lt;/a&gt;, &lt;a href=&quot;https://www.ecosia.org/&quot;&gt;Ecosia&lt;/a&gt; oder &lt;a href=&quot;https://metager.de/&quot;&gt;MetaGer&lt;/a&gt; – Parameter, um nur auf einer bestimmten Seite zu suchen. Gibt man ins Google-Feld zum Beispiel folgendes ein: &lt;a href=&quot;https://www.google.de/search?q=giraffe+site%3Atagesschau.de&quot;&gt;Giraffe site:tagesschau.de&lt;/a&gt; – dann spuckt Google zum Suchwort „Giraffe“ nur Treffer von &lt;em&gt;tagesschau.de&lt;/em&gt; aus.&lt;/p&gt;
-
-&lt;p&gt;Für meine Blogsuche wollte ich allerdings keine Suchmaschine verwenden, die jeden Klick registriert, Datenprofile ihrer Nutzer:innen anlegt und kaum erkennbare Werbung unter die Suchtreffer mischt. Darum habe ich mich für DuckDuckGo entschieden. Dieser Anbieter verspricht, keine Daten zu sammeln, um Suchergebnisse oder Werbung auf einzelne Nutzer hin anzupassen. Ich nutze DuckDuckGo im Alltag schon länger, denn es bietet mit sogenannten &lt;a href=&quot;https://duckduckgo.com/bang&quot;&gt;!bangs&lt;/a&gt; (engl.) die Möglichkeit, schnell zwischen verschiedenen Suchmaschinen zu wechseln.&lt;/p&gt;
-
-&lt;p&gt;Beim obigen Suchformular trägt man also die Adresse &lt;em&gt;duckduckgo.com&lt;/em&gt; ein. Außerdem habe ich einen Platzhalter-Text (&lt;code&gt;placeholder&lt;/code&gt;) und Beschreibungen für eine bessere Barrierefreiheit ergänzt (&lt;code&gt;aria-label&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;GET&quot; action=&quot;https://duckduckgo.com/&quot;&amp;gt;
-   &amp;lt;input type=&quot;text&quot; id=&quot;q&quot; placeholder=&quot;Suche mit DuckDuckGo&quot;
-   aria-label=&quot;Seite extern durchsuchen mit DuckDuckGo&quot;&amp;gt;
-   &amp;lt;input type=&quot;submit&quot; value=&quot;🔍&quot; aria-label=&quot;Suchen&quot;&amp;gt;
-&amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Na, sieht schon etwas komplizierter aus? Versuch ruhig mal, den Code zu lesen und zu verstehen, was die einzelnen Teile bedeuten. Vielleicht fällt dir dann auf, dass DuckDuckGo noch gar weiß, dass es doch nur auf &lt;em&gt;charakterziffer.github.io&lt;/em&gt; suchen soll.&lt;/p&gt;
-
-&lt;p&gt;Dafür nennen wir das Suchfeld mit der &lt;code&gt;id=&quot;q&quot;&lt;/code&gt; erst mal um in &lt;code&gt;id=&quot;keyword&quot;&lt;/code&gt;. Dann fügen wir ein neues Feld mit &lt;code&gt;id=&quot;q&quot;&lt;/code&gt; (und &lt;code&gt;name=&quot;q&quot;&lt;/code&gt;) ein, verstecken es aber mit &lt;code&gt;type=hidden&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;…
-&amp;lt;input type=&quot;text&quot; id=&quot;keyword&quot; placeholder=&quot;Suche mit DuckDuckGo&quot;
-aria-label=&quot;Seite extern durchsuchen mit DuckDuckGo&quot;&amp;gt;
-&amp;lt;input type=&quot;hidden&quot; id=&quot;q&quot; name=&quot;q&quot;&amp;gt;
-…
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;DuckDuckGo interessiert nur der Inhalt des versteckten &lt;code&gt;q&lt;/code&gt;-Feldes. Sobald man auf den Knopf mit der Lupe drückt, soll der Suchbegriff aus dem &lt;code&gt;keyword&lt;/code&gt;-Feld in das entscheidende Feld &lt;code&gt;q&lt;/code&gt; geschrieben werden und dazu das &lt;em&gt;site:charakterziffer.github.io&lt;/em&gt;, um nur in meinem Blog zu suchen:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;onsubmit=&quot;javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Dieser Code bedeutet im Einzelnen: Beim Abschicken (&lt;code&gt;onsubmit&lt;/code&gt;) führe folgendes &lt;code&gt;javascript&lt;/code&gt; aus, nämlich: Suche auf der Website (im &lt;code&gt;document&lt;/code&gt;) nach dem Feld mit der &lt;em&gt;id=&quot;q&quot;&lt;/em&gt; (&lt;code&gt;getElementById('q')&lt;/code&gt;) und gib ihm den Inhalt (bzw. „Wert“, &lt;code&gt;value&lt;/code&gt;) aus dem Feld mit &lt;em&gt;id=&quot;keyword&quot;&lt;/em&gt; + dem &lt;code&gt;site:charakterziffer.github.io'&lt;/code&gt;. Damit wird das Suchwort und die site-Angabe gleichzeitig an DuckDuckGo verschickt.&lt;/p&gt;
-
-&lt;h2 id=&quot;das-ganze-suchformular&quot;&gt;Das ganze Suchformular&lt;/h2&gt;
-
-&lt;p&gt;… sieht jetzt schon etwas umfangreicher aus:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;GET&quot; action=&quot;https://duckduckgo.com/&quot;
-onsubmit=&quot;javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'&quot;&amp;gt;
-
-   &amp;lt;input type=&quot;text&quot; id=&quot;keyword&quot; placeholder=&quot;Suche mit DuckDuckGo&quot;
-   aria-label=&quot;Seite extern durchsuchen mit DuckDuckGo&quot;&amp;gt;
-   &amp;lt;input type=&quot;hidden&quot; id=&quot;q&quot; name=&quot;q&quot;&amp;gt;
-   &amp;lt;input type=&quot;submit&quot; value=&quot;🔍&quot; aria-label=&quot;Suchen&quot;&amp;gt;
-&amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Aber das war’s dann auch schon. Zumindest fast: Für’s Auge habe ich noch einige Parameter ergänzt, mit denen DuckDuckGo die Farben und Funktion der Ergebnisseite anpasst. Aber ich denke, wir hatten in diesem Blogartikel schon genug Code. Wer’s genau wissen will, kann in den Quelltext meiner Website gucken und sich auf der &lt;a href=&quot;https://duckduckgo.com/params&quot;&gt;Erklärseite zu den Parametern&lt;/a&gt; einlesen.&lt;/p&gt;
-
-&lt;p&gt;Natürlich sind die Suchergebnisse nun extern auf &lt;em&gt;duckduckgo.com&lt;/em&gt; und nicht unter der Adresse meines eigenen Blogs – denn das ist ja statisch und kann keine spontan zusammengestellten Suchtreffer anzeigen. Damit kann ich aber ganz gut leben.&lt;/p&gt;
-
-&lt;p&gt;Ich hoffe, das Suchfeld oben rechts bietet allen Leser:innen eine praktische Möglichkeit, bestimmte Inhalte in meinem Blog zu finden – selbst wenn ein Artikel schon etwas älter ist und im Archiv weiter unten steht.&lt;/p&gt;
-
-&lt;p&gt;PS: Wer für sein eigenes Blog lieber eine externe Suche mit Google machen möchte, trage im HTML-Formular als Zieladresse einfach &lt;code&gt;https://www.google.com/search&lt;/code&gt; ein, beziehungsweise für Bing &lt;code&gt;https://www.bing.com/search&lt;/code&gt;.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/blogsuche.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/blogsuche.html</guid>
-	<pubDate>Mon, 24 Aug 2020 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
