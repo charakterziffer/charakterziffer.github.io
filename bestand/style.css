@@ -1,6 +1,6 @@
 /* CSS zum Blog @cz+, verfasst von Gerhard Großmann */
 
-/* Farben: #281[+#270] (grün), #3a1 (hellgrün), #deb (blassgrün)
+/* Farben: #281[+#060] (grün), #3a1 (hellgrün), #deb (blassgrün)
 	Akzente: #839 (lila), #ece (blasslila), #c2b (pink)
 	Grautöne: #666 (Datum), #ccc (hr) und hsla(0,0%,92%,.7)
 		(aside, code, figure, blockquote, kbd)
@@ -179,7 +179,7 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 /* LINKS (Schrift: Siehe oben bei b, strong) */
 
 a { text-decoration: none; color: #281; }
-aside a, .hinterlegt a, figcaption a, blockquote a { color: #270; }
+aside a, .hinterlegt a, figcaption a, blockquote a { color: #060; }
 a:visited { color: #839; }
 a:hover { color: #3a1; }
 aside a:hover,.hinterlegt a:hover,figcaption a:hover,blockquote a:hover {
