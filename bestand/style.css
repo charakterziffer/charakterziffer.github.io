@@ -80,7 +80,7 @@ h1, h2, h3, b, strong, a, form label {
 h1, h2, h3 { letter-spacing: -.01em;
 	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
 b, strong, a, form label {
-	padding: 0 .06em; font-feature-settings: 'onum', 'liga', 'kern'; }
+	padding: 0 .04em; font-feature-settings: 'onum', 'liga', 'kern'; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
 /* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
