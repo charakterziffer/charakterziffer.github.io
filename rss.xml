@@ -13,6 +13,323 @@
 </image>
 
 <item>
+	<title>Ein Automat für Pixelmuster</title>
+	<description>&lt;p&gt;Mich stimmt es traurig, wenn jemand stolz verkündet, in Mathe immer eine Niete gewesen zu sein. Weil das ja nur etwas für Nerds sei, viel zu kompliziert und im Alltag ziemlich unbrauchbar.&lt;/p&gt;
+
+&lt;p&gt;Natürlich gibt es wie in jeder Wissenschaft auch in Mathematik superspezialisierte Bereiche, die ohne Fachwissen unverständlich sind und deren Nutzen nur für einen kleinen Bereich von Bedeutung sind. Andererseits finde ich bestimmte Themen der Mathematik praktisch (z.&lt;small&gt; &lt;/small&gt;B. Bruchrechnen), verblüffend (z.&lt;small&gt; &lt;/small&gt;B. &lt;a href=&quot;https://matheerklaert.de/die-aequatoraufgabe-kreisumfang/&quot;&gt;Seil am Äquator verlängern&lt;/a&gt;) oder wirklich schön (z.&lt;small&gt; &lt;/small&gt;B. &lt;a href=&quot;https://de.wikipedia.org/wiki/Parkettierung&quot;&gt;Parkettierung&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Besonders faszinierend finde ich, wenn aus eher kleinen Vorgaben ein überraschend komplexes Ding entsteht, das sich nicht intuitiv vorhersagen lässt. Ein Beispiel dafür ist ein zellulärer Automat (englisch: &lt;em&gt;cellular automaton&lt;/em&gt;, kurz „CA“).&lt;/p&gt;
+
+&lt;h2 id=&quot;wir-bauen-einen-zellulären-automaten&quot;&gt;Wir bauen einen zellulären Automaten&lt;/h2&gt;
+
+&lt;p&gt;Viel braucht man dafür nicht, eigentlich nur eine große, leere Fläche mit einzelnen Bildpunkten („Zellen“). Unser Automat soll eindimensional werden, das heißt, er arbeitet die Fläche zeilenweise stur von oben nach unten ab. Als Ausgangspunkt färben wir in der ersten Zeile die mittlere Zelle schwarz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAEOAgMAAACr33pGAAAACVBMVEXT09P///8zMzMhY8lFAAABM0lEQVR42u3XMQqEMABFwRzBxvvY2Kskl/SUJmXQQgOigQksCMruuPzmhdTvWQL8V/gpdHuGMOdXiOU9ykUa82etLqr7zx7c9nyqB+P1g+vpG2/9Ijw8PDw8PDw8PDx8z3gl1f6H/nY28PDw8PDw8PDw8PAv45WU2cDDw8PDw8PDw8PDKymzgYeHh4eHh4eHh4eHl4FmAw8PDw8PDw8PDw+vpJQUPDw8PDw8PDw8PLySUlLw8PDw8PDw8PDw8EpKSdk8PDw8PDw8PDw8vJJSUmYDDw8PDw8PDw8PDy8DZaDNw8PDw8PDw8PDwyspJWU28PDw8PDw8PDw8PBKymzg4eHh4eHh4eHh4ZWUkoKHh4eHh4eHh4eHh5eBZgMPDw8PDw8PDw8Pr6SUFDw8PDw8PHwr/gDN1bPdmYHpUAAAAABJRU5ErkJggg==&quot; alt=&quot;Eine weiße Fläche aus einzelnen Zellen. In der ersten Zeilen ist die mittlere Zelle schwarz gefärbt.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jetzt kommt die Kleinigkeit, die unseren zellulären Automaten zum Laufen bringt: Wir legen eine Regel fest, wie die Zellen ab der zweiten Zeile eingefärbt werden sollen. Dazu schauen wir uns für jede Zelle immer die drei Nachbarn in der vorigen Zeile an (schräg links darüber, direkt darüber und schräg rechts darüber). Wenn davon zum Beispiel alle drei weiß sind, dann legen wir mal fest, dass die fragliche Zelle in der neuen Zeile schwarz werden soll.&lt;/p&gt;
+
+&lt;p&gt;Insgesamt gibt es acht Fälle, wie die drei Zellen in der vorangegangenen Zeile aussehen können. Für jeden dieser Fälle legen wir fest, was mit der Zelle darunter passieren soll. Ich hab zum Beispiel mal folgendes ausgewählt:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/ca-rule73.png&quot; alt=&quot;Alle Kombinationen der darüberliegenden drei Zellen, darunter dann, wie die fragliche Zelle gefärbt werden soll. Hier abgebildet ist die Regel 73, also: weiß, schwarz, weiß, weiß, schwarz, weiß, weiß, schwarz.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Für jede der acht Positionen bestimmen wir entweder 0 (bleibt weiß) oder 1 (wird eingefärbt), womit insgesamt 255 verschiedene Regeln möglich sind. Unsere gewählte Regel lässt sich kurz als 01001001 schreiben. Lesen wir das als &lt;a href=&quot;https://de.wikipedia.org/wiki/Dualsystem&quot;&gt;Zahl im Binärsystem&lt;/a&gt;, können wir das in die Dezimalzahl 73 übersetzen, das ist verständlicher. Nun wird es Zeit für die Praxis, wir starten unseren zellulären Automaten …&lt;/p&gt;
+
+&lt;h2 id=&quot;einfache-regel-kompliziertes-ergebnis&quot;&gt;Einfache Regel, kompliziertes Ergebnis&lt;/h2&gt;
+
+&lt;p&gt;Die Regel &lt;input id=&quot;rulenumber&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;255&quot; value=&quot;73&quot; oninput=&quot;startFromInput(this.value)&quot; /&gt; &lt;em&gt;(zwischen 0 und 255)&lt;/em&gt; sieht grafisch so aus:&lt;/p&gt;
+
+&lt;style&gt;
+:root {--cellSize: 98.8% / 41; }
+
+#ca-ruleset { margin: 1.5em 0 1.167em;
+	display: flex; justify-content: space-between; }
+
+#ca-ruleset label { position: relative; }
+#ca-ruleset input[type=&quot;checkbox&quot;], #ca-ruleset svg {
+	width: min(8vw,3.2rem); height: auto; }
+
+#ca-ruleset input[type=&quot;checkbox&quot;] {
+	position: absolute; opacity: 0; top: -.2rem; left: -.25rem; }
+#ca-ruleset input[type=&quot;checkbox&quot;]:focus + svg {
+	outline: 2px dotted #666; outline-offset: 1px; }
+#ca-ruleset input[type=&quot;checkbox&quot;]:focus:not(:focus-visible) + svg {
+	outline: none; }
+
+#ca-ruleset svg { stroke: #000; stroke-width: .5 }
+#ca-ruleset .ankreuzer {fill: #fff; stroke: #060}
+#ca-ruleset input[type=&quot;checkbox&quot;]:checked + svg .ankreuzer {fill: #281}
+
+#ca-ruleset span { position: absolute; overflow: hidden; height: 1px; width: 1px; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+
+#rulenumber { width: 4em; text-align:center; margin: 0 .3em;
+	font: bold .95em/1 czSlab,Georgia,serif; color: #060; }
+
+#ca-field { margin: 1.5em 0 1.167em; }
+.ca-row { font-size: 0; }
+
+.ca-row div { width: 2.43%; width: var(--cellSize);
+padding-bottom: 2.43%; padding-bottom: var(--cellSize);
+display: inline-block; margin: 0; outline: 1px solid lightgrey; outline-offset:-.5px; }
+
+.ca-row .active { background-color: black; }
+.ca-row .inactive { background-color: white; }
+.ca-row div[onclick] { outline-color: #deb; }
+.ca-row div[onclick].active { background-color: #060; }
+&lt;/style&gt;
+
+&lt;div id=&quot;ca-ruleset&quot;&gt;
+&lt;label for=&quot;c-111&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-111&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 1 1 1&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-110&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-110&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 1 1 0&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-101&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-101&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 1 0 1&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-100&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-100&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 1 0 0&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-011&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-011&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 0 1 1&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-010&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-010&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 0 1 0&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-001&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-001&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#333&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 0 0 1&lt;/span&gt;&lt;/label&gt;
+
+&lt;label for=&quot;c-000&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;c-000&quot; onclick=&quot;startFromCheckbox()&quot; /&gt;
+&lt;svg viewBox=&quot;0 0 15.5 11.5&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;5.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect style=&quot;fill:#fff&quot; y=&quot;.25&quot; x=&quot;10.25&quot; height=&quot;5&quot; width=&quot;5&quot; /&gt;
+	&lt;rect class=&quot;ankreuzer&quot; y=&quot;5.25&quot; x=&quot;4.75&quot; height=&quot;6&quot; width=&quot;6&quot; /&gt;
+&lt;/svg&gt;&lt;span&gt;Status, wenn darüber 0 0 0&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;!-- ruleset --&gt;&lt;/p&gt;
+
+&lt;p&gt;Und so füllt der Automat damit das Feld:&lt;/p&gt;
+
+&lt;div id=&quot;ca-field&quot;&gt;
+	&lt;div class=&quot;ca-row&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+const cellMinSize = 17 // in Pixel
+const cellMaxPerRow = 41
+const rows = 37
+var rule = document.querySelector('#rulenumber').value;
+
+// Zellen pro Zeile (= Spalten) berechnen
+var cols = (window.innerWidth &lt; (cellMinSize * cellMaxPerRow)) ? Math.floor(window.innerWidth/cellMinSize) : cellMaxPerRow;
+
+// Größe der Zellen im Feld (max. 98.8% breit) nach ihrer Anzahl
+// berechnen, CSS-Variable für die entsprechenden Divs neu setzen
+document.querySelector(':root').style.setProperty('--cellSize', 98.8/cols+'%');
+
+// Checkboxes des Rulesets richtig einfärben und anhaken
+colorRuleset(decToBinArray(rule, 8))
+
+// Divs für erste Zeile erzeugen
+for (let i = 0; i &lt; cols; i++) {
+	let div = document.createElement('div');
+	document.querySelector('.ca-row').appendChild(div)
+}
+
+// Alle Divs inactive setzen, mittleres Div active
+for (let i = 0; i &lt; cols; i++) {
+	let div = document.querySelector('.ca-row').childNodes[i]
+	div.classList.add('inactive') }
+setState(document.querySelector('.ca-row').childNodes[Math.floor((cols-1)/2)], true)
+
+// Alle weiteren Zeilen erzeugen und gleich berechnen
+for (let i = 0; i &lt; rows; i++) {
+	let allRows = document.querySelectorAll('.ca-row')
+	let lastRow = allRows[allRows.length - 1]
+	let clone = lastRow.cloneNode(true)
+	document.querySelector('#ca-field').appendChild(clone)
+	processRow(clone, lastRow)
+}
+
+// Divs der ersten Zeile mit Klickfunktion ausstatten
+let firstRow = document.querySelectorAll('.ca-row')[0]
+for (let i = 0; i &lt; cols; i++) {
+	let div = firstRow.childNodes[i]
+	div.setAttribute('onclick','startFromCellDiv(this);');
+}
+
+
+// FUNKTIONEN
+
+// Wenn ein Div in erster Zeile angeklickt wird
+function startFromCellDiv(cellDiv) {
+	if (cellDiv.classList.contains('active')) {
+		cellDiv.classList.remove('active')
+		cellDiv.classList.add('inactive')
+	} else {
+		cellDiv.classList.remove('inactive')
+		cellDiv.classList.add('active') }
+	processField()
+}
+
+// Wenn das Inputfeld sich ändert
+function startFromInput(inputValue) {
+	if ( (inputValue&lt;0) || (inputValue&gt;255) ) { // Regel zu hoch/niedrig
+		colorRuleset([1,1,1,1,1,1,1,1]) // Alle Checkboxes einfärben
+		return
+	}
+	rule = inputValue
+	colorRuleset(decToBinArray(rule, 8))
+	processField()
+}
+
+// Wenn eine Checkbox angeklickt wird
+function startFromCheckbox() {
+	rule = 0
+	if (document.querySelector('#c-111').checked) { rule += 128 }
+	if (document.querySelector('#c-110').checked) { rule += 64 }
+	if (document.querySelector('#c-101').checked) { rule += 32 }
+	if (document.querySelector('#c-100').checked) { rule += 16 }
+	if (document.querySelector('#c-011').checked) { rule += 8 }
+	if (document.querySelector('#c-010').checked) { rule += 4 }
+	if (document.querySelector('#c-001').checked) { rule += 2 }
+	if (document.querySelector('#c-000').checked) { rule += 1 }
+	document.querySelector('#rulenumber').value = rule;
+	processField()
+}
+
+function processField() {
+	let allRows = document.querySelectorAll('.ca-row')
+	for (let i = 0; i &lt; rows; i++) {
+		processRow(allRows[i+1], allRows[i])
+	}
+}
+
+function processRow(selfRow, prevRow) {
+	ruleValue = decToBinArray(rule, 8)
+	let rules = new Array(8)
+	for (let j = 0; j &lt; 8; j++) {
+		rules[j] = decToBinArray(7-j, 3)
+	}
+	for (let i = 0; i &lt; cols; i++) {
+		let target = selfRow.childNodes[i]
+		let prevSelf = prevRow.childNodes[i]
+		let prevLeft = prevSelf.previousElementSibling || prevRow.childNodes[cols - 1]
+		let prevRight = prevSelf.nextElementSibling || prevRow.childNodes[0]
+		let toggleClass = setStateByRule.bind(null, target, prevLeft, prevSelf, prevRight)
+		for (let j = 0; j &lt; 8; j++) {
+			toggleClass(rules[j], ruleValue[j])
+		}
+	}
+}
+
+function setState(cellDiv, isActive) {
+// Ändert Status eines Divs. Aufruf mit true: Div wird active; bei false: Div wird inactive
+	if (!!isActive) {
+		cellDiv.classList.remove('inactive')
+		cellDiv.classList.add('active')
+	} else {
+		cellDiv.classList.remove('active')
+		cellDiv.classList.add('inactive')
+	}
+}
+
+function setStateByRule(target, prevLeft, prevSelf, prevRight, rules, ruleValue) {
+	let matchesRule = getState(prevLeft) === rules[0] &amp;&amp; getState(prevSelf) === rules[1] &amp;&amp; getState(prevRight) === rules[2]
+	if (matchesRule) { setState(target, ruleValue) }
+}
+
+function getState(cellDiv) {
+	return cellDiv.classList.contains('active') ? 1 : 0
+}
+
+function decToBinArray(dec, len) {
+	let binArray = new Array(len)
+	for (let k = len - 1; k &gt;= 0; k--) {
+		let m = dec%2
+		binArray[k] = m
+		dec = (dec - m) / 2
+	}
+	return binArray
+}
+
+function colorRuleset(binArray) {
+	let truthArray = new Array(8)
+	for (let i = 0; i &lt; 8; i++) {
+		truthArray[i] = ( binArray[i]==1 ) ? true : false
+	}
+	document.querySelector('#c-111').checked = truthArray[0];
+	document.querySelector('#c-110').checked = truthArray[1];
+	document.querySelector('#c-101').checked = truthArray[2];
+	document.querySelector('#c-100').checked = truthArray[3];
+	document.querySelector('#c-011').checked = truthArray[4];
+	document.querySelector('#c-010').checked = truthArray[5];
+	document.querySelector('#c-001').checked = truthArray[6];
+	document.querySelector('#c-000').checked = truthArray[7];
+}
+&lt;/script&gt;
+
+&lt;noscript&gt;
+&lt;figure&gt;&lt;img width=&quot;748&quot; height=&quot;521&quot; alt=&quot;Statisches Feld, wie es mit der Regel 73 gefüllt wird&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuwAAAIJAgMAAACDx4BeAAAACVBMVEXT09MAAAD///+87toJAAAEJ0lEQVR42u3dTW7qMBQG0G6im+g+mGQGgiUx6S7oqGKVrwxehHVtx7SE/J1KlSKB0iOnk4/P17y9Lfjn43q9fv38Xm8X37eLz/uLa/L6Y288n06nY/LGr/wbP8MdW/7iNzs7Ozs7Ozs7Ozv7guxL/nn/WZz9z+/pdnG8XezuL07J681vPCSrdP7/xn3+jrtwx5a/eGRnZ2dnZ2dnZ2dnX5Bd33T/er/ufV7tL2aftdnZ2dnZ2dnZ2dnZx7Lrm+5jamU5LzPO2uzs7Ozs7Ozs7Ozs7Lqy8hv7dS8sZ7/uM/ycgJ2dnZ2dnZ2dnZ19dPvWu7Iu31GmezuT5bzMJmuzs7Ozs7Ozs7Ozs7/GvuW+qV/32PPFs0T6vJoG16myNjs7Ozs7Ozs7Ozv76+wb7Zu6gZm4Sl5Ng+sEWZudnZ2dnZ2dnZ2dnV1XVs7a/bpXZuIKWbtfzn7du9d+TsDOzs7Ozs7Ozs7OPoF9W13ZUEdZyau1jvIlWZudnZ2dnZ2dnZ2dfSr7Zvqmfrm+Kz1fJa8Wer4u3HGErM3Ozs7Ozs7Ozs7OPql9E31TZSYuBtum73kuzMSNkLXZ2dnZ2dnZ2dnZ2Se3r71vSuu5dK6scgZjn1cLZzDGubL+joenZW12dnZ2dnZ2dnZ2dva/2tfclTV3lHEm7vOa/Z7n5o7yz58TsLOzs7Ozs7Ozs7PPx77Sruycn2ArzMR9hOVKVymfVwsd5SE8yQezNjs7Ozs7Ozs7Ozv7zOwr7JsqM3GFs+sfOkukcHZ9YSbuwazNzs7Ozs7Ozs7Ozj5D+7r6pmRbY+ak+bTni3m15SyRdH9kF+6YDte9hxuVsjY7Ozs7Ozs7Ozs7O/vz7evpyh7vKJOs3XQOSnxAzR3lufY5ATs7Ozs7Ozs7Ozv7nO2r6Mrew8kfQx1lUi1mOsp4lkg8lGTf3FHGBMzOzs7Ozs7Ozs7OviD70vumQ2UmrtDzVWbiCjF0aCau0vPlaUd2dnZ2dnZ2dnZ29gXZV5Gb4kxcrefLz8Tt8zF0V+75LuFGmZ4vTzuys7Ozs7Ozs7Ozs7O/xL6ezNfSURaydpKMh87dr2Xtlo4y9z/Dzs7Ozs7Ozs7Ozj5n+2b2GNbyarJKQ+fuD+XVEfpVdnZ2dnZ2dnZ2dvZJ7ZvZY1jIq7twYmLt3P34JOPezhE6SnZ2dnZ2dnZ2dnb2Se2b2aeXyauVnu8cTnW85J9kVx6ee15Hyc7Ozs7Ozs7Ozs7O/kv7JvYYJhE5c+5+skqFrP2Vf5JJaD+O0K+ys7Ozs7Ozs7Ozs09uX/sew8xMXNi7eWrOq/FJdvmZuKf0q+zs7Ozs7Ozs7Ozs87CvfY9h8xmMTXs7W2biDk/rKNnZ2dnZ2dnZ2dnZ52Ff8z69Ql4No2yZ+i7m1abvK4t59bcdJTs7Ozs7+4vt/wAEpG4g1KC6fQAAAABJRU5ErkJggg==&quot; /&gt;
+	&lt;figcaption&gt;Diese Abbildung zeigt nur ein statisches Feld mit dem Muster. Für die interaktive Version unseres Automaten muss dein Brwoser JavaScript unterstützen.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/noscript&gt;
+
+&lt;p&gt;Oha, es entsteht ein überraschend kompliziertes Muster! Und das Beste: &lt;strong&gt;Der Automat hier ist interaktiv&lt;/strong&gt;&lt;noscript&gt; (nur mit aktiviertem Javascript)&lt;/noscript&gt;. Die grünen Elemente oben lassen sich ändern. Klicke zum Beispiel die grafische Darstellung der Regel an (die acht T-förmigen Kästchen). Du kannst die Nummer einer Regel auch in das Textfeld eingeben (muss zwischen 0 und 255 liegen). Mir gefallen recht gut die Regeln 30, 161 oder 225.&lt;/p&gt;
+
+&lt;p&gt;Außer der Regel selbst kannst du noch die Startbedingungen verändern. Klicke weitere Pixel in der ersten Zeile an und färbe sie um. Um verschiedene Ausgangszeilen zu testen, finde ich die Regel 109 recht interessant.&lt;/p&gt;
+
+&lt;h2 id=&quot;wer-hats-erfunden-die-natur&quot;&gt;Wer hat’s erfunden? Die Natur!&lt;/h2&gt;
+
+&lt;p&gt;Noch bevor im Jahr 1940 Stanislaw Ulam und John von Neumann das Konzept zellulärer Automaten vorgestellt und weiterentwickelt haben, hat die Natur die Musterbildung nach Regeln schon längst praktiziert. Zum Beispiel entstehen Zebrastreifen nach einem vergleichbaren Prinzip. Besonders eindrucksvoll finde ich es beim [Weberkegel]. Das Muster auf dem Gehäuse dieser Muschel sieht der Regel 30 verblüffend ähnlich.&lt;/p&gt;
+
+&lt;p&gt;Übrigens bietet die mathematischen Suchmaschine Wolfram Alpha für Elementare Zelluläre Automaten (so wie unserer) eine &lt;a href=&quot;https://mathworld.wolfram.com/ElementaryCellularAutomaton.html&quot;&gt;Übersicht aller 255 Regeln&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Darüber hinaus gibt es noch andere Typen zellulärer Automaten. Bei eindimensionalen Automaten &lt;em&gt;zweiter&lt;/em&gt; Ordnung wird zusätzlich noch die Zeile über der direkt darüberliegenden bei der Musterbildung berücksichtigt. Und Automaten mit 2,5 Dimensionen betrachten nicht die Zeile darüber, sondern die Nachbarzellen ringsherum. Das bekannteste Beispiel dafür ist &lt;a href=&quot;https://copy.sh/life/&quot;&gt;Conway’s Game of Life&lt;/a&gt;, wo sich Pixelgruppen wie lebendige Wesen über die Fläche bewegen. Bei anderen Varianten spielen auch verschiedene Farben eine Rolle – es gibt viel zu entdecken!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/automat.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/automat.html</guid>
+	<pubDate>Fri, 19 Feb 2021 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Einfach mal anfangen!</title>
 	<description>&lt;p&gt;Klar, man kann alles genau planen, sich Gedanken machen, abwägen, theoretisieren, sturkturieren, projektieren und sich eine gute Strategie überlegen. Und bestimmt geht bei dem geplanten Vorhaben dann weniger schief. Vielleicht wird es aber auch gar nichts, weil man sich vor allem die Schwierigkeiten konzentriert, auf die offenen Fragen und zu klärenden Dinge. Und irgendwie hat man noch gar nichts zu Papier gebracht, obwohl man gefühlt schon so viel Arbeit reingesteckt hat.&lt;/p&gt;
 
@@ -203,50 +520,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/chorplakate-2.html</guid>
 	<pubDate>Sun, 18 Oct 2020 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Spinatsoufflé</title>
-	<description>&lt;p&gt;Für September hatte ich ein vegetarisches Kochbuch hervorgekramt, um ein paar neue Rezepte auszuprobieren. Gestoßen bin ich dabei auch auf Spinatsoufflé, das mir recht gut geschmeckt hat. Zu dieser schaumigen Eierspeise passen Kartoffeln recht gut.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/souffle.jpg&quot; alt=&quot;Ein Töpfchen Soufflé mit Kartoffelwürfeln&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;zutaten-für-4-portionen&quot;&gt;Zutaten (für 4 Portionen)&lt;/h2&gt;
-
-&lt;div style=&quot;columns: 13em; margin: 1em 0 -0.25em;&quot;&gt;
-300&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Spinat (Tiefkühl-Rahmspinat erspart das Pürieren)&lt;br /&gt;
-3 Esslöffel Crème fraîche&lt;br /&gt;
-1 Zwiebel&lt;br /&gt;
-Butter oder Öl&lt;br /&gt;
-1 Knoblauchzehe&lt;br /&gt;
-Evtl. Semmelbrösel für die Form&lt;br /&gt;
-4 Eier&lt;br /&gt;
-50&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Parmesan (gerieben)&lt;br /&gt;
-Salz, Pfeffer&lt;br /&gt;
-1 Prise Muskat&lt;/div&gt;
-
-&lt;h2 id=&quot;zubereitung&quot;&gt;Zubereitung&lt;/h2&gt;
-
-&lt;p&gt;Frische Spinatblätter waschen und die groben Stiele entfernen. In einem Topf zugedeckt bei mittlerer Hitze zusammenfallen und danach abtropfen lassen. Tiefgekühlten Spinat einfach auftauen.&lt;/p&gt;
-
-&lt;p&gt;Spinatblätter mit Crème fraîche im Mixer pürieren; bei Rahmspinat die Crème fraîche nur unterrühren, evtl. etwas weniger als die 3 Esslöffel.&lt;/p&gt;
-
-&lt;p&gt;Nun die Zwiebel schälen, fein würfeln und in einem Topf mit 1 Esslöffel Butter oder Öl glasig dünsten. Den Spinat dazugeben, geschälten Knoblauch durch die Presse dazudrücken. Bei schwacher Hitze ca. 5 Minuten dünsten – soll nicht kochen! Dann am besten vom Herd nehmen.&lt;/p&gt;
-
-&lt;p&gt;Den Ofen vorheizen auf 200&lt;small&gt; &lt;/small&gt;°C (Umluft: 180&lt;small&gt; &lt;/small&gt;°C).&lt;/p&gt;
-
-&lt;p&gt;Eine Auflaufform oder kleine Souffléförmchen vorbereiten: Mit Butter oder Öl einfetten und optional dünn mit Semmelbrösel ausstreuen – so löst sich das Soufflé später gut heraus.&lt;/p&gt;
-
-&lt;p&gt;Die Eier trennen. Die Eigelbe in den Spinat rühren. Achtung: Er darf dabei höchstens 65&lt;small&gt; &lt;/small&gt;°C haben, damit die Eier nicht stocken! Den Parmesan ebenfalls in den Spinat rühren, dann würzen mit Salz, Pfeffer und Muskat.&lt;/p&gt;
-
-&lt;p&gt;Die Eiweiße steifschlagen und vorsichtig unter den Spinat ziehen. Nun die Masse in die Form/​Förmchen füllen. Im Ofen auf mittlerer Schiene etwa 15–20 Minuten backen, bis das Soufflé aufgegangen ist und sich leicht bräunt.&lt;/p&gt;
-
-&lt;p&gt;Schnell servieren, sonst sinkt es in sich zusammen. Das Soufflé schmeckt auch kalt, ist dann aber nicht mehr so luftig.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/spinatsouffle.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/spinatsouffle.html</guid>
-	<pubDate>Wed, 30 Sep 2020 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

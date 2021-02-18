@@ -15,8 +15,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="referrer" content="strict-origin">
 
-<title>@cz+ // Blog von Gerhard Großmann</title>
-<meta name="description" content="Hier schreibt Gerhard Großmann aus Regensburg. Mein Blog „@cz+“ ist eine Ergänzung zu meinem Twitterprofil @charakterziffer.">
+<title>Ein Automat für Pixelmuster // @cz+</title>
+<meta name="description" content="Vorsicht, es geht um Mathematik! Jedoch nicht um komplizierte Gleichungen, sondern um einfache Regeln, die eine weiße Fläche mit Mustern füllen.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
 <meta name="robots" content="index, follow">
@@ -26,7 +26,7 @@
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/&choe=UTF-8);
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/automat.html&choe=UTF-8);
 position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !important; } } </style>
 
 <link rel="icon" href="/bestand/favicon.png">
@@ -36,18 +36,15 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@charakterziffer" />
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
-<meta property="og:title" content="@cz+ // Blog von Gerhard Großmann" />
-<meta property="og:description" content="Hier schreibt Gerhard Großmann aus Regensburg. Mein Blog „@cz+“ ist eine Ergänzung zu meinem Twitterprofil @charakterziffer." />
-<meta property="og:url" content="https://charakterziffer.github.io/" />
+<meta property="og:title" content="Ein Automat für Pixelmuster" />
+<meta property="og:description" content="Vorsicht, es geht um Mathematik! Jedoch nicht um komplizierte Gleichungen, sondern um einfache Regeln, die eine weiße Fläche mit Mustern füllen." />
+<meta property="og:url" content="https://charakterziffer.github.io/automat.html" />
 <meta property="og:type" content="article" />
-
-<!-- Verifikation für opendesktop.org -->
-<meta name="ocs-site-verification" content="bec9e99a94ee44a9a7685b1e6758def5" />
 </head>
 
 <body>
 <header>
-<a><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
 <div>
 <form id="suchform" class="no-print" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
@@ -70,14 +67,10 @@ position: absolute; right: .5em; top: -.2em; -webkit-print-color-adjust: exact !
 </header>
 
 <main>
-<h1 id="manches-braucht-mehr-als-140-zeichen-">Manches braucht mehr als 140 Zeichen …</h1>
-
-<p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
-
 <article>
-	<time datetime="2021-02-19">Fr, 19. Feb. 2021</time>
-	<h1><a href="automat.html">Ein Automat für Pixelmuster</a></h1>
-	<p>Mich stimmt es traurig, wenn jemand stolz verkündet, in Mathe immer eine Niete gewesen zu sein. Weil das ja nur etwas für Nerds sei, viel zu kompliziert und im Alltag ziemlich unbrauchbar.</p>
+<time datetime="2021-02-19">Fr, 19. Feb. 2021</time>
+<h1>Ein Automat für Pixelmuster</h1>
+<p>Mich stimmt es traurig, wenn jemand stolz verkündet, in Mathe immer eine Niete gewesen zu sein. Weil das ja nur etwas für Nerds sei, viel zu kompliziert und im Alltag ziemlich unbrauchbar.</p>
 
 <p>Natürlich gibt es wie in jeder Wissenschaft auch in Mathematik superspezialisierte Bereiche, die ohne Fachwissen unverständlich sind und deren Nutzen nur für einen kleinen Bereich von Bedeutung sind. Andererseits finde ich bestimmte Themen der Mathematik praktisch (z.<small> </small>B. Bruchrechnen), verblüffend (z.<small> </small>B. <a href="https://matheerklaert.de/die-aequatoraufgabe-kreisumfang/">Seil am Äquator verlängern</a>) oder wirklich schön (z.<small> </small>B. <a href="https://de.wikipedia.org/wiki/Parkettierung">Parkettierung</a>).</p>
 
@@ -386,135 +379,56 @@ function colorRuleset(binArray) {
 
 <p>Darüber hinaus gibt es noch andere Typen zellulärer Automaten. Bei eindimensionalen Automaten <em>zweiter</em> Ordnung wird zusätzlich noch die Zeile über der direkt darüberliegenden bei der Musterbildung berücksichtigt. Und Automaten mit 2,5 Dimensionen betrachten nicht die Zeile darüber, sondern die Nachbarzellen ringsherum. Das bekannteste Beispiel dafür ist <a href="https://copy.sh/life/">Conway’s Game of Life</a>, wo sich Pixelgruppen wie lebendige Wesen über die Fläche bewegen. Bei anderen Varianten spielen auch verschiedene Farben eine Rolle – es gibt viel zu entdecken!</p>
 
-	<p>---<br /> <a href="automat.html#kommentieren">Artikel kommentieren …</a>
-		</p>
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?sujet">#sujet&nbsp; </a>
+</p>
 </article>
 
-<article>
-	<time datetime="2021-01-25">Mo, 25. Jan. 2021</time>
-	<h1><a href="anfangen.html">Einfach mal anfangen!</a></h1>
-	<p>Klar, man kann alles genau planen, sich Gedanken machen, abwägen, theoretisieren, sturkturieren, projektieren und sich eine gute Strategie überlegen. Und bestimmt geht bei dem geplanten Vorhaben dann weniger schief. Vielleicht wird es aber auch gar nichts, weil man sich vor allem die Schwierigkeiten konzentriert, auf die offenen Fragen und zu klärenden Dinge. Und irgendwie hat man noch gar nichts zu Papier gebracht, obwohl man gefühlt schon so viel Arbeit reingesteckt hat.</p>
 
-<p>Da hilft nur eins: anfangen. Erst mal grob, nur mal die Idee skizzieren, das unbestimmte Gefühl einfangen. Die Details kommen dann schon noch – oder vielleicht auch nicht, wir werden sehen. Womöglich wird es erst mal nicht schön und trifft so gar nicht, was man sich eigentlich vorgestellt hat. Aber nicht schlimm: Es ist der erste Versuch. Überarbeitungen sind immer einfacher, als mit Nichts anzufangen.</p>
 
-<figure><img src="material/rakete.png" alt="Zeichnung einer Rakete im All" />
-	<figcaption>Beim Zeichnen dieser Rakete hab ich ausnahmsweise mal mit dem dicksten Stift begonnen und mit dem schwächsten aufgehört. Also keine feine, behutsame Vorskizze, sondern mit Schmackes losgelegt!</figcaption>
-</figure>
 
-<p>Was gibt es nicht alles für motivierende Sprichwörter, die das Anfangen betreffen: <q lang="de">Der Anfang ist die Hälfte des Ganzen</q> <em>(Aristoteles)</em>, <q lang="de">In einem Jahr wirst du dir wünschen, du hättest heute angefangen.</q> <em>(Karen Lamb)</em>, <q lang="de">Wanderer, es gibt keinen Weg, der Weg entsteht im Gehen.</q> <em>(Antonio Machado)</em>. Und natürlich von Hermann Hesse: <q lang="de">Jedem Anfang wohnt ein Zauber inne</q>. Um diesen Zauber zu spüren, dürfen die möglichen Hindernisse nicht zu viel Aufmerksamkeit bekommen.</p>
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
 
-<p>Ich wünsche euch für dieses Jahr viele zauberhafte Anfänge. Gebt einem Impuls ruhig nach und schaut, wohin er euch führt. Möge durch euer Anfangen viel Gutes entstehen!</p>
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/automat">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
 
-<p>Und nun halte ich es mit einem Spruch von Sheryl Sandberg, der genauso das Beenden betrifft: <q lang="en">Done is better than perfect</q> – besser vollbracht als vollkommen. Man muss irgendwann aufhören, an den Details zu fummeln, hin und her zu überlegen, weiterzufeilen. Sondern einfach enden, das Entstandene aus der Hand geben und veröffentlichen. Hier bitte!</p>
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </p><p> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
 
-	<p>---<br /> <a href="anfangen.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
 
-<article>
-	<time datetime="2020-12-16">Mi, 16. Dez. 2020</time>
-	<h1><a href="verzicht.html">Monate voller Verzicht (Vorsatz&nbsp;2020)</a></h1>
-	<p>Im Rückblick passt mein guter Vorsatz dieses Jahr wie die Faust aufs Auge. Ich hatte beschlossen, jeden Monat auf etwas Bestimmtes zu verzichten – was dann coronabedingt zeitweilig die ganze Welt machen musste. Bei mir waren es Gewohnheiten, die ich einen Monat lang mal hinterfragen wollte, um zu sehen, wie und ob sie mir gut tun.</p>
 
-<h2 id="januar-kein-vorsatz">Januar: Kein Vorsatz</h2>
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="anfangen.html">← Einfach mal anfangen!</a></p>
 
-<p>Keinerlei Verpflichtungen, keine Selbstoptimierung, keine persönliche Herausforderung. Sonst verordne ich mir ja gerne <a href="adventslettering.html">Brushlettering</a>, tägliche <a href="tagesvers.html">Erinnerungsverse</a>, <a href="lebensmittel.html">unbekannte Lebensmittel</a> oder <a href="vorsaetze.html">Kurzspaziergänge</a>. Nun, auch mal schön, sich keine Challenge vorzunehmen. Es sollte in den folgenden elf Monaten noch genug davon geben.</p>
-
-<h2 id="februar-twitter-bleibt-aus">Februar: Twitter bleibt aus</h2>
-
-<p>Weder hab ich was in meine Timeline geschrieben, noch irgendwelche Tweets gelesen. Mich hat überrascht, wie viel ich erst durch Nachrichtensendungen erfahren habe, was ich sonst schon bei Twitter mitbekommen hatte. Vermutlich sind im Februar so einige Empörungswellen an mir vorbeigeschwappt, aber ich habe auch viel weniger über Typografie und Design gelesen.</p>
-
-<p>Stattdessen habe ich vermehrt Blogs und Websites besucht und dort gelesen. Ideen für mögliche Tweets kamen mir natürlich trotzdem, ansonsten habe ich seit langem mal wieder eine Kurzgeschichte geschrieben.</p>
-
-<h2 id="märz-nichts-naschen">März: Nichts naschen</h2>
-
-<p>Es ist ja vor allem Gewohnheit, abends beim Fernsehen nochmal an die Naschschublade zu gehen: Eine Rippe Schokolade, ein Schüsselchen Chips, vier Kekse, … Falls ich wirklich ein Hüngerchen hatte, habe ich im März lieber einen Toast gegessen oder Joghurt gelöffelt. Und wenn es mehr naschen aus Langweile war, half eine Tasse Tee. Kuchen zum Kaffee oder Hustenbonbons blieben übrigens ausdrücklich erlaubt – sie sind ja kein Verlegenheitsnaschen.</p>
-
-<h2 id="april-vermeide-video-on-demand">April: Vermeide Video on demand</h2>
-
-<p>Während viele im Lockdown besonders häufig Serien streamten, ließ ich genau das sein, auch keine Beiträge aus der Mediathek. Zu 100 Prozent hat es leider nicht funktioniert, auf einzelne YouTube-Videos konnte/wollte ich nicht verzichten – erstaunlich, wie viele Filmchen heutzutage miteinander geteilt werden. Wobei die Frage bleibt, wie sehenswert die dann wirklich sind.</p>
-
-<p>Eine ungewollte Auswirkung: Das gemeinsame Gucken auf dem Sofa ist oft ausgefallen, weil ich dann im Nebenzimmer ein Buch gelesen oder Podcasts gehört habe.</p>
-
-<h2 id="mai-ohne-audio-on-demand">Mai: Ohne Audio on demand</h2>
-
-<p>Das gleiche mit Audio war für mich um einiges schwieriger. Schließlich höre ich pro Woche sicher mehr als 15 Stunden Podcasts, Hörspiele und Features – bei Küchenarbeit, beim Entspannen auf dem Sofa, wenn ich unterwegs bin, …</p>
-
-<p>Nun, um gewohnte Magazine zu hören, hatte ich plötzlich feste Sendetermine, was in den vier Wochen eine schöne Routine wurde. Abends bin ich manchmal früher ins Bett, habe deutlich mehr gelesen – Podcasts sind auch ziemliche Zeitfresser. So habe ich im Juni dann auch einige Podcasts deabonniert, die mir zu sehr als verzichtbares Nebenbei-Medium erschienen sind.</p>
-
-<h2 id="juni-keinen-kaffee-trinken">Juni: Keinen Kaffee trinken</h2>
-
-<p>Der Verzicht darauf war nicht so schwer, da ich sonst auch nicht viel Kaffee trinke. Wichtigste Erkenntnis: Ein Croissant in Tee getunkt schmeckt auf keinen Fall so gut wie in Milchkaffee gebadet. Und auch für Espresso ist schwerlich ein Ersatz zu finden (hab’s mit starkem Kakao versucht). Aber es gibt viele Alternativen, wie allerhand Teesorten und Fruchtsaft. Habe mich dann sehr auf den ersten Eiskaffee im Juli gefreut.</p>
-
-<h2 id="juli-31-tage-ohne-orgasmus">Juli: 31 Tage ohne Orgasmus</h2>
-
-<p>Es gibt die NoFab-Bewegung, deren Anhänger eine gewisse Zeit aufs Masturbieren verzichten. Sie sehen es, gerade in Zusammenhang mit Pornokonsum, als Kräfteverschwendung an und schwören darauf, sich schon nach einigen Tagen viel ausgeruhter und voller Energie zu fühlen. Ich finde Orgasmen (ob zu zweit oder allein) ja eher eine freundliche und selbstwertschätzende Sache, dennoch interessierte mich, wie sich der Verzicht auswirken würde.</p>
-
-<p>Tatsächlich war es gar nicht so schwer wie gedacht (kuscheln ging ja trotzdem) und ich überlegte, ob manchmal nicht auch Langeweile der Grund für einen Orgasmus war. Auffällig energiegeladen fühlte ich mich nicht – höchstens ein bisschen flirtfreudiger. Sehr reizvoll ist das Davor und Danach dieses Monats, weil man dann ganz bewusst an die Sache rangeht :-)</p>
-
-<h2 id="august-nichts-mir-der-hand-schreiben">August: Nichts mir der Hand schreiben</h2>
-
-<p>Eine Freundin hat den Kopf geschüttelt: „Warum verzichtest du bitte auf Handschrift?“ – Stimmt, normalerweise verzichtet man eher auf unerwünschtes Verhalten. Bei meinem Vorsatz geht es aber darum, eingeschliffene Handlungen zu hinterfragen und Alternativen auszuprobieren. Im August also keine handgeschriebenen Einkaufslisten, <a href="briefe.html">Briefe</a>, Hörspielplan-Ergänzungen, <a href="tagebuch.html">Tagebucheinträge</a> oder ToDo-Zettel. Dafür viele Notizen im Smartphone, diktierte Aufzeichnungen und kleine Stempel zur Terminerinnerung im Kalender. Alle Stifte hatte ich weggeräumt, bis auf einen furchtbaren Kugelschreiber für Notfälle. Es ging auch ohne – sieht man von der Unterschrift beim Augenarzt ab. Ich war am ersten September trotzdem froh, anstehende Aufgaben wieder auf kleinen Zetteln sortieren zu können.</p>
-
-<h2 id="september-weder-fleisch-noch-wurst">September: Weder Fleisch noch Wurst</h2>
-
-<p>Ich esse nicht so viel Fleisch, aber komplett darauf zu verzichten brauchte doch noch einige Absprachen. So hat mein Schwager für mich einen Teil seines Zwiebelkuchens ohne Speckwürfel zubereitet, statt Schinken wanderte Thunfisch in die Lauchtorte. Aus meinem Bücherregal habe ich mal wieder das vegetarische Kochbuch rausgekramt und einige neue Rezepte ausprobiert.</p>
-
-<h2 id="oktober-bildschirmpause-von-12-stunden-täglich">Oktober: Bildschirmpause von 12 Stunden täglich</h2>
-
-<p>Das heißt: Abends den Laptop und Fernseher früh ausmachen, damit ich morgens recht bald ins Smartphone gucken konnte. So habe ich abends keine Mails mehr gecheckt, wieder mehr Radio gehört, bin oft früher ins Bett und es gab noch weniger gemeinsame Abende vor dem Fernseher als im April. Morgens habe ich viel gelesen (natürlich analog) und die Arbeit am Computer erst am späten Vormittag begonnen und bis in den Spätnachmittag verlängert.</p>
-
-<h2 id="november-cholesterinarm-essen">November: Cholesterinarm essen</h2>
-
-<p>Der Tagesbedarf an gesättigten Fettsäuren liegt bei 20 bis 26 Gramm, das hat man mit einer Portion Spaghetti Carbonara und einem Becher Sahnejoghurt sofort drin. Im November habe ich mir mal Gedanken gemacht, wie ich mich etwas fettärmer ernähren kann und einige Lebensmittel ersetzt: Frischkäse durch Hüttenkäse, Chips durch Salzstangen, Schokolade durch Gummibärchen. Außerdem habe ich auf fettarme 1,5%-Milch gesetzt, Gebäck aus Hefe- oder Quark-Öl-Teig bevorzugt und bei Nudeln mal die Vollkornvariante ausprobiert. Als gut für den Cholesterinspiegel gelten auch Grüntee und Nüsse. Eine interessante Sache, mal unter diesem Aspekt einkaufen zu gehen.</p>
-
-<h2 id="dezember-keine-morgensendung-im-radio">Dezember: Keine Morgensendung im Radio</h2>
-
-<p>Ich würde ja sagen, meine Lieblings-Morningshow „Hielscher oder Haase“ auf <a href="https://www.deutschlandfunknova.de/">Deutschlandfunk Nova</a> regt mich morgens erst so richtig an … oder lässt sie mich länger verträumt im Bett liegen? Nach einem halben Monat Verzicht kann ich sagen: Es ist vermutlich von beidem etwas. Die Morgenroutine ist ohne Radio jedenfalls sehr anders und irgendwie unstrukturierter. Nun ja, bald ist ja wieder Januar.</p>
-
-<h2 id="und-ihr">Und ihr?</h2>
-
-<p>Gibt es etwas, das ihr euch als guten Vorsatz nehmt? Fordert ihr euch gerne heraus? Worauf solltet ihr mal einen Monat lang verzeichten? Wobei ein Vorsatz ja auch einfach etwas Entspannendes sein kann, das man im Alltag ohne feste Absicht viel zu selten tut … Ich freue mich über eure Kommentare und Ideen!</p>
-
-	<p>---<br /> <a href="verzicht.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
-<p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
-
-<h1 id="sonstiges">Sonstiges</h1>
-
-<h2 id="warum-charakterziffer">Warum „Charakterziffer“?</h2>
-
-<p>Das Wort kombiniert Persönlichkeit (Charakter) mit Sachlichem (Ziffer). Zusammengesetzt ergibt sich ein Synonym für <a href="https://de.wikipedia.org/wiki/Medi%C3%A4valziffer">Mediävalziffer</a>, eine Zahlenvariante mit Ober- und Unterlängen.</p>
-
-<h2 id="schriftarten-dieses-blogs">Schriftarten dieses Blogs</h2>
-
-<p>Wenn dein Browser eingebettete Schriften (WOFF2) unterstützt, dann liest du die Fließtexte hier in der <a href="https://blog.typekit.com/2012/08/02/source-sans-pro/">Source Sans Pro</a> von Paul D. Hunt, erschienen 2012 bei Adobe.</p>
-
-<p>Die Überschriften sind aus der czSlab gesetzt, die ich für dieses Blog gestaltet habe. Sie orientiert sich an <a href="https://yanone.de/">Yanone</a>s viel ausgefeilterer <a href="https://www.fontshop.com/families/ff-antithesis/">Antithesis</a> von 2014.</p>
-
-<hr />
-
-<h2 id="impressum">Impressum/Datenschutz</h2>
-
-<h3 id="anbieterkennzeichnung-nach-tmg-5">Anbieterkennzeichnung nach TMG §5:</h3>
-
-<p>Gerhard Großmann · Geibelplatz 10 · 93051 Regensburg<br />
-E-Mail: postfach2b [ät] web.de (<a href="bestand/pub-0x9BA6621B.asc">PGP-Schlüssel</a>), SMS: <span style="margin-right:0.2em">0178</span><span style="margin-right:0.2em">/</span><span style="margin-right:0.2em">196</span><span style="margin-right:0.2em">19</span>14</p>
-
-<h3 id="rechtliche-hinweise">Rechtliche Hinweise</h3>
-
-<p><strong>§<small> </small>1 Externe Links</strong> · Dieses Blog verlinkt auf Websites Dritter. Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
-
-<p><strong>§<small> </small>2 Datenschutzerklärung</strong> · Mir ist der Schutz deiner Daten sehr wichtig. Deshalb verzichte ich auf Cookies, vermeide möglichst Dienste von Drittanbietern und erhebe so wenige Daten wie es geht. Diese Website kann ohne die Angabe persönlicher Daten genutzt werden.</p>
-
-<p>Die einzige Ausnahme sind Kommentare. Wenn du einen meiner Texte kommentierst, bekomme ich die eingegebenen Daten und eine Zeitangabe per (prinzipiell unsicherer) E-Mail zugestellt. Falls dein Kommentar sachlich zur Diskussion beiträgt, ergänze ich ihn öffentlich sichtbar unter dem entsprechenden Artikel. Dabei sind sämtliche Angaben freiwillig (Name, Website, Mailadresse, Kommentar) – auch <a href="anonym-kommentieren.html">anonyme Kommentare</a> sind möglich.</p>
-
-<p><strong>§ 3<small> </small>Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
-
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2021-02-18T23:44:13+01:00</p>
-
+<p style="clear:both;" class="no-print"></p>
 </main>
 
 <aside>
