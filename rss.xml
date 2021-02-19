@@ -317,7 +317,7 @@ function colorRuleset(binArray) {
 
 &lt;h2 id=&quot;wer-hats-erfunden-die-natur&quot;&gt;Wer hat’s erfunden? Die Natur!&lt;/h2&gt;
 
-&lt;p&gt;Noch bevor im Jahr 1940 Stanislaw Ulam und John von Neumann das Konzept zellulärer Automaten vorgestellt und weiterentwickelt haben, hat die Natur die Musterbildung nach Regeln schon längst praktiziert. Zum Beispiel entstehen Zebrastreifen nach einem vergleichbaren Prinzip. Besonders eindrucksvoll finde ich es beim [Weberkegel]. Das Muster auf dem Gehäuse dieser Muschel sieht der Regel 30 verblüffend ähnlich.&lt;/p&gt;
+&lt;p&gt;Noch bevor im Jahr 1940 Stanislaw Ulam und John von Neumann das Konzept zellulärer Automaten vorgestellt und weiterentwickelt haben, hat die Natur die Musterbildung nach Regeln schon längst praktiziert. Zum Beispiel entstehen Zebrastreifen nach einem vergleichbaren Prinzip. Besonders eindrucksvoll finde ich es beim &lt;a href=&quot;https://commons.wikimedia.org/wiki/Category:Conus_textile?uselang=de#/media/File:Cylindrus_textile_textile_01.JPG&quot;&gt;Weberkegel&lt;/a&gt;. Das Muster auf dem Gehäuse dieser Muschel sieht der Regel 30 verblüffend ähnlich.&lt;/p&gt;
 
 &lt;p&gt;Übrigens bietet die mathematischen Suchmaschine Wolfram Alpha für Elementare Zelluläre Automaten (so wie unserer) eine &lt;a href=&quot;https://mathworld.wolfram.com/ElementaryCellularAutomaton.html&quot;&gt;Übersicht aller 255 Regeln&lt;/a&gt;.&lt;/p&gt;
 
