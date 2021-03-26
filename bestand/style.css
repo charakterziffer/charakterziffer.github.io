@@ -268,8 +268,7 @@ img { page-break-inside: avoid; }
 article div { -webkit-print-color-adjust: exact !important;
 	color-adjust: exact !important; /* Hintergrundbilder auch drucken */}
 
-.no-print, a[href$='#kommentieren'], a[href$='#kommentare'] {
-	display: none; }
+#suchform, .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] { display: none; }
 a[href]::after { content: ' [' attr(href) ']';
 	font: italic 1rem/1.4 'Source Sans 3','Source Sans Pro','Segoe UI',Calibri,sans-serif;
 	font-feature-settings: 'onum', 'liga', 'kern';
