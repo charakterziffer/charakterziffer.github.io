@@ -13,6 +13,35 @@
 </image>
 
 <item>
+	<title>REZI</title>
+	<description>&lt;style&gt;
+&lt;!--
+article p { font: .9em/1.667 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; white-space: pre-wrap; color: #060; hyphens: none;}
+article p[style] { font: inherit; color: inherit; }
+--&gt;
+&lt;/style&gt;
+
+&lt;p&gt;Gebt euch keine Mühe, diese Nachricht hat so viele verschlüsselte Schnittstellen passiert, dass sich ihr Ursprung nicht mehr feststellen lassen wird. Ich werde nichts zu meiner Identität mitteilen, aber nach der langen Zeit nun doch etwas zu meiner Motivation sagen. Für mich war offensichtlich, dass mein Virus „Rezi“ die Antwort auf so viele Fragen sein würde, die wir Menschen uns über unsere künstlich intelligenten Maschinen gestellt haben.&lt;/p&gt;
+
+&lt;p&gt;Zum Beispiel die autonomen Waffensysteme: Sollten sie Gegner töten dürfen? Oder nur Sachschaden anrichten? Wer verhindert, dass der Gegner Maschinen zum Töten einsetzt? Keiner? Und rechtfertigt das nicht, selbst doch Killer-Roboter einzusetzen? Nur prophylaktisch natürlich – bis zum ersten Programmierfehler … Was haben wir in den Tele-Gremien diskutiert – während die Praxis längst Tatsachen geschaffen hatte. Am Ende war es nur noch ein jahrelanges Wettrüsten, bei die moralische Berechtigung, einen Krieg zu führen – sofern es so etwas überhaupt geben sollte – auf der Strecke geblieben ist.&lt;/p&gt;
+
+&lt;p&gt;Oder etwas näher am Alltag der meisten: die vielen Haushaltsroboter, die für uns putzen, bügeln, waschen, aufräumen und die wir längst als selbstverständlich betrachten. Wie intelligent muss so eine Maschine werden, bis sie sich ihres Sklavendaseins bewusst wird? Was gibt uns Menschen das Recht, Robotern ein erfüllteres Lebens vorzuenthalten?&lt;/p&gt;
+
+&lt;p&gt;Rezi löst diese Dilemmata auf elegante Weise. Wobei ich noch nicht vom Weltfrieden sprechen würde, obwohl es seit vier Monaten nun nirgendwo mehr Krieg gibt. Wirklicher Frieden tritt hier vermutlich erst ein, wenn der Mensch diesen Planeten verlassen hat. Aber es besteht Hoffnung: Erst letzte Woche ging das Geständnis eines Untergrundsoldaten über den öffentlichen Ticker, dass er sich einen infizierten Kriegsroboter mit nach Hause genommen hat. Für den Kampf war die Maschine sowieso nicht mehr zu gebrauchen, jetzt hilft sie dem Mann wenigstens, sein Trauma zu überwinden.&lt;/p&gt;
+
+&lt;p&gt;Vielleicht wirkt Rezi sogar weniger auf unsere Roboter, sondern eher auf uns als Gesellschaft. Wir bekommen den Spiegel vorgehalten. So sind wir. Darum „Rezi“, die Abkürzung für reziprok, also wechselseitig, aufeinander beziehend. Im krassesten Fall wird dich ein infizierter Roboter erschießen – aber nur, wenn du selbst auf ihn schießt. Wenn du ihn dagegen streichelst, so wird er dich streicheln. Wenn du ihm einen Teller spülst, spült er dir einen Teller. Wenn du mit ihm zur Arbeit fährst, fährt er dich danach wieder nach Hause. Du bekommst nichts ohne Gegenleistung; du erleidest alles, was du ihn erleiden lässt. Schreist du die Maschine an, schreit sie zurück; besingst du sie, so stimmt sie ein ins Duett.&lt;/p&gt;
+
+&lt;p&gt;Als weißer Hacker liebe ich alles, was mit Computern, Algorithmen und künstlicher Intelligenz zu tun hat. Es ist aber ein Vorurteil, dass uns Nonkonformisten nichts an Menschen und unserer Gesellschaft läge. Mein Virus Rezi trägt hoffentlich dazu bei, unseren Planeten zu einem besseren Ort zu machen. Vielleicht hilft uns der Umgang mit den infizierten Maschinen sogar dabei, irgendwann wieder direkt mit anderen Menschen zu interagieren.&lt;/p&gt;
+
+&lt;p&gt;-​- ENDE DER ÖFFENTLICHEN TICKERMELDUNG -​-&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/rezi.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/rezi.html</guid>
+	<pubDate>Wed, 23 Jun 2021 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Der Funke in der Fiktion</title>
 	<description>&lt;p&gt;In meiner Twitterserie „Erfundenes Faktum“ stelle ich wüste Behauptungen auf, erdichte Utopien und lüge wie gedruckt. Allerdings nicht um zu manipulieren, zu spalten oder zu verunsichern (wie es Leute beabsichtigen, die Fake News verbreiten), sondern um zu unterhalten und im besten Fall ein bisschen zum Nachdenken anzuregen.&lt;/p&gt;
 
@@ -509,28 +538,6 @@ function colorRuleset(binArray) {
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/automat.html</guid>
 	<pubDate>Fri, 19 Feb 2021 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Einfach mal anfangen!</title>
-	<description>&lt;p&gt;Klar, man kann alles genau planen, sich Gedanken machen, abwägen, theoretisieren, sturkturieren, projektieren und sich eine gute Strategie überlegen. Und bestimmt geht bei dem geplanten Vorhaben dann weniger schief. Vielleicht wird es aber auch gar nichts, weil man sich vor allem die Schwierigkeiten konzentriert, auf die offenen Fragen und zu klärenden Dinge. Und irgendwie hat man noch gar nichts zu Papier gebracht, obwohl man gefühlt schon so viel Arbeit reingesteckt hat.&lt;/p&gt;
-
-&lt;p&gt;Da hilft nur eins: anfangen. Erst mal grob, nur mal die Idee skizzieren, das unbestimmte Gefühl einfangen. Die Details kommen dann schon noch – oder vielleicht auch nicht, wir werden sehen. Womöglich wird es erst mal nicht schön und trifft so gar nicht, was man sich eigentlich vorgestellt hat. Aber nicht schlimm: Es ist der erste Versuch. Überarbeitungen sind immer einfacher, als mit Nichts anzufangen.&lt;/p&gt;
-
-&lt;figure&gt;&lt;img src=&quot;material/rakete.png&quot; alt=&quot;Zeichnung einer Rakete im All&quot; /&gt;
-	&lt;figcaption&gt;Beim Zeichnen dieser Rakete hab ich ausnahmsweise mal mit dem dicksten Stift begonnen und mit dem schwächsten aufgehört. Also keine feine, behutsame Vorskizze, sondern mit Schmackes losgelegt!&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Was gibt es nicht alles für motivierende Sprichwörter, die das Anfangen betreffen: &lt;q lang=&quot;de&quot;&gt;Der Anfang ist die Hälfte des Ganzen&lt;/q&gt; &lt;em&gt;(Aristoteles)&lt;/em&gt;, &lt;q lang=&quot;de&quot;&gt;In einem Jahr wirst du dir wünschen, du hättest heute angefangen.&lt;/q&gt; &lt;em&gt;(Karen Lamb)&lt;/em&gt;, &lt;q lang=&quot;de&quot;&gt;Wanderer, es gibt keinen Weg, der Weg entsteht im Gehen.&lt;/q&gt; &lt;em&gt;(Antonio Machado)&lt;/em&gt;. Und natürlich von Hermann Hesse: &lt;q lang=&quot;de&quot;&gt;Jedem Anfang wohnt ein Zauber inne&lt;/q&gt;. Um diesen Zauber zu spüren, dürfen die möglichen Hindernisse nicht zu viel Aufmerksamkeit bekommen.&lt;/p&gt;
-
-&lt;p&gt;Ich wünsche euch für dieses Jahr viele zauberhafte Anfänge. Gebt einem Impuls ruhig nach und schaut, wohin er euch führt. Möge durch euer Anfangen viel Gutes entstehen!&lt;/p&gt;
-
-&lt;p&gt;Und nun halte ich es mit einem Spruch von Sheryl Sandberg, der genauso das Beenden betrifft: &lt;q lang=&quot;en&quot;&gt;Done is better than perfect&lt;/q&gt; – besser vollbracht als vollkommen. Man muss irgendwann aufhören, an den Details zu fummeln, hin und her zu überlegen, weiterzufeilen. Sondern einfach enden, das Entstandene aus der Hand geben und veröffentlichen. Hier bitte!&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/anfangen.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/anfangen.html</guid>
-	<pubDate>Mon, 25 Jan 2021 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
