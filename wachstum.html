@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde:r,
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<title>Exponetielles Wachstum // @cz+</title>
+<meta name="description" content="Zuerst steigen Messwerte langsam, dann aber immer schneller. Das wirkt überraschend, aber diese Art des Wachstums ist eigentlich ziemlich berechenbar.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, charakterziffer, Blog, Twitter">
+<meta name="robots" content="index, follow">
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="Artikel-Feed">
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/wachstum.html&choe=UTF-8);
+position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
+
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<meta name="theme-color" content="#228811">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@charakterziffer" />
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg" />
+<meta property="og:title" content="Exponetielles Wachstum" />
+<meta property="og:description" content="Zuerst steigen Messwerte langsam, dann aber immer schneller. Das wirkt überraschend, aber diese Art des Wachstums ist eigentlich ziemlich berechenbar." />
+<meta property="og:url" content="https://charakterziffer.github.io/wachstum.html" />
+<meta property="og:type" content="article" />
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<div>
+<form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
+<input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
+<input type="hidden" id="q" name="q">
+<input type="hidden" name="kl" value="de-de">
+<input type="hidden" name="kj" value="281">
+<input type="hidden" name="kx" value="666">
+<input type="hidden" name="k9" value="281">
+<input type="hidden" name="kaa" value="839">
+<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="submit" value="🔍" aria-label="Suchen">
+</form>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/extra/index.html">Extra</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main>
+<article>
+<time datetime="2021-07-27">Di, 27. Juli 2021</time>
+<h1>Exponetielles Wachstum</h1>
+<p>Es gibt Phänomene, die können wir Menschen sehr schlecht einschätzen. Dazu gehört das <em>exponentielle Wachstum</em>, von dem in den letzten Monaten im Zusammenhang mit Covid-19-Infektionen immer wieder die Rede war. Zunächst eine Schätzfrage, die nichts mit Viren zu tun hat:</p>
+
+<blockquote>
+  <p>Da ist ein kleiner Teich, in dem Seerosen wachsen. Es herrschen dort optimale Bedingungen für die hübschen Wasserblumen und sie verbreiten sich ungehindert auf der Teichoberfläche. Die Seerosen wachsen sogar so gut, dass sie jeden Tag die doppelte Fläche bedecken wie am Vortag.</p>
+
+  <p>Gepflanzt wurde die erste Seerose vor dreißig Tagen. Jetzt, wo du den Teich besuchst, ist ungefähr die Hälfte der Wasseroberfläche mit Seerosen überwuchert. Es hat also dreißig Tage gedauert, bis der See halb zugewachsen war. Wenn die Seerosen genauso schnell weiterwachsen, wie viele Tage wird es noch dauern, bis der Teich komplett zugewachsen ist?</p>
+</blockquote>
+
+<p>Gib erst mal eine grobe Schätzung ab und überlege dir, wie du auf diese Anzahl von Tagen kommst. Denke nicht zu kompliziert, denn die Frage lässt sich ohne große Rechnerei beantworten. Lies die Frage eventuell noch einmal genau durch und lass dich nicht reinlegen!</p>
+
+<div class="klappkasten">
+<input type="checkbox" id="K1" />
+<label for="K1">Lösung mit einem Klick hier öffnen</label>
+<p>Sie wachsen wirklich sehr schnell, diese Seerosen. Wenn sich die bedeckte Fläche täglich verdoppelt und der See jetzt halb voll ist, – tja, dann ist der Teich schon am nächsten Tag komplett bewachsen! (Die dreißig Tage zuvor sind für die Antwort unwichtig, es hätten auch zehn oder siebzig sein können)</p>
+</div>
+
+<p>Exponentielles Wachstum geht überraschend schnell. Es ist nicht so entscheidend, wie lange ein Prozess bis zum jetzigen Wert gebraucht hat, sondern welche Wachstumsrate er hat. Hier mal zum Vergleich ein <strong>lineares Wachstum,</strong> das ist uns Menschen viel vertrauter:</p>
+
+<p><img src="material/wachstum-1.png" alt="Im Diagramm verläuft eine gerade Linie von links unten nach rechts oben" /></p>
+
+<p>Im Diagramm sieht man von links nach rechts die Zeit in Tagen. Ganz links den 1. Juli, am rechten Ende den 31. Juli. Die Höhe gibt in diesem Beispiel an, wie oft jemand diesen Monat insgesamt Zähne geputzt hat (täglich zweimal, ganz ohne Ausnahme). Die Werte steigen allmählich und in gerader Linie an, jeden Tag kommt zweimal Zähneputzen dazu. Die gestrichelte Linie deutet an, wie sich die Werte mathematisch in den kommenden Tagen entwickeln dürften. Das verläuft sehr offensichtlich und wir können das leicht abschätzen.</p>
+
+<p>Beim <strong>exponentiellen Wachstum</strong> dagegen wird nicht jeden Tag ein fester Wert addiert, sondern zwischen den Werten liegt ein stabiler Faktor. Damit wird der Wert vom Vortrag multipliziert. Im Diagramm ergibt sich eine Kurve, die erst recht langsam, dann aber doch immer steiler ansteigt:</p>
+
+<p><img src="material/wachstum-2.png" alt="Im Diagramm verläuft eine gebogene Linie. Sie steigt links unten nur wenig, nach rechts oben immer stärker" /></p>
+
+<p>Das Bild zeigt aber kein Seerosen-Wachstum mit Verdoppelung (= Faktor 2), sondern als schwarze Punkte die aktuellen Inzidenzzahlen in Deutschland. Das heißt, wie viele Neuinfektionen<a href="#note1"><sup id="ziffer1">[1]</sup></a> registriert wurden, runtergerechnet auf 100.000 Menschen (zur besseren Vergleichbarkeit) und gemittelt auf die vergangenen 7 Tage (um Meldeflauten am Wochenende auszugleichen). Die grüne Kurve habe ich mathematisch errechnet und so gut wie möglich zwischen die Punkte gelegt. Der gestrichelte Teil gibt an, wie sich die Infektionszahlen entwickeln würden, wenn der Wachstumsfaktor bei ca. 1,05 bleibt wie in den ersten Juliwochen.</p>
+
+<p>Die Inzidenzwerte habe ich übrigens von <a href="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&amp;time=2021-07-01..latest&amp;pickerSort=desc&amp;pickerMetric=new_cases_smoothed&amp;Metric=Confirmed+cases&amp;Interval=7-day+rolling+average&amp;Relative+to+Population=true&amp;Align+outbreaks=false&amp;country=~DEU">Our World in Data</a>, einer Organisation, die Forschungsdaten aus der ganzen Welt sammelt und als Diagramme darstellt. Der derzeite Anstieg kommt wohl daher, weil sich auch in Deutschland die Delta-Variante des Corona-Viruses durchgesetzt hat. Sie wurde in Indien entdeckt und ist ansteckender als die ursprüngliche Version aus China. Darum verbreitet sich die Variante stärker … bis irgendwann eine noch ansteckendere Virus-Version die Vorherrschaft übernimmt.</p>
+
+<p>Bei exponentiellem Wachstum dümpeln die Werte immer eine Weile vor sich hin, um plötzlich und scheinbar unerwartet schnell zu steigen. Je größer dann der Wert, desto stärker wächst er weiter. Natürlich müssen sich unsere Inzidenzzahlen nicht so entwickeln, wie es eine mathematische Formel vorhersagt, schließlich bestimmen wir den konkreten Verlauf selbst. Im Diagramm sieht man, dass die aktuellen Werte mal ober-, mal unterhalb der errechneten grünen Kurve liegen.</p>
+
+<p>Diese Pandemie ist trotz derzeit niedriger Zahlen noch nicht vorbei und unsere Nachlässigkeit macht es dem Virus leicht. Zwar sind in Deutschland inzwischen <a href="https://impfdashboard.de/">gut 50% vollständig geimpft</a>, darum gibt es weniger schwere Krankheitsverläufe und Todesfälle – trotzdem: Covid-19 ist kein Schnupfen. Gebt auf euch acht!</p>
+
+<p>Lust auf mehr nerdige Mathematik? Dass wir Menschen doch manche Dinge exponentiell wahrnehmen (z.B. Lautstärke oder Helligkeit), zeige ich in meinem <a href="graustufen.html">Artikel über gleichmäßige Graustufen</a>. Und wie einfache Formeln komplizierte Muster erzeugen, könnt ihr bei meinem <a href="automat.html">Automaten für Pixelmuster</a> ausprobieren.</p>
+
+<hr />
+
+<p><b id="note1">[1]</b> Mein Vergleich mit dem Zähneputzen hinkt übrigens. Dort ergibt sich die schöne gerade Linie nämlich nur, weil ich die vergangenen Putzvorgänge aufsummiere – sonst wäre der Wert jeden Tag einfach 2. Bei der Inzidenzzahl wird dagegen nicht aufsummiert, sondern allein die <em>neuen</em> Infektionen an jedem einzelnen Tag betrachtet, unabhängig von den vorangeganenen Tagen. <a href="#ziffer1">[↑]</a></p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+
+<a href="archiv.html?sujet">#sujet&nbsp; </a>
+</p>
+</article>
+
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/wachstum">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </p><p> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+
+
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="rezi.html">← REZI</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Regensburg<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum/Datenschutz</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – auch<span class="no-print"> <a href="https://twitter.com/intent/tweet?text=%40charakterziffer+" target="_blank" rel="noopener noreferrer">via Twitter</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em> (gern mit <a href="/bestand/pub-0x9BA6621B.asc">meinem PGP-Schlüssel</a> verschlüsselt).</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge stehen <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
+</body>
+</html>

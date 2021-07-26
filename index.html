@@ -75,6 +75,53 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2021-07-27">Di, 27. Juli 2021</time>
+	<h1><a href="wachstum.html">Exponetielles Wachstum</a></h1>
+	<p>Es gibt Phänomene, die können wir Menschen sehr schlecht einschätzen. Dazu gehört das <em>exponentielle Wachstum</em>, von dem in den letzten Monaten im Zusammenhang mit Covid-19-Infektionen immer wieder die Rede war. Zunächst eine Schätzfrage, die nichts mit Viren zu tun hat:</p>
+
+<blockquote>
+  <p>Da ist ein kleiner Teich, in dem Seerosen wachsen. Es herrschen dort optimale Bedingungen für die hübschen Wasserblumen und sie verbreiten sich ungehindert auf der Teichoberfläche. Die Seerosen wachsen sogar so gut, dass sie jeden Tag die doppelte Fläche bedecken wie am Vortag.</p>
+
+  <p>Gepflanzt wurde die erste Seerose vor dreißig Tagen. Jetzt, wo du den Teich besuchst, ist ungefähr die Hälfte der Wasseroberfläche mit Seerosen überwuchert. Es hat also dreißig Tage gedauert, bis der See halb zugewachsen war. Wenn die Seerosen genauso schnell weiterwachsen, wie viele Tage wird es noch dauern, bis der Teich komplett zugewachsen ist?</p>
+</blockquote>
+
+<p>Gib erst mal eine grobe Schätzung ab und überlege dir, wie du auf diese Anzahl von Tagen kommst. Denke nicht zu kompliziert, denn die Frage lässt sich ohne große Rechnerei beantworten. Lies die Frage eventuell noch einmal genau durch und lass dich nicht reinlegen!</p>
+
+<div class="klappkasten">
+<input type="checkbox" id="K1" />
+<label for="K1">Lösung mit einem Klick hier öffnen</label>
+<p>Sie wachsen wirklich sehr schnell, diese Seerosen. Wenn sich die bedeckte Fläche täglich verdoppelt und der See jetzt halb voll ist, – tja, dann ist der Teich schon am nächsten Tag komplett bewachsen! (Die dreißig Tage zuvor sind für die Antwort unwichtig, es hätten auch zehn oder siebzig sein können)</p>
+</div>
+
+<p>Exponentielles Wachstum geht überraschend schnell. Es ist nicht so entscheidend, wie lange ein Prozess bis zum jetzigen Wert gebraucht hat, sondern welche Wachstumsrate er hat. Hier mal zum Vergleich ein <strong>lineares Wachstum,</strong> das ist uns Menschen viel vertrauter:</p>
+
+<p><img src="material/wachstum-1.png" alt="Im Diagramm verläuft eine gerade Linie von links unten nach rechts oben" /></p>
+
+<p>Im Diagramm sieht man von links nach rechts die Zeit in Tagen. Ganz links den 1. Juli, am rechten Ende den 31. Juli. Die Höhe gibt in diesem Beispiel an, wie oft jemand diesen Monat insgesamt Zähne geputzt hat (täglich zweimal, ganz ohne Ausnahme). Die Werte steigen allmählich und in gerader Linie an, jeden Tag kommt zweimal Zähneputzen dazu. Die gestrichelte Linie deutet an, wie sich die Werte mathematisch in den kommenden Tagen entwickeln dürften. Das verläuft sehr offensichtlich und wir können das leicht abschätzen.</p>
+
+<p>Beim <strong>exponentiellen Wachstum</strong> dagegen wird nicht jeden Tag ein fester Wert addiert, sondern zwischen den Werten liegt ein stabiler Faktor. Damit wird der Wert vom Vortrag multipliziert. Im Diagramm ergibt sich eine Kurve, die erst recht langsam, dann aber doch immer steiler ansteigt:</p>
+
+<p><img src="material/wachstum-2.png" alt="Im Diagramm verläuft eine gebogene Linie. Sie steigt links unten nur wenig, nach rechts oben immer stärker" /></p>
+
+<p>Das Bild zeigt aber kein Seerosen-Wachstum mit Verdoppelung (= Faktor 2), sondern als schwarze Punkte die aktuellen Inzidenzzahlen in Deutschland. Das heißt, wie viele Neuinfektionen<a href="#note1"><sup id="ziffer1">[1]</sup></a> registriert wurden, runtergerechnet auf 100.000 Menschen (zur besseren Vergleichbarkeit) und gemittelt auf die vergangenen 7 Tage (um Meldeflauten am Wochenende auszugleichen). Die grüne Kurve habe ich mathematisch errechnet und so gut wie möglich zwischen die Punkte gelegt. Der gestrichelte Teil gibt an, wie sich die Infektionszahlen entwickeln würden, wenn der Wachstumsfaktor bei ca. 1,05 bleibt wie in den ersten Juliwochen.</p>
+
+<p>Die Inzidenzwerte habe ich übrigens von <a href="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&amp;time=2021-07-01..latest&amp;pickerSort=desc&amp;pickerMetric=new_cases_smoothed&amp;Metric=Confirmed+cases&amp;Interval=7-day+rolling+average&amp;Relative+to+Population=true&amp;Align+outbreaks=false&amp;country=~DEU">Our World in Data</a>, einer Organisation, die Forschungsdaten aus der ganzen Welt sammelt und als Diagramme darstellt. Der derzeite Anstieg kommt wohl daher, weil sich auch in Deutschland die Delta-Variante des Corona-Viruses durchgesetzt hat. Sie wurde in Indien entdeckt und ist ansteckender als die ursprüngliche Version aus China. Darum verbreitet sich die Variante stärker … bis irgendwann eine noch ansteckendere Virus-Version die Vorherrschaft übernimmt.</p>
+
+<p>Bei exponentiellem Wachstum dümpeln die Werte immer eine Weile vor sich hin, um plötzlich und scheinbar unerwartet schnell zu steigen. Je größer dann der Wert, desto stärker wächst er weiter. Natürlich müssen sich unsere Inzidenzzahlen nicht so entwickeln, wie es eine mathematische Formel vorhersagt, schließlich bestimmen wir den konkreten Verlauf selbst. Im Diagramm sieht man, dass die aktuellen Werte mal ober-, mal unterhalb der errechneten grünen Kurve liegen.</p>
+
+<p>Diese Pandemie ist trotz derzeit niedriger Zahlen noch nicht vorbei und unsere Nachlässigkeit macht es dem Virus leicht. Zwar sind in Deutschland inzwischen <a href="https://impfdashboard.de/">gut 50% vollständig geimpft</a>, darum gibt es weniger schwere Krankheitsverläufe und Todesfälle – trotzdem: Covid-19 ist kein Schnupfen. Gebt auf euch acht!</p>
+
+<p>Lust auf mehr nerdige Mathematik? Dass wir Menschen doch manche Dinge exponentiell wahrnehmen (z.B. Lautstärke oder Helligkeit), zeige ich in meinem <a href="graustufen.html">Artikel über gleichmäßige Graustufen</a>. Und wie einfache Formeln komplizierte Muster erzeugen, könnt ihr bei meinem <a href="automat.html">Automaten für Pixelmuster</a> ausprobieren.</p>
+
+<hr />
+
+<p><b id="note1">[1]</b> Mein Vergleich mit dem Zähneputzen hinkt übrigens. Dort ergibt sich die schöne gerade Linie nämlich nur, weil ich die vergangenen Putzvorgänge aufsummiere – sonst wäre der Wert jeden Tag einfach 2. Bei der Inzidenzzahl wird dagegen nicht aufsummiert, sondern allein die <em>neuen</em> Infektionen an jedem einzelnen Tag betrachtet, unabhängig von den vorangeganenen Tagen. <a href="#ziffer1">[↑]</a></p>
+
+	<p>---<br /> <a href="wachstum.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2021-06-23">Mi, 23. Juni 2021</time>
 	<h1><a href="rezi.html">REZI</a></h1>
 	<style>
@@ -156,72 +203,6 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 		</p>
 </article>
 
-<article>
-	<time datetime="2021-04-09">Fr, 9. Apr. 2021</time>
-	<h1><a href="fuchs-11.html">Der Fuchs hat Ideen!</a></h1>
-	<p>„Unterhalte dich mit anderen Menschen“, so rät es in meiner Twitterserie der Fuchs der Ballerina. Denn im Gespräch mit anderen tun sich neue Blickwinkel auf, man beschäftigt sich mit anderen Themen und kommt dadurch vielleicht auf frische Ideen.</p>
-
-<p>Ins Gespräch kommen, das ist auch die Grundidee meiner #Fuchs-Serie. Die Tweets sind kurze Dialoge (eigentlich nur die zweite Hälfte davon), in denen sich im besten Fall die Perspektive dreht und die Antwort noch einmal über die (nicht genannte) Frage nachdenken lässt.</p>
-
-<p>Hier die letzten zehn Folgen:</p>
-
-<blockquote>
-  <p>◆ „Öffentliche Empörung scheint nicht konstruktiv“, sprach der #Fuchs zur Ballerina. „Aber wenn du einen ungerechten Vorfall siehst und dazu schweigst, unterstützt auch du diese Ungerechtigkeit.“ (<a href="https://twitter.com/charakterziffer/status/1268472656803872768">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>💡 „Menschen sind nicht unbedingt wegen ihrer Klugheit berühmt“, sprach der #Fuchs zur Ballerina. „Darum sind die Äußerungen einer bekannten Person nicht zwangsläufig schlauer als deine eigenen.“ (<a href="https://twitter.com/charakterziffer/status/1281494387533504512">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>➴ „Nimm dir so viel wie du brauchst“, sprach der #Fuchs zur Ballerina. „Aber auf keinem Fall mehr.“ (<a href="https://twitter.com/charakterziffer/status/1293157354037481477">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>↯ „Sicher gibt es Leute, die dich hassen“, sprach der Fuchs zur Ballerina. „Aber nicht du bist die Ursache für den Hass, sondern die beschränkte Weltsicht dieser Leute.“ (<a href="https://twitter.com/charakterziffer/status/1306161329808568321">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>🌸 „Klar kannst du dich über Fehler ärgern“, sprach der #Fuchs zur Ballerina. „Vergiss dabei aber nicht, welches großes Glück es ist, dass du deine Kunst derzeit überhaupt vor Publikum aufführen kannst.“ (<a href="https://twitter.com/charakterziffer/status/1320710672427134977">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>↯ „Das ist wie beim ‚Überbringer schlechter Nachrichten‘“, sprach der #Fuchs zur Ballerina. „Sei nicht wütend auf diejenigen, welche die Einschränkungen beschließen, sondern lieber auf die, derentwegen sie notwendig sind.“ (<a href="https://twitter.com/charakterziffer/status/1331893922440880131">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⏲ „Sei zumindest ehrlich zu dir selbst“, sprach der #Fuchs zur Ballerina. „Wenn du sagst ‚Dafür habe ich keine Zeit‘, dann meinst du meistens ‚Das ist mir nicht wichtig genug‘ – und das ist völlig in Ordnung so.“ (<a href="https://twitter.com/charakterziffer/status/1344628889046425602">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>◕ „Es freut mich, dass dich dein neues Projekt so fesselt“, sprach der #Fuchs zur Ballerina. „Aber bitte gib auf dich Acht: Mach Pausen, bemühe dich um Abwechslung und benutze das Projekt nicht, um wichtige Aufgaben zu ignorieren.“ (<a href="https://twitter.com/charakterziffer/status/1356887627723603968">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⭑ „Natürlich können dich Online-Kommentare ermutigen“, sprach der #Fuchs zur Ballerina. „Versuche dich bei deinen Veröffentlichungen aber nicht von diesem Feedback abhängig zu machen.“ (<a href="https://twitter.com/charakterziffer/status/1369582126723719168">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⚗ „Wenn du neue Ideen suchst, dann ändere dein Umfeld“, sprach der #Fuchs zur Ballerina. „Geh raus die Natur, unterhalte dich mit anderen Menschen, mach dir leise Musik an.“ […] (<a href="https://twitter.com/charakterziffer">#</a>)</p>
-</blockquote>
-
-<p>Wer nun Lust auf weitere „ausgefuchste“ Perspektivwechsel hat, der kann gleich weiterlesen. Die anderen Blogeinträge zu dieser Twitterserie:</p>
-
-<p>1. <a href="fuchs-1.html">… sprach der #Fuchs zur Ballerina</a><br />
-2. <a href="fuchs-2.html">Weisheiten für sensible Künstler</a><br />
-3. <a href="fuchs-3.html">Ballerinas Selbstzweifel</a><br />
-4. <a href="fuchs-4.html">Ein Fuchs für alle Fälle</a><br />
-5. <a href="fuchs-5.html">Pirouetten und andere Probleme</a><br />
-6. <a href="fuchs-6.html">Ausgefuchste Antworten</a><br />
-7. <a href="fuchs-7.html">Vorgaben hinter sich lassen</a><br />
-8. <a href="fuchs-8.html">Die Blöße der Unwissenheit</a><br />
-9. <a href="fuchs-9.html">Nicht originell genug?</a><br />
-10. <a href="fuchs-10.html">Kunst ohne Publikum</a></p>
-
-	<p>---<br /> <a href="fuchs-11.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -255,7 +236,7 @@ E-Mail: postfach2b [ät] web.de (<a href="bestand/pub-0x9BA6621B.asc">PGP-Schlü
 
 <p><strong>§ 3<small> </small>Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2021-06-23T09:07:22+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2021-07-26T23:59:25+02:00</p>
 
 </main>
 
