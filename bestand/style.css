@@ -248,11 +248,11 @@ header, main, aside { width: 100%; }
 aside { position: static; float: none; }
 
 aside,figure,blockquote,.hinterlegt,.klappkasten,pre,code,a[download] {
-	background: #fff; border: 1px solid #666; page-break-inside: avoid; }
+	background: #fff; border: 1px solid #666; break-inside: avoid; }
 pre > code { border: 0; }
 
 h1, h2, h3, time {
-	page-break-after: avoid; page-break-inside: avoid; color: #222; }
+	break-after: avoid; break-inside: avoid; color: #222; }
 p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited {
 	color: #000; }
 
@@ -264,7 +264,7 @@ p, ul, ol { widows: 2; orphans: 2; }
 blockquote > h1, blockquote > h2, blockquote > h3 { margin: 0 0 .25em; }
 blockquote > p { margin: 0 0 .3em; }
 
-img { page-break-inside: avoid; }
+img { break-inside: avoid; }
 article div { -webkit-print-color-adjust: exact !important;
 	color-adjust: exact !important; /* Hintergrundbilder auch drucken */}
 
