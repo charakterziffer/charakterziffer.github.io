@@ -115,8 +115,7 @@ sup, sub { line-height: 0; letter-spacing: .05em;
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font-size: .8em; display: inline-block; position: relative;
 	top: -.1em; margin: 0 .2em; padding: .15em .35em .2em;
-	background-color: hsla(0,0%,92%,.7); border: 1px solid #888; border-radius: .2em;
-	box-shadow: .08em .05em 0 rgba(0,0,0,.2), .15em .15em 0 #fff inset; }
+	background-color: hsla(0,0%,92%,.7); border: 1px solid #666; border-radius: .2em; box-shadow: .08em .05em 0 rgba(0,0,0,.15), .15em .15em 0 #fff inset; }
 
 /* bei Datumsangabe eines Artikels, im Archiv und bei Kommentaren */
 time { display: block; float: right; padding-left: 1em; color: #666; }
@@ -195,7 +194,7 @@ a:focus:not(:focus-visible) { outline: none; }
 a[download] { margin: 2.06em auto; padding: .35em .4em .4em;
 	display: block; max-width: 18em; text-align: center; color: #222;
 	font: inherit; background-color: #deb; border: .065em solid #281;
-	box-shadow: 1px 1px 2px rgba(0,0,0,.14); }
+	box-shadow: 1px 1px 2px rgba(0,0,0,.15); }
 a[download]:hover { border-color: #839; box-shadow: none; }
 @media (max-width: 25em) { a[download] { margin: 2.06em 1.5em; } }
 
