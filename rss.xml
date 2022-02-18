@@ -13,6 +13,69 @@
 </image>
 
 <item>
+	<title>Irren ist menschlich</title>
+	<description>&lt;p&gt;Es ist erstaunlich, wie wir Menschen Informationen verarbeiten. Unser Gehirn kann in kürzester Zeit Muster erkennen, lernt aus Erfahrungen und macht Vorhersagen, verfolgt Ereignisse bis zu ihrer Ursache zurück und trifft blitzschnell Entscheidungen, ohne erst alle Details analysieren zu müssen.&lt;/p&gt;
+
+&lt;p&gt;Das funktioniert, weil unser Hirn Abkürzungen nimmt und Erfahrungen wiederholt. Eine Münze rutscht beim ersten Einwurf im Kaffeeautomaten durch? Na, dann reiben wir sie an einer Metallfläche und siehe: Jetzt nimmt der Automat sie an. Der Fahrstuhl kommt nicht? Einfach noch ein paar Mal drücken: Schon öffnen sich die Türen! – Dass die Münze auch ohne Reiben angenommen worden wäre und der Aufzug ohne erneutes Drücken eintrifft, haben wir nicht überprüft. Was dagegen hängen bleibt: Münze reiben hilft und mehrfach den Aufzugknopf drücken bewirkt etwas.&lt;/p&gt;
+
+&lt;style&gt;
+.halbbild { display: flex; flex-wrap: wrap; }
+.halbbild &gt; * { flex: 1 1 12em; }
+.halbbild &gt; img { object-fit: contain; background-color: #deb;
+	cursor: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3e%3crect x='0' y='0' width='64' height='64' fill='%23787878' rx='3'/%3e%3c/svg%3e&quot;) 32 32, pointer; }
+}
+&lt;/style&gt;
+
+&lt;figure class=&quot;halbbild&quot;&gt;
+	&lt;img src=&quot;material/irrtum.png&quot; width=&quot;320px&quot; alt=&quot;Ein Schachbrett, auf das ein Krug einen Schatten wirft. Zwei Felder sind mit A und B gekennzeichnet: Ein dunkles im Licht, ein helles im Schatten.&quot; /&gt;
+	&lt;figcaption&gt;Wahrnehmungsfehler macht unser Gehirn auch bei optischen Täuschungen. Zum Beispiel haben im Bild die beiden Felder A und B genau den gleichen Grauton (zum Überprüfen den Maus-Cursor über die Felder bewegen, klappt leider nicht auf Touchgeräten). Wir sind es aber gewohnt, dass eine Farbe im Schatten dunkler aussieht – darum meint unser Gehirn, sie müsse eigentlich heller sein.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Mit den (Vor-)Urteilen, die wir aus unseren Erfahrungen gewinnen, können wir Situationen schnell meistern – wir machen dadurch aber auch immer wieder die gleichen Fehler. Ist aber nicht schlimm, denn unser Hirn bestätigt uns gern, dass wir nur Pech hatten, der Irrtum auf keinen Fall an uns gelegen hat und wir eigentlich doch richtig liegen.&lt;/p&gt;
+
+&lt;p&gt;Es gibt eine ganze Liste an &lt;a href=&quot;https://de.wikipedia.org/wiki/Liste_kognitiver_Verzerrungen&quot;&gt;kognitiven Verzerrungen&lt;/a&gt;, also systematischen Irrtümern, die uns unterlaufen, weil das menschliche Gehirn auf diese bestimmte Weise arbeitet. Drei Arten dieser Irrtümer möchte ich hier vorstellen:&lt;/p&gt;
+
+&lt;h2 id=&quot;verfügbarkeitsheuristik&quot;&gt;Verfügbarkeitsheuristik&lt;/h2&gt;
+
+&lt;p&gt;Hach, früher waren die Weihnachtsfeste doch viel schöner … Mit richtig viel Schnee, fast jedes Jahr! Schlittenfahren, ein Winterspaziergang mit der Familie, Schneemänner bauen, … Ähm, nein. Wirft man einen Blick in die Statistik, waren weiße Weihnachten schon immer eher die Ausnahme. Laut einer &lt;a href=&quot;https://wetterkanal.kachelmannwetter.com/der-grosse-weihnachtswetter-rueckblick-seit-1950/&quot;&gt;Auswertung des Meteorologen Fabian Ruhnau&lt;/a&gt; hatten Berliner:innen seit 1950 nur alle vier bis fünf Jahre weiße Weihnachten, Leute aus München immerhin alle drei Jahre.&lt;/p&gt;
+
+&lt;p&gt;Warum wir uns verschätzen und glauben, an den Feiertagen hätte immer viel häufiger Schnee gelegen? Weil diese Weihnachtsfeste dann ganz besonders waren und weil sie ein Idealbild sind, das wir aus Werbung und Filmen kennen. Wir erinnern uns leichter an etwas, wenn es ganz besonders war, wenn wir es wiederholt gesehen haben oder wenn es starke Gefühle ausgelöst hat. Sollen wir dann eine Frage einschätzen, über die wir wenig wissen, gewichten wir diejenigen Informationen stärker, die wir in unserer Erinnerung verfügbar haben.&lt;/p&gt;
+
+&lt;p&gt;Ein zweites Beispiel: In der &lt;a href=&quot;https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/PolizeilicheKriminalstatistik/2020/Interpretation/Opfer/ZR-O-01-T91-Straftaten-insg_xls.xlsx?__blob=publicationFile&amp;amp;v=4&quot;&gt;Zeitreihe über Straftaten&lt;/a&gt; &lt;em&gt;(xls-Datei)&lt;/em&gt; bei den &lt;a href=&quot;https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/PolizeilicheKriminalstatistik/PKS2020/PKSTabellen/Zeitreihen/zeitreihen_node.html&quot;&gt;polizeilichen Kriminalstatistiken des Bundeskriminalamts&lt;/a&gt; gehen die Handtaschenraube seit dem Jahr 2000 deutlich zurück, von rund 5.400 auf 1.500. Warum denken viele Leute trotzdem, es sei in den letzten Jahren in Deutschland wahrscheinlicher geworden, auf der Straße überfallen zu werden? Tja, weil wir mehr über Raubüberfälle lesen (z.B. online), uns empören und entsetzen und einzelne Fälle damit stärker in Erinnerung haben.&lt;/p&gt;
+
+&lt;h2 id=&quot;scheinkorrelation&quot;&gt;Scheinkorrelation&lt;/h2&gt;
+
+&lt;p&gt;Oft entdeckt unser Gehirn Zusammenhänge, wo gar keine sind. Dann verwechseln wir Korrelation (zwei Entwicklungen verlaufen ähnlich) mit Kausalität (die eine Entwicklung verursacht die andere). Nur weil zwei Ereignisse gleichzeitig auftreten, müssen sie noch nicht zusammenhängen.&lt;/p&gt;
+
+&lt;p&gt;Eine falsche Schlussfolgerung könnte zum Beispiel sein, dass Eis-Essen einen Sonnenbrand verursacht. Es stimmt zwar, dass es mehr Sonnenbrände gibt, wenn mehr Speiseeis gegessen wird – das heißt aber nicht, dass eines davon das andere bewirkt. Der eigentliche Zusammenhang ist hier natürlich der Sommer, wo wir mehr Lust auf Eis haben und im stärkeren Sonnenschein kürzere Klamotten tragen.&lt;/p&gt;
+
+&lt;p&gt;Von der Wissenschaftsjournalistin Mai Thi Nguyen-Kim gibt es ein tolles &lt;a href=&quot;https://www.youtube.com/watch?v=MFMS8P-Flig&quot;&gt;Erklärvideo zur Scheinkorrelation&lt;/a&gt;. Weitere absurde Korrelationen sammelt der Journalist Norman Zellmer &lt;a href=&quot;https://scheinkorrelation.jimdofree.com/&quot;&gt;in seinem Blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;motiviertes-denken&quot;&gt;Motiviertes Denken&lt;/h2&gt;
+
+&lt;p&gt;Ist es nicht schön, wenn wir Dinge sehen, die unsere Annahmen bestätigen? Wenn wir Nachweise lesen, die unsere Einschätzung bekräftigen und unsere Weltsicht stützen? Es ist ein gutes Gefühl, etwas schon immer gewusst und von Anfang an richtig gelegen zu haben. Informationen, die unseren Ansichten entgegenkommen, hören sich glaubhafter und vertrauenswürdiger an.&lt;/p&gt;
+
+&lt;p&gt;Sich zu hinterfragen und zu riskieren, dass man vielleicht falsch liegt, ist schwieriger. Was, wenn man getäuscht wurde? Wenn doch nicht stimmt, was man lange geglaubt hat? Ganz schön verunsichernd, oder? Und auch ziemlich unangenehm. Fakten oder Leute, die uns widersprechen, sehen wir zu oft als Feinde; als etwas, wogegen wir uns verteidigen müssen. Vielleicht sogar ohne es zu merken suchen wir darum eher die Quellen, die uns bestätigen. Wir blenden widersprechende Fakten aus oder erklären sie zu kleinen, abweichenden Zufällen.&lt;/p&gt;
+
+&lt;p&gt;Wer sogar tief in einen Verschwörungsglauben gerät, unterstellt einfach allen mit anderer Auffassung eine böse Absicht. Jeder, der nicht die eigene Sicht teilt, ist halt gekauft, will manipulieren, gehört zu „denen“. Andere zu Feinden zu erklären ist irgendwann einfacher, als sich einzugestehen, dass man sich gehörig verrannt hat.&lt;/p&gt;
+
+&lt;p&gt;Eine ausführliche Beschreibung dieser kognitiven Verzerrung, gerade im Zusammenhang mit Verschwörungstheorien, habe ich auf der Aufklärungsseite &lt;a href=&quot;https://www.xn--verschwrungstheorien-99b.info/enzyklopaedie/motiviertes-denken-motivated-reasoning/&quot;&gt;Verschwörungstheorien.info&lt;/a&gt; gefunden.&lt;/p&gt;
+
+&lt;h2 id=&quot;wie-fällt-man-nicht-darauf-herein&quot;&gt;Wie fällt man nicht darauf herein?&lt;/h2&gt;
+
+&lt;p&gt;Um kein Opfer der eigenen Fehlwahrnehmung zu werden, hilft es, sich mit kognitiven Verzerrungen zu beschäftigen. Das Gehirn wendet Strategien an, um Sinneseindrücke schnell zu verarbeiten. Wer sich dessen bewusst ist, kann einen Schritt zurück treten und überlegen: Ist dieser Zusammenhang wirklich so, wie ich denke? Vielleicht schätze ich die Situation nur so ein, weil mein Hirn bestimmte Erinnerungen wichtiger findet, falsche Zusammenhänge herstellt oder sich ungern hinterfragen lässt.&lt;/p&gt;
+
+&lt;p&gt;Ein empfehlenswertes Buch zu dem Thema ist übrigens &lt;em&gt;Schnelles Denken, langsames Denken&lt;/em&gt; von Daniel Kahneman. Der Psychologieprofessor erläutert darin sehr verständlich, welche systematischen Fehler uns bei intuitivem Denken oft unterlaufen.&lt;/p&gt;
+
+&lt;p&gt;Wie ist es bei euch? Seid ihr abgeklärt und fallt nicht so leicht auf falsche Annahmen rein? Damit könntet ihr recht haben – oder ihr unterliegt einfach der Verzerrungsblindheit, einem weiteren systematischen Irrtum, bei dem man sich selbst für objektiv und unbeeinflusst hält ;-)&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/irrtum.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/irrtum.html</guid>
+	<pubDate>Fri, 18 Feb 2022 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>3 Tage + 4 Tage</title>
 	<description>&lt;p&gt;Der Alltag der meisten Menschen gliedert sich in einen festen Rhythmus aus sieben Tagen: Ein verschlafener Montag, ein organisierter Dienstag, ein Mittwoch mit Bergfest, ein langer Donnerstag, ein Freitag voller Vorfreude und dann (endlich) das Wochenende: Samstag mit aufräumen, einkaufen, Freizeit, und der Sonntag zum Faulenzen oder für Zeit mit Familie und Freunden. So weit, so normal – oder?&lt;/p&gt;
 
@@ -190,34 +253,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/wachstum.html</guid>
 	<pubDate>Tue, 27 Jul 2021 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>REZI</title>
-	<description>&lt;style&gt;
-&lt;!--
-.mono { font: .9em/1.667 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; white-space: pre-wrap; color: #060; hyphens: none;}
---&gt;
-&lt;/style&gt;
-
-&lt;p class=&quot;mono&quot;&gt;Gebt euch keine Mühe, diese Nachricht hat so viele verschlüsselte Schnittstellen passiert, dass sich ihr Ursprung nicht mehr feststellen lassen wird. Ich werde nichts zu meiner Identität mitteilen, aber nach der langen Zeit nun doch etwas zu meiner Motivation sagen. Für mich war offensichtlich, dass mein Virus „Rezi“ die Antwort auf so viele Fragen sein würde, die wir Menschen uns über unsere künstlich intelligenten Maschinen gestellt haben.&lt;/p&gt;
-
-&lt;p class=&quot;mono&quot;&gt;Zum Beispiel die autonomen Waffensysteme: Sollten sie Gegner töten dürfen? Oder nur Sachschaden anrichten? Wer verhindert, dass der Gegner Maschinen zum Töten einsetzt? Keiner? Und rechtfertigt das nicht, selbst doch Killer-Roboter einzusetzen? Nur prophylaktisch natürlich – bis zum ersten Programmierfehler … Was haben wir in den Tele-Gremien diskutiert – während die Praxis längst Tatsachen geschaffen hatte. Am Ende war es nur noch ein jahrelanges Wettrüsten, bei die moralische Berechtigung, einen Krieg zu führen – sofern es so etwas überhaupt geben sollte – auf der Strecke geblieben ist.&lt;/p&gt;
-
-&lt;p class=&quot;mono&quot;&gt;Oder etwas näher am Alltag der meisten: die vielen Haushaltsroboter, die für uns putzen, bügeln, waschen, aufräumen und die wir längst als selbstverständlich betrachten. Wie intelligent muss so eine Maschine werden, bis sie sich ihres Sklavendaseins bewusst wird? Was gibt uns Menschen das Recht, Robotern ein erfüllteres Lebens vorzuenthalten?&lt;/p&gt;
-
-&lt;p class=&quot;mono&quot;&gt;Rezi löst diese Dilemmata auf elegante Weise. Wobei ich noch nicht vom Weltfrieden sprechen würde, obwohl es seit vier Monaten nun nirgendwo mehr Krieg gibt. Wirklicher Frieden tritt hier vermutlich erst ein, wenn der Mensch diesen Planeten verlassen hat. Aber es besteht Hoffnung: Erst letzte Woche ging das Geständnis eines Untergrundsoldaten über den öffentlichen Ticker, dass er sich einen infizierten Kriegsroboter mit nach Hause genommen hat. Für den Kampf war die Maschine sowieso nicht mehr zu gebrauchen, jetzt hilft sie dem Mann wenigstens, sein Trauma zu überwinden.&lt;/p&gt;
-
-&lt;p class=&quot;mono&quot;&gt;Vielleicht wirkt Rezi sogar weniger auf unsere Roboter, sondern eher auf uns als Gesellschaft. Wir bekommen den Spiegel vorgehalten. So sind wir. Darum „Rezi“, die Abkürzung für reziprok, also wechselseitig, aufeinander beziehend. Im krassesten Fall wird dich ein infizierter Roboter erschießen – aber nur, wenn du selbst auf ihn schießt. Wenn du ihn dagegen streichelst, so wird er dich streicheln. Wenn du ihm einen Teller spülst, spült er dir einen Teller. Wenn du mit ihm zur Arbeit fährst, fährt er dich danach wieder nach Hause. Du bekommst nichts ohne Gegenleistung; du erleidest alles, was du ihn erleiden lässt. Schreist du die Maschine an, schreit sie zurück; besingst du sie, so stimmt sie ein ins Duett.&lt;/p&gt;
-
-&lt;p class=&quot;mono&quot;&gt;Als weißer Hacker liebe ich alles, was mit Computern, Algorithmen und künstlicher Intelligenz zu tun hat. Es ist aber ein Vorurteil, dass uns Nonkonformisten nichts an Menschen und unserer Gesellschaft läge. Mein Virus Rezi trägt hoffentlich dazu bei, unseren Planeten zu einem besseren Ort zu machen. Vielleicht hilft uns der Umgang mit den infizierten Maschinen sogar dabei, irgendwann wieder direkt mit anderen Menschen zu interagieren.&lt;/p&gt;
-
-&lt;p class=&quot;mono&quot;&gt;+++ ENDE DER ÖFFENTLICHEN TICKERMELDUNG +++&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/rezi.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/rezi.html</guid>
-	<pubDate>Wed, 23 Jun 2021 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
