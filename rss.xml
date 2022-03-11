@@ -13,6 +13,44 @@
 </image>
 
 <item>
+	<title>Ein Chorstück zum Trost</title>
+	<description>&lt;p&gt;Im Januar habe ich nicht nur ein Radiofeature über die Sängerin und Komponistin &lt;a href=&quot;https://carolineshaw.com&quot;&gt;Caroline Shaw&lt;/a&gt; im Deutschlandfunk gehört. Ich habe außerdem mit der Leiterin des hiesigen Chors telefoniert, der leider noch in der Corona-Pause steckt. Wegen meines Umzugs Ende Oktober kann ich nämlich nicht mehr in Regensburg mitsingen und möchte mir hier einen neuen Chor suchen.&lt;/p&gt;
+
+&lt;p&gt;Caroline Shaws Vokalmusik und auch das Telefonat haben mich angeregt, wieder einmal etwas zu komponieren. Als Grundlage habe ich die Bibelstelle Jesaja 43,1 gewählt: „Fürchte dich nicht, denn ich habe dich erlöst; ich habe dich bei deinem Namen gerufen; du bist mein!“ Der Vers wird gern zu Beerdigungen genommen; ein Anlass, zu dem ich mir mein Stück gut vorstellen kann. Gedacht ist es aber allgemein als Trostlied.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/chorstueck.svg&quot; alt=&quot;Noten meiner Komposition&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ursprünglich hatte ich das Lied vierstimmig angefangen, aber da empfand ich den Zusammenklang als zu schwer und streng, außerdem wurde die Melodieführung hörbar vertrackt – was ich für ein tröstendes Lied absolut nicht wollte. Also habe ich es noch einmal dreistimmig komponiert und dabei versucht, leichte und schwebende Reibungen hineinzuschreiben.&lt;/p&gt;
+
+&lt;p&gt;Die drei Stimmen entfernen sich voneinander, spannen einen Tonumfang auf, um sich dann wieder anzunähern, sehr eng zu verlaufen und sogar zur Einstimmigkeit zu finden. Klare, strahlende Reibungen münden immer wieder in ruhige, einfache Harmonien; schnellere Teile beruhigen sich und führen in lange Akkorde. Für einen ersten Eindruck habe ich die drei Stimmen eingesungen und in einem Schnittprogramm übereinandergelegt:&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/chorstueck-gesang.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/chorstueck-gesang.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Aufnahmebedingungen waren leider nicht optimal und natürlich musste ich eine Oktave tiefer singen. Darum hier nochmal mit künstlichen Chorstimmen auf „Aaah“:&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/chorstueck-midi.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/chorstueck-midi.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;Falls euch das Lied gefällt, könnt ihr es gerne selbst singen. Vielleicht kennt ihr auch in einem Chor, für den dieses Lied geeignet wäre? Bei einem vierstimmigen Chor übernehmen Sopran und Alt die zwei oberen Stimmen, der Tenor kann die untere Stimme singen. Evtl. muss der Bass pausieren, vielleicht könnte er aber auch die oberste Stimme gemeinsam mit dem Sopran singen, nur eben eine Oktave tiefer. Hier die Noten zum Download:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/großmann_fürchte-dich-nicht.pdf&quot; download=&quot;&quot;&gt;Noten auf A4-Seite&lt;br /&gt;&lt;em&gt;PDF-Datei&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ich habe das Stück unter eine Creative-Commons-Lizenz gestellt mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de&quot;&gt;CC BY-NC-SA&lt;/a&gt;). Das heißt, jeder darf die Noten frei kopieren, weitergeben, singen und auch aufführen – dabei darf das Stück aber ohne meine Erlaubnis nicht kommerziell genutzt werden. Wer es gerne in einem Konzert mit Eintritt singen oder eine Aufnahme davon verkaufen möchte, melde sich bitte bei mir für eine erweiterte Lizenz; entweder per Mail an &lt;em&gt;postfach2b [ät] web.de&lt;/em&gt; oder unten in den Kommentaren.&lt;/p&gt;
+
+&lt;p&gt;Komponiert ihr selbst manchmal? Für Gesang oder Instrumente? Was inspiriert euch? Ich freue mich über eure Erfahrungen!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/chorstueck.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/chorstueck.html</guid>
+	<pubDate>Fri, 11 Mar 2022 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Irren ist menschlich</title>
 	<description>&lt;p&gt;Es ist erstaunlich, wie wir Menschen Informationen verarbeiten. Unser Gehirn kann in kürzester Zeit Muster erkennen, lernt aus Erfahrungen und macht Vorhersagen, verfolgt Ereignisse bis zu ihrer Ursache zurück und trifft blitzschnell Entscheidungen, ohne erst alle Details analysieren zu müssen.&lt;/p&gt;
 
@@ -205,54 +243,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/wandbuchstaben.html</guid>
 	<pubDate>Mon, 11 Oct 2021 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Exponetielles Wachstum</title>
-	<description>&lt;p&gt;Es gibt Phänomene, die können wir Menschen sehr schlecht einschätzen. Dazu gehört das &lt;em&gt;exponentielle Wachstum&lt;/em&gt;, von dem in den letzten Monaten im Zusammenhang mit Covid-19-Infektionen immer wieder die Rede war. Zunächst eine Schätzfrage, die nichts mit Viren zu tun hat:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Da ist ein kleiner Teich, in dem Seerosen wachsen. Es herrschen dort optimale Bedingungen für die hübschen Wasserblumen und sie verbreiten sich ungehindert auf der Teichoberfläche. Die Seerosen wachsen sogar so gut, dass sie jeden Tag die doppelte Fläche bedecken wie am Vortag.&lt;/p&gt;
-
-  &lt;p&gt;Gepflanzt wurde die erste Seerose vor dreißig Tagen. Jetzt, wo du den Teich besuchst, ist ungefähr die Hälfte der Wasseroberfläche mit Seerosen überwuchert. Es hat also dreißig Tage gedauert, bis der See halb zugewachsen war. Wenn die Seerosen genauso schnell weiterwachsen, wie viele Tage wird es noch dauern, bis der Teich komplett zugewachsen ist?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Gib erst mal eine grobe Schätzung ab und überlege dir, wie du auf diese Anzahl von Tagen kommst. Denke nicht zu kompliziert, denn die Frage lässt sich ohne große Rechnerei beantworten. Lies die Frage eventuell noch einmal genau durch und lass dich nicht reinlegen!&lt;/p&gt;
-
-&lt;div class=&quot;klappkasten&quot;&gt;
-&lt;input type=&quot;checkbox&quot; id=&quot;K1&quot; /&gt;
-&lt;label for=&quot;K1&quot;&gt;Lösung mit einem Klick hier öffnen&lt;/label&gt;
-&lt;p&gt;Sie wachsen wirklich sehr schnell, diese Seerosen. Wenn sich die bedeckte Fläche täglich verdoppelt und der See jetzt halb voll ist, – tja, dann ist der Teich schon am nächsten Tag komplett bewachsen! (Die dreißig Tage zuvor sind für die Antwort unwichtig, es hätten auch zehn oder siebzig sein können)&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Exponentielles Wachstum geht überraschend schnell. Es ist nicht so entscheidend, wie lange ein Prozess bis zum jetzigen Wert gebraucht hat, sondern welche Wachstumsrate er hat. Hier mal zum Vergleich ein &lt;strong&gt;lineares Wachstum,&lt;/strong&gt; das ist uns Menschen viel vertrauter:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/wachstum-1.png&quot; alt=&quot;Im Diagramm verläuft eine gerade Linie von links unten nach rechts oben&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Im Diagramm sieht man von links nach rechts die Zeit in Tagen. Ganz links den 1. Juli, am rechten Ende den 31. Juli. Die Höhe gibt in diesem Beispiel an, wie oft jemand diesen Monat insgesamt Zähne geputzt hat (täglich zweimal, ganz ohne Ausnahme). Die Werte steigen allmählich und in gerader Linie an, jeden Tag kommt zweimal Zähneputzen dazu. Die gestrichelte Linie deutet an, wie sich die Werte mathematisch in den kommenden Tagen entwickeln dürften. Das verläuft sehr offensichtlich und wir können das leicht abschätzen.&lt;/p&gt;
-
-&lt;p&gt;Beim &lt;strong&gt;exponentiellen Wachstum&lt;/strong&gt; dagegen wird nicht jeden Tag ein fester Wert addiert, sondern zwischen den Werten liegt ein stabiler Faktor. Damit wird der Wert vom Vortrag multipliziert. Im Diagramm ergibt sich eine Kurve, die erst recht langsam, dann aber doch immer steiler ansteigt:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/wachstum-2.png&quot; alt=&quot;Im Diagramm verläuft eine gebogene Linie. Sie steigt links unten nur wenig, nach rechts oben immer stärker&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Das Bild zeigt aber kein Seerosen-Wachstum mit Verdoppelung (= Faktor 2), sondern als schwarze Punkte die aktuellen Inzidenzzahlen in Deutschland. Das heißt, wie viele Neuinfektionen&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; registriert wurden, runtergerechnet auf 100.000 Menschen (zur besseren Vergleichbarkeit) und gemittelt auf die vergangenen 7 Tage (um Meldeflauten am Wochenende auszugleichen). Die grüne Kurve habe ich mathematisch errechnet und so gut wie möglich zwischen die Punkte gelegt. Der gestrichelte Teil gibt an, wie sich die Infektionszahlen entwickeln würden, wenn der Wachstumsfaktor bei ca. 1,05 bleibt wie in den ersten Juliwochen.&lt;/p&gt;
-
-&lt;p&gt;Die Inzidenzwerte habe ich übrigens von &lt;a href=&quot;https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&amp;amp;time=2021-07-01..latest&amp;amp;pickerSort=desc&amp;amp;pickerMetric=new_cases_smoothed&amp;amp;Metric=Confirmed+cases&amp;amp;Interval=7-day+rolling+average&amp;amp;Relative+to+Population=true&amp;amp;Align+outbreaks=false&amp;amp;country=~DEU&quot;&gt;Our World in Data&lt;/a&gt;, einer Organisation, die Forschungsdaten aus der ganzen Welt sammelt und als Diagramme darstellt. Der derzeite Anstieg kommt wohl daher, weil sich auch in Deutschland die Delta-Variante des Corona-Viruses durchgesetzt hat. Sie wurde in Indien entdeckt und ist ansteckender als die ursprüngliche Version aus China. Darum verbreitet sich die Variante stärker … bis irgendwann eine noch ansteckendere Virus-Version die Vorherrschaft übernimmt.&lt;/p&gt;
-
-&lt;p&gt;Bei exponentiellem Wachstum dümpeln die Werte immer eine Weile vor sich hin, um plötzlich und scheinbar unerwartet schnell zu steigen. Je größer dann der Wert, desto stärker wächst er weiter. Natürlich müssen sich unsere Inzidenzzahlen nicht so entwickeln, wie es eine mathematische Formel vorhersagt, schließlich bestimmen wir den konkreten Verlauf selbst. Im Diagramm sieht man, dass die aktuellen Werte mal ober-, mal unterhalb der errechneten grünen Kurve liegen.&lt;/p&gt;
-
-&lt;p&gt;Diese Pandemie ist trotz derzeit niedriger Zahlen noch nicht vorbei und unsere Nachlässigkeit macht es dem Virus leicht. Zwar sind in Deutschland inzwischen &lt;a href=&quot;https://impfdashboard.de/&quot;&gt;gut 50% vollständig geimpft&lt;/a&gt;, darum gibt es weniger schwere Krankheitsverläufe und Todesfälle – trotzdem: Covid-19 ist kein Schnupfen. Gebt auf euch acht!&lt;/p&gt;
-
-&lt;p&gt;Lust auf mehr nerdige Mathematik? Dass wir Menschen doch manche Dinge exponentiell wahrnehmen (z.B. Lautstärke oder Helligkeit), zeige ich in meinem &lt;a href=&quot;graustufen.html&quot;&gt;Artikel über gleichmäßige Graustufen&lt;/a&gt;. Und wie einfache Formeln komplizierte Muster erzeugen, könnt ihr bei meinem &lt;a href=&quot;automat.html&quot;&gt;Automaten für Pixelmuster&lt;/a&gt; ausprobieren.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1]&lt;/b&gt; Mein Vergleich mit dem Zähneputzen hinkt übrigens. Dort ergibt sich die schöne gerade Linie nämlich nur, weil ich die vergangenen Putzvorgänge aufsummiere – sonst wäre der Wert jeden Tag einfach 2. Bei der Inzidenzzahl wird dagegen nicht aufsummiert, sondern allein die &lt;em&gt;neuen&lt;/em&gt; Infektionen an jedem einzelnen Tag betrachtet, unabhängig von den vorangeganenen Tagen. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/wachstum.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/wachstum.html</guid>
-	<pubDate>Tue, 27 Jul 2021 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

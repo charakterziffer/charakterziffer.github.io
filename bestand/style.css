@@ -155,7 +155,7 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 	blockquote { padding-left: .35em; border-width: .4em; } }
 
 .hinterlegt, .klappkasten { position: relative; margin: 1.2em 0 -.15em;
-	padding: .15em .4em .3em; background-color: #deb; }
+	padding: .22em .4em .23em; background-color: #deb; }
 .hinterlegt { /* für Inline-Elemente wie h3, a oder span */
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .hinterlegt p { margin: 0; }
