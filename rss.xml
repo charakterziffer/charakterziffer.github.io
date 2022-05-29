@@ -13,6 +13,41 @@
 </image>
 
 <item>
+	<title>Was fangen wir an mit dem Tod?</title>
+	<description>&lt;p&gt;Vor ein paar Tagen habe ich die Ausstellung &lt;a href=&quot;https://dialog-mit-dem-ende.de/&quot;&gt;Dialog mit dem Ende&lt;/a&gt; an der Universität Regensburg gesehen. Sie zeigt ein Video mit Interviews, dazu eine Reihe Portraits verschiedener Personen bei sich zu Hause. Jede Person antwortet auf eine der Fragen, die als große Banner in der Mitte des Ausstellungsraums von der Decke hängen, z.B. „Gibt es einen schönen Tod?“, „Nutzen Sie Ihre Lebenszeit?“ oder „Wie alt möchten Sie werden?“&lt;/p&gt;
+
+&lt;p&gt;Mich hat an der Ausstellung beeindruckt, welche verschiedenen und ernsthaften Einstellung die Menschen zum Tod haben, einem Thema über das wir im Alltag nur wenig sprechen. Aus meinen eigenen Gedanken und einer Anfangsfrage habe ich ein Gedicht geschrieben:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Was fangen wir an mit dem Tod?&lt;br /&gt;
+Ist er die „Vollendung“ des Lebens?&lt;br /&gt;
+Ersterbenswert&lt;br /&gt;
+nach Freude und Not&lt;br /&gt;
+Und alles davor war vergebens?&lt;/p&gt;
+
+&lt;p&gt;Wenn alles, was war, Ruhe findet,&lt;br /&gt;
+Der Atem stockt&lt;br /&gt;
+das Herz nimmer bebt&lt;br /&gt;
+Getier die Verwesung verkündet:&lt;br /&gt;
+Wir haben doch trotzdem gelebt!&lt;br /&gt;
+(und bewegt, und gewebt,&lt;br /&gt;
+und gesät, und gemäht,&lt;br /&gt;
+und …)&lt;br /&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Und weil Gedichte ja nicht nur durch die Buchstaben, sondern vor allem durch ihren Klang sprechen, hier noch eine Version zum Anhören; gelesen vom Autor selbst (also von mir ☺):&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/todgedicht.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/todgedicht.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/todgedicht.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/todgedicht.html</guid>
+	<pubDate>Sun, 29 May 2022 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Umfassend informiert</title>
 	<description>&lt;p class=&quot;hinterlegt&quot;&gt;&lt;b&gt;Kurzfassung:&lt;/b&gt; Um mich zu informieren, muss ich ausgewählten Medien vertrauen. Völlige Neutralität kann mir dabei kein Medium bieten. Skeptisch werde ich, wenn ein Medienangebot beleidigende Sprache nutzt, Akteure zu klaren Feinden erklärt, anhand von Details argumentiert, angeblich zensierte Wahrheiten berichtet und mich absichtlich emotional aufwühlt.&lt;/p&gt;
 
@@ -233,48 +268,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/irrtum.html</guid>
 	<pubDate>Fri, 18 Feb 2022 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>3 Tage + 4 Tage</title>
-	<description>&lt;p&gt;Der Alltag der meisten Menschen gliedert sich in einen festen Rhythmus aus sieben Tagen: Ein verschlafener Montag, ein organisierter Dienstag, ein Mittwoch mit Bergfest, ein langer Donnerstag, ein Freitag voller Vorfreude und dann (endlich) das Wochenende: Samstag mit aufräumen, einkaufen, Freizeit, und der Sonntag zum Faulenzen oder für Zeit mit Familie und Freunden. So weit, so normal – oder?&lt;/p&gt;
-
-&lt;p&gt;Wer Schichtdienst in einem 10- oder 12-Tage-Rhythmus arbeitet, wer selbstständig oder schon in Rente ist, für den ist diese 7-Tage-Einteilung nicht ganz so selbstverständlich. Wenn man ausnahmsweise mal Dienstagmittag einkaufen geht, mittwochs Auto wäscht oder den Donnerstagmorgen im Museum verbringt, dann erlebt man eine Welt, die so ganz anders ist als gewohnt. Den eigenen Rhythmus zu verändern und zu hinterfragen, eröffnet eine neue Perspektive darauf, was ein normaler Alltag sein kann.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/hmk2022.jpg&quot; alt=&quot;Details meines Halbmonatskalenders 2022&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Auch dieses Jahr habe ich wieder einen Halbmonatkalender gestaltet, so wie &lt;a href=&quot;https://duckduckgo.com/?q=halbmonatskalender+site%3Acharakterziffer.github.io&amp;amp;kl=de-de&amp;amp;kj=281&amp;amp;kx=666&amp;amp;k9=281&amp;amp;kaa=839&amp;amp;ka=Source+Sans+Pro&quot;&gt;schon oft zuvor&lt;/a&gt;. Das besondere an dem Design ist, dass eine Woche nicht in der gleichen Zeile steht, sondern Montag bis Mittwoch oben und dann Donnerstag bis Sonntag darunter. Damit werfe ich natürlich nicht den etablierten 7-Tage-Takt über den Haufen. Aber es ist doch ungewohnt und erfordert anfangs ein Umdenken, um den Kalender zu lesen. Aus der Zweiteilung der Woche ergeben sich gestalterisch einige Vorteile:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;kompakte Anordnung&lt;/strong&gt;, so dass die Wochen sogar im Hochformat auf eine DIN-A5-Seite passen – und zwar trotzdem mit …&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Platz zum Reinschreiben&lt;/strong&gt;, nämlich rund 8&lt;small&gt; &lt;/small&gt;cm² für kurze tägliche Notizen.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;große Zahlen&lt;/strong&gt;, die sich gut lesen lassen, auch wenn der Kalender drüben an der Wand hängt.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;2–3 Wochen im Überblick&lt;/strong&gt;, um einige Tage voraus- und zurückzuschauen.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;ein frisches Konzept&lt;/strong&gt; gibt’s als Bonus oben drauf, also nicht die 08/15-Vorlage in der abgenutzten Allerweltschrift Helvetica/Arial.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Stattdessen ist die Schriftart meines Kalenders dieses Jahr &lt;a href=&quot;https://www.fontshare.com/fonts/chubbo&quot;&gt;Chubbo&lt;/a&gt; von Rafał Buchner, erschienen im März bei der &lt;a href=&quot;https://www.indiantypefoundry.com&quot;&gt;Indian Type Foundry&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;material/hmk2022.pdf&quot; download=&quot;&quot;&gt;Farb-Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 300 kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Wer Graustufen lieber mag und dafür den Kalender auf farbiges Papier drucken möchte, kann die &lt;a href=&quot;material/hmk2022sw.pdf&quot;&gt;Schwarz-Weiß-Version&lt;/a&gt; herunterladen (PDF, 298 kB). Dann auf zwölf A4-Seiten ausdrucken, auf Wunsch jedes Blatt halbieren, sortieren und die Einzelblätter zusammenheften – zum Beispiel mit einer Vielzweckklammer, mit einer Spiralbindung aus dem Copy-Shop, mit etwas Leim entlang der oberden Kante oder einfach jede Seite mittig gelocht und aufgehängt.&lt;/p&gt;
-
-&lt;p&gt;Ich freue mich sehr, wenn ihr meinen Kalender weiterempfehlt. Dafür steht er unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de&quot;&gt;CC BY-NC-SA&lt;/a&gt;). Wer den Kalender bearbeiten möchte (beispielsweise die optionalen Feiertage aufs eigene Bundesland anpassen), möge mich bitte kurz anschreiben oder hier kommentieren. Dann verschicke ich gerne die SVG-Dateien.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/kalender-2022.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2022.html</guid>
-	<pubDate>Mon, 13 Dec 2021 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
