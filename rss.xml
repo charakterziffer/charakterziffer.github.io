@@ -13,6 +13,48 @@
 </image>
 
 <item>
+	<title>Harmonische Verhältnisse</title>
+	<description>&lt;p&gt;Am 19. August 2022 hatte unser Papierformat ein Jubiläum: Die Blattgröße DIN A4 ist vor genau 100 Jahren genormt worden. Genauer gesagt war es ein ganzes System aus verschiedenen Größen – von 4mal A0 bis A10, dazu die leicht größeren B- und C-Reihen (z.&lt;small&gt; &lt;/small&gt;B. für Umschläge) und die etwas kleinere D-Reihe. Diese über 40 definierten Papiergrößen haben eines gemeinsam: Die kurze Papierseite verhält sich zur längeren wie 1 zu √2 (die Quadratwurzel aus 2, ungefähr 1,4142…).&lt;/p&gt;
+
+&lt;p&gt;Was ist das besondere an diesem krummen Seitenverhältnis? Es ist das einzige, dass gleich bleibt, wenn man das Format in der langen Seite halbiert. Faltet man ein DIN-A4-Blatt (29,7 × 21 cm) in der Mitte, entsteht ein halb so großes Blatt im Format DIN A5 (21 × 14,8 cm). Bei beiden Blättern ist die lange Seite √2-mal so lang wie die kurze.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/a-reihe.svg&quot; alt=&quot;Durch mehrmaliges Halbieren entsteht aus einem A3-Papier erst das Format A4, dann A5 und schließlich A6.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bei jedem anderen Format entsteht beim Halbieren immer abwechselnd ein breiteres oder schlankeres Rechteck. Hier beispielsweise ein Blatt mit dem Verhältnis 5 zu 6:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/3zu5-reihe.svg&quot; alt=&quot;Halbiert man ein breites Blatt mit dem Seitenverhältnis 5:6 erhält man ein schlankes Blatt im Format 3:5. Beim erneuten Halbieren landet man wieder beim Verhältnis 5:6 und so weiter.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Es hat große Vorteile, wenn Papiermaße auf einheitliche Größen genormt sind. Zum Beispiel passen Akten genau in den entsprechenden Ordner, ohne dass oben oder seitlich etwas hervorsteht; ein ausgedruckter Brief lässt sich einfach falten und geht genau in den genormten Umschlag; man kann in jedem Schreibwarenladen Druckerpapier kaufen, ohne vorher messen zu müssen, ob das Format daheim wirklich in den Drucker passt. Und durch das „magische“ Seitenverhältnis 1:√2 lassen sich Vorlagen auf dem Kopierer vergrößern und verkleinern und gehen trotzdem auf das nächstkleinere oder nächstgrößere Blatt, weil die Proportionen ja gleich bleiben.&lt;/p&gt;
+
+&lt;h2 id=&quot;praktisch-aber-langweilig&quot;&gt;Praktisch, aber langweilig&lt;/h2&gt;
+
+&lt;p&gt;Papiere im Verhältnis 1:√2 gab es schon zu Zeiten der Französischen Revolution. Auch für den Renaissance-Architekten Andrea Palladio zählte dieses Format &lt;a href=&quot;https://de.wikipedia.org/wiki/Proportion_%28Architektur%29#Renaissance&quot;&gt;zu harmonischen Seitenverhältnissen&lt;/a&gt;, die er in seinen Gebäuden zum Beispiel für Räume, Türen oder Fenster benutzt hat.&lt;/p&gt;
+
+&lt;p&gt;Eine Kritik am genormten Papierformat ist, dass es ziemlich unästhetisch sei (sagt zum Beispiel der bekannte Gestalter Erik Spiekermann im &lt;a href=&quot;https://www.deutschlandfunkkultur.de/100-jahre-din-a4-unglaublich-praktisch-unglaublich-langweilig-podcast-dlf-kultur-f5234ff9-100.html&quot;&gt;Dlf-Kultur-Beitrag über das DIN-Format&lt;/a&gt;). Meiner Meinung nach hat das viel mit Gewohnheit zu tun. Wenn jeder das gleiche Format verwendet, gilt dieses schnell als gewöhnlich, als langweiliger Standard. Alles was davon abweicht, ist interessanter.&lt;/p&gt;
+
+&lt;p&gt;Bei Büchern hat sich kein einheitliches Seitenverhältnis durchgesetzt, sondern das Format richtet sich im Idealfall nach dem Inhalt: Lyrikbände mit kurzen Gedichtzeilen sind eher schmal, mehrspaltige Nachschlagewerke eher breit, Romane liegen irgendwo dazwischen. Große Bildbände mit Landschaftsfotografien kommen manchmal sogar im Querformat daher.&lt;/p&gt;
+
+&lt;h2 id=&quot;das-allerschönste-format&quot;&gt;Das allerschönste Format&lt;/h2&gt;
+
+&lt;p&gt;Bevor sich das DIN-Format durchgesetzt hat, waren Papiere mit anderen Seitenverhältnissen üblich, zum Beispiel das schlanke, elegant wirkende Format 2:3 oder das als ruhig geltende 3:4. Aus dem Filmbereich kennt man das Bildformat 16:9 (als Querformat, so wie auch unsere Augen angeordnet sind). Ein weiteres bekanntes Seitenverhältnis ist der &lt;a href=&quot;https://de.wikipedia.org/wiki/Goldener_Schnitt&quot;&gt;Goldene Schnitt&lt;/a&gt; (ca. 1:1,618).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/formate.svg&quot; alt=&quot;Vier Rechtecke mit verschiedenen Seitenverhältnissen, so wie sie im vorhergehenden Absatz genannt wurden.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Im 19. Jahrhundert untersuchte Gustav Theodor Fechner, Begründer der Psychophysik, ob es ein bestimmtes Seitenverhältnis gibt, das wir Menschen besonders ästhetisch finden – und ob es vielleicht der berühmte Goldene Schnitt sei. In seinem Buch &lt;em&gt;Vorschule der Ästhetik&lt;/em&gt; von 1876 beschreibt er im Band 2 ab Seite 184 ein Experiment: Fast 350 Personen sollten aus zehn verschiedenen Karton-Rechtecken dasjenige aussuchen, das für sie den „wohlgefälligsten Eindruck“ mache.&lt;/p&gt;
+
+&lt;p&gt;Die &lt;a href=&quot;https://archive.org/details/vorschulederaes01fechgoog/page/n207/mode/2up?view=theater&quot;&gt;Ergebnis-Tabelle&lt;/a&gt; zeigt, dass den meisten (rund 35 %) das Rechteck mit dem Seitenverhältnis 21:34 gefiel, was auch am nächsten am Goldenen Schnitt lag. Allerdings räumt Fechner ein, dass die Teilnehmer lange zwischen verschiedenen Formaten schwankten, bei einer Wiederholung ein anderes Rechteck wählten und ermuntert werden mussten, möglichst ganz allgemein und durchschnittlich die Wohlgefälligkeit zu beurteilen, nicht nach einem bestimmten Anwendungszweck.&lt;/p&gt;
+
+&lt;p&gt;Würde man den Versuch heute wiederholen, schätze ich, dass das Rechteck im gewohnten Fernsehformat 16:9 ziemlich weit vorn dabei wäre; genau wie dasjenige im DIN-Format 1:√2. Diese Verhältnisse sind uns heute einfach sehr vertraut (und darum wohlgefällig?).&lt;/p&gt;
+
+&lt;p&gt;Ihr könnt das ja mal ausprobieren: Nehmt ein großes Blatt Papier und zeichnet Freihand und nicht zu groß ein Rechteck mit möglichst harmonischem Seitenverhältnis – gerne im Hoch- und nochmal im Querformat. Wenn ihr nachmesst: Welches Format hat es bei euch?&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/seitenverhaeltnis.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/seitenverhaeltnis.html</guid>
+	<pubDate>Wed, 14 Sep 2022 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Erfundener Zynismus, zum Glück selten</title>
 	<description>&lt;p&gt;Meine Twitterserie „Erfundene Fakten“ läuft nun seit 11&lt;small&gt; &lt;/small&gt;½ Jahren. In den letzten Monaten musste ich jedoch feststellen, dass die sonst eher witzigen, absurden und anregenden Folgen ein bisschen in Richtung Zynismus kippen (v.a. № 116, 117 und 120). Ob mir beißender Spott hilft, besser mit unschönen Dingen wie Krieg und Pandemie umzugehen? Zynisch sein angesichts der gefühlten Hilflosigkeit?&lt;/p&gt;
 
@@ -265,28 +307,6 @@ und …)&lt;br /&gt;&amp;nbsp;&lt;/p&gt;
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/informiert.html</guid>
 	<pubDate>Tue, 19 Apr 2022 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Erkrankung als Stigma</title>
-	<description>&lt;p&gt;Gestern habe ich im Büro eines Unternehmens angerufen und der Frau am Telefon mitgeteilt, dass mein Selbsttest einen blassen Strich zeigt. Es könnte also sein, dass ich corona-positiv bin. Zwei Tage vorher waren zwei Mitarbeiter des Unternehmens zu einer Besichtigung bei mir im Garten gewesen. Zwar an freier Luft, aber unser Treffen hat doch eine gute Stunde gedauert und ob wir immer ausreichend Abstand hatten …&lt;/p&gt;
-
-&lt;p&gt;Ich bat die Frau also, die beiden Mitarbeiter vorsichtshalber zu informieren, damit sie sich eventuell auch testen. Ich wisse nicht, ob ich sie nicht angesteckt haben könnte – oder vielleicht umgekehrt … sagte ich. Meinem Eindruck nach brüsk antwortete die Frau daraufhin, sie schließe aus, dass ich mich bei den Mitarbeitern angesteckt haben könnte, die beiden seien nämlich fit.&lt;/p&gt;
-
-&lt;p&gt;Womit wir beim Thema dieses Artikels wären: Können wir bei Krankheiten bitte mit Schuldzuweisungen aufhören und akzeptieren, dass es uns alle treffen kann? Es gibt mehrere Erkrankungen, die man nicht sofort erkennt und die man unabsichtlich an andere weitergibt. Ich hatte zu diesem Zeitpunkt ebenfalls keine Symptome, höchstens leichte Halsschmerzen. Erkrankte zu stigmatisieren und sich selbst für völlig immun zu halten, hat noch nie geholfen, eine Krankheit zu bekämpfen. Niemand ist gerne krank und (in der Regel) will niemand einen anderen infizieren. Warum also diese Schuldzuweisung?&lt;/p&gt;
-
-&lt;p&gt;Neben Corona fällt mir an dieser Stelle Aids ein, die Immunschwächekrankheit durch eine Ansteckung mit HIV. Nach ihrer Entdeckung Anfang der 1980er war diese Virusinfektion schnell als „Schwulenseuche“ verschrien, weil sich häufiger Männer ansteckten, die Sex mit Männern haben. Die Gesellschaft erhob den moralischen Zeigefinger zum Urteil über „verwerflichen Geschlechtsverkehr“, sprach von einer „Strafe Gottes“ und förderte damit nur, dass sich Erkrankte versteckten, sich Menschen mit Risiko nicht testen ließen, Forschung keinen Handlungsbedarf gesehen hat und Aufklärung zu sicherem Sexualverhalten weniger Chancen hatte. Ich empfehle hier das berührende und &lt;a href=&quot;https://www.kino-zeit.de/film-kritiken-trailer/120-bpm&quot;&gt;aufwühlende Drama „120 BPM“&lt;/a&gt;, in dem eine französische Aktivistengruppe Anfang der 1990er dafür kämpft, Aids nicht länger zu ignorieren oder zu stigmatisieren.&lt;/p&gt;
-
-&lt;p&gt;Ja, man kann sich zu einem gewissen Grad gegen Krankheiten schützen (bitte verwendet Kondome und tragt eine FFP2-Maske, wenn die Situation es erfordert!). Andererseits gibt es keinen hundertprozentigen Schutz. Manchmal „ergibt es sich einfach“, dass man riskanterweise erst nach dem Sex darüber nachdenkt, ob man sich ausreichend geschützt hatte; erst nach dem Treffen überlegt, ob der Raum eigentlich gut genug belüftet war. Wir Menschen brauchen soziale Kontakte und handeln nicht nur rational – gegenseitige Ansteckungen lassen sich also auch nicht immer vermeiden. Schlecht wäre, ein mulmiges Gefühl aus Sorge vor Stigmatierung zu ignorieren und so zu tun, als ob nichts gewesen wäre. Ja, vermutlich ist wirklich nichts – aber manchmal eben doch.&lt;/p&gt;
-
-&lt;p&gt;Hören wir doch auf mit Schuldzuweisungen. Wenn wir eine Erkrankung offen ansprechen, dann können wir Rücksicht aufeinander nehmen und uns gegenseitig besser schützen. Oder, liebe Frau am Telefon, wäre es Ihnen lieber gewesen, ich hätte geschwiegen und mich still geschämt, dass es mich nun auch erwischt hat? Auf die Gefahr hin, dass die Mitarbeiter die Infektion zum nächsten Kunden tragen?&lt;/p&gt;
-
-&lt;p&gt;Zum Glück erwies sich mein Selbsttest übrigens als „false positive“, ein falscher Alarm. Er war aber auch eine Mahnung, nicht überheblich auf andere zu schauen, die sich doch irgendwie angesteckt haben. Die Hausärztin meinte gestern, Corona bekämen wir sowieso alle mal. Darum bitte: Schützt euch, aber verurteilt nicht! Seid verständnisvoll und freundlich, ein Erkrankter braucht Unterstützung und nicht auch noch Scham und Schuldzuweisung.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/erkrankung.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/erkrankung.html</guid>
-	<pubDate>Thu, 31 Mar 2022 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
