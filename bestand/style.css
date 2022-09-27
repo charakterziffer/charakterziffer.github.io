@@ -25,7 +25,7 @@
 *, ::before, ::after { box-sizing: border-box; }
 body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	font: 400 1.1em/1.5 'Source Sans 3','Source Sans Pro','Segoe UI',Calibri,sans-serif;
-	font-feature-settings: 'onum', 'liga', 'kern';
+	font-variant: oldstyle-nums;
 	color: #222; background-color: #fff;
 	background-image: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
 	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
@@ -79,9 +79,8 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 h1, h2, h3, b, strong, a, form label {
 	font-family: czSlab,Georgia,serif; font-weight: bold; }
 h1, h2, h3 { letter-spacing: -.01em;
-	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
-b, strong, a, form label {
-	padding: 0 .04em; font-feature-settings: 'onum', 'liga', 'kern'; }
+	font-variant: lining-nums; }
+b, strong, a, form label { padding: 0 .04em; }
 code, pre, kbd { font: .9em/1 Monaco,Consolas,'Lucida Console','DejaVu Sans Mono',monospace; }
 
 /* Optischer Randausgleich für Blockelemente mit sichtbarem Rand */
@@ -111,8 +110,7 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
 i, em, b, strong { color: #000; }
 i, em { font-style: italic; }
-sup, sub { line-height: 0; letter-spacing: .05em;
-	font-feature-settings: 'onum' 0, 'liga', 'kern'; }
+sup, sub { line-height: 0; letter-spacing: .05em; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font-size: .8em; display: inline-block; position: relative;
 	top: -.1em; margin: 0 .2em; padding: .15em .35em .2em;
@@ -270,9 +268,7 @@ article div { -webkit-print-color-adjust: exact !important;
 
 #suchform, .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] { display: none; }
 a[href]::after { content: ' [' attr(href) ']';
-	font: italic 1rem/1.4 'Source Sans 3','Source Sans Pro','Segoe UI',Calibri,sans-serif;
-	font-feature-settings: 'onum', 'liga', 'kern';
-	width: auto; vertical-align: inherit; }
+	font: italic 1rem/1.4 'Source Sans 3','Source Sans Pro','Segoe UI',Calibri,sans-serif; width: auto; vertical-align: inherit; }
 a[href^='#']::after, a[href^='javascript']::after, header a[href]::after,
 	a[href^='archiv.html?']::after { content: ''; }
 }
