@@ -27,6 +27,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	font: 400 1.1em/1.5 'Source Sans 3','Source Sans Pro','Segoe UI',Calibri,sans-serif;
 	font-variant: oldstyle-nums;
 	color: #222; background-color: #fff;
+	accent-color: #3a1;
 	background-image: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
 	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
 	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
