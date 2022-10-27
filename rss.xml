@@ -13,6 +13,45 @@
 </image>
 
 <item>
+	<title>2023 in bewährter Form</title>
+	<description>&lt;p&gt;Wird man mit der Zeit weniger innovativ und verlässt sich nur noch auf Althergebrachtes? Oder lernt man mit der Zeit, dass man nicht immer etwas völlig Neues schaffen muss und Gutes, das sich bewährt hat, durchaus weiternutzen kann?&lt;/p&gt;
+
+&lt;p&gt;Es ist inzwischen jedenfalls schon der zwölfte kleine Wandkalender, den ich mir nach diesem Design gebaut habe. Auf jeder DIN-A5-Seite findet sich ein halber Monat (für ausreichend Vor- und Rückschau), die Zahlen sind angenehm groß (zum Lesen aus der Entfernung), es ist Platz für Termine und die Gestaltung ist klar und ansprechend. Sollte ich diese Gestaltung mal überdenken? Oder macht jede Änderung die praktische Form nur schlechter?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/hmk2023.jpg&quot; alt=&quot;Details des Kalenders 2023&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mein Kalenderdesign stelle ich hier jedenfalls wieder zum kostenlosen Download bereit. Diesmal habe ich nur eine Schwarz-Weiß-Version gemacht, die ich auf verschiedene Papiere gedruckt habe. Optional könnte man die Monatsblätter auch ganz lassen und nicht halbieren.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/hmk2023.pdf&quot; download=&quot;&quot;&gt;Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 360 kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Fürs Zusammenfügen der Blätter empfehle ich:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;eine Spiralbindung aus dem Copy-Shop, als Aufhängung einen Drahtbügel aus einer Büroklammer,&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;jede Seite exakt mittig lochen und an einen Nagel hängen,&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;obere Kante schmal mit Leim binden und auf der Rückseite mit einem Aufhänger versehen oder&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;oder alle Blätter in eine Vielzweckklammer („Foldback-Klammer“) stecken – das ist meine Methode.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Übrigens steht der Halbmonatskalender wieder unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen. Er darf also gerne verbreitet werden.&lt;/p&gt;
+
+&lt;p&gt;Falls jemand den Kalender noch bearbeiten möchte (zum Beispiel die optionalen Feiertage aufs eigene Bundesland anpassen), bitte mich einfach kurz anschreiben. Dann verschicke ich gerne die SVG-Dateien. Für 2023 habe ich mich für die Schrift &lt;a href=&quot;https://fonts.google.com/specimen/Crimson+Pro&quot;&gt;Crimson Pro&lt;/a&gt; von Jacques Le Bailly entschieden.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/kalender-2023.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2023.html</guid>
+	<pubDate>Thu, 27 Oct 2022 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Harmonische Verhältnisse</title>
 	<description>&lt;p&gt;Am 19. August 2022 hatte unser Papierformat ein Jubiläum: Die Blattgröße DIN A4 ist vor genau 100 Jahren genormt worden. Genauer gesagt war es ein ganzes System aus verschiedenen Größen – von 4mal A0 bis A10, dazu die leicht größeren B- und C-Reihen (z.&lt;small&gt; &lt;/small&gt;B. für Umschläge) und die etwas kleinere D-Reihe. Diese über 40 definierten Papiergrößen haben eines gemeinsam: Die kurze Papierseite verhält sich zur längeren wie 1 zu √2 (die Quadratwurzel aus 2, ungefähr 1,4142…).&lt;/p&gt;
 
@@ -207,106 +246,6 @@ und …)&lt;br /&gt;&amp;nbsp;&lt;/p&gt;
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/todgedicht.html</guid>
 	<pubDate>Sun, 29 May 2022 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Umfassend informiert</title>
-	<description>&lt;p class=&quot;hinterlegt&quot;&gt;&lt;b&gt;Kurzfassung:&lt;/b&gt; Um mich zu informieren, muss ich ausgewählten Medien vertrauen. Völlige Neutralität kann mir dabei kein Medium bieten. Skeptisch werde ich, wenn ein Medienangebot beleidigende Sprache nutzt, Akteure zu klaren Feinden erklärt, anhand von Details argumentiert, angeblich zensierte Wahrheiten berichtet und mich absichtlich emotional aufwühlt.&lt;/p&gt;
-
-&lt;p&gt;Wie erfährst du, was in der Welt vor sich geht? Wie bekommst du ein vollständiges Bild wichtiger Ereignisse? Wie verhinderst du, etwas Relevantes zu verpassen? – Die kurze Antwort: Gar nicht. Weltweit, ach was: allein in deinem Ort geschieht täglich so vieles, dass du nicht alles erfahren kannst. Und das ist nicht schlimm. Es wird auf dein Leben vermutlich kaum Auswirkungen haben, wenn sich drüben im Viertel ein junger Mann den Arm bricht oder der Finanzminister in Peru zurücktritt.&lt;/p&gt;
-
-&lt;p&gt;Andererseits sind bestimmte Ereignisse wichtig oder interessant für dich und du möchtest darüber gerne informiert sein. Geschieht etwas außerhalb deines persönlichen Umfeldes, so erfährst du davon normalerweise durch Medien: Durch Fernsehnachrichten, eine WhatsApp-Gruppe, durch Radiomeldungen, das lokale Mitteilungsblatt, aus deiner Twitter-Timeline, durch eine Zeitschrift oder Zeitung, … Ob du willst oder nicht: Medien tragen dazu bei, welchen Blick du auf Entwicklungen hast und wie du die Lage in der Welt beurteilst.&lt;/p&gt;
-
-&lt;h2 id=&quot;du-siehst-nur-einen-ausschnitt&quot;&gt;Du siehst nur einen Ausschnitt&lt;/h2&gt;
-
-&lt;p&gt;Weil du nicht den lieben langen Tag nur Medien konsumieren kannst (was vermutlich nicht gesund wäre), musst du eine Auswahl treffen. Liest du lieber diesen Hintergrundbericht in dem Tauchermagazin, scrollst du noch ein Stück durch Instagram, schaltest du die 8-Uhr-Nachrichten ein, markierst du die Telegram-Gruppenposts ungesehen als gelesen, blätterst du doch nochmal durch die Zeitung von der Nachbarin oder das Pfarrblatt deiner Gemeinde? (Medienkonsum ist übrigens nicht immer nur Information, sondern auch Unterhaltung.)&lt;/p&gt;
-
-&lt;p&gt;Durch deine eigene Auswahl bestimmst du, was du über deine Umwelt erfährst, aber auch welche Perspektive dir geboten wird! Denn jedes einzelne Medium hat ebenfalls schon ausgewählt, wie und worüber es berichtet. Keine Radiosendung, kein Nachrichtenmagazin, kein Facebook-Account, keine Zeitung, einfach kein einziges Medium wird dir ein vollständiges Bild liefern können. Dagegen spricht die Fülle der Ereignisse, der begrenzte Platz (auf den Papierseiten, innerhalb der Sendezeit oder in deiner Aufmerksamkeitsspanne), die anvisierte Zielgruppe eines Mediums, (Qualitäts-)Kriterien einer Redaktion, eine bestimme Bewertung was relevant ist und vieles andere.&lt;/p&gt;
-
-&lt;h2 id=&quot;neutralität-kann-es-nicht-geben&quot;&gt;Neutralität kann es nicht geben&lt;/h2&gt;
-
-&lt;p&gt;Selbst eine Nachrichtensendung wie die Tagesschau, die (zumindest meinem Eindruck nach) für Objektivität und Ausgewogenheit steht, kann nur einen Ausschnitt liefern. Wie ich sie einschätze, legt die Tagesschau ihren Schwerpunkt stark auf politische Entwicklungen und eher auf Deutschland und Europa. Du wirst in den täglichen 15 Minuten kaum von einer Theaterpremiere in Frankfurt erfahren, nichts über die Cricket-Weltmeisterschaft, nichts über eine afrikanische Vogelart oder über die fortschreitende Monopolisierung auf dem Markt für Computerschriften. Informationen dieser Art lässt die Tagesschau bewusst weg, muss sie weglassen – ohne böse Absicht. Wer erwartet, alles von der Welt zu wissen, indem er jeden Tag nur fünfzehn Minuten Nachrichten guckt, den muss ich hier enttäuschen.&lt;/p&gt;
-
-&lt;p&gt;Bei (guten) Medien hängt die Auswahl der übermittelten Informationen von den oben genannten Begrenzungen ab (Platz, Zielgruppe, Qualität, Relevanz, …). Dazu kommen dann Termindruck, Fehleinschätzungen (überall arbeiten Menschen), begrenztes Budget (z.B. für aufwendige Recherchen), Erwartungshaltungen der einzelnen Journalisten usw. Innerhalb dieser Grenzen und Möglichkeiten versuchen diese Medien dennoch, möglichst umfassend, ausgewogen und angemessen zu berichten. Vielleicht machen sie sogar transparent, wenn Informationen noch unklar/unbestätigt sind, wie sie arbeiten und korrigieren nachvollziehbar, wenn ihnen ein Fehler unterläuft.&lt;/p&gt;
-
-&lt;p&gt;Andererseits gibt ganz klar Medienangebote, denen es nicht darum geht, ihr Publikum möglichst neutral zu informieren. Im besten Fall gehen diese Angebote offen damit um, ein bestimmtes Ziel zu verfolgen, sich für eine Sache einzusetzen und Aktivismus zu betreiben – zum Beispiel für Klimaschutz, für wirtschaftliche Liberalisierung, für mehr bürgerliche Mitbestimmung, etc. Die Grenze zwischen sachlicher Information und … sagen wir: Motivation des Publikums ist fließend.&lt;/p&gt;
-
-&lt;h2 id=&quot;warum-manipulieren-manche-medien&quot;&gt;Warum manipulieren manche Medien?&lt;/h2&gt;
-
-&lt;p&gt;Eindeutig überschritten ist die Grenze, wenn ein Medium seine Leser:innen oder Zuschauer:innen manipulieren möchte. Wenn Sachverhalte so einseitig dargestellt werden, dass sich die Realität nicht mehr erkennen lässt; wenn Fakten verdreht oder erfunden werden und das Publikum zu einer bestimmte Sichtweise gebracht werden soll. Gründe für eine Manipulation können sein:&lt;/p&gt;
-
-&lt;h3 id=&quot;geld-verdienen-durch-aufmerksamkeit&quot;&gt;Geld verdienen durch Aufmerksamkeit&lt;/h3&gt;
-
-&lt;p&gt;Natürlich muss fast jedes Medium Geld verdienen, um weiterhin arbeiten zu können. Nur weil eine Publikation Geld verlangt oder Anzeigen schaltet, ist sie noch lange nicht korrupt oder betrügerisch. Bei einigen Akteuren geht es aber hauptsächlich ums Geld. Mit teils erfundenen Geschichten wird ein Publikum an sich gebunden, um über Verkäufe und Werbeeinnahmen Profit zu generieren. Dazu zähle ich zum Beispiel die Regenbogenpresse, die auf ihren Titelseiten unglaubliches über Prominente verspricht, um dann im Heftinneren entweder Banales zu enthüllen oder &lt;a href=&quot;https://uebermedien.de/tag/topf-voll-gold/&quot;&gt;glatt Gelogenes zu verbreiten&lt;/a&gt;. Der Witz: Auch wenn diese Zeitschriften vor Gericht immer wieder gegen ihre prominenten Opfer verlieren, verdienen sie durch Verkäufe genug, um Prozesskosten begleichen zu können.&lt;/p&gt;
-
-&lt;h3 id=&quot;macht-einer-bestimmten-gruppe-vergrößern&quot;&gt;Macht einer bestimmten Gruppe vergrößern&lt;/h3&gt;
-
-&lt;p&gt;Das gilt besonders für Medien, die bestimmten Parteien nahestehen. Hier können Ereignisse einseitig dargestellt werden (z.B. „So schaden Flüchtlinge unserem Sozialsystem“), damit ausgewähle Politiker anschließend ihre scheinbaren Lösung anpreisen können („Knallhartes Abschieben“). Warum Menschen wirklich flüchten, dass unser Sozialsystem durchaus Einwanderer benötigt und Abschieben manchmal sogar Menschenrechte verletzt, wird man in diesen Medien nicht erfahren. Ihnen geht es darum, Menschen durch Stimmungsmache zu politischen Entscheidungen zu bewegen und bevorzugten Parteien mehr Einfluss zu verschaffen. Vergleichbares kann es für Unternehmen, Verbände oder andere Interessengruppen geben.&lt;/p&gt;
-
-&lt;h3 id=&quot;verunsichern-und-gesellschaften-spalten&quot;&gt;Verunsichern und Gesellschaften spalten&lt;/h3&gt;
-
-&lt;p&gt;Hier bewegen wir uns zum Beispiel auf dem Feld staatlich kontrollierter Medien. Sie geben sich als journalistisch ausgewogen und aufklärend, verbreiten aber nur die Regierungslinie, stellen internationale Konflikte einseitig dar, stilisieren die eigene Nation zum Opfer, rufen zu Widerstand auf ohne aber zunächst umfassend und differenziert zu informieren. Das Ziel ist, die eigene Bevölkerung auf Regierungslinie zu bringen. Im Ausland versuchen solche Medien Kritiker zu mobilisieren und mit falschen Tatsachen aufzuhetzen. Es geht darum, das Vertrauen in den ausländischen Staat, in Gerichte oder anderweitige Offizielle zu schwächen. Das trägt dazu bei, Gesellschaften im Ausland zu destabilisieren, eine Spaltung herbeizuführen und fremde Staaten allgemein zu schwächen.&lt;/p&gt;
-
-&lt;h2 id=&quot;woran-erkenne-ich-unglaubwürdige-medien&quot;&gt;Woran erkenne ich unglaubwürdige Medien?&lt;/h2&gt;
-
-&lt;p&gt;Es gibt kein Patentrezept, um manipulierende Medien auszumachen. Eine leichte Skepsis ist jedem Medium gegenüber ganz gut, wenn man akzeptiert, dass es ohne Vertrauen auch nicht geht. Mit der Zeit lernt man ein Medienangebot kennen, merkt welche thematischen Schwerpunkte es setzt, welche Färbung es vielleicht hat, wie es mit eigenen Fehlern umgeht, wie gut Hintergründe beleuchtet werden, welche Gesprächspartner zu welchen Fragen zu Wort kommen, wie gut ein Meinungsartikel begründet wird, über welche Ereignisse man dort nichts erfährt, wie sorgfältig recherchiert und dargestellt wird.&lt;/p&gt;
-
-&lt;p&gt;Wenn mir in einem neuen Medium ein Beitrag unterkommt, gibt es einige Alarmzeichen, auf die ich achte:&lt;/p&gt;
-
-&lt;h3 id=&quot;diffamierung&quot;&gt;Diffamierung&lt;/h3&gt;
-
-&lt;p&gt;Ein gutes Medium muss selbst bei schärfster Kritik niemanden beleidigen. Wo Personen und besonders Politiker als &lt;em&gt;Hanswurst&lt;/em&gt;, &lt;em&gt;Lobbyhure&lt;/em&gt; oder schlimmeres bezeichnet werden, da höre ich auf zu lesen. Mögliche Ausnahmen im Einzelfall könnten bewusst spöttische oder ironische Texte sein (z.B. &lt;a href=&quot;https://wortwuchs.net/glosse/&quot;&gt;eine Glosse&lt;/a&gt;), doch die sollten dann verdammt gut argumentieren und ein gesellschaftliches Thema durchdacht bearbeiten. Über einen Hasstext das Etikett „Satire“ zu kleben, zeigt bloß, dass deren Autor:in nichts von Satire versteht.&lt;/p&gt;
-
-&lt;h3 id=&quot;schwarz-weiß-malerei&quot;&gt;Schwarz-Weiß-Malerei&lt;/h3&gt;
-
-&lt;p&gt;Ja, es gibt eindeutige Fälle von Opfer und Täter. Sehr oft haben Ereignisse aber eine Vorgeschichte, es gibt unterschiedliche Bewertungen oder eine angeblich einheitliche Gruppe ist in Wahrheit vielstimmig. Wer Fronten aufzieht, um dann eine Seite zu verdammen, der sollte auch sehr genau ausführen, warum er das tut. Besser finde ich Medien, die wichtige Fakten liefern und einordnen, Zusammenhänge erklären und es mir selbst überlassen, die Akteure zu beurteilen. Ein Stichwort ist hier &lt;a href=&quot;https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/159987/konfliktsensibler-journalismus/&quot;&gt;konfliktsensibler Journalismus&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Eine oft konstruierte Front sind sogeannte „Mainstream-Medien“. Etablierte Medien mit großer Reichweite werden trotz ihrer Vielfalt unter einen Hut gesteckt und als gesteuert oder einseitig dargestellt. Ganz egal, ob sie &lt;em&gt;taz&lt;/em&gt; (eher links), &lt;em&gt;ZDFneo&lt;/em&gt; (vor allem Unterhaltung), &lt;em&gt;FAZ&lt;/em&gt; (eher konservativ) oder &lt;em&gt;n-tv&lt;/em&gt; (informationslastig) sind. Wer ein ganzes Spektrum an Medien als einheitliche und noch dazu unglaubwürdige Gruppe vorführt, den beurteile ich als nicht sehr verlässlich.&lt;/p&gt;
-
-&lt;h3 id=&quot;rosinen-picken&quot;&gt;Rosinen-Picken&lt;/h3&gt;
-
-&lt;p&gt;In vermutlich allem findet sich ein Detail, was der generellen Einschätzung entgegensteht. Vielleicht kümmerte sich der Foltermeister ganz herzzerreißend um niedliche Kaninchen – und hat Hitler mit seinen Autobahnen nicht für eine hervorragende Infrastruktur gesorgt? Ja, Details sind wichtig. Wenn ein Medium aber das große Ganze ausblendet, um anhand ausgewählter Einzelheiten das Gegenteil zu behaupten, verliert es bei mir an Glaubwürdigkeit.&lt;/p&gt;
-
-&lt;h3 id=&quot;angebliche-zensur&quot;&gt;Angebliche Zensur&lt;/h3&gt;
-
-&lt;p&gt;In Deutschland hat innerhalb der gültigen Gesetze jeder die Möglichkeit, seine Meinung zu äußern. Ja, es gibt schwierige Themen, Skandale und unbequeme Wahrheiten, die nicht leicht an die Öffentlichkeit zu bringen sind. Zum Beispiel ist es derzeit schwer, sachlich über die vorhandenen &lt;a href=&quot;https://www.deutschlandfunk.de/corona-covid-impfung-impfschaeden-100.html&quot;&gt;Nebenwirkungen der Corona-Impfungen&lt;/a&gt; zu diskutieren. Das liegt aber nicht am Thema selbst, sondern daran, dass die Impfdebatte durch überzogene Behauptungen ziemlich vergiftet ist.&lt;/p&gt;
-
-&lt;p&gt;Es stimmt auch, dass man sich nicht &lt;em&gt;überall&lt;/em&gt; zu allen möglichen Themen äußern darf – zum Beispiel wird man schnell aus einem Kindergartenforum fliegen, wenn man über Aktfotografie sprechen möchte. Für den Hinduismus zu argumentieren dürfte bei &lt;em&gt;Vatican News&lt;/em&gt; auch nicht gern gesehen sein. All das ist aber noch lange keine Zensur, denn natürlich gibt es viele andere Orte, wo ich mich sehr wohl über die Vorzüge hinduistischer Aktfotografie äußern kann.&lt;/p&gt;
-
-&lt;p&gt;Schließlich kann in wenigen Fällen ein Gesetz tatsächlich eine Art Zensur zur Folge haben, wie meiner Meinung nach beim sogenannten &lt;a href=&quot;https://www.anwalt.org/ampelkoalition-will-werbeverbot-fuer-abtreibung-abschaffen/&quot;&gt;Werbeverbot für Abtreibung&lt;/a&gt;. Das sind aber wirklich Ausnahmen. Wer laut „Zensur“ ruft, ist meistens nur unzufrieden, weil andere ihm widersprechen. Und die angeblich unterdrückte Meinung ist leider oftmals nur Hetze, Beleidigung oder sie ignoriert allgemein akzeptierte Fakten.&lt;/p&gt;
-
-&lt;h3 id=&quot;emotionalisierung&quot;&gt;Emotionalisierung&lt;/h3&gt;
-
-&lt;p&gt;Ebenfalls skeptisch bin ich, wenn Medien mich dazu bringen wollen, mich betroffen oder wütend zu fühlen. Das machen auch einige Sendungen im öffentlich-rechtlichen Fernsehen, zum Beispiel &lt;a href=&quot;https://www.zdf.de/politik/frontal&quot;&gt;Frontal&lt;/a&gt;. Zwar traue ich dieser Redaktion schon zu, sauber zu recherchieren und Missstände aufzudenken – aber die Art der Präsentation zielt mir zu sehr darauf, mich zu empören. Wenn ich mich informiere, möchte ich einen klaren Kopf bewahren und nicht aufgewühlt werden. Empörung mag zwar schneller zu einer Handlung motivieren, macht es aber schwerer, die Glaubwürdigkeit und Wichtigkeit eines Berichts zu beurteilen.&lt;/p&gt;
-
-&lt;h2 id=&quot;wie-treffe-ich-meine-medien-auswahl&quot;&gt;Wie treffe ich meine Medien-Auswahl?&lt;/h2&gt;
-
-&lt;p&gt;Bin ich umso besser informiert, je mehr Medien in konsumiere? Das finde ich nicht. Was hilft es, mir regelmäßig Vorträge, Artikel oder Reportagen aus zweifelhafter Quelle anzusehen? Durch eine &lt;a href=&quot;https://de.wikipedia.org/wiki/Falsche_Ausgewogenheit&quot;&gt;falsche Ausgewogenheit&lt;/a&gt; gewinne ich keinen wahrhaftigeren Eindruck. In Einzelfällen „gönne“ ich mir etwas abseitigere Angebote, um deren Argumente und Weltbilder zu hinterfragen. Aber meine Zeit ist begrenzt und anstatt mich an kruden oder unverständlichen Behauptungen abzuarbeiten, möchte ich mich lieber mit gesicherten Informationen versorgen und mir auf deren Grundlage eine Meinung zum Weltgeschehen bilden.&lt;/p&gt;
-
-&lt;p&gt;Medien sind wie Freunde. Man lernt sie nach und nach kennen, weiß um ihre Eigenheiten und merkt, ob man sich auf sie verlassen kann. So empfehle ich, sich einige Medien „zum Freund zu machen“, die voneinander unabhängig über ein breites Themenspektrum berichten. Ob ein Medien eher meiner Meinung entspricht, ist für mich übrigens kein Qualitätskriterium. Im Gegenteil: Ich konsumiere immer wieder bewusst Beiträge, mit denen ich nicht übereinstimme. Im besten Fall versorgen mich solche Medien mit unbekannten Fakten und liefern neue Argumente. So kann ich meinen eigenen Standpunkt überdenken oder aber festigen.&lt;/p&gt;
-
-&lt;p&gt;Kommt mir ein Medium unter, bei dem einige der Alarmglöckchen klimpern, überprüfe ich gerne, ob sich Dritte schon einmal mit dieser Informationsquelle beschäftigt haben. Es gibt gute und verlässliche Angebote, die Entwicklungen im Medienmarkt beobachten und kritisch begleiten, zum Beispiel das Medienmagazin &lt;a href=&quot;https://www.ndr.de/fernsehen/sendungen/zapp/&quot;&gt;Zapp vom NDR&lt;/a&gt;, &lt;a href=&quot;https://www.deutschlandfunk.de/mediasres&quot;&gt;@mediasres vom Deutschlandfunk&lt;/a&gt; oder das privat organisierte &lt;a href=&quot;https://uebermedien.de/&quot;&gt;Magazin Übermedien&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Es lohnt sich, über die Motivation eines Mediums nachzudenken. Man kann Rückschlüsse daraus ziehen, welche Themen und Meinungen auf der Startseite präsentiert werden. Mir hilft das, einzelne Artikel dieses Anbieters einzuordnen. Bei einer unbekannten Website schaue ich oft in die Selbstbeschreibung („Über uns“), gucke wer im Impressum steht und suche im Netz, ob ich über diese Personen sonst etwas finden kann.&lt;/p&gt;
-
-&lt;p&gt;Einen breiten Überblick zu aktuellen Themen können sogenannte „Presseschauen“ bieten. Die gibt es zum Beispiel täglich &lt;a href=&quot;https://www.deutschlandfunk.de/presseschau-100.html&quot;&gt;vom Deutschlandfunk&lt;/a&gt; (auch für &lt;a href=&quot;https://www.deutschlandfunk.de/internationale-presseschau-100.html&quot;&gt;internationale Zeitungen&lt;/a&gt;) oder von &lt;a href=&quot;https://www.mdr.de/mdr-aktuell-nachrichtenradio/presseschau100.html&quot;&gt;MDR aktuell&lt;/a&gt;; zu ausgewählten Anlässen von der &lt;a href=&quot;https://www.sueddeutsche.de/thema/Presseschau&quot;&gt;Süddeutschen Zeitung&lt;/a&gt; oder dem &lt;a href=&quot;https://www.stern.de/politik/deutschland/themen/presseschau-4174180.html&quot;&gt;Stern&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Wichtig für eine verlässliche, ausgewogene Presseschau ist, dass vor allem anerkannte Quellen zusammengeführt werden und die Auswahl nicht einseitig getroffen wird. Bei meiner Recherche bin ich zum Beispiel auf eine „Presseschau“ gestoßen, die zwar farblich kennzeichnet, ob sie russische, ukrainische oder internationale Websites zitiert, dann aber vor allem Artikel des russischen Staatssenders &lt;em&gt;RT&lt;/em&gt; listet (markiert als international) und quasi gar keine ukrainischen Medien zu Wort kommen lässt (oder nur zu Problemen wie Rechtsradikalität im Land). Diese „Presseschau“ war am fehlenden Impressum aber sehr leicht als unseriös zu „entlarven“.&lt;/p&gt;
-
-&lt;p&gt;Bei aller Skepsis: Medien sind unerlässlich, um sich zu informieren. Wer niemandem Vertrauen schenkt, entfernt sich ebenfalls von der Realität und macht sich anfällig für Beeinflussung.&lt;/p&gt;
-
-&lt;h2 id=&quot;noch-fragen&quot;&gt;Noch Fragen?&lt;/h2&gt;
-
-&lt;p&gt;Dieser Artikel gibt sehr umfangreich meine persönliche Einschätzung wieder. Ich habe bewusst nur wenige konkrete Medien-Empfehlungen gegeben, sondern versucht, Werkzeuge für die eigene Auswahl bereitzustellen. Viele verwandte Aspekte habe ich ausgelassen, z.&lt;small&gt; &lt;/small&gt;B.: Sollten eindeutige Propaganda-Medien gesperrt werden? Kann ein subjektiver Meinungsartikel falsch sein? Was ist noch Satire? Wie überprüfe ich Informationen? Vertragen sich Journalismus und Aktivismus? Sind öffentlich-rechtliche besser als Privatsender? Wie sieht gute Fehlerkultur aus? Was sind journalistische Grundsätze? etc.&lt;/p&gt;
-
-&lt;p&gt;Habt ihr noch Anmerkungen zum Thema „Medien auswählen“? Sind Fragen offen geblieben? Dann her damit in den Kommentaren!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update 19. April 2022, 14:50 Uhr:&lt;/strong&gt; Eben habe ich einen Online-Test der Medienanstalt Berlin-Brandenburg gefunden, der dabei hilft, die eigene Medienkompetenz einzuschätzen. Wie gut kannst du zwischen Nachricht, Kommentar und Werbung unterscheiden? Erkennst du einen unglaubwürdige Absender? Hast du Basiswissen zu deutschen Medien? Der Test steht unter &lt;a href=&quot;https://der-newstest.de/&quot;&gt;https://der-newstest.de/&lt;/a&gt;, die Beatwortung der Fragen dauert etwa eine Viertelstunde.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/informiert.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/informiert.html</guid>
-	<pubDate>Tue, 19 Apr 2022 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
