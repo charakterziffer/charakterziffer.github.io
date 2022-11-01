@@ -78,6 +78,9 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 background: linear-gradient(#fff, #fff 50%, #000 50%, #000); }
 @media (min-width: 30.7em) { #ubstrahlg {
 background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
+@media screen and (prefers-color-scheme: dark) {
+#ubstrahlg { filter:invert(1) hue-rotate(180deg); }
+#ubstrahlg img {filter:none; opacity: 1;} }
 -->
 </style>
 

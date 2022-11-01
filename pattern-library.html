@@ -15,8 +15,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="referrer" content="strict-origin">
 
-<title>@cz+ // Blog von Gerhard Großmann</title>
-<meta name="description" content="Hier schreibt Gerhard Großmann aus Hohenfels (Oberpfalz) über Typografie, Design, Origami, Medien, Kreativität & was mich sonst noch anregt.">
+<title>Pattern-Library für @cz+ // @cz+</title>
+<meta name="description" content="In dieser Datei sind Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
 <meta name="robots" content="index, follow">
@@ -26,7 +26,7 @@
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/&choe=UTF-8);
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/pattern-library.html&choe=UTF-8);
 position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
 
 <link rel="icon" href="/bestand/favicon.png">
@@ -36,18 +36,13 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@charakterziffer">
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
-<meta property="og:title" content="@cz+ // Blog von Gerhard Großmann">
-<meta property="og:description" content="Hier schreibt Gerhard Großmann aus Hohenfels (Oberpfalz) über Typografie, Design, Origami, Medien, Kreativität & was mich sonst noch anregt.">
-
-<!-- Verifikation für opendesktop.org -->
-<meta name="ocs-site-verification" content="bec9e99a94ee44a9a7685b1e6758def5">
-<!-- Verifikation für mein Mastodon-Profil -->
-<link rel="me" href="https://troet.cafe/@charakterziffer">
+<meta property="og:title" content="Pattern-Library für @cz+">
+<meta property="og:description" content="In dieser Datei sind Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Der Kurzinhalt hat bei Google 150 Zeichen.">
 </head>
 
 <body>
 <header>
-<a><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
 <div>
 <form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
@@ -70,14 +65,10 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 </header>
 
 <main>
-<h1 id="manches-braucht-mehr-als-280zeichen">Manches braucht mehr als 280 Zeichen …</h1>
-
-<p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
-
 <article>
-	<time datetime="2022-12-31">Sa, 31. Dez. 2022</time>
-	<h1><a href="pattern-library.html">Pattern-Library für @cz+</a></h1>
-	<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
+<time datetime="2022-12-31">Sa, 31. Dez. 2022</time>
+<h1>Pattern-Library für @cz+</h1>
+<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
 
 <p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="https://direktadresse.de/">https://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:address@example.com">address@example.com</a> (mit Spamschutz).</p>
 
@@ -368,124 +359,82 @@ url('material/UnifrakturMaguntia.ttf') format('truetype');}
 
 <p><b id="note1">[1] Kleine Fußnote:</b> Hier wird ein Detail näher erläutert. <a href="#ziffer1">[↑]</a></p>
 
-	<p>---<br /><a href="pattern-library.html#kommentare">3 Kommentare</a>
-	</p>
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+
+<a href="archiv.html?sujet">#sujet&nbsp; </a>
+</p>
 </article>
 
-<article>
-	<time datetime="2022-10-27">Do, 27. Okt. 2022</time>
-	<h1><a href="kalender-2023.html">2023 in bewährter Form</a></h1>
-	<p>Wird man mit der Zeit weniger innovativ und verlässt sich nur noch auf Althergebrachtes? Oder lernt man mit der Zeit, dass man nicht immer etwas völlig Neues schaffen muss und Gutes, das sich bewährt hat, durchaus weiternutzen kann?</p>
+<section id="kommentare">
+	<h2>3 Kommentare</h2>
 
-<p>Es ist inzwischen jedenfalls schon der zwölfte kleine Wandkalender, den ich mir nach diesem Design gebaut habe. Auf jeder DIN-A5-Seite findet sich ein halber Monat (für ausreichend Vor- und Rückschau), die Zahlen sind angenehm groß (zum Lesen aus der Entfernung), es ist Platz für Termine und die Gestaltung ist klar und ansprechend. Sollte ich dieses Design mal überdenken? Oder macht jede Änderung die praktische Form nur schlechter?</p>
+	<time datetime="2014-07-12 12:34">12.7.2014, 12:34 Uhr</time>
+	<h3 id="k1"><a href="#k1" style="color:inherit;">#1</a>
+	<a href="https://karls-website.de">Karl Kommentator</a>
+	</h3>
+	<p>Dies hier ist der Kommentar, der <i>Formatierungen</i> und <b>Hervorhebungen</b>, <code>Codebeispiele</code>, <a href="example.com">Links</a> und ein Bild <svg width=".8em" height=".8em" viewBox="0 0 14 14" preserveAspectRatio="xMinYMin meet"><g id="rss" style="stroke-width:2;"><path style="fill:#839; stroke:#839" d="M 13,13 13,1 1,1 1,13 Z" /><circle style="fill:none; stroke:#fff" cx="7" cy="7" r="4" /></g></svg> enthalten kann.</p> <p>Neue Absätze müssen um &lt;p&gt; ergänzt werden. Single Quotes müssen maskiert werden (&#39;).</p>
+	<hr>
 
-<p><img src="material/hmk2023.jpg" alt="Details des Kalenders 2023" /></p>
+	<time datetime="2014-07-13 09:20">13.7.2014, 9:20 Uhr</time>
+	<h3 id="k2"><span class="hinterlegt"><a href="#k2" style="color:inherit;">#2</a>
+	<a href="https://charakterziffer.github.io">Gerhard Großmann</a>
+	</span></h3>
+	<p>Das meine Antwort, die hervorgehoben wird.</p> <p>Auch hier müsste ich neue Absatze händisch mit einem eingeschobenen p-Tag ermöglichen.</p>
+	<hr>
 
-<p>Mein Kalenderdesign stelle ich hier jedenfalls wieder zum kostenlosen Download bereit. Diesmal habe ich nur eine Schwarz-Weiß-Version gemacht, die ich auf verschiedene Papiere gedruckt habe. Optional könnte man die Monatsblätter auch ganz lassen und nicht halbieren.</p>
+	<time datetime="2017-09-01 12:41">1.9.2017, 12:41 Uhr</time>
+	<h3 id="k3"><a href="#k3" style="color:inherit;">#3</a>
+	
+	</h3>
+	<p>Ein Kommentar völlig ohne Absender. Hier wird nur die Nummer des Kommentars angezeigt sowie das Datum mit Uhrzeit</p>
+	<hr>
+</section>
 
-<p><a href="material/hmk2023.pdf" download="">Kalender herunterladen<br /><em>(PDF-Datei, 360 kB)</em></a></p>
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
 
-<p>Fürs Zusammenfügen der Blätter empfehle ich:</p>
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/pattern-library">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="4">
 
-<ul>
-  <li>
-    <p>eine Spiralbindung aus dem Copy-Shop, als Aufhängung einen Drahtbügel aus einer Büroklammer,</p>
-  </li>
-  <li>
-    <p>jede Seite exakt mittig lochen und an einen Nagel hängen,</p>
-  </li>
-  <li>
-    <p>obere Kante schmal mit Leim binden und auf der Rückseite mit einem Aufhänger versehen oder</p>
-  </li>
-  <li>
-    <p>oder alle Blätter in eine Vielzweckklammer („Foldback-Klammer“) stecken – das ist meine Methode.</p>
-  </li>
-</ul>
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
 
-<p>Übrigens steht der Halbmonatskalender wieder unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen. Er darf also gerne verbreitet werden.</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
 
-<p>Falls jemand den Kalender noch bearbeiten möchte (zum Beispiel die optionalen Feiertage aufs eigene Bundesland anpassen), bitte mich einfach kurz anschreiben. Dann verschicke ich gerne die SVG-Dateien. Die Schrift des Kalenders ist 2023 übrigens <a href="https://fonts.google.com/specimen/Crimson+Pro">Crimson Pro</a> von Jacques Le Bailly.</p>
 
-	<p>---<br /><a href="kalender-2023.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="kalender-2023.html">← 2023 in bewährter Form</a></p>
 
-<article>
-	<time datetime="2022-09-14">Mi, 14. Sept. 2022</time>
-	<h1><a href="seitenverhaeltnis.html">Harmonische Verhältnisse</a></h1>
-	<p>Am 19. August 2022 hatte unser Papierformat ein Jubiläum: Die Blattgröße DIN A4 ist vor genau 100 Jahren genormt worden. Genauer gesagt war es ein ganzes System aus verschiedenen Größen – von 4mal A0 bis A10, dazu die leicht größeren B- und C-Reihen (z.<small> </small>B. für Umschläge) und die etwas kleinere D-Reihe. Diese über 40 definierten Papiergrößen haben eines gemeinsam: Die kurze Papierseite verhält sich zur längeren wie 1 zu √2 (die Quadratwurzel aus 2, ungefähr 1,4142…).</p>
-
-<p>Was ist das besondere an diesem krummen Seitenverhältnis? Es ist das einzige, dass gleich bleibt, wenn man das Format in der langen Seite halbiert. Faltet man ein DIN-A4-Blatt (29,7 × 21 cm) in der Mitte, entsteht ein halb so großes Blatt im Format DIN A5 (21 × 14,8 cm). Bei beiden Blättern ist die lange Seite √2-mal so lang wie die kurze.</p>
-
-<p><img src="material/a-reihe.svg" alt="Durch mehrmaliges Halbieren entsteht aus einem A3-Papier erst das Format A4, dann A5 und schließlich A6." /></p>
-
-<p>Bei jedem anderen Format entsteht beim Halbieren immer abwechselnd ein breiteres oder schlankeres Rechteck. Hier beispielsweise ein Blatt mit dem Verhältnis 5 zu 6:</p>
-
-<p><img src="material/3zu5-reihe.svg" alt="Halbiert man ein breites Blatt mit dem Seitenverhältnis 5:6 erhält man ein schlankes Blatt im Format 3:5. Beim erneuten Halbieren landet man wieder beim Verhältnis 5:6 und so weiter." /></p>
-
-<p>Es hat große Vorteile, wenn Papiermaße auf einheitliche Größen genormt sind. Zum Beispiel passen Akten genau in den entsprechenden Ordner, ohne dass oben oder seitlich etwas hervorsteht; ein ausgedruckter Brief lässt sich einfach falten und geht genau in den genormten Umschlag; man kann in jedem Schreibwarenladen Druckerpapier kaufen, ohne vorher messen zu müssen, ob das Format daheim wirklich in den Drucker passt. Und durch das „magische“ Seitenverhältnis 1:√2 lassen sich Vorlagen auf dem Kopierer vergrößern und verkleinern und gehen trotzdem auf das nächstkleinere oder nächstgrößere Blatt, weil die Proportionen ja gleich bleiben.</p>
-
-<h2 id="praktisch-aber-langweilig">Praktisch, aber langweilig</h2>
-
-<p>Papiere im Verhältnis 1:√2 gab es schon zu Zeiten der Französischen Revolution. Auch für den Renaissance-Architekten Andrea Palladio zählte dieses Format <a href="https://de.wikipedia.org/wiki/Proportion_%28Architektur%29#Renaissance">zu harmonischen Seitenverhältnissen</a>, die er in seinen Gebäuden zum Beispiel für Räume, Türen oder Fenster benutzt hat.</p>
-
-<p>Eine Kritik am genormten Papierformat ist, dass es ziemlich unästhetisch sei (sagt zum Beispiel der bekannte Gestalter Erik Spiekermann im <a href="https://www.deutschlandfunkkultur.de/100-jahre-din-a4-unglaublich-praktisch-unglaublich-langweilig-podcast-dlf-kultur-f5234ff9-100.html">Dlf-Kultur-Beitrag über das DIN-Format</a>). Meiner Meinung nach hat das viel mit Gewohnheit zu tun. Wenn jeder das gleiche Format verwendet, gilt dieses schnell als gewöhnlich, als langweiliger Standard. Alles was davon abweicht, ist interessanter.</p>
-
-<p>Bei Büchern hat sich kein einheitliches Seitenverhältnis durchgesetzt, sondern das Format richtet sich im Idealfall nach dem Inhalt: Lyrikbände mit kurzen Gedichtzeilen sind eher schmal, mehrspaltige Nachschlagewerke eher breit, Romane liegen irgendwo dazwischen. Große Bildbände mit Landschaftsfotografien kommen manchmal sogar im Querformat daher.</p>
-
-<h2 id="das-allerschönste-format">Das allerschönste Format</h2>
-
-<p>Bevor sich das DIN-Format durchgesetzt hat, waren Papiere mit anderen Seitenverhältnissen üblich, zum Beispiel das schlanke, elegant wirkende Format 2:3 oder das als ruhig geltende 3:4. Aus dem Filmbereich kennt man das Bildformat 16:9 (als Querformat, so wie auch unsere Augen angeordnet sind). Ein weiteres bekanntes Seitenverhältnis ist der <a href="https://de.wikipedia.org/wiki/Goldener_Schnitt">Goldene Schnitt</a> (ca. 1:1,618).</p>
-
-<p><img src="material/formate.svg" alt="Vier Rechtecke mit verschiedenen Seitenverhältnissen, so wie sie im vorhergehenden Absatz genannt wurden." /></p>
-
-<p>Im 19. Jahrhundert untersuchte Gustav Theodor Fechner, Begründer der Psychophysik, ob es ein bestimmtes Seitenverhältnis gibt, das wir Menschen besonders ästhetisch finden – und ob es vielleicht der berühmte Goldene Schnitt sei. In seinem Buch <em>Vorschule der Ästhetik</em> von 1876 beschreibt er im Band 2 ab Seite 184 ein Experiment: Fast 350 Personen sollten aus zehn verschiedenen Karton-Rechtecken dasjenige aussuchen, das für sie den „wohlgefälligsten Eindruck“ mache.</p>
-
-<p>Die <a href="https://archive.org/details/vorschulederaes01fechgoog/page/n207/mode/2up?view=theater">Ergebnis-Tabelle</a> zeigt, dass den meisten (rund 35 %) das Rechteck mit dem Seitenverhältnis 21:34 gefiel, was auch am nächsten am Goldenen Schnitt lag. Allerdings räumt Fechner ein, dass die Teilnehmer lange zwischen verschiedenen Formaten schwankten, bei einer Wiederholung ein anderes Rechteck wählten und ermuntert werden mussten, möglichst ganz allgemein und durchschnittlich die Wohlgefälligkeit zu beurteilen, nicht nach einem bestimmten Anwendungszweck.</p>
-
-<p>Würde man den Versuch heute wiederholen, schätze ich, dass das Rechteck im gewohnten Fernsehformat 16:9 ziemlich weit vorn dabei wäre; genau wie dasjenige im DIN-Format 1:√2. Diese Verhältnisse sind uns heute einfach sehr vertraut (und darum wohlgefällig?).</p>
-
-<p>Ihr könnt das ja mal ausprobieren: Nehmt ein großes Blatt Papier und zeichnet Freihand und nicht zu groß ein Rechteck mit möglichst harmonischem Seitenverhältnis – gerne im Hoch- und nochmal im Querformat. Wenn ihr nachmesst: Welches Format hat es bei euch?</p>
-
-	<p>---<br /><a href="seitenverhaeltnis.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
-<p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
-
-<h1 id="sonstiges">Sonstiges</h1>
-
-<h2 id="warum-charakterziffer">Warum „Charakterziffer“?</h2>
-
-<p>Das Wort kombiniert Persönlichkeit (Charakter) mit Sachlichem (Ziffer). Zusammengesetzt ergibt sich ein Synonym für <a href="https://de.wikipedia.org/wiki/Medi%C3%A4valziffer">Mediävalziffer</a>, eine Zahlenvariante mit Ober- und Unterlängen.</p>
-
-<h2 id="schriftarten-dieses-blogs">Schriftarten dieses Blogs</h2>
-
-<p>Wenn dein Browser eingebettete Schriften (WOFF2) unterstützt, dann liest du die Fließtexte hier in der <a href="https://blog.typekit.com/2012/08/02/source-sans-pro/">Source Sans Pro</a> von Paul D. Hunt, erschienen 2012 bei Adobe.</p>
-
-<p>Die Überschriften sind aus der czSlab gesetzt, die ich für dieses Blog gestaltet habe. Sie orientiert sich an <a href="https://yanone.de/">Yanone</a>s viel ausgefeilterer <a href="https://www.fontshop.com/families/ff-antithesis/">Antithesis</a> von 2014.</p>
-
-<hr />
-
-<h2 id="impressum">Impressum/Datenschutz</h2>
-
-<h3 id="anbieterkennzeichnung-nach-tmg-5">Anbieterkennzeichnung nach TMG §5:</h3>
-
-<p>Gerhard Großmann · Asamstraße 10 · 92366 Hohenfels<br />
-E-Mail: postfach2b [ät] web.de (<a href="bestand/pub-0x9BA6621B.asc">PGP-Schlüssel</a>), SMS: <span style="margin-right:0.2em">0178</span><span style="margin-right:0.2em">/</span><span style="margin-right:0.2em">196</span><span style="margin-right:0.2em">19</span>14</p>
-
-<h3 id="rechtliche-hinweise">Rechtliche Hinweise</h3>
-
-<p><strong>§<small> </small>1 Externe Links</strong> · Dieses Blog verlinkt auf Websites Dritter. Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
-
-<p><strong>§<small> </small>2 Datenschutzerklärung</strong> · Mir ist der Schutz deiner Daten sehr wichtig. Deshalb verzichte ich auf Cookies, vermeide möglichst Dienste von Drittanbietern und erhebe so wenige Daten wie es geht. Diese Website kann ohne die Angabe persönlicher Daten genutzt werden.</p>
-
-<p>Die einzige Ausnahme sind Kommentare. Wenn du einen meiner Texte kommentierst, bekomme ich die eingegebenen Daten und eine Zeitangabe per (prinzipiell unsicherer) E-Mail zugestellt. Falls dein Kommentar sachlich zur Diskussion beiträgt, ergänze ich ihn öffentlich sichtbar unter dem entsprechenden Artikel. Dabei sind sämtliche Angaben freiwillig (Name, Website, Mailadresse, Kommentar) – auch <a href="anonym-kommentieren.html">anonyme Kommentare</a> sind möglich.</p>
-
-<p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
-
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2022-11-01T16:17:23+01:00</p>
-
+<p style="clear:both;" class="no-print"></p>
 </main>
 
 <aside>

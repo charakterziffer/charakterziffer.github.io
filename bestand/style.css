@@ -238,6 +238,15 @@ input[type='submit'] { -webkit-appearance: button; }
 	form > div > div { float: none; width: 98.5%; }
 	form input[type=text],form input[type=email],form input[type=url] { width: 100%; } }
 
+/* DARKMODE */
+
+@media screen and (prefers-color-scheme: dark) {
+html, /* alles filtern, aber zurückdrehen bei folgendem: */
+img:not([src$='.svg']), .icon-ccbysa::after, iframe, video {
+	filter: invert(1) hue-rotate(180deg); }
+img, iframe { opacity: .8; }
+iframe { background-color: #ccc; } }
+
 /* ANPASSUNGEN FÜR DEN DRUCK */
 
 @media print {

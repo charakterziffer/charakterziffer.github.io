@@ -68,7 +68,11 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <article>
 <time datetime="2020-02-20">Do, 20. Feb. 2020</time>
 <h1>Gleichmäßig wirkende Graustufen</h1>
-<style> p { font-feature-settings: 'onum' 0, 'liga', 'kern'; } </style>
+<style>
+p { font-variant: lining-nums; }
+@media screen and (prefers-color-scheme: dark) {
+img[src$='.svg'] { filter:invert(1) hue-rotate(180deg); } }
+</style>
 
 <!-- SVG-Symbol ⁹√ für weiter unten -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">

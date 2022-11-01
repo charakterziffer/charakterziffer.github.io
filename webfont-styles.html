@@ -86,6 +86,11 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <p>Meistens wird vergessen, dass der Browser Überschriften oder Hervorhebungen mit <code>&lt;strong&gt;</code> standardmäßig fett darstellt. Wenn man seine Beispielschrift nun wie oben verlinkt und einfach einer Überschrift zuweist, wird der Browser zu rechnen beginnen. Er verfettet die Schrift künstlich, da er ja nur die Datei für den Normalschnitt vorfindet.</p>
 
+<style>
+@media screen and (prefers-color-scheme: dark) {
+img[src$=".png"] { filter:none; } }
+</style>
+
 <p><img src="material/verfettet.png" alt="Künstlich verfettete Schrift verglichen mit echtem Fettschnitt" /></p>
 
 <p>Manchmal klappt die künstliche Verfettung relativ gut, abhängig vom Browser und der Schrift. Sie sieht aber <em>immer schlechter</em> aus als der richtige Fettschnitt. Fettgerechnete Buchstaben wirken oft klecksig, i-Punkte kleben am Stamm, kleine Öffnungen laufen zu und die Schrift wird schlechter lesbar. Ähnliches gilt für kursive Schriftschnitte.</p>

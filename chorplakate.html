@@ -90,6 +90,8 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 .bild2 { background-position: 0 66.67%; }
 .bild3 { background-position: 0 33.33%; }
 .bild4 { background-position: 0 0; }
+@media screen and (prefers-color-scheme: dark) {
+[class^="bild"] { filter:invert(1) hue-rotate(180deg); opacity:.8; } }
 -->
 </style>
 
