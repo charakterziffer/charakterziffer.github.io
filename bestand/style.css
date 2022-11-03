@@ -1,11 +1,5 @@
 /* CSS zum Blog @cz+, verfasst von Gerhard Großmann */
 
-/* Farben: #281[+#060] (grün), #3a1 (hellgrün), #deb (blassgrün)
-	Akzente: #839 (lila), #ece (blasslila), #c2b (pink)
-	Grautöne: #666 (Datum), #ccc (hr) und hsla(0,0%,92%,.7)
-		(aside, code, figure, blockquote, kbd)
-	Text: #222, #000 (kursiv & fett), #333 (Titel h1 & h2) */
-
 /* Schriften: Source Sans 3 Regular & Italic, czSlab */
 @font-face { font-family: 'Source Sans 3';
 	font-style: normal; font-weight: 400;
@@ -20,31 +14,65 @@
 	src: url(czSlab.woff2) format('woff2');
 	font-display: fallback; }
 
+/* FARBEN */
+:root {
+	--text-stark: #000; --text-basis: #222; --text-matt: #333;
+	--grau-basis: #666; --grau-matt: #ccc; --nebelgrau: hsla(0,0%,92%,.7);
+	--hintergrund: #fff; --schatten: rgba(0,0,0,.15); --licht: #fff;
+
+	--gruen-stark: #060; --gruen-basis: #281;
+	--gruen-aktiv: #3a1; --gruen-blass: #deb;
+	--akzent-basis: #839; --akzent-aktiv: #c2b;
+	--akzent-blass: #ece; /* hier nicht verwendet */
+
+	--hg-bild: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
+	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
+	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
+	linear-gradient(90deg, transparent 51rem, var(--gruen-blass) 80%, var(--gruen-aktiv) 100%); }
+
+@media screen and (prefers-color-scheme: dark) {
+:root { --text-stark: #fff; --text-basis: #ddd; --text-matt: #ccc;
+	--grau-basis: #999; --grau-matt: #444; --nebelgrau: hsla(0,0%,15%,.7);
+	--hintergrund: #000; --schatten: hsla(0,0%,50%,.7); --licht: hsla(0,0%,100%,.15);
+
+	--gruen-stark: #7c3; --gruen-basis: #5a4;
+	--gruen-aktiv: #8e2; --gruen-blass: #230;
+	--akzent-basis: #94a; --akzent-aktiv: #c4d;
+	--akzent-blass: #404; /* hier nicht verwendet */
+
+	--hg-bild: repeating-linear-gradient(110deg, transparent, rgba(0,0,0,.4) 91px, rgba(0,0,0,.1) 214px),
+	repeating-linear-gradient(10deg, transparent, rgba(0,0,0,.1) 130px, rgba(0,0,0,.2) 243px),
+	repeating-linear-gradient(325deg, transparent, rgba(0,0,0,.3) 81px, rgba(0,0,0,.3) 293px),
+	linear-gradient(90deg, transparent 51rem, var(--gruen-stark) 80%, var(--gruen-aktiv) 100%); }
+iframe { background-color: #eee; }
+img, iframe { opacity: .8; }
+.icon-rss::after, input, textarea {
+	filter: invert(1) hue-rotate(180deg); }
+	/* background-color an Form-Elementen würden auch den border-style ändern */
+}
+
 /* GRUNDSÄTZLICHES LAYOUT */
 
 *, ::before, ::after { box-sizing: border-box; }
 body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	font: 400 1.1em/1.5 'Source Sans 3','Source Sans Pro','Segoe UI',Calibri,sans-serif;
 	font-variant: oldstyle-nums;
-	color: #222; background-color: #fff;
-	accent-color: #3a1;
-	background-image: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
-	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
-	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
-	linear-gradient(90deg, transparent 51rem, #deb 80%, #3a1 100%); }
+	color: var(--text-basis); background-color: var(--hintergrund);
+	accent-color: var(--gruen-aktiv);
+	background-image: var(--hg-bild); }
 @media (max-width: 45em) {
 	body { padding: 1.4em 2% 2.1em 3%; line-height: 1.4;
-	border-top: .4em solid #3a1; } }
+	border-top: .4em solid var(--gruen-aktiv); } }
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
 
-/*body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .5em / auto .758em } /* Grundlinienraster */
+/*body { background: var(--hintergrund) linear-gradient(red .06em, transparent 0) 0 .5em / auto .758em } /* Grundlinienraster */
 
 header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
 
 header { display: flex; flex-wrap: wrap; margin-bottom: 2.8em; }
-header a { color: #333 !important; font-size: 1.05em; }
+header a { color: var(--text-matt) !important; font-size: 1.05em; }
 header > a { flex:1; align-self: center; padding:0;
 	font-size: 1.7em; line-height: 1; }
 header img { float: left; margin-right: .4em; margin-top: -.02em;
@@ -58,7 +86,7 @@ header > div:nth-child(2) {
 nav ul { margin: 0; padding: 0; list-style: none; }
 nav li { display: inline-block; margin-bottom: .4em; }
 nav li a { padding: .25em .4em .2em; }
-nav a:hover, nav a:focus { background-color: #deb; }
+nav a:hover, nav a:focus { background-color: var(--gruen-blass); }
 
 @media (min-width: 71.5em) { nav { display: none; } }
 
@@ -68,7 +96,7 @@ nav a:hover, nav a:focus { background-color: #deb; }
 	nav { margin-left: -.4em; } }
 
 aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
-	background-color: hsla(0,0%,92%,.7); }
+	background-color: var(--nebelgrau); }
 @media (min-width: 71.5em) { aside { position: absolute; top: .4em;
 	left: 48em; right: 1.5em; max-width: 24em; } }
 @media (max-width: 45em) { aside { margin: 1.4em -2% -2.1em -3.2%; } }
@@ -94,9 +122,9 @@ time { padding-right: 1.2% }
 /* ÜBERSCHRIFTEN */
 
 h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */;
-	margin: 1.5em 0 .5em -.04em; color: #333; }
+	margin: 1.5em 0 .5em -.04em; color: var(--text-matt); }
 h2 { font-size: 1.4em; line-height: 1.071 /* 1.5÷1.4 */;
-	margin: 1.25em 0 -.179em -.02em; color: #333; }
+	margin: 1.25em 0 -.179em -.02em; color: var(--text-matt); }
 h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
 	margin: 1.2em 0 -.518em -.01em; }
 
@@ -109,27 +137,27 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
 .no-hyphens { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
 
-i, em, b, strong { color: #000; }
+i, em, b, strong { color: var(--text-stark); }
 i, em { font-style: italic; }
 sup, sub { line-height: 0; letter-spacing: .05em; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font-size: .8em; display: inline-block; position: relative;
 	top: -.1em; margin: 0 .2em; padding: .15em .35em .2em;
-	background-color: hsla(0,0%,92%,.7); border: 1px solid #666; border-radius: .2em; box-shadow: .08em .05em 0 rgba(0,0,0,.15), .15em .15em 0 #fff inset; }
+	background-color: var(--nebelgrau); border: 1px solid var(--grau-basis); border-radius: .2em; box-shadow: .08em .05em 0 var(--schatten), .15em .15em 0 var(--licht) inset; }
 
 /* bei Datumsangabe eines Artikels, im Archiv und bei Kommentaren */
-time { display: block; float: right; padding-left: 1em; color: #666; }
+time { display: block; float: right; padding-left: 1em; color: var(--grau-basis); }
 #kommentare time:first-of-type { margin-top: 1.2em; }
 /* Wenn Fenster schmal, dann rechts oberhalb der Überschrift */
 @media (max-width: 32em) { time { margin-top: -1.6em; }
 	#kommentare time { margin-top: 0; } }
 
-hr { margin: 1.9em 0 1.23em; color: #ccc; }
+hr { margin: 1.9em 0 1.23em; color: var(--grau-matt); }
 
 /* Angepasste Farbe für ::selection? Dagegen spricht https://alistapart.com/article/paint-the-picture-not-the-frame/#section6 */
-::selection { background: #deb; color: #000; }
+::selection { background: var(--gruen-blass); color: var(--text-stark); }
 .hinterlegt::selection, a[download]::selection, .klappkasten ::selection,
-.hinterlegt ::selection, a[download] ::selection { background: #fff; }
+.hinterlegt ::selection, a[download] ::selection { background: var(--hintergrund); }
 
 /* LISTEN, CODE, ZITATBLÖCKE */
 
@@ -141,20 +169,20 @@ ol ol { list-style: lower-alpha; }
 li p { margin: .75em 0; }
 
 pre, code { margin: 1.5em 0 1.167em; padding: .05em .2em;
-	border-radius: .1em; background-color: hsla(0,0%,92%,.7);
+	border-radius: .1em; background-color: var(--nebelgrau);
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
 pre > code { font-size: 1em; line-height: 1.667; white-space: pre-wrap;
 	background-color: transparent; }
 
 blockquote { margin: 1.35em 0 1.4em; padding: 0 .4em;
-	border-left: .75em solid #deb; background-color: hsla(0,0%,92%,.7); }
+	border-left: .75em solid var(--gruen-blass); background-color: var(--nebelgrau); }
 blockquote + blockquote { margin-top: 1.75em; }
 blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 @media (max-width: 32em) {
 	blockquote { padding-left: .35em; border-width: .4em; } }
 
 .hinterlegt, .klappkasten { position: relative; margin: 1.2em 0 -.15em;
-	padding: .22em .4em .23em; background-color: #deb; }
+	padding: .22em .4em .23em; background-color: var(--gruen-blass); }
 .hinterlegt { /* für Inline-Elemente wie h3, a oder span */
 	-webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .hinterlegt p { margin: 0; }
@@ -164,7 +192,7 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 	height: 2.1em; opacity: 0; cursor: pointer; }
 .klappkasten label { cursor: pointer; }
 .klappkasten:focus-within {
-	outline:2px dotted #666; outline-offset:1px; }
+	outline:2px dotted var(--grau-basis); outline-offset:1px; }
 .klappkasten:focus-within:not(:focus-visible) { outline: none; }
 
 .klappkasten label::before { content: '→'; padding-right: .3em; }
@@ -178,24 +206,24 @@ blockquote > h1, blockquote > h2, blockquote > h3 { padding-top: .25em; }
 
 /* LINKS (Schrift: Siehe oben bei b, strong) */
 
-a { text-decoration: none; color: #281; }
-aside a, .hinterlegt a, figcaption a, blockquote a { color: #060; }
-a:visited { color: #839; }
-a:hover { color: #3a1; }
+a { text-decoration: none; color: var(--gruen-basis); }
+aside a, .hinterlegt a, figcaption a, blockquote a { color: var(--gruen-stark); }
+a:visited { color: var(--akzent-basis); }
+a:hover { color: var(--gruen-aktiv); }
 aside a:hover,.hinterlegt a:hover,figcaption a:hover,blockquote a:hover {
-	color: #281; }
-a:active { color: #c2b; }
-a:focus { outline: 2px dotted #666; outline-offset: 1px; }
+	color: var(--gruen-basis); }
+a:active { color: var(--akzent-aktiv) }
+a:focus { outline: 2px dotted var(--grau-basis); outline-offset: 1px; }
 a:focus:not(:focus-visible) { outline: none; }
 
 :target { background-color: transparent; animation: target-fade 2s; }
-@keyframes target-fade { 0% { background-color: #deb; } }
+@keyframes target-fade { 0% { background-color: var(--gruen-blass); } }
 
 a[download] { margin: 2.06em auto; padding: .35em .4em .4em;
-	display: block; max-width: 18em; text-align: center; color: #222;
-	font: inherit; background-color: #deb; border: .065em solid #281;
-	box-shadow: 1px 1px 2px rgba(0,0,0,.15); }
-a[download]:hover { border-color: #839; box-shadow: none; }
+	display: block; max-width: 18em; text-align: center; color: var(--text-basis);
+	font: inherit; background-color: var(--gruen-blass); border: .065em solid var(--gruen-basis);
+	box-shadow: 1px 1px 2px var(--schatten); }
+a[download]:hover { border-color: var(--akzent-basis); box-shadow: none; }
 @media (max-width: 25em) { a[download] { margin: 2.06em 1.5em; } }
 
 /* BILDER, AUDIO-ELEMENT */
@@ -203,10 +231,10 @@ a[download]:hover { border-color: #839; box-shadow: none; }
 img, figure { line-height: 0; border: 0; }
 p > img { margin: .6em 0 .25em; } /* Extra-Abstand */
 
-figure { margin: 1.65em 0 1.45em; background-color: hsla(0,0%,92%,.7); }
+figure { margin: 1.65em 0 1.45em; background-color: var(--nebelgrau); }
 figure img { max-width: 100%; }
 figcaption { padding: .4em .6em .3em; font-style: italic;
-	font-size: .9em; line-height: 1.667; color: #000; }
+	font-size: .9em; line-height: 1.667; color: var(--text-stark); }
 
 .icon-rss::after, .icon-ccbysa::after { margin: 0 .15em 0 .4em;
 	padding: 0; vertical-align: -.15em; display: inline-block; }
@@ -237,15 +265,6 @@ input[type='submit'] { -webkit-appearance: button; }
 	form label { float: none; top: 0; width: 100%; }
 	form > div > div { float: none; width: 98.5%; }
 	form input[type=text],form input[type=email],form input[type=url] { width: 100%; } }
-
-/* DARKMODE */
-
-@media screen and (prefers-color-scheme: dark) {
-html, /* alles filtern, aber zurückdrehen bei folgendem: */
-img:not([src$='.svg']), .icon-ccbysa::after, iframe, video {
-	filter: invert(1) hue-rotate(180deg); }
-img, iframe { opacity: .8; }
-iframe { background-color: #ccc; } }
 
 /* ANPASSUNGEN FÜR DEN DRUCK */
 

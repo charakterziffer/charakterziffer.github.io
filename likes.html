@@ -133,6 +133,9 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 #toggle-heart:focus + label { outline: 2px dotted #666; outline-offset: -7px; }
 #toggle-heart:focus:not(:focus-visible) + label { outline: none; }
 #toggle-heart:checked + label { transition-duration: .4s; background-position: -700px 0; }
+
+@media screen and (prefers-color-scheme: dark) {
+	#toggle-heart + label {filter:invert(1) hue-rotate(180deg);} }
 </style>
 
 

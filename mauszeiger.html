@@ -75,9 +75,9 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 .cursor-demo { padding: .75em 1em; display: grid;
 	grid-gap: 1em; grid-auto-rows: minmax(4.5em, auto);
 	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
-.cursor-demo > div { color: #666; background: #fff; display: flex;
+.cursor-demo > div { color: var(--grau-basis); background: var(--hintergrund); display: flex;
 	justify-content: center; align-items: center; margin: 0;
-	box-shadow: 2px 2px 4px rgba(0,0,0,.3); }
+	box-shadow: 2px 2px 4px var(--schatten) }
 
 @supports not (display: grid) {
 	.cursor-demo { display: flex; flex-wrap: wrap; }
@@ -90,10 +90,6 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 @media (min-width: 25.3em) {
 	a[download] { float:left; margin: 1.038em 5%; width: 40%; } }
-
-@media screen and (prefers-color-scheme: dark) {
-.cursor-demo > div { box-shadow: 2px 2px 4px hsla(0,0%,100%,.6); }
-img[src$='.svg'], svg { filter:invert(1) hue-rotate(180deg); } }
 -->
 </style>
 
