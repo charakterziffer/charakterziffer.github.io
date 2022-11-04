@@ -46,7 +46,7 @@
 	linear-gradient(90deg, transparent 51rem, var(--gruen-stark) 80%, var(--gruen-aktiv) 100%); }
 iframe { background-color: #eee; }
 img, iframe { opacity: .8; }
-.icon-rss::after, input, textarea {
+.icon-rss::after {
 	filter: invert(1) hue-rotate(180deg); }
 	/* background-color an Form-Elementen würden auch den border-style ändern */
 }
