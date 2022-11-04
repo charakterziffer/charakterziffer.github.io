@@ -45,7 +45,7 @@
 	repeating-linear-gradient(325deg, transparent, rgba(0,0,0,.3) 81px, rgba(0,0,0,.3) 293px),
 	linear-gradient(90deg, transparent 51rem, var(--gruen-stark) 80%, var(--gruen-aktiv) 100%); }
 iframe { background-color: #eee; }
-img, iframe { opacity: .8; }
+img, iframe { filter: brightness(.8); }
 .icon-rss::after {
 	filter: invert(1) hue-rotate(180deg); }
 	/* background-color an Form-Elementen würden auch den border-style ändern */
