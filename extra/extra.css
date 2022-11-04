@@ -9,6 +9,9 @@
 	repeating-linear-gradient(325deg, transparent, rgba(0,0,0,.3) 81px, rgba(0,0,0,.3) 293px),
 	linear-gradient(90deg, transparent 51rem, var(--akzent-blass) 80%, var(--akzent-basis) 100%); } }
 
+@media (max-width: 45em) {
+	body { border-top-color: var(--akzent-basis); } }
+
 header img, a[download], blockquote { filter: hue-rotate(182deg); }
 
 aside { display: none; }

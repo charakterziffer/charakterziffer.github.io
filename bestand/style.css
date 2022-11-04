@@ -62,7 +62,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	background-image: var(--hg-bild); }
 @media (max-width: 45em) {
 	body { padding: 1.4em 2% 2.1em 3%; line-height: 1.4;
-	border-top: .4em solid var(--gruen-aktiv); } }
+	border-top: .4em solid var(--gruen-basis); } }
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
 
