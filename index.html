@@ -78,304 +78,6 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Auf dieser Website ist Platz für das, wofür mein Twitterprofil <a href="https://www.twitter.com/charakterziffer">@charakterziffer</a> nicht ausreicht. Mein Blog ist als Plus zu meinen Tweets gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
-	<time datetime="2022-12-31">Sa, 31. Dez. 2022</time>
-	<h1><a href="pattern-library.html">Pattern-Library für @cz+</a></h1>
-	<p>In dieser Datei sind möglichst alle Stile und Vorlagen vorhanden, die in meinem Blog angewendet werden können. Das ist ein <a href="index.html" title="zur Startseite">interner Link</a>, in diesem Fall ein bereits besuchter. Ein <a href="https://äößü.de/" title="Umlautseite">unbesuchter Link</a> sieht so aus. Wie verlinke ich dann <a href="#anker" title="zum Anker">einen Seitenanker</a>? Übrigens kann man <a href="https://google.de">den Titel des Links</a> auch weglassen.</p>
-
-<p>Falls man keinen Extra-Linktext braucht, verlinkt man einfach so <a href="https://direktadresse.de/">https://direktadresse.de/</a> (klappt nur bei externen Links). Das geht auch für Mailadressen: <a href="mailto:address@example.com">address@example.com</a> (mit Spamschutz).</p>
-
-<p>Aus Lesbarkeitsgründen im Markdown-Text kann man auch <a href="https://example.com/" title="Diese Links hier">Referenzlinks</a> verwenden. Sie lagern die <a href="https://beispiel.de/" title="tauchen im Quelltext">Linkadresse</a> einfach an eine beliebige Stelle im Dokument aus, machen im <a href="https://пример.ru/" title="im vorangehenden Absatz auf.">HTML-Quelltext</a> aber keinen Unterschied.</p>
-
-<h2 id="hervorhebungen-h2-überschrift">Hervorhebungen (H2-Überschrift)</h2>
-
-<p><em>Kursive Textstellen</em> werden mit einem Stern umschlossen, <strong>fette Hervorhebungen</strong> bekommen zwei Sterne. Man kann auch Wort<em>bestand</em>teile hervorheben. Falls tatsächlich ein *Sternchen* gemeint ist, entschäft man es mit einem Backslash. Für Tastenkombinationen gibt es den &lt;kbd&gt;-Tag, den man beispielsweise für <kbd>Strg</kbd> + <kbd>+</kbd> verwenden kann.</p>
-
-<h3 id="weitere-formatierungen-h3-überschrift">Weitere Formatierungen (H3-Überschrift)</h3>
-
-<p>Kurze <code>Codeschnippsel</code> zeichnet man mit einem Gravis aus. Praktischerweise werden <code>&lt;html&gt;</code>-Sonderzeichen wie spitze Klammern oder „<code>Kaufmanns-&amp;</code>“ gleich umgewandelt.</p>
-
-<h2 id="farben">Farben</h2>
-
-<p>Die Grundfarbe meines Blogs ist <span class="hinterlegt" style="background-color:var(--gruen-basis); color:var(--hintergrund);">Grün</span>, das bei Link-Hover zu <span class="hinterlegt" style="background-color:var(--gruen-aktiv); color:var(--hintergrund)">Hellgrün</span> wird. Als Akzentfarbe gibt es <span class="hinterlegt" style="background-color:var(--akzent-basis); color:var(--hintergrund);">Lila</span> (z.B. für besuchte Links), sowie <span class="hinterlegt" style="background-color:var(--akzent-aktiv); color:var(--hintergrund);">Pink</span> für Hervorhebungen.</p>
-
-<p>Grundtexte und kleine Titel bekommen ein <span class="hinterlegt" style="background-color:var(--text-basis); color:var(--hintergrund)">Antrazit</span>, das für <span class="hinterlegt" style="background-color:var(--text-stark); color:var(--hintergrund)"> Kursiv schwarz</span> und für <span class="hinterlegt" style="background-color:var(--text-matt); color:var(--hintergrund);">größere Titel etwas heller</span> wird. Außerdem verwende ich hellere Grautöne fürs <span class="hinterlegt" style="background-color:var(--grau-basis); color:var(--hintergrund);">Datum</span> und für <span class="hinterlegt" style="background-color:var(--grau-matt);">Trennlinien</span>.</p>
-
-<p>Für Hinterlegungen stehen <span class="hinterlegt" style="background-color:var(--gruen-blass)">Blassgrün</span> und <span class="hinterlegt" style="background-color:var(--akzent-blass)">Blasslila</span> zur Verfügung. Dazu ein <span class="hinterlegt" style="background-color:var(--nebelgrau)">durchscheinendes Nebelgrau</span> für Bilduntertitel, Code, Zitate und Aside.</p>
-
-<h2 id="unsortierte-und-sortierte-listen">Unsortierte und sortierte Listen</h2>
-
-<ul>
-  <li>eine unsortierte Lise
-    <ol>
-      <li>Mit Fehler</li>
-      <li>nicht korrekt!</li>
-    </ol>
-  </li>
-  <li>nein, eine Liste
-    <ul>
-      <li>ein Unterpunkt</li>
-      <li>noch einer</li>
-    </ul>
-  </li>
-  <li>aber unsortiert</li>
-</ul>
-
-<p>Unsortierte Listen bitte nicht für Tweets verwenden. Dafür kommen Zitatblöcke zum Einsatz (siehe unten). Hier noch eine sortierte Liste:</p>
-
-<ol>
-  <li>Hund
-    <ul>
-      <li>braun</li>
-      <li>schwarz</li>
-    </ul>
-  </li>
-  <li>Katze
-    <ol>
-      <li>Molli</li>
-      <li>Hansl</li>
-    </ol>
-  </li>
-  <li>Maus</li>
-</ol>
-
-<p>Übrigens kann eine Liste auch aus Punkten mit mehreren Absätzen bestehen.</p>
-
-<ul>
-  <li>
-    <p>Dies ist ein Listenpunkt mit zwei Absätzen</p>
-
-    <p>Dies ist der zweite Absatz in diesem Listenpunkt. Nur die erste Zeile muss eingerückt sein. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-  </li>
-  <li>
-    <p>Ein weiterer Punkt in der selben Liste.</p>
-  </li>
-  <li>
-    <p>Und noch ein Absatz</p>
-  </li>
-</ul>
-
-<p>Der Abstand zwischen Listen mit Absatzen ist größer als bei Listen mit einzelnen Stichpunkten. Erstere bieten sich bei Aufzählungen längerer Listeneinträge an.</p>
-
-<div style="columns:13em; margin:1em 0 -0.25em;">
-<p style="margin-top:0;">Dieser Text verteilt sich auf maximal drei Spalten mit einer Mindestbreite von 13em. Wo genau die Spaltenumbrüche liegen, kann ich aber nicht festlegen.</p>
-<p>Dieses Layout kommt bisher (Mai 2020) bei Kürbissuppe, Couscous, unbekannte Lebensmittel und Miniheft vor. Wichtig: Das erste Element in diesem div muss einen margin-top:0 bekommen.</p>
-<p>800<small>&nbsp;</small>g Kürbisfleisch<br />
-150<small>&nbsp;</small>g Zwiebeln<br />
-300<small>&nbsp;</small>g Kartoffeln<br />
-40<small>&nbsp;</small>g Butter<br />
-1 unbehandelte Orange (Schale und Saft)<br />
-1,5<small>&nbsp;</small>l Gemüsebrühe<br />
-1 Saft von einer Limette<br />
-1 Stück Ingwer<br />
-Salz, Pfeffer<br />
-1 Prise Zucker<br />
-250<small>&nbsp;</small>ml Sahne<br />
-Muskatnuss<br />
-Cayenne-Pfeffer<br />
-Tabasco<br />
-Kürbis-Öl und geröstete Kürbiskerne zum Garnieren<br />
-etwas Petersilie</p></div>
-
-<h2 id="kästen-zitatblöcke-codeblöcke">Kästen, Zitatblöcke, Codeblöcke</h2>
-
-<p>Manchmal will ich einen Absatz farblich hervorheben. Dazu gibt es die CSS-Klasse <em>hinterlegt</em>.</p>
-
-<p class="hinterlegt">Will man einen Absatz besonders hervorheben, dann verpasst man ihm die Klasse .hinterlegt und er steht in einem grünen Kasten.</p>
-
-<p>Man kann auch mehrere Absätze hinterlegen. Dazu packt man sie gemeinsam in ein div. Dann muss man natürlich reines HTML verwenden, denn mit Markdown allein kommt man da nicht weiter.</p>
-
-<div class="hinterlegt">
-<p>Und so sieht es aus, wenn ich mehrere Absätze in ein div stecke, das die Klasse .hinterlegt bekommen hat.</p>
-<p>Das ist Absatz Nº2.</p>
-<p>Hier ist noch ein dritter Absatz.</p>
-</div>
-
-<p>Zitatblöcke beginnen einfach mit einer spitzen Klammer-zu (&gt;):</p>
-
-<blockquote>
-  <p>So ein Zitatblock wird dann mit <code>&lt;blockquote&gt;</code> umschlossen. Der Text darinnen steht in einem <code>&lt;p&gt;</code>. Das wird zum Beispiel für Tweets benutzt.</p>
-</blockquote>
-
-<p>Bei Tweetsammlungen stehen meist mehrere Zitatblöcke hintereinander:</p>
-
-<blockquote>
-  <p>⏣ »Manchmal muss du deinen gewohnten Bereich verlassen«, sprach der #Fuchs zur Ballerina. »Nur so entwickelst du dich weiter.« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>☘ »Wer nicht von Zeit zu Zeit riskiert, unglücklich zu werden«, sprach der #Fuchs zur Ballerina, »wird auch niemals richtig glücklich sein.« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<blockquote>
-  <p>⌬ »Klar kannst du gegen deine Prinzipien handeln«, sprach der #Fuchs zur Ballerina. »Du solltest aber nen verdammt guten Grund dazu haben!« (<a href="#fuchs">#</a>)</p>
-</blockquote>
-
-<p>Um mehrere Absätze in einen Zitatblock zu packen, beginnt man auch die Leerzeilen dazwischen mit einer spitzen Klammer:</p>
-
-<blockquote>
-  <h2 id="großes-zitat">Großes Zitat</h2>
-
-  <p>Diese Blockquote enthält etwas mehr Text und beginnt sogar mit einer Überschrift (hier ein H2-Titel).</p>
-
-  <p>Die Überschrift bekommt dabei einen klitzekleinen Abstand oben, damit die Ränder einigermaßen passen. Die graue Markierung von <code>Codeschnippseln</code> ist hier allerdings nur sehr subtil …</p>
-</blockquote>
-
-<p>Wenn man ein längeres <code>Codebeispiel</code> hat, dann verwendet man am besten einen Codeblock (einfach mit Tab oder mindestens <code>vier Leerzeichen</code> einrücken):</p>
-
-<pre><code>@font-face {
-   font-family: 'Schriftname';
-   src: url('schrift.eot'); /* IE9 compatibility mode */
-   src: url('schrift.eot?#iefix') format('embedded-opentype'),
-      url('schrift.woff') format('woff'),
-      url('schrift.ttf') format('truetype');
-}
-</code></pre>
-
-<p>Nun folgt eine waagrechte Trennlinie, erzeugt mit drei Bindestrichen.</p>
-
-<hr />
-
-<p>Alternativ erreicht man eine Linie auch mit mindestens drei Sternchen *, wahlweise mit Leerzeichen dazwischen.</p>
-
-<h2 id="medien-bild-video-ton">Medien (Bild, Video, Ton)</h2>
-
-<p>Bilder werden so ähnlich wie Links eingebunden:</p>
-
-<p><img src="material/cz750x270.jpg" alt="Alttext des Bildes" /></p>
-
-<p>Allerdings kann die Größe des Bildes so nicht angegeben und auch kein Untertitel verwendet werden. Zur Not muss man halt doch <code>&lt;img&gt;</code> benutzen. Für Untertitel:</p>
-
-<figure><img src="material/cz750x270.jpg" alt="Ein Beispielbild" />
-	<figcaption>Hier steht der Bilduntertitel <a href="#bild">mit Verlinkung</a>. Er ist optional und kann auch weggelassen werden. Und er kann selbstverständlich auch über mehrere Zeilen gehen und sieht dann immer noch gut aus.</figcaption>
-</figure>
-
-<h3 id="kleine-bilder-innerhalb-eines-textes">Kleine Bilder innerhalb eines Textes</h3>
-
-<p>Möchte man ein Bild mitten in den Text setzten, ginge das eigentlich genauso. Man muss aber auf die richtigen Abstände achten, damit das Bild keine Löcher in den Text reißt. Am besten verwendet man SVG, das vergrößert sich mit: <svg height="1em" style="vertical-align: text-bottom;" viewBox="0 0 5000 1000"><path fill="var(--akzent-basis)" d="M0 800h4900v80H0z"></path><text font-weight="400" font-size="1000" font-family="Source Sans 3" style="fill:var(--text-basis)"><tspan y="750" x="0">Rafgenduks</tspan></text></svg> ← ein Bild, genau wie <svg width=".98em" height=".87em" viewBox="0 0 98 87" preserveAspectRatio="xMinYMin meet"><g id="penguin" style="fill:var(--akzent-basis)"><path d="M74.2 38.8c7.2 3 14.3 7 19.8 12.6 1.7 1.8 4.3 4.5 3.8 7-.6 3-6 3-10 3-4.5 0-8.3-.4-12-.8l.6 11.4c.3 5.2 2 11.6-2.4 13.6-2.9 1.3-9 .6-13 .6H34.2c-6.5 0-14.4 1-15.8-4-.7-2.6.4-7.6.6-10.6.3-3.4.4-6.8.8-10.8-6 0-15.6 2.9-19.8-.8 0-3 1.6-5.5 3.2-7.4a57.6 57.6 0 0 1 18.2-13L23 18.8c.4-5.2.7-8.7 3.4-11.6A23 23 0 0 1 35.2 2c11-3.9 27.2-2.1 34.2 5 2.7 2.8 3.3 6.1 3.6 11.6l1.2 20.2zM26.6 15.4c-.8 2.1-.4 5-.6 7.6-1 14.8-2.3 32-3 46.6-.1 3.2-.5 6.1.4 7.6 1.6 2.8 6 2.2 10.6 2.2h25.8c4.2 0 9.8.5 11.6-1.4 2-2.1.9-9.8.6-15.8l-1.8-39.8c-.1-2.6.2-5.5-.8-7.6-2.2-4.6-9.3-6.1-13.2-2.6-1.6 1.5-1.7 3.4-3 5-.9 1.2-1.9 3-5.2 2.8-5.6-.1-5.3-6.2-9-8.6-1.3-.8-4-1.3-6-1a8 8 0 0 0-6.4 5z"></path><path d="M35.2 28.4c4.1-1.1 4.4 4.8 1.4 5.2-3 .5-4.9-4.2-1.4-5.2zm25 0c4.3-1.3 4.5 4.8 1.4 5.2-1.4.3-3.6-.3-3.2-3.2 0-.7.5-1.5 1.8-2zm-15 9.6c4-.3 8.3 0 11.8 1.4 2 .9 4.4 2 4.4 4 0 4.3-8.7 5.8-13.4 5.8-4 0-13.2-1.3-13.4-5.6 0-2.2 2.2-3.4 4-4.2 2.2-.9 3.8-1.1 6.6-1.4z"></path></g></svg></p>
-
-<h3 id="image-slicing">Image-Slicing</h3>
-
-<p>Es ist möglich, Teilbilder zu kombinieren und die Slices dann als Hintergrundbild eines Divs anzuzeigen. Das geht zum einen mit Verlinkung zu einer größeren Ansicht (wie bei Chorplakate):</p>
-
-<style>
-<!--
-[class^="bild"] { position: relative; width: 98.5%; height: 0;
-	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
-	line-height: 0; border: 0; background-size: 100% auto; }
-
-.bild1 { background-position: 0 33.33%;
-	background-image: url('material/chor-vorschau.jpg'); }
-.bild1 a { position:absolute;top:0;bottom:0;left:0;right:0;
-	display: flex; justify-content: center; align-items: center;
-	opacity:0; }
-
-.bild2 { width:100%; margin:0; padding-bottom: 72%;
-	background-position: 0 60%;
-	background-image: url('material/typosafari.jpg');}
-.bild2 a { visibility:hidden; }
-
-@media screen and (prefers-color-scheme: dark) {
-[class^="bild"] { filter:brightness(1) } }
-
--->
-</style>
-
-<div class="bild1" title="Ausschnitte aus dem Chorplakat und -programm von 2012"><a href="material/chor-2012.jpg">größere Abbildung</a></div>
-
-<p>Oder ohne Verlinkung (Fallback-Link trotzdem vorhanden) und hier mit Untertitel und doppelter Höhe:</p>
-
-<figure>
-<div class="bild2" title="diverse Regensburger Schriftzüge mit Schauwert"><a href="material/typosafari.jpg">Komplettes Bild (alle Teilbilder)</a></div>
-	<figcaption>Diverse Schriftzüge in Regensburg</figcaption>
-</figure>
-
-<p>Wichtig: Bei eng aufeinanderfolgenden Artikeln darauf achten, dass für solche Teilbilder verschiedene Klassenbezeichnungen verwendet werden (nicht jedesmal .bildX). Sonst überschreibt <em>auf der Startseite</em> das CSS des unteren Artikels die Bilder im oberen.</p>
-
-<h3 id="audioplayer">Audioplayer</h3>
-
-<p>Für Musik oder Sprache kommt natürlich das HTML5-Element <code>audio</code> zur Anwendung. Damit die Abstände schön passen, umschließe ich es mit einem Absatz:</p>
-
-<p><audio controls="" preload="metadata">
-	<source src="material/hoerspiele.mp3" type="audio/mpeg" />
-	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die <a href="material/hoerspiele.mp3">Datei herunterladen</a>.
-</audio></p>
-
-<p>Tatsächlich kann man den Audioplayer sogar in einen farbigen Kasten setzen (direkt nach einem Text):</p>
-
-<p class="hinterlegt">Eine eingebundene Audiodatei in einem grünen Kasten.
-<audio controls="" preload="metadata">
-	<source src="material/hoerspiele.mp3" type="audio/mpeg" />
-	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die <a href="material/hoerspiele.mp3">Datei herunterladen</a>.
-</audio></p>
-
-<h3 id="videos">Videos</h3>
-
-<p>Ein datenschutzfreundlich eingebettetes YouTube-Video, das erst nach einem entschiedenen Klick geladen wird:</p>
-
-<figure style="position:relative; height:0; width:98.8%; padding-bottom:55.5%;"><iframe style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" title="Eingebettetes Video" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3E%3Cp%3EDieses%20Video%20stammt%20von%20YouTube.%20Beim%20Abspielen%20l%C3%A4dt%20YouTube%20u.%20a.%20Schriftarten,%20die%20Videodaten%20und%20speichert%20ggf.%20einen%20Cookie%20in%20deinem%20Browser.%20Dadurch%20kann%20YouTube%20deine%20Aktivit%C3%A4ten%20auf%20seiner%20Plattform%20verfolgen.%20Teils%20kannst%20du%20das%20verhindern%2C%20indem%20du%20Cookies%20von%20Drittanbietern%20in%20den%20Browser-Einstellungen%20blockierst.%3Cp%3ETrotz%20YouTube-Tracking%20das%20%3Ca%20href%3D%27https%3A%2F%2Fwww.youtube-nocookie.com%2Fembed%2FIU_IQ9bSBiM%3Fmodestbranding%3D0%26rel%3D0%26showsearch%3D0%26showinfo%3D1%26hl%3Dde%26cc_load_policy%3D1%26autoplay%3D1%26playsinline%3D1%26theme%3Ddark%26fs%3D1%26loop%3D0%27%3EVideo%20abspielen%3C%2Fa%3E%3F%2Fbody%3E%3C%2Fhtml%3E" srcdoc="&lt;p&gt;Dieses Video stammt von YouTube. Beim Abspielen lädt YouTube u.&lt;small&gt;&nbsp;&lt;/small&gt;a. Schriftarten, die Videodaten und speichert ggf. einen Cookie in deinem Browser. Dadurch kann YouTube deine Aktivitäten auf seiner Plattform verfolgen. Teils kannst du das verhindern, indem du Cookies von Drittanbietern in den Browser-Einstellungen blockierst.&lt;p&gt;Trotz YouTube-Tracking das &lt;a href='https://www.youtube-nocookie.com/embed/IU_IQ9bSBiM?modestbranding=0&amp;rel=0&amp;showsearch=0&amp;showinfo=1&amp;hl=de&amp;cc_load_policy=1&amp;autoplay=1&amp;playsinline=1&amp;theme=dark&amp;fs=1&amp;loop=0'&gt;Video abspielen&lt;/a&gt;?"></iframe></figure>
-
-<h2 id="sonstiges">Sonstiges</h2>
-
-<p>Datum der Website oder eines Artikels: So, 13. Nov. 2022 / Sa, 31. Dez. 2022 (ausgegeben in meinem Wunschformat)</p>
-
-<p>Ein Download-Feld erzeugt man als <code>&lt;a&gt;</code> mit einem <code>download</code>-Attribut.</p>
-
-<p><a href="otfeat/otfeat.ttf" download="">Ot­feat als<br /><em>ttf-Da­tei</em></a></p>
-
-<div class="klappkasten">
-<input type="checkbox" id="K1" />
-<label for="K1">Zum Öffnen hier klicken</label>
-<p>Eine klappbare Box, in der sich Zusatzinformationen verstecken lassen. Zunächst hatte ich sie mit Javascript realisiert, jetzt aber arbeite ich mit CSS-Animationen und einer unsichtbaren Checkbox. Bei mehreren Klappboxen darauf achten, dass unterschiedliche IDs vergeben werden.</p>
-</div>
-
-<style>
-details { width: 98.8%; margin: 1.2em 0 -.15em;
-	padding: .15em .6em .3em; background-color: var(--gruen-blass);
-	-webkit-hyphens: auto; hyphens: auto; }
-details::selection, details ::selection { background: var(--hintergrund); }
-summary { cursor: pointer; }
-
-.eigenerMarker {}
-.summary { list-style: none; }
-.summary::before { content: '→'; padding-right: .3em; }
-.details[open] summary::before { content: '↓'; }
-
-@media print {
-	details { background: #fff; border: 1px solid #666; page-break-inside: avoid; } }
-</style>
-
-<details>
-  <summary>Mit <code>details</code> und <code>summary</code></summary>
-  Eine klappbare Box, so wie sie zukünftig vielleicht mal umgesetzt werden könnte. Leider wird sie noch nicht im Edge unterstützt, klappt nicht animiert auf und wird beim Druck nicht automatisch geöffnet. Dafür ist sie semantisch und braucht keine unsichtbare Checkbox.
-</details>
-
-<p>Eine <strong style="background-color: var(--akzent-blass); font-size: 0.85em; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.1em 0.2em 0.05em;">besonders starke Hervorhebung</strong> mit blasslila Hintergrund. Kommt im Artikel <em>1337motiv.html</em> vor und braucht evtl. noch eine CSS-Klasse.<a href="#note1"><sup id="ziffer1">[1]</sup></a></p>
-
-<form><textarea style="font:1.8em/1.3em 'StickSerif',monospace; height:4.8em;" name="testfeld" id="testfeld">Ein Textfeld, um eine Schrift auszuprobieren.</textarea></form>
-
-<style>
-<!--
-@font-face {font-family: StickSerif; src:url(material/StickSerif.woff) format('woff');}
-@font-face {font-family: 'UnifrakturMaguntia';
-src: local('UnifrakturMaguntia'),
-url('material/UnifrakturMaguntia.woff') format('woff'),
-url('material/UnifrakturMaguntia.ttf') format('truetype');}
--->
-</style>
-
-<p>Kurzer <span style="font:1.1em/1.3em UnifrakturMaguntia,'Old English Text MT',sans-serif;margin-bottom:-1em;color:#2c2c2c;">Textausſchnitt in gebrochener Schrift</span>, wie er im Eintrag <em>gebrochene-schriften.html</em> auftaucht.</p>
-
-<p><span style="color:var(--akzent-aktiv)">Weitere Betonungen?</span></p>
-
-<hr />
-
-<p><b id="note1">[1] Kleine Fußnote:</b> Hier wird ein Detail näher erläutert. <a href="#ziffer1">[↑]</a></p>
-
-	<p>---<br /><a href="pattern-library.html#kommentare">3 Kommentare</a>
-	</p>
-</article>
-
-<article>
 	<time datetime="2022-10-27">Do, 27. Okt. 2022</time>
 	<h1><a href="kalender-2023.html">2023 in bewährter Form</a></h1>
 	<p>Wird man mit der Zeit weniger innovativ und verlässt sich nur noch auf Althergebrachtes? Oder lernt man mit der Zeit, dass man nicht immer etwas völlig Neues schaffen muss und Gutes, das sich bewährt hat, durchaus weiternutzen kann?</p>
@@ -459,6 +161,61 @@ url('material/UnifrakturMaguntia.ttf') format('truetype');}
 		</p>
 </article>
 
+<article>
+	<time datetime="2022-07-19">Di, 19. Juli 2022</time>
+	<h1><a href="erfundene-fakten-11.html">Erfundener Zynismus, zum Glück selten</a></h1>
+	<p>Meine Twitterserie „Erfundene Fakten“ läuft nun seit 11<small> </small>½ Jahren. In den letzten Monaten musste ich jedoch feststellen, dass die sonst eher witzigen, absurden und anregenden Folgen ein bisschen in Richtung Zynismus kippen (v.a. № 116, 117 und 120). Ob mir beißender Spott hilft, besser mit unschönen Dingen wie Krieg und Pandemie umzugehen? Zynisch sein angesichts der gefühlten Hilflosigkeit?</p>
+
+<p>Ich denke nicht, dass Zynismus eine gute Strategie ist, denn ein Spötter ist weniger mitfühlend und trägt kaum zu konstruktiven Lösungen bei. Eher vergiftet Spott die Atmosphäre und lässt eine Situation als noch verfahrener erscheinen. Vielleicht dient Bissigkeit wenigstens zeitweilig als Selbstschutz: eine Möglichkeit, sich zu distanzieren und auch mal „böse Ideen“ blühen zu lassen. Man sollte dabei nur aufpassen, niemanden so zu verletzen, dass die gute Beziehung dauerhaft zerstört wird.</p>
+
+<p>Hier jedenfalls die aktuellsten Folgen meiner Twitterserie:</p>
+
+<blockquote>
+  <p>🧼 Erfundenes Faktum № 111: Wer sich nach dem Gebrauch unflätiger Wörter den Mund nicht mit Seife auswaschen möchte, kann alternativ mit Mojito gurgeln. (<a href="https://twitter.com/charakterziffer/status/1405095752574062593">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>🎫 Erfundenes Faktum № 112: Weil sich die Sicherheitslage stetig verändert, können verurteilte Al-Qaida-Terroristen problemlos in immer mehr afghanische Städte abgeschoben werden. (<a href="https://twitter.com/charakterziffer/status/1425709715732971522">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>📢 Erfundenes Faktum № 113: Der zweite Donnerstag im September wurde deshalb als bundesweiter #Warntag festgelegt, weil sich da statistisch die wenigsten echten Katastrophen ereignen. – Wegen zu vieler gewöhnlicher Vorfälle morgen fällt der Warntag dieses Jahr allerdings aus. (<a href="https://twitter.com/charakterziffer/status/1435612060566626309">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⋒ Erfundenes Faktum № 114: Nur noch acht griechische Obstbauern kennen die geheimen drei Schnitte, durch die sich ein Granatapfel innerhalb von 30 Sekunden sauber zerlegen lässt. (<a href="https://twitter.com/charakterziffer/status/1443861294470385704">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>✒ Erfundenes Faktum № 115: Gegen eine akute Schreibblockade helfen für gewöhnlich 3 Tropfen Füllertinte auf die Zungenspitze, am besten funktioniert Minzgrün. (<a href="https://twitter.com/charakterziffer/status/1481659303727710213">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⚒ Erfundenes Faktum № 116: Man beweist echte Stärke, wenn man seine Interessen mit roher Gewalt durchsetzt. Einen Kompromiss auszuhandeln, der allen Beteiligten taugt, ist dagegen kinderleicht und offenbart nur die eigene Unfähigkeit. (<a href="https://twitter.com/charakterziffer/status/1505828437499465730">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>⌖ Erfundenes Faktum № 117: Weitere siebzehn russische Oligarchen und Politiker sind gestern tragisch verunglückt. Davon unabhängig bedankt sich die Vereinigung International tätiger Auftragskiller nochmals für die hohe Spendenbereitschaft beim Friedenskonzert in Paris. (<a href="https://twitter.com/charakterziffer/status/1509122820412002306">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>▒ Erfundenes Faktum № 118: Wer konzentriert genug hinhört, kann im Rauschen eines UKW-Radios bereits 72 Stunden zuvor die kommenden Nachrichten erfahren (inkl. Lottozahlen!). (<a href="https://twitter.com/charakterziffer/status/1518514216889692160">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>🕷️ Erfundenes Faktum № 119: Weil sie seit der frühen Neuzeit als schädliche Parasiten verleumdet werden, weiß heutzutage kaum jemand, dass Zecken im Grunde total nützlich und quasi die Lösung für alle unsere Probleme sind (inkl. Nahost-Konflikt und Erderwärmung). (<a href="https://twitter.com/charakterziffer/status/1534414549574631424">#</a>)</p>
+</blockquote>
+
+<blockquote>
+  <p>✺ Erfundenes Faktum № 120: Dank des 9-Euro-Tickets fällt die drohende Corona-Welle im Herbst nun niedriger aus, da ein Großteil der Bevölkerung bereits im Sommer in vollen Zügen immunisiert wurde. (<a href="https://twitter.com/charakterziffer/status/1549393967854354440">#</a>)</p>
+</blockquote>
+
+<p>Diese Twitterserie gibt es übrigens schon seit Dezember 2010. Als Blogeintrag gebündelt habe ich die Folgen <a href="erfundene-fakten-1.html">1–16</a>, <a href="erfundene-fakten-2.html">17–28</a>, <a href="erfundene-fakten-3.html">29–40</a>, <a href="erfundene-fakten-4.html">41–50</a>, <a href="erfundene-fakten-5.html">51–60</a>, <a href="erfundene-fakten-6.html">61–70</a>, <a href="erfundene-fakten-7.html">71–80</a>, <a href="erfundene-fakten-8.html">81–90</a>, <a href="erfundene-fakten-9.html">91–100</a>, <a href="erfundene-fakten-10.html">101–110</a> und <a href="erfundene-fakten-11.html">111–120</a>.</p>
+
+	<p>---<br /><a href="erfundene-fakten-11.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -492,7 +249,7 @@ E-Mail: postfach2b [ät] web.de (<a href="bestand/pub-0x9BA6621B.asc">PGP-Schlü
 
 <p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2022-11-13T12:44:42+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2022-11-13T16:09:09+01:00</p>
 
 </main>
 
