@@ -40,18 +40,18 @@
 &lt;/style&gt;
 
 &lt;div class=&quot;bildraster&quot;&gt;
-&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/fensterbilder/v01.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/fensterbilder/v02.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/fensterbilder/v03.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/fensterbilder/v04.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/fensterbilder/v05.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/fensterbilder/v06.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/fensterbilder/v07.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/fensterbilder/v08.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/fensterbilder/v09.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/fensterbilder/v10.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/fensterbilder/v11.jpg&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/fensterbilder/v12.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/fensterbilder/v01.jpg&quot; alt=&quot;Ein sitzender roter Fuchs.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/fensterbilder/v02.jpg&quot; alt=&quot;Ein Christbaum mit lila Kerzen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/fensterbilder/v03.jpg&quot; alt=&quot;Ein winkender Pinguin mit blau-grün gestreiftem Schal und einer roten Wollmütze.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/fensterbilder/v04.jpg&quot; alt=&quot;Abstrakte Formen: Je ein breiter gelber und pinkfarbener Strich verdecken eine blassgrüne Kugel. Außerdem ein blaues Dreieck, kleine blaue Punkte und eine schwache, pinkfarbene Schraffur.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/fensterbilder/v05.jpg&quot; alt=&quot;Ein blühender Eukalyptuszweig.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/fensterbilder/v06.jpg&quot; alt=&quot;Eine einfach gemalte, orangefarbene Biene.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/fensterbilder/v07.jpg&quot; alt=&quot;Der Burgberg von Hohenfels bei Nacht, in Grün-, Blau und Violett. Auf dem runden Turm weht eine blaue Fahne, ein Vollmond im Hintergrund.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/fensterbilder/v08.jpg&quot; alt=&quot;Tuschzeichnung eines Männerkopfes im Profil. Er trägt ein Halstuch und einen Hut mit einer Blume.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/fensterbilder/v09.jpg&quot; alt=&quot;Ein blaues Propellerflugzeug mit einem Maulwurf als Pilot.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/fensterbilder/v10.jpg&quot; alt=&quot;Ein ockerfarbenes Muster, verschiedene eckige und runde Linien, mit denen die ganze Bildfläche gefüllt ist.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/fensterbilder/v11.jpg&quot; alt=&quot;Ein schwarzer Hexenhut, verziert mit Sternen und einem Halbmond.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/fensterbilder/v12.jpg&quot; alt=&quot;Eine graue Laterne, in der Kerze nadelförmige Strahlen aussendet.&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
