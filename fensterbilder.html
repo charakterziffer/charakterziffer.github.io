@@ -12,7 +12,7 @@
 -->
 <head>
 <meta charset="UTF-8">
-<title>2023 in bewährter Form // @cz+</title>
+<title>Bilder für die da draußen // @cz+</title>
 
 <link href='bestand/style.css' rel='stylesheet'>
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#228811">
 <meta name="color-scheme" content="light dark">
 
-<meta name="description" content="Lange schon verwende ich ein selbst entwickeltes Kalenderdesign. Noch scheint nicht die Zeit gekommen, etwas daran zu ändern.">
+<meta name="description" content="Fürs Fenster meines Arbeitszimmers male ich monatlich ein neues Bild. Eine kreative Motivation für mich, ein kleiner Hingucker für Passanten.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
 
@@ -33,14 +33,14 @@
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/kalender-2023.html&choe=UTF-8);
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/fensterbilder.html&choe=UTF-8);
 position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@charakterziffer">
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
-<meta property="og:title" content="2023 in bewährter Form">
-<meta property="og:description" content="Lange schon verwende ich ein selbst entwickeltes Kalenderdesign. Noch scheint nicht die Zeit gekommen, etwas daran zu ändern.">
+<meta property="og:title" content="Bilder für die da draußen">
+<meta property="og:description" content="Fürs Fenster meines Arbeitszimmers male ich monatlich ein neues Bild. Eine kreative Motivation für mich, ein kleiner Hingucker für Passanten.">
 </head>
 
 <body>
@@ -69,44 +69,69 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <main>
 <article>
-<time datetime="2022-10-27">Do, 27. Okt. 2022</time>
-<h1>2023 in bewährter Form</h1>
-<p>Wird man mit der Zeit weniger innovativ und verlässt sich nur noch auf Althergebrachtes? Oder lernt man mit der Zeit, dass man nicht immer etwas völlig Neues schaffen muss und Gutes, das sich bewährt hat, durchaus weiternutzen kann?</p>
+<time datetime="2022-11-15">Di, 15. Nov. 2022</time>
+<h1>Bilder für die da draußen</h1>
+<p>Mein Arbeitszimmer hat zur Straße hin ein recht breites Fenster. Seit letztem Jahr hänge ich monatlich ein neues Bild an die Scheibe und wer draußen vorbeiläuft, kann es sehen und freut sich vielleicht darüber. Für mich selbst ist es als kreative Herausforderung gedacht; so muss ich mir regelmäßig ein neues Motiv überlegen und zum Malkasten greifen.</p>
 
-<p>Es ist inzwischen jedenfalls schon der zwölfte kleine Wandkalender, den ich mir nach diesem Design gebaut habe. Auf jeder DIN-A5-Seite findet sich ein halber Monat (für ausreichend Vor- und Rückschau), die Zahlen sind angenehm groß (zum Lesen aus der Entfernung), es ist Platz für Termine und die Gestaltung ist klar und ansprechend. Sollte ich dieses Design mal überdenken? Oder macht jede Änderung die praktische Form nur schlechter?</p>
+<p>Ich denke nicht, dass ich wahnsinnig gut mit Pinsel und Farben umgehen kann, aber wer weiß, vielleicht wird das ja noch. Ohne Übung passiert jedenfalls gar nichts. Hier nun die ersten zwölf meiner Fensterbilder (anklicken für eine größere Version):</p>
 
-<p><img src="material/hmk2023.jpg" alt="Details des Kalenders 2023" /></p>
+<style>
+<!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.bildraster > a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%; height: 11em;
+	object-fit: contain; overflow: clip; }
 
-<p>Mein Kalenderdesign stelle ich hier wieder zum kostenlosen Download bereit. Diesmal habe ich nur eine Schwarz-Weiß-Version gemacht, die ich auf verschiedene Papiere gedruckt habe. Optional könnte man die Monatsblätter auch ganz lassen und nicht halbieren.</p>
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
+.bildraster > a { flex: 1 1 9em; margin: .5em; } }
 
-<p><a href="material/hmk2023.pdf" download="">Kalender herunterladen<br /><em>(PDF-Datei, 360 kB)</em></a></p>
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+-->
+</style>
 
-<p>Fürs Zusammenfügen der Blätter empfehle ich:</p>
+<div class="bildraster">
+<a href="#bild-01"><img src="material/fensterbilder/v01.jpg" /></a>
+<a href="#bild-02"><img src="material/fensterbilder/v02.jpg" /></a>
+<a href="#bild-03"><img src="material/fensterbilder/v03.jpg" /></a>
+<a href="#bild-04"><img src="material/fensterbilder/v04.jpg" /></a>
+<a href="#bild-05"><img src="material/fensterbilder/v05.jpg" /></a>
+<a href="#bild-06"><img src="material/fensterbilder/v06.jpg" /></a>
+<a href="#bild-07"><img src="material/fensterbilder/v07.jpg" /></a>
+<a href="#bild-08"><img src="material/fensterbilder/v08.jpg" /></a>
+<a href="#bild-09"><img src="material/fensterbilder/v09.jpg" /></a>
+<a href="#bild-10"><img src="material/fensterbilder/v10.jpg" /></a>
+<a href="#bild-11"><img src="material/fensterbilder/v11.jpg" /></a>
+<a href="#bild-12"><img src="material/fensterbilder/v12.jpg" /></a>
+</div>
 
-<ul>
-  <li>
-    <p>eine Spiralbindung aus dem Copy-Shop, als Aufhängung einen Drahtbügel aus einer Büroklammer,</p>
-  </li>
-  <li>
-    <p>jede Seite exakt mittig lochen und an einen Nagel hängen,</p>
-  </li>
-  <li>
-    <p>obere Kante schmal mit Leim binden und auf der Rückseite mit einem Aufhänger versehen oder</p>
-  </li>
-  <li>
-    <p>oder alle Blätter in eine Vielzweckklammer („Foldback-Klammer“) stecken – das ist meine Methode.</p>
-  </li>
-</ul>
+<!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen -->
+<p><a href="#_" class="lightbox" id="bild-01"><span style="background-image:url(material/fensterbilder/fb01.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-02"><span style="background-image:url(material/fensterbilder/fb02.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-03"><span style="background-image:url(material/fensterbilder/fb03.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-04"><span style="background-image:url(material/fensterbilder/fb04.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-05"><span style="background-image:url(material/fensterbilder/fb05.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-06"><span style="background-image:url(material/fensterbilder/fb06.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-07"><span style="background-image:url(material/fensterbilder/fb07.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-08"><span style="background-image:url(material/fensterbilder/fb08.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-09"><span style="background-image:url(material/fensterbilder/fb09.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-10"><span style="background-image:url(material/fensterbilder/fb10.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-11"><span style="background-image:url(material/fensterbilder/fb11.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-12"><span style="background-image:url(material/fensterbilder/fb12.jpg)"></span></a></p>
 
-<p>Übrigens steht der Halbmonatskalender wieder unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen. Er darf also gerne verbreitet werden.</p>
-
-<p>Falls jemand den Kalender noch bearbeiten möchte (zum Beispiel die optionalen Feiertage aufs eigene Bundesland anpassen), bitte mich einfach kurz anschreiben. Dann verschicke ich gerne die SVG-Dateien. Die Schrift des Kalenders ist 2023 übrigens <a href="https://fonts.google.com/specimen/Crimson+Pro">Crimson Pro</a> von Jacques Le Bailly.</p>
+<p>Habt ihr ähnliche Projekte, mit denen ihr eure Kreativität herausfordert? Gibt es eine Fertigkeit, die ihr gern üben möchtet?</p>
 
 <p style="margin-bottom:2.25em;">---<br>
 <i>Rubrik(en):</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 
-<a href="archiv.html?typografie">#typografie&nbsp; </a>
+<a href="archiv.html?sujet">#sujet&nbsp; </a>
 </p>
 </article>
 
@@ -118,7 +143,7 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
 
 <form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
-<input type="hidden" name="post_id" value="/kalender-2023">
+<input type="hidden" name="post_id" value="/fensterbilder">
 <input type="hidden" name="date" id="aktuelles-datum" value="">
 <input type="hidden" name="nummer" value="1">
 
@@ -151,9 +176,8 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 </div> <!-- .no-print -->
 
 
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="seitenverhaeltnis.html">← Harmonische Verhältnisse</a></p>
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="kalender-2023.html">← 2023 in bewährter Form</a></p>
 
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="fensterbilder.html">Bilder für die da draußen →</a></p>
 <p style="clear:both;" class="no-print"></p>
 </main>
 

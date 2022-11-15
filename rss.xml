@@ -13,6 +13,70 @@
 </image>
 
 <item>
+	<title>Bilder für die da draußen</title>
+	<description>&lt;p&gt;Mein Arbeitszimmer hat zur Straße hin ein recht breites Fenster. Seit letztem Jahr hänge ich monatlich ein neues Bild an die Scheibe und wer draußen vorbeiläuft, kann es sehen und freut sich vielleicht darüber. Für mich selbst ist es als kreative Herausforderung gedacht; so muss ich mir regelmäßig ein neues Motiv überlegen und zum Malkasten greifen.&lt;/p&gt;
+
+&lt;p&gt;Ich denke nicht, dass ich wahnsinnig gut mit Pinsel und Farben umgehen kann, aber wer weiß, vielleicht wird das ja noch. Ohne Übung passiert jedenfalls gar nichts. Hier nun die ersten zwölf meiner Fensterbilder (anklicken für eine größere Version):&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.bildraster &gt; a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%; height: 11em;
+	object-fit: contain; overflow: clip; }
+
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
+.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
+
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;bildraster&quot;&gt;
+&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/fensterbilder/v01.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/fensterbilder/v02.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/fensterbilder/v03.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/fensterbilder/v04.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/fensterbilder/v05.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/fensterbilder/v06.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/fensterbilder/v07.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/fensterbilder/v08.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/fensterbilder/v09.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/fensterbilder/v10.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/fensterbilder/v11.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/fensterbilder/v12.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
+&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb01.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb02.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb03.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb04.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb05.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb06.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb07.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb08.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb09.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb10.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb11.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb12.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Habt ihr ähnliche Projekte, mit denen ihr eure Kreativität herausfordert? Gibt es eine Fertigkeit, die ihr gern üben möchtet?&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/fensterbilder.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder.html</guid>
+	<pubDate>Tue, 15 Nov 2022 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>2023 in bewährter Form</title>
 	<description>&lt;p&gt;Wird man mit der Zeit weniger innovativ und verlässt sich nur noch auf Althergebrachtes? Oder lernt man mit der Zeit, dass man nicht immer etwas völlig Neues schaffen muss und Gutes, das sich bewährt hat, durchaus weiternutzen kann?&lt;/p&gt;
 
@@ -216,41 +280,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/fuchs-12.html</guid>
 	<pubDate>Fri, 24 Jun 2022 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Was fangen wir an mit dem Tod?</title>
-	<description>&lt;p&gt;Vor ein paar Tagen habe ich die Ausstellung &lt;a href=&quot;https://dialog-mit-dem-ende.de/&quot;&gt;Dialog mit dem Ende&lt;/a&gt; an der Universität Regensburg gesehen. Sie zeigt ein Video mit Interviews, dazu eine Reihe Portraits verschiedener Personen bei sich zu Hause. Jede Person antwortet auf eine der Fragen, die als große Banner in der Mitte des Ausstellungsraums von der Decke hängen, z.&lt;small&gt; &lt;/small&gt;B. „Gibt es einen schönen Tod?“, „Nutzen Sie Ihre Lebenszeit?“ oder „Wie alt möchten Sie werden?“&lt;/p&gt;
-
-&lt;p&gt;Mich hat an der Ausstellung beeindruckt, welche verschiedenen und ernsthaften Einstellung die Menschen zum Tod haben, einem Thema über das wir im Alltag nur wenig sprechen. Aus meinen eigenen Gedanken und einer Anfangsfrage habe ich ein Gedicht geschrieben:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Was fangen wir an mit dem Tod?&lt;br /&gt;
-Ist er die „Vollendung“ des Lebens?&lt;br /&gt;
-Ersterbenswert&lt;br /&gt;
-nach Freude und Not&lt;br /&gt;
-Und alles davor war vergebens?&lt;/p&gt;
-
-&lt;p&gt;Wenn alles, was war, Ruhe findet,&lt;br /&gt;
-Der Atem stockt,&lt;br /&gt;
-das Herz nimmer bebt,&lt;br /&gt;
-Getier die Verwesung verkündet:&lt;br /&gt;
-Wir haben doch trotzdem gelebt!&lt;br /&gt;
-(und bewegt, und gewebt,&lt;br /&gt;
-und gesät, und gemäht,&lt;br /&gt;
-und …)&lt;br /&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Und weil Gedichte ja nicht nur durch Buchstaben, sondern vor allem durch ihren Klang sprechen, hier noch eine Version zum Anhören; gelesen vom Autor selbst (also von mir ☺):&lt;/p&gt;
-
-&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
-	&lt;source src=&quot;material/todgedicht.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/todgedicht.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
-&lt;/audio&gt;&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/todgedicht.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/todgedicht.html</guid>
-	<pubDate>Sun, 29 May 2022 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
