@@ -13,6 +13,46 @@
 </image>
 
 <item>
+	<title>Die perfekte Kürze im Microblog</title>
+	<description>&lt;p&gt;Auf Mastodon hatte ich gestern eine Mini-Diskussion über die Längenbegrenzung der Posts dort. Sie liegt standardmäßig bei 500 Zeichen, kann auf einigen Instanzen&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; aber deutlich weiter gefasst sein. Das Diskussion verlief so (gekürzte Übersetzung &lt;a href=&quot;https://typo.social/@clauseggers/109377836250444276&quot;&gt;aus dem Englischen&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;@clauseggers:&lt;/strong&gt; Meta: Warum sollten wir keine andere willkürliche Zeichenbegrenzung für Posts haben – eine größere, sagen wir 2000 Zeichen. Jetzt wo die Insassen die Irrenanstalt leiten, warum nicht? &lt;br /&gt;
+[…] Sich kurz fassen zu müssen ist unangenehm und erzeugt einen harschen, feindseligen Diskurs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;@charakterziffer:&lt;/strong&gt; Ein Zeichenlimit verhindert überbordende Diskussionen und ermutigt, auf den Punkt zu kommen. Ich glaube nicht, dass Mastodon das richtige Medium für längere Essays ist, die schon bald unten in der Timeline verschwinden.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;@clauseggers:&lt;/strong&gt; Ich verstehe nicht, warum ein Post nicht lang und vergänglich zugleich sein kann.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;@charakterziffer:&lt;/strong&gt; Meine Meinung: Wenn lang und belangloses Geplauder → unwichtig und dominierend (im besten Fall witzig). Wenn lang und aufschlussreich → informativ und vermutlich wert, aufbewahrt und verlinkbar zu werden […] &lt;br /&gt;
+Welche langen Post möchtest du gerne schreiben/lesen (also darin Zeit investieren), bist aber froh darüber, wenn sie nach weniger als einem Tag wieder verschwinden?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Auf meine letzte Frage habe ich leider noch keine Antwort erhalten.&lt;/p&gt;
+
+&lt;p&gt;Auf alle Fälle finde ich weitschweifige und ellenlange Texte nicht geeignet für eher schnelllebige Microblogs wie Twitter oder Mastodon. Ich bin aber auch ein wenig voreingenommen, weil ich eine kurze und prägnante Ausdrucksweise sehr schätze. Einer meiner ersten Artikel in diesem Blog beschäftige sich mit dem &lt;a href=&quot;reiz-der-kuerze.html&quot;&gt;Reiz der Kürze&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bezüglich des rauen Tonfalls möchte ich Claus Eggers Sørensen aber zustimmen. Dazu führten die 140 Zeichen pro Tweet damals tatsächlich oft und tun es mit 280 Zeichen noch heute. 500 Zeichen für einen Post bei Mastodon finde ich allerdings wirklich ausreichend, um in Ruhe ein Argument zu formulieren. Für längere Abhandlungen kann man ja einen Blogartikel schreiben ;-)&lt;/p&gt;
+
+&lt;p&gt;Ein verwandtes Thema zur Textlänge ist der &lt;a href=&quot;https://www.gelbe-reihe.de/nachricht/buch/leseproben/4-kapitel-der-nachrichtenaufbau/&quot;&gt;Pyramidenstil&lt;/a&gt;. Er gilt besonders bei Nachrichten als gute Sitte, die ja ebenfalls oft kurz und knapp sein müssen. Beim Pyramidenstil sollen die Kerninformation zuerst kommen, danach Einordnung und Details und erst am Ende ergänzende Hintergründe. So lassen sich Nachrichten je nach Zeit-/Platzangebot von hinten her kürzen.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Instanz:&lt;/b&gt; Mastodon ist ein verteiltes Kommunikations-Netzwerk, bei dem jeder einen eigenen Server mit der Software und Nutzerkonten einrichten kann. Diese Server nennt man Instanzen. Sie können eigene Regeln festlegen und vernetzen sich mit anderen. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/perfekte-kuerze.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/perfekte-kuerze.html</guid>
+	<pubDate>Mon, 05 Dec 2022 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Bilder für die da draußen</title>
 	<description>&lt;p&gt;Mein Arbeitszimmer hat zur Straße hin ein recht breites Fenster. Seit letztem Jahr hänge ich monatlich ein neues Bild an die Scheibe und wer draußen vorbeiläuft, kann es sehen und freut sich vielleicht darüber. Für mich selbst ist es als kreative Herausforderung gedacht; so muss ich mir regelmäßig ein neues Motiv überlegen und zum Malkasten greifen.&lt;/p&gt;
 
@@ -216,70 +256,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/erfundene-fakten-11.html</guid>
 	<pubDate>Tue, 19 Jul 2022 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Gebremste Kreativität</title>
-	<description>&lt;p&gt;Gerade in der kreativen Arbeit gibt es viele Hindernisse, die einem entgegenstehen: Fehlende Informationen, unklare Absprachen, unbekannte Tätigkeiten, hohe Selbstkritik, alltägliche Sorgen, Unzufriedenheit mit der Aufgabenstellung und so weiter. Meine alltäglichen Erfahrungen greife ich in der Serie „Fuchs und Ballerina“ auf. Darin versuche ich die Perspektive zu ändern – vom manchmal unsicheren Gestalter zum besonnenen Mentor. Die letzten zehn Folgen:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⦨ „Es ist doch keine Faulheit, weshalb du dich vor dieser Aufgabe drückst“, sprach der #Fuchs zur Ballerina. „Horch in dich hinein: Fehlt dir eine Information, bist du an einer Stelle sehr unsicher oder findest du die Idee eigentlich blöd?“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1394266964852359170&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⁘ „Frag bei den Details ruhig nach“, sprach der #Fuchs zur Ballerina. „Falls du mit einem Profi arbeitest, hält er dich höchstens für übereifrig. Aber bei einem Laien erspart dir die Fragerei später vielleicht eine Katastrophe.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1410484683373268993&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;✨ „Mag sein, dass du so etwas noch nie gemacht hast“, sprach der #Fuchs zur Ballerina. „Statt nun aber die Finger davon zu lassen, wie wäre es, wenn du deine Fähigkeiten erweiterst?“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1432664368655835136&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;💡 „Die zweite Idee ist immer etwas schwerer als die erste“, sprach der #Fuchs zur Ballerina. „Meist ist sie aber auch deutlich besser als das Erstbeste, was dir einfällt.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1448645779984244756&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⌆ „Auch wenn es gerade nicht so klappt: Denk daran, was du Tolles kannst“, sprach der #Fuchs zur Ballerina. „Schau mal deine früheren Arbeiten durch, das alles hast DU geschaffen!“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1458770907409887241&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⧉ „Natürlich kannst du es so machen wie alle anderen“, sprach der #Fuchs zur Ballerina. „An den Details wird man aber erkennen, ob du es gelernt und verstanden hast oder ob du nur kopierst.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1490611922416373762&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⚖ „Vielleicht öffentlich protestieren, an die richtige Stelle spenden, stille Gespräche führen“, sprach der #Fuchs zur Ballerina. „Tu, was dir am wirkungsvollsten erscheint, um eine Ungerechtigkeit zu bekämpfen.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1508398913929330702&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🎋 „Nein, schlecht tanzen sollst du nicht“, sprach der #Fuchs zur Ballerina. „Vielleicht verlangt die Regie etwas, dass nicht deinem Stil entspricht. Trotzdem kannst du es technisch sauber umsetzen.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1516691491674075136&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⟲ „Manchmal musst du erst im Kreis laufen“, sprach der #Fuchs zur Ballerina. „Wieder am Ausgangspunkt erkennst du dann vielleicht besser, wohin du eigentlich gehen möchtest.“ (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1528629546383187970&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;𝌉 „Wenn du nicht vorankommst, liegt es oft an einer versteckten Hürde“, sprach der #Fuchs zur Ballerina. „Überlege, was dir fehlt oder was deine Arbeit erleichtern würde, dann weißt du, was der nächste Schritt ist.“ […] (&lt;a href=&quot;https://twitter.com/charakterziffer/status/1540237288155774976&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Inzwischen gibt es über 120 Tweets mit dem #Fuchs. Die anderen Blogeinträge zu dieser Twitterserie:&lt;/p&gt;
-
-&lt;p&gt;1. &lt;a href=&quot;fuchs-1.html&quot;&gt;… sprach der #Fuchs zur Ballerina&lt;/a&gt;   ·  
-2. &lt;a href=&quot;fuchs-2.html&quot;&gt;Weisheiten für sensible Künstler&lt;/a&gt;   ·  
-3. &lt;a href=&quot;fuchs-3.html&quot;&gt;Ballerinas Selbstzweifel&lt;/a&gt;   ·  
-4. &lt;a href=&quot;fuchs-4.html&quot;&gt;Ein Fuchs für alle Fälle&lt;/a&gt;   ·  
-5. &lt;a href=&quot;fuchs-5.html&quot;&gt;Pirouetten und andere Probleme&lt;/a&gt;   ·  
-6. &lt;a href=&quot;fuchs-6.html&quot;&gt;Ausgefuchste Antworten&lt;/a&gt;   ·  
-7. &lt;a href=&quot;fuchs-7.html&quot;&gt;Vorgaben hinter sich lassen&lt;/a&gt;   ·  
-8. &lt;a href=&quot;fuchs-8.html&quot;&gt;Die Blöße der Unwissenheit&lt;/a&gt;   ·  
-9. &lt;a href=&quot;fuchs-9.html&quot;&gt;Nicht originell genug?&lt;/a&gt;   ·  
-10. &lt;a href=&quot;fuchs-10.html&quot;&gt;Kunst ohne Publikum&lt;/a&gt;   ·  
-11. &lt;a href=&quot;fuchs-11.html&quot;&gt;Der Fuchs hat Ideen!&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/fuchs-12.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/fuchs-12.html</guid>
-	<pubDate>Fri, 24 Jun 2022 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

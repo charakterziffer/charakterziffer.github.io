@@ -12,7 +12,7 @@
 -->
 <head>
 <meta charset="UTF-8">
-<title>Bilder für die da draußen // @cz+</title>
+<title>Die perfekte Kürze im Microblog // @cz+</title>
 
 <link href='bestand/style.css' rel='stylesheet'>
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#228811">
 <meta name="color-scheme" content="light dark">
 
-<meta name="description" content="Fürs Fenster meines Arbeitszimmers male ich monatlich ein neues Bild. Eine kreative Motivation für mich, ein kleiner Hingucker für Passanten.">
+<meta name="description" content="Wie viele Buchstaben sollte ein Post bei Twitter oder Mastodon umfassen dürfen? 140? 280? Lieber 500? Oder gar 10.000?">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
 
@@ -33,14 +33,14 @@
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/fensterbilder.html&choe=UTF-8);
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/perfekte-kuerze.html&choe=UTF-8);
 position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@charakterziffer">
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
-<meta property="og:title" content="Bilder für die da draußen">
-<meta property="og:description" content="Fürs Fenster meines Arbeitszimmers male ich monatlich ein neues Bild. Eine kreative Motivation für mich, ein kleiner Hingucker für Passanten.">
+<meta property="og:title" content="Die perfekte Kürze im Microblog">
+<meta property="og:description" content="Wie viele Buchstaben sollte ein Post bei Twitter oder Mastodon umfassen dürfen? 140? 280? Lieber 500? Oder gar 10.000?">
 </head>
 
 <body>
@@ -69,69 +69,45 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <main>
 <article>
-<time datetime="2022-11-15">Di, 15. Nov. 2022</time>
-<h1>Bilder für die da draußen</h1>
-<p>Mein Arbeitszimmer hat zur Straße hin ein recht breites Fenster. Seit letztem Jahr hänge ich monatlich ein neues Bild an die Scheibe und wer draußen vorbeiläuft, kann es sehen und freut sich vielleicht darüber. Für mich selbst ist es als kreative Herausforderung gedacht; so muss ich mir regelmäßig ein neues Motiv überlegen und zum Malkasten greifen.</p>
+<time datetime="2022-12-05">Mo, 5. Dez. 2022</time>
+<h1>Die perfekte Kürze im Microblog</h1>
+<p>Auf Mastodon hatte ich gestern eine Mini-Diskussion über die Längenbegrenzung der Posts dort. Sie liegt standardmäßig bei 500 Zeichen, kann auf einigen Instanzen<a href="#note1"><sup id="ziffer1">[1]</sup></a> aber deutlich weiter gefasst sein. Das Diskussion verlief so (gekürzte Übersetzung <a href="https://typo.social/@clauseggers/109377836250444276">aus dem Englischen</a>):</p>
 
-<p>Ich denke nicht, dass ich wahnsinnig gut mit Pinsel und Farben umgehen kann, aber wer weiß, vielleicht wird das ja noch. Ohne Übung passiert jedenfalls gar nichts. Hier nun die ersten zwölf meiner Fensterbilder (anklicken für eine größere Version):</p>
+<blockquote>
+  <p><strong>@clauseggers:</strong> Meta: Warum sollten wir keine andere willkürliche Zeichenbegrenzung für Posts haben – eine größere, sagen wir 2000 Zeichen. Jetzt wo die Insassen die Irrenanstalt leiten, warum nicht? <br />
+[…] Sich kurz fassen zu müssen ist unangenehm und erzeugt einen harschen, feindseligen Diskurs.</p>
+</blockquote>
 
-<style>
-<!--
-.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
-.bildraster > a { display: flex; justify-content: center;
-	align-items: center; margin: 0; padding: 0; }
-.bildraster img { max-width: 100%; width: 100%; height: 11em;
-	object-fit: contain; overflow: clip; }
+<blockquote>
+  <p><strong>@charakterziffer:</strong> Ein Zeichenlimit verhindert überbordende Diskussionen und ermutigt, auf den Punkt zu kommen. Ich glaube nicht, dass Mastodon das richtige Medium für längere Essays ist, die schon bald unten in der Timeline verschwinden.</p>
+</blockquote>
 
-@supports not (display: grid) {
-.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
-.bildraster > a { flex: 1 1 9em; margin: .5em; } }
+<blockquote>
+  <p><strong>@clauseggers:</strong> Ich verstehe nicht, warum ein Post nicht lang und vergänglich zugleich sein kann.</p>
+</blockquote>
 
-.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
-.lightbox:target { display: block; animation: none; }
-.lightbox span { display: block; width: 100%; height: 100%;
-	background-position: center; background-repeat: no-repeat; background-size: contain; }
--->
-</style>
+<blockquote>
+  <p><strong>@charakterziffer:</strong> Meine Meinung: Wenn lang und belangloses Geplauder → unwichtig und dominierend (im besten Fall witzig). Wenn lang und aufschlussreich → informativ und vermutlich wert, aufbewahrt und verlinkbar zu werden […] <br />
+Welche langen Post möchtest du gerne schreiben/lesen (also darin Zeit investieren), bist aber froh darüber, wenn sie nach weniger als einem Tag wieder verschwinden?</p>
+</blockquote>
 
-<div class="bildraster">
-<a href="#bild-01"><img src="material/fensterbilder/v01.jpg" alt="Ein sitzender roter Fuchs." /></a>
-<a href="#bild-02"><img src="material/fensterbilder/v02.jpg" alt="Ein Christbaum mit lila Kerzen." /></a>
-<a href="#bild-03"><img src="material/fensterbilder/v03.jpg" alt="Ein winkender Pinguin mit blau-grün gestreiftem Schal und einer roten Wollmütze." /></a>
-<a href="#bild-04"><img src="material/fensterbilder/v04.jpg" alt="Abstrakte Formen: Je ein breiter gelber und pinkfarbener Strich verdecken eine blassgrüne Kugel. Außerdem ein blaues Dreieck, kleine blaue Punkte und eine schwache, pinkfarbene Schraffur." /></a>
-<a href="#bild-05"><img src="material/fensterbilder/v05.jpg" alt="Ein blühender Eukalyptuszweig." /></a>
-<a href="#bild-06"><img src="material/fensterbilder/v06.jpg" alt="Eine einfach gemalte, orangefarbene Biene." /></a>
-<a href="#bild-07"><img src="material/fensterbilder/v07.jpg" alt="Der Burgberg von Hohenfels bei Nacht, in Grün-, Blau und Violett. Auf dem runden Turm weht eine blaue Fahne, ein Vollmond im Hintergrund." /></a>
-<a href="#bild-08"><img src="material/fensterbilder/v08.jpg" alt="Tuschezeichnung eines Männerkopfs im Profil. Er trägt ein Halstuch und einen Hut mit einer Blume." /></a>
-<a href="#bild-09"><img src="material/fensterbilder/v09.jpg" alt="Ein blaues Propellerflugzeug mit einem Maulwurf als Pilot." /></a>
-<a href="#bild-10"><img src="material/fensterbilder/v10.jpg" alt="Ein ockerfarbenes Muster: verschiedene eckige und runde Linien, mit denen die ganze Bildfläche gefüllt ist." /></a>
-<a href="#bild-11"><img src="material/fensterbilder/v11.jpg" alt="Ein schwarzer Hexenhut, verziert mit Sternen und einem Halbmond." /></a>
-<a href="#bild-12"><img src="material/fensterbilder/v12.jpg" alt="Eine graue Laterne, in der eine Kerze nadelförmige Strahlen aussendet." /></a>
-</div>
+<p>Auf meine letzte Frage habe ich leider noch keine Antwort erhalten.</p>
 
-<!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen -->
-<p><a href="#_" class="lightbox" id="bild-01"><span style="background-image:url(material/fensterbilder/fb01.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-02"><span style="background-image:url(material/fensterbilder/fb02.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-03"><span style="background-image:url(material/fensterbilder/fb03.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-04"><span style="background-image:url(material/fensterbilder/fb04.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-05"><span style="background-image:url(material/fensterbilder/fb05.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-06"><span style="background-image:url(material/fensterbilder/fb06.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-07"><span style="background-image:url(material/fensterbilder/fb07.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-08"><span style="background-image:url(material/fensterbilder/fb08.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-09"><span style="background-image:url(material/fensterbilder/fb09.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-10"><span style="background-image:url(material/fensterbilder/fb10.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-11"><span style="background-image:url(material/fensterbilder/fb11.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-12"><span style="background-image:url(material/fensterbilder/fb12.jpg)"></span></a></p>
+<p>Auf alle Fälle finde ich weitschweifige und ellenlange Texte nicht geeignet für eher schnelllebige Microblogs wie Twitter oder Mastodon. Ich bin aber auch ein wenig voreingenommen, weil ich eine kurze und prägnante Ausdrucksweise sehr schätze. Einer meiner ersten Artikel in diesem Blog beschäftige sich mit dem <a href="reiz-der-kuerze.html">Reiz der Kürze</a>.</p>
 
-<p>Habt ihr ähnliche Projekte, mit denen ihr eure Kreativität herausfordert? Gibt es eine Fertigkeit, die ihr gern üben möchtet?</p>
+<p>Bezüglich des rauen Tonfalls möchte ich Claus Eggers Sørensen aber zustimmen. Dazu führten die 140 Zeichen pro Tweet damals tatsächlich oft und tun es mit 280 Zeichen noch heute. 500 Zeichen für einen Post bei Mastodon finde ich allerdings wirklich ausreichend, um in Ruhe ein Argument zu formulieren. Für längere Abhandlungen kann man ja einen Blogartikel schreiben ;-)</p>
+
+<p>Ein verwandtes Thema zur Textlänge ist der <a href="https://www.gelbe-reihe.de/nachricht/buch/leseproben/4-kapitel-der-nachrichtenaufbau/">Pyramidenstil</a>. Er gilt besonders bei Nachrichten als gute Sitte, die ja ebenfalls oft kurz und knapp sein müssen. Beim Pyramidenstil sollen die Kerninformation zuerst kommen, danach Einordnung und Details und erst am Ende ergänzende Hintergründe. So lassen sich Nachrichten je nach Zeit-/Platzangebot von hinten her kürzen.</p>
+
+<hr />
+
+<p><b id="note1">[1] Instanz:</b> Mastodon ist ein verteiltes Kommunikations-Netzwerk, bei dem jeder einen eigenen Server mit der Software und Nutzerkonten einrichten kann. Diese Server nennt man Instanzen. Sie können eigene Regeln festlegen und vernetzen sich mit anderen. <a href="#ziffer1">[↑]</a></p>
 
 <p style="margin-bottom:2.25em;">---<br>
 <i>Rubrik(en):</i>&nbsp;
-<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
+<a href="archiv.html?kritik">#kritik&nbsp; </a>
 
-<a href="archiv.html?sujet">#sujet&nbsp; </a>
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
 </p>
 </article>
 
@@ -142,7 +118,7 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
 
 <form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
-<input type="hidden" name="post_id" value="/fensterbilder">
+<input type="hidden" name="post_id" value="/perfekte-kuerze">
 <input type="hidden" name="date" id="aktuelles-datum" value="">
 <input type="hidden" name="nummer" value="1">
 
@@ -173,8 +149,8 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="kalender-2023.html">← 2023 in bewährter Form</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="perfekte-kuerze.html">Die perfekte Kürze im Microblog →</a></p>
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="fensterbilder.html">← Bilder für die da draußen</a></p>
+
 <p style="clear:both;" class="no-print"></p>
 </main>
 
