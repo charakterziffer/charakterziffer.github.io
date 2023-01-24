@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde:r,
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Tweet an @charakterziffer.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<title>Raster für ein Magazin // @cz+</title>
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="Artikel-Feed">
+
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<meta name="theme-color" content="#228811">
+<meta name="color-scheme" content="light dark">
+
+<meta name="description" content="Um Texte und Bilder auf einer Seite systematisch anzuordnen, kann ein Gestaltungsraster helfen. Für ein Heft habe ich so ein Raster neu angelegt.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url(https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/raster.html&choe=UTF-8);
+position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
+
+<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
+<meta property="og:title" content="Raster für ein Magazin">
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<div>
+<form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
+<input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
+<input type="hidden" id="q" name="q">
+<input type="hidden" name="kl" value="de-de">
+<input type="hidden" name="kj" value="281">
+<input type="hidden" name="kx" value="666">
+<input type="hidden" name="k9" value="281">
+<input type="hidden" name="kaa" value="839">
+<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="submit" value="🔍" aria-label="Suchen">
+</form>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/extra/index.html">Extra</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main>
+<article>
+<time datetime="2023-01-25">Mi, 25. Jan. 2023</time>
+<h1>Raster für ein Magazin</h1>
+<p>Für die Kirchengemeinde meiner früheren Heimat arbeite ich am vierteljährlichen Gemeindebrief mit. Ich kürze Texte, bearbeite Fotos und vor allem bringe ich die Inhalte schön angeordnet auf die Seiten. Nun soll dieser Gemeindebrief mit dem aus der Nachbargemeinde zusammengeführt werden. Weil wir keines der Magazine bevorzugen wollen, kann ich dafür ein völlig neues Heftdesign entwickeln.</p>
+
+<p>In beiden Gemeindebriefen gibt es Themenartikel, Fotorückblicke, Terminhinweise und Formelles (wie Taufen und Geburtstage). Es sind also recht unterschiedliche Inhalte. Um diese abwechslungsreich, aber auch geordnet darzustellen, empfiehlt es sich, einen Gestaltungsraster zu verwenden (ja, im Grafikdesign heißt es <em>der</em> Raster). Im Grunde sind es Hilfslinien, die den Seitenrand, Textspalten und evtl. sogar Bereiche für Abbildungen definieren. Auch im vorangehenden Gemeindebrief haben wir bereits mit einem Raster gearbeitet:</p>
+
+<p><img src="material/raster-5spaltig.jpg" alt="Rechte Seite aus jetzigem Gemeindebrief; die Hilfslinien zeigen vier Spalten plus eine fünfte am äußeren Rand" /></p>
+
+<p>Bisher haben wir die DIN-A5-Seite in fünf Spalten aufgeteilt, wobei die fünfte ganz am Seitenrand lag und als großzügiger Weißraum meistens leer blieb bis auf Rubriktitel, Seitenzahl, Bildteile und seltene Randbemerkungen. Lange Artikeltexte füllten die inneren vier Spalten; kurze Termine haben wir zweispaltig gestaltet.</p>
+
+<h2 id="wozu-überhaupt-einen-gestaltungsraster">Wozu überhaupt einen Gestaltungsraster?</h2>
+
+<p>Ich gebe zu, mir macht es großen Spaß, ein Layout zu planen, Abstände und Spalten zu berechnen, für harmonische Verhältnisse zu sorgen. Ein Raster bringt für die Heftgestaltung aber auch echte Vorteile:</p>
+
+<ul>
+  <li>Orientierung, um verschiedene Inhalte auf der Seite anzuordnen</li>
+  <li>Schnelleres Arbeiten, weil bereits gute Vorgaben vorhanden sind</li>
+  <li>Einheitliche Ränder und Abstände, konsistente Gestaltung</li>
+  <li>Vertrautheit, damit Leser:innen sich schnell zurechtfinden</li>
+  <li>Konzentration auf die Inhalte, statt auf jeder Seite komplett neu über deren Platzierung nachdenken zu müssen</li>
+  <li>Klare Hierarchie für Überschriften, Texte und Bilder</li>
+  <li>Funktionierende, aber auch flexible Seiten-Kompositionen</li>
+</ul>
+
+<p>Ein Gegenargument mag sein, dass ein Raster einengen würde, zu starr sei und die gestalterische Freiheit einschränke. Aber es sagt ja keiner, dass man sich streng und ausschließlich an den Raster halten muss – es sind gute Leitlinien, die man in besonderen Fällen natürlich völlig ignorieren kann.</p>
+
+<h2 id="der-weg-zum-neuen-raster">Der Weg zum neuen Raster</h2>
+
+<p>Der großzügige Rand in der fünften Spalte war ein typisches, auffälliges Element des alten Magazins. Obwohl dadurch weniger Text auf eine Seite passt, finde ich diese Lösung noch immer originell und gestalterisch reizvoll. Weil sich das neue Heft aber vom alten unterscheiden soll, kommt dieses Rastersystem nicht mehr in Frage.</p>
+
+<p>Ich habe mir also erstmal grob überlegt, welche Seitenränder sinnvoll sind und wie ich die Spalten aufteilen könnte. Die Textzeilen müssen auch in schmalen Spalten eine sinnvolle Länge haben (35–90 Zeichen pro Zeile ist ein guter Richtwert), wobei man ja zwei oder drei Rasterspalten zusammennehmen kann.</p>
+
+<style>
+<!--
+.bildpaar { display: flex; flex-wrap: wrap; }
+.bildpaar > img { flex: 1; width: 250px; object-fit: contain; }
+
+@media (min-width: 29em) { .teilbild { float:left; width: 45%; margin: .3em 1.4em .4em 0; } }
+-->
+</style>
+
+<figure class="bildpaar">
+	<img src="material/raster-1.png" alt="Zwei Beispielseiten mit zwei beziehungsweise drei Textspalten." />
+	<img src="material/raster-2.png" alt="Zwei weitere Beispielseiten mit vier beziehungsweise fünf Textspalten." />
+	<figcaption>Vier Seiten mit Beispieltext zeigen, welche Aufteilung sich bei zwei, drei, vier oder fünf Spalten anbietet.</figcaption>
+</figure>
+
+<p>Zweispaltiger Satz allein war mir zu langweilig. Bei drei Spalten auf einer DIN-A5-Seite sind die Textzeilen fast zu kurz, wirklich abwechslungsreich wird das Layout dadurch nicht (außer die komplette Breite und drei einzelne Spalten könnte man einen Text noch 2 zu 1 in Spalten teilen).</p>
+
+<p>Bei vier Spalten kann man eine einzelne Spalte nur für kleinere Randbemerkungen verwenden, mit der normalen Textgröße passen dann zu wenige Buchstaben in eine Zeile. Übrig bleiben eine Teilung von 2 zu 2 (also wie zweispaltiger Satz), und 3 zu 1 (ähnlich der dreispaltigen Lösung). Weil wir im Gemeindebrief nicht sooo viele kleine Randbemerkungen oder schmale Bilder verwenden, war mir die vierspaltige Lösung zu unflexibel.</p>
+
+<p>Die fünfspaltige Lösung ist sehr flexibel und die asymmetrische Spaltenteilung von 3 zu 2 finde ich reizvoll. Das einzige, was dagegen spricht: Ich hatte doch beim alten Heft schon fünf Spalten. Zwar eine davon im Rand, aber trotzdem.</p>
+
+<p>Nach ein bisschen Recherche bin ich auf das <a href="https://www.adveniat.de/ueber-uns/adveniat-corporate-design/cd-anwendungen/literatur/din-a-5/">Gestaltungsraster von Adveniat</a> gestoßen. Sie arbeiten bei einer doch recht kleinen A5-Seite sogar mit sieben Spalten. Wenn man zu viele Spalten definiert, wird es das Dokument beim Gestalten unübersichtlich und erscheint später beim Lesen beliebig – aber die Anwendungsbeispiele von Adveniat sahen recht gut aus, diese Spaltenzahl schien gut zu funktionieren. Die sieben Spalten habe ich also übernommen, aber mit zwei Anpassungen.</p>
+
+<h1 id="sieben-breitere-spalten-kleinere-ränder">Sieben breitere Spalten, kleinere Ränder</h1>
+
+<p>Im Gegensatz zu Adveniat habe ich die Spalten geringfügig verbreitert. Statt 3 × 4,5<small> </small>mm sind meine Spalten 3 × 4,6<small> </small>mm (mit 4,64,6<small> </small>mm Abstand dazwischen). So kann die Schrift für den Gemeindebrief etwas größer sein (wichtig für ältere Leser:innen), auch wenn dafür die Ränder kleiner ausfallen.</p>
+
+<p>Stichwort Ränder: In einem Heft sollten die Seitenränder innen und außern nicht gleich breit sein! Im Bund eines Heftchens kommen nämlich die inneren Ränder der linken und rechten Seite zusammen und ergänzen sich optisch zu einem doppelten Rand. Darum sollte man sie schmaler anlegen. Gleichzeitig bietet ein breiterer Außenrand mehr Platz für die Daumen beim Blättern.</p>
+
+<p><img class="teilbild" src="material/raster-7spaltig.jpg" alt="Linienskizze auf kariertem Papier, dazu notiert sind die Maße und Anzahl der Kästchen." /></p>
+
+<p>Nach ein bisschen Rumprobieren auf Papier (erst in Originalgröße, später vergrößert auf einem Kästchenraster), habe ich mich schließlich auf eine 7er-Spalten-Einteilung festgelegt. In der Skizze sieht man einige Beispiel-Aufteilungen: Ein Block über 5 Spalten mit einer Randbemerkung über 2 Spalten; ein Bildblock im Innenrand (mit Spalte ganz links) und zwei Textspalten über jeweils 3 Rasterspalten. Um einen kurze Termine wie gewohnt symmetrisch in zwei Spalten setzen zu können, habe ich mir noch Hilfslinien in der Mitte angelegt.</p>
+
+<p>Normalerweise ist ein Gestaltungsraster auch waagrecht unterteilt. So ergeben sich mehrere Rechtecke, die sehr gut geeignet sind, um modulare Bausteine zu platzieren, beispielsweise die Produktfotos in einem Katalog. Im Raster kann auch der Platz für die Überschrift einer Seite festgelegt werden oder von wiederkehrenden Gestaltungselementen wie Rubriktitel oder einem Register.</p>
+
+<p>Für unseren neuen Gemeindebrief ist so eine waagrechte Unterteilung nicht unbedingt nötig. Vielleicht ergibt sie sich später beim Arbeiten mit dem Dokument. Zunächst orientiere ich mich stattdessen nach dem Abstand der Zeilen und richte Bilder danach aus.</p>
+
+<figure class="bildpaar" style="gap: .7em;">
+	<img src="material/raster-3.png" alt="Eine Doppelseite mit Beispiel-Elementen, angeordnet auf dem siebenspaltigen Raster." />
+	<img src="material/raster-4.png" alt="Eine weitere Doppelseite mit siebenspaltigem Raster." />
+	<figcaption>Hier noch zwei Doppelseiten mit Blindtexten und Bild-Platzhaltern, um die Möglichkeiten des siebenspaltigen Rasters zu zeigen.</figcaption>
+</figure>
+
+<p>Ich freue mich darauf, dieses neue Raster anzuwenden und bin gespannt, wie gut sich die asymmetrische Teilung (3 zu 4 Rasterspalten) für eine interessante Gestaltung in der Praxis eignet.</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp;
+<a href="archiv.html?methodik">#methodik&nbsp; </a>
+
+<a href="archiv.html?typografie">#typografie&nbsp; </a>
+</p>
+</article>
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/raster">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="vergiftete-witze.html">← Witze mit giftigem Kern</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside>
+<p>Hallo, ich bin Gerhard Großmann aus Hohenfels<span class="no-print"> (siehe <a href="/index.html#impressum">Impressum/Datenschutz</a>)</span>. Über Fragen, Kritik und Anmerkungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Mastodon</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em><span class="no-print"> (gern mit <a href="/bestand/pub-0x9BA6621B.asc">meinem PGP-Schlüssel</a> verschlüsselt)</span>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünktlich über neue Artikel. Alle bis&shy;herigen Einträge finden sich <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Creative-Commons-Lizenz 4.0 (Deutschland)</a> mit Namensnennung und Weitergabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
+</body>
+</html>

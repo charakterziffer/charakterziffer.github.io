@@ -13,6 +13,89 @@
 </image>
 
 <item>
+	<title>Raster für ein Magazin</title>
+	<description>&lt;p&gt;Für die Kirchengemeinde meiner früheren Heimat arbeite ich am vierteljährlichen Gemeindebrief mit. Ich kürze Texte, bearbeite Fotos und vor allem bringe ich die Inhalte schön angeordnet auf die Seiten. Nun soll dieser Gemeindebrief mit dem aus der Nachbargemeinde zusammengeführt werden. Weil wir keines der Magazine bevorzugen wollen, kann ich dafür ein völlig neues Heftdesign entwickeln.&lt;/p&gt;
+
+&lt;p&gt;In beiden Gemeindebriefen gibt es Themenartikel, Fotorückblicke, Terminhinweise und Formelles (wie Taufen und Geburtstage). Es sind also recht unterschiedliche Inhalte. Um diese abwechslungsreich, aber auch geordnet darzustellen, empfiehlt es sich, einen Gestaltungsraster zu verwenden (ja, im Grafikdesign heißt es &lt;em&gt;der&lt;/em&gt; Raster). Im Grunde sind es Hilfslinien, die den Seitenrand, Textspalten und evtl. sogar Bereiche für Abbildungen definieren. Auch im vorangehenden Gemeindebrief haben wir bereits mit einem Raster gearbeitet:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/raster-5spaltig.jpg&quot; alt=&quot;Rechte Seite aus jetzigem Gemeindebrief; die Hilfslinien zeigen vier Spalten plus eine fünfte am äußeren Rand&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bisher haben wir die DIN-A5-Seite in fünf Spalten aufgeteilt, wobei die fünfte ganz am Seitenrand lag und als großzügiger Weißraum meistens leer blieb bis auf Rubriktitel, Seitenzahl, Bildteile und seltene Randbemerkungen. Lange Artikeltexte füllten die inneren vier Spalten; kurze Termine haben wir zweispaltig gestaltet.&lt;/p&gt;
+
+&lt;h2 id=&quot;wozu-überhaupt-einen-gestaltungsraster&quot;&gt;Wozu überhaupt einen Gestaltungsraster?&lt;/h2&gt;
+
+&lt;p&gt;Ich gebe zu, mir macht es großen Spaß, ein Layout zu planen, Abstände und Spalten zu berechnen, für harmonische Verhältnisse zu sorgen. Ein Raster bringt für die Heftgestaltung aber auch echte Vorteile:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Orientierung, um verschiedene Inhalte auf der Seite anzuordnen&lt;/li&gt;
+  &lt;li&gt;Schnelleres Arbeiten, weil bereits gute Vorgaben vorhanden sind&lt;/li&gt;
+  &lt;li&gt;Einheitliche Ränder und Abstände, konsistente Gestaltung&lt;/li&gt;
+  &lt;li&gt;Vertrautheit, damit Leser:innen sich schnell zurechtfinden&lt;/li&gt;
+  &lt;li&gt;Konzentration auf die Inhalte, statt auf jeder Seite komplett neu über deren Platzierung nachdenken zu müssen&lt;/li&gt;
+  &lt;li&gt;Klare Hierarchie für Überschriften, Texte und Bilder&lt;/li&gt;
+  &lt;li&gt;Funktionierende, aber auch flexible Seiten-Kompositionen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ein Gegenargument mag sein, dass ein Raster einengen würde, zu starr sei und die gestalterische Freiheit einschränke. Aber es sagt ja keiner, dass man sich streng und ausschließlich an den Raster halten muss – es sind gute Leitlinien, die man in besonderen Fällen natürlich völlig ignorieren kann.&lt;/p&gt;
+
+&lt;h2 id=&quot;der-weg-zum-neuen-raster&quot;&gt;Der Weg zum neuen Raster&lt;/h2&gt;
+
+&lt;p&gt;Der großzügige Rand in der fünften Spalte war ein typisches, auffälliges Element des alten Magazins. Obwohl dadurch weniger Text auf eine Seite passt, finde ich diese Lösung noch immer originell und gestalterisch reizvoll. Weil sich das neue Heft aber vom alten unterscheiden soll, kommt dieses Rastersystem nicht mehr in Frage.&lt;/p&gt;
+
+&lt;p&gt;Ich habe mir also erstmal grob überlegt, welche Seitenränder sinnvoll sind und wie ich die Spalten aufteilen könnte. Die Textzeilen müssen auch in schmalen Spalten eine sinnvolle Länge haben (35–90 Zeichen pro Zeile ist ein guter Richtwert), wobei man ja zwei oder drei Rasterspalten zusammennehmen kann.&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+.bildpaar { display: flex; flex-wrap: wrap; }
+.bildpaar &gt; img { flex: 1; width: 250px; object-fit: contain; }
+
+@media (min-width: 29em) { .teilbild { float:left; width: 45%; margin: .3em 1.4em .4em 0; } }
+--&gt;
+&lt;/style&gt;
+
+&lt;figure class=&quot;bildpaar&quot;&gt;
+	&lt;img src=&quot;material/raster-1.png&quot; alt=&quot;Zwei Beispielseiten mit zwei beziehungsweise drei Textspalten.&quot; /&gt;
+	&lt;img src=&quot;material/raster-2.png&quot; alt=&quot;Zwei weitere Beispielseiten mit vier beziehungsweise fünf Textspalten.&quot; /&gt;
+	&lt;figcaption&gt;Vier Seiten mit Beispieltext zeigen, welche Aufteilung sich bei zwei, drei, vier oder fünf Spalten anbietet.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Zweispaltiger Satz allein war mir zu langweilig. Bei drei Spalten auf einer DIN-A5-Seite sind die Textzeilen fast zu kurz, wirklich abwechslungsreich wird das Layout dadurch nicht (außer die komplette Breite und drei einzelne Spalten könnte man einen Text noch 2 zu 1 in Spalten teilen).&lt;/p&gt;
+
+&lt;p&gt;Bei vier Spalten kann man eine einzelne Spalte nur für kleinere Randbemerkungen verwenden, mit der normalen Textgröße passen dann zu wenige Buchstaben in eine Zeile. Übrig bleiben eine Teilung von 2 zu 2 (also wie zweispaltiger Satz), und 3 zu 1 (ähnlich der dreispaltigen Lösung). Weil wir im Gemeindebrief nicht sooo viele kleine Randbemerkungen oder schmale Bilder verwenden, war mir die vierspaltige Lösung zu unflexibel.&lt;/p&gt;
+
+&lt;p&gt;Die fünfspaltige Lösung ist sehr flexibel und die asymmetrische Spaltenteilung von 3 zu 2 finde ich reizvoll. Das einzige, was dagegen spricht: Ich hatte doch beim alten Heft schon fünf Spalten. Zwar eine davon im Rand, aber trotzdem.&lt;/p&gt;
+
+&lt;p&gt;Nach ein bisschen Recherche bin ich auf das &lt;a href=&quot;https://www.adveniat.de/ueber-uns/adveniat-corporate-design/cd-anwendungen/literatur/din-a-5/&quot;&gt;Gestaltungsraster von Adveniat&lt;/a&gt; gestoßen. Sie arbeiten bei einer doch recht kleinen A5-Seite sogar mit sieben Spalten. Wenn man zu viele Spalten definiert, wird es das Dokument beim Gestalten unübersichtlich und erscheint später beim Lesen beliebig – aber die Anwendungsbeispiele von Adveniat sahen recht gut aus, diese Spaltenzahl schien gut zu funktionieren. Die sieben Spalten habe ich also übernommen, aber mit zwei Anpassungen.&lt;/p&gt;
+
+&lt;h1 id=&quot;sieben-breitere-spalten-kleinere-ränder&quot;&gt;Sieben breitere Spalten, kleinere Ränder&lt;/h1&gt;
+
+&lt;p&gt;Im Gegensatz zu Adveniat habe ich die Spalten geringfügig verbreitert. Statt 3 × 4,5&lt;small&gt; &lt;/small&gt;mm sind meine Spalten 3 × 4,6&lt;small&gt; &lt;/small&gt;mm (mit 4,64,6&lt;small&gt; &lt;/small&gt;mm Abstand dazwischen). So kann die Schrift für den Gemeindebrief etwas größer sein (wichtig für ältere Leser:innen), auch wenn dafür die Ränder kleiner ausfallen.&lt;/p&gt;
+
+&lt;p&gt;Stichwort Ränder: In einem Heft sollten die Seitenränder innen und außern nicht gleich breit sein! Im Bund eines Heftchens kommen nämlich die inneren Ränder der linken und rechten Seite zusammen und ergänzen sich optisch zu einem doppelten Rand. Darum sollte man sie schmaler anlegen. Gleichzeitig bietet ein breiterer Außenrand mehr Platz für die Daumen beim Blättern.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;teilbild&quot; src=&quot;material/raster-7spaltig.jpg&quot; alt=&quot;Linienskizze auf kariertem Papier, dazu notiert sind die Maße und Anzahl der Kästchen.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nach ein bisschen Rumprobieren auf Papier (erst in Originalgröße, später vergrößert auf einem Kästchenraster), habe ich mich schließlich auf eine 7er-Spalten-Einteilung festgelegt. In der Skizze sieht man einige Beispiel-Aufteilungen: Ein Block über 5 Spalten mit einer Randbemerkung über 2 Spalten; ein Bildblock im Innenrand (mit Spalte ganz links) und zwei Textspalten über jeweils 3 Rasterspalten. Um einen kurze Termine wie gewohnt symmetrisch in zwei Spalten setzen zu können, habe ich mir noch Hilfslinien in der Mitte angelegt.&lt;/p&gt;
+
+&lt;p&gt;Normalerweise ist ein Gestaltungsraster auch waagrecht unterteilt. So ergeben sich mehrere Rechtecke, die sehr gut geeignet sind, um modulare Bausteine zu platzieren, beispielsweise die Produktfotos in einem Katalog. Im Raster kann auch der Platz für die Überschrift einer Seite festgelegt werden oder von wiederkehrenden Gestaltungselementen wie Rubriktitel oder einem Register.&lt;/p&gt;
+
+&lt;p&gt;Für unseren neuen Gemeindebrief ist so eine waagrechte Unterteilung nicht unbedingt nötig. Vielleicht ergibt sie sich später beim Arbeiten mit dem Dokument. Zunächst orientiere ich mich stattdessen nach dem Abstand der Zeilen und richte Bilder danach aus.&lt;/p&gt;
+
+&lt;figure class=&quot;bildpaar&quot; style=&quot;gap: .7em;&quot;&gt;
+	&lt;img src=&quot;material/raster-3.png&quot; alt=&quot;Eine Doppelseite mit Beispiel-Elementen, angeordnet auf dem siebenspaltigen Raster.&quot; /&gt;
+	&lt;img src=&quot;material/raster-4.png&quot; alt=&quot;Eine weitere Doppelseite mit siebenspaltigem Raster.&quot; /&gt;
+	&lt;figcaption&gt;Hier noch zwei Doppelseiten mit Blindtexten und Bild-Platzhaltern, um die Möglichkeiten des siebenspaltigen Rasters zu zeigen.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ich freue mich darauf, dieses neue Raster anzuwenden und bin gespannt, wie gut sich die asymmetrische Teilung (3 zu 4 Rasterspalten) für eine interessante Gestaltung in der Praxis eignet.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/raster.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/raster.html</guid>
+	<pubDate>Wed, 25 Jan 2023 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Witze mit giftigem Kern</title>
 	<description>&lt;p&gt;In der Chatgruppe eines (unpolitischen) Vereins hat kürzlich jemand zwei „lustige Bildchen“ geteilt, so genannte &lt;em&gt;Memes&lt;/em&gt;. Ich möchte sie hier nicht wiedergeben, werde sie aber kurz beschreiben:&lt;/p&gt;
 
@@ -249,53 +332,6 @@ Welche langen Posts möchtest du gerne schreiben/lesen (also darin Zeit investie
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2023.html</guid>
 	<pubDate>Thu, 27 Oct 2022 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Harmonische Verhältnisse</title>
-	<description>&lt;p&gt;Am 19. August 2022 hatte unser Papierformat ein Jubiläum: Die Blattgröße DIN A4 ist vor genau 100 Jahren genormt worden. Genauer gesagt war es ein ganzes System aus verschiedenen Größen – von 4mal A0 bis A10, dazu die leicht größeren B- und C-Reihen (z.&lt;small&gt; &lt;/small&gt;B. für Umschläge) und die etwas kleinere D-Reihe. Diese über 40 definierten Papiergrößen haben eines gemeinsam: Die kurze Papierseite verhält sich zur längeren wie 1 zu √2 (die Quadratwurzel aus 2, ungefähr 1,4142…).&lt;/p&gt;
-
-&lt;p&gt;Was ist das besondere an diesem krummen Seitenverhältnis? Es ist das einzige, dass gleich bleibt, wenn man das Format in der langen Seite halbiert. Faltet man ein DIN-A4-Blatt (29,7 × 21 cm) in der Mitte, entsteht ein halb so großes Blatt im Format DIN A5 (21 × 14,8 cm). Bei beiden Blättern ist die lange Seite √2-mal so lang wie die kurze.&lt;/p&gt;
-
-&lt;style&gt;
-@media screen and (prefers-color-scheme: dark) {
-	img[src$=&quot;reihe.svg&quot;] { filter: invert(1) hue-rotate(180deg); }
-&lt;/style&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/a-reihe.svg&quot; alt=&quot;Durch mehrmaliges Halbieren entsteht aus einem A3-Papier erst das Format A4, dann A5 und schließlich A6.&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Bei jedem anderen Format entsteht beim Halbieren immer abwechselnd ein breiteres oder schlankeres Rechteck. Hier beispielsweise ein Blatt mit dem Verhältnis 5 zu 6:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/3zu5-reihe.svg&quot; alt=&quot;Halbiert man ein breites Blatt mit dem Seitenverhältnis 5:6 erhält man ein schlankes Blatt im Format 3:5. Beim erneuten Halbieren landet man wieder beim Verhältnis 5:6 und so weiter.&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Es hat große Vorteile, wenn Papiermaße auf einheitliche Größen genormt sind. Zum Beispiel passen Akten genau in den entsprechenden Ordner, ohne dass oben oder seitlich etwas hervorsteht; ein ausgedruckter Brief lässt sich einfach falten und geht genau in den genormten Umschlag; man kann in jedem Schreibwarenladen Druckerpapier kaufen, ohne vorher messen zu müssen, ob das Format daheim wirklich in den Drucker passt. Und durch das „magische“ Seitenverhältnis 1:√2 lassen sich Vorlagen auf dem Kopierer vergrößern und verkleinern und gehen trotzdem auf das nächstkleinere oder nächstgrößere Blatt, weil die Proportionen ja gleich bleiben.&lt;/p&gt;
-
-&lt;h2 id=&quot;praktisch-aber-langweilig&quot;&gt;Praktisch, aber langweilig&lt;/h2&gt;
-
-&lt;p&gt;Papiere im Verhältnis 1:√2 gab es schon zu Zeiten der Französischen Revolution. Auch für den Renaissance-Architekten Andrea Palladio zählte dieses Format &lt;a href=&quot;https://de.wikipedia.org/wiki/Proportion_%28Architektur%29#Renaissance&quot;&gt;zu harmonischen Seitenverhältnissen&lt;/a&gt;, die er in seinen Gebäuden zum Beispiel für Räume, Türen oder Fenster benutzt hat.&lt;/p&gt;
-
-&lt;p&gt;Eine Kritik am genormten Papierformat ist, dass es ziemlich unästhetisch sei (sagt zum Beispiel der bekannte Gestalter Erik Spiekermann im &lt;a href=&quot;https://www.deutschlandfunkkultur.de/100-jahre-din-a4-unglaublich-praktisch-unglaublich-langweilig-podcast-dlf-kultur-f5234ff9-100.html&quot;&gt;Dlf-Kultur-Beitrag über das DIN-Format&lt;/a&gt;). Meiner Meinung nach hat das viel mit Gewohnheit zu tun. Wenn jeder das gleiche Format verwendet, gilt dieses schnell als gewöhnlich, als langweiliger Standard. Alles was davon abweicht, ist interessanter.&lt;/p&gt;
-
-&lt;p&gt;Bei Büchern hat sich kein einheitliches Seitenverhältnis durchgesetzt, sondern das Format richtet sich im Idealfall nach dem Inhalt: Lyrikbände mit kurzen Gedichtzeilen sind eher schmal, mehrspaltige Nachschlagewerke eher breit, Romane liegen irgendwo dazwischen. Große Bildbände mit Landschaftsfotografien kommen manchmal sogar im Querformat daher.&lt;/p&gt;
-
-&lt;h2 id=&quot;das-allerschönste-format&quot;&gt;Das allerschönste Format&lt;/h2&gt;
-
-&lt;p&gt;Bevor sich das DIN-Format durchgesetzt hat, waren Papiere mit anderen Seitenverhältnissen üblich, zum Beispiel das schlanke, elegant wirkende Format 2:3 oder das als ruhig geltende 3:4. Aus dem Filmbereich kennt man das Bildformat 16:9 (als Querformat, so wie auch unsere Augen angeordnet sind). Ein weiteres bekanntes Seitenverhältnis ist der &lt;a href=&quot;https://de.wikipedia.org/wiki/Goldener_Schnitt&quot;&gt;Goldene Schnitt&lt;/a&gt; (ca. 1:1,618).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/formate.svg&quot; alt=&quot;Vier Rechtecke mit verschiedenen Seitenverhältnissen, so wie sie im vorhergehenden Absatz genannt wurden.&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Im 19. Jahrhundert untersuchte Gustav Theodor Fechner, Begründer der Psychophysik, ob es ein bestimmtes Seitenverhältnis gibt, das wir Menschen besonders ästhetisch finden – und ob es vielleicht der berühmte Goldene Schnitt sei. In seinem Buch &lt;em&gt;Vorschule der Ästhetik&lt;/em&gt; von 1876 beschreibt er im Band 2 ab Seite 184 ein Experiment: Fast 350 Personen sollten aus zehn verschiedenen Karton-Rechtecken dasjenige aussuchen, das für sie den „wohlgefälligsten Eindruck“ mache.&lt;/p&gt;
-
-&lt;p&gt;Die &lt;a href=&quot;https://archive.org/details/vorschulederaes01fechgoog/page/n207/mode/2up?view=theater&quot;&gt;Ergebnis-Tabelle&lt;/a&gt; zeigt, dass den meisten (rund 35 %) das Rechteck mit dem Seitenverhältnis 21:34 gefiel, was auch am nächsten am Goldenen Schnitt lag. Allerdings räumt Fechner ein, dass die Teilnehmer lange zwischen verschiedenen Formaten schwankten, bei einer Wiederholung ein anderes Rechteck wählten und ermuntert werden mussten, möglichst ganz allgemein und durchschnittlich die Wohlgefälligkeit zu beurteilen, nicht nach einem bestimmten Anwendungszweck.&lt;/p&gt;
-
-&lt;p&gt;Würde man den Versuch heute wiederholen, schätze ich, dass das Rechteck im gewohnten Fernsehformat 16:9 ziemlich weit vorn dabei wäre; genau wie dasjenige im DIN-Format 1:√2. Diese Verhältnisse sind uns heute einfach sehr vertraut (und darum wohlgefällig?).&lt;/p&gt;
-
-&lt;p&gt;Ihr könnt das ja mal ausprobieren: Nehmt ein großes Blatt Papier und zeichnet Freihand und nicht zu groß ein Rechteck mit möglichst harmonischem Seitenverhältnis – gerne im Hoch- und nochmal im Querformat. Wenn ihr nachmesst: Welches Format hat es bei euch?&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/seitenverhaeltnis.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/seitenverhaeltnis.html</guid>
-	<pubDate>Wed, 14 Sep 2022 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
