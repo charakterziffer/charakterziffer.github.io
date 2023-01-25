@@ -30,7 +30,7 @@
   &lt;li&gt;Orientierung, um verschiedene Inhalte auf der Seite anzuordnen&lt;/li&gt;
   &lt;li&gt;Schnelleres Arbeiten, weil bereits gute Vorgaben vorhanden sind&lt;/li&gt;
   &lt;li&gt;Einheitliche Ränder und Abstände, konsistente Gestaltung&lt;/li&gt;
-  &lt;li&gt;Vertrautheit, damit Leser:innen sich schnell zurechtfinden&lt;/li&gt;
+  &lt;li&gt;Vertrautheit, damit Lesende sich schnell zurechtfinden&lt;/li&gt;
   &lt;li&gt;Konzentration auf die Inhalte, statt auf jeder Seite komplett neu über deren Platzierung nachdenken zu müssen&lt;/li&gt;
   &lt;li&gt;Klare Hierarchie für Überschriften, Texte und Bilder&lt;/li&gt;
   &lt;li&gt;Funktionierende, aber auch flexible Seiten-Kompositionen&lt;/li&gt;
@@ -59,17 +59,17 @@
 	&lt;figcaption&gt;Vier Seiten mit Beispieltext zeigen, welche Aufteilung sich bei zwei, drei, vier oder fünf Spalten anbietet.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Zweispaltiger Satz allein war mir zu langweilig. Bei drei Spalten auf einer DIN-A5-Seite sind die Textzeilen fast zu kurz, wirklich abwechslungsreich wird das Layout dadurch nicht (außer die komplette Breite und drei einzelne Spalten könnte man einen Text noch 2 zu 1 in Spalten teilen).&lt;/p&gt;
+&lt;p&gt;Zweispaltiger Satz allein war mir zu langweilig. Bei drei Spalten auf einer DIN-A5-Seite sind die Textzeilen fast zu kurz, wirklich abwechslungsreich wird das Layout dadurch nicht (außer die komplette Breite oder drei einzelne Spalten könnte man einen Text noch 2 zu 1 in Spalten teilen).&lt;/p&gt;
 
 &lt;p&gt;Bei vier Spalten kann man eine einzelne Spalte nur für kleinere Randbemerkungen verwenden, mit der normalen Textgröße passen dann zu wenige Buchstaben in eine Zeile. Übrig bleiben eine Teilung von 2 zu 2 (also wie zweispaltiger Satz), und 3 zu 1 (ähnlich der dreispaltigen Lösung). Weil wir im Gemeindebrief nicht sooo viele kleine Randbemerkungen oder schmale Bilder verwenden, war mir die vierspaltige Lösung zu unflexibel.&lt;/p&gt;
 
 &lt;p&gt;Die fünfspaltige Lösung ist sehr flexibel und die asymmetrische Spaltenteilung von 3 zu 2 finde ich reizvoll. Das einzige, was dagegen spricht: Ich hatte doch beim alten Heft schon fünf Spalten. Zwar eine davon im Rand, aber trotzdem.&lt;/p&gt;
 
-&lt;p&gt;Nach ein bisschen Recherche bin ich auf das &lt;a href=&quot;https://www.adveniat.de/ueber-uns/adveniat-corporate-design/cd-anwendungen/literatur/din-a-5/&quot;&gt;Gestaltungsraster von Adveniat&lt;/a&gt; gestoßen. Sie arbeiten bei einer doch recht kleinen A5-Seite sogar mit sieben Spalten. Wenn man zu viele Spalten definiert, wird es das Dokument beim Gestalten unübersichtlich und erscheint später beim Lesen beliebig – aber die Anwendungsbeispiele von Adveniat sahen recht gut aus, diese Spaltenzahl schien gut zu funktionieren. Die sieben Spalten habe ich also übernommen, aber mit zwei Anpassungen.&lt;/p&gt;
+&lt;p&gt;Nach ein bisschen Recherche bin ich auf das &lt;a href=&quot;https://www.adveniat.de/ueber-uns/adveniat-corporate-design/cd-anwendungen/literatur/din-a-5/&quot;&gt;Gestaltungsraster von Adveniat&lt;/a&gt; gestoßen. Sie arbeiten bei einer doch recht kleinen A5-Seite sogar mit sieben Spalten. Wenn man zu viele Spalten definiert, wird es das Dokument beim Gestalten unübersichtlich und erscheint später beim Lesen beliebig – aber die Anwendungsbeispiele von Adveniat sahen recht gut aus, diese Spaltenzahl schien zu funktionieren. Die sieben Spalten habe ich also übernommen, aber mit zwei Anpassungen.&lt;/p&gt;
 
 &lt;h1 id=&quot;sieben-breitere-spalten-kleinere-ränder&quot;&gt;Sieben breitere Spalten, kleinere Ränder&lt;/h1&gt;
 
-&lt;p&gt;Im Gegensatz zu Adveniat habe ich die Spalten geringfügig verbreitert. Statt 3 × 4,5&lt;small&gt; &lt;/small&gt;mm sind meine Spalten 3 × 4,6&lt;small&gt; &lt;/small&gt;mm (mit 4,64,6&lt;small&gt; &lt;/small&gt;mm Abstand dazwischen). So kann die Schrift für den Gemeindebrief etwas größer sein (wichtig für ältere Leser:innen), auch wenn dafür die Ränder kleiner ausfallen.&lt;/p&gt;
+&lt;p&gt;Im Gegensatz zu Adveniat habe ich die Spalten geringfügig verbreitert. Statt 3 × 4,5&lt;small&gt; &lt;/small&gt;mm sind meine Spalten 3 × 4,6&lt;small&gt; &lt;/small&gt;mm (mit 4,6&lt;small&gt; &lt;/small&gt;mm Abstand dazwischen). So kann die Schrift für den Gemeindebrief etwas größer sein (wichtig für ältere Leser:innen), auch wenn dafür die Ränder kleiner ausfallen.&lt;/p&gt;
 
 &lt;p&gt;Stichwort Ränder: In einem Heft sollten die Seitenränder innen und außern nicht gleich breit sein! Im Bund eines Heftchens kommen nämlich die inneren Ränder der linken und rechten Seite zusammen und ergänzen sich optisch zu einem doppelten Rand. Darum sollte man sie schmaler anlegen. Gleichzeitig bietet ein breiterer Außenrand mehr Platz für die Daumen beim Blättern.&lt;/p&gt;
 
@@ -79,7 +79,7 @@
 
 &lt;p&gt;Normalerweise ist ein Gestaltungsraster auch waagrecht unterteilt. So ergeben sich mehrere Rechtecke, die sehr gut geeignet sind, um modulare Bausteine zu platzieren, beispielsweise die Produktfotos in einem Katalog. Im Raster kann auch der Platz für die Überschrift einer Seite festgelegt werden oder von wiederkehrenden Gestaltungselementen wie Rubriktitel oder einem Register.&lt;/p&gt;
 
-&lt;p&gt;Für unseren neuen Gemeindebrief ist so eine waagrechte Unterteilung nicht unbedingt nötig. Vielleicht ergibt sie sich später beim Arbeiten mit dem Dokument. Zunächst orientiere ich mich stattdessen nach dem Abstand der Zeilen und richte Bilder danach aus.&lt;/p&gt;
+&lt;p&gt;Für unseren neuen Gemeindebrief ist so eine waagrechte Unterteilung nicht unbedingt nötig. Vielleicht ergibt sie sich später beim Arbeiten mit dem Dokument. Zunächst orientiere ich mich stattdessen am Abstand der Zeilen und richte Bilder danach aus.&lt;/p&gt;
 
 &lt;figure class=&quot;bildpaar&quot; style=&quot;gap: .7em;&quot;&gt;
 	&lt;img src=&quot;material/raster-3.png&quot; alt=&quot;Eine Doppelseite mit Beispiel-Elementen, angeordnet auf dem siebenspaltigen Raster.&quot; /&gt;
@@ -87,7 +87,7 @@
 	&lt;figcaption&gt;Hier noch zwei Doppelseiten mit Blindtexten und Bild-Platzhaltern, um die Möglichkeiten des siebenspaltigen Rasters zu zeigen.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Ich freue mich darauf, diesen neuen Raster anzuwenden und bin gespannt, wie gut sich die asymmetrische Teilung (3 zu 4 Rasterspalten) für eine interessante Gestaltung in der Praxis eignet.&lt;/p&gt;
+&lt;p&gt;Ich freue mich darauf, diesen neuen Raster anzuwenden und bin gespannt, wie gut sich die asymmetrische Teilung (3 zu 4 Rasterspalten) für eine interessante Gestaltung in der Praxis eignet. Ein sehr gutes Buch zu dem Thema ist übrigens „Rastersysteme für die visuelle Gestaltung“ (dt./engl.) von Josef Müller-Brockmann. Es beschreibt die Vorgehensweise wie man einen Raster konstruiert und liefert Praxisbeispiele und Hindergründe.&lt;/p&gt;
 </description>
 	<link>https://charakterziffer.github.io/raster.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
