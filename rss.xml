@@ -13,6 +13,94 @@
 </image>
 
 <item>
+	<title>Ein Siebtel</title>
+	<description>&lt;style&gt;
+.periode { text-decoration-skip-ink: none; text-decoration: overline; }
+mark {background-color:var(--gruen-blass); color:var(--text-stark);}
+.mark2 {background-color:var(--akzent-blass); color:var(--text-stark);}
+&lt;/style&gt;
+
+&lt;p&gt;Doch, in diesem Blogartikel geht es tatsächlich um einen mathematischen Bruch, nämlich &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt;. Als Dezimalzahl mit Komma ist das 0,1428571428571428… Es sind immer die gleichen sechs Ziffern, die sich wiederholen. In der Mathematik nennt man das „Periode“ und markiert die Ziffern mit einem Strich darüber: 0,&lt;span class=&quot;periode&quot;&gt;142857&lt;/span&gt;. Zwei andere Beispiele zum Verständnis: &lt;sup&gt;4&lt;/sup&gt;⁄&lt;sub&gt;27&lt;/sub&gt; schreibt man dezimal als 0,&lt;span class=&quot;periode&quot;&gt;148&lt;/span&gt; (also 0,14814814…) und &lt;sup&gt;5&lt;/sup&gt;⁄&lt;sub&gt;6&lt;/sub&gt; sind 0,8&lt;span class=&quot;periode&quot;&gt;3&lt;/span&gt; (= 0,83333… – die erste 8 wiederholt sich nicht).&lt;/p&gt;
+
+&lt;h2 id=&quot;immer-die-gleichen-ziffern&quot;&gt;Immer die gleichen Ziffern&lt;/h2&gt;
+
+&lt;p&gt;Aber zurück zu den Siebteln. Wenn man zwei davon hat, sind das dezimal 0,&lt;span class=&quot;periode&quot;&gt;285714&lt;/span&gt; – die gleichen sechs Ziffern in der gleichen Reihenfolge, nur dass es diesmal bei der 2 losgeht. Und so ist das auch bei drei, vier, fünf und sechs Siebteln:&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,&lt;mark&gt;142857&lt;/mark&gt;142857…&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,2857&lt;mark&gt;142857&lt;/mark&gt;14…&lt;br /&gt;
+&lt;sup&gt;3&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,42857&lt;mark&gt;142857&lt;/mark&gt;1…&lt;br /&gt;
+&lt;sup&gt;4&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,57&lt;mark&gt;142857&lt;/mark&gt;1428…&lt;br /&gt;
+&lt;sup&gt;5&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,7&lt;mark&gt;142857&lt;/mark&gt;14285…&lt;br /&gt;
+&lt;sup&gt;6&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,857&lt;mark&gt;142857&lt;/mark&gt;142…&lt;/p&gt;
+
+&lt;p&gt;Überall taucht die gleiche Ziffernfolge auf. Und darin befinden sich dann auch noch Zahlen aus dem 7er-Einmaleins: 7, 14, 28. Das ist doch nicht normal! Nein, ist es nicht. Bei Sechsteln ist es zum Beispiel ganz anders. &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;6&lt;/sub&gt; ist dezimal 0,1&lt;span class=&quot;periode&quot;&gt;6&lt;/span&gt; (es wiederholt sich die 6), &lt;sup&gt;2&lt;/sup&gt;⁄&lt;sub&gt;6&lt;/sub&gt; sind 0,&lt;span class=&quot;periode&quot;&gt;3&lt;/span&gt; (die 3 wiederholt sich), &lt;sup&gt;3&lt;/sup&gt;⁄&lt;sub&gt;6&lt;/sub&gt; ergibt 0,5 ganz ohne Wiederholung.&lt;/p&gt;
+
+&lt;p&gt;Es hat etwas damit zu tun, ob im Nenner eine Primzahl (bzw. ein Primfaktor) steckt, also eine Zahl wie 2, 3, 5, 7, 11, 13, 17, … die ohne Rest nur durch 1 oder durch sich selbst teilbar ist. Und auch mit unserem Dezimalsystem hat es zu tun, das auf der Zahl 10 beruht. Weil 2 und 5 zwar Primzahlen, aber auch Teiler von 10 sind, ergeben die Brüche &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;2&lt;/sub&gt; und &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;5&lt;/sub&gt; in Dezimalschreibweise auch keine sich wiederholenden Nachkommastellen (nur 0,5 bzw. 0,2).&lt;/p&gt;
+
+&lt;h2 id=&quot;andere-nenner&quot;&gt;Andere Nenner&lt;/h2&gt;
+
+&lt;p&gt;In den Nachkommastellen von Dreizehnteln tauchen zwei verschiedene, sich wiederholende Ziffernreihen auf:&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,&lt;mark&gt;076923&lt;/mark&gt;076923…&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,&lt;span class=&quot;mark2&quot;&gt;153846&lt;/span&gt;153846…&lt;br /&gt;
+&lt;sup&gt;3&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,23&lt;mark&gt;076923&lt;/mark&gt;0769…&lt;br /&gt;
+&lt;sup&gt;4&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,3&lt;mark&gt;076923&lt;/mark&gt;07692…&lt;br /&gt;
+&lt;sup&gt;5&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,3846&lt;span class=&quot;mark2&quot;&gt;153846&lt;/span&gt;15…&lt;br /&gt;
+&lt;sup&gt;6&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,46&lt;span class=&quot;mark2&quot;&gt;153846&lt;/span&gt;1538…&lt;br /&gt;
+&lt;sup&gt;7&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,53846&lt;span class=&quot;mark2&quot;&gt;153846&lt;/span&gt;1…&lt;br /&gt;
+&lt;sup&gt;8&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,6&lt;span class=&quot;mark2&quot;&gt;153846&lt;/span&gt;15384…&lt;br /&gt;
+&lt;sup&gt;9&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,6923&lt;mark&gt;076923&lt;/mark&gt;07…&lt;br /&gt;
+&lt;sup&gt;10&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,76923&lt;mark&gt;076923&lt;/mark&gt;0…&lt;br /&gt;
+&lt;sup&gt;11&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,846&lt;span class=&quot;mark2&quot;&gt;153846&lt;/span&gt;153…&lt;br /&gt;
+&lt;sup&gt;12&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,923&lt;mark&gt;076923&lt;/mark&gt;076…&lt;/p&gt;
+
+&lt;p&gt;Ach, wo wir sowieso dabei sind, diesen Artikel ins Unendliche ausufern zu lassen, hier die ersten 25 Primzahlen als Nenner:&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;2&lt;/sub&gt; = 0,5&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;3&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;3&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;5&lt;/sub&gt; = 0,2&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;7&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;142857&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;11&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;09&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;13&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;076923&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;17&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0588235294117647&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;19&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;052631578947368421&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;23&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0434782608695652173913&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;29&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0344827586206896551724137931&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;31&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;032258064516129&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;37&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;027&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;41&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;02439&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;43&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;023255813953488372093&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;47&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0212765957446808510638297872340425531914893617&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;53&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0188679245283&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;59&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0169491525423728813559322033898305084745762711864406779661&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;61&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;016393442622950819672131147540983606557377049180327868852459&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;67&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;014925373134328358208955223880597&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;71&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01408450704225352112676056338028169&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;73&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01369863&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;79&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0126582278481&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;83&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01204819277108433734939759036144578313253&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;89&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01123595505617977528089887640449438202247191&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;97&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;010309278350515463917525773195876288659793814432989690721649484536082474226804123711340206185567&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Tendenziell werden die Perioden immer länger (und langweiliger). Aber so kurze Ziffernfolgen wie bei &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;37&lt;/sub&gt; (= 0,&lt;span class=&quot;periode&quot;&gt;027&lt;/span&gt;) haben mich dann wieder an eine Sache im Mathematikunterricht erinnert. Man kann periodische Nachkomma-Stellen mit Brüchen ausdrücken, die nur 9er im Nenner haben (sprich &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;9&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;99&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;999&lt;/sub&gt; usw.).&lt;/p&gt;
+
+&lt;h2 id=&quot;alle-neune&quot;&gt;Alle Neune!&lt;/h2&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;9&lt;/sub&gt; entspricht dezimal 0,&lt;span class=&quot;periode&quot;&gt;1&lt;/span&gt; – und hat eine Periode mit einer Ziffer. Folglich sind &lt;sup&gt;2&lt;/sup&gt;⁄&lt;sub&gt;9&lt;/sub&gt; gleich 0,&lt;span class=&quot;periode&quot;&gt;2&lt;/span&gt; und beispielsweise &lt;sup&gt;7&lt;/sup&gt;⁄&lt;sub&gt;9&lt;/sub&gt; gleich 0,&lt;span class=&quot;periode&quot;&gt;7&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Beim Bruch &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;99&lt;/sub&gt; ergibt sich eine Periode mit zwei wiederholten Ziffern. So sind &lt;sup&gt;4&lt;/sup&gt;⁄&lt;sub&gt;99&lt;/sub&gt; gleich 0,&lt;span class=&quot;periode&quot;&gt;04&lt;/span&gt; und &lt;sup&gt;57&lt;/sup&gt;⁄&lt;sub&gt;99&lt;/sub&gt; gleich 0,&lt;span class=&quot;periode&quot;&gt;57&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Und &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;37&lt;/sub&gt; (0,&lt;span class=&quot;periode&quot;&gt;027&lt;/span&gt;)? Das müsste dann ja das gleiche sein wie &lt;sup&gt;27&lt;/sup&gt;⁄&lt;sub&gt;999&lt;/sub&gt; – kurz nachrechnen, Zähler und Nenner durch 27 teilen … jepp, stimmt.&lt;/p&gt;
+
+&lt;p&gt;Aber damit lassen wir es mal bewenden. Schließlich geht es in diesem Artikel ja nicht um Neuntel ;-) Ungeklärt soll hier bleiben, wie man aus dem Nenner auf die Länge der Periode schließen kann (wird bei &lt;a href=&quot;https://de.wikipedia.org/wiki/Dezimalsystem#Periode&quot;&gt;Wikipedia&lt;/a&gt; verraten) und nach welchem System sich beim gleichen Nenner die Ziffernfolgen wiederholen. Vielleicht regt euch dieser Artikel ja zu kleinen Zahlenüberlegungen oder anderen Experimenten an, z.&lt;small&gt; &lt;/small&gt;B. wie teilt man einen Kuchen in sieben Stücke, wie zeichnet man einen Stern mit sieben Zacken, was ist der Vorteil einer 7-Tage-Woche, etc.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/siebtel.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/siebtel.html</guid>
+	<pubDate>Fri, 24 Mar 2023 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Fünfmal kurzes Drama</title>
 	<description>&lt;p&gt;In einem alten Notizkalender habe ich frühe Texte von mir entdeckt. Es sind meist Dialoge, teils recht witzig und vor allem kurz. Inspiriert hat mich damals bestimmt das Kurzhörspiel-Format &lt;a href=&quot;https://www.hoerspielundfeature.de/hf-wurfsendung-100.html&quot;&gt;Wurfsendung&lt;/a&gt;, das der Dlf Kultur seit 2004 in sein Programm streut. Statt meine Texte im alten Kalender verstauben zu lassen, hole ich ein paar davon mal öffentlich hier ins Blog. Viel Vergnügen!&lt;/p&gt;
 
@@ -326,70 +414,6 @@ Welche langen Posts möchtest du gerne schreiben/lesen (also darin Zeit investie
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/perfekte-kuerze.html</guid>
 	<pubDate>Mon, 21 Nov 2022 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Bilder für die da draußen</title>
-	<description>&lt;p&gt;Mein Arbeitszimmer hat zur Straße hin ein recht breites Fenster. Seit letztem Jahr hänge ich monatlich ein neues Bild an die Scheibe und wer draußen vorbeiläuft, kann es sehen und freut sich vielleicht darüber. Für mich selbst ist es als kreative Herausforderung gedacht; so muss ich mir regelmäßig ein neues Motiv überlegen und zum Malkasten greifen.&lt;/p&gt;
-
-&lt;p&gt;Ich denke nicht, dass ich wahnsinnig gut mit Pinsel und Farben umgehen kann, aber wer weiß, vielleicht wird das ja noch. Ohne Übung passiert jedenfalls gar nichts. Hier nun die ersten zwölf meiner Fensterbilder (anklicken für eine größere Version):&lt;/p&gt;
-
-&lt;style&gt;
-&lt;!--
-.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
-.bildraster &gt; a { display: flex; justify-content: center;
-	align-items: center; margin: 0; padding: 0; }
-.bildraster img { max-width: 100%; width: 100%; height: 11em;
-	object-fit: contain; overflow: clip; }
-
-@supports not (display: grid) {
-.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
-.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
-
-.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
-.lightbox:target { display: block; animation: none; }
-.lightbox span { display: block; width: 100%; height: 100%;
-	background-position: center; background-repeat: no-repeat; background-size: contain; }
---&gt;
-&lt;/style&gt;
-
-&lt;div class=&quot;bildraster&quot;&gt;
-&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/fensterbilder/v01.jpg&quot; alt=&quot;Ein sitzender roter Fuchs.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/fensterbilder/v02.jpg&quot; alt=&quot;Ein Christbaum mit lila Kerzen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/fensterbilder/v03.jpg&quot; alt=&quot;Ein winkender Pinguin mit blau-grün gestreiftem Schal und einer roten Wollmütze.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/fensterbilder/v04.jpg&quot; alt=&quot;Abstrakte Formen: Je ein breiter gelber und pinkfarbener Strich verdecken eine blassgrüne Kugel. Außerdem ein blaues Dreieck, kleine blaue Punkte und eine schwache, pinkfarbene Schraffur.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/fensterbilder/v05.jpg&quot; alt=&quot;Ein blühender Eukalyptuszweig.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/fensterbilder/v06.jpg&quot; alt=&quot;Eine einfach gemalte, orangefarbene Biene.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/fensterbilder/v07.jpg&quot; alt=&quot;Der Burgberg von Hohenfels bei Nacht, in Grün-, Blau und Violett. Auf dem runden Turm weht eine blaue Fahne, ein Vollmond im Hintergrund.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/fensterbilder/v08.jpg&quot; alt=&quot;Tuschezeichnung eines Männerkopfs im Profil. Er trägt ein Halstuch und einen Hut mit einer Blume.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/fensterbilder/v09.jpg&quot; alt=&quot;Ein blaues Propellerflugzeug mit einem Maulwurf als Pilot.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/fensterbilder/v10.jpg&quot; alt=&quot;Ein ockerfarbenes Muster: verschiedene eckige und runde Linien, mit denen die ganze Bildfläche gefüllt ist.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/fensterbilder/v11.jpg&quot; alt=&quot;Ein schwarzer Hexenhut, verziert mit Sternen und einem Halbmond.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/fensterbilder/v12.jpg&quot; alt=&quot;Eine graue Laterne, in der eine Kerze nadelförmige Strahlen aussendet.&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
-&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb01.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb02.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb03.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb04.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb05.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb06.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb07.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb08.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb09.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb10.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb11.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb12.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Habt ihr ähnliche Projekte, mit denen ihr eure Kreativität herausfordert? Gibt es eine Fertigkeit, die ihr gern üben möchtet?&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/fensterbilder.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder.html</guid>
-	<pubDate>Tue, 15 Nov 2022 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
