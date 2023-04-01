@@ -130,12 +130,15 @@ h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
-p, ul, ol { margin-bottom: -.25em;
-	-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+p, ul, ol { margin-bottom: -.25em; -webkit-hyphens: auto; hyphens: auto;
+	-webkit-hyphenate-limit-chars: 6 2 3; hyphenate-limit-chars: 6 2 3;
+    -webkit-hyphenate-limit-lines: 3; hyphenate-limit-lines: 3;
+    -webkit-hyphenate-limit-last: always; hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%; hyphenate-limit-zone: 8%; }
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
-.no-hyphens { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
+.no-hyphens { -webkit-hyphens: none; none; hyphens: none; }
 
 i, em, b, strong { color: var(--text-stark); }
 i, em { font-style: italic; }
