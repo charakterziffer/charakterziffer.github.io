@@ -66,7 +66,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
 
-/*body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .5em / auto .754em } /* Grundlinienraster */
+/*body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .5em / auto .751em } /* Grundlinienraster */
 
 header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
@@ -132,9 +132,9 @@ h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
 
 p, ul, ol { margin-bottom: -.25em; -webkit-hyphens: auto; hyphens: auto;
 	-webkit-hyphenate-limit-chars: 6 2 3; hyphenate-limit-chars: 6 2 3;
-    -webkit-hyphenate-limit-lines: 3; hyphenate-limit-lines: 3;
-    -webkit-hyphenate-limit-last: always; hyphenate-limit-last: always;
-    -webkit-hyphenate-limit-zone: 8%; hyphenate-limit-zone: 8%; }
+	-webkit-hyphenate-limit-lines: 3; hyphenate-limit-lines: 3;
+	-webkit-hyphenate-limit-last: always; hyphenate-limit-last: always;
+	-webkit-hyphenate-limit-zone: 8%; hyphenate-limit-zone: 8%; }
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
