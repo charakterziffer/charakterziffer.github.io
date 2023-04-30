@@ -13,6 +13,55 @@
 </image>
 
 <item>
+	<title>Tütchen für Pulver und Kerne</title>
+	<description>&lt;p&gt;Wer gern Saatgut aufhebt oder Proben von Gewürzen weitergibt, für den ist folgendes Papiertäschchen sehr praktisch. Es lässt sich falten, verschließen und wieder öffnen, ohne dass etwas geklebt werden muss. Benötigt wird ein kleines Papier im Querformat, zum Beispiel DIN A7 (ca. 10,5 × 7,5&lt;small&gt; &lt;/small&gt;cm). Das fertige Tütchen misst dann rund 8 × 3&lt;small&gt; &lt;/small&gt;cm.&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+[class^=&quot;tuete&quot;] { position: relative; width: 98.5%; height: 0;
+	margin: 1.65em 0 1.45em; padding-bottom: 19.2%;
+	line-height: 0; border: 0; background-size: 100% auto;
+	background-image: url('material/origamitütchen.jpg'); }
+[class^=&quot;tuete&quot;] a { visibility:hidden; }
+.tuete1 { background-position: 0 0; }
+.tuete2 { background-position: 0 50%; }
+.tuete3 { background-position: 0 100%; }
+@media screen and (prefers-color-scheme: dark) {
+	[class^=&quot;tuete&quot;] { filter:brightness(.8); } }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;tuete1&quot; title=&quot;Faltschritte 1 und 2&quot;&gt;&lt;a href=&quot;material/origamitütchen.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Das Blatt im Querformat etwas unterhalb der Hälfte nach oben falten, so dass ein schmaler Überstand bleibt.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Diesen schmalen Überstand nach unten falten.&lt;/p&gt;
+
+&lt;div class=&quot;tuete2&quot; title=&quot;Faltschritte 3 bis 5&quot;&gt;&lt;a href=&quot;material/origamitütchen.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Die überlappende Kante nochmal nach unten falten, damit das Papier an der Längsseite schön verschlossen ist.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Die rechte obere Ecke diagonal &lt;em&gt;nach hinten&lt;/em&gt; umfalten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; Die Form umdrehen (Rückseite nach oben). Bei der umgefalteten Ecke die Spitze diagonal falten und unter die schmale Papierkante stecken.&lt;/p&gt;
+
+&lt;div class=&quot;tuete3&quot; title=&quot;Faltschritte 6 und 7&quot;&gt;&lt;a href=&quot;material/origamitütchen.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt; So sieht die verschlossene Seite aus.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt; Die Schritte 4 und 5 auf der andere Seite wiederholen und das Tütchen so auf beiden Seiten schließen.&lt;/p&gt;
+
+&lt;p&gt;Mit ein bisschen Übung sind solche Tüten schnell gebastelt und lassen sich leicht beschriften – für Samen von Kapuzinerkresse, Wicke, Tomaten, Fenchel, Reisgewürzmischung, Zitronenpfeffer, Kümmel und was euch sonst noch einfällt.&lt;/p&gt;
+
+&lt;p&gt;Falls ihr jetzt Lust aufs Papierfalten bekommen habt: Hier im Blog finden sich auch Anleitungen für &lt;a href=&quot;origamihase.html&quot;&gt;Origami-Hasen&lt;/a&gt;, eine &lt;a href=&quot;origamimoewe.html&quot;&gt;Papiermöwe&lt;/a&gt;, einen &lt;a href=&quot;origamistier.html&quot;&gt;Stier&lt;/a&gt;, eine praktische &lt;a href=&quot;origamischachtel.html&quot;&gt;Schachtel&lt;/a&gt; und einen einfachen &lt;a href=&quot;origamikarpfen.html&quot;&gt;Origami-Karpfen&lt;/a&gt;. Schreibt mir Vorschläge und Anmerkungen wie immer gern als Kommentar unter diesen Artikel.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/origamituetchen.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/origamituetchen.html</guid>
+	<pubDate>Sun, 30 Apr 2023 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Ein Siebtel</title>
 	<description>&lt;style&gt;
 .periode { text-decoration-skip-ink: none; text-decoration: overline; }
@@ -374,46 +423,6 @@ Typische Beispiele sind „Migranten nehmen unsere Arbeit weg und wollen uns Deu
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/vergiftete-witze.html</guid>
 	<pubDate>Tue, 06 Dec 2022 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Die perfekte Kürze im Mikroblog</title>
-	<description>&lt;p&gt;Auf Mastodon hatte ich gestern eine Mini-Diskussion über die Längenbegrenzung der Posts dort. Sie liegt standardmäßig bei 500 Zeichen, kann auf einigen Instanzen&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; aber deutlich weiter gefasst sein. Das Diskussion verlief so (gekürzte Übersetzung &lt;a href=&quot;https://typo.social/@clauseggers/109377836250444276&quot;&gt;aus dem Englischen&lt;/a&gt;):&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;@clauseggers:&lt;/strong&gt; Meta: Warum sollten wir keine andere willkürliche Zeichenbegrenzung für Posts haben – eine größere, sagen wir 2000 Zeichen. Jetzt wo die Insassen die Irrenanstalt leiten, warum nicht? &lt;br /&gt;
-[…] Sich kurz fassen zu müssen ist unangenehm und erzeugt einen harschen, feindseligen Diskurs.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;@charakterziffer:&lt;/strong&gt; Ein Zeichenlimit verhindert überbordende Diskussionen und ermutigt, auf den Punkt zu kommen. Ich glaube nicht, dass Mastodon das richtige Medium für längere Essays ist, die schon bald unten in der Timeline verschwinden.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;@clauseggers:&lt;/strong&gt; Ich verstehe nicht, warum ein Post nicht lang und vergänglich zugleich sein kann.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;@charakterziffer:&lt;/strong&gt; Meine Meinung: Wenn lang und belangloses Geplauder → unwichtig und dominierend (im besten Fall witzig). Wenn lang und aufschlussreich → informativ und vermutlich wert, aufbewahrt und verlinkbar zu werden […] &lt;br /&gt;
-Welche langen Posts möchtest du gerne schreiben/lesen (also darin Zeit investieren), bist aber froh darüber, wenn sie nach weniger als einem Tag wieder verschwinden?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Auf meine letzte Frage habe ich leider noch keine Antwort erhalten.&lt;/p&gt;
-
-&lt;p&gt;Auf alle Fälle finde ich weitschweifige und ellenlange Texte nicht geeignet für eher schnelllebige Mikroblogs wie Twitter oder Mastodon. Ich bin jedoch ein wenig voreingenommen, weil ich eine kurze und prägnante Ausdrucksweise sehr schätze. Einer meiner ersten Artikel in diesem Blog beschäftige sich mit dem &lt;a href=&quot;reiz-der-kuerze.html&quot;&gt;Reiz der Kürze&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Bezüglich des rauen Tonfalls möchte ich Claus Eggers Sørensen zustimmen. Dazu führten die 140 Zeichen pro Tweet damals tatsächlich oft und tun es mit 280 Zeichen noch heute. 500 Zeichen für einen Post bei Mastodon finde ich aber ausreichend, um in Ruhe ein Argument zu formulieren. Für längere Abhandlungen kann man ja einen Blogartikel schreiben ;-)&lt;/p&gt;
-
-&lt;p&gt;Ein verwandtes Thema zur Textlänge ist der &lt;a href=&quot;https://www.gelbe-reihe.de/nachricht/buch/leseproben/4-kapitel-der-nachrichtenaufbau/&quot;&gt;Pyramidenstil&lt;/a&gt;. Er gilt besonders bei Nachrichten als gute Sitte, die ja ebenfalls oft kurz und knapp sein müssen. Beim Pyramidenstil sollen die Kerninformation zuerst kommen, danach Einordnung und Details und erst am Ende ergänzende Hintergründe. So lassen sich Nachrichten je nach Zeit-/Platzangebot von hinten her kürzen.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Instanz:&lt;/b&gt; Mastodon ist ein verteiltes Kommunikations-Netzwerk, bei dem jeder einen eigenen Server mit der Software und Nutzerkonten einrichten kann. Diese Server nennt man Instanzen. Sie können eigene Regeln festlegen und vernetzen sich mit anderen. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/perfekte-kuerze.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/perfekte-kuerze.html</guid>
-	<pubDate>Mon, 21 Nov 2022 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
