@@ -70,17 +70,17 @@ mark {background-color:var(--gruen-blass); color:var(--text-stark);}
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;37&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;027&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;41&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;02439&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;43&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;023255813953488372093&lt;/span&gt;&lt;br /&gt;
-&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;47&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0212765957446808510638297872340425531914893617&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;47&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0212765957446808510638297872340425531914893617&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;53&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0188679245283&lt;/span&gt;&lt;br /&gt;
-&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;59&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0169491525423728813559322033898305084745762711864406779661&lt;/span&gt;&lt;br /&gt;
-&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;61&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;016393442622950819672131147540983606557377049180327868852459&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;59&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0169491525423728813559322033898305084745762711864406779661&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;61&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;016393442622950819672131147540983606557377049180327868852459&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;67&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;014925373134328358208955223880597&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;71&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01408450704225352112676056338028169&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;73&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01369863&lt;/span&gt;&lt;br /&gt;
 &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;79&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;0126582278481&lt;/span&gt;&lt;br /&gt;
-&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;83&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01204819277108433734939759036144578313253&lt;/span&gt;&lt;br /&gt;
-&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;89&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01123595505617977528089887640449438202247191&lt;/span&gt;&lt;br /&gt;
-&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;97&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;010309278350515463917525773195876288659793814432989690721649484536082474226804123711340206185567&lt;/span&gt;&lt;/p&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;83&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01204819277108433734939759036144578313253&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;89&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;01123595505617977528089887640449438202247191&lt;/span&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;97&lt;/sub&gt; = 0,&lt;span class=&quot;periode&quot;&gt;010309278350515463917525773195876288659793814432989690721649484536082474226804123711340206185567&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Tendenziell werden die Perioden immer länger (und langweiliger). Aber so kurze Ziffernfolgen wie bei &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;37&lt;/sub&gt; (= 0,&lt;span class=&quot;periode&quot;&gt;027&lt;/span&gt;) haben mich dann wieder an eine Sache im Mathematikunterricht erinnert. Man kann periodische Nachkomma-Stellen mit Brüchen ausdrücken, die nur 9er im Nenner haben (sprich &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;9&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;99&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;⁄&lt;sub&gt;999&lt;/sub&gt; usw.).&lt;/p&gt;
 
@@ -260,7 +260,7 @@ an einem Frühlingsmorgen, hatte Viktors Katze eine Maus gefangen. Sie ließ das
 
 &lt;p&gt;&lt;img class=&quot;teilbild&quot; src=&quot;material/raster-7spaltig.jpg&quot; alt=&quot;Linienskizze auf kariertem Papier, dazu notiert sind die Maße und Anzahl der Kästchen.&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Nach ein bisschen Rumprobieren auf Papier (erst in Originalgröße, später vergrößert auf einem Kästchenraster), habe ich mich schließlich auf eine 7er-Spalten-Einteilung festgelegt. In der Skizze sieht man einige Beispiel-Aufteilungen: Ein Block über 5 Spalten mit einer Randbemerkung über 2 Spalten; ein Bildblock im Innenrand (mit Spalte ganz links) und zwei Textspalten über jeweils 3 Rasterspalten. Um einen kurze Termine wie gewohnt symmetrisch in zwei Spalten setzen zu können, habe ich mir noch Hilfslinien in der Mitte angelegt.&lt;/p&gt;
+&lt;p&gt;Nach ein bisschen Rumprobieren auf Papier (erst in Originalgröße, später vergrößert auf einem Kästchenraster), habe ich mich schließlich auf eine 7er-Spalten-Einteilung festgelegt. In der Skizze sieht man einige Beispiel-Aufteilungen: Ein Block über 5 Spalten mit einer Randbemerkung über 2 Spalten; ein Bildblock im Innenrand (mit Spalte ganz links) und zwei Textspalten über jeweils 3 Rasterspalten. Um die Termine wie gewohnt symmetrisch in zwei Spalten setzen zu können, habe ich mir noch Hilfslinien in der Mitte angelegt.&lt;/p&gt;
 
 &lt;p&gt;Normalerweise ist ein Gestaltungsraster auch waagrecht unterteilt. So ergeben sich mehrere Rechtecke, die sehr gut geeignet sind, um modulare Bausteine zu platzieren, beispielsweise die Produktfotos in einem Katalog. Im Raster kann auch der Platz für die Überschrift einer Seite festgelegt werden oder von wiederkehrenden Gestaltungselementen wie Rubriktitel oder einem Register.&lt;/p&gt;
 
