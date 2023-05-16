@@ -321,6 +321,16 @@ Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1
 
 <p>Ich freue mich sehr über weitere Kommentare zu dieser kleinen Serie! Einfach unten eintragen, mir eine Mail an <em>postfach2b [ät] web.de</em> schicken oder sonst irgendwie Kontakt aufnehmen. Wer meinen Podcast ausführlich kritisieren möchte, kann das ebenfalls gern tun.</p>
 
+<script>
+// Jedes Audio pausieren, das nicht gerade abgespielt wird
+document.addEventListener('play', function(e){
+	var audios = document.getElementsByTagName('audio');
+	for(var i = 0, len = audios.length; i < len;i++){
+		if(audios[i] != e.target){ audios[i].pause(); }
+} }, true);
+</script>
+
+
 <p style="margin-bottom:2.25em;">---<br>
 <i>Rubrik(en):</i>&nbsp;
 <a href="archiv.html?ansporn">#ansporn&nbsp; </a>
