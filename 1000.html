@@ -325,7 +325,7 @@ Bei „Gerhard zählt bis Tausend“ geht es genau darum: Ich zähle von 1 bis 1
 // Jedes Audio pausieren, das nicht gerade abgespielt wird
 document.addEventListener('play', function(e){
 	var audios = document.getElementsByTagName('audio');
-	for(var i = 0, len = audios.length; i < len;i++){
+	for(var i = 0; i < audios.length; i++){
 		if(audios[i] != e.target){ audios[i].pause(); }
 } }, true);
 </script>
