@@ -93,7 +93,7 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>Mathematisch lineare Graustufen erscheinen uns Menschen ungleichmäßig, weil wir Intensitäten nicht absolut wahrnehmen, sondern immer im Verhältnis zueinander. Als Vergleich ein Beispiel aus der Akustik: Zwischen absoluter Stille und einem Uhrticken erscheint uns der Lautstärkeunterschied viel größer als zwischen einem hupenden Auto und einem hupenden Auto, auf dem noch eine Uhr tickt. Dabei ist der Lautstärke-Unterschied in beiden Fällen gleich groß, nämlich die Lautstärke einer tickenden Uhr.</p>
 
-<p>Um die Intensitäten der grauen Felder in der Skala vergleichen zu können, muss man die Prozente erst mal in ein Schwarz-Weiß-Verhältnis umrechnen (genannt <em>v</em>). Man stelle sich vor, auf jedem Feld liegen 100 Kügelchen, entweder schwarz oder weiß. Zum Beispiel beinhaltet die Fläche mit 15<small> </small>% dann 15 schwarze Kügelchen und 85 weiße (= 100 – 15). Das Verhältnis von Schwarz zu Weiß ist für dieses Feld 15 zu 85 oder als Dezimalzahl ausgedrückt 0,18 (= 15 ÷ 85). Auf unsere Grauskala übertragen sieht das dann folgendermaßen aus:</p>
+<p>Um die Intensitäten der grauen Felder in der Skala vergleichen zu können, muss man die Prozente erst mal in ein Schwarz-Weiß-Verhältnis umrechnen (genannt <em>v</em>). Man stelle sich vor, auf jedem Feld liegen 100 Kügelchen, entweder schwarz oder weiß. Zum Beispiel beinhaltet die Fläche mit 15<small> </small>% dann 15 schwarze Kügelchen und 85 weiße (= 100 − 15). Das Verhältnis von Schwarz zu Weiß ist für dieses Feld 15 zu 85 oder als Dezimalzahl ausgedrückt 0,18 (= 15 ÷ 85). Auf unsere Grauskala übertragen sieht das dann folgendermaßen aus:</p>
 
 <p><img src="material/grauskala-2.svg" alt="Grauskala mit 10 Helligkeitsstufen und den entsprechenden Schwarz-Weiß-Verhältnissen" /></p>
 
@@ -119,7 +119,7 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>(Bitte wieder berücksichtigen, dass die Zahlen in der Skizze gerundet sind! Ich habe die Berechnung nicht mit 0,05 gestartet, sondern mit dem genauen Bruch 5/95.)</p>
 
-<p>Das Schwarz-Weiß-Verhältnis <em>v</em> haben wir ja erhalten aus Schwarzanteil ÷ Weißanteil, wobei der Weißanteil die Menge zu den fehlenden 100<small> </small>% war. Wir können uns die Prozentzahl von Schwarz (genannt <em>x</em>) berechnen aus der Formel für das Schwarz-Weiß-Verhältnis v = x ÷ (100 – x), umgestellt: x = 100v ÷ (1 + v). Und schon können wir die eben erstellte Grauskala mit Prozentwerten füllen:</p>
+<p>Das Schwarz-Weiß-Verhältnis <em>v</em> haben wir ja erhalten aus Schwarzanteil ÷ Weißanteil, wobei der Weißanteil die Menge zu den fehlenden 100<small> </small>% war. Wir können uns die Prozentzahl von Schwarz (genannt <em>x</em>) berechnen aus der Formel für das Schwarz-Weiß-Verhältnis v = x ÷ (100 − x), umgestellt: x = 100v ÷ (1 + v). Und schon können wir die eben erstellte Grauskala mit Prozentwerten füllen:</p>
 
 <p><img src="material/grauskala-5.svg" alt="Grauskala mit 10 Helligkeitsstufen, die Prozentwerte diesmal berechnet für eine gleichmäßig wirkende Verteilung" /></p>
 
