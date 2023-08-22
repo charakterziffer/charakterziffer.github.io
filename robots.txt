@@ -1,11 +1,9 @@
 # robots.txt für http://charakterziffer.github.io
 
 # Trainingsdaten-Sammler der Firma OpenAI
+# und Bots, die mit Werbung zu tun haben
 User-agent: GPTBot
-Disallow: /
-
-# Bots, die mit Werbung zu tun haben:
-User-agent: Mediapartners-Google*
+User-agent: Mediapartners-Google
 Disallow: /
 
 # Alle Bots
