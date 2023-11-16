@@ -13,6 +13,26 @@
 </image>
 
 <item>
+	<title>Ein halber Monat auf einen Blick</title>
+	<description>&lt;p&gt;Täglich knapp 8&lt;small&gt; &lt;/small&gt;cm² Platz für Termine; gut erkennbare Zahlen; zwei bis drei Wochen in der Übersicht und trotzdem handlich in DIN A5 – seit Jahren gestalte ich meinen Jahreskalender selbst. So muss ich mir auch nicht die völlig übernutzte Helvetica anderer Wandkalender angucken, sondern habe ein typografisch frisches Design.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/hmk2024.jpg&quot; alt=&quot;Abbildung Halbmonatskalender 2024&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Diesmal habe ich für meinen Halbmonatskalender &lt;a href=&quot;https://googlefonts.github.io/Work-Sans/&quot;&gt;die Schriftart Work Sans&lt;/a&gt; von Wei Huang ausgewählt. Wer den Kalender verwenden möchte, kann das PDF herunterladen und ausdrucken, die Blätter halbieren und sortieren. Beim Zusammenhalten der Blätter vertraue ich wieder auf eine Vielzweckklammer („Foldback-Klammer“). Alternativ: Im Copy-Shop eine Spiralbindung anbringen lassen, die Blätter an der oberen Kante leicht zusammenleimen oder jede Seite mittig lochen und alles an einen Nagel hängen.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/hmk2024.pdf&quot; download=&quot;&quot;&gt;Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 360&lt;small&gt; &lt;/small&gt;kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Falls euch das Kalenderformat gefällt, bitte weiterempfehlen (ihr wisst, wie das geht). Er steht unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de&quot;&gt;CC BY-NC-SA&lt;/a&gt;). Wer den Kalender bearbeiten möchte (beispielsweise die optionalen Feiertage aufs eigene Bundesland anpassen), schreibe mich gerne an oder hinterlasse hier einen Kommentar. Dann verschicke ich gerne die SVG-Dateien.&lt;/p&gt;
+
+&lt;!-- Text entspricht fast kalender-2025 mit Ende von kalender-2028 --&gt;
+</description>
+	<link>https://charakterziffer.github.io/kalender-2024.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2024.html</guid>
+	<pubDate>Thu, 16 Nov 2023 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Drei kleine Weisheiten</title>
 	<description>&lt;p&gt;Im Laufe des Lebens macht man Erfahrungen, die immer mal wieder auftauchen. Und man entdeckt bestimmte Verhaltensweisen oder Antworten darauf, die sich über die Zeit recht gut bewähren. Drei meiner gelernten Grundsätze möchte ich hier teilen und hoffe, dass sie auch euch nützlich sein können.&lt;/p&gt;
 
@@ -190,74 +210,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/online-freunde.html</guid>
 	<pubDate>Wed, 23 Aug 2023 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Meine wilde Wiese</title>
-	<description>&lt;p&gt;Ein bisschen traurig bin ich ja schon, dass ich noch keinen „richtigen“ Garten habe. Nach dem Umzug vor 1½ Jahren waren und sind andere Dinge wichtiger, als die Fläche rund ums Haus zu gestalten. In meinem Kopf ist dagegen alles schon fertig: Ein Fächer-Ahorn vor dem Küchenfenster, eine frühblühende Zaubernuss an der Terrasse, in der Ecke eine Frühlingsduftblüte neben einem Hibiskus, ein pflegeleichtes Staudenbeet an der Straßenseite, Clematis und Geißblatt an der Wand zum Nachbarn, eine Kupfer-Felsenbirne, darunter einige Triebe Honigbeere, am Hang eine Wildblumenwiese, …&lt;/p&gt;
-
-&lt;p&gt;Doch Moment: Wenigstens die Wildblumenwiese habe ich schon. Auf dem „ungepflegten“ Boden sind nämlich von selbst allerhand Kräuter und Blumen gewachsen – und das gefällt mir ziemlich gut!&lt;/p&gt;
-
-&lt;style&gt;
-&lt;!--
-[class^=&quot;blume&quot;] { position: relative; width: 98.5%; height: 0;
-	margin: 1.65em 0 1.45em; padding-bottom: 35.46%;
-	line-height: 0; border: 0; background-size: 100% auto;
-	background-image: url('material/wildblumen.jpg'); }
-[class^=&quot;blume&quot;] a { visibility:hidden; }
-.blume1 { background-position: 0 0; }
-.blume2 { background-position: 0 33.33%; }
-.blume3 { background-position: 0 66.67%; }
-.blume4 { background-position: 0 100%; }
-@media screen and (prefers-color-scheme: dark) {
-	[class^=&quot;blume&quot;] { filter:brightness(.8); } }
---&gt;
-&lt;/style&gt;
-
-&lt;div class=&quot;blume1&quot; title=&quot;Wiese mit Zottiger Wicke in Blaulia, rotem Klatschmohn und gelbem Wiesenpippau&quot;&gt;&lt;a href=&quot;material/wildblumen.jpg&quot;&gt;Komplettes Bild (alle Wildblumen)&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;vielfalt-von-ganz-allein&quot;&gt;Vielfalt von ganz allein&lt;/h2&gt;
-
-&lt;p&gt;Schon im letzten Sommer habe ich mir aufs Smartphone die App &lt;a href=&quot;https://floraincognita.de/&quot;&gt;Flora Incognita&lt;/a&gt; installiert. Damit fotografiert man eine Pflanze und dann ermittelt der Algorithmus, um welche Art es sich vermutlich handelt. Und so habe ich angefangen, die verschiedenen Blumen, Kräuter und Gräser rund ums Haus zu bestimmen – ein bisschen so, als würde ich Sticker für ein Sammelalbum zusammentragen („Kanadisches Berufskraut? Hab ich schon.“). Es sind überraschend viele Arten, über 80 verschiedene habe ich allein auf unserem Grundstück entdeckt!&lt;/p&gt;
-
-&lt;p&gt;Einige meiner Funde möchte ich hier kurz vorstellen – als kleine Erinnerung an mich, dass Dinge sich trotzdem schön entwickeln können, obwohl man den ausgeklügelten Plan noch nicht umsetzen konnte. Im Bild jeweils von links nach rechts:&lt;/p&gt;
-
-&lt;div class=&quot;blume2&quot; title=&quot;Acker-Stiefmütterchen, Sonnwend-Wolfsmilch und Wegwarte&quot;&gt;&lt;a href=&quot;material/wildblumen.jpg&quot;&gt;Komplettes Bild (alle Wildblumen)&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Vom &lt;strong&gt;Acker-Stiefmütterchen&lt;/strong&gt; hatte ich keinerlei Vorstellung, ich kannte nur gezüchtete Stiefmütterchen aus der Gärtnerei. Dabei ist diese Pflanze schon seit Jahrhunderten bei uns heimisch und recht verbreitet.&lt;/p&gt;
-
-&lt;p&gt;Die &lt;strong&gt;Sonnwend-Wolfsmilch&lt;/strong&gt; hat eine ungewöhnliche Geometrie mit ihren fünf Trieben. Wie eine Sonnenblume richtet sie ihren Kopf tagsüber nach der Sonne aus. Leider ist die Wolfsmilch sehr giftig, ihr Milchsaft reizt die Haut und kann im Auge zum Erblinden führen.&lt;/p&gt;
-
-&lt;p&gt;Wer die &lt;strong&gt;Wegwarte&lt;/strong&gt; am Nachmittag sucht, macht es sich unnötig schwer. Besser sichtbar ist die Pflanze, die mit dem Chicorée-Salat verwandt ist, vor allem morgens, wenn sie an Wegrändern ihre blauen Blüten zeigt.&lt;/p&gt;
-
-&lt;div class=&quot;blume3&quot; title=&quot;Wehrlose Trespe, Scharfer Mauerpfeffer und Bunte Kronwicke&quot;&gt;&lt;a href=&quot;material/wildblumen.jpg&quot;&gt;Komplettes Bild (alle Wildblumen)&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Zugegeben, ein eher unspektakuläres Gras, aber dieser Name: &lt;strong&gt;Wehrlose Trespe&lt;/strong&gt;, wunderbar. Weitere gesichtete Süßgräser sind Wiesen-Goldhafer, Wald-Reitgras, Rispengras oder die Taube Trespe.&lt;/p&gt;
-
-&lt;p&gt;Der &lt;strong&gt;Scharfe Mauerpfeffer&lt;/strong&gt; klingt nach einem Gewürz, ist aber eine genügsame Pflanze, die mit Trockenheit kein Problem hat und sich gut für den Steingarten eignet. Bei mir wächst sie am geschotterten Rand zur Straße hin.&lt;/p&gt;
-
-&lt;p&gt;Die &lt;strong&gt;Bunte Kronwicke&lt;/strong&gt; kriecht flach über den Boden und drückt sich eng an Wänden entlang. Ich finde die kleinen Blätter recht hübsch und mir gefällt, dass die Blüten weiße und rosafarbene Teile hat.&lt;/p&gt;
-
-&lt;div class=&quot;blume4&quot; title=&quot;Klatschmohn, ein ### auf einer Acker-Ochsenzunge und Schwarzer Lauch&quot;&gt;&lt;a href=&quot;material/wildblumen.jpg&quot;&gt;Komplettes Bild (alle Wildblumen)&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Ich liebe &lt;strong&gt;Klatschmohn&lt;/strong&gt;! Letztes Jahr hatte ich nur eine einzelne Pflanze, aber deren Samenkapseln habe ich im ganzen Garten verteilt. Und es hat geklappt, heuer tauchen überall knallrote Tupfen auf.&lt;/p&gt;
-
-&lt;p&gt;Verschiedene Bienenarten summen über meine Wiese und gelegentlich kommen auch Schmetterlinge vorbei, zum Beispiel ein Gelbwürfeliger Dickkopffalter (ja, kannte ich vorher auch nicht). Er sitzt auf einer blau-blühenden &lt;strong&gt;Acker-Ochsenzunge&lt;/strong&gt;, die ganz raue Blätter hat.&lt;/p&gt;
-
-&lt;p&gt;Keine Ahnung, wie &lt;strong&gt;Schwarzer Lauch&lt;/strong&gt; in meinen Garten kommt. Ich glaube, er verbreitet sich über Samen, ist aber vor allem eine Zwiebelpflanze. Ich hab die nicht in den Boden gesteckt!&lt;/p&gt;
-
-&lt;h2 id=&quot;pflege-gerne-unaufwändig&quot;&gt;Pflege: Gerne unaufwändig&lt;/h2&gt;
-
-&lt;p&gt;Ich mache nicht besonders viel bei meiner Wildblumenwiese. Letztes Jahr habe ich den Weißen Gänsefuß großzügig ausgerupft, weil diese Art sehr dominierend war. Die giftige Sonnwend-Wolfsmilch (siehe oben) entferne ich auch öfter und Disteln reduziere ich etwas. Das ist eine Sisyphusarbeit, aber ich bilde mir ein, die Zusammensetzung meiner Wiese dadurch ein wenig beeinflussen zu können. Gießen muss übrigens gar nicht sein – das machen nur die Nachbarn mit ihren kurzgeschorenen, sommerbraunen Rasenflächen.&lt;/p&gt;
-
-&lt;p&gt;Demnächst werde ich meine wilde Wiese mal mähen. Würde ich gar nichts tun, würde sie mit der Zeit immer mehr vergrasen und die Vielfalt nähme ab. Jetzt im Juni, wo viele Blumen abgeblüht sind und Samen gebildet haben, kann ich mit der Motorsense durchgehen. Ich mache das abschnittsweise, damit die lieben Tierchen ungemähte Streifen zum Ausweichen haben (außerdem reichen der Akku meiner Sense und meine Motivation vermutlich nicht gleich für die ganze Fläche ☺).&lt;/p&gt;
-
-&lt;p&gt;Die gemähten Pflanzen bleiben erst eine Weile liegen – ruhig zwischendurch wenden –, so dass die Samen für die nächste Generation ausfallen können. Dann das Schnittgut wegnehmen und entsorgen. So reduziere ich Jahr für Jahr die Nährstoffe im Boden. Das ist gut, weil sich dann seltenere Arten durchsetzen, die von gewöhnlichen Massenpflanzen (z.B. Löwenzahn, Brennnesseln) sonst verdrängt werden. Anfang September kann noch ein zweites Mal gemäht werden, mal schauen, was bis dahin nachgewachsen ist. Und wer weiß, vielleicht siedeln sich irgendwann doch Fächerahorn, Zaubernuss und Hibiskus an …&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/wildwiese.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/wildwiese.html</guid>
-	<pubDate>Tue, 20 Jun 2023 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
