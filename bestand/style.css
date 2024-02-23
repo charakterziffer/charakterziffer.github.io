@@ -138,7 +138,7 @@ p, ul, ol { margin-bottom: -.25em; -webkit-hyphens: auto; hyphens: auto;
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
-.no-hyphens { -webkit-hyphens: none; none; hyphens: none; }
+.no-hyphens, .no-hyphens > * { -webkit-hyphens: none; hyphens: none; }
 
 i, em, b, strong { color: var(--text-stark); }
 i, em { font-style: italic; }
