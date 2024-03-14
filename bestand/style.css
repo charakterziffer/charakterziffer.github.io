@@ -20,9 +20,8 @@
 	--grau-basis: #666; --grau-matt: #ccc; --nebelgrau: hsla(0,0%,92%,.7);
 	--hintergrund: #fff; --schatten: rgba(0,0,0,.15); --licht: #fff;
 
-	--gruen-stark: #060; --gruen-basis: #281;
-	--gruen-aktiv: #3a1; --gruen-blass: #deb;
-	--akzent-basis: #839; --akzent-aktiv: #c2b;
+	--gruen-stark: #060; --gruen-basis: #281; --gruen-aktiv: #3a1;
+	--gruen-blass: #deb; --akzent-basis: #839; --akzent-aktiv: #c2b;
 	--akzent-blass: #ece; /* hier nicht verwendet */
 
 	--hg-bild: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
@@ -35,7 +34,7 @@
 	--grau-basis: #999; --grau-matt: #444; --nebelgrau: hsla(0,0%,15%,.7);
 	--hintergrund: #000; --schatten: hsla(0,0%,50%,.7); --licht: hsla(0,0%,100%,.15);
 
-	--gruen-stark: #7c3; --gruen-basis: #5a4; 	--gruen-aktiv: #8e2;
+	--gruen-stark: #7c3; --gruen-basis: #5a4; --gruen-aktiv: #8e2;
 	--gruen-blass: #230; --akzent-basis: #94a; --akzent-aktiv: #c4d;
 	--akzent-blass: #404; /* hier nicht verwendet */
 
@@ -136,7 +135,7 @@ p, ul, ol { margin-bottom: -.25em; hyphens: auto;
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
 /* Keine Trennung für Voriger-/Nächster-Link, Kommentarformatierungen */
-.no-hyphens, .no-hyphens > * { -webkit-hyphens:manual; hyphens:manual; }
+.no-hyphens, .no-hyphens > * { hyphens:manual; }
 
 i, em, b, strong { color: var(--text-stark); }
 i, em { font-style: italic; }
@@ -207,15 +206,16 @@ blockquote > :is(h1, h2, h3) { padding-top: .25em; }
 
 /* LINKS (Schrift: Siehe oben bei b, strong) */
 
-a { text-decoration: none; color: var(--gruen-basis); }
+a { color: var(--gruen-basis);  text-decoration: none;
+	text-underline-offset: .15em;}
 :is(aside, .hinterlegt, figcaption, blockquote) a {
 	color: var(--gruen-stark); }
 a:visited { color: var(--akzent-basis); }
-a:hover { color: var(--gruen-aktiv); }
+a:hover { color: var(--gruen-aktiv); text-decoration: underline; }
 :is(aside, .hinterlegt, figcaption, blockquote) a:hover {
 	color: var(--gruen-basis); }
 a:active { color: var(--akzent-aktiv) }
-a:focus-visible { outline:1px dotted grey; outline-offset:1px; }
+a:focus-visible { outline:1.5px dotted var(--grau-basis); outline-offset:1px; }
 
 :target { background-color: transparent; animation: target-fade 2s; }
 @keyframes target-fade { 0% { background-color: var(--gruen-blass); } }
