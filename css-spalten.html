@@ -12,7 +12,7 @@
 -->
 <head>
 <meta charset="UTF-8">
-<title>@cz+ // Blog von Gerhard Großmann</title>
+<title>CSS-Spalten gegen zu lange Textzeilen // @cz+</title>
 
 <link href='bestand/style.css' rel='stylesheet'>
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#228811">
 <meta name="color-scheme" content="light dark">
 
-<meta name="description" content="Hier schreibt Gerhard Großmann aus Hohenfels (Oberpfalz) über Typografie, Design, Origami, Medien, Kreativität & was mich sonst noch anregt.">
+<meta name="description" content="Die CSS-Eigenschaft `columns` bricht einen Online-Text in mehrere Spalten um. So werden Zeilen auf einer Website nicht unleserlich lang.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
 
@@ -33,19 +33,15 @@
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/&choe=UTF-8');
+content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/css-spalten.html&choe=UTF-8');
 position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
-<!-- Verifikation für opendesktop.org -->
-<meta name="ocs-site-verification" content="bec9e99a94ee44a9a7685b1e6758def5">
-<!-- Verifikation für mein Mastodon-Profil -->
-<link rel="me" href="https://typo.social/@charakterziffer">
 </head>
 
 <body>
 <header>
-<a><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" alt="">@charak<br>terziffer</a>
 <div>
 <form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
@@ -68,14 +64,10 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 </header>
 
 <main>
-<h1 id="manches-soll-nicht-gleich-in-der-timeline-versinken">Manches soll nicht gleich in der Timeline versinken …</h1>
-
-<p>Auf dieser Website ist Raum für das, wofür meinem Mastodon-Account <a href="https://typo.social/@charakterziffer/">@charakterziffer</a> zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
-
 <article>
-	<time datetime="2024-03-18">Mo, 18. März 2024</time>
-	<h1><a href="css-spalten.html">CSS-Spalten gegen zu lange Textzeilen</a></h1>
-	<style>
+<time datetime="2024-03-18">Mo, 18. März 2024</time>
+<h1>CSS-Spalten gegen zu lange Textzeilen</h1>
+<style>
 <!--
 style[contenteditable] { display:block; width: 98.8%;
 margin: 1.5em 0 1.167em; padding: .05em .2em; border-radius: .1em;
@@ -245,88 +237,51 @@ Dieses Layout ist <em>Masonry</em> bekannt, englisch für „Mauerwerk“.</p>
 Falls ihr nun auf den Geschmack gekommen seid und mit CSS noch etwas spielen möchtet,
 dann lest euch durch, wie man <a href="css-muster.html">mit CSS Muster erzeugen</a> kann.</p>
 
-	<p>---<br /><a href="css-spalten.html#kommentieren">Artikel kommentieren …</a>
-		</p>
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
-<article>
-	<time datetime="2024-02-21">Mi, 21. Feb. 2024</time>
-	<h1><a href="raetselkrimi.html">Japanischer Rätselkrimi</a></h1>
-	<p>Vor kurzem habe ich den Krimi „Ich habe ihn getötet“ von Keigo Higashino gelesen. Ein anderes Buch des japanischen Autors, nämlich „Verdächtige Geliebte“, hatte ich als Hörspiel gehört und war neugierig, ob er seine Geschichten immer so schlau konstruiert. Ich wurde nicht enttäuscht!</p>
-
-<p>Keigo Higashino legt seine Krimis wie ein komplexes Rätsel an. Er beginnt nicht mit dem Mord, sondern mit einer sorgfältigen Hinführung, in der er die Figuren und ihre Beziehungen vorstellt. Wie bei einem klassischen Theaterstück bewegt sich die Geschichte allmählich auf den Höhepunkt zu, also dem Mord. Erst anschließend entwirrt der Autor die Motive und Möglichkeiten – und zwar mit vielen Wendungen und doppelten Böden.</p>
-
-<p>Auch bei „Ich habe ihn getötet“ ist es nicht so, wie es am Anfang scheint. Die Geschichte ist in der Ich-Perspektive aus Sicht der drei Hauptverdächtigen erzählt, die natürlich genau die Details verschweigen, die sie als Täter:in erscheinen lassen könnten. Doch Kommissar Kaga kommt immer wieder unvermittelt zu Besuch, konfrontiert die Verdächtigen mit klugen Fragen, zieht zwischen den Zeilen seine Schlussfolgerungen und am Ende … lässt er uns als Leser:innen im Regen stehen.</p>
-
-<h2 id="der-mörder-ist--wer">Der Mörder ist … wer?</h2>
-
-<p>Der Kniff bei diesem Buch ist nämlich, dass man nicht direkt verraten bekommt, wer nun des Mordes überführt ist. Stattdessen sind hinten einige Extra-Seiten eingefügt, in denen ein Kenner des Krimi-Genres Hinweise zur Lösung gibt, Textstellen zum Nachblättern anführt und stückweise enthüllt, wie dieses Rätsel zu lösen ist. Die eigentliche Antwort muss man aber selbst finden.</p>
-
-<p>Nachdem ich das Buch ausgelesen hatte, habe ich noch eine ganze Weile darüber nachgedacht, gerätselt, es von vorne nochmal überflogen und Details gesucht. Schließlich war ich mir zu ca. 95 Prozent sicher, den/die Täter:in zu kennen.</p>
-
-<p>Man könnte kritisieren, dass diese Krimi-Konstruktion ziemlich abwegig und nicht sehr realistisch ist … für mich ist das völlig in Ordnung. Ich möchte lieber eine genial gebaute Rätselgeschichte lesen als eine durchschnittliche, die dafür so auch in Echt passieren könnte.</p>
-
-<h2 id="bücher-zu-verschenken">Bücher zu verschenken</h2>
-
-<p>So wie <a href="https://charakterziffer.github.io/extra/buchkritiken.html">viele meiner Bücher</a> habe ich auch „Ich habe ihn getötet“ über <em>Bookcrossing</em> bekommen, einer weltweiten Gemeinschaft zum Büchertauschen. Vom gleichen Autor hat mir eine weitere Bookcrosserin „Böse Absichten“ zugeschickt. Beide Bücher haben mir sehr gut gefallen und ich würde mich freuen, wenn sie nicht bei mir im Regal verstauben. Wer Interesse an einem der Krimis hat, melde sich gerne bei mir oder schreibe einen Kommentar unter diesem Artikel.</p>
-
-	<p>---<br /><a href="raetselkrimi.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
-<article>
-	<time datetime="2023-11-16">Do, 16. Nov. 2023</time>
-	<h1><a href="kalender-2024.html">Ein halber Monat auf einen Blick</a></h1>
-	<p>Täglich knapp 8<small> </small>cm² Platz für Termine; gut erkennbare Zahlen; zwei bis drei Wochen in der Übersicht und trotzdem handlich in DIN A5 – seit Jahren gestalte ich meinen Jahreskalender selbst. So muss ich mir auch nicht die völlig übernutzte Helvetica anderer Wandkalender angucken, sondern habe ein typografisch frisches Design.</p>
-
-<p><img src="material/hmk2024.jpg" alt="Abbildung Halbmonatskalender 2024" /></p>
-
-<p>Diesmal habe ich für meinen Halbmonatskalender <a href="https://googlefonts.github.io/Work-Sans/">die Schriftart Work Sans</a> von Wei Huang ausgewählt. Wer den Kalender verwenden möchte, kann das PDF herunterladen und ausdrucken, die Blätter halbieren und sortieren. Beim Zusammenhalten der Blätter vertraue ich wieder auf eine Vielzweckklammer („Foldback-Klammer“). Alternativ: Im Copy-Shop eine Spiralbindung anbringen lassen, die Blätter an der oberen Kante leicht zusammenleimen oder jede Seite mittig lochen und alles an einen Nagel hängen.</p>
-
-<p><a href="material/hmk2024.pdf" download="">Kalender herunterladen<br /><em>(PDF-Datei, 360<small> </small>kB)</em></a></p>
-
-<p>Falls euch das Kalenderformat gefällt, bitte weiterempfehlen (ihr wisst, wie das geht). Er steht unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">CC BY-NC-SA</a>). Wer den Kalender bearbeiten möchte (beispielsweise die optionalen Feiertage aufs eigene Bundesland anpassen), schreibe mich einfach an oder hinterlasse hier einen Kommentar. Dann verschicke ich gerne die SVG-Dateien.</p>
 
 
-	<p>---<br /><a href="kalender-2024.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
 
-<p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/css-spalten">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
 
-<h1 id="sonstiges">Sonstiges</h1>
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
 
-<h2 id="warum-charakterziffer">Warum „Charakterziffer“?</h2>
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="raetselkrimi.html">← Japanischer Rätselkrimi</a></p>
 
-<p>Das Wort kombiniert Persönlichkeit (Charakter) mit Sachlichem (Ziffer). Zusammengesetzt ergibt sich ein Synonym für <a href="https://de.wikipedia.org/wiki/Medi%C3%A4valziffer">Mediävalziffer</a>, eine Zahlenvariante mit Ober- und Unterlängen.</p>
-
-<h2 id="schriftarten-dieses-blogs">Schriftarten dieses Blogs</h2>
-
-<p>Wenn dein Browser eingebettete Schriften (WOFF2) unterstützt, dann liest du die Fließtexte hier in der <a href="https://blog.typekit.com/2012/08/02/source-sans-pro/">Source Sans Pro</a> von Paul D. Hunt, erschienen 2012 bei Adobe.</p>
-
-<p>Die Überschriften sind aus der czSlab gesetzt, die ich für dieses Blog gestaltet habe. Sie orientiert sich an <a href="https://yanone.de/">Yanone</a>s viel ausgefeilterer <a href="https://www.myfonts.com/de/collections/antithesis-font-fontfont">Antithesis</a> von 2014.</p>
-
-<hr />
-
-<h2 id="impressum">Impressum/Datenschutz</h2>
-
-<h3 id="anbieterkennzeichnung-nach-tmg-5">Anbieterkennzeichnung nach TMG §5:</h3>
-
-<p>Gerhard Großmann · Asamstraße 10 · 92366 Hohenfels<br />
-E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</span><span style="margin-right:0.2em">/</span><span style="margin-right:0.2em">196</span><span style="margin-right:0.2em">19</span>14</p>
-
-<h3 id="rechtliche-hinweise">Rechtliche Hinweise</h3>
-
-<p><strong>§<small> </small>1 Externe Links</strong> · Dieses Blog verlinkt auf Websites Dritter. Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
-
-<p><strong>§<small> </small>2 Datenschutzerklärung</strong> · Mir ist der Schutz deiner Daten sehr wichtig. Deshalb verzichte ich auf Cookies, vermeide möglichst Dienste von Drittanbietern und erhebe so wenige Daten wie es geht. Diese Website kann ohne die Angabe persönlicher Daten genutzt werden.</p>
-
-<p>Die einzige Ausnahme sind Kommentare. Wenn du einen meiner Texte kommentierst, bekomme ich die eingegebenen Daten und eine Zeitangabe per (prinzipiell unsicherer) E-Mail zugestellt. Falls dein Kommentar sachlich zur Diskussion beiträgt, ergänze ich ihn öffentlich sichtbar unter dem entsprechenden Artikel. Dabei sind sämtliche Angaben freiwillig (Name, Website, Mailadresse, Kommentar) – auch <a href="anonym-kommentieren.html">anonyme Kommentare</a> sind möglich.</p>
-
-<p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
-
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2024-03-18T09:36:03+01:00</p>
-
+<p style="clear:both;" class="no-print"></p>
 </main>
 
 <aside class="no-hyphens">

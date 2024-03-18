@@ -13,6 +13,184 @@
 </image>
 
 <item>
+	<title>CSS-Spalten gegen zu lange Textzeilen</title>
+	<description>&lt;style&gt;
+&lt;!--
+style[contenteditable] { display:block; width: 98.8%;
+margin: 1.5em 0 1.167em; padding: .05em .2em; border-radius: .1em;
+font: .9em/1.667 &apos;Source Code Pro&apos;, Consolas, Monaco, &apos;Lucida Console&apos;,
+	&apos;Andale Mono&apos;, &apos;DejaVu Sans Mono&apos;, monospace; white-space: pre-wrap;
+	background-color: var(--nebelgrau);
+-webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+style[contenteditable]::before { display:inline-block; margin:0 .1em -.2em 0; vertical-align:-12%; content: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221.2em%22%20height%3D%221.2em%22%20viewBox%3D%220%200%2014%2014%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cg%20style%3D%22fill%3Anone%3Bstroke%3A%23c2b%3Bstroke-width%3A1.5%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%22%3E%3Cpath%20d%3D%22M%2011%2C11%2011%2C8%205%2C2%202%2C5%208%2C11%20z%22%2F%3E%3Cpath%20d%3D%22m%2010%2C7%20-3%2C3%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E&quot;); }
+
+[class^=&quot;beispiel&quot;] { font: .75em/1.2 &apos;New York&apos;, &apos;Bitstream Charter&apos;, &apos;Constantia&apos;, Georgia, serif;
+hyphens: auto; background-color: var(--hintergrund); border: 1px solid var(--text-basis);
+width: calc(100vw - 6em); min-width: 100%; padding: 1em 1.5em;}
+[class^=&quot;beispiel&quot;] &gt; p { margin: 0; text-align: justify; }
+
+.beispiel-3 { padding: 1.5em 1.5em 0; }
+.beispiel-3 &gt; div { display: inline-block; margin-bottom: 1.5em;
+	width:100%; height: 90px; background-color: var(--grau-matt);}
+.beispiel-3 &gt; div:nth-of-type(2n) { background-color: var(--akzent-basis); }
+.beispiel-3 &gt; div:nth-of-type(3n) { background-color: var(--gruen-basis); }
+.beispiel-3 &gt; div:nth-of-type(5n) { background-color: var(--akzent-aktiv); }
+.beispiel-3 &gt; div:nth-of-type(2n+1) { height: 100px; }
+.beispiel-3 &gt; div:nth-of-type(3n+2) { height: 120px; }
+.beispiel-3 &gt; div:nth-of-type(5n+3) { height: 80px; }
+.beispiel-3 &gt; div:nth-of-type(7n) { height: 150px; }
+--&gt;
+&lt;/style&gt;
+
+&lt;p&gt;In einem aktuellen Webprojekt habe ich mit längeren Texten zu tun.
+Weil sich die Breite der Texte an das Browserfensters anpassen soll,
+entstehen mitunter ziemlich lange Textzeilen.
+Für eine gute Lesbarkeit sollte eine Zeile aber &lt;a href=&quot;https://www.leserlich.info/kapitel/text/zeilenlaenge.php&quot;&gt;zwischen 35 und 80 Zeichen umfassen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ich könnte nun eine maximale Zeilenlänge festlegen,
+dann entsteht rechts ein leerer Rand, wenn das Browserfenster breiter wird.
+So mache ich das hier in meinem Blog:
+Die Textbreite bleibt immer schmaler als 690 Pixel,
+die freie Fläche rechts füllen ein grünes Muster und eine Randnotiz.&lt;/p&gt;
+
+&lt;h2 id=&quot;textspalten-mit-css&quot;&gt;Textspalten mit CSS&lt;/h2&gt;
+
+&lt;p&gt;Eine andere Möglichkeit ist es, den Text über mehrere Spalten fließen zu lassen.
+So bleiben die Zeilenlängen begrenzt und ich kann trotzdem die gesamte Fensterbreite für den Text nutzen.
+Bis vor rund zehn Jahren war das auf Websites schwierig umzusetzen.
+Dann aber hat die Formatierungssprache CSS,
+mit der man Websites gestaltet,
+einen neuen Befehl bekommen:
+&lt;code&gt;columns&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Das Geschickte:
+Man kann nicht nur die gewünschte Anzahl der Spalten festlegen
+(z.&lt;small&gt; &lt;/small&gt;B. &lt;code&gt;columns: 2;&lt;/code&gt;),
+sondern auch eine optimale Spaltenbreite.
+Dann versucht der Browser von allein, diese Breite zu erreichen,
+und wählt eine Spaltenzahl, damit es möglichst gut passt.
+Ist das Browserfenster schmal, reicht eine einzige Spalte.
+Wird das Fenster deutlich größer als die gewünschte Spaltenbreite, teilt sich der Text auf zwei Spalten auf.
+Bei noch breiteren Fenstern kommen entsprechend weitere Spalten hinzu.&lt;/p&gt;
+
+&lt;h2 id=&quot;und-so-siehts-aus&quot;&gt;Und so sieht’s aus&lt;/h2&gt;
+
+&lt;p&gt;Beispiel gefällig?
+Ich habe nachfolgend ein extrabreites Textfeld angelegt und mit sinnfreiem Blindtext gefüllt.
+Die gewünschte Spaltenbreite habe ich auf &lt;code&gt;35ch&lt;/code&gt; gesetzt
+(die Maßeinheit &lt;code&gt;ch&lt;/code&gt; steht für &lt;em&gt;characters&lt;/em&gt;, also Buchstaben).
+Das ist aber nur ein ungefährer Wert, denn unsere Spalten passen sich ja flexibel an die Fensterbreite an.
+Zusätzlich habe ich den Abstand der Spalten (&lt;code&gt;column-gap&lt;/code&gt;) auf &lt;code&gt;3ch&lt;/code&gt; festgelegt.
+Hier ist der CSS-Code dazu, darunter das Textfeld mit den entsprechenden Spalten.&lt;/p&gt;
+
+&lt;style contenteditable=&quot;&quot;&gt;.beispiel-1 {
+  columns: 35ch;
+  column-gap: 3ch;
+}&lt;/style&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;beispiel-1&quot;&gt;&lt;p&gt;&lt;b style=&quot;font:inherit; font-weight:bold;&quot;&gt;Das ist nur Platzhalter-Text!&lt;/b&gt; Wir verstecken offene Seiten, um Baum und Blume jetzt zu trinken. Geh her, schwimm alt, ihm ging schon die Arbeit ins Loch; den alle verlieren. Über König bin ich Stein gelaufen, zwei Häuser dort sind alle fertig. Tief darauf wirft der Mann volle Teller vom Auto ins kalte Dorf.&lt;/p&gt;
+&lt;p&gt;Das letzte Ding ist dann fest. Allein brauchen wir die Straße. Nein, wenn uns gebissen, findet die Hand den Wald heiß. Weil ab vier trägt der Junge Winter gelb zum Sommer, ob deshalb der Tisch lang und kräftig nach nichts denkt? Ein Brief, Kuss und Kaffee am Abend holen sieben Gärten. Kennen Sie die Zeit, außer einer badet schnell mal in Luft, sofort wurde fliegen hoch geschrieben.&lt;/p&gt;
+&lt;p&gt;Er läuft Bein, die Nase schlechte Worte isst. Eltern dürfen Wasser bringen, das Tier dachte im Bett, so begann der Löwe seine sehr gute Frage. Ihr spielt Bauer mit Milch und Zahn, denn die Leute wird der Fisch spät sehen. Mit dem Onkel steigen etwas Spiel, beide Arme rennen weg etwas gestellt. Keiner soll schlimm ins Gesicht das Bild bezahlen, fing die Uhr auf Sache eine böse Minute. Ein Weg fuhr gerade und trifft ein wahres Buch.&lt;/p&gt;
+&lt;p&gt;Mein Igel kann die Angst kaufen. In dir schenken Fehler dem Arzt Erde. Sitzen Anfang und Antwort? Nachher stellt jeder Bruder ein Glas Nacht für Omas Licht zur Geschichte. Wie frei das Rad auf den Boden fiel, leise hast du eine Woche Spaß. War der Herr Lehrer lustig?&lt;/p&gt;
+&lt;p&gt;Mehr liegen sah ich tot, warum nun glücklich legen? Los, bei heißen Zahlen helfen natürlich gern diese roten Schuhe! Die Äpfel leben einfach hin, was den Ferien zum Land nächste Küche hängt. Geld lese nie grün hinter Weihnachten, oder durch Menschen las langsam nah und rund. An Brot waschen wir also doch kaputte Aufgaben. Sie erzählen, als wollen sie fast noch davon antworten, fangen vielleicht erst noch ganz die weiße Kuh. Neben dem Schiff schreien Elefanten vor Freude …&lt;/p&gt;
+&lt;p&gt;Stand der Fuß, lag der Stuhl, rief der Freund, nahm die Stunde gegen die Ohren sich Tasse heraus. Stark erklärst du, wie lieb ich ihn haben könnte, so gab Vater. Vom Lernen bleiben einige immer zurück. Sie fährt, die Katze immer dabei. Richtig ließ, die Schwester nimmt.&lt;/p&gt;&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Übrigens könnt ihr den Code über dem Textbeispiel verändern!
+Bessert die &lt;code&gt;35ch&lt;/code&gt; zum Beispiel mal in &lt;code&gt;10ch&lt;/code&gt; oder &lt;code&gt;60ch&lt;/code&gt; aus und schaut, was passiert.
+Wenn möglich, macht auch mal euer Browserfenster breiter oder schmaler:
+Die Spalten passen sich an.&lt;/p&gt;
+
+&lt;p&gt;Wie erwähnt, kann man nicht nur eine gewünschte Breite, sondern auch eine feste Spaltenzahl angeben.
+Damit verschenkt man allerdings die Flexibilität und bekommt evtl. zu lange oder kurze Zeilen.
+Auch wenn man das Fenster sehr schmal oder sehr breit zieht, bleibt die Anzahl der Spalten gleich.
+Hier zum Ausprobieren:&lt;/p&gt;
+
+&lt;style contenteditable=&quot;&quot;&gt;.beispiel-2 {
+  columns: 3;
+  column-gap: 2.5ch;
+  column-rule: 1px solid coral;
+}&lt;/style&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;beispiel-2&quot;&gt;&lt;p&gt;Wir verstecken offene Seiten, um Baum und Blume jetzt zu trinken. Geh her, schwimm alt, ihm ging schon die Arbeit ins Loch; den alle verlieren. Über König bin ich Stein gelaufen, zwei Häuser dort sind alle fertig. Tief darauf wirft der Mann volle Teller vom Auto ins kalte Dorf.&lt;/p&gt;
+&lt;p&gt;Das letzte Ding ist dann fest. Allein brauchen wir die Straße. Nein, wenn uns gebissen, findet die Hand den Wald heiß. Weil ab vier trägt der Junge Winter gelb zum Sommer, ob deshalb der Tisch lang und kräftig nach nichts denkt? Ein Brief, Kuss und Kaffee am Abend holen sieben Gärten. Kennen Sie die Zeit, außer einer badet schnell mal in Luft, sofort wurde fliegen hoch geschrieben.&lt;/p&gt;
+&lt;p&gt;Er läuft Bein, die Nase schlechte Worte isst. Eltern dürfen Wasser bringen, das Tier dachte im Bett, so begann der Löwe seine sehr gute Frage. Ihr spielt Bauer mit Milch und Zahn, denn die Leute wird der Fisch spät sehen. Mit dem Onkel steigen etwas Spiel, beide Arme rennen weg etwas gestellt. Keiner soll schlimm ins Gesicht das Bild bezahlen, fing die Uhr auf Sache eine böse Minute. Ein Weg fuhr gerade und trifft ein wahres Buch. Mein Igel kann die Angst kaufen.&lt;/p&gt;
+&lt;p&gt;In dir schenken Fehler dem Arzt Erde. Sitzen Anfang und Antwort? Nachher stellt jeder Bruder ein Glas Nacht für Omas Licht zur Geschichte. Wie frei das Rad auf den Boden fiel, leise hast du eine Woche Spaß. War der Herr Lehrer lustig?&lt;/p&gt;
+&lt;h2 style=&quot;font:inherit; font-weight:bold; font-size:1.1em; margin:.8em 0 .2em -.02em;&quot;&gt;Eine Zwischenüberschrift&lt;/h2&gt;
+&lt;p&gt;Mehr liegen sah ich tot, warum nun glücklich legen? Los, bei heißen Zahlen helfen natürlich gern diese roten Schuhe! Die Äpfel leben einfach hin, was den Ferien zum Land nächste Küche hängt. Geld lese nie grün hinter Weihnachten, oder durch Menschen las langsam nah und rund. An Brot waschen wir also doch kaputte Aufgaben. Sie erzählen, als wollen sie fast noch davon antworten, fangen vielleicht erst noch ganz die weiße Kuh. Neben dem Schiff schreien Elefanten vor Freude …&lt;/p&gt;
+&lt;p&gt;Stand der Fuß, lag der Stuhl, rief der Freund, nahm die Stunde gegen die Ohren sich Tasse heraus. Stark erklärst du, wie lieb ich ihn haben könnte, so gab Vater. Vom Lernen bleiben einige immer zurück. Sie fährt, die Katze immer dabei. Richtig ließ, die Schwester nimmt.&lt;/p&gt;&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Als Ergänzung habe ich hier Trennlinien zwischen den Spalten eingefügt.
+Das geht mit dem Befehl &lt;code&gt;column-rule&lt;/code&gt; („Spalten-Linie“).
+&lt;code&gt;1px&lt;/code&gt; ist die Linienbreite (ein Pixel),
+&lt;code&gt;solid&lt;/code&gt; die Art der Linie (es geht zum Beispiel auch &lt;code&gt;dotted&lt;/code&gt; oder &lt;code&gt;dashed&lt;/code&gt;)
+und &lt;code&gt;coral&lt;/code&gt; ist die &lt;a href=&quot;https://www.w3schools.com/colors/colors_names.asp&quot;&gt;Farbe&lt;/a&gt; (probiert gern &lt;code&gt;green&lt;/code&gt;, &lt;code&gt;indigo&lt;/code&gt; oder &lt;code&gt;peru&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;kein-professioneller-spaltensatz&quot;&gt;Kein professioneller Spaltensatz&lt;/h2&gt;
+
+&lt;p&gt;Im Hinterkopf behalten sollte man aber, dass &lt;code&gt;columns&lt;/code&gt; nicht automatisch das beste Layout erzeugt.
+Der Browser versucht, alle Textspalten etwa gleich hoch auszubalancieren,
+er achtet aber nicht darauf, dass die Spaltenumbrüche an sinnvollen Stellen sitzen.
+So kann es passieren, dass eine Zwischenüberschrift ganz unten in einer Spalte steht,
+obwohl sie zum nachfolgenden Text gehört (wie im Beispiel 2).
+Oder das letzte Wort eines Absatzes rutscht einsam in die nächste Spalte.
+Solche Umbrüche würde ein professioneller Setzer vermeiden.&lt;/p&gt;
+
+&lt;p&gt;Bei kurzen oder sehr langen Textabschnitten ist der Spaltensatz nicht zu empfehlen.
+Es sieht komisch aus, wenn sich wenig Text auf mehrere Spalten verteilt, weil dann nur einzelne Zeilen die Spalte füllen.
+Wenn der Text sehr lang ist, können die Spalten höher werden als das Browserfenster.
+Als Leser:in muss man dann von unten wieder weit nach oben scrollen, um in der nächsten Spalte weiterzulesen –
+auch nicht optimal.&lt;/p&gt;
+
+&lt;h2 id=&quot;bonus-einfaches-masonry-layout&quot;&gt;Bonus: Einfaches Masonry-Layout&lt;/h2&gt;
+
+&lt;p&gt;Natürlich kann man nicht nur Text in CSS-Spalten stecken, sondern auch Bilder oder farbige Flächen.
+Wenn man diese auf die Spaltenbreite bringt (mit &lt;code&gt;width: 100%&lt;/code&gt;) und einfach untereinander setzt,
+ergibt sich eine attraktive, verschränkte Anordnung.
+Dieses Layout ist &lt;em&gt;Masonry&lt;/em&gt; bekannt, englisch für „Mauerwerk“.&lt;/p&gt;
+
+&lt;style contenteditable=&quot;&quot;&gt;.beispiel-3 {
+  columns: 20ch;
+  column-gap: 3ch;
+}&lt;/style&gt;
+
+&lt;figure&gt;
+&lt;div class=&quot;beispiel-3&quot;&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So viel zum Thema &lt;code&gt;columns&lt;/code&gt;.
+Falls ihr nun auf den Geschmack gekommen seid und mit CSS noch etwas spielen möchtet,
+dann lest euch durch, wie man &lt;a href=&quot;css-muster.html&quot;&gt;mit CSS Muster erzeugen&lt;/a&gt; kann.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/css-spalten.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/css-spalten.html</guid>
+	<pubDate>Mon, 18 Mar 2024 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Japanischer Rätselkrimi</title>
 	<description>&lt;p&gt;Vor kurzem habe ich den Krimi „Ich habe ihn getötet“ von Keigo Higashino gelesen. Ein anderes Buch des japanischen Autors, nämlich „Verdächtige Geliebte“, hatte ich als Hörspiel gehört und war neugierig, ob er seine Geschichten immer so schlau konstruiert. Ich wurde nicht enttäuscht!&lt;/p&gt;
 
@@ -141,66 +319,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/cinnamon-rolls.html</guid>
 	<pubDate>Fri, 29 Sep 2023 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Das Beat-Sheet als Grundgerüst für Drehbücher</title>
-	<description>&lt;p&gt;Derzeit lese ich &lt;em&gt;Rette die Katze!&lt;/em&gt; von Blake Snyder. Darin geht es nicht um Haustiere, sondern ums Schreiben eines Film-Drehbuchs:&lt;/p&gt;
-
-&lt;p&gt;Angefangen damit, die Hauptfiguren und Handlung in einem Satz zu beschreiben und den Typ der Geschichte festzulegen (Das Monster im Haus, Whydunnit, der triumphierende Narr, …). Dann die Story auf die Filmminute genau zu strukturieren und Szenen zu planen, dabei bewährte Grundregeln zu beachten und schließlich typische Fehler aufzuspüren. Vor dem Glossar gibt der Ratgeber noch Tipps, wie man sein Drehbuch verkaufen kann.&lt;/p&gt;
-
-&lt;h2 id=&quot;storys-mit-klarer-struktur&quot;&gt;Storys mit klarer Struktur&lt;/h2&gt;
-
-&lt;p&gt;Mich begeistern ja Erzähltechniken und der Aufbau von Geschichten, wie die &lt;a href=&quot;https://www.philipphauer.de/info/d/aufbau-drama-macbeth-iphigenie/&quot;&gt;Fünf-Akt-Struktur&lt;/a&gt; oder die &lt;a href=&quot;https://www.br.de/radio/bayern2/sendungen/radiowissen/deutsch-und-literatur/heldenreise-mythen-100.html&quot;&gt;Heldenreise&lt;/a&gt;. Darum fand ich das sogenannte &lt;em&gt;Beat-Sheet&lt;/em&gt; besonders interessant, das Blake Snyder aus für gut befundenen Filmen und Drehbüchern entwickelt hat. Es bietet ein Gerüst, um Filmstorys in 15 Beats („Puls-/Takt-Schläge“) solide zu strukturieren.&lt;/p&gt;
-
-&lt;p&gt;Viele Hollywood-Filme funktionieren nach diesem Muster; der Autor nennt als Beispiele unter anderem &lt;em&gt;Miss Undercover&lt;/em&gt;, &lt;em&gt;Natürlich blond&lt;/em&gt; oder &lt;em&gt;Stirb langsam&lt;/em&gt;. Zur Orientierung gibt er die Seitenzahlen im Drehbuch an, wo der entsprechende Beat stattfinden sollte (eine Seite im Drehbuch entspricht übrigens einer Minute Film).&lt;/p&gt;
-
-&lt;h2 id=&quot;blake-snyders-beat-sheet&quot;&gt;Blake Snyders „Beat-Sheet“&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Arbeitstitel:&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt;Genre:&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt;Datum:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Eingangsbild (Seite 1):&lt;/strong&gt; Setzt Tonfall, Stimmung und Stil des Films. Zeigt die Hauptfigur „vorher“ – als Gegenstück zum Schlussbild.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Thema (Seite 5):&lt;/strong&gt; Prämisse oder These des Films, kann gern in einem Satz zur Hauptfigur ausgesprochen werden, z.B.: „Sei vorsichtig, was du dir wünscht“ oder „Die Familie ist wichtiger als viel Geld“ (aber subtiler).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Setup (Seiten 1–10):&lt;/strong&gt; Hauptfigur und Ziel der Geschichte vorstellen, zeigen was auf dem Spiel steht. Jede Figur der Hauptstory einführen (zumindest andeuten). Fünf bis sieben Dinge (Schwächen, Makel, Defizite) zeigen, die in Ordnung zu bringen sind. Mögliche wiederkehrende Witze („Running Gags“) anlegen. Diese Phase ist die Ruhe vor dem Sturm; alles bliebe wie es ist, käme nicht der …&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Auslöser (12):&lt;/strong&gt; Ein Brief, eine Diagnose, Kündigung, Schluss machen, Besuch etc., das die Handlung in Gang bringt. Es erscheint negativ, hat der Hauptfigur im Rückblick aber Glück gebracht. Gegebenenfalls das Setup kürzen, damit der Auslöser nicht zu lang auf sich warten lässt!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;5. Debatte (12–25):&lt;/strong&gt; Protagonist:in wägt ab: Soll ich es wagen? Trau ich mich? Was sind Alternativen? Zeigen, dass die Aufgabe gewaltig und furchteinflößend ist. Dieser Abschnitt muss eine Frage aufwerfen und dann auch beantworten.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;6. Plotpoint I (25):&lt;/strong&gt; Die Hauptfigur trifft aktiv eine Entscheidung, lässt die alte Welt hinter sich. Die These des Films ist abgeschlossen, nun beginnt die Antithese, wo die Welt auf den Kopf gestellt wird.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;7. B-Story (30):&lt;/strong&gt; Atempause zur Hauptstory, neue Figuren tauchen auf. Die Hauptfigur kann auftanken. Oft ist die B-Story eine Liebes- oder Freundschaftsgeschichte, sie transportiert das Leitmotiv des Films.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8. Spiel und Spaß (30–55):&lt;/strong&gt; Hier wird eingelöst, was der Film versprochen hat: Szenen mit hohem Schauwert, die Spaß machen und einlösen, was der Zuschauer von diesem Film erwartet hat. Die Handlung muss hier nicht unbedingt vorangebracht werden, zuspitzen wird es sich erst wieder am …&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;9. Zentraler Punkt (55):&lt;/strong&gt; Teilt Geschichte in zwei gleichmäßig Hälften. Die Hauptfigur ist scheinbar am Hoch- bzw. Tiefpunkt. Einsatz erhöhen, Rückkehr zur Hauptgeschichte. Falscher Sieg, Gegenstück zur falschen Niederlage auf Seite 75 (in der Tragödie umgekehrt).&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10. Das Böse rückt näher (55–75):&lt;/strong&gt; Schwierigster Teil des Drehbuchs. Nach scheinbarem Sieg (bzw. Niederlage) formiert sich das Böse neu. Das Team der Hauptfigur wird zermürbt von Zweifeln, Eifersucht und anderem Unmut. Niemand kann ihr helfen und schließlich scheint …&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11. Alles verloren (75):&lt;/strong&gt; Gegenstück zum zentralen Punkt (S. 55), vermeintliche Niederlage. Evtl. Tod einer wichtigen Bezugsperson oder zumindest den Tod metaphorisch andeuten.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;12. Der Seele finstre Nacht (75–85):&lt;/strong&gt; Die Hauptfigur ist verlassen, hoffnungslos, ratlos, geschlagen, betrunken. Muss sich Niederlage eingestehen, um ihre Lektion zu lernen (kann auch kürzer als 10 Seiten sein).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;13. Plotpoint II (85):&lt;/strong&gt; Die Lösung naht. Haupt- und Nebenstory laufen zusammen, Protagonist:in hat sich in beiden bewährt. Hinweis aus der Nebenstory, wie die Lösung in der Hauptstory aussieht, zwei Fliegen mit einer Klape schlagen. Fusion, Synthese.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;14. Finale (85–110):&lt;/strong&gt; Gelernte Lektion anwenden, zu erledigende Dinge (siehe Setup) im Griff haben, Welt in neuer Ordnung. Sich der Bösen entledigen (in aufsteigender Reihenfolge von Handlanger:in zum Boss).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;15. Schlussbild (110):&lt;/strong&gt; Gegenstück zum Eingangsbild: Beweis, dass die Hauptperson (und ihr Umfeld) sich verändert haben. Falls das Schlussbild unklar ist, fügen sich meistens im zweiten Akt (S. 30–85) einige Dinge nicht richtig zusammen.&lt;/p&gt;
-
-&lt;h2 id=&quot;jetzt-nur-noch-anwenden&quot;&gt;Jetzt nur noch anwenden&lt;/h2&gt;
-
-&lt;p&gt;Statt der Erklärungen, die ich zu jedem der 15 Beats hinzugefügt habe, notiert man stattdesse ein, zwei Sätze, was jeweils an diesem Punkt der Geschichte passiert. So entdeckt man auch Schwachstellen, wo es bei der Story noch hakt.&lt;/p&gt;
-
-&lt;p&gt;Natürlich lassen sich Geschichten auch anders strukturieren. Das Beat-Sheet von Blake Snyder halte ich trotzdem für sehr brauchbar, um eine Erzählung aufzubauen. Die kurze Einleitung, die Wendepunkte und das Auf und Ab helfen, die Zuschauer:innen oder Leser:innen bei der Stange zu halten und die Entwicklung der Hauptfigur nachvollziehbar und spannend zu erzählen.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/beat-sheet.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/beat-sheet.html</guid>
-	<pubDate>Thu, 07 Sep 2023 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
