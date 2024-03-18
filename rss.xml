@@ -13,6 +13,53 @@
 </image>
 
 <item>
+	<title>Inhalt ohne Style – der CSS Naked Day</title>
+	<description>&lt;style&gt;
+* { all: revert-layer !important; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;strong&gt;Nein, es ist kein Fehler. Diese Seite wird ohne Styling angezeigt, einfach nur das HTML wie der Browser es darstellt&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Erst im letzten Blogartikel ging es darum, wie man &lt;a href=&quot;css-spalten.html&quot;&gt;mit CSS Textspalten erzeugen&lt;/a&gt; kann.
+CSS oder &lt;em&gt;Cascading Style Sheets&lt;/em&gt; sorgen dafür, dass Websites hübsch aussehen.
+Man definiert damit Schriftarten, die Größe von Überschriften, Farben, Abstände zwischen Elementen, Hintergrundbilder und einiges mehr.
+Rund 400 Regeln enthält die &lt;a href=&quot;../bestand/style.css&quot;&gt;CSS-Datei meines Blogs&lt;/a&gt; und ist damit eher klein.&lt;/p&gt;
+
+&lt;p&gt;Der eigentliche Inhalt einer Internetseite steckt jedoch nicht im CSS, sondern in einer HTML-Datei.
+Ein Ausschnitt meiner Startseite sieht zum Beispiel so aus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;article&amp;gt;
+  &amp;lt;time datetime=&quot;2024-02-21&quot;&amp;gt;Mi, 21. Feb. 2024&amp;lt;/time&amp;gt;
+  &amp;lt;h1&amp;gt;Japanischer Rätselkrimi&amp;lt;/h1&amp;gt;
+  &amp;lt;p&amp;gt;Vor kurzem habe ich den Krimi „Ich habe ihn getötet“ gelesen. …&amp;lt;/p&amp;gt;
+  …
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Im besten Fall ist der Text &lt;em&gt;semantisch&lt;/em&gt; ausgezeichnet, das heißt die HTML-Elemente markieren die Bedeutung des jeweiligen Textteils.
+Das Beispiel zeigt den Anfang eines Artikels (&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;).
+Er beginnt mit einer Zeitangabe (&lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt;), danach folgt eine Überschrift erster Ordnung (&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;, &lt;em&gt;header 1&lt;/em&gt;).
+Nun folgt der Artikeltext, der erste Absatz wird von &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; umschlossen (&lt;em&gt;paragraph&lt;/em&gt;, „Absatz“).&lt;/p&gt;
+
+&lt;h2 id=&quot;html-schafft-ordnung&quot;&gt;HTML schafft Ordnung&lt;/h2&gt;
+
+&lt;p&gt;Die korrekte Auszeichnung mit den passenden HTML-Elementen hilft, eine Internetseite leichter zu verstehen.
+Beispielsweise können blinde Nutzer einen Screenreader verwenden –
+ein Programm, das ihnen die Internetseite vorliest und zwischen den Überschriften hin und her springen kann.
+Außerdem hat jeder Browser eingebaute Standard-Stile, damit eine Seite auch ohne zusätzliches CSS gut dargestellt wird.
+Zum Beispiel werden Überschriften immer fett und größer als der Normaltext angezeigt.&lt;/p&gt;
+
+&lt;p&gt;Und das ist genau das, was&lt;/p&gt;
+
+&lt;p&gt;9.4.2024: CSS Naked Day&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/css-naked-day.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/css-naked-day.html</guid>
+	<pubDate>Tue, 09 Apr 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>CSS-Spalten gegen zu lange Textzeilen</title>
 	<description>&lt;style&gt;
 &lt;!--
@@ -263,62 +310,6 @@ dann lest euch durch, wie man &lt;a href=&quot;css-muster.html&quot;&gt;mit CSS 
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/weisheiten.html</guid>
 	<pubDate>Tue, 24 Oct 2023 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Cinnamon Rolls</title>
-	<description>&lt;p&gt;Zu meinem Geburtstag hat mir ein Freund Zimtschnecken gebacken (engl. &lt;em&gt;Cinnamon Rolls&lt;/em&gt;), die wirklich fantastisch waren. Natürlich habe ich mir das Rezept geben lassen – eine Thermomix-Anleitung – und es für meinen Gebrauch angepasst. So funktioniert’s:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/cinnamon-rolls.jpg&quot; alt=&quot;Sechs Cinnamon Rolls in einer kleinen Blechform, daneben eine einzelne Zimtschnecke auf dem Teller&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;für-den-teig-ca-12-stück&quot;&gt;Für den Teig (ca. 12 Stück):&lt;/h2&gt;
-
-&lt;div style=&quot;columns: 13em; margin: 1em 0 -0.25em;&quot;&gt;
-150&lt;small&gt;&amp;nbsp;&lt;/small&gt;ml Wasser (lauwarm, ~37&lt;small&gt;&amp;nbsp;&lt;/small&gt;°C)&lt;br /&gt;
-105&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Zucker&lt;br /&gt;
-30&lt;small&gt;&amp;nbsp;&lt;/small&gt;g frische Hefe&lt;br /&gt;
-300&lt;small&gt;&amp;nbsp;&lt;/small&gt;ml Milch&lt;br /&gt;
-300+750&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Mehl&lt;br /&gt;
-¾&lt;small&gt;&amp;nbsp;&lt;/small&gt;TL Salz&lt;br /&gt;
-3 Eier&lt;br /&gt;
-120&lt;small&gt;&amp;nbsp;&lt;/small&gt;ml Öl&lt;/div&gt;
-
-&lt;p&gt;Lauwarmes Wasser, Zucker und Hefe in einer großen Rührschüssel vermischen. Milch und 300&lt;small&gt; &lt;/small&gt;g Mehl dazugeben, einrühren und dann 5 Minuten ruhen lassen.&lt;/p&gt;
-
-&lt;p&gt;Restliches Mehl (750&lt;small&gt; &lt;/small&gt;g), Salz, Eier und Öl zugeben, ordentlich verkneten, danach abgedeckt 2 Stunden gehen lassen.&lt;/p&gt;
-
-&lt;h2 id=&quot;für-die-füllung&quot;&gt;Für die Füllung:&lt;/h2&gt;
-
-&lt;div style=&quot;columns: 13em; margin: 1em 0 -0.25em;&quot;&gt;
-180&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Butter&lt;br /&gt;
-4½&lt;small&gt;&amp;nbsp;&lt;/small&gt;TL Zimt&lt;br /&gt;
-285&lt;small&gt;&amp;nbsp;&lt;/small&gt;g braunen Zucker&lt;/div&gt;
-
-&lt;p&gt;Die Butter schmelzen, Zimt und Zucker einrühren.&lt;/p&gt;
-
-&lt;p&gt;Nach der Ruhezeit geht’s mit dem Teig weiter: Auf einer bemehlten Arbeitsfläche zum Rechteck ausrollen (ca. 40×50&lt;small&gt; &lt;/small&gt;cm). Mit der Zimtfüllung bestreichen und von der Längsseite her aufrollen. In ca. 3–4&lt;small&gt; &lt;/small&gt;cm breite Stücke schneiden (= 12 Scheiben) und diese auf die Schnittfläche in eine gebutterte Auflaufform legen. Abgedeckt nochmals 20 Minuten gehen lassen.&lt;/p&gt;
-
-&lt;p class=&quot;hinterlegt&quot;&gt;&lt;b&gt;Tipp:&lt;/b&gt; Bis hierhin lassen sich die Cinnamon Rolls schon am Abend zuvor vorbereiten. Dann einfach Frischhaltefolie über die Auflaufform spannen und über Nacht in den Kühlschrank stellen. Am nächsten Tag vor der Weiterverarbeitung rund 20 Minuten lang Zimmertemperatur annehmen lassen.&lt;/p&gt;
-
-&lt;p&gt;Backofen auf 180&lt;small&gt; &lt;/small&gt;°C vorheizen. Die Cinnamon Rolls 15–20 Minuten goldbraun backen.&lt;/p&gt;
-
-&lt;h2 id=&quot;für-das-topping&quot;&gt;Für das Topping:&lt;/h2&gt;
-
-&lt;div style=&quot;columns: 13em; margin: 1em 0 -0.25em;&quot;&gt;
-90&lt;small&gt;&amp;nbsp;&lt;/small&gt;g weiche Butter&lt;br /&gt;
-180&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Frischkäse&lt;br /&gt;
-150&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Puderzucker&lt;br /&gt;
-1½&lt;small&gt;&amp;nbsp;&lt;/small&gt;TL Vanillezucker&lt;/div&gt;
-
-&lt;p&gt;… alles vermischen und nach dem Backen sofort über die Schnecken streichen. Am besten lauwarm vernaschen!&lt;/p&gt;
-
-&lt;p&gt;Ohne Topping kann man übrige Rolls übrigens gut einfrieren und später genießen.&lt;/p&gt;
-
-</description>
-	<link>https://charakterziffer.github.io/cinnamon-rolls.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/cinnamon-rolls.html</guid>
-	<pubDate>Fri, 29 Sep 2023 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
