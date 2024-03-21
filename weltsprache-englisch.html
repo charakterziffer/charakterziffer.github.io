@@ -34,7 +34,7 @@
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
 content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/weltsprache-englisch.html&choe=UTF-8');
-position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; } } </style>
+position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
@@ -92,23 +92,23 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <div>
 	<label for="name">Name</label>
-	<div><input name="&#10;name" id="name" type="text" size="25" autocorrect="off">
+	<div><input name="&#10;name" id="name" type="text" size="25" spellcheck="false">
 	&nbsp;<i>(Pseudonym möglich)</i></div>
 	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
 </div>
 <div>
 	<label for="mail">E-Mail</label>
-	<div><input name="mail" id="mail" type="email" size="25" autocapitalize="off" autocorrect="off" autocomplete="email">
+	<div><input name="mail" id="mail" type="email" size="25" autocomplete="email" spellcheck="false" autocapitalize="off">
 	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
 </div>
 <div>
 	<label for="link">Website</label>
-	<div><input name="link" id="link" type="url" size="25" autocorrect="off" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<div><input name="link" id="link" type="url" size="25" spellcheck="false" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
 	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
 </div>
 <div>
 	<label for="comment">Kommentar</label><br>
-	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true" autocorrect="off"></textarea>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true"></textarea>
 </div>
 <input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
 <input name="onlex_password" id="onlex_password" type="hidden" value="5">
