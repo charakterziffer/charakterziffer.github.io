@@ -44,9 +44,9 @@
 	linear-gradient(90deg, transparent 51rem, var(--gruen-stark) 80%, var(--gruen-aktiv) 100%); }
 iframe { background-color: #eee; }
 img, iframe { filter: brightness(.8); }
-.icon-rss::after {
-	filter: invert(1) hue-rotate(180deg); }
-	/* background-color an Form-Elementen würden auch den border-style ändern */
+img[src$='#invert'], /* als invertierbar markierte Bilder */
+	.icon-rss::after { filter: invert(1) hue-rotate(180deg); }
+/* background-color an Form-Elementen würden auch den border-style ändern */
 }
 
 /* GRUNDSÄTZLICHES LAYOUT */

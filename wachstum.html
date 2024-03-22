@@ -85,18 +85,13 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <p>Exponentielles Wachstum geht überraschend schnell. Es ist nicht so entscheidend, wie lange ein Prozess bis zum jetzigen Wert gebraucht hat, sondern welche Wachstumsrate er hat. Hier mal zum Vergleich ein <strong>lineares Wachstum,</strong> das ist uns Menschen viel vertrauter:</p>
 
-<style>
-@media screen and (prefers-color-scheme: dark) {
-img[src*='wachstum'] { filter: invert(1) hue-rotate(180deg); } }
-</style>
-
-<p><img src="material/wachstum-1.png" alt="Im Diagramm verläuft eine gerade Linie von links unten nach rechts oben" /></p>
+<p><img src="material/wachstum-1.png#invert" alt="Im Diagramm verläuft eine gerade Linie von links unten nach rechts oben" /></p>
 
 <p>Im Diagramm sieht man von links nach rechts die Zeit in Tagen. Ganz links den 1. Juli, am rechten Ende den 31. Juli. Die Höhe gibt in diesem Beispiel an, wie oft jemand diesen Monat insgesamt Zähne geputzt hat (täglich zweimal, ganz ohne Ausnahme). Die Werte steigen allmählich und in gerader Linie an, jeden Tag kommt zweimal Zähneputzen dazu. Die gestrichelte Linie deutet an, wie sich die Werte mathematisch in den kommenden Tagen entwickeln dürften. Das verläuft sehr offensichtlich und wir können das leicht abschätzen.</p>
 
 <p>Beim <strong>exponentiellen Wachstum</strong> dagegen wird nicht jeden Tag ein fester Wert addiert, sondern zwischen den Werten liegt ein stabiler Faktor. Damit wird der Wert vom Vortrag multipliziert. Im Diagramm ergibt sich eine Kurve, die erst recht langsam, dann aber doch immer steiler ansteigt:</p>
 
-<p><img src="material/wachstum-2.png" alt="Im Diagramm verläuft eine gebogene Linie. Sie steigt links unten nur wenig, nach rechts oben immer stärker" /></p>
+<p><img src="material/wachstum-2.png#invert" alt="Im Diagramm verläuft eine gebogene Linie. Sie steigt links unten nur wenig, nach rechts oben immer stärker" /></p>
 
 <p>Das Bild zeigt aber kein Seerosen-Wachstum mit Verdoppelung (= Faktor 2), sondern als schwarze Punkte die aktuellen Inzidenzzahlen in Deutschland. Das heißt, wie viele Neuinfektionen<a href="#note1"><sup id="ziffer1">[1]</sup></a> registriert wurden, runtergerechnet auf 100.000 Menschen (zur besseren Vergleichbarkeit) und gemittelt auf die vergangenen 7 Tage (um Meldeflauten am Wochenende auszugleichen). Die grüne Kurve habe ich mathematisch errechnet und so gut wie möglich zwischen die Punkte gelegt. Der gestrichelte Teil gibt an, wie sich die Infektionszahlen entwickeln würden, wenn der Wachstumsfaktor bei ca. 1,05 bleibt wie in den ersten Juliwochen.</p>
 

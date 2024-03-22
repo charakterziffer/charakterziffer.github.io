@@ -80,12 +80,7 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 
 <p>So oder ähnlich findet sich das in der <a href="https://make.wordpress.org/core/2016/07/07/native-fonts-in-4-6/">Bedienoberfläche von Wordpress</a>, im populären <a href="https://github.com/twbs/bootstrap/pull/19098">CSS-Frame­work Bootstrap</a>, beim <a href="https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f">Reiseportal Booking.com</a> oder auf der <a href="https://markdotto.com/2018/02/07/github-system-fonts/">Website von GitHub</a>. Überall dort verzichtet die Anbieterin auf typografische Eigenständigkeit, um dem Nutzer lieber die vertraute Schrift seines Betriebssystems vorzusetzen. Entsprechend unterschiedlich sieht der Text dann je nach System aus:</p>
 
-<style>
-@media screen and (prefers-color-scheme: dark) {
-	img[src$="systemfonts.png"] { filter: invert(1) hue-rotate(180deg); }
-</style>
-
-<p><img src="material/systemfonts.png" alt="Verschiedene Systemschriften" /></p>
+<p><img src="material/systemfonts.png#invert" alt="Verschiedene Systemschriften" /></p>
 
 <p>Mal ist die Schrift ein wenig fetter, mal ein bisschen runder, vielleicht allgemein größer und die Buchstaben stehen enger zusammen oder weiter auseinander. Ganz wie es die Nutzerin von ihrem Betriebssystem kennt …? Nicht unbedingt.</p>
 
