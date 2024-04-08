@@ -77,6 +77,70 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Auf dieser Website ist Raum für das, wofür meinem Mastodon-Account <a href="https://typo.social/@charakterziffer/">@charakterziffer</a> zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2024-04-09">Di, 9. Apr. 2024</time>
+	<h1><a href="ohne-style.html">Inhalt ohne Style</a></h1>
+	<style>
+/* Spezifischer Selektor relevant, solange Artikel auf der Startseite */
+html:has( body > header > a[title="Zur Startseite"]) * { all: revert-layer !important; }
+</style>
+
+<p><mark style="display:none">Nein, es ist kein Fehler. Dieser Artikel wird ohne Styling angezeigt: Das reine HTML wie es der Browser darstellt.</mark></p>
+
+<p>Erst im vorigen Blogartikel ging es darum, wie man <a href="css-spalten.html">mit CSS Textspalten erzeugen</a> kann.
+CSS oder <em>Cascading Style Sheets</em> sorgen dafür, dass Websites hübsch aussehen.
+Man definiert damit Schriftarten, die Größe von Überschriften, Farben, Abstände zwischen Elementen, Hintergrundbilder und einiges mehr.
+Rund 400 Regeln enthält die <a href="../bestand/style.css">CSS-Datei meines Blogs</a> – und ist damit eher klein.</p>
+
+<p>Der eigentliche Inhalt einer Internetseite steckt jedoch nicht im CSS, sondern in einer HTML-Datei.
+Ein Ausschnitt meiner Startseite <em>index.html</em> sieht zum Beispiel so aus:</p>
+
+<pre><code>&lt;article&gt;
+  &lt;time datetime="2024-02-21"&gt;Mi, 21. Feb. 2024&lt;/time&gt;
+  &lt;h1&gt;Japanischer Rätselkrimi&lt;/h1&gt;
+  &lt;p&gt;Vor kurzem habe ich den Krimi „Ich habe ihn getötet“ gelesen. …&lt;/p&gt;
+  &lt;p&gt;Keigo Higashino legt seine Krimis wie ein komplexes Rätsel an. … &lt;/p&gt;
+  …
+&lt;/article&gt;
+</code></pre>
+
+<p>Im besten Fall ist der Text <em>semantisch</em> ausgezeichnet, das heißt die HTML-Elemente markieren die Bedeutung des jeweiligen Textteils.
+Das Beispiel zeigt den Anfang eines Artikels (<code>&lt;article&gt;</code>).
+Er beginnt mit einer Zeitangabe (<code>&lt;time&gt;</code>), danach folgt eine Überschrift erster Ordnung (<code>&lt;h1&gt;</code>, <em>header 1</em>).
+Nun folgt der Artikeltext, wobei jeder Absatz von <code>&lt;p&gt;</code> umschlossen wird (<em>paragraph</em>, „Absatz“).</p>
+
+<h2 id="html-schafft-ordnung">HTML schafft Ordnung</h2>
+
+<p>Die korrekte Auszeichnung mit den passenden HTML-Elementen hilft, eine Internetseite leichter zu interpretieren.
+Beispielsweise können blinde Nutzer einen Screenreader verwenden –
+ein Programm, das Internetseiten vorliest und zwischen Überschriften und Links hin und her springen kann.
+Oder man kann die Seite mit einem einfachen Text-Browser öffnen und der Inhalt bleibt dennoch einigermaßen lesbar.
+Damit Seiten auch auch ohne zusätzliches CSS gut dargestellt werden, hat jeder Browser eingebaute Standard-Stile.
+Beispielsweise erscheinen Überschriften fett und größer als der Normaltext.</p>
+
+<p>Und genau darum sieht dieser Blogartikel so ungewohnt aus:
+Hier habe ich das CSS deaktiviert.
+Was übrig bleibt, ist der Standard-Style des Browsers
+(in den Browser-Einstellungen kann man eigene Vorlieben angeben und Farben, Schriftart und -größe anpassen).</p>
+
+<h2 id="einmal-jährlich-nackt-im-netz">Einmal jährlich nackt im Netz</h2>
+
+<p>Anlass für diesen ungestylten Text ist der CSS Naked Day („CSS-Nackt-Tag“).
+Jedes Jahr am 9. April sollen Web-Autor:innen das CSS ihrer Website bewusst deaktivieren.
+So sieht man das (hoffentlich semantische) HTML, ganz ohne Styles.
+Auf der <a href="https://css-naked-day.github.io/">Website zum CSS Naked Day</a> <em>(engl.)</em> heißt es zu dieser Aktion:</p>
+
+<blockquote>
+  <p>Die Idee hinter dem <em>CSS Naked Day</em> ist es, Webstandards zu fördern. Schlicht und einfach. Dazu gehört die korrekte Verwendung von HTML, semantische Auszeichnung, eine gute Seitengliederung und natürlich ein paar gute alte Wortspiele. Mit den Worten von 2006: Es ist Zeit, deinen &lt;body&gt; zu zeigen, so wie er wirklich ist.</p>
+</blockquote>
+
+<p>(Das HTML-Element &lt;body&gt; enthält den gesamten Inhalt einer Website. Man kann es mit „Körper“ übersetzen.) –
+Dieses Jahr habe ich mitgemacht und mein Blog einen Tag lang „ausgezogen“.</p>
+
+	<p>---<br /><a href="ohne-style.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2024-03-18">Mo, 18. März 2024</time>
 	<h1><a href="css-spalten.html">CSS-Spalten gegen zu lange Textzeilen</a></h1>
 	<style>
@@ -278,24 +342,6 @@ dann lest euch durch, wie man <a href="css-muster.html">mit CSS Muster erzeugen<
 		</p>
 </article>
 
-<article>
-	<time datetime="2023-11-16">Do, 16. Nov. 2023</time>
-	<h1><a href="kalender-2024.html">Ein halber Monat auf einen Blick</a></h1>
-	<p>Täglich knapp 8<small> </small>cm² Platz für Termine; gut erkennbare Zahlen; zwei bis drei Wochen in der Übersicht und trotzdem handlich in DIN A5 – seit Jahren gestalte ich meinen Jahreskalender selbst. So muss ich mir auch nicht die völlig übernutzte Helvetica anderer Wandkalender angucken, sondern habe ein typografisch frisches Design.</p>
-
-<p><img src="material/hmk2024.jpg" alt="Abbildung Halbmonatskalender 2024" /></p>
-
-<p>Diesmal habe ich für meinen Halbmonatskalender <a href="https://googlefonts.github.io/Work-Sans/">die Schriftart Work Sans</a> von Wei Huang ausgewählt. Wer den Kalender verwenden möchte, kann das PDF herunterladen und ausdrucken, die Blätter halbieren und sortieren. Beim Zusammenhalten der Blätter vertraue ich wieder auf eine Vielzweckklammer („Foldback-Klammer“). Alternativ: Im Copy-Shop eine Spiralbindung anbringen lassen, die Blätter an der oberen Kante leicht zusammenleimen oder jede Seite mittig lochen und alles an einen Nagel hängen.</p>
-
-<p><a href="material/hmk2024.pdf" download="">Kalender herunterladen<br /><em>(PDF-Datei, 360<small> </small>kB)</em></a></p>
-
-<p>Falls euch das Kalenderformat gefällt, bitte weiterempfehlen (ihr wisst, wie das geht). Er steht unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">CC BY-NC-SA</a>). Wer den Kalender bearbeiten möchte (beispielsweise die optionalen Feiertage aufs eigene Bundesland anpassen), schreibe mich einfach an oder hinterlasse hier einen Kommentar. Dann verschicke ich gerne die SVG-Dateien.</p>
-
-
-	<p>---<br /><a href="kalender-2024.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -329,7 +375,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2024-04-08T08:18:19+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2024-04-08T23:30:52+02:00</p>
 
 </main>
 
