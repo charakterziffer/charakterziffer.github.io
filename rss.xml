@@ -15,11 +15,11 @@
 <item>
 	<title>Inhalt ohne Style</title>
 	<description>&lt;style&gt;
-/* Spezifischer Selektor relevant, solange Artikel auf der Startseite */
+/* Spezifischer Selektor relevant, solange sich der Artikel auf der Startseite befindet */
 html:has( body &gt; header &gt; a[title=&quot;Zur Startseite&quot;]) * { all: revert-layer !important; }
 &lt;/style&gt;
 
-&lt;!--mark style=&quot;display:none&quot;&gt;Nein, es ist kein Fehler. Dieser Artikel wird ohne Styling angezeigt: Das reine HTML wie es der Browser darstellt.&lt;/mark--&gt;
+&lt;p&gt;&lt;mark style=&quot;display:none&quot;&gt;Nein, es ist kein Fehler. Dieser Artikel wird ohne Styling angezeigt: Das reine HTML wie es der Browser darstellt.&lt;/mark&gt;&lt;/p&gt;
 
 &lt;p&gt;Erst im vorigen Blogartikel ging es darum, wie man &lt;a href=&quot;css-spalten.html&quot;&gt;mit CSS Textspalten erzeugen&lt;/a&gt; kann.
 CSS oder &lt;em&gt;Cascading Style Sheets&lt;/em&gt; sorgen dafür, dass Websites hübsch aussehen.

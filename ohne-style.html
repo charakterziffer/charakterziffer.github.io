@@ -14,8 +14,7 @@
 <meta charset="UTF-8">
 <title>Inhalt ohne Style // @cz+</title>
 
-<!--Deaktiviert zum CSS Naked Day 2024
-link href='bestand/style.css' rel='stylesheet'-->
+<link href='bestand/style.css' rel='stylesheet'>
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="@cz+ Blogartikel">
 
@@ -65,18 +64,15 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 </header>
 
 <main>
-<p><mark>Für rund 50 Stunden erscheint mein Blog ohne CSS-Gestaltung, übrig bleibt die bloße HTML-Formatierung. Anlass dafür ist der <a href="http://webkrauts.de/news/2015/naked-css-day">CSS Naked Day</a> am 9. April.</mark></p>
-<p>&nbsp;</p>
-
 <article>
 <time datetime="2024-04-09">Di, 9. Apr. 2024</time>
 <h1>Inhalt ohne Style</h1>
 <style>
-/* Spezifischer Selektor relevant, solange Artikel auf der Startseite */
+/* Spezifischer Selektor relevant, solange sich der Artikel auf der Startseite befindet */
 html:has( body > header > a[title="Zur Startseite"]) * { all: revert-layer !important; }
 </style>
 
-<!--mark style="display:none">Nein, es ist kein Fehler. Dieser Artikel wird ohne Styling angezeigt: Das reine HTML wie es der Browser darstellt.</mark-->
+<p><mark style="display:none">Nein, es ist kein Fehler. Dieser Artikel wird ohne Styling angezeigt: Das reine HTML wie es der Browser darstellt.</mark></p>
 
 <p>Erst im vorigen Blogartikel ging es darum, wie man <a href="css-spalten.html">mit CSS Textspalten erzeugen</a> kann.
 CSS oder <em>Cascading Style Sheets</em> sorgen dafür, dass Websites hübsch aussehen.
