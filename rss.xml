@@ -13,6 +13,99 @@
 </image>
 
 <item>
+	<title>Wohin mit Kommentaren? – Eine Entgegnung</title>
+	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Prefer English? Try the &lt;a href=&quot;https://translate.google.com/translate?hl=en&amp;amp;sl=de&amp;amp;tl=en&amp;amp;u=https%3A%2F%2Fcharakterziffer.github.io%2Fwohin-kommentieren&quot;&gt;Google Translator&lt;/a&gt; or the &lt;a href=&quot;https://support.mozilla.org/en-US/kb/website-translation&quot;&gt;Translate feature&lt;/a&gt; in your Firefox Browser.&lt;/p&gt;
+
+&lt;p&gt;Dieser Artikel ist eine Antwort auf einen Text von Manuel Moreale. Er war war gefragt worden, warum er in seinem Blog keine Möglichkeit zum Kommentieren anbietet. &lt;a href=&quot;https://manuelmoreale.com/a-comment-on-comments&quot;&gt;Seine öffentliche Begründung&lt;/a&gt; (engl., übersetzt von mir):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ich bin allgemein kein Fan von Kommentaren und denke, kommentieren sollte man auf einem dieser beiden Wege:&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Vertraulich via E-Mail oder Direktnachricht&lt;/li&gt;
+    &lt;li&gt;Öffentlich, indem man eine Antwort auf der eigenen Website schreibt&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wobei Manuel ergänzt hat, dass einige da draußen sicher anderer Meinung sein würden. Stimmt, und ich kann es sogar begründen ☺&lt;/p&gt;
+
+&lt;h2 id=&quot;kommentare-via-e-mail&quot;&gt;Kommentare via E-Mail&lt;/h2&gt;
+
+&lt;p&gt;Weil Manuel keine Kommentarmöglichkeit in seinem Blog hat, habe ich ihm zunächst per Mail geschrieben (engl., hier die deutsche Übersetzung):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hi Manuel,&lt;/p&gt;
+
+  &lt;p&gt;der ideale Zweck eines Kommentars ist meiner Meinung nach, dem Original-Artikel etwas Nützliches hinzuzufügen. Das kann ein gut begründetes Gegenargument sein, ein hilfreiches Beispiel, ein ergänzender Nachtrag, ein fehlender Verweis; ein Aspekt, der die Perspektive erweitert; oder etwas anderes, das den Artikel bereichert.&lt;/p&gt;
+
+  &lt;p&gt;Damit diese Ergänzung nicht nur für den Autor nützlich ist (per privater Mail), sondern auch für die Leser:innen, sollte sie unter dem Original-Artikel sichtbar sein oder wenigstens dort verlinkt. Natürlich bleibt es dem Autoren überlassen, ob die Ergänzung öffentlich sichtbar sein soll – immerhin ist das Blog sein persönliches Zuhause im Internet.&lt;/p&gt;
+
+  &lt;p&gt;Beste Grüße, G’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ich argumentiere also, dass öffentliche Kommentare unter einem Artikel &lt;a href=&quot;nuetzliche-kommentare.html&quot;&gt;für alle einen Nutzen&lt;/a&gt; haben – das hatte ich vor zehn Jahren schon mal geschrieben.&lt;/p&gt;
+
+&lt;h2 id=&quot;kommentare-auf-der-eigenen-website&quot;&gt;Kommentare auf der eigenen Website&lt;/h2&gt;
+
+&lt;p&gt;Doch gäbe es dafür nicht Manuels zweite Möglichkeit, nämlich mit einem Artikel im eigenen Blog öffentlich zu antworten? Das entgegnete er mir auch auf meine Mail (engl., hier meine Übersetzung, veröffentlicht mit Genehmigung):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Absolut gültige Meinung. Aber dafür gibt es ebenfalls eine Lösung.&lt;/p&gt;
+
+  &lt;p&gt;Du schreibst eine öffentliche Antwort, lässt mich davon wissen und ich ergänze eine Fußnote, die auf deine Antwort verweist. Sicher, das ist viel komplizierter, aber ich denke langfristig macht es das gesamte Internet besser.&lt;/p&gt;
+
+  &lt;p&gt;Das wäre übrigens auch etwas, das dank Webmentions&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot; style=&quot;font-variant-numeric:lining-nums&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; automatisiert werden könnte. Ich könnte Webmentions einfach automatisiert unter jedem meiner Artikel einbinden. Ich mache das nicht, weil ich Dinge gerne einfach halten möchte.&lt;/p&gt;
+
+  &lt;p&gt;Deine Lösung ist offensichtlich einfacher und intuitiver, bringt als Problem aber Spam, Qualitätskontrolle der Kommentare und all diese Dinge mit sich.&lt;/p&gt;
+
+  &lt;p&gt;Öffentliche Antworten in Blogs bevorzuge ich auch, weil es Leuten ermöglicht, neue Blogs und Websites zu entdecken. Wenn du auf meiner Seite kommentierst, dann endet die Reise hier.&lt;/p&gt;
+
+  &lt;p&gt;Wenn du [in deinem Blog] auf meinen Kommentar antwortest, können Besucher deiner Seite meinen Blog entdecken, und wenn ich deine Antwort verlinke, können meine Besucher deinen Blog entdecken.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Manuels Mail klingt ein sehr guter Punkt an: Verteilte, sich aufeinander beziehende Kommentare fördern eine vernetzte Öffentlichkeit: Persönliche Blogs leuchten wie heimelige Lagerfeuer individuell für sich allein und doch erwärmen sie in einer großen Gemeinschaft die Nacht (entschuldigt den poetischen Vergleich ☺). Eine schöne Vorstellung, vielleicht ein bisschen idealistisch. Denn dieser Ansatz stellt einige Hürden auf für alle, die kommentieren möchten.&lt;/p&gt;
+
+&lt;h2 id=&quot;verteilt-im-internet&quot;&gt;Verteilt im Internet&lt;/h2&gt;
+
+&lt;p&gt;Wie Manuel selbst schreibt, ist es komplizierter, im eigenen Blog zu schreiben – dazu muss man erst mal eines haben! Ganz ohne belastbare Daten behaupte ich, die meisten meiner Leser:innen haben keine eigenes Blog und könnten dann nicht öffentlich antworten. Ja, ideal wäre es, wenn jeder eine eigene Webpräsenz hätte, aber sollte man das verlangen? Dagegen kann jede:r das Kommentarfeld unter einem Artikel einfach ausfüllen – ohne Vorkenntnisse, oft ohne Nutzerkonto, ohne technische Hürden. Fördert das nicht Austausch und Teilhabe?&lt;/p&gt;
+
+&lt;p&gt;Die Verlinkung der verteilten Kommentare zu einem Artikel ist nicht trivial. Ich denke, es wird schnell unübersichtlich, wenn es mehr Kommentare gibt, die sich teilweise aufeinander beziehen … hübsch verstreut im ganzen Internet. Besagte Webmentions könnten helfen – ob sie sich durchsetzen? Und wie funktionieren sie eigentlich genau? Geht das auf einem statischen Blog wie meinem überhaupt?&lt;/p&gt;
+
+&lt;p&gt;An diesem Beispielartikel hier sieht man noch andere Probleme:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mein Blog ist auf deutsch. Hätte ich auf einen englischen Original-Artikel lieber auf Englisch antworten sollen? Und bei einem spanischen Text dann mit einem spanischen Blogartikel? Wie erleichtere ich es den Besucher:innen von Manuels Blog, meine Antwort zu verstehen?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ist die Antwort für den eigenen Leserkreis überhaupt interessant? Würde ich hier z.&lt;small&gt; &lt;/small&gt;B. nur über &lt;a href=&quot;wildwiese.html&quot;&gt;meinen Garten&lt;/a&gt; bloggen, dann fänden meine Stammleser:innen einen Text über Netzkommunikation sicher ziemlich langweilig. (Beim meiner &lt;a href=&quot;blogeintrag-50.html&quot;&gt;ausufernden Themenpalette&lt;/a&gt; seid ihr jedoch einiges gewöhnt, nicht wahr?)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wie behält man den Überblick über alle Kommentare? Würde Manuel zum Beispiel wieder auf diesen Artikel antworten, wäre das dann ein eigener Blogeintrag oder eine Erweiterung des ursprünglichen? Wie würde jemand drittes antworten? Mit Bezug auf Manuel, auf mich, auf uns beide, auf jemand vierten? Müsste man (so wie ich am Anfang) die Grunddebatte kurz zusammenfassen und damit wiederholen?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;gesammelt-unter-dem-original-text&quot;&gt;Gesammelt unter dem Original-Text&lt;/h2&gt;
+
+&lt;p&gt;Stehen alle Kommentare, die sich auf einen Originaltext beziehen, direkt darunter, ist alles klar: Die Reihenfolge der Antworten, die Sprache der Kommentare (nämlich wie der Originaltext), wer sich auf wen bezieht, welche Ergänzungen es überhaupt gibt. Leser:innen der Kommentare haben prinzipiell bereits Interesse am Thema, sonst hätten sie ja den ursprünglichen Text nicht aufgerufen.&lt;/p&gt;
+
+&lt;p&gt;Das von Manuel angesprochene Problem mit Spam und Qualitätskontrolle lässt sich nicht verleugnen. Bei mir hilft eine einfache Rechenaufgabe im Kommentarformular, um Spammer abzuhalten (ich schalte es nur bei oft bespamten Artikeln hinzu). Die Qualitätskontrolle kann ich bei wenigen Kommentaren noch gut leisten und sie trägt zur Attraktivität meines Blogs bei. Für sehr populäre Blogger wird das tatsächlich ein größerer Aufwand …&lt;/p&gt;
+
+&lt;p&gt;Was die gewünschte Vernetzung angeht: Das funktioniert doch auch so, ganz ohne Bezug auf einen bestimmten Artikel und sogar, wenn der andere Blog eine Kommentarfunktion hat.&lt;/p&gt;
+
+&lt;p&gt;Und nun seid ihr dran. Findet ihr Kommentierung unter einem Blogartikel nützlich? Ist eine Antwort per privater Mail oder im eigenen Blog eine ausreichende Alternative? Schreibt es gern &lt;a href=&quot;index.html#impressum&quot;&gt;an mich&lt;/a&gt;, an &lt;a href=&quot;https://manuelmoreale.com/connect&quot;&gt;Manuel Moreale&lt;/a&gt;, per Kommentar hier drunter (gerne englisch, ich ergänze ggf. eine Übersetzung), &lt;a href=&quot;briefe.html&quot;&gt;per Brief&lt;/a&gt; oder als neuen Artikel in eurem eigenen Blog.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Webmentions&lt;/b&gt; sind ein empfohlener Standard, um eine Website automatisch zu benachrichtigen, sobald sie verlinkt wird. So können Referenzen auf einen Artikel automatisch darunter angezeigt werden. Auf deutsch konnte ich leider kaum etwas dazu finden, recht ausführlich ist &lt;a href=&quot;https://indieweb.org/Webmention&quot;&gt;die englische Projektseite.&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/wohin-kommentieren.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/wohin-kommentieren.html</guid>
+	<pubDate>Fri, 19 Apr 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Inhalt ohne Style</title>
 	<description>&lt;style&gt;
 /* Spezifischer Selektor relevant, solange sich der Artikel auf der Startseite befindet */
@@ -298,36 +391,6 @@ dann lest euch durch, wie man &lt;a href=&quot;css-muster.html&quot;&gt;mit CSS 
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2024.html</guid>
 	<pubDate>Thu, 16 Nov 2023 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Drei kleine Weisheiten</title>
-	<description>&lt;p&gt;Im Laufe des Lebens macht man Erfahrungen, die immer mal wieder auftauchen. Und man entdeckt bestimmte Verhaltensweisen oder Antworten darauf, die sich über die Zeit recht gut bewähren. Drei meiner gelernten Grundsätze möchte ich hier teilen und hoffe, dass sie auch euch nützlich sein können.&lt;/p&gt;
-
-&lt;h2 id=&quot;schimpfen-hilft&quot;&gt;Schimpfen hilft&lt;/h2&gt;
-
-&lt;p&gt;Statt Dinge in sich hineinzufressen ist es sehr gut, seinem Ärger Luft zu machen. Manchmal merken Leute gar nicht, dass sie einem gerade ziemliche Probleme bereiten, dass ihr Verhalten viele andere nervt und dass es einfach auch anders geht. Kurzes Schimpfen lässt Dampf ab, wenn etwas nicht wie geplant gelaufen ist und hilft, unveränderliche Dinge annehmen zu können.&lt;/p&gt;
-
-&lt;p&gt;Was damit nicht gemeint ist: Zornerfüllte Wutausbrüche, andere Leute respektlos beleidigen, andauerndes Gemecker. Falls jemand anderes betroffen ist, darf dieser durchaus den Ärger spüren, aber es muss immer um die Sache und nie gegen die Person gehen! Wir sind alle nur Menschen und meiner Erfahrung nach bemühen sich die meisten, dass es für alle irgendwie funktioniert.&lt;/p&gt;
-
-&lt;h2 id=&quot;nimm-dir-so-viel-wie-du-brauchst--aber-auf-keinen-fall-mehr&quot;&gt;Nimm dir so viel wie du brauchst – aber auf keinen Fall mehr&lt;/h2&gt;
-
-&lt;p&gt;Niemand traut sich das letzte Schnittchen vom Buffet zu nehmen und du hättest noch Hunger? Diese Jeans im Schaufenster sieht wirklich gut aus, aber irgendwie hast du eigentlich schon genug Hosen daheim im Schrank? Diese kleine Weisheit kann dir dabei helfen, höfliche Zurückhaltung abzulegen, aber auch sorgsam mit Ressourcen umzugehen. Überlege, ob das erwählte Ding dir wirklich etwas bringt oder ob du eigentlich ganz gut ohne es auskommst.&lt;/p&gt;
-
-&lt;p&gt;Was damit nicht gemeint ist: Sich selbst immer wieder Nachteile zu bescheren, indem man auf Dinge verzichtet, die einem zustehen und die man auch wirklich brauchen kann (man vergesse beim Verzicht nie den ersten Teil des Satzes).&lt;/p&gt;
-
-&lt;h2 id=&quot;es-sind-erwachsene-leute&quot;&gt;Es sind erwachsene Leute&lt;/h2&gt;
-
-&lt;p&gt;Selbst, wenn das Zusehen manchmal weh tut, man es selbst besser machen könnte oder man am liebsten eingreifen würde, wenn jemand dabei ist eine große Dummheit zu begehen … Manchmal sollte man sich einfach zurückhalten. Jeder Mensch hat das Recht, seine eigenen Fehler zu machen. Solange niemand Drittes dadurch größeren Schaden nimmt, ist man nicht verpflichtet, andere Leute immer vor sich selbst zu schützen – sie sind schließlich erwachsen und müssen selbst Verantwortung für ihr Handeln übernehmen. Vielleicht lernt mancher mehr, wenn er mal ordentlich daneben tritt.&lt;/p&gt;
-
-&lt;p&gt;Kombinieren lässt sich diese Weisheit mit „Man kann nur jemanden helfen, der sich auch helfen lässt“ – wobei es Grenzfälle gibt und ich persönlich gerade mit so einem Zweifelsfall zu tun habe.&lt;/p&gt;
-
-&lt;p&gt;Was nicht gemeint ist: Nur auf seinen Vorteil zu gucken und andere grundsätzlich ins offene Messer laufen zu lassen. Und das gilt vermutlich für alle Prinzipien: Bei jeder Regel gibt es Ausnahmen. Wer sich nur nach festen Grundsätzen richtet, handelt in vielen Fällen unmenschlich und gnadenlos.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/weisheiten.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/weisheiten.html</guid>
-	<pubDate>Tue, 24 Oct 2023 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
