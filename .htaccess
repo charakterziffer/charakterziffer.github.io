@@ -1,0 +1,30 @@
+# .htaccess-Datei für charakterziffer.github.io, 21. April 2024
+
+# Standard-Zeichenkodierung auf UTF-8 setzen
+<IfModule mod_mime.c>
+	AddDefaultCharset utf-8
+</IfModule>
+
+# Link zu Error-Dokument (dann muss es nicht in Wurzelordner liegen)
+ErrorDocument 404 /bestand/404.html
+
+# AI-Bots blockieren, https://ethanmarcotte.com/wrote/blockin-bots/
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond %{HTTP_USER_AGENT} (AdsBot-Google|Amazonbot|anthropic-ai|Applebot|AwarioRssBot|AwarioSmartBot|Bytespider|CCBot|ChatGPT|ChatGPT-User|Claude-Web|ClaudeBot|cohere-ai|DataForSeoBot|Diffbot|FacebookBot|Google-Extended|GPTBot|ImagesiftBot|magpie-crawler|omgili|Omgilibot|peer39_crawler|PerplexityBot|YouBot) [NC]
+	RewriteRule ^ – [F]
+</IfModule>
+
+# Cache-Zeitraum für unterschiedliche Datei-Typen
+<ifModule mod_headers.c> 
+	# Ein Jahr für Bilder, Video, Audio, Untertitel, Schriften, PDF, ZIP
+	<filesMatch ".(gif|ico|jpg|jpeg|png|svg|mp4|mp3|mpeg|vtt|ttf|woff|woff2|pdf|zip)$">
+		Header set Cache-Control "max-age=31536000, public"
+	</filesMatch>
+
+	# Eine Woche für CSS-Dateien
+	<filesMatch ".(css)$">
+		Header set Cache-Control "max-age=604800, public"
+	</filesMatch>
+</ifModule>
