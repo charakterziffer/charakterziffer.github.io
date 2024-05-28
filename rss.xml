@@ -13,6 +13,110 @@
 </image>
 
 <item>
+	<title>Schreibfedern aus der Getränkedose</title>
+	<description>&lt;p&gt;Ein „Colapen“ ist ein Schreibgerät mit einer gefalteten Blechfeder, gebastelt aus einer Coladose. Schon vor einer Weile habe ich einen Blogartikel dazu gefunden und mir nun selbst solche Faltfedern gebastelt. Sie eignen sich gut zum groben, experimentellen Schreiben. Hier meine Anleitung:&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+[class^=&quot;pen&quot;] { position: relative; width: 98.5%; height: 0;
+	margin: 1.65em 0 1.45em; padding-bottom: 25%;
+	line-height: 0; border: 0; background-size: 100% auto;
+	background-image: url(&apos;material/colapen.jpg&apos;); }
+[class^=&quot;pen&quot;] a { visibility:hidden; }
+.pen1 { background-position: 0 0; }
+.pen2 { background-position: 0 33.33%; }
+.pen3 { background-position: 0 66.67%; }
+.pen4 { background-position: 0 100%; }
+@media screen and (prefers-color-scheme: dark) {
+	[class^=&quot;pen&quot;] { filter:brightness(.8); } }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;pen1&quot; title=&quot;Arbeitsschritte 1–4&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Arbeitsschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Als Material und Werkzeug benötigt man:&lt;/p&gt;
+
+&lt;div style=&quot;columns:13em; margin:1em 0 -1.05em;&quot;&gt;
+&lt;ul style=&quot;margin-top:0;&quot;&gt;&lt;li&gt;Getränkedose&lt;/li&gt;
+&lt;li&gt;Stäbe für den Griff (z.&lt;small&gt;&amp;nbsp;&lt;/small&gt;B. Buntstift oder Essstäbchen)&lt;/li&gt;
+&lt;li&gt;Klebeband/Washi-Tape&lt;/li&gt;
+&lt;li&gt;evtl. Skalpell oder Nadel&lt;/li&gt;
+&lt;li&gt;spitze Schere&lt;/li&gt;
+&lt;li&gt;wischfester Folienstift/Permanent-Marker&lt;/li&gt;
+&lt;li&gt;Lineal&lt;/li&gt;
+&lt;li&gt;feines Schleifpapier&lt;/li&gt;
+&lt;li&gt;evtl. ein Zahnstocher&lt;/li&gt;
+&lt;li&gt;evtl. kleine Zange&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Außerdem sehr wichtig: &lt;strong&gt;Handschuhe zum Schutz vor Schnitten!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot; style=&quot;background-color:var(--akzent-blass); color:var(--text-stark)&quot;&gt;&lt;b&gt;⚠ Achtung:&lt;/b&gt; Die Blechkanten der aufgeschnittenen Dose sind sehr scharf! Vorsicht beim Hantieren mit dem Blech, damit man sich nicht schneidet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Handschuhe anziehen! Dann die Dose an der oberen Kante aufschneiden. Am besten zuerst mit einem Skalpell oder einer Nadel eine Öffnung stechen, dann mit der Schere rundherum den Dosendeckel abschneiden.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Einen Schnitt entlang der Dosenhöhe machen, dann auch den Boden abschneiden. So entsteht ein rechteckiges Stück Blech (mit scharfen Kanten!).&lt;/p&gt;
+
+&lt;div class=&quot;pen2&quot; title=&quot;Arbeitsschritte 5+6abc&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Arbeitsschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Für die spätere Feder ein Rechteck aufzeichnen (auf die Blechseite, die später innen sein soll). Es misst etwa 3&lt;small&gt; &lt;/small&gt;×&lt;small&gt; &lt;/small&gt;5 cm. An einer kurzen Seite die Ecken aussparen, an diesem schmalen Stück wird die Feder an den Griff geklebt.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; Die Blechform ausschneiden. Danach gern die Gelegenheit nutzen, um dem Arbeitsplatz von fiesen Blechspänen zu befreien, beispielsweise mit Hilfe eines Stückchens Klebeband.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt; Für den Schaft habe ich ein Essstäbchen mit einem Sägemesser gekürzt, auch ein Buntstift bietet sich als Griffstück an. Das Blechteil vorsichtig um diesen Schaft biegen und nach und nach rund formen. Nicht wiederholt knicken, damit das Blech nicht bricht.&lt;/p&gt;
+
+&lt;div class=&quot;pen3&quot; title=&quot;Arbeitsschritte 7–10&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Faltschritt
+e)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt; Die spätere Feder muss fest mit dem Griff verbunden sein, darum mit Klebeband oder bunten Washi-Tape ordentlich fixieren.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8.&lt;/strong&gt; Die Feder mit der Schere in Form schneiden. Vorne empfehle ich eine flache Rundung und eine schmale Spitze.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9.&lt;/strong&gt; Möglich sind aber ganz verschiedene Formen. Eine einzelne Getränkedose bietet ausreichend Material für mehrere Blechfedern, zum Beispiel auch für kamm-artige Federn, mit denen parallele Linien gezogen werden können. (Eine kleine Zange hilft beim Biegen oder Zusammenpressen)&lt;/p&gt;
+
+&lt;div class=&quot;pen4&quot; title=&quot;Arbeitsschritte 11+12&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Arbeitsschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;10.&lt;/strong&gt; Nochmal den Arbeitsplatz saubermachen, scharfe Bleckstücke und Spreisel beiseite räumen! Dann geht es gern ohne Handschuhe weiter.&lt;br /&gt;
+Damit die Feder gut Tinte aufnimmt und diese dann schön herausfließt, sollte zwischen den Blechhälften der Feder ein sehr schmaler Spalt sein. Der lässt sich mit einem Zahnstocher formen. Falls die Feder auf dem Papier kratzt, kann man sie mehrmals über feines Schleifpapier ziehen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11.&lt;/strong&gt; Zum Schreiben entweder die Feder in Tinte tauchen oder mit Hilfe eines Pinsels mit satter Wasserfarbe füllen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12.&lt;/strong&gt; Auf dem Papier ruhig erst ein bisschen ausprobieren, bis die Farbe gut aus der Feder läuft und die optimale Federhaltung für einen schönen Strichkontrast gefunden ist.&lt;/p&gt;
+
+&lt;h2 id=&quot;weitere-anleitungen&quot;&gt;Weitere Anleitungen&lt;/h2&gt;
+
+&lt;p&gt;Natürlich habe ich mir diesen Cola-Pen nicht selbst ausgedacht, sondern verschiedene Beschreibungen dazu gesucht. Leider habe ich wenig auf Deutsch gefunden, es war zu knapp oder zu blumig formuliert oder mit Werbung gepflastert. Gute Alternativen zu meiner Anleitung sind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Minimalistisch &lt;a href=&quot;https://web.archive.org/web/20130109101856/http://www.etsy.com/blog/de/2012/getrankedose-essstabchen-klebefolie-cola-pen/&quot;&gt;in einem Bild&lt;/a&gt; (Archiv eines Etsy-Blogartikels von 2012)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Weitere &lt;a href=&quot;https://web.archive.org/web/20230209133536/https://welovehandmade.at/2017/03/27/diy-selbstgemachter-cola-pen/&quot;&gt;Anleitung mit Fotos&lt;/a&gt; (archivierte Seite, mit Eigenwerbung)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ausführliches &lt;a href=&quot;https://www.youtube.com/watch?v=0iLMNO3QD0c&quot;&gt;YouTube-Video&lt;/a&gt; (10 Minuten, englisch, aber gut verständlich, lästige Werbung)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Englische und spanische &lt;a href=&quot;https://www.instructables.com/Easy-Homemade-Pens-With-a-Can/&quot;&gt;Anleitung mit Fotos&lt;/a&gt;, zwei verschiedene Federfaltungen (die erste etwas komplizierter mit mehreren Blechschichten).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mut-zum-experimentieren&quot;&gt;Mut zum Experimentieren&lt;/h2&gt;
+
+&lt;p&gt;Feine Kalligrafie zaubert die Blechfeder nicht so gut und ordentlich aufs Papier wie eine „richtige“ Schreibfeder. Dafür kann man damit allerhand ausprobieren: Mit der Rundung der Feder schreiben, umgedreht mit der Spitze (geschlossenen Kante zum Papier), mit verschiedenen, ineinander laufenden Farben, …&lt;/p&gt;
+
+&lt;p&gt;Recht inspirierend fand ich einen Artikel &lt;a href=&quot;https://ramona-weyde.com/asemisches-schreiben/&quot;&gt;über asemisches Schreiben&lt;/a&gt; (Schreiben ohne inhaltliche Bedeutung) und die Beispiele für &lt;a href=&quot;https://web.archive.org/web/20190427234002/http://www.sarahhartwig.com/calligraphy/hand-lettering/&quot;&gt;Handlettering von Sarah Hartwig&lt;/a&gt; (Archiv-Seite, Originalwebsite offline).&lt;/p&gt;
+
+&lt;p&gt;Zum Schluss noch ein großes Dankeschön an Martin fürs geduldige Fotografieren aller Bilder!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/colapen.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/colapen.html</guid>
+	<pubDate>Tue, 28 May 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Malerei hinterm Fenster</title>
 	<description>&lt;p&gt;Als kreativen Ansporn hatte ich mir vorgenommen, fürs Fenster meines Arbeitszimmers monatlich ein neues Bild zu malen. Es ist dann von außen sichtbar und erfreut vielleicht ein paar Passanten. Nach über zwei Jahren fürchte ich: Jetzt ist die Luft erst mal raus.&lt;/p&gt;
 
@@ -412,34 +516,6 @@ dann lest euch durch, wie man &lt;a href=&quot;css-muster.html&quot;&gt;mit CSS 
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/css-spalten.html</guid>
 	<pubDate>Mon, 18 Mar 2024 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Japanischer Rätselkrimi</title>
-	<description>&lt;p&gt;Vor kurzem habe ich den Krimi „Ich habe ihn getötet“ von Keigo Higashino gelesen. Ein anderes Buch des japanischen Autors, nämlich „Verdächtige Geliebte“, hatte ich als Hörspiel gehört und war neugierig, ob er seine Geschichten immer so schlau konstruiert. Ich wurde nicht enttäuscht!&lt;/p&gt;
-
-&lt;p&gt;Keigo Higashino legt seine Krimis wie ein komplexes Rätsel an. Er beginnt nicht mit dem Mord, sondern mit einer sorgfältigen Hinführung, in der er die Figuren und ihre Beziehungen vorstellt. Wie bei einem klassischen Theaterstück bewegt sich die Geschichte allmählich auf den Höhepunkt zu, also dem Mord. Erst anschließend entwirrt der Autor die Motive und Möglichkeiten – und zwar mit vielen Wendungen und doppelten Böden.&lt;/p&gt;
-
-&lt;p&gt;Auch bei „Ich habe ihn getötet“ ist es nicht so, wie es am Anfang scheint. Die Geschichte ist in der Ich-Perspektive aus Sicht der drei Hauptverdächtigen erzählt, die natürlich genau die Details verschweigen, die sie als Täter:in erscheinen lassen könnten. Doch Kommissar Kaga kommt immer wieder unvermittelt zu Besuch, konfrontiert die Verdächtigen mit klugen Fragen, zieht zwischen den Zeilen seine Schlussfolgerungen und am Ende … lässt er uns als Leser:innen im Regen stehen.&lt;/p&gt;
-
-&lt;h2 id=&quot;der-mörder-ist--wer&quot;&gt;Der Mörder ist … wer?&lt;/h2&gt;
-
-&lt;p&gt;Der Kniff bei diesem Buch ist nämlich, dass man nicht direkt verraten bekommt, wer nun des Mordes überführt ist. Stattdessen sind hinten einige Extra-Seiten eingefügt, in denen ein Kenner des Krimi-Genres Hinweise zur Lösung gibt, Textstellen zum Nachblättern anführt und stückweise enthüllt, wie dieses Rätsel zu lösen ist. Die eigentliche Antwort muss man aber selbst finden.&lt;/p&gt;
-
-&lt;p&gt;Nachdem ich das Buch ausgelesen hatte, habe ich noch eine ganze Weile darüber nachgedacht, gerätselt, es von vorne nochmal überflogen und Details gesucht. Schließlich war ich mir zu ca. 95 Prozent sicher, den/die Täter:in zu kennen.&lt;/p&gt;
-
-&lt;p&gt;Man könnte kritisieren, dass diese Krimi-Konstruktion ziemlich abwegig und nicht sehr realistisch ist … für mich ist das völlig in Ordnung. Ich möchte lieber eine genial gebaute Rätselgeschichte lesen als eine durchschnittliche, die dafür so auch in Echt passieren könnte.&lt;/p&gt;
-
-&lt;h2 id=&quot;bücher-zu-verschenken&quot;&gt;Bücher zu verschenken&lt;/h2&gt;
-
-&lt;p&gt;So wie &lt;a href=&quot;https://charakterziffer.github.io/extra/buchkritiken.html&quot;&gt;viele meiner Bücher&lt;/a&gt; habe ich auch „Ich habe ihn getötet“ über &lt;em&gt;Bookcrossing&lt;/em&gt; bekommen, einer weltweiten Gemeinschaft zum Büchertauschen. Vom gleichen Autor hat mir eine weitere Bookcrosserin „Böse Absichten“ zugeschickt. Beide Bücher haben mir sehr gut gefallen und ich würde mich freuen, wenn sie nicht bei mir im Regal verstauben. Wer Interesse an einem der Krimis hat, melde sich gerne bei mir oder schreibe einen Kommentar unter diesem Artikel.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update 1. Mai 2024:&lt;/strong&gt; Habe beide Bücher an einen Freund weitergegeben, der Rätsel mag und sogar japanisch spricht.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/raetselkrimi.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/raetselkrimi.html</guid>
-	<pubDate>Wed, 21 Feb 2024 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
