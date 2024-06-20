@@ -13,6 +13,61 @@
 </image>
 
 <item>
+	<title>Aus 17 Silben ein Gedicht</title>
+	<description>&lt;p&gt;Aus der Bibliothek habe ich mir gerade zwei kleine, hübsche Bücher mit japanischen Kurzgedichten ausgeliehen. Diese &lt;em&gt;Haikus&lt;/em&gt; haben sich im 14./15. Jahrhundert entwickelt. Ihre Kürze ist typisch für die japanische Kultur, die ja in vielen Bereichen versucht, vollendet Schönes mit geringen Mitteln und auf kleinem Raum zu schaffen (wie bei der Tuschemalerei &lt;em&gt;Sumi-e&lt;/em&gt;, der Blumensteckkunst &lt;em&gt;Ikebana&lt;/em&gt; oder kleinen, geschnitzten &lt;em&gt;Netsuke&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Ein Haiku spielt mit dem Unausgesprochenen und Unvollendeten, und deutet über den eigentlichen Inhalt hinaus ein größeres Thema an. Im strengen Sinn beschreiben Haikus objektiv eine Naturstimmung und orientieren sich an den fünf Jahreszeiten (Neujahr, Frühling, Sommer, Herbst und Winter):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Kaum war er erblüht,&lt;br /&gt;
+hat den Mohn der Wind verweht,&lt;br /&gt;
+noch am gleichen Tag!&lt;/p&gt;
+
+  &lt;p&gt;— &lt;em&gt;Kobayashi Issa&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thematisch sind die Kurzgedichte spätestens zu ihrer Blütezeit im 17. Jahrhundert vielseitiger geworden, ihre feste Form hat sich allerdings nicht verändert: Ein Haiku hat immer drei Zeilen mit bestimmter Silbenzahl. Zuerst fünf Silben, dann sieben Silben, schließlich wieder fünf Silben.&lt;/p&gt;
+
+&lt;p&gt;Laut Gerolf Coudenhove, dem Übersetzer und Herausgeber der Haiku-Bücher, haben die Kurzgedichte im Japanischen außerdem einen typischen Rhythmus. Sie werden auch bewusst rhythmisch vorgelesen. Ins Deutsche lässt sich das am besten mit einem Wechsel von betonten (—) und unbetonten Silben (◡) übertragen:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;— ◡ — ◡ —&lt;br /&gt;
+— ◡ — ◡ — ◡ —&lt;br /&gt;
+— ◡ — ◡ —&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Haikus zu schreiben ist wirklich weit verbreitet, es gibt Millionen davon! Ich erinnere mich an eine Deutschstunde, in der wir diese Gedichtform selbst ausprobiert haben. Die kurze, fest Form finde ich sehr inspirierend: Sie beschränkt die Möglichkeiten, regt an zu Worttüffteleien und verhindert gleichzeitig, dass man sich in ausufernder Weitschweifigkeit verläuft. Hier ein eigenes Haiku:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In dem dicken Buch&lt;br /&gt;
+zwischen schwerer Weisheit klebt&lt;br /&gt;
+flach ein Käferrest.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mir gefällt, wie die nüchterne, kurze Beschreibung Raum lässt für hintergründige Interpretationen. Es macht mir außerdem Freude, einen kleinen, konkreten Moment im Vers festzuhalten und zu versuchen, die Stimmung in wenigen Worten einzufangen.&lt;/p&gt;
+
+&lt;p&gt;Wegen ihrer Kürze eignen sich Haikus wunderbar als Texte für Kalligrafie. Sie sind schnell geschrieben, lassen sich mit ihren bildhaften Beschreibungen leicht gestalten und machen durch die lyrische Form auch inhaltlich etwas her. Wie wäre es zum Beispiel auf einer handgeschriebenen Grußkarte?&lt;/p&gt;
+
+&lt;style&gt;
+.bildpaar { display: flex; flex-wrap: wrap; }
+.bildpaar &gt; img { flex: 1 1 auto; object-fit: contain; }
+&lt;/style&gt;
+
+&lt;figure class=&quot;bildpaar&quot;&gt;
+	&lt;img src=&quot;material/haiku1.jpg&quot; width=&quot;300&quot; alt=&quot;„Wie der volle Mond / auf das Abendhimmelsgrün / eine Föhre malt!“. Ein Haiku von 
+	Hattori Ransetsu, geschrieben mit rötlich grauer Tinte. Ein Halbkreis deutet oben rechts den Mond an, eine Schraffur unten links könnte eine Föhre sein.&quot; /&gt;
+	&lt;img src=&quot;material/haiku2.jpg&quot; width=&quot;300&quot; alt=&quot;„Fern ein Feuerwerk / leuchtet auf, verlischt, und dann / Dunkel wie zuvor …“, ein Haiku von Terada Torahiko. Handgeschrieber Text, darum herum fünf kleine Sterne als angedeutetes Feuerwerk.&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ich hoffe, dieser Blogartikel regt euch an, ein paar Haikus zu lesen und vielleicht sogar selbst eines zu schreiben. Es ist wirklich nicht so schwer!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/haiku.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/haiku.html</guid>
+	<pubDate>Thu, 20 Jun 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Schreibfedern aus der Getränkedose</title>
 	<description>&lt;p&gt;Ein „Colapen“ ist ein Schreibgerät mit einer gefalteten Blechfeder, gebastelt aus einer Coladose. Schon vor einer Weile habe ich einen Blogartikel dazu gefunden und mir nun selbst solche Faltfedern gebastelt. Sie eignen sich gut zum groben, experimentellen Schreiben. Hier meine Anleitung:&lt;/p&gt;
 
@@ -338,184 +393,6 @@ Dieses Jahr habe ich mitgemacht und mein Blog einen Tag lang „ausgezogen“.&l
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/ohne-style.html</guid>
 	<pubDate>Tue, 09 Apr 2024 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>CSS-Spalten gegen zu lange Textzeilen</title>
-	<description>&lt;style&gt;
-&lt;!--
-style[contenteditable] { display:block; width: 98.8%;
-margin: 1.5em 0 1.167em; padding: .05em .2em; border-radius: .1em;
-font: .9em/1.667 &apos;Source Code Pro&apos;, Consolas, Monaco, &apos;Lucida Console&apos;,
-	&apos;Andale Mono&apos;, &apos;DejaVu Sans Mono&apos;, monospace; white-space: pre-wrap;
-	background-color: var(--nebelgrau);
--webkit-box-decoration-break: clone; box-decoration-break: clone; }
-
-style[contenteditable]::before { display:inline-block; margin:0 .1em -.2em 0; vertical-align:-12%; content: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221.2em%22%20height%3D%221.2em%22%20viewBox%3D%220%200%2014%2014%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cg%20style%3D%22fill%3Anone%3Bstroke%3A%23c2b%3Bstroke-width%3A1.5%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%22%3E%3Cpath%20d%3D%22M%2011%2C11%2011%2C8%205%2C2%202%2C5%208%2C11%20z%22%2F%3E%3Cpath%20d%3D%22m%2010%2C7%20-3%2C3%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E&quot;); }
-
-[class^=&quot;beispiel&quot;] { font: .75em/1.2 &apos;New York&apos;, &apos;Bitstream Charter&apos;, &apos;Constantia&apos;, Georgia, serif;
-hyphens: auto; background-color: var(--hintergrund); border: 1px solid var(--text-basis);
-width: calc(100vw - 6em); min-width: 100%; padding: 1em 1.5em;}
-[class^=&quot;beispiel&quot;] &gt; p { margin: 0; text-align: justify; }
-
-.beispiel-3 { padding: 1.5em 1.5em 0; }
-.beispiel-3 &gt; div { display: inline-block; margin-bottom: 1.5em;
-	width:100%; height: 90px; background-color: var(--grau-matt, #444);}
-.beispiel-3 &gt; div:nth-of-type(2n) { background-color: var(--akzent-basis, #839); }
-.beispiel-3 &gt; div:nth-of-type(3n) { background-color: var(--gruen-basis, #281); }
-.beispiel-3 &gt; div:nth-of-type(5n) { background-color: var(--akzent-aktiv, #c2b); }
-.beispiel-3 &gt; div:nth-of-type(2n+1) { height: 100px; }
-.beispiel-3 &gt; div:nth-of-type(3n+2) { height: 120px; }
-.beispiel-3 &gt; div:nth-of-type(5n+3) { height: 80px; }
-.beispiel-3 &gt; div:nth-of-type(7n) { height: 150px; }
---&gt;
-&lt;/style&gt;
-
-&lt;p&gt;In einem aktuellen Webprojekt habe ich mit längeren Texten zu tun.
-Weil sich die Breite der Texte an das Browserfensters anpassen soll,
-entstehen mitunter ziemlich lange Textzeilen.
-Für eine gute Lesbarkeit sollte eine Zeile aber &lt;a href=&quot;https://www.leserlich.info/kapitel/text/zeilenlaenge.php&quot;&gt;zwischen 35 und 80 Zeichen umfassen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ich könnte nun eine maximale Zeilenlänge festlegen,
-dann entsteht rechts ein leerer Rand, wenn das Browserfenster breiter wird.
-So mache ich das hier in meinem Blog:
-Die Textbreite bleibt immer schmaler als 690 Pixel,
-die freie Fläche rechts füllen ein grünes Muster und eine Randnotiz.&lt;/p&gt;
-
-&lt;h2 id=&quot;textspalten-mit-css&quot;&gt;Textspalten mit CSS&lt;/h2&gt;
-
-&lt;p&gt;Eine andere Möglichkeit ist es, den Text über mehrere Spalten fließen zu lassen.
-So bleiben die Zeilenlängen begrenzt und ich kann trotzdem die gesamte Fensterbreite für den Text nutzen.
-Bis vor rund zehn Jahren war das auf Websites schwierig umzusetzen.
-Dann aber hat die Formatierungssprache CSS,
-mit der man Websites gestaltet,
-einen neuen Befehl bekommen:
-&lt;code&gt;columns&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Das Geschickte:
-Man kann nicht nur die gewünschte Anzahl der Spalten festlegen
-(z.&lt;small&gt; &lt;/small&gt;B. &lt;code&gt;columns: 2;&lt;/code&gt;),
-sondern auch eine optimale Spaltenbreite.
-Dann versucht der Browser von allein, diese Breite zu erreichen,
-und wählt eine Spaltenzahl, damit es möglichst gut passt.
-Ist das Browserfenster schmal, reicht eine einzige Spalte.
-Wird das Fenster deutlich größer als die gewünschte Spaltenbreite, teilt sich der Text auf zwei Spalten auf.
-Bei noch breiteren Fenstern kommen entsprechend weitere Spalten hinzu.&lt;/p&gt;
-
-&lt;h2 id=&quot;und-so-siehts-aus&quot;&gt;Und so sieht’s aus&lt;/h2&gt;
-
-&lt;p&gt;Beispiel gefällig?
-Ich habe nachfolgend ein extrabreites Textfeld angelegt und mit sinnfreiem Blindtext gefüllt.
-Die gewünschte Spaltenbreite habe ich auf &lt;code&gt;35ch&lt;/code&gt; gesetzt
-(die Maßeinheit &lt;code&gt;ch&lt;/code&gt; steht für &lt;em&gt;characters&lt;/em&gt;, also Buchstaben).
-Das ist aber nur ein ungefährer Wert, denn unsere Spalten passen sich ja flexibel an die Fensterbreite an.
-Zusätzlich habe ich den Abstand der Spalten (&lt;code&gt;column-gap&lt;/code&gt;) auf &lt;code&gt;3ch&lt;/code&gt; festgelegt.
-Hier ist der CSS-Code dazu, darunter das Textfeld mit den entsprechenden Spalten.&lt;/p&gt;
-
-&lt;style contenteditable=&quot;&quot;&gt;.beispiel-1 {
-  columns: 35ch;
-  column-gap: 3ch;
-}&lt;/style&gt;
-
-&lt;figure&gt;
-&lt;div class=&quot;beispiel-1&quot;&gt;&lt;p&gt;&lt;b style=&quot;font:inherit; font-weight:bold;&quot;&gt;Das ist nur Platzhalter-Text!&lt;/b&gt; Wir verstecken offene Seiten, um Baum und Blume jetzt zu trinken. Geh her, schwimm alt, ihm ging schon die Arbeit ins Loch; den alle verlieren. Über König bin ich Stein gelaufen, zwei Häuser dort sind alle fertig. Tief darauf wirft der Mann volle Teller vom Auto ins kalte Dorf.&lt;/p&gt;
-&lt;p&gt;Das letzte Ding ist dann fest. Allein brauchen wir die Straße. Nein, wenn uns gebissen, findet die Hand den Wald heiß. Weil ab vier trägt der Junge Winter gelb zum Sommer, ob deshalb der Tisch lang und kräftig nach nichts denkt? Ein Brief, Kuss und Kaffee am Abend holen sieben Gärten. Kennen Sie die Zeit, außer einer badet schnell mal in Luft, sofort wurde fliegen hoch geschrieben.&lt;/p&gt;
-&lt;p&gt;Er läuft Bein, die Nase schlechte Worte isst. Eltern dürfen Wasser bringen, das Tier dachte im Bett, so begann der Löwe seine sehr gute Frage. Ihr spielt Bauer mit Milch und Zahn, denn die Leute wird der Fisch spät sehen. Mit dem Onkel steigen etwas Spiel, beide Arme rennen weg etwas gestellt. Keiner soll schlimm ins Gesicht das Bild bezahlen, fing die Uhr auf Sache eine böse Minute. Ein Weg fuhr gerade und trifft ein wahres Buch.&lt;/p&gt;
-&lt;p&gt;Mein Igel kann die Angst kaufen. In dir schenken Fehler dem Arzt Erde. Sitzen Anfang und Antwort? Nachher stellt jeder Bruder ein Glas Nacht für Omas Licht zur Geschichte. Wie frei das Rad auf den Boden fiel, leise hast du eine Woche Spaß. War der Herr Lehrer lustig?&lt;/p&gt;
-&lt;p&gt;Mehr liegen sah ich tot, warum nun glücklich legen? Los, bei heißen Zahlen helfen natürlich gern diese roten Schuhe! Die Äpfel leben einfach hin, was den Ferien zum Land nächste Küche hängt. Geld lese nie grün hinter Weihnachten, oder durch Menschen las langsam nah und rund. An Brot waschen wir also doch kaputte Aufgaben. Sie erzählen, als wollen sie fast noch davon antworten, fangen vielleicht erst noch ganz die weiße Kuh. Neben dem Schiff schreien Elefanten vor Freude …&lt;/p&gt;
-&lt;p&gt;Stand der Fuß, lag der Stuhl, rief der Freund, nahm die Stunde gegen die Ohren sich Tasse heraus. Stark erklärst du, wie lieb ich ihn haben könnte, so gab Vater. Vom Lernen bleiben einige immer zurück. Sie fährt, die Katze immer dabei. Richtig ließ, die Schwester nimmt.&lt;/p&gt;&lt;/div&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Übrigens könnt ihr den Code über dem Textbeispiel verändern!
-Bessert die &lt;code&gt;35ch&lt;/code&gt; zum Beispiel mal in &lt;code&gt;10ch&lt;/code&gt; oder &lt;code&gt;60ch&lt;/code&gt; aus und schaut, was passiert.
-Wenn möglich, macht auch mal euer Browserfenster breiter oder schmaler:
-Die Spalten passen sich an.&lt;/p&gt;
-
-&lt;p&gt;Wie erwähnt, kann man nicht nur eine gewünschte Breite, sondern auch eine feste Spaltenzahl angeben.
-Damit verschenkt man allerdings die Flexibilität und bekommt evtl. zu lange oder kurze Zeilen.
-Auch wenn man das Fenster sehr schmal oder sehr breit zieht, bleibt die Anzahl der Spalten gleich.
-Hier zum Ausprobieren:&lt;/p&gt;
-
-&lt;style contenteditable=&quot;&quot;&gt;.beispiel-2 {
-  columns: 3;
-  column-gap: 2.5ch;
-  column-rule: 1px solid coral;
-}&lt;/style&gt;
-
-&lt;figure&gt;
-&lt;div class=&quot;beispiel-2&quot;&gt;&lt;p&gt;Wir verstecken offene Seiten, um Baum und Blume jetzt zu trinken. Geh her, schwimm alt, ihm ging schon die Arbeit ins Loch; den alle verlieren. Über König bin ich Stein gelaufen, zwei Häuser dort sind alle fertig. Tief darauf wirft der Mann volle Teller vom Auto ins kalte Dorf.&lt;/p&gt;
-&lt;p&gt;Das letzte Ding ist dann fest. Allein brauchen wir die Straße. Nein, wenn uns gebissen, findet die Hand den Wald heiß. Weil ab vier trägt der Junge Winter gelb zum Sommer, ob deshalb der Tisch lang und kräftig nach nichts denkt? Ein Brief, Kuss und Kaffee am Abend holen sieben Gärten. Kennen Sie die Zeit, außer einer badet schnell mal in Luft, sofort wurde fliegen hoch geschrieben.&lt;/p&gt;
-&lt;p&gt;Er läuft Bein, die Nase schlechte Worte isst. Eltern dürfen Wasser bringen, das Tier dachte im Bett, so begann der Löwe seine sehr gute Frage. Ihr spielt Bauer mit Milch und Zahn, denn die Leute wird der Fisch spät sehen. Mit dem Onkel steigen etwas Spiel, beide Arme rennen weg etwas gestellt. Keiner soll schlimm ins Gesicht das Bild bezahlen, fing die Uhr auf Sache eine böse Minute. Ein Weg fuhr gerade und trifft ein wahres Buch. Mein Igel kann die Angst kaufen.&lt;/p&gt;
-&lt;p&gt;In dir schenken Fehler dem Arzt Erde. Sitzen Anfang und Antwort? Nachher stellt jeder Bruder ein Glas Nacht für Omas Licht zur Geschichte. Wie frei das Rad auf den Boden fiel, leise hast du eine Woche Spaß. War der Herr Lehrer lustig?&lt;/p&gt;
-&lt;h2 style=&quot;font:inherit; font-weight:bold; font-size:1.1em; margin:.8em 0 .2em -.02em;&quot;&gt;Eine Zwischenüberschrift&lt;/h2&gt;
-&lt;p&gt;Mehr liegen sah ich tot, warum nun glücklich legen? Los, bei heißen Zahlen helfen natürlich gern diese roten Schuhe! Die Äpfel leben einfach hin, was den Ferien zum Land nächste Küche hängt. Geld lese nie grün hinter Weihnachten, oder durch Menschen las langsam nah und rund. An Brot waschen wir also doch kaputte Aufgaben. Sie erzählen, als wollen sie fast noch davon antworten, fangen vielleicht erst noch ganz die weiße Kuh. Neben dem Schiff schreien Elefanten vor Freude …&lt;/p&gt;
-&lt;p&gt;Stand der Fuß, lag der Stuhl, rief der Freund, nahm die Stunde gegen die Ohren sich Tasse heraus. Stark erklärst du, wie lieb ich ihn haben könnte, so gab Vater. Vom Lernen bleiben einige immer zurück. Sie fährt, die Katze immer dabei. Richtig ließ, die Schwester nimmt.&lt;/p&gt;&lt;/div&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Als Ergänzung habe ich hier Trennlinien zwischen den Spalten eingefügt.
-Das geht mit dem Befehl &lt;code&gt;column-rule&lt;/code&gt; („Spalten-Linie“).
-&lt;code&gt;1px&lt;/code&gt; ist die Linienbreite (ein Pixel),
-&lt;code&gt;solid&lt;/code&gt; die Art der Linie (es geht zum Beispiel auch &lt;code&gt;dotted&lt;/code&gt; oder &lt;code&gt;dashed&lt;/code&gt;)
-und &lt;code&gt;coral&lt;/code&gt; ist die &lt;a href=&quot;https://www.w3schools.com/colors/colors_names.asp&quot;&gt;Farbe&lt;/a&gt; (probiert gern &lt;code&gt;green&lt;/code&gt;, &lt;code&gt;indigo&lt;/code&gt; oder &lt;code&gt;peru&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&quot;kein-professioneller-spaltensatz&quot;&gt;Kein professioneller Spaltensatz&lt;/h2&gt;
-
-&lt;p&gt;Im Hinterkopf behalten sollte man aber, dass &lt;code&gt;columns&lt;/code&gt; nicht automatisch das beste Layout erzeugt.
-Der Browser versucht, alle Textspalten etwa gleich hoch auszubalancieren,
-er achtet aber nicht darauf, dass die Spaltenumbrüche an sinnvollen Stellen sitzen.
-So kann es passieren, dass eine Zwischenüberschrift ganz unten in einer Spalte steht,
-obwohl sie zum nachfolgenden Text gehört (wie im Beispiel 2).
-Oder das letzte Wort eines Absatzes rutscht einsam in die nächste Spalte.
-Solche Umbrüche würde ein professioneller Setzer vermeiden.&lt;/p&gt;
-
-&lt;p&gt;Bei kurzen oder sehr langen Textabschnitten ist der Spaltensatz nicht zu empfehlen.
-Es sieht komisch aus, wenn sich wenig Text auf mehrere Spalten verteilt, weil dann nur einzelne Zeilen die Spalte füllen.
-Wenn der Text sehr lang ist, können die Spalten höher werden als das Browserfenster.
-Als Leser:in muss man dann von unten wieder weit nach oben scrollen, um in der nächsten Spalte weiterzulesen –
-auch nicht optimal.&lt;/p&gt;
-
-&lt;h2 id=&quot;bonus-einfaches-masonry-layout&quot;&gt;Bonus: Einfaches Masonry-Layout&lt;/h2&gt;
-
-&lt;p&gt;Natürlich kann man nicht nur Text in CSS-Spalten stecken, sondern auch Bilder oder farbige Flächen.
-Wenn man diese auf die Spaltenbreite bringt (mit &lt;code&gt;width: 100%&lt;/code&gt;) und einfach untereinander setzt,
-ergibt sich eine attraktive, verschränkte Anordnung.
-Dieses Layout ist &lt;em&gt;Masonry&lt;/em&gt; bekannt, englisch für „Mauerwerk“.&lt;/p&gt;
-
-&lt;style contenteditable=&quot;&quot;&gt;.beispiel-3 {
-  columns: 20ch;
-  column-gap: 3ch;
-}&lt;/style&gt;
-
-&lt;figure&gt;
-&lt;div class=&quot;beispiel-3&quot;&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-	&lt;div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;So viel zum Thema &lt;code&gt;columns&lt;/code&gt;.
-Falls ihr nun auf den Geschmack gekommen seid und mit CSS noch etwas spielen möchtet,
-dann lest euch durch, wie man &lt;a href=&quot;css-muster.html&quot;&gt;mit CSS Muster erzeugen&lt;/a&gt; kann.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/css-spalten.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/css-spalten.html</guid>
-	<pubDate>Mon, 18 Mar 2024 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
