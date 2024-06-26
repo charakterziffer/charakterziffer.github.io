@@ -211,8 +211,8 @@ a { color: var(--gruen-basis);  text-decoration: none;
 :is(aside, .hinterlegt, figcaption, blockquote) a {
 	color: var(--gruen-stark); }
 a:visited { color: var(--akzent-basis); }
-a:hover { color: var(--gruen-aktiv); text-decoration: underline; }
-:is(aside, .hinterlegt, figcaption, blockquote) a:hover {
+a[href]:hover { color: var(--gruen-aktiv); text-decoration: underline; }
+:is(aside, .hinterlegt, figcaption, blockquote) a[href]:hover {
 	color: var(--gruen-basis); }
 a:active { color: var(--akzent-aktiv) }
 a:focus-visible { outline:1.5px dotted var(--grau-basis); outline-offset:1px; }

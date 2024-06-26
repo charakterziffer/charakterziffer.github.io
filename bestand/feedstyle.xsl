@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- inspiriert von Pretty Feed (https://github.com/genmon/aboutfeeds) -->
+<!-- inspiriert von Pretty Feed (https://github.com/genmon/aboutfeeds/blob/main/tools/pretty-feed-v3.xsl) -->
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 <xsl:template match="/">
 <html lang="de">
 <head>
 	<meta charset="utf-8"/>
-	<title><xsl:value-of select="/rss/channel/title"/></title>
+	<title>RSS-Feed // @cz+</title>
 	<link href='bestand/style.css' rel='stylesheet'/>
 	<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous"/>
 
@@ -18,7 +18,7 @@
 </head>
 <body>
 	<main>
-	<p class="hinterlegt">Das ist ein Webfeed, auch als RSS-Feed bekannt. Um ihn zu abonnieren, kopiere die URL <code>https://charakterziffer.github.io/rss.xml</code> in deinen Feedreader. Ein ausführlicher Artikel, wie man RSS nutzt, steht auf <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
+	<p class="hinterlegt">Das ein RSS-Feed, in dem automatisch die neusten Einträge meines Blogs auftauchen. Um diesen Feed zu abonnieren, kopiere die URL <code>https://charakterziffer.github.io/rss.xml</code> in deinen Feedreader. Ein ausführlicher Artikel, wie man RSS nutzt, steht auf <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
 	<h1 class="icon-rss">Webfeed-Vorschau</h1>
 		<h2><xsl:value-of select="/rss/channel/title"/></h2>
 		<p><xsl:value-of select="/rss/channel/description"/><br />
