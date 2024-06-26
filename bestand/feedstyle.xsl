@@ -43,7 +43,7 @@ basiert auf „Pretty Feed“, siehe https://github.com/genmon/aboutfeeds
 			</h3>
 			<p>Veröffentlichen am <xsl:value-of select="pubDate" /></p>
 		</xsl:for-each>
-	</main
+	</main>
 	</body>
 </html>
 </xsl:template>
