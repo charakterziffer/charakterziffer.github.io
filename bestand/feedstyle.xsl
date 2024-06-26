@@ -16,7 +16,7 @@ basiert auf „Pretty Feed“, siehe https://github.com/genmon/aboutfeeds
 	<link rel="apple-touch-icon" href="/bestand/touchicon.png">
 	<meta name="theme-color" content="#228811">
 	<meta name="color-scheme" content="light dark">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
 	<nav>
