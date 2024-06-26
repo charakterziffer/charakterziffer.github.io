@@ -7,7 +7,7 @@ basiert auf „Pretty Feed“, siehe https://github.com/genmon/aboutfeeds
 <xsl:template match="/">
 <html lang="de">
 <head>
-	<meta charset=utf-8"/>
+	<meta charset="utf-8"/>
 	<title><xsl:value-of select="/rss/channel/title"/></title>
 	<link href='bestand/style.css' rel='stylesheet'>
 	<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
