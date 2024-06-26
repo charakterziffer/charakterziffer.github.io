@@ -9,14 +9,14 @@ basiert auf „Pretty Feed“, siehe https://github.com/genmon/aboutfeeds
 <head>
 	<meta charset="utf-8"/>
 	<title><xsl:value-of select="/rss/channel/title"/></title>
-	<link href='bestand/style.css' rel='stylesheet'>
-	<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+	<link href='bestand/style.css' rel='stylesheet'/>
+	<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous"/>
 
-	<link rel="icon" href="/bestand/favicon.png">
-	<link rel="apple-touch-icon" href="/bestand/touchicon.png">
-	<meta name="theme-color" content="#228811">
-	<meta name="color-scheme" content="light dark">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="/bestand/favicon.png"/>
+	<link rel="apple-touch-icon" href="/bestand/touchicon.png"/>
+	<meta name="theme-color" content="#228811"/>
+	<meta name="color-scheme" content="light dark"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 </head>
 <body>
 	<nav>
