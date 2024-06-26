@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="bestand/feedstyle.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel>
+<title>@cz+ // Blog von @charakterziffer</title>
+<link>https://charakterziffer.github.io/index.html</link>
+<description>280 Zeichen sind kurz, manchmal sogar zu kurz. Deshalb versammelt @charakterziffer (Gerhard Großmann) hier weitere Informationen zu seinen Status-Updates.</description>
+<language>de-de</language>
+<copyright>Gerhard Großmann</copyright>
+<atom:link href="https://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+	<url>https://charakterziffer.github.io/bestand/favicon.png</url>
+	<title>@cz+ // Blog von @charakterziffer</title>
+	<link>https://charakterziffer.github.io/index.html</link>
+</image>
+
+<item>
+	<title>Aus 17 Silben ein Gedicht</title>
+	<description>&lt;p&gt;Aus der Bibliothek habe ich mir gerade zwei kleine, hübsche Bücher mit japanischen Kurzgedichten ausgeliehen. Diese &lt;em&gt;Haikus&lt;/em&gt; haben sich im 14./15. Jahrhundert entwickelt. Ihre Kürze ist typisch für die japanische Kultur, die ja in vielen Bereichen versucht, vollendet Schönes mit geringen Mitteln und auf kleinem Raum zu schaffen (wie bei der Tuschemalerei &lt;em&gt;Sumi-e&lt;/em&gt;, der Blumensteckkunst &lt;em&gt;Ikebana&lt;/em&gt; oder kleinen, geschnitzten &lt;em&gt;Netsuke&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Ein Haiku spielt mit dem Unausgesprochenen und Unvollendeten, und deutet über den eigentlichen Inhalt hinaus ein größeres Thema an. Im strengen Sinn beschreiben Haikus objektiv eine Naturstimmung und orientieren sich an den fünf Jahreszeiten (Neujahr, Frühling, Sommer, Herbst und Winter):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Kaum war er erblüht,&lt;br /&gt;
+hat den Mohn der Wind verweht,&lt;br /&gt;
+noch am gleichen Tag!&lt;/p&gt;
+
+  &lt;p&gt;— &lt;em&gt;Kobayashi Issa&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thematisch sind die Kurzgedichte spätestens zu ihrer Blütezeit im 17. Jahrhundert vielseitiger geworden, ihre feste Form hat sich allerdings nicht verändert: Ein Haiku hat immer drei Zeilen mit bestimmter Silbenzahl. Zuerst fünf Silben, dann sieben Silben, schließlich wieder fünf Silben.&lt;/p&gt;
+
+&lt;p&gt;Laut Gerolf Coudenhove, dem Übersetzer und Herausgeber der Haiku-Bücher, haben die Kurzgedichte im Japanischen außerdem einen typischen Rhythmus. Sie werden auch bewusst rhythmisch vorgelesen. Ins Deutsche lässt sich das am besten mit einem Wechsel von betonten (—) und unbetonten Silben (◡) übertragen:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;— ◡ — ◡ —&lt;br /&gt;
+— ◡ — ◡ — ◡ —&lt;br /&gt;
+— ◡ — ◡ —&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Haikus zu schreiben ist wirklich weit verbreitet, es gibt Millionen davon! Ich erinnere mich an eine Deutschstunde, in der wir diese Gedichtform selbst ausprobiert haben. Die kurze, fest Form finde ich sehr inspirierend: Sie beschränkt die Möglichkeiten, regt an zu Worttüffteleien und verhindert gleichzeitig, dass man sich in ausufernder Weitschweifigkeit verläuft. Hier ein eigenes Haiku:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In dem dicken Buch&lt;br /&gt;
+zwischen schwerer Weisheit klebt&lt;br /&gt;
+flach ein Käferrest.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mir gefällt, wie die nüchterne, kurze Beschreibung Raum lässt für hintergründige Interpretationen. Es macht mir außerdem Freude, einen kleinen, konkreten Moment im Vers festzuhalten und zu versuchen, die Stimmung in wenigen Worten einzufangen.&lt;/p&gt;
+
+&lt;p&gt;Wegen ihrer Kürze eignen sich Haikus wunderbar als Texte für Kalligrafie. Sie sind schnell geschrieben, lassen sich mit ihren bildhaften Beschreibungen leicht gestalten und machen durch die lyrische Form auch inhaltlich etwas her. Wie wäre es zum Beispiel auf einer handgeschriebenen Grußkarte?&lt;/p&gt;
+
+&lt;style&gt;
+.bildpaar { display: flex; flex-wrap: wrap; }
+.bildpaar &gt; img { flex: 1 1 auto; object-fit: contain; }
+&lt;/style&gt;
+
+&lt;figure class=&quot;bildpaar&quot;&gt;
+	&lt;img src=&quot;material/haiku1.jpg&quot; width=&quot;300&quot; alt=&quot;„Wie der volle Mond / auf das Abendhimmelsgrün / eine Föhre malt!“. Ein Haiku von 
+	Hattori Ransetsu, geschrieben mit rötlich grauer Tinte. Ein Halbkreis deutet oben rechts den Mond an, eine Schraffur unten links könnte eine Föhre sein.&quot; /&gt;
+	&lt;img src=&quot;material/haiku2.jpg&quot; width=&quot;300&quot; alt=&quot;„Fern ein Feuerwerk / leuchtet auf, verlischt, und dann / Dunkel wie zuvor …“, ein Haiku von Terada Torahiko. Handgeschrieber Text, darum herum fünf kleine Sterne als angedeutetes Feuerwerk.&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ich hoffe, dieser Blogartikel regt euch an, ein paar Haikus zu lesen und vielleicht sogar selbst eines zu schreiben. Es ist wirklich nicht so schwer!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/haiku.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/haiku.html</guid>
+	<pubDate>Thu, 20 Jun 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Schreibfedern aus der Getränkedose</title>
+	<description>&lt;p&gt;Ein „Colapen“ ist ein Schreibgerät mit einer gefalteten Blechfeder, gebastelt aus einer Coladose. Schon vor einer Weile habe ich einen Blogartikel dazu gefunden und mir nun selbst solche Faltfedern gebastelt. Sie eignen sich gut zum groben, experimentellen Schreiben. Hier meine Anleitung:&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+[class^=&quot;pen&quot;] { position: relative; width: 98.5%; height: 0;
+	margin: 1.65em 0 1.45em; padding-bottom: 25%;
+	line-height: 0; border: 0; background-size: 100% auto;
+	background-image: url(&apos;material/colapen.jpg&apos;); }
+[class^=&quot;pen&quot;] a { visibility:hidden; }
+.pen1 { background-position: 0 0; }
+.pen2 { background-position: 0 33.33%; }
+.pen3 { background-position: 0 66.67%; }
+.pen4 { background-position: 0 100%; }
+@media screen and (prefers-color-scheme: dark) {
+	[class^=&quot;pen&quot;] { filter:brightness(.8); } }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;pen1&quot; title=&quot;Arbeitsschritte 1–4&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Arbeitsschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Als Material und Werkzeug benötigt man:&lt;/p&gt;
+
+&lt;div style=&quot;columns:13em; margin:1em 0 -1.05em;&quot;&gt;
+&lt;ul style=&quot;margin-top:0;&quot;&gt;&lt;li&gt;Getränkedose&lt;/li&gt;
+&lt;li&gt;Stäbe für den Griff (z.&lt;small&gt;&amp;nbsp;&lt;/small&gt;B. Buntstift oder Essstäbchen)&lt;/li&gt;
+&lt;li&gt;Klebeband/Washi-Tape&lt;/li&gt;
+&lt;li&gt;evtl. Skalpell oder Nadel&lt;/li&gt;
+&lt;li&gt;spitze Schere&lt;/li&gt;
+&lt;li&gt;wischfester Folienstift/Permanent-Marker&lt;/li&gt;
+&lt;li&gt;Lineal&lt;/li&gt;
+&lt;li&gt;feines Schleifpapier&lt;/li&gt;
+&lt;li&gt;evtl. ein Zahnstocher&lt;/li&gt;
+&lt;li&gt;evtl. kleine Zange&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Außerdem sehr wichtig: &lt;strong&gt;Handschuhe zum Schutz vor Schnitten!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot; style=&quot;background-color:var(--akzent-blass); color:var(--text-stark)&quot;&gt;&lt;b&gt;⚠ Achtung:&lt;/b&gt; Die Blechkanten der aufgeschnittenen Dose sind sehr scharf! Vorsicht beim Hantieren mit dem Blech, damit man sich nicht schneidet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Handschuhe anziehen! Dann die Dose an der oberen Kante aufschneiden. Am besten zuerst mit einem Skalpell oder einer Nadel eine Öffnung stechen, dann mit der Schere rundherum den Dosendeckel abschneiden.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Einen Schnitt entlang der Dosenhöhe machen, dann auch den Boden abschneiden. So entsteht ein rechteckiges Stück Blech (mit scharfen Kanten!).&lt;/p&gt;
+
+&lt;div class=&quot;pen2&quot; title=&quot;Arbeitsschritte 5+6abc&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Arbeitsschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Für die spätere Feder ein Rechteck aufzeichnen (auf die Blechseite, die später innen sein soll). Es misst etwa 3&lt;small&gt; &lt;/small&gt;×&lt;small&gt; &lt;/small&gt;5 cm. An einer kurzen Seite die Ecken aussparen, an diesem schmalen Stück wird die Feder an den Griff geklebt.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; Die Blechform ausschneiden. Danach gern die Gelegenheit nutzen, um dem Arbeitsplatz von fiesen Blechspänen zu befreien, beispielsweise mit Hilfe eines Stückchens Klebeband.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt; Für den Schaft habe ich ein Essstäbchen mit einem Sägemesser gekürzt, auch ein Buntstift bietet sich als Griffstück an. Das Blechteil vorsichtig um diesen Schaft biegen und nach und nach rund formen. Nicht wiederholt knicken, damit das Blech nicht bricht.&lt;/p&gt;
+
+&lt;div class=&quot;pen3&quot; title=&quot;Arbeitsschritte 7–10&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Faltschritt
+e)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt; Die spätere Feder muss fest mit dem Griff verbunden sein, darum mit Klebeband oder bunten Washi-Tape ordentlich fixieren.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8.&lt;/strong&gt; Die Feder mit der Schere in Form schneiden. Vorne empfehle ich eine flache Rundung und eine schmale Spitze.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9.&lt;/strong&gt; Möglich sind aber ganz verschiedene Formen. Eine einzelne Getränkedose bietet ausreichend Material für mehrere Blechfedern, zum Beispiel auch für kamm-artige Federn, mit denen parallele Linien gezogen werden können. (Eine kleine Zange hilft beim Biegen oder Zusammenpressen)&lt;/p&gt;
+
+&lt;div class=&quot;pen4&quot; title=&quot;Arbeitsschritte 11+12&quot;&gt;&lt;a href=&quot;material/colapen.jpg&quot;&gt;Komplettes Bild (alle Arbeitsschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;10.&lt;/strong&gt; Nochmal den Arbeitsplatz saubermachen, scharfe Bleckstücke und Spreisel beiseite räumen! Dann geht es gern ohne Handschuhe weiter.&lt;br /&gt;
+Damit die Feder gut Tinte aufnimmt und diese dann schön herausfließt, sollte zwischen den Blechhälften der Feder ein sehr schmaler Spalt sein. Der lässt sich mit einem Zahnstocher formen. Falls die Feder auf dem Papier kratzt, kann man sie mehrmals über feines Schleifpapier ziehen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11.&lt;/strong&gt; Zum Schreiben entweder die Feder in Tinte tauchen oder mit Hilfe eines Pinsels mit satter Wasserfarbe füllen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12.&lt;/strong&gt; Auf dem Papier ruhig erst ein bisschen ausprobieren, bis die Farbe gut aus der Feder läuft und die optimale Federhaltung für einen schönen Strichkontrast gefunden ist.&lt;/p&gt;
+
+&lt;h2 id=&quot;weitere-anleitungen&quot;&gt;Weitere Anleitungen&lt;/h2&gt;
+
+&lt;p&gt;Natürlich habe ich mir diesen Cola-Pen nicht selbst ausgedacht, sondern verschiedene Beschreibungen dazu gesucht. Leider habe ich wenig auf Deutsch gefunden, es war zu knapp oder zu blumig formuliert oder mit Werbung gepflastert. Gute Alternativen zu meiner Anleitung sind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Minimalistisch &lt;a href=&quot;https://web.archive.org/web/20130109101856/http://www.etsy.com/blog/de/2012/getrankedose-essstabchen-klebefolie-cola-pen/&quot;&gt;in einem Bild&lt;/a&gt; (Archiv eines Etsy-Blogartikels von 2012)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Weitere &lt;a href=&quot;https://web.archive.org/web/20230209133536/https://welovehandmade.at/2017/03/27/diy-selbstgemachter-cola-pen/&quot;&gt;Anleitung mit Fotos&lt;/a&gt; (archivierte Seite, mit Eigenwerbung)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ausführliches &lt;a href=&quot;https://www.youtube.com/watch?v=0iLMNO3QD0c&quot;&gt;YouTube-Video&lt;/a&gt; (10 Minuten, englisch, aber gut verständlich, lästige Werbung)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Englische und spanische &lt;a href=&quot;https://www.instructables.com/Easy-Homemade-Pens-With-a-Can/&quot;&gt;Anleitung mit Fotos&lt;/a&gt;, zwei verschiedene Federfaltungen (die erste etwas komplizierter mit mehreren Blechschichten).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mut-zum-experimentieren&quot;&gt;Mut zum Experimentieren&lt;/h2&gt;
+
+&lt;p&gt;Feine Kalligrafie zaubert die Blechfeder nicht so gut und ordentlich aufs Papier wie eine „richtige“ Schreibfeder. Dafür kann man damit allerhand ausprobieren: Mit der Rundung der Feder schreiben, umgedreht mit der Spitze (geschlossenen Kante zum Papier), mit verschiedenen, ineinander laufenden Farben, …&lt;/p&gt;
+
+&lt;p&gt;Recht inspirierend fand ich einen Artikel &lt;a href=&quot;https://ramona-weyde.com/asemisches-schreiben/&quot;&gt;über asemisches Schreiben&lt;/a&gt; (Schreiben ohne inhaltliche Bedeutung) und die Beispiele für &lt;a href=&quot;https://web.archive.org/web/20190427234002/http://www.sarahhartwig.com/calligraphy/hand-lettering/&quot;&gt;Handlettering von Sarah Hartwig&lt;/a&gt; (Archiv-Seite, Originalwebsite offline).&lt;/p&gt;
+
+&lt;p&gt;Zum Schluss noch ein großes Dankeschön an Martin fürs geduldige Fotografieren aller Bilder!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/colapen.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/colapen.html</guid>
+	<pubDate>Tue, 28 May 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Malerei hinterm Fenster</title>
+	<description>&lt;p&gt;Als kreativen Ansporn hatte ich mir vorgenommen, fürs Fenster meines Arbeitszimmers monatlich ein neues Bild zu malen. Es ist dann von außen sichtbar und erfreut vielleicht ein paar Passanten. Nach über zwei Jahren fürchte ich: Jetzt ist die Luft erst mal raus.&lt;/p&gt;
+
+&lt;p&gt;Ideen für Motive habe ich zwar einige, aber nicht jeden Monat ist mir danach, etwas zu malen. Zu oft fühlten sich die Fensterbilder in letzter Zeit wie eine lästige Pflicht an – und das ist nicht Sinn der Sache. Vielleicht sollte ich das Malen verspielter angehen, mehr Mut zum Unperfekten und Sinnfreien.&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.bildraster &gt; a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%; height: 11em;
+	object-fit: contain; overflow: clip; }
+
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
+.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
+
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;bildraster&quot;&gt;
+&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/fensterbilder/v13.jpg&quot; alt=&quot;Komposition aus vier geometrischen Formen, jeweils aus Papier ausgeschnitten und aufgeklebt: Ein gelber Kreis, ein Dreieck aus zerknittertem Packpapier, ein pinkfarbenes Fünfeck und ein Quadrat aus zwei Zeitungsspalten. Dazu sechs blaue Linien in der Bildmitte links und ein grünes Punkteraster unten.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/fensterbilder/v14.jpg&quot; alt=&quot;Verzierter, roter Buchstabe „G“ auf blaugrünem Grund mit angedeuteten Tannenzweigen. Das G ist mit einer Karos und einer Fleur-de-lis verziert, auf dem Querbalken sitzt eine weiße Eule.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/fensterbilder/v15.jpg&quot; alt=&quot;Eine abstrakte Form, ähnlich einem kastenförmigen Papierdrachen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/fensterbilder/v16.jpg&quot; alt=&quot;Studie über Löwenzahn. Das Bild ist in Felder aufgeteilt, Je eines mit einer Pfahlwurzel, mit grün gezackten Blättern, gelben Blütenfasern, geschlossene Blütenköpfe und weiße Flugsamen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/fensterbilder/v17.jpg&quot; alt=&quot;Von links wachsen feurige dornenzweige in Bild und treffen in der Mitte auf grüne, geschwungene Ranken, die von rechts ins Bild dringen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/fensterbilder/v18.jpg&quot; alt=&quot;Collage aus astronomischen Elementen alter Holzschnitte: Schweifstern, Sonne mit Strahlenkranz, Komet, Sternkarte. Die Papier-Teile sind hauptsächlich in Blautönen, dazu einzelne Akzente in leuchtendem Gelb.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/fensterbilder/v19.jpg&quot; alt=&quot;Umrisse von Herbstblättern, die sich überlagern. Verschiedene Farbschichten sind aufgesprüht, was eine eher graue Fläche ergibt, die in verschiedenen Farben schimmert.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/fensterbilder/v20.jpg&quot; alt=&quot;Abstraktes Ölbild mit schwarzem Hintergrund. Aus der Mitte öffnen sich farbige, durchscheinende Rechtecke, aufgefächert wie unterschiedliche große Buchseiten.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/fensterbilder/v21.jpg&quot; alt=&quot;Zwei Punkteraster, eines rechtwinklig in Altrosa, das andere diagonal in Rot. Sie überlagern sich in der Bildmitte in Form eines Kommas, mit leichtem Moirée-Effekt. Einige Punkte sind golden, der Hintergrund verwaschen Rosa.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/fensterbilder/v22.jpg&quot; alt=&quot;Zwei Reihen mit je drei schwarzblauen Kreisen. Die Kreise sind von der Struktur unterschiedliche dicht gefüllt wie Wolken, Wollknäule oder Pfingsrosen und haben verschiedene Helligkeiten.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/fensterbilder/v23.jpg&quot; alt=&quot;Ein sitzender Hase, zusammengesetzt aus groben, pinkfarbenen Pixeln.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/fensterbilder/v24.jpg&quot; alt=&quot;Missglücktes und darum verschmiertes Porträt, im Grunde nur noch ein schmutzig brauner Umriss.&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
+&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb13.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb14.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb15.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb16.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb17.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb18.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb19.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb20.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb21.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb22.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb23.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb24.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Das letzte Bild war übrigens der Versuch eines Porträts mit Ölfarben. Ich wurde im Laufe des Malens damit aber so unzufrieden, dass ich es kurzerhand völlig verschmiert habe. Ins Fenster hänge ich das nicht, außer ich übermale alles nochmal. Oder es landet im Müll. Ob das vor zu hohen Erwartungen schützt: Für den Müll malen?&lt;/p&gt;
+
+&lt;p&gt;Bei allem Frust übers missglückte Porträt sollte ich nicht vergessen, dass unter diesen zwölf Bildern auch einige sind, die mir recht gut gefallen. Die &lt;a href=&quot;fensterbilder.html&quot;&gt;„erste Staffel“ meiner Fensterbilder&lt;/a&gt; habe ich übrigens vor anderthalb Jahren veröffentlicht.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/fensterbilder-2.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder-2.html</guid>
+	<pubDate>Thu, 09 May 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Wohin mit Kommentaren? – Eine Entgegnung</title>
+	<description>&lt;p class=&quot;hinterlegt&quot;&gt;Prefer English? Try the &lt;a href=&quot;https://translate.google.com/translate?hl=en&amp;amp;sl=de&amp;amp;tl=en&amp;amp;u=https%3A%2F%2Fcharakterziffer.github.io%2Fwohin-kommentieren&quot;&gt;Google Translator&lt;/a&gt; or the &lt;a href=&quot;https://support.mozilla.org/en-US/kb/website-translation&quot;&gt;Translate feature&lt;/a&gt; in your Firefox Browser.&lt;/p&gt;
+
+&lt;p&gt;Dieser Artikel ist eine Antwort auf einen Text von Manuel Moreale. Er war gefragt worden, warum er in seinem Blog keine Möglichkeit zum Kommentieren anbietet. &lt;a href=&quot;https://manuelmoreale.com/a-comment-on-comments&quot;&gt;Seine öffentliche Begründung&lt;/a&gt; (engl., übersetzt von mir):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ich bin allgemein kein Fan von Kommentaren und denke, kommentieren sollte man auf einem dieser beiden Wege:&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Vertraulich via E-Mail oder Direktnachricht&lt;/li&gt;
+    &lt;li&gt;Öffentlich, indem man eine Antwort auf der eigenen Website schreibt&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wobei Manuel ergänzt hat, dass einige da draußen sicher anderer Meinung sein würden. Stimmt, und ich kann es sogar begründen ☺&lt;/p&gt;
+
+&lt;h2 id=&quot;kommentare-via-e-mail&quot;&gt;Kommentare via E-Mail&lt;/h2&gt;
+
+&lt;p&gt;Weil Manuel keine Kommentarmöglichkeit in seinem Blog hat, habe ich ihm zunächst eine Mail geschrieben (engl., hier die deutsche Übersetzung):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hi Manuel,&lt;/p&gt;
+
+  &lt;p&gt;der ideale Zweck eines Kommentars ist meiner Meinung nach, dem Original-Artikel etwas Nützliches hinzuzufügen. Das kann ein gut begründetes Gegenargument sein, ein hilfreiches Beispiel, ein ergänzender Nachtrag, ein fehlender Verweis; ein Aspekt, der die Perspektive erweitert; oder etwas anderes, das den Artikel bereichert.&lt;/p&gt;
+
+  &lt;p&gt;Damit diese Ergänzung nicht nur für den Autor nützlich ist (per privater Mail), sondern auch für die Leser:innen, sollte sie unter dem Original-Artikel sichtbar sein oder wenigstens dort verlinkt. Natürlich bleibt es dem Autor überlassen, ob die Ergänzung öffentlich sichtbar sein soll – immerhin ist das Blog sein persönliches Zuhause im Internet.&lt;/p&gt;
+
+  &lt;p&gt;Beste Grüße, G’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ich argumentiere also, dass öffentliche Kommentare unter einem Artikel &lt;a href=&quot;nuetzliche-kommentare.html&quot;&gt;für alle einen Nutzen&lt;/a&gt; haben – das hatte ich vor zehn Jahren schon mal geschrieben.&lt;/p&gt;
+
+&lt;h2 id=&quot;kommentare-auf-der-eigenen-website&quot;&gt;Kommentare auf der eigenen Website&lt;/h2&gt;
+
+&lt;p&gt;Doch gäbe es dafür nicht Manuels zweite Möglichkeit, nämlich mit einem Artikel im eigenen Blog öffentlich zu antworten? Das entgegnete er mir auch auf meine Mail (engl., hier meine Übersetzung, veröffentlicht mit Genehmigung):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Absolut gültige Meinung. Aber dafür gibt es ebenfalls eine Lösung.&lt;/p&gt;
+
+  &lt;p&gt;Du schreibst eine öffentliche Antwort, lässt mich davon wissen und ich ergänze eine Fußnote, die auf deine Antwort verweist. Sicher, das ist viel komplizierter, aber ich denke langfristig macht es das gesamte Internet besser.&lt;/p&gt;
+
+  &lt;p&gt;Das wäre übrigens auch etwas, das dank Webmentions&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot; style=&quot;font-variant-numeric:lining-nums&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; automatisiert werden könnte. Ich könnte Webmentions einfach automatisiert unter jedem meiner Artikel einbinden. Ich mache das nicht, weil ich Dinge gerne einfach halten möchte.&lt;/p&gt;
+
+  &lt;p&gt;Deine Lösung ist offensichtlich einfacher und intuitiver, bringt als Problem aber Spam, Qualitätskontrolle der Kommentare und all diese Dinge mit sich.&lt;/p&gt;
+
+  &lt;p&gt;Öffentliche Antworten in Blogs bevorzuge ich auch, weil es Leuten ermöglicht, neue Blogs und Websites zu entdecken. Wenn du auf meiner Seite kommentierst, dann endet die Reise hier.&lt;/p&gt;
+
+  &lt;p&gt;Wenn du [in deinem Blog] auf meinen Kommentar antwortest, können Besucher deiner Seite meinen Blog entdecken, und wenn ich deine Antwort verlinke, können meine Besucher deinen Blog entdecken.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Manuels Mail klingt ein sehr guter Punkt an: Verteilte, sich aufeinander beziehende Kommentare fördern eine vernetzte Öffentlichkeit: Persönliche Blogs leuchten wie heimelige Lagerfeuer individuell für sich allein und doch erwärmen sie in einer großen Gemeinschaft die Nacht (entschuldigt den poetischen Vergleich ☺). Eine schöne Vorstellung, vielleicht ein bisschen idealistisch. Denn dieser Ansatz stellt einige Hürden auf für alle, die kommentieren möchten.&lt;/p&gt;
+
+&lt;h2 id=&quot;verteilt-im-internet&quot;&gt;Verteilt im Internet&lt;/h2&gt;
+
+&lt;p&gt;Wie Manuel selbst schreibt, ist es komplizierter, im eigenen Blog zu schreiben – dazu muss man erst mal eines haben! Ganz ohne belastbare Daten behaupte ich, die meisten meiner Leser:innen haben keine eigenes Blog und könnten dann nicht öffentlich antworten. Ja, ideal wäre es, wenn jeder eine eigene Webpräsenz hätte, aber sollte man das verlangen? Dagegen kann jede:r das Kommentarfeld unter einem Artikel einfach ausfüllen – ohne Vorkenntnisse, oft ohne Nutzerkonto, ohne technische Hürden. Fördert das nicht Austausch und Teilhabe?&lt;/p&gt;
+
+&lt;p&gt;Die Verlinkung der verteilten Kommentare zu einem Artikel ist nicht trivial. Ich denke, es wird schnell unübersichtlich, wenn es mehr Kommentare gibt, die sich teilweise aufeinander beziehen … hübsch verstreut im ganzen Internet. Besagte Webmentions könnten helfen – ob sie sich durchsetzen? Und wie funktionieren sie eigentlich genau? Geht das auf einem statischen Blog wie meinem überhaupt?&lt;/p&gt;
+
+&lt;p&gt;An diesem Beispielartikel hier sieht man noch andere Probleme:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mein Blog ist auf deutsch. Hätte ich auf einen englischen Original-Artikel lieber auf Englisch antworten sollen? Und bei einem spanischen Text dann mit einem spanischen Blogartikel? Wie erleichtere ich es den Besucher:innen von Manuels Blog, meine Antwort zu verstehen?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ist die Antwort für den eigenen Leserkreis überhaupt interessant? Würde ich hier z.&lt;small&gt; &lt;/small&gt;B. nur über &lt;a href=&quot;wildwiese.html&quot;&gt;meinen Garten&lt;/a&gt; bloggen, dann fänden meine Stammleser:innen einen Text über Netzkommunikation sicher ziemlich langweilig. (Beim meiner &lt;a href=&quot;blogeintrag-50.html&quot;&gt;ausufernden Themenpalette&lt;/a&gt; seid ihr jedoch einiges gewöhnt, nicht wahr?)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wie behält man den Überblick über alle Kommentare? Würde Manuel zum Beispiel wieder auf diesen Artikel antworten, wäre das dann ein eigener Blogeintrag oder eine Erweiterung des ursprünglichen? Wie würde jemand drittes antworten? Mit Bezug auf Manuel, auf mich, auf uns beide, auf jemand vierten? Müsste man (so wie ich am Anfang) die Grunddebatte kurz zusammenfassen und damit wiederholen?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;gesammelt-unter-dem-original-text&quot;&gt;Gesammelt unter dem Original-Text&lt;/h2&gt;
+
+&lt;p&gt;Stehen alle Kommentare, die sich auf einen Originaltext beziehen, direkt darunter, ist alles klar: Die Reihenfolge der Antworten, die Sprache der Kommentare (nämlich wie der Originaltext), wer sich auf wen bezieht, welche Ergänzungen es überhaupt gibt. Leser:innen der Kommentare haben prinzipiell bereits Interesse am Thema, sonst hätten sie ja den ursprünglichen Text nicht aufgerufen.&lt;/p&gt;
+
+&lt;p&gt;Das von Manuel angesprochene Problem mit Spam und Qualitätskontrolle lässt sich nicht verleugnen. Bei mir hilft eine einfache Rechenaufgabe im Kommentarformular, um Spammer abzuhalten (ich schalte es nur bei oft bespamten Artikeln hinzu). Die Qualitätskontrolle kann ich bei wenigen Kommentaren noch gut leisten und sie trägt zur Attraktivität meines Blogs bei. Für sehr populäre Blogger wird das tatsächlich ein größerer Aufwand …&lt;/p&gt;
+
+&lt;p&gt;Was die gewünschte Vernetzung angeht: Das funktioniert doch auch so, ganz ohne Bezug auf einen bestimmten Artikel und sogar, wenn der andere Blog eine Kommentarfunktion hat. Auch von Kommentaren aus kann die Reise weitergehen: Wenn mich eine Ergänzung überzeugt, klicke ich auf den Namen des Autors und werde ggf. zu dessen Blog weitergeleitet.&lt;/p&gt;
+
+&lt;p&gt;Und nun seid ihr dran. Findet ihr Kommentierung unter einem Blogartikel nützlich? Ist eine Antwort per privater Mail oder im eigenen Blog eine ausreichende Alternative? Schreibt es gern &lt;a href=&quot;index.html#impressum&quot;&gt;an mich&lt;/a&gt;, an &lt;a href=&quot;https://manuelmoreale.com/connect&quot;&gt;Manuel Moreale&lt;/a&gt;, per Kommentar hier drunter (gerne englisch, ich ergänze ggf. eine Übersetzung), &lt;a href=&quot;briefe.html&quot;&gt;per Brief&lt;/a&gt; oder als neuen Artikel in eurem eigenen Blog.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Webmentions&lt;/b&gt; sind ein empfohlener Standard, um eine Website automatisch zu benachrichtigen, sobald sie verlinkt wird. So können Referenzen auf einen Artikel automatisch darunter angezeigt werden. Auf deutsch konnte ich leider kaum etwas dazu finden, recht ausführlich ist &lt;a href=&quot;https://indieweb.org/Webmention&quot;&gt;die englische Projektseite.&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/wohin-kommentieren.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/wohin-kommentieren.html</guid>
+	<pubDate>Fri, 19 Apr 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
+	<title>Inhalt ohne Style</title>
+	<description>&lt;style&gt;
+/* Spezifischer Selektor relevant, solange sich der Artikel auf der Startseite befindet */
+html:has( body &gt; header &gt; a[title=&quot;Zur Startseite&quot;]) * { all: revert-layer !important; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;mark style=&quot;display:none&quot;&gt;Nein, es ist kein Fehler. Dieser Artikel wird ohne Styling angezeigt: Das reine HTML wie es der Browser darstellt.&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;Erst im vorigen Blogartikel ging es darum, wie man &lt;a href=&quot;css-spalten.html&quot;&gt;mit CSS Textspalten erzeugen&lt;/a&gt; kann.
+CSS oder &lt;em&gt;Cascading Style Sheets&lt;/em&gt; sorgen dafür, dass Websites hübsch aussehen.
+Man definiert damit Schriftarten, die Größe von Überschriften, Farben, Abstände zwischen Elementen, Hintergrundbilder und einiges mehr.
+Rund 400 Regeln enthält die &lt;a href=&quot;../bestand/style.css&quot;&gt;CSS-Datei meines Blogs&lt;/a&gt; – und ist damit eher klein.&lt;/p&gt;
+
+&lt;p&gt;Der eigentliche Inhalt einer Internetseite steckt jedoch nicht im CSS, sondern in einer HTML-Datei.
+Ein Ausschnitt meiner Startseite &lt;em&gt;index.html&lt;/em&gt; sieht zum Beispiel so aus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;article&amp;gt;
+  &amp;lt;time datetime=&quot;2024-02-21&quot;&amp;gt;Mi, 21. Feb. 2024&amp;lt;/time&amp;gt;
+  &amp;lt;h1&amp;gt;Japanischer Rätselkrimi&amp;lt;/h1&amp;gt;
+  &amp;lt;p&amp;gt;Vor kurzem habe ich den Krimi „Ich habe ihn getötet“ gelesen. …&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Keigo Higashino legt seine Krimis wie ein komplexes Rätsel an. … &amp;lt;/p&amp;gt;
+  …
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Im besten Fall ist der Text &lt;em&gt;semantisch&lt;/em&gt; ausgezeichnet, das heißt die HTML-Elemente markieren die Bedeutung des jeweiligen Textteils.
+Das Beispiel zeigt den Anfang eines Artikels (&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;).
+Er beginnt mit einer Zeitangabe (&lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt;), danach folgt eine Überschrift erster Ordnung (&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;, &lt;em&gt;header 1&lt;/em&gt;).
+Nun folgt der Artikeltext, wobei jeder Absatz von &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; umschlossen wird (&lt;em&gt;paragraph&lt;/em&gt;, „Absatz“).&lt;/p&gt;
+
+&lt;h2 id=&quot;html-schafft-ordnung&quot;&gt;HTML schafft Ordnung&lt;/h2&gt;
+
+&lt;p&gt;Die korrekte Auszeichnung mit den passenden HTML-Elementen hilft, eine Internetseite leichter zu interpretieren.
+Beispielsweise können blinde Nutzer einen Screenreader verwenden –
+ein Programm, das Internetseiten vorliest und zwischen Überschriften und Links hin und her springen kann.
+Oder man kann die Seite mit einem einfachen Text-Browser öffnen und der Inhalt bleibt dennoch einigermaßen lesbar.
+Damit Seiten auch auch ohne zusätzliches CSS gut dargestellt werden, hat jeder Browser eingebaute Standard-Stile.
+Beispielsweise erscheinen Überschriften fett und größer als der Normaltext.&lt;/p&gt;
+
+&lt;p&gt;Und genau darum sieht dieser Blogartikel so ungewohnt aus:
+Hier habe ich das CSS deaktiviert.
+Was übrig bleibt, ist der Standard-Style des Browsers
+(in den Browser-Einstellungen kann man eigene Vorlieben angeben und Farben, Schriftart und -größe anpassen).&lt;/p&gt;
+
+&lt;h2 id=&quot;einmal-jährlich-nackt-im-netz&quot;&gt;Einmal jährlich nackt im Netz&lt;/h2&gt;
+
+&lt;p&gt;Anlass für diesen ungestylten Text ist der CSS Naked Day („CSS-Nackt-Tag“).
+Jedes Jahr am 9. April sollen Web-Autor:innen das CSS ihrer Website bewusst deaktivieren.
+So sieht man das (hoffentlich semantische) HTML, ganz ohne Styles.
+Auf der &lt;a href=&quot;https://css-naked-day.github.io/&quot;&gt;Website zum CSS Naked Day&lt;/a&gt; &lt;em&gt;(engl.)&lt;/em&gt; heißt es zu dieser Aktion:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Die Idee hinter dem &lt;em&gt;CSS Naked Day&lt;/em&gt; ist es, Webstandards zu fördern. Schlicht und einfach. Dazu gehört die korrekte Verwendung von HTML, semantische Auszeichnung, eine gute Seitengliederung und natürlich ein paar gute alte Wortspiele. Mit den Worten von 2006: Es ist Zeit, deinen &amp;lt;body&amp;gt; zu zeigen, so wie er wirklich ist.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(Das HTML-Element &amp;lt;body&amp;gt; enthält den gesamten Inhalt einer Website. Man kann es mit „Körper“ übersetzen.) –
+Dieses Jahr habe ich mitgemacht und mein Blog einen Tag lang „ausgezogen“.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/ohne-style.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/ohne-style.html</guid>
+	<pubDate>Tue, 09 Apr 2024 00:00:00 +0200</pubDate>
+</item>
+
+</channel></rss>
