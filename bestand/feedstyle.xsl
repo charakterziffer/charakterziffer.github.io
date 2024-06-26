@@ -35,21 +35,16 @@ basiert auf „Pretty Feed“, siehe https://github.com/genmon/aboutfeeds
 	</header>
 
 	<h2>Recent Items</h2>
-			 <xsl:for-each select="/rss/channel/item">
-				  <h3>
-					 <a target="_blank">
-						<xsl:attribute name="href">
-						  <xsl:value-of select="link"/>
-						</xsl:attribute>
-						<xsl:value-of select="title"/>
-					 </a>
-				  </h3>
-				  <small>
-					 Published: <xsl:value-of select="pubDate" />
-				  </small>
-			 </xsl:for-each>
-		  </div>
-		</body>
-	 </html>
-  </xsl:template>
+		<xsl:for-each select="/rss/channel/item">
+			<h3>
+				<a target="_blank">
+				<xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
+				<xsl:value-of select="title"/></a>
+			</h3>
+			<p>Veröffentlichen am <xsl:value-of select="pubDate" /></p>
+		</xsl:for-each>
+	</main
+	</body>
+</html>
+</xsl:template>
 </xsl:stylesheet>
