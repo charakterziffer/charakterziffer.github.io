@@ -18,7 +18,7 @@
 </head>
 <body>
 	<main>
-	<p class="hinterlegt">Das ist ein Webfeed, auch als RSS-Feed bekannt. Um ihn zu abonnieren, kopiere die URL aus der Adressleiste in deinen Feedreader. Ein ausführlicher Artikel, wie man RSS nutzt, steht auf <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
+	<p class="hinterlegt">Das ist ein Webfeed, auch als RSS-Feed bekannt. Um ihn zu abonnieren, kopiere die URL <code>https://charakterziffer.github.io/rss.xml</code> in deinen Feedreader. Ein ausführlicher Artikel, wie man RSS nutzt, steht auf <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
 	<h1 class="icon-rss">Webfeed-Vorschau</h1>
 		<h2><xsl:value-of select="/rss/channel/title"/></h2>
 		<p><xsl:value-of select="/rss/channel/description"/><br />
