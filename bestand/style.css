@@ -140,6 +140,7 @@ aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 i, em, b, strong { color: var(--text-stark); }
 i, em { font-style: italic; }
 sup, sub { line-height: 0; letter-spacing: .05em; }
+sup { font-variant-numeric:lining-nums; }
 small { font-size: 50%; } /* für <small>&nbsp;</small>, statt U+202F */
 kbd { font-size: .8em; display: inline-block; position: relative;
 	top: -.1em; margin: 0 .2em; padding: .15em .35em .2em;
@@ -211,7 +212,7 @@ a { color: var(--gruen-basis);  text-decoration: none;
 :is(aside, .hinterlegt, figcaption, blockquote) a {
 	color: var(--gruen-stark); }
 a:visited { color: var(--akzent-basis); }
-a[href]:hover { color: var(--gruen-aktiv); text-decoration: underline; }
+a[href]:not([download]):hover { color: var(--gruen-aktiv); text-decoration: underline; }
 :is(aside, .hinterlegt, figcaption, blockquote) a[href]:hover {
 	color: var(--gruen-basis); }
 a:active { color: var(--akzent-aktiv) }
