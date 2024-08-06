@@ -14,6 +14,24 @@
 </image>
 
 <item>
+	<title>Ein Zine von der Schreibmaschine</title>
+	<description>&lt;p&gt;Kürzlich habe ich unsere alte Schreibmaschine aus dem Keller geholt und überlegt, was man damit Kreatives anfangen könnte. Als Projekt sind mir die Minihefte („Zines“) wieder eingefallen, für die ich vor vier Jahren hier im Blog eine &lt;a href=&quot;miniheft.html&quot;&gt;Bastelanleitung&lt;/a&gt; veröffentlicht habe. Ich finde diese Heftchen recht inspirierend und habe mithilfe der Schreibmaschine nun ein weiteres gestaltet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/miniheft-2.jpg&quot; alt=&quot;Verschiedene Ansichten des Schreibmaschinenheftchens&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Im Grunde bestehen das gefaltete Heft aus einer einzelnen Seite. Dadurch lässt es sich leicht kopieren und nachbasteln. Hier die Vorlage für mein Schreibmaschinen-Zine:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/schreibmazine.pdf&quot; download=&quot;&quot;&gt;Druckvorlage herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 2,0 MB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Beim Falten bitte darauf achten, dass die Titelseite immer außen bleibt. Die &lt;a href=&quot;miniheft.html&quot;&gt;Faltanleitung als Video&lt;/a&gt; gibt es in meinem Blogartikel vom Mai 2020. Dort finden sich Druckvorlagen für zwei weitere Minihefte und ein bisschen Inspiration für eigene Gestaltungen.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/miniheft-2.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/miniheft-2.html</guid>
+	<pubDate>Tue, 06 Aug 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Zuspruch vom Fuchs</title>
 	<description>&lt;p&gt;Wer schöpferisch arbeitet, hat mit ganz unterschiedlichen Hindernissen zu kämpfen: Nicht immer fällt einem etwas Kreatives ein; eine fantastische Idee lässt sich doch nicht umsetzen; der eigene Anspruch verleidet einem das Erreichte; eine scheinbar leichte Aufgabe entpuppt sich als vertrackt; man kann sich mit einer simplen Verbesserung nicht durchsetzen, …&lt;/p&gt;
 
@@ -300,72 +318,6 @@ Damit die Feder gut Tinte aufnimmt und diese dann schön herausfließt, sollte z
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/colapen.html</guid>
 	<pubDate>Tue, 28 May 2024 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Malerei hinterm Fenster</title>
-	<description>&lt;p&gt;Als kreativen Ansporn hatte ich mir vorgenommen, fürs Fenster meines Arbeitszimmers monatlich ein neues Bild zu malen. Es ist dann von außen sichtbar und erfreut vielleicht ein paar Passanten. Nach über zwei Jahren fürchte ich: Jetzt ist die Luft erst mal raus.&lt;/p&gt;
-
-&lt;p&gt;Ideen für Motive habe ich zwar einige, aber nicht jeden Monat ist mir danach, etwas zu malen. Zu oft fühlten sich die Fensterbilder in letzter Zeit wie eine lästige Pflicht an – und das ist nicht Sinn der Sache. Vielleicht sollte ich das Malen verspielter angehen, mehr Mut zum Unperfekten und Sinnfreien.&lt;/p&gt;
-
-&lt;style&gt;
-&lt;!--
-.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
-.bildraster &gt; a { display: flex; justify-content: center;
-	align-items: center; margin: 0; padding: 0; }
-.bildraster img { max-width: 100%; width: 100%; height: 11em;
-	object-fit: contain; overflow: clip; }
-
-@supports not (display: grid) {
-.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
-.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
-
-.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
-.lightbox:target { display: block; animation: none; }
-.lightbox span { display: block; width: 100%; height: 100%;
-	background-position: center; background-repeat: no-repeat; background-size: contain; }
---&gt;
-&lt;/style&gt;
-
-&lt;div class=&quot;bildraster&quot;&gt;
-&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/fensterbilder/v13.jpg&quot; alt=&quot;Komposition aus vier geometrischen Formen, jeweils aus Papier ausgeschnitten und aufgeklebt: Ein gelber Kreis, ein Dreieck aus zerknittertem Packpapier, ein pinkfarbenes Fünfeck und ein Quadrat aus zwei Zeitungsspalten. Dazu sechs blaue Linien in der Bildmitte links und ein grünes Punkteraster unten.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/fensterbilder/v14.jpg&quot; alt=&quot;Verzierter, roter Buchstabe „G“ auf blaugrünem Grund mit angedeuteten Tannenzweigen. Das G ist mit einer Karos und einer Fleur-de-lis verziert, auf dem Querbalken sitzt eine weiße Eule.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/fensterbilder/v15.jpg&quot; alt=&quot;Eine abstrakte Form, ähnlich einem kastenförmigen Papierdrachen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/fensterbilder/v16.jpg&quot; alt=&quot;Studie über Löwenzahn. Das Bild ist in Felder aufgeteilt, Je eines mit einer Pfahlwurzel, mit grün gezackten Blättern, gelben Blütenfasern, geschlossene Blütenköpfe und weiße Flugsamen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/fensterbilder/v17.jpg&quot; alt=&quot;Von links wachsen feurige dornenzweige in Bild und treffen in der Mitte auf grüne, geschwungene Ranken, die von rechts ins Bild dringen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/fensterbilder/v18.jpg&quot; alt=&quot;Collage aus astronomischen Elementen alter Holzschnitte: Schweifstern, Sonne mit Strahlenkranz, Komet, Sternkarte. Die Papier-Teile sind hauptsächlich in Blautönen, dazu einzelne Akzente in leuchtendem Gelb.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/fensterbilder/v19.jpg&quot; alt=&quot;Umrisse von Herbstblättern, die sich überlagern. Verschiedene Farbschichten sind aufgesprüht, was eine eher graue Fläche ergibt, die in verschiedenen Farben schimmert.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/fensterbilder/v20.jpg&quot; alt=&quot;Abstraktes Ölbild mit schwarzem Hintergrund. Aus der Mitte öffnen sich farbige, durchscheinende Rechtecke, aufgefächert wie unterschiedliche große Buchseiten.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/fensterbilder/v21.jpg&quot; alt=&quot;Zwei Punkteraster, eines rechtwinklig in Altrosa, das andere diagonal in Rot. Sie überlagern sich in der Bildmitte in Form eines Kommas, mit leichtem Moirée-Effekt. Einige Punkte sind golden, der Hintergrund verwaschen Rosa.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/fensterbilder/v22.jpg&quot; alt=&quot;Zwei Reihen mit je drei schwarzblauen Kreisen. Die Kreise sind von der Struktur unterschiedliche dicht gefüllt wie Wolken, Wollknäule oder Pfingsrosen und haben verschiedene Helligkeiten.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/fensterbilder/v23.jpg&quot; alt=&quot;Ein sitzender Hase, zusammengesetzt aus groben, pinkfarbenen Pixeln.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/fensterbilder/v24.jpg&quot; alt=&quot;Missglücktes und darum verschmiertes Porträt, im Grunde nur noch ein schmutzig brauner Umriss.&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
-&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb13.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb14.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb15.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb16.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb17.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb18.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb19.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb20.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb21.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb22.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb23.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/fensterbilder/fb24.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Das letzte Bild war übrigens der Versuch eines Porträts mit Ölfarben. Ich wurde im Laufe des Malens damit aber so unzufrieden, dass ich es kurzerhand völlig verschmiert habe. Ins Fenster hänge ich das nicht, außer ich übermale alles nochmal. Oder es landet im Müll. Ob das vor zu hohen Erwartungen schützt: Für den Müll malen?&lt;/p&gt;
-
-&lt;p&gt;Bei allem Frust übers missglückte Porträt sollte ich nicht vergessen, dass unter diesen zwölf Bildern auch einige sind, die mir recht gut gefallen. Die &lt;a href=&quot;fensterbilder.html&quot;&gt;„erste Staffel“ meiner Fensterbilder&lt;/a&gt; habe ich übrigens vor anderthalb Jahren veröffentlicht.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/fensterbilder-2.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder-2.html</guid>
-	<pubDate>Thu, 09 May 2024 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
