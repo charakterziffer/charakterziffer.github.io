@@ -24,10 +24,10 @@
 	--gruen-blass: #deb; --akzent-basis: #839; --akzent-aktiv: #c2b;
 	--akzent-blass: #ece; /* hier nicht verwendet */
 
-	--hg-bild: repeating-linear-gradient(110deg, transparent, hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
-	repeating-linear-gradient(10deg, transparent, hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
-	repeating-linear-gradient(325deg, transparent, hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
-	linear-gradient(90deg, transparent 51rem, var(--gruen-blass) 80%, var(--gruen-aktiv) 100%); }
+	--hg-bild: repeating-linear-gradient(110deg, RGBA(255,255,255,0), hsla(0, 0%, 100%, .4) 91px, hsla(0, 0%, 100%, .1) 214px),
+	repeating-linear-gradient(10deg, RGBA(255,255,255,0), hsla(0, 0%, 100%, .1) 130px, hsla(0, 0%, 100%, .2) 243px),
+	repeating-linear-gradient(325deg, RGBA(255,255,255,0), hsla(0, 0%, 100%, .3) 81px, hsla(0, 0%, 100%, .3) 293px),
+	linear-gradient(90deg, RGBA(255,255,255,0) 51rem, var(--gruen-blass) 80%, var(--gruen-aktiv) 100%); }
 
 @media screen and (prefers-color-scheme: dark) {
 :root { --text-stark: #fff; --text-basis: #ddd; --text-matt: #ccc;
