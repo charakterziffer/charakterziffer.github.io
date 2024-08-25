@@ -55,7 +55,7 @@ img[src$='#invert'], /* als invertierbar markierte Bilder */
 body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 	font: 400 1.1em/1.5 'Source Sans 3', 'Source Sans Pro', Seravek,
 		Myriad, 'Segoe UI', Calibri, sans-serif;
-	font-variant: oldstyle-nums;
+	font-variant: oldstyle-nums; font-size-adjust: 0.486;
 	color: var(--text-basis); background-color: var(--hintergrund);
 	accent-color: var(--gruen-aktiv);
 	background-image: var(--hg-bild); }
@@ -65,13 +65,13 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
 
-/*body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .5em / auto .751em } /* Grundlinienraster */
+/* body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .1em / auto .752em } /* Grundlinienraster */
 
 header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
 
 header { display: flex; flex-wrap: wrap; margin-bottom: 2.8em; }
-header a { color: var(--text-matt) !important; font-size: 1.05em; }
+header a { color: var(--text-matt) !important; font-size: 1.1em; }
 header > a { flex:1; align-self: center; padding:0;
 	font-size: 1.7em; line-height: 1; }
 header img { float: left; margin-right: .4em; margin-top: -.02em;
@@ -105,7 +105,8 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
-	font-family: czSlab,Georgia,serif; font-weight: bold; }
+	font-family: czSlab, Georgia, serif; font-weight: bold;
+	font-style: normal; /* damit nicht künstlich verschrägt, z.B. bei einem Link im Bilduntertitel */}
 h1, h2, h3 { letter-spacing: -.01em;
 	font-variant: lining-nums; }
 b, strong, a, form label { padding: 0 .04em; }
@@ -121,16 +122,16 @@ time { padding-right: 1.2% }
 
 /* ÜBERSCHRIFTEN */
 
-h1 { font-size: 2em; line-height: 1.125 /* 1.5÷2 ×1.5 */;
-	margin: 1.5em 0 .5em -.04em; color: var(--text-matt); }
-h2 { font-size: 1.4em; line-height: 1.071 /* 1.5÷1.4 */;
-	margin: 1.25em 0 -.179em -.02em; color: var(--text-matt); }
-h3 { font-size: 1.1em; line-height: 1.364 /* 1.5÷1.1 */;
-	margin: 1.2em 0 -.518em -.01em; }
+h1 { font-size: 2.1em; line-height: 1.071 /* 1.5÷2.1 ×1.5 */;
+	margin: 1.5em 0 .642em -.04em; color: var(--text-matt); }
+h2 { font-size: 1.5em; line-height: 1 /* 1.5÷1.5 */;
+	margin: 1.2em 0 -.2em -.02em; color: var(--text-matt); }
+h3 { font-size: 1.2em; line-height: 1.25 /* 1.5÷1.2 */;
+	margin: 1.1em 0 -.425em -.01em; }
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
-p, ul, ol { margin-bottom: -.25em; hyphens: auto;
+p, ul, ol { margin-bottom: -.28em; hyphens: auto;
 	hyphenate-limit-chars: 6 2 3; -webkit-hyphenate-limit-lines: 3; }
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
