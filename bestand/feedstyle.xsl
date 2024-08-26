@@ -14,7 +14,7 @@
 </head>
 <body>
 	<main>
-	<p class="hinterlegt no-hyphens">Das ist ein RSS-Feed, in dem auto&shy;matisch die neus&shy;ten Ein&shy;träge meines Blogs auf&shy;tau&shy;chen. Um die&shy;sen Feed zu abon&shy;nieren, ko&shy;piere die URL <code style="hyphenate: auto; hyphenate-character:''">https://charakterziffer.github.io/rss.xml</code> in dei&shy;nen Feed&shy;reader. Ein aus&shy;führ&shy;licher Arti&shy;kel, wie man RSS nutzt, steht bei <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
+	<p class="hinterlegt no-hyphens">Das ist ein RSS-Feed, in dem auto­matisch die neus­ten Ein­träge meines Blogs auf­tau­chen. Um die­sen Feed zu abon­nieren, ko­piere die URL <code style="hyphenate: auto; hyphenate-character:''">https://charakterziffer.github.io/rss.xml</code> in dei­nen Feed­reader. Ein aus­führ­licher Arti­kel, wie man RSS nutzt, steht bei <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
 
 	<h1 class="icon-rss">Webfeed-Vorschau</h1>
 		<h2><xsl:value-of select="/rss/channel/title"/></h2>
