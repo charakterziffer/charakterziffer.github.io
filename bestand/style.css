@@ -125,7 +125,7 @@ h1 { font-size: 2.1em; line-height: 1.071 /* 1.5÷2.1 ×1.5 */;
 	margin: 1.5em 0 .642em -.04em; color: var(--text-matt); }
 h2 { font-size: 1.5em; line-height: 1 /* 1.5÷1.5 */;
 	margin: 1.2em 0 -.2em -.02em; color: var(--text-matt); }
-h3 { font-size: 1.15em; line-height: 1.304 /* 1.5÷1.2 */;
+h3 { font-size: 1.15em; line-height: 1.304 /* 1.5÷1.15 */;
 	margin: 1.2em 0 -.547em -.01em; }
 
 /* FORMATIERUNGEN FÜR LESETEXTE */

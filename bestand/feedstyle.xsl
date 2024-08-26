@@ -14,7 +14,7 @@
 </head>
 <body>
 	<main>
-	<p class="hinterlegt">Das ist ein RSS-Feed, in dem automatisch die neusten Einträge meines Blogs auftauchen. Um diesen Feed zu abonnieren, kopiere die URL <code>https://charakterziffer.github.io/rss.xml</code> in deinen Feedreader. Ein ausführlicher Artikel, wie man RSS nutzt, steht auf <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
+	<p class="hinterlegt no-hyphens">Das ist ein RSS-Feed, in dem auto&shy;matisch die neus&shy;ten Ein&shy;träge meines Blogs auf&shy;tau&shy;chen. Um die&shy;sen Feed zu abon&shy;nieren, ko&shy;piere die URL <code style="hyphenate: auto; hyphenate-character:''">https://charakterziffer.github.io/rss.xml</code> in dei&shy;nen Feed&shy;reader. Ein aus&shy;führ&shy;licher Arti&shy;kel, wie man RSS nutzt, steht bei <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
 
 	<h1 class="icon-rss">Webfeed-Vorschau</h1>
 		<h2><xsl:value-of select="/rss/channel/title"/></h2>
@@ -23,7 +23,7 @@
 			<xsl:value-of select="/rss/channel/link"/></xsl:attribute>
 			Website besuchen →</a></p>
 
-	<h2>Aktuelle Einträge</h2>
+	<h2>Die fünf neusten Einträge</h2>
 		<xsl:for-each select="/rss/channel/item">
 			<h3><a target="_blank"><xsl:attribute name="href">
 			<xsl:value-of select="link"/></xsl:attribute>
