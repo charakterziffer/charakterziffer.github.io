@@ -43,10 +43,10 @@
 	repeating-linear-gradient(325deg, transparent, rgba(0,0,0,.3) 81px, rgba(0,0,0,.3) 293px),
 	linear-gradient(90deg, transparent 51rem, var(--gruen-stark) 80%, var(--gruen-aktiv) 100%); }
 iframe { background-color: #eee; }
+	/* background-color für Form-Elemente würde border-style ändern */
 img, iframe { filter: brightness(.8); }
 img[src$='#invert'], /* als invertierbar markierte Bilder */
 	.icon-rss::after { filter: invert(1) hue-rotate(180deg); }
-/* background-color an Form-Elementen würden auch den border-style ändern */
 }
 
 /* GRUNDSÄTZLICHES LAYOUT */
@@ -65,7 +65,7 @@ body { margin: 0; padding: 1.7em 1.5em 3em; text-align: left;
 @media (min-width: 94em) { /* Rand links für sehr breite Bildschirme */
 	body { position: relative; left: 20%; margin-right: 20%; } }
 
-/* body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .1em / auto .752em } /* Grundlinienraster */
+/* body { background: #fff linear-gradient(rgba(0,0,0,.2) .06em, transparent 0) 0 .1em / auto .751em } /* Grundlinienraster */
 
 header, main, aside, article, section { display: block; }
 header, main, aside { max-width: 43em; }
@@ -107,8 +107,7 @@ aside { margin: 1.4em 0 -1em; padding: .01em .8em 1.25em 1em;
 h1, h2, h3, b, strong, a, form label {
 	font-family: czSlab, Georgia, serif; font-weight: bold;
 	font-style: normal; /* damit nicht künstlich verschrägt, z.B. bei einem Link im Bilduntertitel */}
-h1, h2, h3 { letter-spacing: -.01em;
-	font-variant: lining-nums; }
+h1, h2, h3 { letter-spacing: -.01em; font-variant: lining-nums; }
 b, strong, a, form label { padding: 0 .04em; }
 code, pre, kbd { font: .9em/1 'Source Code Pro', Consolas, Monaco,
 	'Lucida Console', 'Andale Mono', 'DejaVu Sans Mono', monospace; }
@@ -126,12 +125,12 @@ h1 { font-size: 2.1em; line-height: 1.071 /* 1.5÷2.1 ×1.5 */;
 	margin: 1.5em 0 .642em -.04em; color: var(--text-matt); }
 h2 { font-size: 1.5em; line-height: 1 /* 1.5÷1.5 */;
 	margin: 1.2em 0 -.2em -.02em; color: var(--text-matt); }
-h3 { font-size: 1.2em; line-height: 1.25 /* 1.5÷1.2 */;
-	margin: 1.1em 0 -.425em -.01em; }
+h3 { font-size: 1.15em; line-height: 1.304 /* 1.5÷1.2 */;
+	margin: 1.2em 0 -.547em -.01em; }
 
 /* FORMATIERUNGEN FÜR LESETEXTE */
 
-p, ul, ol { margin-bottom: -.28em; hyphens: auto;
+p, ul, ol { margin-bottom: -.25em; hyphens: auto;
 	hyphenate-limit-chars: 6 2 3; -webkit-hyphenate-limit-lines: 3; }
 aside p { margin-bottom: -.22em; font-size: .9em; line-height: 1.667; }
 
