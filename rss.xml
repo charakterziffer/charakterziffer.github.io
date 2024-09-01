@@ -21,7 +21,7 @@
 
 &lt;h2 id=&quot;scheinargumente-gegen-webschriften&quot;&gt;Scheinargumente gegen Webschriften&lt;/h2&gt;
 
-&lt;p&gt;Anfang Juli verlinkte ein Newsletter zu einem Video auf der Plattform X&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt;, in dem die Nutzerin Salma (@whitep4nth3r) meinte, niemand interessiere sich für individuelle (Web-)Schriften. Sie nannte drei Argumente, warum man darauf verzichten sollte:&lt;/p&gt;
+&lt;p&gt;Anfang Juli verlinkte ein Newsletter zu einem Video auf der Plattform X&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt;, in dem die Nutzerin Salma Alam-Naylor (@whitep4nth3r) meinte, niemand interessiere sich für individuelle (Web-)Schriften. Sie nannte drei Argumente, warum man darauf verzichten sollte:&lt;/p&gt;
 
 &lt;h3 id=&quot;bessere-performance-der-website&quot;&gt;Bessere Performance der Website&lt;/h3&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;Das „Aufblitzen von ungestaltetem Text“ kann passieren, wenn die Webschrift nicht sofort lädt. Im schlimmsten Fall verschiebt sich der Text dann, wenn die Webschrift doch noch im Browser eintrifft. Sehr unschön und keine gute Nutzererfahrung.&lt;/p&gt;
 
-&lt;p&gt;Was Salman im Video verschweigt ist, dass man als Webentwickler aber vorbeugen kann. Man kann per CSS festlegen (&lt;a href=&quot;https://wiki.selfhtml.org/wiki/Typografie/Schriftformatierung#font-display&quot;&gt;über &lt;code&gt;font-display&lt;/code&gt;&lt;/a&gt;), was passieren soll, wenn die Webschrift nicht sofort lädt. Gleich eine installierte Ersatzschrift zeigen? Zunächst eine Zehntelsekunde warten? Danach noch austauschen oder dann nur die Ersatzschrift zeigen? Als Ersatzschrift wählt man aus den installieren Systemschriften bestenfalls solche, die der eigenen Webschrift am ehesten entsprechen. Dann ist die visuelle Störung bei einem &lt;em&gt;FOUT&lt;/em&gt; nicht so auffällig.&lt;/p&gt;
+&lt;p&gt;Was Salman im Video verschweigt ist, dass man als Webentwickler aber vorbeugen kann. Man kann per CSS festlegen (&lt;a href=&quot;https://wiki.selfhtml.org/wiki/Typografie/Schriftformatierung#font-display&quot;&gt;über &lt;code&gt;font-display&lt;/code&gt;&lt;/a&gt;), was passieren soll, wenn die Webschrift nicht sofort lädt. Gleich eine installierte Ersatzschrift zeigen? Zunächst eine Zehntelsekunde warten? Danach noch austauschen oder dann nur die Ersatzschrift zeigen? Als Ersatzschrift wählt man aus den installierten Systemschriften bestenfalls solche, die der eigenen Webschrift am ehesten entsprechen. Dann ist die visuelle Störung bei einem &lt;em&gt;FOUT&lt;/em&gt; nicht so auffällig.&lt;/p&gt;
 
 &lt;p&gt;Ja, man muss sich damit beschäftigen und überlegen, welches Verhalten das nutzerfreundlichste ist. Das wäre aber immerhin besser als so zu tun, als ob der Flash of Unstyled Text bei einer optimierten Webschrift ein gravierendes Problem ist.&lt;/p&gt;
 
