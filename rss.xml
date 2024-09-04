@@ -14,6 +14,84 @@
 </image>
 
 <item>
+	<title>Statt Webfonts ein Fontstack</title>
+	<description>&lt;style&gt;
+/* Spezifischer Selektor verhindert Styling auf der Startseite */
+body:has(header &gt; a[title=&quot;Zur Startseite&quot;]) { font-family: Seravek, &apos;Source Sans Pro&apos;, source-sans-pro, &apos;Myriad Pro&apos;, Myriad, &apos;Segoe UI&apos;, &apos;Open Sans&apos;, &apos;Noto Sans&apos;, &apos;Source Sans 3&apos;, sans-serif; }
+/* Source Sans 3 aktiviert Webschrift, darum in der Liste nach hinten gestellt */
+&lt;/style&gt;
+
+&lt;p&gt;Im &lt;a href=&quot;webfont-vorteile.html&quot;&gt;vorigen Blogartikel&lt;/a&gt; habe ich beschrieben, warum ein Webfont für wiedererkennbares Design und Konsistenz sorgt. Die Nachteile einer extra Schriftdatei (Performance, Layout-Verschiebungen) lassen sich mit etwas Geschick vermeiden.&lt;/p&gt;
+
+&lt;p&gt;Wo eine auffällige oder ganz bestimmte Schrift weniger wichtig ist, könnte man allerdings auf einen Webfont verzichten. Eine praktische Entscheidungshilfe bietet der Artikel &lt;a href=&quot;https://david-gilbertson.medium.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae&quot;&gt;Web fonts: When you need them, when you don’t&lt;/a&gt; von David Gilbertson. Für meine Grundschrift &lt;em&gt;Source Sans&lt;/em&gt; hier im Blog möchte ich das mal genauer untersuchen.&lt;/p&gt;
+
+&lt;h2 id=&quot;eingeschränkte-auswahl-wenig-gemeinsamkeiten&quot;&gt;Eingeschränkte Auswahl, wenig Gemeinsamkeiten&lt;/h2&gt;
+
+&lt;p&gt;Wenn ich keine Webschrift einbette, kann ich nur die Schriften anzeigen lassen, die auf dem Endgerät des Nutzers installiert sind („Systemfonts“). Welche das genau sind, lässt sich nur mit einer gewissen Wahrscheinlichkeit sagen – immerhin können Nutzer eigene Schriften installieren oder vorhandene löschen. In der Regel liefern Betriebssysteme bestimmte Schriften vorinstalliert mit, auf die ich mich verlassen kann.&lt;/p&gt;
+
+&lt;p&gt;Mitgelieferte &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows&quot;&gt;Schriften von Windows&lt;/a&gt; sind zum Beispiel Calibri, Palatino und Segoe UI; unter den &lt;a href=&quot;https://developer.apple.com/fonts/system-fonts/&quot;&gt;Schriften auf MacOS&lt;/a&gt; sind San Francisco, Hoefler Text und Helvetica. Recht klein ist die Auswahl von &lt;a href=&quot;https://android.googlesource.com/platform/frameworks/base/+/master/data/fonts/fonts.xml&quot;&gt;Schriften bei Android&lt;/a&gt; &lt;em&gt;(Info veraltet)&lt;/em&gt; mit unter anderem Roboto, NotoSerif und Source Sans Pro. Mit den &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1kbxC3UyGTzpA9aOEJD-GYH0uHTops5VSEb8jKKD9Wwc/edit?gid=1220071513#gid=1220071513&quot;&gt;Schriften auf Linux-Systemen&lt;/a&gt; ist es noch schwieriger, weil es bei den unterschiedlichen Varianten wenige Gemeinsamkeiten gibt, wie zum Beispiel Nimbus Sans, Bitstream Charter oder DejaVu Serif.&lt;/p&gt;
+
+&lt;p&gt;Vor Jahren gab es sogenannte &lt;a href=&quot;https://www.awayback.com/index.php/2010/02/03/revised-font-stack/&quot;&gt;„web-safe fonts“&lt;/a&gt; – einzelne Schriften, die mit 99 prozentiger Verbreitung praktisch überall verfügbar waren (Arial, Times [New Roman], Georgia, Verdana). Spätestens seit sich Android-Smartphones durchsetzen, gibt es jedoch &lt;a href=&quot;https://pimpmytype.com/web-safe-fonts/&quot;&gt;keine einzelne Schrift mehr&lt;/a&gt;, die fast überall verfügbar ist.&lt;/p&gt;
+
+&lt;h2 id=&quot;humanistische-sans-für-optimale-lesbarkeit&quot;&gt;Humanistische Sans für optimale Lesbarkeit&lt;/h2&gt;
+
+&lt;p&gt;Als Grundschrift für längere Artikel bevorzuge ich eine Schrift, die eine gute Lesbarkeit bietet. Ich setze darum weniger auf geometrische oder rationale/statische Schriften, sondern bevorzuge humanistische/dynamische Schriften mit offenen Buchstaben und einer lebhaften Formensprache. Sehr gut erklärt &lt;a href=&quot;https://pimpmytype.com/font-matrix/&quot;&gt;Oliver Schöndorfer diese Unterscheidung (engl.)&lt;/a&gt;. Wegen des moderneren Flairs suche ich eher Sans-Serif-Schriften (ohne „Füßchen“ an den Strichenden).&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/schriftform.png#invert&quot; style=&quot;border: 1px solid var(--grau-matt);&quot; alt=&quot;Das Testwort „Sango“ jeweils in einer geometrischen, rationalen und dynamischen Sans-Serif-Schrift. Die entscheidenden Unterschiede sind grün markiert.&quot; /&gt;
+	&lt;figcaption&gt;&lt;b&gt;Geometrische Schriften&lt;/b&gt; haben scheinbar konstruierte Buchstaben, die auf Grundformen wie dem Kreis beruhen. Sie sind oft monolinear, zeigen also wenig Unterschiede in der Strichstärke. Beispielschrift: Outfit.&lt;br /&gt;
+	In &lt;b&gt;rationalen Schriften&lt;/b&gt; sind Buchstabenöffnungen eher eng, Unterschiede in der Strichstärke betonen die Senkrechte (schwer zu sehen bei Sans-Serif-Schriften wie der gezeigten Nimbus Sans).&lt;br /&gt;
+	Dagegen haben &lt;b&gt;dynamische Schriften&lt;/b&gt; eher offene Buchstabenformen und die Betonung zwischen dünnen und dicken Strichstärken liegt diagonal (Beispiel: Lucida Sans).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Die Aufgabe ist nun also, für die häufigsten Betriebssysteme jeweils die passendste, vorinstallierte Schrift zu finden. So ähnelt sich der ungefähre Charakter meiner Grundschrift über verschiedene Systeme hinweg – selbst wenn ein Windows-Anwender meine Artikel in einer anderen Schrift angezeigt bekommt als jemand mit einem Apple-Computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;fontstack-eine-schriftliste-geordnet-nach-priorität&quot;&gt;Fontstack: eine Schriftliste, geordnet nach Priorität&lt;/h2&gt;
+
+&lt;p&gt;Aus dieser Auswahl ähnlicher Schriften stelle ich anschließend eine geordnete Liste zusammen, meinen &lt;em&gt;Fontstack&lt;/em&gt;. Wenn ich diese Liste in mein CSS einfüge (den Gestaltungsvorgaben meines Blogs), erscheint jedem Nutzer diejenige Schrift, die in der Liste als erstes auf seinem System verfügbar ist. Die Reihenfolge ist also wichtig! Man sortiert am besten von der Lieblingsschrift zu den guten Alternativen bis schließlich zur akzeptablen Behelfslösung. Darum benötige ich für ein Betriebssystem nicht drei oder vier passende Schriften – es wird eh nur die erste davon verwendet. Ein sehr guter &lt;a href=&quot;https://zeichenschatz.net/typografie/css-font-stack-alternative-schriften-im-webdesign-klug-einsetzen/&quot;&gt;Artikel zu Fontstacks&lt;/a&gt; (deutsch, ebenfalls von Oliver Schöndorfer) betont, dass ein sorgfältig gebauter Fontstack sogar bei Verwendung einer Webschrift von Nutzen sein kann.&lt;/p&gt;
+
+&lt;p&gt;Zu Zeiten der &lt;em&gt;websafe fonts&lt;/em&gt; waren Fontstacks weit verbreitet. Typische Listen waren zum Beispiel &lt;code&gt;&apos;Helvetica Neue&apos;, Helvetica, Arial, &apos;Nimbus Sans&apos;, sans-serif&lt;/code&gt; für eine statische Sans-Serif-Schrift; oder &lt;code&gt;&apos;Palatino Linotype&apos;, Palatino, &apos;URW Palladio L&apos;, &apos;Bookman Old Style&apos;, Georgia, serif;&lt;/code&gt; für eine klassische Serifenschrift.&lt;/p&gt;
+
+&lt;p&gt;Ein Projekt, das diese Tradition mit Blick auf Dateigröße und Ladezeit von Webschriften wieder aufleben lässt, ist &lt;a href=&quot;https://modernfontstacks.com/&quot;&gt;Modern Font Stacks&lt;/a&gt;. Dort habe ich mir Inspiration geholt, war aber mit ihrem humanistischen Fontstack nicht besonders zufrieden.&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;meine-schrift-auswahl&quot;&gt;Meine Schrift-Auswahl&lt;/h2&gt;
+
+&lt;p&gt;Sehr gut wäre natürlich, wenn meine jetzige &lt;em&gt;Source Sans&lt;/em&gt; weiterhin angezeigt wird, ohne dass ich sie als Webschrift laden müsste. Zum Glück ist sie auf vielen Android-Systemen sogar installiert. Eine noch bessere Variante ist mein heimlicher Liebling &lt;em&gt;Seravek&lt;/em&gt;, ein Systemfont von Apple. Fehlen noch passende Alternativen für Windows und Linux. Nach ein wenig Recherche habe ich mich für folgende Schriftliste entschieden: &lt;code&gt;Seravek, &apos;Source Sans 3&apos;, &apos;Source Sans Pro&apos;, source-sans-pro, &apos;Myriad Pro&apos;, Myriad, &apos;Segoe UI&apos;, &apos;Open Sans&apos;, &apos;Noto Sans&apos;, sans-serif;&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;material/fontstack.png#invert&quot; alt=&quot;Der Ausdruck „Rafgenduks, 1893 mit Hocker?“ in den verschiedenen Schriften meines Fontstacks. Es gibt Unterschiede bei den Ziffern und beim kleinen g, ansonsten sehen sich die Schriften sehr ähnlich.&quot; /&gt;
+	&lt;figcaption&gt;Du siehst kaum Unterschiede zwischen den ausgewählten Schriften? So soll es sein!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;code&gt;Seravek&lt;/code&gt; ist mein Favorit, kommt aber vorinstalliert nur auf iOS und macOS (immerhin seit 2013).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Source Sans 3&lt;/code&gt; und &lt;code&gt;Source Sans Pro&lt;/code&gt; entsprechen meiner jetzigen Grundschrift. Ich nenne sie in meinem Fontstack sehr früh, falls jemand die Schriften manuell auf seinem System installiert hat. Mit &lt;code&gt;source-sans-pro&lt;/code&gt; wähle ich die gleiche Schrift auf Android-Betriebssystemen, also auf sehr vielen Smartphones und Tablets.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Myriad Pro&lt;/code&gt; bzw. &lt;code&gt;Myriad&lt;/code&gt; kommt/kam zusammen mit den Programmen &lt;em&gt;Adobe PDF Reader&lt;/em&gt; und der &lt;em&gt;Adobe Creative Suite&lt;/em&gt;. Sie könnte also auf einigen Geräten vorhanden sein und ist eine wirklich schöne, klare Schrift.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Segoe UI&lt;/code&gt; ist Microsofts Interpretation der Myriad (bzw. Frutiger) und seit 2006 als Schrift der Benutzeroberfläche ein elementarer Bestandteil des Windows-Betriebssystems.&lt;/p&gt;
+
+&lt;p&gt;Spätestens an dieser Stelle im Fontstack sind alle Mac- und Windows-Nutzer versorgt sowie ein Großteil der Android-Geräte. Mal sehen, was es in der sehr diversen Linux-Landschaft zu finden gibt.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Open Sans&lt;/code&gt; und &lt;code&gt;Noto Sans&lt;/code&gt; sind laut der &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1kbxC3UyGTzpA9aOEJD-GYH0uHTops5VSEb8jKKD9Wwc&quot;&gt;Liste von Modern Font Stacks&lt;/a&gt; immerhin auf drei bzw. acht der zwölf häufigsten Linux-Distributionen verbreitet. Ich nenne die seltenere &lt;em&gt;Open Sans&lt;/em&gt; zuerst, weil sie im Gegensatz zur &lt;em&gt;Noto Sans&lt;/em&gt; ein doppelstöckiges g besitzt und Ziffern unterschiedlicher Breite.&lt;/p&gt;
+
+&lt;p&gt;Mit der allgemeinen Bezeichnung &lt;code&gt;sans-serif&lt;/code&gt; zum Schluss sorge ich dafür, dass wenigstens eine Sans-Serif-Schrift angezeigt wird (DejaVu Sans, Inter, Arial), falls auf dem Gerät keine der zuvor genannten Schriften vorhanden sein sollte.&lt;/p&gt;
+
+&lt;h2 id=&quot;was-denn-nun-fontstack-oder-webfont&quot;&gt;Was denn nun: Fontstack oder Webfont?&lt;/h2&gt;
+
+&lt;p&gt;Noch bin ich unentschlossen, ob ich mich von der &lt;em&gt;Source Sans&lt;/em&gt; als meine Grundschrift verabschieden soll. Testweise habe ich sie in diesem Artikel übrigens weggelassen und stattdessen den angedachten Fontstack verwendet. Habt ihr die andere Grundschrift bemerkt? Was meint ihr zu den ausgewählten Schriften meines Fontstacks? Könnt ihr dafür eine weitere dynamische Sans-Schrift empfehlen (ansprechender, weiter verbreitet)? Kommentiert gern unter diesen Artikel!&lt;/p&gt;
+
+&lt;p&gt;Wenn man eine Webschrift einsetzt (und sie geladen wird), weiß man mit großer Sicherheit, wie sie bei den Leser:innen erscheinen wird. Legt man dagegen eine ganze Liste fest, muss man auch mit den Differenzen einzelner Schriften umgehen. Dazu dann mehr im nächsten Blogpost (schon wieder ein Cliffhanger ☺).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Die humanistische Font-Liste&lt;/b&gt; von &lt;em&gt;Modern Font Stacks&lt;/em&gt; ist &lt;code&gt;Seravek, &apos;Gill Sans Nova&apos;, Ubuntu, Calibri, &apos;DejaVu Sans&apos;, source-sans-pro, sans-serif;&lt;/code&gt;. Für eine Leseschrift haben mir Gill Sans und Ubuntu viel zu eigenwillige Buchstabenformen, vor allem fehlende Endstriche bei b, d, … Bei der Gill Sans ist mir außerdem die x-Höhe zu niedrig – unschön in einem deutschen Text mit vielen Großbuchstaben. Statt Calibri und DejaVu Sans gibt es besseres. &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/fontstack.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/fontstack.html</guid>
+	<pubDate>Thu, 05 Sep 2024 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Webfonts sind eine gute Sache</title>
 	<description>&lt;p&gt;Mein Blog verwendet Webfonts, das heißt die Schriften werden genau wie Bilder oder Audios vom Webserver geladen. Dadurch kann ich Überschriften in meiner &lt;strong&gt;selbstgestalteten czSlab&lt;/strong&gt; anzeigen – ohne dass die Schrift auf den Geräten meiner Leser:innen installiert sein muss.&lt;/p&gt;
 
@@ -83,7 +161,7 @@
 
 &lt;h2 id=&quot;kein-webfont-für-schlichte-lesetexte&quot;&gt;Kein Webfont für schlichte Lesetexte?&lt;/h2&gt;
 
-&lt;p&gt;Das oben genannte Video war übrigens nicht der Auslöser für meine Überlegungen, an Webfonts zu sparen – und &lt;strong&gt;meine Schrift czSlab&lt;/strong&gt; werde ich als Wiedererkennungsfaktor auf jeden Fall beibehalten. Aus Minimalismus-Gründen frage ich mich aber, ob es für den unauffälligen Grundtext wirklich die &lt;em&gt;Source Sans&lt;/em&gt; als eigenen Webfont braucht. Ob Systemfonts als Alternative ausreichen, untersuche ich im nächsten Blogeintrag (ha, ein Cliffhanger!).&lt;/p&gt;
+&lt;p&gt;Das oben genannte Video war übrigens nicht der Auslöser für meine Überlegungen, an Webfonts zu sparen – und &lt;strong&gt;meine Schrift czSlab&lt;/strong&gt; werde ich als Wiedererkennungsfaktor auf jeden Fall beibehalten. Aus Minimalismus-Gründen frage ich mich aber, ob es für den unauffälligen Grundtext wirklich die &lt;em&gt;Source Sans&lt;/em&gt; als eigenen Webfont braucht. Im nächsten Blogpost untersuche ich, &lt;a href=&quot;fontstack.html&quot;&gt;ob Systemfonts als Alternative ausreichen.&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -241,61 +319,6 @@ Ich veröffentliche ihn hier gemeinfrei ohne rechtliche Einschränkungen (&lt;a 
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/blindtext.html</guid>
 	<pubDate>Wed, 10 Jul 2024 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Aus 17 Silben ein Gedicht</title>
-	<description>&lt;p&gt;Aus der Bibliothek habe ich mir gerade zwei kleine, hübsche Bücher mit japanischen Kurzgedichten ausgeliehen. Diese &lt;em&gt;Haikus&lt;/em&gt; haben sich im 14./15. Jahrhundert entwickelt. Ihre Kürze ist typisch für die japanische Kultur, die ja in vielen Bereichen versucht, vollendet Schönes mit geringen Mitteln und auf kleinem Raum zu schaffen (wie bei der Tuschemalerei &lt;em&gt;Sumi-e&lt;/em&gt;, der Blumensteckkunst &lt;em&gt;Ikebana&lt;/em&gt; oder kleinen, geschnitzten &lt;em&gt;Netsuke&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Ein Haiku spielt mit dem Unausgesprochenen und Unvollendeten, und deutet über den eigentlichen Inhalt hinaus ein größeres Thema an. Im strengen Sinn beschreiben Haikus objektiv eine Naturstimmung und orientieren sich an den fünf Jahreszeiten (Neujahr, Frühling, Sommer, Herbst und Winter):&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Kaum war er erblüht,&lt;br /&gt;
-hat den Mohn der Wind verweht,&lt;br /&gt;
-noch am gleichen Tag!&lt;/p&gt;
-
-  &lt;p&gt;— &lt;em&gt;Kobayashi Issa&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Thematisch sind die Kurzgedichte spätestens zu ihrer Blütezeit im 17. Jahrhundert vielseitiger geworden, ihre feste Form hat sich allerdings nicht verändert: Ein Haiku hat immer drei Zeilen mit bestimmter Silbenzahl. Zuerst fünf Silben, dann sieben Silben, schließlich wieder fünf Silben.&lt;/p&gt;
-
-&lt;p&gt;Laut Gerolf Coudenhove, dem Übersetzer und Herausgeber der Haiku-Bücher, haben die Kurzgedichte im Japanischen außerdem einen typischen Rhythmus. Sie werden auch bewusst rhythmisch vorgelesen. Ins Deutsche lässt sich das am besten mit einem Wechsel von betonten (—) und unbetonten Silben (◡) übertragen:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;— ◡ — ◡ —&lt;br /&gt;
-— ◡ — ◡ — ◡ —&lt;br /&gt;
-— ◡ — ◡ —&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Haikus zu schreiben ist wirklich weit verbreitet, es gibt Millionen davon! Ich erinnere mich an eine Deutschstunde, in der wir diese Gedichtform selbst ausprobiert haben. Die kurze, fest Form finde ich sehr inspirierend: Sie beschränkt die Möglichkeiten, regt an zu Worttüffteleien und verhindert gleichzeitig, dass man sich in ausufernder Weitschweifigkeit verläuft. Hier ein eigenes Haiku:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;In dem dicken Buch&lt;br /&gt;
-zwischen schwerer Weisheit klebt&lt;br /&gt;
-flach ein Käferrest.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Mir gefällt, wie die nüchterne, kurze Beschreibung Raum lässt für hintergründige Interpretationen. Es macht mir außerdem Freude, einen kleinen, konkreten Moment im Vers festzuhalten und zu versuchen, die Stimmung in wenigen Worten einzufangen.&lt;/p&gt;
-
-&lt;p&gt;Wegen ihrer Kürze eignen sich Haikus wunderbar als Texte für Kalligrafie. Sie sind schnell geschrieben, lassen sich mit ihren bildhaften Beschreibungen leicht gestalten und machen durch die lyrische Form auch inhaltlich etwas her. Wie wäre es zum Beispiel auf einer handgeschriebenen Grußkarte?&lt;/p&gt;
-
-&lt;style&gt;
-.bildpaar { display: flex; flex-wrap: wrap; }
-.bildpaar &gt; img { flex: 1 1 auto; object-fit: contain; }
-&lt;/style&gt;
-
-&lt;figure class=&quot;bildpaar&quot;&gt;
-	&lt;img src=&quot;material/haiku1.jpg&quot; width=&quot;300&quot; alt=&quot;„Wie der volle Mond / auf das Abendhimmelsgrün / eine Föhre malt!“. Ein Haiku von 
-	Hattori Ransetsu, geschrieben mit rötlich grauer Tinte. Ein Halbkreis deutet oben rechts den Mond an, eine Schraffur unten links könnte eine Föhre sein.&quot; /&gt;
-	&lt;img src=&quot;material/haiku2.jpg&quot; width=&quot;300&quot; alt=&quot;„Fern ein Feuerwerk / leuchtet auf, verlischt, und dann / Dunkel wie zuvor …“, ein Haiku von Terada Torahiko. Handgeschrieber Text, darum herum fünf kleine Sterne als angedeutetes Feuerwerk.&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Ich hoffe, dieser Blogartikel regt euch an, ein paar Haikus zu lesen und vielleicht sogar selbst eines zu schreiben. Es ist wirklich nicht so schwer!&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/haiku.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/haiku.html</guid>
-	<pubDate>Thu, 20 Jun 2024 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

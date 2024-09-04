@@ -12,7 +12,7 @@
 -->
 <head>
 <meta charset="UTF-8">
-<title>@cz+ // Blog von Gerhard Großmann</title>
+<title>Statt Webfonts ein Fontstack // @cz+</title>
 
 <link href='bestand/style.css' rel='stylesheet'>
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#228811">
 <meta name="color-scheme" content="light dark">
 
-<meta name="description" content="Hier schreibt Gerhard Großmann aus Hohenfels (Oberpfalz) über Typografie, Design, Origami, Medien, Kreativität & was mich sonst noch anregt.">
+<meta name="description" content="Wenn ein Website-Text nicht unbedingt eine bestimmte Schrift haben muss, dann tut es vielleicht auch eine gut gewählte Systemschrift.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
 
@@ -33,19 +33,15 @@
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
 @media print { header:after {
-content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/&choe=UTF-8');
+content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/fontstack.html&choe=UTF-8');
 position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
-<!-- Verifikation für opendesktop.org -->
-<meta name="ocs-site-verification" content="bec9e99a94ee44a9a7685b1e6758def5">
-<!-- Verifikation für mein Mastodon-Profil -->
-<link rel="me" href="https://typo.social/@charakterziffer">
 </head>
 
 <body>
 <header>
-<a><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
 <div>
 <form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
@@ -68,14 +64,10 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 </header>
 
 <main>
-<h1 id="manches-soll-nicht-gleich-in-der-timeline-versinken">Manches soll nicht gleich in der Timeline versinken …</h1>
-
-<p>Auf dieser Website ist Raum für das, wofür meinem Mastodon-Account <a href="https://typo.social/@charakterziffer/">@charakterziffer</a> zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
-
 <article>
-	<time datetime="2024-09-05">Do, 5. Sept. 2024</time>
-	<h1><a href="fontstack.html">Statt Webfonts ein Fontstack</a></h1>
-	<style>
+<time datetime="2024-09-05">Do, 5. Sept. 2024</time>
+<h1>Statt Webfonts ein Fontstack</h1>
+<style>
 /* Spezifischer Selektor verhindert Styling auf der Startseite */
 body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source Sans Pro', source-sans-pro, 'Myriad Pro', Myriad, 'Segoe UI', 'Open Sans', 'Noto Sans', 'Source Sans 3', sans-serif; }
 /* Source Sans 3 aktiviert Webschrift, darum in der Liste nach hinten gestellt */
@@ -145,143 +137,51 @@ body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source San
 
 <p><b id="note1">[1] Die humanistische Font-Liste</b> von <em>Modern Font Stacks</em> ist <code>Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;</code>. Für eine Leseschrift haben mir Gill Sans und Ubuntu viel zu eigenwillige Buchstabenformen, vor allem fehlende Endstriche bei b, d, … Bei der Gill Sans ist mir außerdem die x-Höhe zu niedrig – unschön in einem deutschen Text mit vielen Großbuchstaben. Statt Calibri und DejaVu Sans gibt es besseres. <a href="#ziffer1">[↑]</a></p>
 
-	<p>---<br /><a href="fontstack.html#kommentieren">Artikel kommentieren …</a>
-		</p>
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
-<article>
-	<time datetime="2024-08-28">Mi, 28. Aug. 2024</time>
-	<h1><a href="webfont-vorteile.html">Webfonts sind eine gute Sache</a></h1>
-	<p>Mein Blog verwendet Webfonts, das heißt die Schriften werden genau wie Bilder oder Audios vom Webserver geladen. Dadurch kann ich Überschriften in meiner <strong>selbstgestalteten czSlab</strong> anzeigen – ohne dass die Schrift auf den Geräten meiner Leser:innen installiert sein muss.</p>
 
-<p>Die zweite Schrift, die ich verwende, ist <em>Source Sans</em>. Sie kommt für die Grundtexte und für <em>kursive Hervorhebungen</em> zum Einsatz und ist eher schlicht und unauffällig. Darum überlege ich seit einer Weile, ob ich dafür wirklich eine Webschrift laden soll.</p>
 
-<h2 id="scheinargumente-gegen-webschriften">Scheinargumente gegen Webschriften</h2>
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
 
-<p>Anfang Juli verlinkte ein Newsletter zu einem Video auf der Plattform X<a href="#note1"><sup id="ziffer1">[1]</sup></a>, in dem die Nutzerin Salma Alam-Naylor (@whitep4nth3r) meinte, niemand interessiere sich für individuelle (Web-)Schriften. Sie nannte drei Argumente, warum man darauf verzichten sollte:</p>
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/fontstack">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
 
-<h3 id="bessere-performance-der-website">Bessere Performance der Website</h3>
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" spellcheck="false">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocomplete="email" spellcheck="false" autocapitalize="off">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" spellcheck="false" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
 
-<p>Den Besucher:innen einer Website sei wichtig, dass die Seite schnell lädt. Es gebe Webschriften, die mehrere Megabyte groß sind. Wenn man Webschriften weglasse, spare man Netzwerkanfragen und die Seite lädt schneller.</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="webfont-vorteile.html">← Webfonts sind eine gute Sache</a></p>
 
-<p>– Nun ja. Genau wie Bilder und Videos sollte man Webschriften fürs Internet optimieren. Meine drei Webfonts sind zusammen beispielsweise nur 60 kB groß, die gleiche Dateigröße wie das Bild vom <a href="schiff-des-theseus">Buch „Das Schiff des Theseus“</a> in meinem Lesetipp.</p>
-
-<figure><img src="material/theseus.jpg" alt="Aufgeschlagenes Buch mit farbigen Notizen, zwischen vielen Seiten klemmen Beilagen" />
-	<figcaption>Dieses Bild hat die gleiche Dateigröße (60<small>&nbsp;</small>kB) wie alle meine Webfonts: czSlab (26<small>&nbsp;</small>kB), Source Sans Regular (19<small>&nbsp;</small>kB) und Italic (15<small>&nbsp;</small>kB).</figcaption>
-</figure>
-
-<p>Kaum jemand würde fordern: „Vermeidet Bilder im Internet! Verbannt Videos und Audios! Sie sind riesig! Megabytes! Netzwerkanfragen! Nur Text ist das einzig Wahre!“</p>
-
-<p>Salmans 58-Sekunden-Video braucht übrigens rund 60 Netzwerkanfragen und überträgt 3 MB (etwa das 50-fache meiner Webfonts).</p>
-
-<h3 id="flash-of-unstyled-text-fout">Flash of Unstyled Text (FOUT)</h3>
-
-<p>Das „Aufblitzen von ungestaltetem Text“ kann passieren, wenn die Webschrift nicht sofort lädt. Im schlimmsten Fall verschiebt sich der Text dann, wenn die Webschrift doch noch im Browser eintrifft. Sehr unschön und keine gute Nutzererfahrung.</p>
-
-<p>Was Salman im Video verschweigt ist, dass man als Webentwickler aber vorbeugen kann. Man kann per CSS festlegen (<a href="https://wiki.selfhtml.org/wiki/Typografie/Schriftformatierung#font-display">über <code>font-display</code></a>), was passieren soll, wenn die Webschrift nicht sofort lädt. Gleich eine installierte Ersatzschrift zeigen? Zunächst eine Zehntelsekunde warten? Danach noch austauschen oder dann nur die Ersatzschrift zeigen? Als Ersatzschrift wählt man aus den installierten Systemschriften bestenfalls solche, die der eigenen Webschrift am ehesten entsprechen. Dann ist die visuelle Störung bei einem <em>FOUT</em> nicht so auffällig.</p>
-
-<p>Ja, man muss sich damit beschäftigen und überlegen, welches Verhalten das nutzerfreundlichste ist. Das wäre aber immerhin besser als so zu tun, als ob der Flash of Unstyled Text bei einer optimierten Webschrift ein gravierendes Problem ist.</p>
-
-<h3 id="einfacher-für-webentwickler">Einfacher für Webentwickler</h3>
-
-<p>Oje, man müsse Schriftformate konvertieren (z.B. von TTF in WOFF2) und da gebe es ja nur zwielichtige Drittanbieter …</p>
-
-<p>Nö. Man kann seine Schriften auch im richtigen Format kaufen/herunterladen und es gibt durchaus brauchbare Services für Umwandlung und Optimierung. Man muss sich halt schlau machen – und weißt du was, Webentwickler:in, genau das ist dein Job! Genau wie du dich über Barrierefreiheit, CSS, Bildoptimierung etc. informieren solltest.</p>
-
-<p>Eine gute Übersicht, wie man <a href="https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/">Webfonts optimiert (engl.)</a>, liefert Iain Bean:</p>
-
-<ul>
-  <li>Als Dateiformat WOFF2 wählen</li>
-  <li>Per CSS <code>font-display</code> festlegen</li>
-  <li>Webfonts im Voraus laden</li>
-  <li>Nicht benötigte Zeichen weglassen</li>
-  <li>Font-Dateien selbst hosten</li>
-</ul>
-
-<p>Aus Faulheit zu sagen: „Webfonts machen wir nicht, die sind zu kompliziert“ – das ist kein Argument gegen Webfonts.</p>
-
-<h2 id="vorteile-von-webfonts">Vorteile von Webfonts</h2>
-
-<p>Die behaupteten Nachteile von Webfonts sind also vor allem deren falsche Anwendung: nicht optimierte Schriftdateien, nicht bedachtes Ladeverhalten und Ignoranz. Doch was sind mögliche Vorteile?</p>
-
-<h3 id="aussagekräftiges-design">Aussagekräftiges Design</h3>
-
-<p>Schrift ist ein sehr einfaches Gestaltungsmittel, um sich von anderen abzugrenzen, aus dem Einheitsbrei hervorzuragen und mit geringem Aufwand sein Profil zu schärfen. Eine eigene Schrift kann Eleganz vermitteln, Verspieltheit, Kompetenz, Spontaneität, Billigkeit, Intellektualität, Subkultur, … Diese Ausdrucksmöglichkeiten nimmt man sich, wenn man nur auf Allerwelts-Schriften setzt.</p>
-
-<h3 id="alle-zeichen-sind-schon-da">Alle Zeichen sind schon da</h3>
-
-<p>Die angepasste Webschrift enthält alle Buchstaben und Sonderzeichen, die man auf seiner Website benötigt. In meinem Fall sind das zum Beispiel Pfeile (↑ →), Bruchzahlen (⅔ ⅛), hochgestellte Ziffern (¹ ² ³ ⁴) oder ein Versal-Eszett (ẞ). Zusätzlich kann ich besondere Funktionen der Schrift nutzen. In meinem Fall sind das z.<small> </small>B. Mediävalziffern (2 3 6 7 8 9 0), die sich mit Ober- und Unterlängen unauffälliger in den Text einfügen, oder ein speziell gekürztes f vor hohen Buchstaben (vgl. <strong>fe</strong> und <strong>fk</strong>).</p>
-
-<p>Systemschriften bieten solche Funktionen nicht unbedingt an. Und wenn dort ein Zeichen fehlt, wird es ersatzweise in einer anderen Schriftart dargestellt. Das sieht wirklich unschön aus (Beispiel: eĕ gġ nń). Bei einer Webschrift weiß ich genau, über welche Zeichen ich verfügen kann, bei installierten Systemschriften kann ich es nur abschätzen – denn je nach Gerät, auf dem die Website erscheint, wird womöglich eine andere Systemschrift verwendet.</p>
-
-<h3 id="einheitlich-und-überall-wiedererkennbar">Einheitlich und überall wiedererkennbar</h3>
-
-<p>Womit wir bei einem weiteren Vorteil von Webfonts sind: Sie sehen auf allen Geräten nahezu gleich aus (es gibt feine Unterschiede beim Rendering, d.<small> </small>h. der pixel-exakten Darstellung). Leser:innen bekommen also die gleiche Schrift, egal ob sie die Website am Laptop oder Smartphone besuchen. Die Gestaltung ist wiedererkennbar und spricht überall mit der gleichen Stimme.</p>
-
-<h2 id="kein-webfont-für-schlichte-lesetexte">Kein Webfont für schlichte Lesetexte?</h2>
-
-<p>Das oben genannte Video war übrigens nicht der Auslöser für meine Überlegungen, an Webfonts zu sparen – und <strong>meine Schrift czSlab</strong> werde ich als Wiedererkennungsfaktor auf jeden Fall beibehalten. Aus Minimalismus-Gründen frage ich mich aber, ob es für den unauffälligen Grundtext wirklich die <em>Source Sans</em> als eigenen Webfont braucht. Im nächsten Blogpost untersuche ich, <a href="fontstack.html">ob Systemfonts als Alternative ausreichen.</a></p>
-
-<hr />
-
-<p><b id="note1">[1] Video auf X:</b> Ich möchte ungern auf das ehemalige Twitter verlinken, weil ich finde, dass es sich unter Elon Musk zu einem unangenehmen Umfeld entwickelt hat. Der Transparenz wegen hier dei Quelle des Videos: x.com/whitep4nth3r/status/1810961874441080924 (kopieren und in URL-Leiste des Browsers einfügen). <a href="#ziffer1">[↑]</a></p>
-
-	<p>---<br /><a href="webfont-vorteile.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
-<article>
-	<time datetime="2024-08-06">Di, 6. Aug. 2024</time>
-	<h1><a href="miniheft-2.html">Ein Zine von der Schreibmaschine</a></h1>
-	<p>Kürzlich habe ich unsere alte Schreibmaschine aus dem Keller geholt und überlegt, was man damit Kreatives anfangen könnte. Als Projekt sind mir die Minihefte („Zines“) wieder eingefallen, für die ich vor vier Jahren hier im Blog eine <a href="miniheft.html">Bastelanleitung</a> veröffentlicht habe. Ich finde diese Heftchen recht inspirierend und habe mithilfe der Schreibmaschine nun ein weiteres gestaltet.</p>
-
-<p><img src="material/miniheft-2.jpg" alt="Verschiedene Ansichten des Schreibmaschinenheftchens" /></p>
-
-<p>Im Grunde bestehen das gefaltete Heft aus einer einzelnen Seite. Dadurch lässt es sich leicht kopieren und nachbasteln. Hier die Vorlage für mein Schreibmaschinen-Zine:</p>
-
-<p><a href="material/miniheft-2.pdf" download="schreibmazine.pdf">Druckvorlage herunterladen<br /><em>(PDF-Datei, 2,0 MB)</em></a></p>
-
-<p>Beim Falten bitte darauf achten, dass die Titelseite immer außen bleibt. Die <a href="miniheft.html">Faltanleitung als Video</a> gibt es in meinem Blogartikel vom Mai 2020. Dort finden sich Druckvorlagen für zwei weitere Minihefte und ein bisschen Inspiration für eigene Gestaltungen.</p>
-
-	<p>---<br /><a href="miniheft-2.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
-<p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
-
-<h1 id="sonstiges">Sonstiges</h1>
-
-<h2 id="warum-charakterziffer">Warum „Charakterziffer“?</h2>
-
-<p>Das Wort kombiniert Persönlichkeit (Charakter) mit Sachlichem (Ziffer). Zusammengesetzt ergibt sich ein Synonym für <a href="https://de.wikipedia.org/wiki/Medi%C3%A4valziffer">Mediävalziffer</a>, eine Zahlenvariante mit Ober- und Unterlängen.</p>
-
-<h2 id="schriftarten-dieses-blogs">Schriftarten dieses Blogs</h2>
-
-<p>Wenn dein Browser eingebettete Schriften (WOFF2) unterstützt, dann liest du die Fließtexte hier in der <a href="https://blog.typekit.com/2012/08/02/source-sans-pro/">Source Sans Pro</a> von Paul D. Hunt, erschienen 2012 bei Adobe.</p>
-
-<p>Die Überschriften sind aus der czSlab gesetzt, die ich für dieses Blog gestaltet habe. Sie orientiert sich an <a href="https://yanone.de/">Yanone</a>s viel ausgefeilterer <a href="https://www.myfonts.com/de/collections/antithesis-font-fontfont">Antithesis</a> von 2014.</p>
-
-<hr />
-
-<h2 id="impressum">Impressum/Datenschutz</h2>
-
-<h3 id="anbieterkennzeichnung-nach-tmg-5">Anbieterkennzeichnung nach TMG §5:</h3>
-
-<p>Gerhard Großmann · Asamstraße 10 · 92366 Hohenfels<br />
-E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</span><span style="margin-right:0.2em">/</span><span style="margin-right:0.2em">196</span><span style="margin-right:0.2em">19</span>14</p>
-
-<h3 id="rechtliche-hinweise">Rechtliche Hinweise</h3>
-
-<p><strong>§<small> </small>1 Externe Links</strong> · Dieses Blog verlinkt auf Websites Dritter. Zum Zeitpunkt der erstmaligen Verlinkung waren dort keine Rechtsverstöße ersichtlich. Da ich keinen Einfluss auf fremde Websites habe, kann ich für deren Inhalte und Gestaltung keine Haftung übernehmen. Sollte ich von Rechtsverstößen erfahren, entferne ich die Verlinkung unverzüglich. Eine ständige Kontrolle der externen Links ist ohne konkrete Hinweise aber nicht zumutbar.</p>
-
-<p><strong>§<small> </small>2 Datenschutzerklärung</strong> · Mir ist der Schutz deiner Daten sehr wichtig. Deshalb verzichte ich auf Cookies, vermeide möglichst Dienste von Drittanbietern und erhebe so wenige Daten wie es geht. Diese Website kann ohne die Angabe persönlicher Daten genutzt werden.</p>
-
-<p>Die einzige Ausnahme sind Kommentare. Wenn du einen meiner Texte kommentierst, bekomme ich die eingegebenen Daten und eine Zeitangabe per (prinzipiell unsicherer) E-Mail zugestellt. Falls dein Kommentar sachlich zur Diskussion beiträgt, ergänze ich ihn öffentlich sichtbar unter dem entsprechenden Artikel. Dabei sind sämtliche Angaben freiwillig (Name, Website, Mailadresse, Kommentar) – auch <a href="anonym-kommentieren.html">anonyme Kommentare</a> sind möglich.</p>
-
-<p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
-
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2024-09-05T00:02:11+02:00</p>
-
+<p style="clear:both;" class="no-print"></p>
 </main>
 
 <aside class="no-hyphens">
