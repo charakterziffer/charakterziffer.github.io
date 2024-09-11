@@ -14,11 +14,11 @@
 </head>
 <body>
 	<main>
-	<p class="hinterlegt no-hyphens">Das ist ein RSS-Feed, in dem auto­matisch die neus­ten Ein­träge meines Blogs auf­tau­chen. Um die­sen Feed zu abon­nieren, ko­piere die URL <code style="hyphenate: auto; hyphenate-character:''">https://charakterziffer.github.io/rss.xml</code> in dei­nen Feed­reader. Ein aus­führ­licher Arti­kel, wie man RSS nutzt, steht bei <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
+	<p class="hinterlegt no-hyphens">Das ist ein RSS-Feed, der auto­matisch die neus­ten Ein­träge meines Blogs auf­listet. Um die­sen Feed zu abon­nieren, ko­piere die URL <code style="hyphenate: auto; hyphenate-character:''">https://charakterziffer.github.io/rss.xml</code> in dei­nen Feed­reader. Ein aus­führ­licher Arti­kel, wie man RSS nutzt, steht bei <a href="https://u-labs.de/portal/rss-einfach-erklaert-funktion-und-rss-feeds-die-bessere-alternative-zu-sozialen-netzwerken-um-web-inhalten-zu-folgen/">U-Labs</a>.</p>
 
 	<h1 class="icon-rss">Webfeed-Vorschau</h1>
 	<h2><xsl:value-of select="/rss/channel/title"/></h2>
-	<p><xsl:value-of select="/rss/channel/description"/><br />
+	<p><xsl:value-of select="/rss/channel/description"/>
 	<a target="_blank"><xsl:attribute name="href">
 		<xsl:value-of select="/rss/channel/link"/></xsl:attribute>
 		Website besuchen →</a></p>

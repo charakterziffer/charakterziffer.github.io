@@ -3,7 +3,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel>
 <title>@cz+ // Blog von @charakterziffer</title>
 <link>https://charakterziffer.github.io/index.html</link>
-<description>Hier ist Raum für das, wofür mein Mastodon-Account @charakterziffer zu kurzlebig ist. Dieses Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“.</description>
+<description>Hier ist Raum für das, wofür mein Mastodon-Account @charakterziffer@typo.social zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“.</description>
 <language>de-de</language>
 <copyright>Gerhard Großmann</copyright>
 <atom:link href="https://charakterziffer.github.io/rss.xml" rel="self" type="application/rss+xml" />
