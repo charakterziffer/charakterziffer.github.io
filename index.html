@@ -73,6 +73,92 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Auf dieser Website ist Raum für das, wofür meinem Mastodon-Account <a href="https://typo.social/@charakterziffer/">@charakterziffer</a> zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2024-09-13">Fr, 13. Sept. 2024</time>
+	<h1><a href="fontstack-probleme.html">Probleme mit Fontstacks</a></h1>
+	<style>
+/* Spezifischer Selektor verhindert Styling auf der Startseite */
+body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source Sans Pro', source-sans-pro, 'Myriad Pro', Myriad, 'Segoe UI', 'Open Sans', 'Noto Sans', 'PT Sans', 'Source Sans 3', sans-serif; }
+/* Source Sans 3 aktiviert Webschrift, darum in der Liste nach hinten gestellt */
+</style>
+
+<p>Im vorigen Artikel über <a href="fontstack.html">Fontstacks</a> habe ich mir mögliche Systemschriften zusammengesucht, welche die Textschrift <em>Source Sans</em> meines Blogs ersetzen könnten. Nutzer:innen bekommen aus dem Fontstack jeweils die erste Schrift angezeigt, die auf ihrem Gerät verfügbar ist.</p>
+
+<p>Ein <a href="fontstack.html#k1">Kommentar von Jürgen</a> machte mich aufmerksam, dass mein Favorit <em>Seravek</em> auf Apple-Systemen doch nicht so richtig vorinstalliert ist. So habe ich für macOS-Computer nachträglich die <em>PT Sans</em> ergänzt – an vorletzter Stelle, weil sie für mich weniger gut passt und vom Zeichenvorrat nicht so gut ausgebaut ist (keine Mediävalziffern, Pfeile, weitere Bruchziffern). Der schönen <em>Kohinoor Bangla</em> fehlt sogar die Kursive (und das Versal-Eszett) – als letzte Reserve für iOS passt sie für mich dennoch besser als die seelenlose Helvetica.</p>
+
+<figure><img src="material/fontstack2.png#invert" alt="Der Ausdruck „Rafgenduks, 1893 mit Hocker?“ in den verschiedenen Schriften meines Fontstacks. Es gibt Unterschiede bei den Ziffern und beim kleinen g, ansonsten sehen sich die Schriften sehr ähnlich." />
+	<figcaption>Mein geplanter Fontstack aus Seravek, Source Sans 3, Source Sans Pro, source-sans-pro, Myriad Pro, Myriad, Segoe UI, Open Sans, Noto Sans, PT Sans und Kohinoor Bangla, dazu ergänzend sans-serif.</figcaption>
+</figure>
+
+<p>Auch für diesen Artikel habe ich meine Webschrift testweise deaktiviert. Wenn ich mich stattdessen auf ein ganzes Bündel an Systemschriften verlasse, ergeben sich ein paar Problemchen: Scheinbare Größenunterschiede, fehlende Zeichen und der Tracking-Schutz von Webbrowsern.</p>
+
+<h2 id="unterschiedliche-schriftgrößen-angleichen">Unterschiedliche Schriftgrößen angleichen</h2>
+
+<p>Eine Überraschung für Schrift-Laien: Je nachdem, wie eine Schrift gestaltet ist, erscheint sie größer oder kleiner – beim gleichen Zahlenwert für die Schriftgröße. Obwohl ich also eine fixe Größe für alle Schriften vorgebe, scheinen sich einige nicht daran zu halten. In meinem Font Stack sind die Unterschiede zwischen <em>Myriad Pro</em> und <em>Noto Sans</em> besonders auffällig, obwohl ich für beide die gleiche Schriftgröße festgelegt habe:</p>
+
+<figure><img src="material/schriftgroessen.png#invert" alt="Vergleich zwischen der Schrift Myriad Pro und Noto Sans: Letztere wirkt ein bisschen größer, obwohl beide mit der gleichen Schriftgröße abgebildet sind." />
+	<figcaption>Bei gleicher Schriftgröße fällt die Noto Sans optisch größer aus. Damit sie gleich groß erscheint wie Myriad Pro, muss man sie um rund 10<small>&nbsp;</small>% verkleinern.</figcaption>
+</figure>
+
+<p>Wie groß eine Schrift wirkt, hängt vor allem von ihrer Mittelzone ab in der die Kleinbuchstaben stehen (Fachbegriff: x-Höhe). Weil Schriften unterschiedlich groß gestaltet ist, müsste ich für jede eine korrigierte Größe festlegen: Einmal 12 Punkt, dann 11,3 Punkt, 14 Punkt, … nur dann würde der Text in meinem Blog immer gleich groß erscheinen – unabhängig von der verwendeten Schrift.</p>
+
+<p>Zum Glück gibt es dafür eine Lösung per CSS: <code>font-size-adjust</code>. Diese Eigenschaft wird seit Juli auch in den verbreiteten Browsern Chrome und Edge unterstützt (im Safari seit Frühjahr 2023, im Firefox schon seit 2008). Damit definiere ich, wie groß die x-Höhe in Bezug auf die Gesamthöhe eines Zeichens sein soll. Eine Schrift wird dann entsprechend angepasst; also verkleinert oder vergrößert bis die gewünschte x-Höhe erreicht ist.</p>
+
+<p>Beispiel: Bei Myriad Pro beträgt die x-Höhe 0,484 <em>(Prozent der Zeichenhöhe)</em>, bei Noto Sans sind es 0,536<small> </small>%. Ich möchte, dass beide in der Größe meiner gewohnten Schrift <em>Source Sans</em> erscheinen, die eine x-Höhe von 0,486<small> </small>% besitzt (etwas mehr als Myriad, deutlich weniger als Noto Sans).</p>
+
+<p>Zu meinem Fontstack ergänze ich im CSS also ein <code>font-size-adjust: 0.486;</code>. Wird einem Nutzer nun die Myriad Pro angezeigt, dann vergrößert der Browser sie ein bisschen. Auf Geräten mit Noto Sans wird diese ein ganzes Stück verkleinert. So entsprechen beide Schriften von der Größe her etwa der Source Sans.</p>
+
+<p>Die verschiedenen x-Höhen habe ich übrigens nicht von Hand ausgemessen. Es gibt dafür eine Website, wo man sich für einzelne Schriften <a href="https://www.brunildo.org/test/xheight.pl">den Wert für font-size-adjust berechnen</a> lassen kann.</p>
+
+<h2 id="nicht-vorhandene-zeichen-und-fehlende-funktionen">Nicht vorhandene Zeichen und fehlende Funktionen</h2>
+
+<p>In meiner Webfont-Datei sehe ich genau, welche Zeichen vorhanden sind und welche Schriftfunktionen ich nutzen kann (siehe auch <a href="webfont-vorteile.html#alle-zeichen-sind-schon-da">Webfont-Vorteile</a>). Bei Systemfonts muss ich hoffen, dass sie alle benötigten Zeichen beinhaltet und ich sollte mich nicht auf spezielle Funktionen verlassen (z.<small> </small>B. alternative Zeichen, Kapitälchen, Schwungbuchstaben, …).</p>
+
+<p>Fehlende Zeichen im Systemfont werden aus einer anderen Schrift ersetzt. Ob sich Pfeile (↑ →), Bruchzahlen (⅔ ⅛) oder ein Versal-Eszett (ẞ) dann gut in den Text einfügen oder ob sie unpassend herausstechen, kann ich nicht mehr beeinflussen.</p>
+
+<p>Weiterhin kann ich nicht genau sagen, welche <em>Version</em> einer Schrift bei den Nutzer:innen installiert ist. Zum Beispiel gab es 2012 mit Windows 8 eine <a href="https://istartedsomething.com/20120302/segoe-ui-gets-a-subtle-facelift-in-windows-8/">Überarbeitung der Schrift Segoe UI</a> <em>(engl.)</em>. Nutzer:innen, die ein älteres Betriebssystem verwenden (eher unwahrscheinlich), bekommen zum Beispiel keine Mediävalziffern – diese Ziffernvariante mit Ober- und Unterlängen ist in der älteren Segoe UI nicht vorhanden.</p>
+
+<p>Bei besonderen Fällen kann ich natürlich tricksen. Das habe ich zum Beispiel in meinem Artikel über <a href="graustufen.html">gleichmäßig wirkende Graustufen</a> gemacht. Da nur Spezialschriften ein mathematisches Zeichen für die neunte Wurzel enthalten, habe ich dieses Zeichen einfach als Grafik in den Text geschummelt: <svg width=".65em" height="1.1em" style="position:relative; top:.1em; left:.1em"><title>Neunte Wurzel</title><path d="M3.512 0C2.054 0 .935 1.14.935 2.637c0 1.48.88 2.497 2.438 2.497.739 0 1.398-.28 1.957-.82-.12 2-1.058 2.938-2.217 2.938-.54 0-.959-.22-1.339-.48l-.54.9c.46.32 1.02.6 1.919.6 1.918 0 3.396-1.4 3.396-4.335C6.55 1.479 5.37 0 3.512 0zm.02 1.02c.98 0 1.679.78 1.798 2.317-.599.64-1.118.86-1.718.86-.959 0-1.498-.66-1.498-1.58 0-.94.6-1.6 1.418-1.6zm5.658.7L5.634 16.922c-.08.42-.16.86-.24 1.28h-.08c-.1-.42-.2-.86-.34-1.28L2.658 10.01 0 11.191l.38.9 1.418-.64L4.795 20h1.258L10.39 1.72h-1.2z"></path></svg> – perfekt angepasst auf meine Webschrift <em>Source Sans</em>. Solch fauler Zauber fällt eher auf, wenn die Systemschrift nicht so gut zum Grafiksymbol passt.</p>
+
+<p>Da kann ich dann ohne Webschrift nicht viel machen. Ich gebe halt ein Stück die Kontrolle ab, wie meine Texte bei den Leser:innen meines Blogs erscheinen.</p>
+
+<h2 id="erhöhter-schutz-vor-fingerprinting">Erhöhter Schutz vor Fingerprinting</h2>
+
+<p>Wogegen ich auch nicht viel machen kann, sind sichere Browsereinstellungen. Einige Websites wollen Besucher:innen möglichst genau identifizieren (für passende Werbung oder um Schwachstellen eines Systems auszunutzen). Für diese Identifizierung können Programmskripte über den Browser unter anderem feststellen, welche Schriftarten installiert sind. Was das bringt? Na, wenn ich weiß, dass auf einem Gerät die Schrift <em>Seravek</em> vorhanden ist, dann ist das Betriebssystem höchstwahrscheinlich von Apple. Findet das Skript <em>Segoe Fluent Icons</em>, handelt es sich vermutlich um ein sehr aktuelles Windows – diese Schrift wurde erst 2021 mit Windows 11 ausgeliefert.</p>
+
+<p>Skripte können zudem prüfen, ob seltenere Schriften nachinstalliert wurden und wie eine bestimmte Schrift pixelgenau dargestellt wird. Das kann bei einen Nutzer so exakt sein, dass sich ein einmaliger „Fingerabdruck“ des Systems erstellen lässt. Dann ist es möglich, diesen Nutzer eindeutig zu identifizieren und über mehrere Websites zu verfolgen.</p>
+
+<p>Wer solch ein <em>Fingerprinting</em> über Schriftarten verhindern möchte, kann seinen Webbrowser mit entsprechenden Erweiterungen ausstatten oder einen strengeren Trackingschutz aktivieren. Dann sind im Browser nur noch sehr wenige Schriften verfügbar – und eben keine mehr aus meinem Fontstack. Wobei es diese wenigen Nutzer:innen gewöhnt sein dürften, nur die üblichen Standard-Schriften zu sehen und vermutlich sogar Webschriften blockieren (diese können nämlich die eigene IP-Adresse verraten, wenn sie über einen Drittanbietern eingebunden sind, z.<small> </small>B. über Google Fonts).</p>
+
+<h2 id="die-eigentliche-frage">Die eigentliche Frage</h2>
+
+<p>Vermutlich schimmerte meine Unentschlossenheit in den letzten Blogartikeln durch. Genügt für die Lesetexte meines Blogs eine banale Systemschrift? Es geht um weniger Kontrolle, eine vermutlich schlechtere Gestaltung, scheinbar geringen Nutzer-Vorteilen, dem Wunsch nach Minimalismus … und irgendwie auch darum, ob ich mir über eine Designfrage zu viele Gedanken mache. Paul Renner hat seinem „Die Kunst der Typografie“ geschrieben (S. 220):</p>
+
+<blockquote>
+  <p>„<!-- Wer seinen Farbengeschmack schult, wird nach einiger Zeit merken, daß er immer kritischer wird. Wenn er einen farbigen Stoff kaufen will, wird ihm gerade der teuerste am besten gefallen; das kann recht lästig werden. Er wird an allem etwas auszusetzen haben; denn -->[W]achsende Kennerschaft jeder Art macht anspruchsvoll. <!-- Aber er wird mehr als reichlich dadurch entschädigt werden, daß er nun in den Museen und in der Natur Schönheiten entdeckt, an denen er früher achtlos vorübergegangen ist. Er wird sie nicht nur kalt bewundernd entdecken, sondern von ihnen aufs tiefste beglückt werden. -->[…] Daß [man] auch gegen seine eigenen Leistungen immer kritischer wird, soll [einen] nicht verdrießen. Wenn man einmal anfängt, mit sich zufrieden zu sein, hat man wohl die höchste Sprosse seiner Leiter erklommen: man ist auf der Höhe; aber wer kann sagen, ob die Leiter hoch genug war?“</p>
+</blockquote>
+
+<p>Obwohl ich mich noch nicht zu einer Entscheidung gegen meine Textschrift <em>Source Sans</em> durchringen konnte, habe ich bei meinen Überlegungen doch einiges gelernt:</p>
+
+<ul>
+  <li>Wie Webfonts eine bessere Performance bekommen</li>
+  <li>welche humanistischen Systemschriften es gibt</li>
+  <li>wie sie sich unterscheiden und wo sie verfügbar sind</li>
+  <li>warum <em>web-safe fonts</em> durch Android hinfällig geworden sind</li>
+  <li>wie optische Größenunterschiede bei Schriften bestimmt werden</li>
+  <li>und mit welchem CSS sie gleich groß erscheinen</li>
+  <li>welche Möglichkeiten ein Webfont generell mitbringt</li>
+  <li>und dass man nicht alles kontrollieren kann.</li>
+</ul>
+
+<p>Das ist doch eine ganze Menge! Ich hoffe, auch ihr habt bei dieser Erkundungsreise etwas Nützliches erfahren; über Kommentare freue ich mich wie immer sehr.</p>
+
+<p>Übrigens habe ich mich vor über sechs Jahren schon mal <a href="https://charakterziffer.github.io/systemfonts.html">mit Systemfonts beschäftigt</a> und ob sie Webfonts ersetzen sollten.</p>
+
+	<p>---<br /><a href="fontstack-probleme.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2024-09-05">Do, 5. Sept. 2024</time>
 	<h1><a href="fontstack.html">Statt Webfonts ein Fontstack</a></h1>
 	<style>
@@ -230,23 +316,6 @@ body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source San
 		</p>
 </article>
 
-<article>
-	<time datetime="2024-08-06">Di, 6. Aug. 2024</time>
-	<h1><a href="miniheft-2.html">Ein Zine von der Schreibmaschine</a></h1>
-	<p>Kürzlich habe ich unsere alte Schreibmaschine aus dem Keller geholt und überlegt, was man damit Kreatives anfangen könnte. Als Projekt sind mir die Minihefte („Zines“) wieder eingefallen, für die ich vor vier Jahren hier im Blog eine <a href="miniheft.html">Bastelanleitung</a> veröffentlicht habe. Ich finde diese Heftchen recht inspirierend und habe mithilfe der Schreibmaschine nun ein weiteres gestaltet.</p>
-
-<p><img src="material/miniheft-2.jpg" alt="Verschiedene Ansichten des Schreibmaschinenheftchens" /></p>
-
-<p>Im Grunde bestehen das gefaltete Heft aus einer einzelnen Seite. Dadurch lässt es sich leicht kopieren und nachbasteln. Hier die Vorlage für mein Schreibmaschinen-Zine:</p>
-
-<p><a href="material/miniheft-2.pdf" download="schreibmazine.pdf">Druckvorlage herunterladen<br /><em>(PDF-Datei, 2,0 MB)</em></a></p>
-
-<p>Beim Falten bitte darauf achten, dass die Titelseite immer außen bleibt. Die <a href="miniheft.html">Faltanleitung als Video</a> gibt es in meinem Blogartikel vom Mai 2020. Dort finden sich Druckvorlagen für zwei weitere Minihefte und ein bisschen Inspiration für eigene Gestaltungen.</p>
-
-	<p>---<br /><a href="miniheft-2.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -280,7 +349,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2024-09-11T11:17:50+02:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2024-09-13T09:38:14+02:00</p>
 
 </main>
 
