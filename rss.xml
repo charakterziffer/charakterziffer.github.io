@@ -25,7 +25,8 @@ body:has(header &gt; a[title=&quot;Zur Startseite&quot;]) { font-family: Seravek
 
 &lt;p&gt;Ein &lt;a href=&quot;fontstack.html#k1&quot;&gt;Kommentar von Jürgen&lt;/a&gt; machte mich aufmerksam, dass mein Favorit &lt;em&gt;Seravek&lt;/em&gt; auf Apple-Systemen doch nicht so richtig vorinstalliert ist. So habe ich für macOS-Computer nachträglich die &lt;em&gt;PT Sans&lt;/em&gt; ergänzt – an vorletzter Stelle, weil sie für mich weniger gut passt und vom Zeichenvorrat nicht so gut ausgebaut ist (keine Mediävalziffern, Pfeile, weitere Bruchziffern). Der schönen &lt;em&gt;Kohinoor Bangla&lt;/em&gt; fehlt sogar die Kursive (und das Versal-Eszett) – als letzte Reserve für iOS passt sie für mich dennoch besser als die seelenlose Helvetica.&lt;/p&gt;
 
-&lt;figure&gt;&lt;img src=&quot;material/fontstack2.png#invert&quot; alt=&quot;Der Ausdruck „Rafgenduks, 1893 mit Hocker?“ in den verschiedenen Schriften meines Fontstacks. Es gibt Unterschiede bei den Ziffern und beim kleinen g, ansonsten sehen sich die Schriften sehr ähnlich.&quot; /&gt;
+&lt;figure&gt;&lt;img src=&quot;material/fontstack.png#invert&quot; alt=&quot;Der Ausdruck „Rafgenduks, 1893 mit Hocker?“ in den verschiedenen Schriften meines Fontstacks. Es gibt Unterschiede bei den Ziffern und beim kleinen g, ansonsten sehen sich die Schriften sehr ähnlich.&quot; /&gt;
+	&lt;img src=&quot;material/fontstack2.png#invert&quot; alt=&quot;Gleiches Wortbeispiel in zwei weiteren Schriften (PT Sans und Kohinoor Bangla).&quot; /&gt;
 	&lt;figcaption&gt;Mein geplanter Fontstack aus Seravek, Source Sans 3, Source Sans Pro, source-sans-pro, Myriad Pro, Myriad, Segoe UI, Open Sans, Noto Sans, PT Sans und Kohinoor Bangla, dazu ergänzend sans-serif.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
