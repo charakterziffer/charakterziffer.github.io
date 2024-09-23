@@ -8,7 +8,7 @@
 @font-face { font-family: 'Source Sans 3';
 	font-style: italic; font-weight: 400;
 	src: url(SourceSans3-It.woff2) format('woff2');
-	font-display: fallback; }
+	font-display: swap; } /* Kursiv erst künstlich schräg stellen und irgendwann ersetzen, sobald Schriftdatei bereit*/
 @font-face { font-family: 'czSlab';
 	font-style: normal; font-weight: bold;
 	src: url(czSlab.woff2) format('woff2');
