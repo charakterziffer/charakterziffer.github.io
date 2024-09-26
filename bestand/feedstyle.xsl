@@ -28,7 +28,7 @@
 		<h3><a target="_blank"><xsl:attribute name="href">
 		<xsl:value-of select="link"/></xsl:attribute>
 			<xsl:value-of select="title"/></a></h3>
-		<p>Veröffentlicht am <xsl:value-of select="format-date($pubDate, '[FNn,*-2], [D]. [MNn] [Y]', 'de', (), ())"/></p>
+		<p>Veröffentlicht am <xsl:value-of select="format-date('Fri, 13 Sep 2024 00:00:00 +0200', '[FNn,*-2], [D]. [MNn] [Y]', 'de', (), ())"/></p>
 	</xsl:for-each>
 	</main>
 </body>
