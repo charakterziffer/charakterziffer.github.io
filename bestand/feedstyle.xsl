@@ -28,8 +28,8 @@
 		<h3><a target="_blank"><xsl:attribute name="href">
 		<xsl:value-of select="link"/></xsl:attribute>
 			<xsl:value-of select="title"/></a></h3>
-		<p>Veröffentlicht am <xsl:value-of select="pubDate"/></p>
-		<p>Test: <xsl:value-of select="substring(pubDate, 0, 15)"/></p>
+		<p>Veröffentlicht am <xsl:value-of select="substring(pubDate, 0, 17)"/></p>
+		<p>Test: <xsl:value-of select='format-date(pubDate, "[F]", "de", (), ())'/></p>
 	</xsl:for-each>
 	</main>
 </body>
