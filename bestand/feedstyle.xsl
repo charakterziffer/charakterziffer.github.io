@@ -29,7 +29,7 @@
 		<xsl:value-of select="link"/></xsl:attribute>
 			<xsl:value-of select="title"/></a></h3>
 		<p>Veröffentlicht am <xsl:value-of select="substring(pubDate, 0, 17)"/></p>
-		<p>Test: <xsl:value-of select='format-date(pubDate, "[F]", "de", (), ())'/></p>
+		<p>Test: <xsl:value-of select="format-date('2001-10-26T21:32:52', '[FNn,*-2], [D]. [MNn] [Y]', 'de', (), ())"/></p>
 	</xsl:for-each>
 	</main>
 </body>
