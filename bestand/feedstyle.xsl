@@ -29,6 +29,8 @@
 		<xsl:value-of select="link"/></xsl:attribute>
 			<xsl:value-of select="title"/></a></h3>
 		<p>Veröffentlicht am <xsl:value-of select="pubDate"/></p>
+		<xsl:variable name="datum" select="pubDate"/>
+		<p>Test: format-date($datum, "[FNn,*-2], [D]. [MNn] [Y]", "de", (), ())"</p>
 	</xsl:for-each>
 	</main>
 </body>
