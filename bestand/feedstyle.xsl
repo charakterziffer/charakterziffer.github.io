@@ -29,6 +29,7 @@
 		<xsl:value-of select="link"/></xsl:attribute>
 			<xsl:value-of select="title"/></a></h3>
 		<p>Veröffentlicht am <xsl:value-of select="pubDate"/></p>
+		<p>Test: <xsl:value-of select="substring(pubDate, 0, 15)"/></p>
 	</xsl:for-each>
 	</main>
 </body>
