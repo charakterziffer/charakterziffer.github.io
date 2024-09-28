@@ -30,7 +30,7 @@
 			<xsl:value-of select="title"/></a></h3>
 		<p>Veröffentlicht am <xsl:value-of select="pubDate"/></p>
 		<xsl:variable name="datum" select="pubDate"/>
-		<p>Test: <xsl:value-of select="format-dateTime($datum, '[F]')"/></p>
+		<p>Test: <xsl:value-of select="concat(substring($datum, 0, 15)"/></p>
 	</xsl:for-each>
 	</main>
 </body>
