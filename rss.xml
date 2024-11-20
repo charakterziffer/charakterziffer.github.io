@@ -14,6 +14,120 @@
 </image>
 
 <item>
+	<title>Maschinengetippte Ideen</title>
+	<description>&lt;p&gt;In den letzten Monaten habe mich häufiger an meine Schreibmaschine gesetzt und überlegt, wie man sie für kreative Projekte nutzen kann. Ein paar Sachen sind mir eingefallen, zum Beispiel:&lt;/p&gt;
+
+&lt;ul style=&quot;columns:13em; margin: 1em 0 -.3em&quot;&gt;
+&lt;li&gt;Dankesnotiz&lt;/li&gt;
+&lt;li&gt;Gebrauchsanleitung&lt;/li&gt;
+&lt;li&gt;Landkarte&lt;/li&gt;
+&lt;li&gt;Seitenlayout&lt;/li&gt;
+&lt;li&gt;Plakat mit vergrößerter Schreibmaschinen-Schrift&lt;/li&gt;
+&lt;li&gt;Haiku/Gedicht&lt;/li&gt;
+&lt;li&gt;Studie zu Mustern&lt;/li&gt;
+&lt;li&gt;Moiré-Muster&lt;/li&gt;
+&lt;li&gt;Programm-Code&lt;/li&gt;
+&lt;li&gt;Labyrinth&lt;/li&gt;
+&lt;li&gt;Postkarte mit &lt;a href=&quot;https://de.wikipedia.org/wiki/ASCII-Art&quot;&gt;ASCII-Art&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kleine Buchstaben-Monster&lt;/li&gt;
+&lt;li&gt;Seestück aus Buchstaben&lt;/li&gt;
+&lt;li&gt;ASCII-Blumenvase&lt;/li&gt;
+&lt;li&gt;Benutzeroberfläche eines Computerprogramms nachahmen&lt;/li&gt;
+&lt;li&gt;Text mit großem Initial-Buchstaben&lt;/li&gt;
+&lt;li&gt;Pixel-Schriften&lt;/li&gt;
+&lt;li&gt;Entscheidungsbaum/Diagramm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;… also eine wilde Mischung aus inhaltlichen und formalen Ideen. Die Beschränkungen der Schreibmaschine (feste Schriftart und Größe, fixe Zeilenabstände und Zeichenbreiten) fand ich recht inspirierend und habe ausgelotet, was innerhalb dieser Grenzen möglich ist und wie man sie umgehen könnte.&lt;/p&gt;
+
+&lt;h2 id=&quot;neun-umgesetzte-einfälle&quot;&gt;Neun umgesetzte Einfälle&lt;/h2&gt;
+
+&lt;p&gt;Nach Interesse und Zeit habe ich einige der Ideen dann aufs Papier gebracht. Zuerst ein &lt;strong&gt;Brief an meine Tante&lt;/strong&gt;, bei dem ich Teile handgeschrieben habe, andere Teile mit der Maschine getippt und an den Übergängen Getipptes und Handschrift kombiniert habe. Außerdem habe ich darin flächige, getippte Muster ausprobiert.&lt;/p&gt;
+
+&lt;p&gt;Das zweite Bild zeigt einen &lt;a href=&quot;https://de.wikipedia.org/wiki/Moir%C3%A9-Effekt&quot;&gt;Moiré-Effekt&lt;/a&gt;. Legt man zwei Raster verdreht übereinander, ergeben sich musterhafte Strukturen. In dem Fall hab ich einfach sehr viele &lt;em&gt;m&lt;/em&gt; und Leerzeichen aufs Papier gehämmert, danach noch einmal oben drüber mit leicht verdrehtem Blatt. Zum dritten habe ich ein &lt;strong&gt;fiktives Formular&lt;/strong&gt; gestaltet, mit dem man das Tippen einen bevorzugten Textes beantragen kann.&lt;/p&gt;
+
+&lt;p&gt;Die quadratischen Bildchen zeigen jeweils einen Ausschnitt als Voransicht, ein Klick öffnet eine größere Version, wo mehr zu sehen ist.&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(11em, 1fr)); }
+.bildraster &gt; a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%;
+	object-fit: contain; overflow: clip; }
+
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
+.bildraster &gt; a { flex: 1 1 11em; margin: .5em; } }
+
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;bildraster&quot;&gt;
+&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/galerie/sm01k.jpg&quot; alt=&quot;Ausschnitt aus einem Brief an meine Tante, wo ich Handschrift und Schreibmaschinentext kombiniert habe. Die Abbildung zeigt auch vier kleine Flächen, die mit unterschiedlichen getippten Mustern gefüllt sind.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/galerie/sm02k.jpg&quot; alt=&quot;Auf der Schreibmaschine getipptes Muster: Abwechselnd ein Leerzeichen und ein kleines m über die ganze Seite geschrieben. Anschließend nochmal das Gleiche, aber leicht verdreht. Durch den unterschiedlichen Winkel ergeben sich ringförmige Strukturen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/galerie/sm03k.jpg&quot; alt=&quot;Fiktives Formular, mit dem ein getippter Text beantragt werden kann. Man kann den Wunschtext eintragen, die grobe Form des Texts ankreuzen und Bemerkungen eintragen. Am Ende legt man das gewünschte Lieferdatum und den Empfänger fest, darunter Datum und Unterschrift. Das Formular entstand auf der Schreibmaschine, ausgefüllt handschriftlich mit graugrüner Tinte.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/galerie/sm04k.jpg&quot; alt=&quot;Papier in einer orangefarbenen Schreibmaschine. Das kleine x wurde wie ein Pixel genutzt, um die englischen Wörter “Black Mustard” in drei verschiedenen Größen zu schreiben.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/galerie/sm05k.jpg&quot; alt=&quot;Getippte Seite mit verschiedenen Gestaltungselementen: Eine größere Überschrift aus Pixelbuchstaben, ein breiter Absatz, darunter ein zweispaltiger Abschnitt mit einem größeren Initial am Anfang.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/galerie/sm06k.jpg&quot; alt=&quot;Das Gemälde der Mona-Lisa als Poster, allerdings in 48 engen Zeilen mit jeweils 25 Zeichen sehr grob aber erkennbar nachgeahmt.&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Manchmal sind Schreibmaschinen-Buchstaben etwas zu klein, zum Beispiel für die Etiketten von Gewürzdosen. Darum hab ich im vierten Bild &lt;strong&gt;Pixelfonts&lt;/strong&gt; aus dem Kleinbuchstaben &lt;em&gt;x&lt;/em&gt; nachgetippt. (“Black Mustard” bezeichnet auf englisch schwarze Senfkörner).&lt;/p&gt;
+
+&lt;p&gt;Im Bild 5 habe ich frei Schnauze ein komplizierteres &lt;strong&gt;Seitenlayout&lt;/strong&gt; getippt (und mich bei der Spaltenbreite auch glatt verrechnet). Inhaltlich ging es in der Kurzgeschichte genau um diesen Drahtseil-Akt zwischen Planung und Spontanität.&lt;/p&gt;
+
+&lt;p&gt;Für das &lt;a href=&quot;fensterbilder-2.html&quot;&gt;Fensterbild&lt;/a&gt; im Format DIN A3 habe ich Da Vincis &lt;em&gt;Mona Lisa&lt;/em&gt; getippt und mit dem Scanner vergrößert. Das Motiv habe ich für ein &lt;a href=&quot;miniheft-2.html&quot;&gt;Miniheft&lt;/a&gt; entworfen – ein weiteres Schreibmaschinen-Projekt.&lt;/p&gt;
+
+&lt;div class=&quot;bildraster&quot;&gt;
+&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/galerie/sm07k.jpg&quot; alt=&quot;Zwei Textspalten. Links: Ein vorgetippter, zu setztender Text. Leerzeichen am Zeilenende sind durch je ein Plus ersetzt, überzählige Zeichen mit einem Schrägstrich durchgestrichen. Mit roten Strichen und Häkchen ist markiert, wo Leerraum innerhalb jeder Zeile vergrößert oder verringert werden soll.Rechts dann der ausgeglichene Text im Blocksatz. Dafür sind hier die Lücken zwischen den Wörter teilweise größer als ein Leerzeichen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/galerie/sm08k.jpg&quot; alt=&quot;Ein getipptes Bild, das Blumen in einer Vase zeigt. Außerdem kleinere Abbildungen, wie dieses Bild entstanden ist: Erst eine grobe Bleistift-Skizze, dann mit Farbe auf die wichtigsten Details reduzieren. Diese Zeichnung einscannen und als Vorlage nutzen, um im Grafikprogramm passende Buchstaben auf die richtige Position zu setzen (11 Zeichen/Inch breit, 12 Halbzeilen/Inch hoch). Schließlich möglichst fehlerfrei auf meiner orangenen Schreibmaschine abtippen, fertig.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/galerie/sm09k.jpg&quot; alt=&quot;Auf kariertes Papier getipptes Gedicht: „Quellcode. Es sei Herbstregen. Es sei ein Haus. Darin mindestens ein Zimmer mit der Eigenschaft war und der Eigenschaft großes Fenster. Im Zimmer sein ein Sessel, darauf ein Ich mit der Eigenschaft erfüllt sowie dem Attribut Papier und dem Attribut Stift. Im Herbstregen im Haus im Zimmer im Sessel schreibe ich Quellcode.“&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Für das siebte Bild habe ich einen Text in den &lt;strong&gt;Blocksatz&lt;/strong&gt; gebracht – was mit der Schreibmaschine ein bisschen Schummeln und Tricksen erfordert. Gut, dass sich der Schreibwagen bei gedrückter Leertaste um eine &lt;em&gt;halbe&lt;/em&gt; Einheit verschiebt. So sind auch halbe oder anderthalb Leerzeichen zum Ausgleichen möglich.&lt;/p&gt;
+
+&lt;p&gt;Bei Glückwünschen macht sich ein &lt;strong&gt;Blumenstrauß&lt;/strong&gt; immer recht gut, finde ich. Im Bild 8 habe ich eine Vase mit Blumen getippt, vielleicht verwende ich das für eine Geburtstagskarte. Ein Klick auf die Vorschau des Bildes zeigt die Entstehung: Erst eine grobe Bleistift-Skizze, dann mit Farbe auf die wichtigsten Details reduzieren. Diese Zeichnung einscannen und als Vorlage im Grafikprogramm nutzen, schließlich möglichst fehlerfrei abtippen.&lt;/p&gt;
+
+&lt;p&gt;Das &lt;strong&gt;Herbstgedicht&lt;/strong&gt; im letzten Bild hatte ich schon im vergangenen November geschrieben. Thematisch und formal hat es Anklänge an Computercode, da bietet sich eine maschinengetippte Umsetzung sehr an.&lt;/p&gt;
+
+&lt;h2 id=&quot;vom-nervenkitzel-drohender-tippfehler&quot;&gt;Vom Nervenkitzel drohender Tippfehler&lt;/h2&gt;
+
+&lt;p&gt;Wenn ich etwas mit der Hand schreibe oder zeichne, sind kleine Unsauberkeiten oder Fehler etwas völlig normales. Bei Handgeschriebenem rechnet niemand damit, dass es perfekt aussieht. Das Schriftbild der Schreibmaschine lässt Texte aber so erscheinen, als seien sie auf einem Computer angefertigt worden. Entsprechend hoch sind die Erwartungen (zumindest meine), was Gestaltung und Fehlerfreiheit angeht.&lt;/p&gt;
+
+&lt;p&gt;Zwar lassen sich Vertipper mit &lt;em&gt;Tipp-Ex&lt;/em&gt; oder ähnlichen Mitteln korrigieren, die Fehlerstelle bleibt aber sichtbar. Darum war ich doch immer ein bisschen aufgeregt, während ich versucht habe, einen Text sauber und fehlerfrei zu tippen – würde ich mich doch verdrücken? Die Feststelltaste vergessen? Mich bei den Einrückungen vertun? Den Rand nicht einhalten? Eine Taste doppelt drücken? Nochmal alles neu schreiben müssen? Oder das Unperfekte akzeptieren? (siehe dazu auch das Bild 5 oben, mit einer Kurzgeschichte über diesen Drahtseil-Akt.)&lt;/p&gt;
+
+&lt;p&gt;Wenn ich einen Text nicht mehrmals schreiben will, brauche ich Konzentration und eine gute Vorstellung davon, wie die Seite am Ende aussehen soll. Das Schreiben und das Gestalten ist eine untrennbare Einheit, die heute am Computer nicht mehr besteht. In einem Textprogramm schreibe ich einfach drauflos, gehe zurück wenn ich etwas ergänzen möchte, lösche Vertipper problemlos und kann in aller Ruhe verschieden Schriften, Abstände und andere Formatierungen ausprobieren, bis ich irgendwann beschließe, dass das Dokument nun gut genug aussieht.&lt;/p&gt;
+
+&lt;h2 id=&quot;andere-ausdruckmittel&quot;&gt;Andere Ausdruckmittel&lt;/h2&gt;
+
+&lt;p&gt;Einige Sachen sind mit der Schreibmaschine dagegen viel einfacher umzusetzen, zum Beispiel schräge Zeilen oder leicht versetzte Buchstaben innerhalb einer Zeile (einfach die Walze auf stufenlos stellen und leicht hin und her drehen). Man kann das Farbband ausschalten und die Schriftzeichen fühlbar ins Papier drücken. Sehr leicht ist es, Zeichen übereinander zu tippen (auch verschoben), was neue Gestaltungsmöglichkeiten bietet. Aus Buchstaben eine Pixelgrafik mit unterschiedlichen Helligkeitsstufen aufzubauen, das unsichtbare Raster fester Abstände zu nutzen, Gestaltung linear und nicht von der Fläche her zu denken … das alles ist doch recht inspirierend.&lt;/p&gt;
+
+&lt;p&gt;Zum Abschluss möchte ich noch eine &lt;a href=&quot;https://archive.org/details/wicharytypewriter&quot;&gt;Sammlung alter Broschüren&lt;/a&gt; zum Thema Schreibmaschine verlinken, zusammengetragen und gescannt von Marcin Wichary. Die &lt;a href=&quot;https://archive.org/details/wicharytypewriter?tab=collection&amp;amp;query=artyping&quot;&gt;Hefte über Schreibmaschinenkunst&lt;/a&gt; fand ich besonders interessant.&lt;/p&gt;
+
+&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
+&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm01.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm02.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm03.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm04.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm05.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm06.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm07.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm08.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm09.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/schreibmaschine.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/schreibmaschine.html</guid>
+	<pubDate>Wed, 20 Nov 2024 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Das wird man ja wohl noch träumen dürfen!</title>
 	<description>&lt;p&gt;Hat Fiktion ihre Unschuld verloren? Sich gegenseitig mit Geschichten zu unterhalten, so zu tun als ob?&lt;/p&gt;
 
@@ -319,24 +433,6 @@ body:has(header &gt; a[title=&quot;Zur Startseite&quot;]) { font-family: Seravek
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/webfont-vorteile.html</guid>
 	<pubDate>Wed, 28 Aug 2024 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Ein Zine von der Schreibmaschine</title>
-	<description>&lt;p&gt;Kürzlich habe ich unsere alte Schreibmaschine aus dem Keller geholt und überlegt, was man damit Kreatives anfangen könnte. Als Projekt sind mir die Minihefte („Zines“) wieder eingefallen, für die ich vor vier Jahren hier im Blog eine &lt;a href=&quot;miniheft.html&quot;&gt;Bastelanleitung&lt;/a&gt; veröffentlicht habe. Ich finde diese Heftchen recht inspirierend und habe mithilfe der Schreibmaschine nun ein weiteres gestaltet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/miniheft-2.jpg&quot; alt=&quot;Verschiedene Ansichten des Schreibmaschinenheftchens&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Im Grunde bestehen das gefaltete Heft aus einer einzelnen Seite. Dadurch lässt es sich leicht kopieren und nachbasteln. Hier die Vorlage für mein Schreibmaschinen-Zine:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;material/miniheft-2.pdf&quot; download=&quot;schreibmazine.pdf&quot;&gt;Druckvorlage herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 2,0 MB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Beim Falten bitte darauf achten, dass die Titelseite immer außen bleibt. Die &lt;a href=&quot;miniheft.html&quot;&gt;Faltanleitung als Video&lt;/a&gt; gibt es in meinem Blogartikel vom Mai 2020. Dort finden sich Druckvorlagen für zwei weitere Minihefte und ein bisschen Inspiration für eigene Gestaltungen.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/miniheft-2.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/miniheft-2.html</guid>
-	<pubDate>Tue, 06 Aug 2024 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
