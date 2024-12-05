@@ -84,7 +84,7 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>Angenommen, eine Infografik soll verschiedene Intensitätswerte ausdrücken, von ganz schwach bis sehr stark. Klingt zunächst ziemlich einfach und sofort hat man eine Palette gebastelt, bei der die Farbdichte von 5<small> </small>% bis 95<small> </small>% gleichmäßig zunimmt:</p>
 
-<p><img src="material/grauskala-1.svg" alt="Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend" /></p>
+<p><img src="material/bis2020/grauskala-1.svg" alt="Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend" /></p>
 
 <p>Doch komisch: Obwohl die Helligkeit von einer Stufe zur nächsten jeweils um 10<small> </small>% abnimmt, wirkt die Verteilung überhaupt nicht gleichmäßig. Gerade an den Enden der Skala scheinen die Unterschiede stärker zu sein. Zwischen 5<small> </small>% und 15<small> </small>% scheint die Helligkeit mehr abzunehmen als in der Mitte von 35<small> </small>% bis 65<small> </small>% Grau. Auch von 85<small> </small>% zu 95<small> </small>% wirken die Unterschiede größer.</p>
 
@@ -94,11 +94,11 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>Um die Intensitäten der grauen Felder in der Skala vergleichen zu können, muss man die Prozente erst mal in ein Schwarz-Weiß-Verhältnis umrechnen (genannt <em>v</em>). Man stelle sich vor, auf jedem Feld liegen 100 Kügelchen, entweder schwarz oder weiß. Zum Beispiel beinhaltet die Fläche mit 15<small> </small>% dann 15 schwarze Kügelchen und 85 weiße (= 100 − 15). Das Verhältnis von Schwarz zu Weiß ist für dieses Feld 15 zu 85 oder als Dezimalzahl ausgedrückt 0,18 (= 15 ÷ 85). Auf unsere Grauskala übertragen sieht das dann folgendermaßen aus:</p>
 
-<p><img src="material/grauskala-2.svg" alt="Grauskala mit 10 Helligkeitsstufen und den entsprechenden Schwarz-Weiß-Verhältnissen" /></p>
+<p><img src="material/bis2020/grauskala-2.svg" alt="Grauskala mit 10 Helligkeitsstufen und den entsprechenden Schwarz-Weiß-Verhältnissen" /></p>
 
 <p>Mit den Schwarz-Weiß-Verhältnissen lässt sich jetzt nachrechnen, wie stark die Farbdichte von Stufe zu Stufe zunimmt – und zwar relativ betrachtet: Mit welchem Faktor muss man das Schwarz-Weiß-Verhältnis eines Feldes multiplizieren, um zum nächsten Feld zu kommen? Zur Info: Ich habe mit den genauen Brüchen gerechnet, nicht mit den gerundeten Zahlen in der Skizze; also nicht 0,18÷0,05 sondern (15/85)÷(5/95).</p>
 
-<p><img src="material/grauskala-3.svg" alt="Grauskala, zwischen den Feldern jeweils der Faktor von einer Farbdichte zur nächsten" /></p>
+<p><img src="material/bis2020/grauskala-3.svg" alt="Grauskala, zwischen den Feldern jeweils der Faktor von einer Farbdichte zur nächsten" /></p>
 
 <p>Und jetzt bestätigt sich, was wir am Anfang wahrgenommen haben: Am linken und rechten Rand der Skala sind die Faktoren zwischen den Felder viel größer (3,35) als in der Mitte (1,48). Der Grauwert ändert sich außen tatsächlich stärker als innen – zumindest relativ, so wie wir Menschen es eben sehen.</p>
 
@@ -114,17 +114,17 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>Mit dem berechneten Faktor <em>w</em> gerundet auf 1,924 ergibt sich eine Grauskala mit den folgenden Schwarz-Weiß-Verhältnissen <em>v</em>:</p>
 
-<p><img src="material/grauskala-4.svg" alt="Grauskala mit angeglichenen Schwarz-Weiß-Verhältnissen, jeweils mit dem gleichen Faktor dazwischen" /></p>
+<p><img src="material/bis2020/grauskala-4.svg" alt="Grauskala mit angeglichenen Schwarz-Weiß-Verhältnissen, jeweils mit dem gleichen Faktor dazwischen" /></p>
 
 <p>(Bitte wieder berücksichtigen, dass die Zahlen in der Skizze gerundet sind! Ich habe die Berechnung nicht mit 0,05 gestartet, sondern mit dem genauen Bruch 5/95.)</p>
 
 <p>Das Schwarz-Weiß-Verhältnis <em>v</em> haben wir ja erhalten aus Schwarzanteil ÷ Weißanteil, wobei der Weißanteil die Menge zu den fehlenden 100<small> </small>% war. Wir können uns die Prozentzahl von Schwarz (genannt <em>x</em>) berechnen aus der Formel für das Schwarz-Weiß-Verhältnis v = x ÷ (100 − x), umgestellt: x = 100v ÷ (1 + v). Und schon können wir die eben erstellte Grauskala mit Prozentwerten füllen:</p>
 
-<p><img src="material/grauskala-5.svg" alt="Grauskala mit 10 Helligkeitsstufen, die Prozentwerte diesmal berechnet für eine gleichmäßig wirkende Verteilung" /></p>
+<p><img src="material/bis2020/grauskala-5.svg" alt="Grauskala mit 10 Helligkeitsstufen, die Prozentwerte diesmal berechnet für eine gleichmäßig wirkende Verteilung" /></p>
 
 <p>Zum Vergleich nochmal die anfängliche Skala:</p>
 
-<p><img src="material/grauskala-1.svg" alt="Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend" /></p>
+<p><img src="material/bis2020/grauskala-1.svg" alt="Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend" /></p>
 
 <p>Und, erscheint die korrigierte Version nicht viel gleichmäßiger? Übrigens habe ich die Infos zu diesem Phänomen und die ganze Berechnung aus Jacques Bertins Standardwerk „Graphische Semiologie“ (dt. 1974). Dort findet sich dieses Thema auf den Seiten 82/83 unter der Überschrift „Konstruktion äquidistanter Helligkeitswert-Stufen“.</p>
 
@@ -136,7 +136,7 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>Beginnend mit 3/97 für Weiß ergeben sich folgende Schwarz-Weiß-Verhältnisse: 0,03 / 0,12 / 0,46 / 1,75 / 6,72 / 25,8 / 99,0. Daraus lassen sich schließlich mit x = 100v ÷ (1 + v) folgende Prozentwerte berechnen: 3% / 11% / 31% / 64% / 87% / 96% / 99%. Und so siehst das ganze aus:</p>
 
-<p><img src="material/grauskala-6.svg" alt="Grauskala mit 7 Helligkeitsstufen von 3% bis 99%" /></p>
+<p><img src="material/bis2020/grauskala-6.svg" alt="Grauskala mit 7 Helligkeitsstufen von 3% bis 99%" /></p>
 
 <p>(Und hier müsste man auf jeden Fall die dunklen Werte anpassen – glaube nie der reinen Mathematik, wenn es um Wahrnehmung geht!) Wer übrigens keine Lust auf diese Rechnerei hat, es mit der Helligkeitszunahme nicht ganz so genau nehmen muss oder für eine Infografik mehr braucht, als eine monochrome Farbskala, dem hilft der <a href="https://learnui.design/tools/data-color-picker.html">Data Color Picker</a> oder der <a href="https://gka.github.io/palettes">Chroma.js Color Palette Helper</a>.</p>
 

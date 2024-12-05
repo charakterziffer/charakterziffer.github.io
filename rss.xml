@@ -369,7 +369,7 @@ body:has(header &gt; a[title=&quot;Zur Startseite&quot;]) { font-family: Seravek
 
 &lt;p&gt;– Nun ja. Genau wie Bilder und Videos sollte man Webschriften fürs Internet optimieren. Meine drei Webfonts sind zusammen beispielsweise nur 60 kB groß, die gleiche Dateigröße wie das Bild vom &lt;a href=&quot;schiff-des-theseus&quot;&gt;Buch „Das Schiff des Theseus“&lt;/a&gt; in meinem Lesetipp.&lt;/p&gt;
 
-&lt;figure&gt;&lt;img src=&quot;material/theseus.jpg&quot; alt=&quot;Aufgeschlagenes Buch mit farbigen Notizen, zwischen vielen Seiten klemmen Beilagen&quot; /&gt;
+&lt;figure&gt;&lt;img src=&quot;material/bis2020/theseus.jpg&quot; alt=&quot;Aufgeschlagenes Buch mit farbigen Notizen, zwischen vielen Seiten klemmen Beilagen&quot; /&gt;
 	&lt;figcaption&gt;Dieses Bild hat die gleiche Dateigröße (60&lt;small&gt;&amp;nbsp;&lt;/small&gt;kB) wie alle meine Webfonts: czSlab (26&lt;small&gt;&amp;nbsp;&lt;/small&gt;kB), Source Sans Regular (19&lt;small&gt;&amp;nbsp;&lt;/small&gt;kB) und Italic (15&lt;small&gt;&amp;nbsp;&lt;/small&gt;kB).&lt;/figcaption&gt;
 &lt;/figure&gt;
 
