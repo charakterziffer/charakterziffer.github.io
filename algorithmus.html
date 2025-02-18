@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde:r,
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Post an @charakterziffer@typo.social.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<title>Vom Algorithmus gefüttert // @cz+</title>
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="@cz+ Blogartikel">
+
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<meta name="theme-color" content="#228811">
+<meta name="color-scheme" content="light dark">
+
+<meta name="description" content="Auf Social Media wird vorsortiert, was du zu sehen bekommst – um deine Aufmerksamkeit möglichst lang zu fesseln. Zu wissen, wie ein Algorithmus funktioniert, hilft zu einen bewussteren Umgang.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="fediverse:creator" content="charakterziffer@typo.social" />
+<meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
+@media print { header:after {
+content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/algorithmus.html&choe=UTF-8');
+position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
+<div>
+<form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
+<input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
+<input type="hidden" id="q" name="q">
+<input type="hidden" name="kl" value="de-de">
+<input type="hidden" name="kj" value="281">
+<input type="hidden" name="kx" value="666">
+<input type="hidden" name="k9" value="281">
+<input type="hidden" name="kaa" value="839">
+<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="submit" value="🔍" aria-label="Suchen">
+</form>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/extra/index.html">Extra</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main>
+<article>
+<time datetime="2025-02-18">Di, 18. Febr. 2025</time>
+<h1>Vom Algorithmus gefüttert</h1>
+<p>Als einzigen Social-Media-Dienst nutze ich Mastodon. Es ist eine Plattform vor allem für sehr kurze Texte, vergleichbar mit X (früher Twitter). Die meisten anderen Plattformen haben nämlich eine Eigenschaft, die mir missfällt: einen Algorithmus.</p>
+
+<p>Prinzipiell ist sind Algorithmen sehr praktisch. Es sind „Rezepte“ zum Lösen einer Aufgabe. Mit einem Algorithmus findet man schnell ein ziemlich gutes Ergebnis für ein Problem, dessen exakte Lösung viel Rechenaufwand erfordern würde. Ein Beispiel aus der Mathematik ist das <a href="https://www.matheretter.de/wiki/heron-verfahren">Heron-Verfahren</a>, um Wurzeln näherungsweise zu berechnen.</p>
+
+<p>Wenn bei <em>Social Media</em> von Algorithmen die Rede ist, geht es in der Regel darum, wie Beiträge im Feed sortiert werden und welche Posts ich überhaupt zu Gesicht bekomme. Ein Beispiel ist <a href="https://www.bpb.de/lernen/bewegtbild-und-politische-bildung/themen-und-hintergruende/lernen-mit-und-ueber-tiktok/523787/funktionsweise-wie-funktioniert-tiktok/">TikTok mit seiner For-You-Funktion</a>. Dort stellt mir ein Algorithmus eine nicht endende Flut von Filmchen zusammen. Was ich sehe hängt davon ab, wie lang ich mir vorangehende Videos anschaue, was ich like, erneut abspiele, kommentiere … kurz: Jede meiner Interaktionen beeinflusst, was als nächstes abgespielt wird. Dazu kommen bei TikTok noch Faktoren wie mein Standort, allgemeine Trends und weiteres. Wie der Algorithmus genau funktioniert, verrät die Betreiberfirma <em>ByteDance</em> nicht.</p>
+
+<h2 id="bleib-doch-noch-ein-weilchen">Bleib doch noch ein Weilchen</h2>
+
+<p>Das Ziel von Algorithmen ist für jedes soziale Netzwerk dasselbe: Vorgeblich soll ich dadurch die Inhalte sehen, die relevant für mich sind und mich besonders interessieren. Letztendlich geht es für die Plattform aber vor allem darum, mich bei der Stange halten. Nur wenn ich möglichst lange durch den Feed scrolle, kann mir Werbung ausgespielt werden. Je mehr Zeit ich auf der Plattform verbringe, desto mehr Geld verdient der Betreiber mit meiner Aufmerksamkeit.</p>
+
+<p>Ein Effekt eines Sortier-Algorithmus ist, dass ich keine breite Themenauswahl mit verschiedenen Perspektiven mehr sehe, sondern nur noch die Themen, die mich „packen“: Niedliche Meerschweinchen-Videos, News von meinem Lieblingsverein oder innovative Nudelrezepte. Es müssen auch nicht unbedingt Inhalte sein, die meiner Meinung entsprechen – im Gegenteil: Posts, die mich aufregen, sind perfekt geeignet, mich zu einer Reaktion zu reizen (<em>engagement</em>, „mich einbringen“): <a href="https://www.zdf.de/nachrichten/ratgeber/spaghetti-carbonara-original-rezept-100.html">Carbonara-Soße mit Knoblauch?</a> Sacrilego!</p>
+
+<h2 id="abgleiten-ins-extreme">Abgleiten ins Extreme</h2>
+
+<p>Weil empörende oder knallige Inhalte besonders stark zur Interaktion anregen, erhöhen Algorithmen in der Regel deren Verbreitung. So erreichen Posts, die Widerspruch oder Bekräftigung provozieren, deutlich mehr Nutzer:innen als jene Inhalte, die eher nachdenklich oder ausgewogen sind. Aufrührende Fakes und Kampagnen haben mehr Durchschlagskraft als deren Korrekturen und Einordnungen.</p>
+
+<p>Je nachdem, wie ein Algorithmus arbeitet, kann das zu immer radikaleren Beiträgen führen, die jemand angezeigt bekommt. Beispielsweise hat <a href="https://netzpolitik.org/2019/radikalisierung-durch-youtube-grosszahlige-studie-zur-empfehlung-rechtsextremer-inhalte/">YouTube bis 2019 immer extremere Videos empfohlen</a> (wurde später geändert, so dass dieser <a href="https://www.deutschlandfunknova.de/beitrag/social-media-algorithmen-radikalisierung-durch-youtube-ist-laut-studie-nicht-nachweisbar">Radikalisierungs-Effekt 2023 nicht mehr nachweisbar</a> war). Facebook empfiehlt <a href="https://www.sueddeutsche.de/politik/facebook-radikalisierung-gruppenvorschlaege-1.5516117">politische Gruppen mit hetzenden Inhalten</a> und trägt damit zur Normalisierung extremer Aussagen bei.</p>
+
+<p>Nebenbei: Es ist übrigens auch eine menschliche Eigenschaft, <a href="https://www.heise.de/hintergrund/In-welchen-Stufen-sich-Verschwoerungen-auf-Social-Media-verbreiten-9240725.html">sich selbst in Meinungsblasen zu begeben</a> und eventuell zu radikalisieren. Wir suchen lieber Bestätigung als Widerspruch und blenden Gegenargumente gern aus. Auch andere Faktioren können zur <a href="https://www.digitalcheck.nrw/digital-weiterwissen/radikalisierung-im-netz">Radikalisierung durch digitale Medien</a> betragen.</p>
+
+<h2 id="anschreiben-gegen-den-algorithmus">Anschreiben gegen den Algorithmus</h2>
+
+<p>Dass du vor allem reißerische Inhalte in deinen Feed sortiert bekommst, ist aber nur <em>eine</em> Seite des Problems. Den Leuten, die dir folgen, geht es nämlich genauso. Auch sie bekommen vorgefiltert, was emotional zündet – also nicht unbedingt das, was du so schreibst. Zwar finden deine Follower entschieden, dass du interessante Sachen machst und bewusst bei dir auf „Folgen“/„Abonnieren“ geklickt … und trotzdem sehen sie gar nicht alles, was du veröffentlichst. Außer, du unterwirfst dich dem Algorithmus, formulierst deine Posts kontroverser, provozierst Reaktionen, zündelst mit.</p>
+
+<p>Um vom Algorithmus nicht herabgestuft zu werden und unwissentlich weniger Reichweite zu bekommen (Fachbegriff: <a href="https://de.wikipedia.org/wiki/Shadowban">„Shadowban“</a>), haben sich Tricksereien wie <a href="https://www.klicksafe.de/news/algospeak-was-bedeuten-die-codes-und-emojis-auf-tiktok-und-co">Algospeak</a> entwickelt. Nutzer:innen vermeiden bestimmte Schlüsselworte und drücken sich anders aus: Statt „Sex“ oder „Depression“ schreiben sie „Seggs“ oder „Depressi0n“.</p>
+
+<p>In einigen Fällen wird ein ganzes Konzept durch eine Metapher ersetzt, um die Reichweitendrosselung durch Algorithmen zu verhindern. Ein aktuelles Beispiel aus USA ist der Hashtag <em>#winterboots</em> („Winterstiefel“). Dabei geht es allerdings nicht um Schuhe, sondern um Tipps für Migranten gegen die Einwanderungs- und Zollbehörde. Deren Abkürzung ICE entspricht dem englischen Word für Eis, wogegen Winterstiefel recht nützlich sind. Sehr lesenswert zum Thema <em>Algospeak</em> finde ich einen kurzen <a href="https://netzpolitik.org/2025/algospeak-was-winterschuhe-mit-politik-zu-tun-haben/">Artikel von Netzpolitik.org</a> mit weiteren Beispielen.</p>
+
+<h2 id="besser-keine-algorithmen">Besser keine Algorithmen?</h2>
+
+<p>Und nun? Sollen wir uns in den Sozialen Medien in immer absurdere Metaphern versteigen, für mehr Reichweite gepfeffert formulieren oder dieses ganze <em>Social Media</em> einfach lassen? Mögliche Alternativen wären vorhanden: E-Mail-Newsletter, <a href="rss-feeds.html">RSS-Feeds</a>, Lesezeichen für gute Websites oder Podcasts.</p>
+
+<p>Wie anfangs erwähnt gibt es Netzwerke, in denen die Beiträge chronologisch erscheinen und nicht von Algorithmen gefiltert oder verstärkt werden. Neben Mastodon gehört dazu auch die Foto-Plattform Flickr, die bewusst <a href="https://blog.flickr.net/en/2025/02/04/artistry-over-algorithms/">auf Algorithmen verzichtet (engl.)</a>; dazu weitere, kleine Netzwerke (z.<small> </small>B. Vero, Ello, MeWe, TapeReal – mir alle eher unbekannt).</p>
+
+<p>Andererseits hat die rein zeitliche Sortierung ohne Algorithmen einen großen Nachteil: Leute, die viel veröffentlichen, sind in der Timeline dann deutlich präsenter als jemand mit wenigen, aber vielleicht interessanteren Posts – Masse schlägt Qualität. Dagegen können bestimmte Filter helfen (um belanglose Schlagworte auszublenden) oder den Vielschreibern bewusst zu entfolgen, wenn sie die Timeline zu sehr dominieren.</p>
+
+<h2 id="oder-bessere-algorithmen">Oder bessere Algorithmen?</h2>
+
+<p>Beiträge meiner Interessen hervorheben, radikale Inhalte zurückstufen, mich vor einer überfordernden Masse bewahren – Algorithmen sind nicht per se „böse“, sondern können durchaus nützlich sein. Entscheidend ist, welche Schwerpunkte ein Unternehmen mit seiner Sortier-Mechanik setzen will: Die Aufmerksamkeit des Nutzer:innen möglichst lange in Beschlag nehmen? Interaktion provozieren und dabei eventuell radikalisieren?</p>
+
+<p>Um vor Manipulation geschützt zu sein und selbst entscheiden zu können, ob ein Algorithmus fair arbeitet, braucht es vor allem eines: Transparenz. Unternehmen müssen offen legen, wie ihre Sortierung in etwa funktioniert: Welche Faktoren werden wie stark gewichtet, welches Verhalten und welche Inhalte vermindern die Reichweite, warum erscheint dieser oder jener Beitrag in meinem Feed?</p>
+
+<p>Durch Transparenz ist vielleicht nicht zu 100 Prozent nachvollziehbar, warum dir der Algorithmus einen ganz bestimmten Beitrag vor die Nase setzt – schließlich sind Algorithmen oft so komplex, dass selbst ihre Entwickler:innen am Ende nicht mehr genau wissen, warum eine Entscheidung so und nicht anders getroffen wird. Immerhin bekommst du aber eine gute Ahnung, womit du es zu tun hast.</p>
+
+<p>Ein Beispiel für <a href="https://algorithmen.zdf.de/">transparente Algorithmen liefert das ZDF</a>. Es erklärt, wie Empfehlungen in der Mediathek zustande kommen, welche Faktoren eine Rolle spielen und begründet sogar, warum diese dem Auftrag eines öffentlich-rechtlichen Senders entsprechen (z.<small> </small>B. damit auch wenig genutzte Beiträge sichtbarer werden). In diesem Fall kann eine Personalisierung durch Algorithmen den Zuschauer:innen einen tatsächlichen Mehrwert bieten.</p>
+
+<p>Abschließend als Lesetipp noch ein <a href="https://www.bbc.com/news/articles/cp8e4p4z97eo">BBC-Artikel über Algorithmen (engl.)</a> – mit einem Überblick, wie sich Social-Media-Algorithmen entwickelt haben, wie sie den öffentlichen Diskurs beeinflussen und ob sie durch Vorfilterung die Meinungsfreiheit beeinträchtigen könnten.</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp; <a href="archiv.html?kritik">#kritik</a>&nbsp;</p>
+</article>
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/algorithmus">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" spellcheck="false">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocomplete="email" spellcheck="false" autocapitalize="off">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" spellcheck="false" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" rows="8" cols="50" required spellcheck="true"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="nuetzlichkeit.html">← Muss es nützlich sein?</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside class="no-hyphens">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
+</body>
+</html>
