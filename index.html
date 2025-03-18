@@ -74,6 +74,71 @@ position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjus
 <p>Auf dieser Website ist Raum für das, wofür meinem Mastodon-Account <a href="https://typo.social/@charakterziffer/">@charakterziffer</a> zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2025-03-19">Mi, 19. März 2025</time>
+	<h1><a href="oelfarben.html">Ölfarben sind eigensinnig</a></h1>
+	<p>Schon 2023 habe ich mir ein Tuben-Set mit Ölfarbe gekauft, dazu fünf Leinwände. Viel Erfahrung beim Malen mit Öl habe ich nicht und traue mich nur langsam ran. Bislang habe ich ein abstraktes, graphisches Spektrum gemalt und mich an einem groben Porträt versucht – das aber gründlich misslungen ist (beide <a href="fensterbilder-2.html">bei meinen Fensterbildern</a> zu sehen). Nun also mein dritter Anlauf in Sachen Ölmalerei.</p>
+
+<p>Diesmal habe ein eher einfaches Motiv gewählt, nämlich ein Arrangement verschiedener Blumen – ohne reale Vorlage, sondern im Kopf so zusammengestellt und grob mit Bleistift skizziert. Inspiriert dazu hat mich unter anderem die fünfteilige <a href="https://www.arte.tv/de/videos/RC-026202/im-rausch-der-blumen/">Arte-Serie „Im Rausch der Blumen“</a>, die verschiedene Florist:innen bei ihren Projekten begleitet.</p>
+
+<h2 id="das-schwierigste-geduld">Das Schwierigste: Geduld</h2>
+
+<p>Wenn ich mit Wasserfarbe male, geht es verhältnismäßig schnell, bis eine Farbfläche getrocknet ist. Nach spätestens 20 Minuten kann ich mit einer neuen Farbe weitermachen, ohne dass verschiedene Schichten sich mischen oder Formen ineinander laufen. Beim Malen mit Öl brauche ich deutlich mehr Geduld.</p>
+
+<figure id="crossfade">
+  <img src="material/oelbild/oelbild-1.jpg" alt="Blau grundierte Leinwand." />
+  <img src="material/oelbild/oelbild-2.jpg" alt="Dazu fünf breite, lanzettförmige Blätter." />
+  <img src="material/oelbild/oelbild-3.jpg" alt="Dazu hellgrüne Blättchen, dunkle Stängel, grüne Tupfer." />
+  <img src="material/oelbild/oelbild-4.jpg" alt="Dazu zwei Gruppen mit grauvioletten Blüten, ähnlich wie Stiefmütterchen." />
+  <img src="material/oelbild/oelbild-5.jpg" alt="An diesen Blüten nun jeweils ein gelbes Blütenblatt." />
+  <img src="material/oelbild/oelbild-6.jpg" alt="Dazu drei große rote Schneeball-Blumen, die Veilchen haben teils dunklere Blütenblätter, mehr grün getupfte Blätter." />
+  <img src="material/oelbild/oelbild-7.jpg" alt="In der Mitte kommen drei organgene Korbblütler dazu." />
+  <img src="material/oelbild/oelbild-8.jpg" alt="Das finale Blumenbild: An den Stängeln am Rand kamen weiße Blütentupfen dazu, die Korbblütler jetzt mit brauner Mitte, schwarze Mitten für die Veilchen, Highlights für die Ballenblumen und die dunkelgrünen Blätter." />
+</figure>
+
+<style>
+#crossfade { position: relative; display: block; aspect-ratio: 8/7; }
+#crossfade img { position: absolute; z-index: 1; opacity: 0; }
+#crossfade img:first-child, #crossfade img:last-child { opacity: 1; }
+#crossfade img:first-child { z-index: 2; transition: opacity 3s ease; }
+@media (min-width: 32em) { #crossfade {
+	float: left; width: 60%; margin: 1.4em 1.4em .4em 0; } }
+</style>
+
+<script>
+var crossfade = document.getElementById('crossfade');
+setInterval(function() { var topItem = crossfade.firstChild;
+	crossfade.appendChild(topItem); }, 3000);
+</script>
+
+<p>Ich habe das Motiv in einzelne Elemente aufgeteilt, die ich über Tage hinweg nach und nach ergänzen konnte. Das ging beim Blumenbouquet recht gut:</p>
+
+<p>Preußisch Blauer Hintergrund, darauf erstmal fünf dunkelgrüne Blätter. Nun weitere hellgrüne Blättchen und dunkle Stängel aus der Mitte heraus. Dann zwei Gruppen mit grau-blau-rosa Nebenblumen, die ein bisschen an Stiefmütterchen erinnern sollen. Diese haben im nächsten Schritt jeweils ein gelbes Kronblatt bekommen, anschließend kamen drei rote Blumenballen auf die Leinwand. Das noch leere Zentrum füllen orange-gelbe Korbblütler, deren Mitte ich im letzten Schritt braun ausgemalt habe. Dazu weiße Tupfen wie Schleierkraut, dunkle Akzente und ein paar letzte Details. Die animierte Bilderfolge zeigt die verschiedenen Phasen, zwischen denen das Bild immer wieder trocknen musste. <em>(Den Code für die animierte Überblendung habe ich mir übrigens von <a href="https://danklammer.com/articles/minimal-crossfade/">Dan Klammer</a> abgeschaut.)</em></p>
+
+<p>Je nachdem, wie dick man die Ölfarbe aufträgt, ist sie sogar nach zwei Tagen noch zu feucht, um etwas darüber malen zu können. Zum Beispiel wollte ich in meinem Blumenbild weiße Highlights in die roten Blütenbälle setzen. Pustekuchen: Das Rot war noch nicht getrocknet und so haben sich eher rosafarbene Flecken ergeben. Nicht meine Absicht, aber akzeptabel.</p>
+
+<h2 id="leuchtende-farben-fortgemischt">Leuchtende Farben fortgemischt</h2>
+
+<p>In Schule und Studium hatte ich gelernt, welche Grundfarben man kombinieren muss, um einen bestimmten Farbton zu erreichen – mit Ölfarben ist das Mischen aber gar nicht so einfach. Zum Beispiel vermisse ich bei meinen Öltuben ein leuchtendes Violett, das ich gern für die kleineren Nebenblumen eingesetzt hätte. In der Theorie erhalte ich Violett, wenn ich Rot mit ein wenig Blau mische …</p>
+
+<p>Wenn ich in der Praxis aber zwei Ölfarbkleckse verrühre, verlieren sie sehr schnell ihre Leuchtkraft. Der entstandene Farbton ist matt und fast immer dunkler, als ich ihn mir vorgestellt habe. Anfangs hatte ich noch den Fehler gemacht, dann wieder etwas Weiß hinzuzufügen. Dadurch wird das Ergebnis zwar heller, dabei aber noch grauer als zuvor. Ob ich beim Mischen etwas falsch mache? Vermutlich ist es einfach so, dass gemischte Ölfarben nicht so schön leuchten wie reine Farbtöne direkt aus der Tube.</p>
+
+<h2 id="pastoser-farbauftrag">Pastoser Farbauftrag</h2>
+
+<p>Was ich bei Ölfarbe wirklich mag, ist ihre cremige Konsistenz. Man kann sie dick wie eine Paste auftragen und hat zusätzlich zur Farbe noch eine Oberflächenstruktur. Mit etwas Geschick lässt sich das Motiv stellenweise modellieren.</p>
+
+<p><img src="material/oelbild/oeldetails.jpg" alt="Details des Bildes. Die Farbe ist dick wie eine Paste aufgetragen und an manchen Stellen verschmieren zwei Farben ineinander ohne sich richtig zu mischen." /></p>
+
+<p>Durch die Dickflüssigkeit gibt es auch die Möglichkeit, eine Stelle komplett deckend zu übermalen. Sehr praktisch, weil der Hintergrund tatsächlich wieder hinter dem Motiv verschwindet. Bei Wasserfarbe muss man mit der Hintergrundfarbe überall die Bereiche aussparen, wo später noch das Motiv hinkommt. Meistens male ich dann von vorne nach hinten und setze den Hintergrund am Schluss in die Lücken, die das Motiv übrig gelassen hat.</p>
+
+<p>Ein weiterer, schöner Effekt ist ein Pinselstrich mit zwei Farben gleichzeitig, die sich untereinander nicht vollständig mischen. Das ergibt eine interessante Linie mit mehreren Schattierungen. Beim Malen mit Wasserfarbe darf man dafür die Pigmente nur mit sehr wenig Wasser anrühren; mit Ölfarbe geht das deutlich einfacher.</p>
+
+<p>Kürzlich habe ich über Acrylfarbe gelesen, dass sie ähnlich cremig wie Ölfarbe sein soll, dabei aber schneller trocknet. Damit könnte ich auch mal herumexperimentieren …</p>
+
+	<p>---<br /><a href="oelfarben.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2025-02-18">Di, 18. Febr. 2025</time>
 	<h1><a href="algorithmus.html">Vom Algorithmus gefüttert</a></h1>
 	<p>Als einzigen Social-Media-Dienst nutze ich Mastodon. Es ist eine Plattform vor allem für sehr kurze Texte, vergleichbar mit X (früher Twitter). Die meisten anderen Plattformen haben nämlich eine Eigenschaft, die mir missfällt: einen Algorithmus.</p>
@@ -186,119 +251,6 @@ Nützlichkeit bestimmt den Wert, den wir allem zuschreiben: Arbeit, Aktivitäten
 		</p>
 </article>
 
-<article>
-	<time datetime="2024-11-20">Mi, 20. Nov. 2024</time>
-	<h1><a href="schreibmaschine.html">Maschinengetippte Ideen</a></h1>
-	<p>In den letzten Monaten habe mich häufiger an meine Schreibmaschine gesetzt und überlegt, wie man sie für kreative Projekte nutzen kann. Ein paar Sachen sind mir eingefallen, zum Beispiel:</p>
-
-<ul style="columns:13em; margin: 1em 0 -.3em">
-<li>Dankesnotiz</li>
-<li>Gebrauchsanleitung</li>
-<li>Landkarte</li>
-<li>Seitenlayout</li>
-<li>Plakat mit vergrößerter Schreibmaschinen-Schrift</li>
-<li>Haiku/Gedicht</li>
-<li>Studie zu Mustern</li>
-<li>Moiré-Muster</li>
-<li>Programm-Code</li>
-<li>Labyrinth</li>
-<li>Postkarte mit <a href="https://de.wikipedia.org/wiki/ASCII-Art">ASCII-Art</a></li>
-<li>Kleine Buchstaben-Monster</li>
-<li>Seestück aus Buchstaben</li>
-<li>ASCII-Blumenvase</li>
-<li>Benutzeroberfläche eines Computerprogramms nachahmen</li>
-<li>Text mit großem Initial-Buchstaben</li>
-<li>Pixel-Schriften</li>
-<li>Entscheidungsbaum/Diagramm</li>
-</ul>
-
-<p>… also eine wilde Mischung aus inhaltlichen und formalen Ideen. Die Beschränkungen der Schreibmaschine (feste Schriftart und Größe, fixe Zeilenabstände und Zeichenbreiten) fand ich recht inspirierend und habe ausgelotet, was innerhalb dieser Grenzen möglich ist und wie man sie umgehen könnte.</p>
-
-<h2 id="neun-umgesetzte-einfälle">Neun umgesetzte Einfälle</h2>
-
-<p>Nach Interesse und Zeit habe ich einige der Ideen dann aufs Papier gebracht. Zuerst ein <strong>Brief an meine Tante</strong>, bei dem ich Teile handgeschrieben habe, andere Teile mit der Maschine getippt und an den Übergängen Getipptes und Handschrift kombiniert habe. Außerdem habe ich darin flächige, getippte Muster ausprobiert.</p>
-
-<p>Das zweite Bild zeigt einen <a href="https://de.wikipedia.org/wiki/Moir%C3%A9-Effekt">Moiré-Effekt</a>. Legt man zwei Raster verdreht übereinander, ergeben sich musterhafte Strukturen. In dem Fall hab ich einfach sehr viele <em>m</em> und Leerzeichen aufs Papier gehämmert, danach noch einmal oben drüber mit leicht verdrehtem Blatt. Zum dritten habe ich ein <strong>fiktives Formular</strong> gestaltet, mit dem man das Tippen einen bevorzugten Textes beantragen kann.</p>
-
-<p>Die quadratischen Bildchen zeigen jeweils einen Ausschnitt als Voransicht, ein Klick öffnet eine größere Version, wo mehr zu sehen ist.</p>
-
-<style>
-<!--
-.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(11em, 1fr)); }
-.bildraster > a { display: flex; justify-content: center;
-	align-items: center; margin: 0; padding: 0; }
-.bildraster img { max-width: 100%; width: 100%;
-	object-fit: contain; overflow: clip; }
-
-@supports not (display: grid) {
-.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
-.bildraster > a { flex: 1 1 11em; margin: .5em; } }
-
-.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
-.lightbox:target { display: block; animation: none; }
-.lightbox span { display: block; width: 100%; height: 100%;
-	background-position: center; background-repeat: no-repeat; background-size: contain; }
--->
-</style>
-
-<div class="bildraster">
-<a href="#bild-01"><img src="material/galerie/sm01k.jpg" alt="Ausschnitt aus einem Brief an meine Tante, wo ich Handschrift und Schreibmaschinentext kombiniert habe. Die Abbildung zeigt auch vier kleine Flächen, die mit unterschiedlichen getippten Mustern gefüllt sind." /></a>
-<a href="#bild-02"><img src="material/galerie/sm02k.jpg" alt="Auf der Schreibmaschine getipptes Muster: Abwechselnd ein Leerzeichen und ein kleines m über die ganze Seite geschrieben. Anschließend nochmal das Gleiche, aber leicht verdreht. Durch den unterschiedlichen Winkel ergeben sich ringförmige Strukturen." /></a>
-<a href="#bild-03"><img src="material/galerie/sm03k.jpg" alt="Fiktives Formular, mit dem ein getippter Text beantragt werden kann. Man kann den Wunschtext eintragen, die grobe Form des Texts ankreuzen und Bemerkungen eintragen. Am Ende legt man das gewünschte Lieferdatum und den Empfänger fest, darunter Datum und Unterschrift. Das Formular entstand auf der Schreibmaschine, ausgefüllt handschriftlich mit graugrüner Tinte." /></a>
-<a href="#bild-04"><img src="material/galerie/sm04k.jpg" alt="Papier in einer orangefarbenen Schreibmaschine. Das kleine x wurde wie ein Pixel genutzt, um die englischen Wörter “Black Mustard” in drei verschiedenen Größen zu schreiben." /></a>
-<a href="#bild-05"><img src="material/galerie/sm05k.jpg" alt="Getippte Seite mit verschiedenen Gestaltungselementen: Eine größere Überschrift aus Pixelbuchstaben, ein breiter Absatz, darunter ein zweispaltiger Abschnitt mit einem größeren Initial am Anfang." /></a>
-<a href="#bild-06"><img src="material/galerie/sm06k.jpg" alt="Das Gemälde der Mona-Lisa als Poster, allerdings in 48 engen Zeilen mit jeweils 25 Zeichen sehr grob aber erkennbar nachgeahmt." /></a>
-</div>
-
-<p>Manchmal sind Schreibmaschinen-Buchstaben etwas zu klein, zum Beispiel für die Etiketten von Gewürzdosen. Darum hab ich im vierten Bild <strong>Pixelfonts</strong> aus dem Kleinbuchstaben <em>x</em> nachgetippt. (“Black Mustard” bezeichnet auf englisch schwarze Senfkörner).</p>
-
-<p>Im Bild 5 habe ich frei Schnauze ein komplizierteres <strong>Seitenlayout</strong> getippt (und mich bei der Spaltenbreite auch glatt verrechnet). Inhaltlich ging es in der Kurzgeschichte genau um diesen Drahtseil-Akt zwischen Planung und Spontanität.</p>
-
-<p>Für das <a href="fensterbilder-2.html">Fensterbild</a> im Format DIN A3 habe ich Da Vincis <em>Mona Lisa</em> getippt und mit dem Scanner vergrößert. Das Motiv habe ich für ein <a href="miniheft-2.html">Miniheft</a> entworfen – ein weiteres Schreibmaschinen-Projekt.</p>
-
-<div class="bildraster">
-<a href="#bild-07"><img src="material/galerie/sm07k.jpg" alt="Zwei Textspalten. Links: Ein vorgetippter, zu setztender Text. Leerzeichen am Zeilenende sind durch je ein Plus ersetzt, überzählige Zeichen mit einem Schrägstrich durchgestrichen. Mit roten Strichen und Häkchen ist markiert, wo Leerraum innerhalb jeder Zeile vergrößert oder verringert werden soll.Rechts dann der ausgeglichene Text im Blocksatz. Dafür sind hier die Lücken zwischen den Wörter teilweise größer als ein Leerzeichen." /></a>
-<a href="#bild-08"><img src="material/galerie/sm08k.jpg" alt="Ein getipptes Bild, das Blumen in einer Vase zeigt. Außerdem kleinere Abbildungen, wie dieses Bild entstanden ist: Erst eine grobe Bleistift-Skizze, dann mit Farbe auf die wichtigsten Details reduzieren. Diese Zeichnung einscannen und als Vorlage nutzen, um im Grafikprogramm passende Buchstaben auf die richtige Position zu setzen (11 Zeichen/Inch breit, 12 Halbzeilen/Inch hoch). Schließlich möglichst fehlerfrei auf meiner orangenen Schreibmaschine abtippen, fertig." /></a>
-<a href="#bild-09"><img src="material/galerie/sm09k.jpg" alt="Auf kariertes Papier getipptes Gedicht: „Quellcode. Es sei Herbstregen. Es sei ein Haus. Darin mindestens ein Zimmer mit der Eigenschaft war und der Eigenschaft großes Fenster. Im Zimmer sein ein Sessel, darauf ein Ich mit der Eigenschaft erfüllt sowie dem Attribut Papier und dem Attribut Stift. Im Herbstregen im Haus im Zimmer im Sessel schreibe ich Quellcode.“" /></a>
-</div>
-
-<p>Für das siebte Bild habe ich einen Text in den <strong>Blocksatz</strong> gebracht – was mit der Schreibmaschine ein bisschen Schummeln und Tricksen erfordert. Gut, dass sich der Schreibwagen bei gedrückter Leertaste um eine <em>halbe</em> Einheit verschiebt. So sind auch halbe oder anderthalb Leerzeichen zum Ausgleichen möglich.</p>
-
-<p>Bei Glückwünschen macht sich ein <strong>Blumenstrauß</strong> immer recht gut, finde ich. Im Bild 8 habe ich eine Vase mit Blumen getippt, vielleicht verwende ich das für eine Geburtstagskarte. Ein Klick auf die Vorschau des Bildes zeigt die Entstehung: Erst eine grobe Bleistift-Skizze, dann mit Farbe auf die wichtigsten Details reduzieren. Diese Zeichnung einscannen und als Vorlage im Grafikprogramm nutzen, schließlich möglichst fehlerfrei abtippen.</p>
-
-<p>Das <strong>Herbstgedicht</strong> im letzten Bild hatte ich schon im vergangenen November geschrieben. Thematisch und formal hat es Anklänge an Computercode, da bietet sich eine maschinengetippte Umsetzung sehr an.</p>
-
-<h2 id="vom-nervenkitzel-drohender-tippfehler">Vom Nervenkitzel drohender Tippfehler</h2>
-
-<p>Wenn ich etwas mit der Hand schreibe oder zeichne, sind kleine Unsauberkeiten oder Fehler etwas völlig normales. Bei Handgeschriebenem rechnet niemand damit, dass es perfekt aussieht. Das Schriftbild der Schreibmaschine lässt Texte aber so erscheinen, als seien sie auf einem Computer angefertigt worden. Entsprechend hoch sind die Erwartungen (zumindest meine), was Gestaltung und Fehlerfreiheit angeht.</p>
-
-<p>Zwar lassen sich Vertipper mit <em>Tipp-Ex</em> oder ähnlichen Mitteln korrigieren, die Fehlerstelle bleibt aber sichtbar. Darum war ich doch immer ein bisschen aufgeregt, während ich versucht habe, einen Text sauber und fehlerfrei zu tippen – würde ich mich doch verdrücken? Die Feststelltaste vergessen? Mich bei den Einrückungen vertun? Den Rand nicht einhalten? Eine Taste doppelt drücken? Nochmal alles neu schreiben müssen? Oder das Unperfekte akzeptieren? (siehe dazu auch das Bild 5 oben, mit einer Kurzgeschichte über diesen Drahtseil-Akt.)</p>
-
-<p>Wenn ich einen Text nicht mehrmals schreiben will, brauche ich Konzentration und eine gute Vorstellung davon, wie die Seite am Ende aussehen soll. Das Schreiben und das Gestalten ist eine untrennbare Einheit, die heute am Computer nicht mehr besteht. In einem Textprogramm schreibe ich einfach drauflos, gehe zurück wenn ich etwas ergänzen möchte, lösche Vertipper problemlos und kann in aller Ruhe verschieden Schriften, Abstände und andere Formatierungen ausprobieren, bis ich irgendwann beschließe, dass das Dokument nun gut genug aussieht.</p>
-
-<h2 id="andere-ausdruckmittel">Andere Ausdruckmittel</h2>
-
-<p>Einige Sachen sind mit der Schreibmaschine dagegen viel einfacher umzusetzen, zum Beispiel schräge Zeilen oder leicht versetzte Buchstaben innerhalb einer Zeile (einfach die Walze auf stufenlos stellen und leicht hin und her drehen). Man kann das Farbband ausschalten und die Schriftzeichen fühlbar ins Papier drücken. Sehr leicht ist es, Zeichen übereinander zu tippen (auch verschoben), was neue Gestaltungsmöglichkeiten bietet. Aus Buchstaben eine Pixelgrafik mit unterschiedlichen Helligkeitsstufen aufzubauen, das unsichtbare Raster fester Abstände zu nutzen, Gestaltung linear und nicht von der Fläche her zu denken … das alles ist doch recht inspirierend.</p>
-
-<p>Zum Abschluss möchte ich noch eine <a href="https://archive.org/details/wicharytypewriter">Sammlung alter Broschüren</a> zum Thema Schreibmaschine verlinken, zusammengetragen und gescannt von Marcin Wichary. Die <a href="https://archive.org/details/wicharytypewriter?tab=collection&amp;query=artyping">Hefte über Schreibmaschinenkunst</a> fand ich besonders interessant.</p>
-
-<!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen -->
-<p><a href="#_" class="lightbox" id="bild-01"><span style="background-image:url(material/galerie/sm01.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-02"><span style="background-image:url(material/galerie/sm02.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-03"><span style="background-image:url(material/galerie/sm03.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-04"><span style="background-image:url(material/galerie/sm04.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-05"><span style="background-image:url(material/galerie/sm05.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-06"><span style="background-image:url(material/galerie/sm06.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-07"><span style="background-image:url(material/galerie/sm07.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-08"><span style="background-image:url(material/galerie/sm08.jpg)"></span></a>
-<a href="#_" class="lightbox" id="bild-09"><span style="background-image:url(material/galerie/sm09.jpg)"></span></a></p>
-
-	<p>---<br /><a href="schreibmaschine.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -332,7 +284,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2025-02-23T09:26:24+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2025-03-18T23:41:37+01:00</p>
 
 </main>
 
