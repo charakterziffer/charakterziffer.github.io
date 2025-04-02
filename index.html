@@ -32,10 +32,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="referrer" content="strict-origin">
 
-<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
-@media print { header:after {
-content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/&choe=UTF-8');
-position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+<style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
+@media print { header:after { content: ""; width: 110px; height: 110px;
+background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/'); background-size: 110px;
+position: absolute; right: .7em; top: 1em;
+z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 <!-- Verifikation für opendesktop.org -->
@@ -284,7 +285,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2025-03-18T23:41:37+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2025-04-02T18:18:59+02:00</p>
 
 </main>
 

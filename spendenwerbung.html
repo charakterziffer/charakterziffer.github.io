@@ -32,10 +32,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="referrer" content="strict-origin">
 
-<style> /* QR-Code mit URL für Ausdrucke, siehe smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/ */
-@media print { header:after {
-content: url('https://chart.googleapis.com/chart?cht=qr&chs=110x110&chl=https://charakterziffer.github.io/spendenwerbung.html&choe=UTF-8');
-position: absolute; right: .5em; top:.2em; z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+<style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
+@media print { header:after { content: ""; width: 110px; height: 110px;
+background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/spendenwerbung.html'); background-size: 110px;
+position: absolute; right: .7em; top: 1em;
+z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
