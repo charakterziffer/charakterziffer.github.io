@@ -14,6 +14,33 @@
 </image>
 
 <item>
+	<title>Skulptur</title>
+	<description>&lt;style&gt;
+&lt;!--
+.fade-in { mask-image: linear-gradient(to bottom, transparent, white); }
+.fade-out { mask-image: linear-gradient(to bottom, white, transparent 75%); }
+--&gt;
+&lt;/style&gt;
+
+&lt;p class=&quot;fade-in&quot;&gt;Menschen stiegen ein, stiegen aus, erfüllten den Raum mit diffusen Murmeln. Auf einem der hinteren Sitze öffnete Alex ihren mattschwarzen Geigenkasten. Vor dem Fenster spielte ein Junge Kästchenhüpfen, zusammen mit anderen Kindern, die wegen seiner Springkünste begeistert klatschten. Ein Hund bellte.&lt;/p&gt;
+
+&lt;p&gt;Das Taxi kam einen Augenblick nach dem Bus am Konzerthaus an. Alex hatte die Satteltasche an sich genommen. Mit einem beherzten Wurf platzierte Jonas den Stein auf dem Feld Nº 6. Das Publikum klatschte. Die Geigen hatten bereits zu summen begonnen, während Maria ihre Noten aufschlug. Sie hatte noch etwas Zeit; die Triangel kam im ersten Satz nicht vor. Als der Gesang einsetzte, erhob sich der Uniformierte. Er nahm sein Rad und wartete, bis der Bus zum Stehen kam. Bevor der Postbote wieder auf das Fahrrad stieg, zog er den Kopfhörer aus dem Ohr und legte ihn zu den Briefen in die Satteltasche.&lt;/p&gt;
+
+&lt;p&gt;Der Junge blickte kurz auf, als der Uniformierte vorbeifuhr, dann nahm er den Stein aus dem vorigen Feld. Es musste sich um Alex handelt, vermutete Frau Mohnfeld. Ganz sicher war sie sich bei den Zwillingen aber nie. Sie schob den Vorhang wieder vor, denn die Sonne blinzelte durch die Schleierwolken. In diesem Augenblick bellte erneut ihr Hund und kurz darauf klapperte der Briefschlitz.&lt;/p&gt;
+
+&lt;p&gt;Seinem Gefühl nach hatte die Generalprobe nur eine Viertelstunde gedauert. Jonas knabberte eine Mohrrübe, während er im Foyer auf den Bus wartete. Ob seine Tante die Konzertkarten rechtzeitig bekommen hatte? Nach einem Blick auf die Standuhr warf Jonas die zweite Mohrrübe in seine Satteltasche und eilte auf die Straße. Das graue Licht des Morgens brach sich im feinen Nieselregen. An der Bushaltestelle warteten Alex und Maria, über das Konzert redend, als die Linie 14 um das Justizgebäude bog. Menschen stiegen ein, stiegen aus, erfüllten den Raum mit diffusen Murmeln. Auf einem der hinteren Sitze öffnete Alex ihren mattschwarzen Geigenkasten. Vor dem Fenster spielte ein Junge Kästchenhüpfen, zusammen mit anderen Kindern, die wegen seiner Springkünste begeistert klatschten. Ein Hund bellte.&lt;/p&gt;
+
+&lt;p class=&quot;fade-out&quot;&gt;Das Taxi kam einen Augenblick nach dem Bus am Konzerthaus an. Alex hatte die Satteltasche an sich genommen. Mit einem beherzten Wurf platzierte Jonas den Stein auf dem Feld Nº 6. Das Publikum klatschte. Die Geigen hatten bereits zu summen begonnen, während Maria ihre Noten aufschlug. Sie hatte noch etwas Zeit; die Triangel kam im ersten Satz nicht vor.&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot; style=&quot;background-color:var(--nebelgrau)&quot;&gt;Diese Kurzgeschichte ist inspiriert von den früheren Zwischensequenzen bei arte-Programmhinweisen(&lt;a href=&quot;https://www.youtube.com/watch?v=tSJzq_ifwy0&amp;amp;list=PL47SHE1KRxr8o4NqGHucs4OHq7-pGoIvE&amp;amp;index=1&quot;&gt;arte Idents 2011&lt;/a&gt;). Daran fasziniert haben mich die mehrdeutige Handlung und die Idee eines abstrakten Gebildes, das immer wieder andere Blickwinkel bietet.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/skulptur.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/skulptur.html</guid>
+	<pubDate>Tue, 22 Apr 2025 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Ölfarben sind eigensinnig</title>
 	<description>&lt;p&gt;Schon 2023 habe ich mir ein Tuben-Set mit Ölfarbe gekauft, dazu fünf Leinwände. Viel Erfahrung beim Malen mit Öl habe ich nicht und traue mich nur langsam ran. Bislang habe ich ein abstraktes, graphisches Spektrum gemalt und mich an einem groben Porträt versucht – das aber gründlich misslungen ist (beide &lt;a href=&quot;fensterbilder-2.html&quot;&gt;bei meinen Fensterbildern&lt;/a&gt; zu sehen). Nun also mein dritter Anlauf in Sachen Ölmalerei.&lt;/p&gt;
 
@@ -306,66 +333,6 @@ Nützlichkeit bestimmt den Wert, den wir allem zuschreiben: Arbeit, Aktivitäten
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/schreibmaschine.html</guid>
 	<pubDate>Wed, 20 Nov 2024 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Das wird man ja wohl noch träumen dürfen!</title>
-	<description>&lt;p&gt;Hat Fiktion ihre Unschuld verloren? Sich gegenseitig mit Geschichten zu unterhalten, so zu tun als ob?&lt;/p&gt;
-
-&lt;p&gt;Letzte Woche zog der Hurrikan Milton über Florida, hinterließ Tote, Verletzte und hohe Schäden. Zeitgleich fegte ein Sturm der Gerüchte und Verschwörungserzählungen durch soziale Netzwerke: Der Hurrikan werde vom Pentagon gesteuert, die US-Demokraten zahlten nur geringe Hilfsgelder, das Geld werde an Migranten weitergeleitet, die (demokratische) Regierung lasse die Opfer im Stich. Geschichten, die Hass gegen politische Gegner entfachen, aber auch gegen Eingewanderte, Wissenschaftler, Journalistinnen und Helfende vor Ort. Geschichten, um sich nicht mit der menschgemachten Klima-Erwärmung auseinandersetzen zu müssen, die das Leben auf diesem Planeten zunehmend ungemütlicher macht.&lt;/p&gt;
-
-&lt;p&gt;Sind wir nach dem Informationszeitalter nun im Desinformationszeitalter angekommen? Wo Gesellschaften auseinanderbrechen, weil sie sich nicht mehr auf eine gemeinsame Realität einigen, sondern lieber durch fabrizierte Märchenwelten tänzeln (unterfüttert mit KI-generiertem „Beweismaterial“)?&lt;/p&gt;
-
-&lt;h2 id=&quot;fiktion-aber-konstruktiv&quot;&gt;Fiktion, aber konstruktiv&lt;/h2&gt;
-
-&lt;p&gt;Meine erfundenen Fakten begannen vor fast 14 Jahren als heitere kleine Serie, um die Phantasie anzuregen: Was wäre, wenn unsere Welt ein bisschen anders funktionieren würde? Wenn wir andere Möglichkeiten nutzen? Wenn wir träumten? Das kann Fiktion nämlich auch: sich von alten Vorstellungen verabschieden und Weltbilder ändern – zum Schlechten, aber auch zum Guten.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⌛ Erfundenes #Faktum № 121: Die Twitter-Plattform war nur deshalb für einige Zeit offline, weil die darunterliegende Software auf Mastodon Version 4.0 umgestellt werden musste. (&lt;a href=&quot;https://typo.social/@charakterziffer/109363870244573611&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;👹 Erfundenes #Faktum № 122: Wer gern Dämonen fängt, hat in den nächsten zwölf Nächten perfekte Bedingungen. Einfach Wäsche waschen und möglichst draußen aufhängen. Laut altem Volkglauben verheddern sich böse Geister am besten in weißem Bettzeug. (&lt;a href=&quot;https://typo.social/@charakterziffer/109574162358817976&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;📵 Erfundenes #Faktum № 123: Künftig dürfen Kinovorstellungen in Deutschland nur noch ohne Smartphone besucht werden. Hintergrund: In mehreren Kinos randalierten Jugendliche, um anschließend Videos davon auf TikTok zu veröffentlichen. (&lt;a href=&quot;https://typo.social/@charakterziffer/109987933854501789&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;♫ Erfundenes #Faktum № 124: Texte von Schlagern behandeln zwischenmenschliche Themen und persönliche Erfahrungen in verständlicher und eingängiger Weise. Darum sind sie hervorragend als Lebensberatung geeignet. (&lt;a href=&quot;https://typo.social/@charakterziffer/110495732254958623&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;𐄷 Erfundenes #Faktum № 125: Mit etwas Übung lässt sich am Gewicht eines Smartphones sehr leicht feststellen, wie voll der Akku noch geladen ist. (&lt;a href=&quot;https://typo.social/@charakterziffer/110667094523360407&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;⇱ Erfundenes #Faktum № 126: Wenn man Papiertaschentücher beim Schneuzen systematisch faltet und dann 36 Stunden trocknet, lassen sie sich bis zu neunmal wiederverwenden. (&lt;a href=&quot;https://typo.social/@charakterziffer/110853356207723974&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🝖 Erfundenes #Faktum № 127: Die einfachste Art, um Antimaterie zu erzeugen, ist, ein vakuumgefülltes Gefäß ca. 30 Sekunden in der Mikrowelle zu erhitzen. (&lt;a href=&quot;https://typo.social/@charakterziffer/111341276058257137&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;≋ Erfundenes #Faktum № 128: Wenn man zu oft seine Haare wäscht, verlieren sie mit der Zeit ihre Farbe und werden grau. (&lt;a href=&quot;https://typo.social/@charakterziffer/112636679997212423&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;仿 Erfundenes #Faktum № 129: Seit gut einem Jahr werden KI-Sprachmodelle erfolgreich eingesetzt, um Social-Media-Plattformen zu ersetzen. Fast niemand merkt, dass alle anderen in der Timeline nur vorgespielte Avatare sind. Ziel ist, Nutzer zu erwünschtem Verhalten zu manipulieren. (&lt;a href=&quot;https://typo.social/@charakterziffer/112998679017576706&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;🌬 Erfundenes #Faktum № 130: Rund 95 Prozent aller Verbesserungen misslingen übrigens nur deshalb, weil sie nicht ausprobiert werden. […] (&lt;a href=&quot;https://typo.social/@charakterziffer/113311378927583688&quot;&gt;#&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Diese Twitterserie gibt es übrigens schon seit Dezember 2010. Als Blogeintrag gebündelt habe ich die Folgen &lt;a href=&quot;erfundene-fakten-1.html&quot;&gt;1–16&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-2.html&quot;&gt;17–28&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-3.html&quot;&gt;29–40&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-4.html&quot;&gt;41–50&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-5.html&quot;&gt;51–60&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-6.html&quot;&gt;61–70&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-7.html&quot;&gt;71–80&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-8.html&quot;&gt;81–90&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-9.html&quot;&gt;91–100&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-10.html&quot;&gt;101–110&lt;/a&gt;, &lt;a href=&quot;erfundene-fakten-11.html&quot;&gt;111–120&lt;/a&gt; und &lt;a href=&quot;erfundene-fakten-12.html&quot;&gt;121–130&lt;/a&gt;.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/erfundene-fakten-12.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/erfundene-fakten-12.html</guid>
-	<pubDate>Tue, 15 Oct 2024 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
