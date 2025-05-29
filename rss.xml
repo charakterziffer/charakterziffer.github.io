@@ -14,6 +14,84 @@
 </image>
 
 <item>
+	<title>Eine Taube aus Papier</title>
+	<description>&lt;p&gt;An Origami-Figuren mag ich, dass sie auf die wichtigsten Formen reduziert sind – gerade so viel, dass man erkennen kann, worum es sich handelt. In meinem Blog habe ich inzwischen so einige Faltanleitungen veröffentlicht: Für einen &lt;a href=&quot;origamikarpfen.html&quot;&gt;Karpfen&lt;/a&gt;, eine &lt;a href=&quot;origamischachtel.html&quot;&gt;Schachtel&lt;/a&gt;, einen &lt;a href=&quot;origamistier.html&quot;&gt;Stier&lt;/a&gt;, eine &lt;a href=&quot;origamimoewe.html&quot;&gt;Möwe&lt;/a&gt;, einen &lt;a href=&quot;origamihase.html&quot;&gt;Hasen&lt;/a&gt; und ein kleines &lt;a href=&quot;origamituetchen.html&quot;&gt;Papiertütchen&lt;/a&gt;. Hier folgt die Anleitung für eine Taube:&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+[class^=&quot;taube&quot;] { position: relative; width: 98.5%; height: 0;
+	margin: 1.65em 0 1.45em; padding-bottom: 19.1%;
+	line-height: 0; border: 0; background-size: 100% auto;
+	background-image: url(&apos;material/origamitaube.jpg&apos;); }
+[class^=&quot;taube&quot;] a { visibility:hidden; }
+.taube1 { background-position: 0 0; }
+.taube2 { background-position: 0 25%; }
+.taube3 { background-position: 0 50%; }
+.taube4 { background-position: 0 75%; }
+.taube5 { background-position: 0 100%; }
+@media screen and (prefers-color-scheme: dark) {
+	[class^=&quot;taube&quot;] { filter:brightness(.8); } }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;taube1&quot; title=&quot;Faltschritte 1–4&quot;&gt;&lt;a href=&quot;material/origamitaube.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Man benötigt ein quadratisches Papier, es sollte nicht zu dick sein. Eine gute Größe sind 15&lt;small&gt; &lt;/small&gt;cm Seitenlänge. Die untere Ecke auf die gegenüberliegende Ecke falten.
+Falls das Papier etwas dicker ist, dann sollt man es nicht falten, sondern diagonal durchschneiden und im nächsten Schritt mit einem der Dreiecke weitermachen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Die linke Hälfte des Dreiecks nach rechts falten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Nun die Ecke unten rechts auf die Ecke oben falten – allerdings nur die vordere Papierschicht.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; So sieht es aus. Dann das Papier einmal wenden …&lt;/p&gt;
+
+&lt;div class=&quot;taube2&quot; title=&quot;Faltschritte 5–8&quot;&gt;&lt;a href=&quot;material/origamitaube.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; … und die vormals hintere Papierschicht ebenfalls nach oben falten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt; Das Dreieck so hinlegen, dass die offenen Spitzen links liegen, die lange Seite zeigt nach oben. Jetzt die untere Spitze auf die Mitte der langen Seite falten (nur vordere Papierschicht).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt; So, nun kommt eine kleine Schwierigkeit. Die Faltung 6 wieder rückgängig machen, dann die Figur an der linken Seite öffnen und die grün markierte Kante …&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8.&lt;/strong&gt; … nach innen stülpen. Am Ende ist das kleine Dreieck, das in Schritt 7 außen war, nach innen gewandert.&lt;/p&gt;
+
+&lt;div class=&quot;taube3&quot; title=&quot;Faltschritte 9–11&quot;&gt;&lt;a href=&quot;material/origamitaube.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;9.&lt;/strong&gt; Die linke Seite der Figur wieder schließen und flach hinlegen. Nun also haben wir die untere Spitze ist nach innen gewendet. Und weil es so schön war, wiederholen wir die Schritte 6–8 nochmal auf der Rückseite.
+Also: Papier wenden. Untere Spitze nach oben falten und wieder entfalten. Figur diesmal rechts öffnen und kleines Dreieck nach innen umschlagen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10.&lt;/strong&gt; Das Papier so hinlegen, dass die offenen Spitze auf der rechten Seite liegen. Die linke Spitze schräg nach unten falten – das ist ein bisschen Schätzung, es soll später der Kopf mit dem Schnabel werden.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11.&lt;/strong&gt; So etwa soll die Spitze links aussehen. Nun kommt im Prinzip das gleiche wie in Schritt 7: Die Spitze wieder zurückfalten, unten öffnen und die grün markierte Falten nach innen umstülpen.&lt;/p&gt;
+
+&lt;div class=&quot;taube4&quot; title=&quot;Faltschritte 12–15&quot;&gt;&lt;a href=&quot;material/origamitaube.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;12.&lt;/strong&gt; So soll der Schnabel dann aussehen. Nicht gleich aufgeben, dieses Umstülpen ist wirklich nicht ganz einfach.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13.&lt;/strong&gt; Das Schwierigste ist geschafft! Jetzt den vorderen Flügel komplett nach oben falten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14.&lt;/strong&gt; Dann die Figur umdrehen und auch den anderen Flügel nach oben falten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;15.&lt;/strong&gt; Fehlt noch der Schwanz. Dazu das Dreieck unten entlang der Papierkante einmal von links nach rechts falten.&lt;/p&gt;
+
+&lt;div class=&quot;taube5&quot; title=&quot;Faltschritte 16–18&quot;&gt;&lt;a href=&quot;material/origamitaube.jpg&quot;&gt;Komplettes Bild (alle Faltschritte)&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;16.&lt;/strong&gt; Nun das Schwanzdreieck öffnen und die grün markierte Kante mittig flachdrücken, …&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;17.&lt;/strong&gt; … so dass eine Drachenform entsteht. Die linke Hälfte der Drachenform nach hinten herumfalten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18.&lt;/strong&gt; So soll es aussehen, und damit ist die Taube fertig!
+Wenn man am Bauch ein Stäbchen oder einen Draht festklebt, kann man den Vogel in einer Halterung befestigen oder zum Beispiel in einen Blumenstrauß stecken.&lt;/p&gt;
+
+&lt;p&gt;Diese Origami-Figur findet sich auch auf dem &lt;a href=&quot;https://www.talu.de/origami-taube-falten/&quot;&gt;Bastelportal Talu&lt;/a&gt;. Falls euch ein Faltschritt unklar erscheint, guckt doch mal, ob es dort besser zu verständlich ist.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/origamitaube.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/origamitaube.html</guid>
+	<pubDate>Fri, 30 May 2025 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Skulptur</title>
 	<description>&lt;style&gt;
 &lt;!--
@@ -32,7 +110,7 @@
 
 &lt;p class=&quot;fade-out&quot;&gt;Das Taxi kam einen Augenblick nach dem Bus am Konzerthaus an. Alex hatte die Satteltasche an sich genommen. Mit einem beherzten Wurf platzierte Jonas den Stein auf dem Feld Nº 6. Das Publikum klatschte. Die Geigen hatten bereits zu summen begonnen, während Maria ihre Noten aufschlug. Sie hatte noch etwas Zeit; die Triangel kam im ersten Satz nicht vor.&lt;/p&gt;
 
-&lt;p class=&quot;hinterlegt&quot; style=&quot;background-color:var(--nebelgrau)&quot;&gt;Diese Kurzgeschichte ist inspiriert von den früheren Zwischensequenzen bei arte-Programmhinweisen(&lt;a href=&quot;https://www.youtube.com/watch?v=tSJzq_ifwy0&amp;amp;list=PL47SHE1KRxr8o4NqGHucs4OHq7-pGoIvE&amp;amp;index=1&quot;&gt;arte Idents 2011&lt;/a&gt;). Daran fasziniert haben mich die mehrdeutige Handlung und die Idee eines abstrakten Gebildes, das immer wieder andere Blickwinkel bietet.&lt;/p&gt;
+&lt;p class=&quot;hinterlegt&quot; style=&quot;background-color:var(--nebelgrau)&quot;&gt;Diese Kurzgeschichte ist inspiriert von den früheren Zwischensequenzen bei arte-Programmhinweisen (&lt;a href=&quot;https://www.youtube.com/watch?v=tSJzq_ifwy0&amp;amp;list=PL47SHE1KRxr8o4NqGHucs4OHq7-pGoIvE&amp;amp;index=1&quot;&gt;arte Idents 2011&lt;/a&gt;). Daran fasziniert haben mich die mehrdeutige Handlung und die Idee eines abstrakten Gebildes, das immer wieder andere Blickwinkel bietet.&lt;/p&gt;
 </description>
 	<link>https://charakterziffer.github.io/skulptur.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
@@ -219,120 +297,6 @@ Nützlichkeit bestimmt den Wert, den wir allem zuschreiben: Arbeit, Aktivitäten
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/nuetzlichkeit.html</guid>
 	<pubDate>Thu, 16 Jan 2025 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Maschinengetippte Ideen</title>
-	<description>&lt;p&gt;In den letzten Monaten habe mich häufiger an meine Schreibmaschine gesetzt und überlegt, wie man sie für kreative Projekte nutzen kann. Ein paar Sachen sind mir eingefallen, zum Beispiel:&lt;/p&gt;
-
-&lt;ul style=&quot;columns:13em; margin: 1em 0 -.3em&quot;&gt;
-&lt;li&gt;Dankesnotiz&lt;/li&gt;
-&lt;li&gt;Gebrauchsanleitung&lt;/li&gt;
-&lt;li&gt;Landkarte&lt;/li&gt;
-&lt;li&gt;Seitenlayout&lt;/li&gt;
-&lt;li&gt;Plakat mit vergrößerter Schreibmaschinen-Schrift&lt;/li&gt;
-&lt;li&gt;Haiku/Gedicht&lt;/li&gt;
-&lt;li&gt;Studie zu Mustern&lt;/li&gt;
-&lt;li&gt;Moiré-Muster&lt;/li&gt;
-&lt;li&gt;Programm-Code&lt;/li&gt;
-&lt;li&gt;Labyrinth&lt;/li&gt;
-&lt;li&gt;Postkarte mit &lt;a href=&quot;https://de.wikipedia.org/wiki/ASCII-Art&quot;&gt;ASCII-Art&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kleine Buchstaben-Monster&lt;/li&gt;
-&lt;li&gt;Seestück aus Buchstaben&lt;/li&gt;
-&lt;li&gt;ASCII-Blumenvase&lt;/li&gt;
-&lt;li&gt;Benutzeroberfläche eines Computerprogramms nachahmen&lt;/li&gt;
-&lt;li&gt;Text mit großem Initial-Buchstaben&lt;/li&gt;
-&lt;li&gt;Pixel-Schriften&lt;/li&gt;
-&lt;li&gt;Entscheidungsbaum/Diagramm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;… also eine wilde Mischung aus inhaltlichen und formalen Ideen. Die Beschränkungen der Schreibmaschine (feste Schriftart und Größe, fixe Zeilenabstände und Zeichenbreiten) fand ich recht inspirierend und habe ausgelotet, was innerhalb dieser Grenzen möglich ist und wie man sie umgehen könnte.&lt;/p&gt;
-
-&lt;h2 id=&quot;neun-umgesetzte-einfälle&quot;&gt;Neun umgesetzte Einfälle&lt;/h2&gt;
-
-&lt;p&gt;Nach Interesse und Zeit habe ich einige der Ideen dann aufs Papier gebracht. Zuerst ein &lt;strong&gt;Brief an meine Tante&lt;/strong&gt;, bei dem ich Teile handgeschrieben habe, andere Teile mit der Maschine getippt und an den Übergängen Getipptes und Handschrift kombiniert habe. Außerdem habe ich darin flächige, getippte Muster ausprobiert.&lt;/p&gt;
-
-&lt;p&gt;Das zweite Bild zeigt einen &lt;a href=&quot;https://de.wikipedia.org/wiki/Moir%C3%A9-Effekt&quot;&gt;Moiré-Effekt&lt;/a&gt;. Legt man zwei Raster verdreht übereinander, ergeben sich musterhafte Strukturen. In dem Fall hab ich einfach sehr viele &lt;em&gt;m&lt;/em&gt; und Leerzeichen aufs Papier gehämmert, danach noch einmal oben drüber mit leicht verdrehtem Blatt. Zum dritten habe ich ein &lt;strong&gt;fiktives Formular&lt;/strong&gt; gestaltet, mit dem man das Tippen einen bevorzugten Textes beantragen kann.&lt;/p&gt;
-
-&lt;p&gt;Die quadratischen Bildchen zeigen jeweils einen Ausschnitt als Voransicht, ein Klick öffnet eine größere Version, wo mehr zu sehen ist.&lt;/p&gt;
-
-&lt;style&gt;
-&lt;!--
-.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(11em, 1fr)); }
-.bildraster &gt; a { display: flex; justify-content: center;
-	align-items: center; margin: 0; padding: 0; }
-.bildraster img { max-width: 100%; width: 100%;
-	object-fit: contain; overflow: clip; }
-
-@supports not (display: grid) {
-.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
-.bildraster &gt; a { flex: 1 1 11em; margin: .5em; } }
-
-.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
-.lightbox:target { display: block; animation: none; }
-.lightbox span { display: block; width: 100%; height: 100%;
-	background-position: center; background-repeat: no-repeat; background-size: contain; }
---&gt;
-&lt;/style&gt;
-
-&lt;div class=&quot;bildraster&quot;&gt;
-&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/galerie/sm01k.jpg&quot; alt=&quot;Ausschnitt aus einem Brief an meine Tante, wo ich Handschrift und Schreibmaschinentext kombiniert habe. Die Abbildung zeigt auch vier kleine Flächen, die mit unterschiedlichen getippten Mustern gefüllt sind.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/galerie/sm02k.jpg&quot; alt=&quot;Auf der Schreibmaschine getipptes Muster: Abwechselnd ein Leerzeichen und ein kleines m über die ganze Seite geschrieben. Anschließend nochmal das Gleiche, aber leicht verdreht. Durch den unterschiedlichen Winkel ergeben sich ringförmige Strukturen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/galerie/sm03k.jpg&quot; alt=&quot;Fiktives Formular, mit dem ein getippter Text beantragt werden kann. Man kann den Wunschtext eintragen, die grobe Form des Texts ankreuzen und Bemerkungen eintragen. Am Ende legt man das gewünschte Lieferdatum und den Empfänger fest, darunter Datum und Unterschrift. Das Formular entstand auf der Schreibmaschine, ausgefüllt handschriftlich mit graugrüner Tinte.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/galerie/sm04k.jpg&quot; alt=&quot;Papier in einer orangefarbenen Schreibmaschine. Das kleine x wurde wie ein Pixel genutzt, um die englischen Wörter “Black Mustard” in drei verschiedenen Größen zu schreiben.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/galerie/sm05k.jpg&quot; alt=&quot;Getippte Seite mit verschiedenen Gestaltungselementen: Eine größere Überschrift aus Pixelbuchstaben, ein breiter Absatz, darunter ein zweispaltiger Abschnitt mit einem größeren Initial am Anfang.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/galerie/sm06k.jpg&quot; alt=&quot;Das Gemälde der Mona-Lisa als Poster, allerdings in 48 engen Zeilen mit jeweils 25 Zeichen sehr grob aber erkennbar nachgeahmt.&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Manchmal sind Schreibmaschinen-Buchstaben etwas zu klein, zum Beispiel für die Etiketten von Gewürzdosen. Darum hab ich im vierten Bild &lt;strong&gt;Pixelfonts&lt;/strong&gt; aus dem Kleinbuchstaben &lt;em&gt;x&lt;/em&gt; nachgetippt. (“Black Mustard” bezeichnet auf englisch schwarze Senfkörner).&lt;/p&gt;
-
-&lt;p&gt;Im Bild 5 habe ich frei Schnauze ein komplizierteres &lt;strong&gt;Seitenlayout&lt;/strong&gt; getippt (und mich bei der Spaltenbreite auch glatt verrechnet). Inhaltlich ging es in der Kurzgeschichte genau um diesen Drahtseil-Akt zwischen Planung und Spontanität.&lt;/p&gt;
-
-&lt;p&gt;Für das &lt;a href=&quot;fensterbilder-2.html&quot;&gt;Fensterbild&lt;/a&gt; im Format DIN A3 habe ich Da Vincis &lt;em&gt;Mona Lisa&lt;/em&gt; getippt und mit dem Scanner vergrößert. Das Motiv habe ich für ein &lt;a href=&quot;miniheft-2.html&quot;&gt;Miniheft&lt;/a&gt; entworfen – ein weiteres Schreibmaschinen-Projekt.&lt;/p&gt;
-
-&lt;div class=&quot;bildraster&quot;&gt;
-&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/galerie/sm07k.jpg&quot; alt=&quot;Zwei Textspalten. Links: Ein vorgetippter, zu setztender Text. Leerzeichen am Zeilenende sind durch je ein Plus ersetzt, überzählige Zeichen mit einem Schrägstrich durchgestrichen. Mit roten Strichen und Häkchen ist markiert, wo Leerraum innerhalb jeder Zeile vergrößert oder verringert werden soll.Rechts dann der ausgeglichene Text im Blocksatz. Dafür sind hier die Lücken zwischen den Wörter teilweise größer als ein Leerzeichen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/galerie/sm08k.jpg&quot; alt=&quot;Ein getipptes Bild, das Blumen in einer Vase zeigt. Außerdem kleinere Abbildungen, wie dieses Bild entstanden ist: Erst eine grobe Bleistift-Skizze, dann mit Farbe auf die wichtigsten Details reduzieren. Diese Zeichnung einscannen und als Vorlage nutzen, um im Grafikprogramm passende Buchstaben auf die richtige Position zu setzen (11 Zeichen/Inch breit, 12 Halbzeilen/Inch hoch). Schließlich möglichst fehlerfrei auf meiner orangenen Schreibmaschine abtippen, fertig.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/galerie/sm09k.jpg&quot; alt=&quot;Auf kariertes Papier getipptes Gedicht: „Quellcode. Es sei Herbstregen. Es sei ein Haus. Darin mindestens ein Zimmer mit der Eigenschaft war und der Eigenschaft großes Fenster. Im Zimmer sein ein Sessel, darauf ein Ich mit der Eigenschaft erfüllt sowie dem Attribut Papier und dem Attribut Stift. Im Herbstregen im Haus im Zimmer im Sessel schreibe ich Quellcode.“&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Für das siebte Bild habe ich einen Text in den &lt;strong&gt;Blocksatz&lt;/strong&gt; gebracht – was mit der Schreibmaschine ein bisschen Schummeln und Tricksen erfordert. Gut, dass sich der Schreibwagen bei gedrückter Leertaste um eine &lt;em&gt;halbe&lt;/em&gt; Einheit verschiebt. So sind auch halbe oder anderthalb Leerzeichen zum Ausgleichen möglich.&lt;/p&gt;
-
-&lt;p&gt;Bei Glückwünschen macht sich ein &lt;strong&gt;Blumenstrauß&lt;/strong&gt; immer recht gut, finde ich. Im Bild 8 habe ich eine Vase mit Blumen getippt, vielleicht verwende ich das für eine Geburtstagskarte. Ein Klick auf die Vorschau des Bildes zeigt die Entstehung: Erst eine grobe Bleistift-Skizze, dann mit Farbe auf die wichtigsten Details reduzieren. Diese Zeichnung einscannen und als Vorlage im Grafikprogramm nutzen, schließlich möglichst fehlerfrei abtippen.&lt;/p&gt;
-
-&lt;p&gt;Das &lt;strong&gt;Herbstgedicht&lt;/strong&gt; im letzten Bild hatte ich schon im vergangenen November geschrieben. Thematisch und formal hat es Anklänge an Computercode, da bietet sich eine maschinengetippte Umsetzung sehr an.&lt;/p&gt;
-
-&lt;h2 id=&quot;vom-nervenkitzel-drohender-tippfehler&quot;&gt;Vom Nervenkitzel drohender Tippfehler&lt;/h2&gt;
-
-&lt;p&gt;Wenn ich etwas mit der Hand schreibe oder zeichne, sind kleine Unsauberkeiten oder Fehler etwas völlig normales. Bei Handgeschriebenem rechnet niemand damit, dass es perfekt aussieht. Das Schriftbild der Schreibmaschine lässt Texte aber so erscheinen, als seien sie auf einem Computer angefertigt worden. Entsprechend hoch sind die Erwartungen (zumindest meine), was Gestaltung und Fehlerfreiheit angeht.&lt;/p&gt;
-
-&lt;p&gt;Zwar lassen sich Vertipper mit &lt;em&gt;Tipp-Ex&lt;/em&gt; oder ähnlichen Mitteln korrigieren, die Fehlerstelle bleibt aber sichtbar. Darum war ich doch immer ein bisschen aufgeregt, während ich versucht habe, einen Text sauber und fehlerfrei zu tippen – würde ich mich doch verdrücken? Die Feststelltaste vergessen? Mich bei den Einrückungen vertun? Den Rand nicht einhalten? Eine Taste doppelt drücken? Nochmal alles neu schreiben müssen? Oder das Unperfekte akzeptieren? (siehe dazu auch das Bild 5 oben, mit einer Kurzgeschichte über diesen Drahtseil-Akt.)&lt;/p&gt;
-
-&lt;p&gt;Wenn ich einen Text nicht mehrmals schreiben will, brauche ich Konzentration und eine gute Vorstellung davon, wie die Seite am Ende aussehen soll. Das Schreiben und das Gestalten ist eine untrennbare Einheit, die heute am Computer nicht mehr besteht. In einem Textprogramm schreibe ich einfach drauflos, gehe zurück wenn ich etwas ergänzen möchte, lösche Vertipper problemlos und kann in aller Ruhe verschieden Schriften, Abstände und andere Formatierungen ausprobieren, bis ich irgendwann beschließe, dass das Dokument nun gut genug aussieht.&lt;/p&gt;
-
-&lt;h2 id=&quot;andere-ausdruckmittel&quot;&gt;Andere Ausdruckmittel&lt;/h2&gt;
-
-&lt;p&gt;Einige Sachen sind mit der Schreibmaschine dagegen viel einfacher umzusetzen, zum Beispiel schräge Zeilen oder leicht versetzte Buchstaben innerhalb einer Zeile (einfach die Walze auf stufenlos stellen und leicht hin und her drehen). Man kann das Farbband ausschalten und die Schriftzeichen fühlbar ins Papier drücken. Sehr leicht ist es, Zeichen übereinander zu tippen (auch verschoben), was neue Gestaltungsmöglichkeiten bietet. Aus Buchstaben eine Pixelgrafik mit unterschiedlichen Helligkeitsstufen aufzubauen, das unsichtbare Raster fester Abstände zu nutzen, Gestaltung linear und nicht von der Fläche her zu denken … das alles ist doch recht inspirierend.&lt;/p&gt;
-
-&lt;p&gt;Zum Abschluss möchte ich noch eine &lt;a href=&quot;https://archive.org/details/wicharytypewriter&quot;&gt;Sammlung alter Broschüren&lt;/a&gt; zum Thema Schreibmaschine verlinken, zusammengetragen und gescannt von Marcin Wichary. Die &lt;a href=&quot;https://archive.org/details/wicharytypewriter?tab=collection&amp;amp;query=artyping&quot;&gt;Hefte über Schreibmaschinenkunst&lt;/a&gt; fand ich besonders interessant.&lt;/p&gt;
-
-&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
-&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm01.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm02.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm03.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm04.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm05.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm06.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm07.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm08.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/sm09.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/schreibmaschine.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/schreibmaschine.html</guid>
-	<pubDate>Wed, 20 Nov 2024 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
