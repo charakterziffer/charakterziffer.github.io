@@ -14,6 +14,86 @@
 </image>
 
 <item>
+	<title>Blick in die Wolken</title>
+	<description>&lt;p&gt;Der Himmel ist schön, also jedenfalls sehr oft. Das klingt banal, aber es ist mir gerade in letzter Zeit wieder sehr aufgefallen – vielleicht weil ich nach unserem Umzug einen etwas weiteren Blick auf die Himmelsfläche habe. Und dann gibt es diesen selbstverstärkenden Effekt: Wenn ich auf etwas aufmerksam geworden bin, achte ich zukünftig eher darauf und ich bemerke es immer häufiger. Bei schönen Himmelsansichten sicherlich nicht das schlechteste.&lt;/p&gt;
+
+&lt;p&gt;Darum möchte ich mit diesem Blogartikel euren eigenen Blick ein wenig lenken. Schaut ruhig öfter mal nach oben und freut euch über die abenteuerlichen Farben und seltsamen Wolkenstrukturen. Selbst wenn es grau ist, gibt es etwas zu entdecken. Was &lt;em&gt;ich&lt;/em&gt; in den letzten Monaten am Himmel so gesehen habe? Davon habe ich immer mal wieder Fotos gemacht (Klick aufs Bild öffnet eine größere Ansicht):&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.bildraster &gt; a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%; }
+
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display:flex; flex-wrap:wrap; }
+.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
+
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;bildraster&quot;&gt;
+&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/galerie/w01k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/galerie/w02k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/galerie/w03k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/galerie/w04k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/galerie/w05k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/galerie/w06k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/galerie/w07k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/galerie/w08k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/galerie/w09k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/galerie/w10k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/galerie/w11k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/galerie/w12k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-13&quot;&gt;&lt;img src=&quot;material/galerie/w13k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-14&quot;&gt;&lt;img src=&quot;material/galerie/w14k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-15&quot;&gt;&lt;img src=&quot;material/galerie/w15k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-16&quot;&gt;&lt;img src=&quot;material/galerie/w16k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-17&quot;&gt;&lt;img src=&quot;material/galerie/w17k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-18&quot;&gt;&lt;img src=&quot;material/galerie/w18k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-19&quot;&gt;&lt;img src=&quot;material/galerie/w19k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-20&quot;&gt;&lt;img src=&quot;material/galerie/w20k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
+&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w01.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w02.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w03.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w04.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w05.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w06.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w07.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w08.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w09.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w10.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w11.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w12.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-13&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w13.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-14&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w14.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-15&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w15.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-16&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w16.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-17&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w17.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-18&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w18.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-19&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w19.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-20&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/w20.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Eine Fotoserie über längere Zeit kann den Blick für Gemeinsamkeiten und Unterschiede schärfen und dazu anregen, auf Details zu achten – ich kann so ein Projekt nur empfehlen! Was man außer Wolken noch fotografieren könnte? Baumblätter, rote Gegenstände, Litfaßsäulen, Steine, bewachsene Gehsteigfugen, Käfer, Erker, beklebte Stromkästen … alles, was einem im Alltag begegnet. Ich wünsche euch einen geschärften Blick und eine himmlische Sommerzeit!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/wolken.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/wolken.html</guid>
+	<pubDate>Wed, 30 Jul 2025 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Unmögliche Neutralität</title>
 	<description>&lt;p&gt;Es gibt diesen Spruch: „Wenn du nicht für mich bist, dann bist du gegen mich.“ – Ich denke, das ist Quatsch. Nur weil ich jemanden nicht unterstütze, lege ich ihm nicht automatisch Steine in den Weg. Schließlich gibt es ja die dritte Option, neutral zu sein. Ich bin nicht für Gartenzwerge vor dem Haus, aber ich bin auch nicht dagegen. Mir sind Gartenzwerge schlicht egal und jeder sollte da machen dürfen, was er oder sie möchte. Mir ist auch egal, ob jemand Ananas auf seiner Pizza bevorzugt oder das eklig findet. Mir doch egal.&lt;/p&gt;
 
@@ -35,7 +115,7 @@
 
 &lt;h2 id=&quot;wohin-stellt-sich-die-bundestagsverwaltung&quot;&gt;Wohin stellt sich die Bundestagsverwaltung?&lt;/h2&gt;
 
-&lt;p&gt;Zurück zum Anlass dieses Artikels. Wenn die Bundestagsverwaltung ihren Beschäftigten &lt;em&gt;verbietet&lt;/em&gt;, als queere Mitarbeiter am CSD teilzunehmen, dann ist das keine Neutralität. Dann ist das „Der Bundestag verbietet seinen queeren Mitarbeiter:innen, sich beim CSD als Bundestagsbeschäftigte zu zeigen“ oder kurz: „Der Bundestag verbietet seinen Mitarbeiter:innen, sich als queer zu zeigen“. Und das bedeutet im Grunde, dass Mitarbeiter:innen des Bundestags ihre Identität nicht öffentlich zeigen dürfen (wenn sie von der ‚Normalität‘ abweicht).&lt;/p&gt;
+&lt;p&gt;Zurück zum Anlass dieses Artikels. Wenn die Bundestagsverwaltung ihren Beschäftigten &lt;em&gt;verbietet&lt;/em&gt;, als queere Mitarbeiter am CSD teilzunehmen, dann ist das keine Neutralität. Dann ist das „Der Bundestag verbietet seinen queeren Mitarbeiter:innen, sich beim CSD als Bundestagsbeschäftigte zu zeigen“ oder kurz: „Der Bundestag verbietet seinen Mitarbeiter:innen, sich als queer zu zeigen“. Und das bedeutet im Grunde, dass Mitarbeiter:innen des Bundestags ihre Identität nicht öffentlich zeigen dürfen (wenn sie von der „Normalität“ abweicht).&lt;/p&gt;
 
 &lt;p&gt;Meiner Meinung nach rutscht die Bundestagsverwaltung damit ein gutes Stück auf die Seite derjenigen, die queere Personen unsichtbar machen möchten und ihre Diskriminierung leugnen. Neutral ist diese Einstellung ganz sicher nicht. Ein paar ergänzende Gedanken, beispielsweise zu symbolischer und tatsächlicher Handlung sowie dem Verhältnis von Neutralität und dem Vertreten von Werten finden sich in der &lt;a href=&quot;https://www.ardaudiothek.de/episode/die-frage-des-tages/muss-sich-der-bundestag-zum-csd-neutral-verhalten/radio3/14759677/&quot;&gt;Frage des Tages&lt;/a&gt; von Radio3 (rbb).&lt;/p&gt;
 
@@ -220,62 +300,6 @@ setInterval(function() { var topItem = crossfade.firstChild;
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/oelfarben.html</guid>
 	<pubDate>Wed, 19 Mar 2025 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Vom Algorithmus gefüttert</title>
-	<description>&lt;p&gt;Als einzigen Social-Media-Dienst nutze ich Mastodon. Es ist eine Plattform vor allem für sehr kurze Texte, vergleichbar mit X (früher Twitter). Die meisten anderen Plattformen haben nämlich eine Eigenschaft, die mir missfällt: einen Algorithmus.&lt;/p&gt;
-
-&lt;p&gt;Prinzipiell ist sind Algorithmen sehr praktisch. Es sind „Rezepte“ zum Lösen einer Aufgabe. Mit einem Algorithmus findet man schnell ein ziemlich gutes Ergebnis für ein Problem, dessen exakte Lösung viel Rechenaufwand erfordern würde. Ein Beispiel aus der Mathematik ist das &lt;a href=&quot;https://www.matheretter.de/wiki/heron-verfahren&quot;&gt;Heron-Verfahren&lt;/a&gt;, um Wurzeln näherungsweise zu berechnen.&lt;/p&gt;
-
-&lt;p&gt;Wenn bei &lt;em&gt;Social Media&lt;/em&gt; von Algorithmen die Rede ist, geht es in der Regel darum, wie Beiträge im Feed sortiert werden und welche Posts ich überhaupt zu Gesicht bekomme. Ein Beispiel ist &lt;a href=&quot;https://www.bpb.de/lernen/bewegtbild-und-politische-bildung/themen-und-hintergruende/lernen-mit-und-ueber-tiktok/523787/funktionsweise-wie-funktioniert-tiktok/&quot;&gt;TikTok mit seiner For-You-Funktion&lt;/a&gt;. Dort stellt mir ein Algorithmus eine nicht endende Flut von Filmchen zusammen. Was ich sehe hängt davon ab, wie lang ich mir vorangehende Videos anschaue, was ich like, erneut abspiele, kommentiere … kurz: Jede meiner Interaktionen beeinflusst, was als nächstes abgespielt wird. Dazu kommen bei TikTok noch Faktoren wie mein Standort, allgemeine Trends und weiteres. Wie der Algorithmus genau funktioniert, verrät die Betreiberfirma &lt;em&gt;ByteDance&lt;/em&gt; nicht.&lt;/p&gt;
-
-&lt;h2 id=&quot;bleib-doch-noch-ein-weilchen&quot;&gt;Bleib doch noch ein Weilchen&lt;/h2&gt;
-
-&lt;p&gt;Das Ziel von Algorithmen ist für jedes soziale Netzwerk dasselbe: Vorgeblich soll ich dadurch die Inhalte sehen, die relevant für mich sind und mich besonders interessieren. Letztendlich geht es für die Plattform aber vor allem darum, mich bei der Stange halten. Nur wenn ich möglichst lange durch den Feed scrolle, kann mir Werbung ausgespielt werden. Je mehr Zeit ich auf der Plattform verbringe, desto mehr Geld verdient der Betreiber mit meiner Aufmerksamkeit.&lt;/p&gt;
-
-&lt;p&gt;Ein Effekt eines Sortier-Algorithmus ist, dass ich keine breite Themenauswahl mit verschiedenen Perspektiven mehr sehe, sondern nur noch die Themen, die mich „packen“: Niedliche Meerschweinchen-Videos, News von meinem Lieblingsverein oder innovative Nudelrezepte. Es müssen auch nicht unbedingt Inhalte sein, die meiner Meinung entsprechen – im Gegenteil: Posts, die mich aufregen, sind perfekt geeignet, mich zu einer Reaktion zu reizen (&lt;em&gt;engagement&lt;/em&gt;, „mich einbringen“): &lt;a href=&quot;https://www.zdf.de/nachrichten/ratgeber/spaghetti-carbonara-original-rezept-100.html&quot;&gt;Carbonara-Soße mit Knoblauch?&lt;/a&gt; Sacrilego!&lt;/p&gt;
-
-&lt;h2 id=&quot;abgleiten-ins-extreme&quot;&gt;Abgleiten ins Extreme&lt;/h2&gt;
-
-&lt;p&gt;Weil empörende oder knallige Inhalte besonders stark zur Interaktion anregen, erhöhen Algorithmen in der Regel deren Verbreitung. So erreichen Posts, die Widerspruch oder Bekräftigung provozieren, deutlich mehr Nutzer:innen als jene Inhalte, die eher nachdenklich oder ausgewogen sind. Aufrührende Fakes und Kampagnen haben mehr Durchschlagskraft als deren Korrekturen und Einordnungen.&lt;/p&gt;
-
-&lt;p&gt;Je nachdem, wie ein Algorithmus arbeitet, kann das zu immer radikaleren Beiträgen führen, die jemand angezeigt bekommt. Beispielsweise hat &lt;a href=&quot;https://netzpolitik.org/2019/radikalisierung-durch-youtube-grosszahlige-studie-zur-empfehlung-rechtsextremer-inhalte/&quot;&gt;YouTube bis 2019 immer extremere Videos empfohlen&lt;/a&gt; (wurde später geändert, so dass dieser &lt;a href=&quot;https://www.deutschlandfunknova.de/beitrag/social-media-algorithmen-radikalisierung-durch-youtube-ist-laut-studie-nicht-nachweisbar&quot;&gt;Radikalisierungs-Effekt 2023 nicht mehr nachweisbar&lt;/a&gt; war). Facebook empfiehlt &lt;a href=&quot;https://www.sueddeutsche.de/politik/facebook-radikalisierung-gruppenvorschlaege-1.5516117&quot;&gt;politische Gruppen mit hetzenden Inhalten&lt;/a&gt; und trägt damit zur Normalisierung extremer Aussagen bei. Auch &lt;a href=&quot;https://www.zdf.de/nachrichten/politik/deutschland/bundestagswahl-2025-elon-musk-x-wahlkampf-manipulation-100.html&quot;&gt;X (Twitter) verstärkt vor allem populistische Parteien&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Nebenbei: Es ist übrigens auch eine menschliche Eigenschaft, &lt;a href=&quot;https://www.heise.de/hintergrund/In-welchen-Stufen-sich-Verschwoerungen-auf-Social-Media-verbreiten-9240725.html&quot;&gt;sich selbst in Meinungsblasen zu begeben&lt;/a&gt; und eventuell zu radikalisieren. Wir suchen lieber Bestätigung als Widerspruch und blenden Gegenargumente gern aus. Auch andere Faktioren können zur &lt;a href=&quot;https://www.digitalcheck.nrw/digital-weiterwissen/radikalisierung-im-netz&quot;&gt;Radikalisierung durch digitale Medien&lt;/a&gt; betragen.&lt;/p&gt;
-
-&lt;h2 id=&quot;anschreiben-gegen-den-algorithmus&quot;&gt;Anschreiben gegen den Algorithmus&lt;/h2&gt;
-
-&lt;p&gt;Dass du vor allem reißerische Inhalte in deinen Feed sortiert bekommst, ist aber nur &lt;em&gt;eine&lt;/em&gt; Seite des Problems. Den Leuten, die dir folgen, geht es nämlich genauso. Auch sie bekommen vorgefiltert, was emotional zündet – also nicht unbedingt das, was du so schreibst. Zwar finden deine Follower entschieden, dass du interessante Sachen machst und bewusst bei dir auf „Folgen“/„Abonnieren“ geklickt … und trotzdem sehen sie gar nicht alles, was du veröffentlichst. Außer, du unterwirfst dich dem Algorithmus, formulierst deine Posts kontroverser, provozierst Reaktionen, zündelst mit.&lt;/p&gt;
-
-&lt;p&gt;Um vom Algorithmus nicht herabgestuft zu werden und unwissentlich weniger Reichweite zu bekommen (Fachbegriff: &lt;a href=&quot;https://de.wikipedia.org/wiki/Shadowban&quot;&gt;„Shadowban“&lt;/a&gt;), haben sich Tricksereien wie &lt;a href=&quot;https://www.klicksafe.de/news/algospeak-was-bedeuten-die-codes-und-emojis-auf-tiktok-und-co&quot;&gt;Algospeak&lt;/a&gt; entwickelt. Nutzer:innen vermeiden bestimmte Schlüsselworte und drücken sich anders aus: Statt „Sex“ oder „Depression“ schreiben sie „Seggs“ oder „Depressi0n“.&lt;/p&gt;
-
-&lt;p&gt;In einigen Fällen wird ein ganzes Konzept durch eine Metapher ersetzt, um die Reichweitendrosselung durch Algorithmen zu verhindern. Ein aktuelles Beispiel aus USA ist der Hashtag &lt;em&gt;#winterboots&lt;/em&gt; („Winterstiefel“). Dabei geht es allerdings nicht um Schuhe, sondern um Tipps für Migranten gegen die Einwanderungs- und Zollbehörde. Deren Abkürzung ICE entspricht dem englischen Word für Eis, wogegen Winterstiefel recht nützlich sind. Sehr lesenswert zum Thema &lt;em&gt;Algospeak&lt;/em&gt; finde ich einen kurzen &lt;a href=&quot;https://netzpolitik.org/2025/algospeak-was-winterschuhe-mit-politik-zu-tun-haben/&quot;&gt;Artikel von Netzpolitik.org&lt;/a&gt; mit weiteren Beispielen.&lt;/p&gt;
-
-&lt;h2 id=&quot;besser-keine-algorithmen&quot;&gt;Besser keine Algorithmen?&lt;/h2&gt;
-
-&lt;p&gt;Und nun? Sollen wir uns in den Sozialen Medien in immer absurdere Metaphern versteigen, für mehr Reichweite gepfeffert formulieren oder dieses ganze &lt;em&gt;Social Media&lt;/em&gt; einfach lassen? Mögliche Alternativen wären vorhanden: E-Mail-Newsletter, &lt;a href=&quot;rss-feeds.html&quot;&gt;RSS-Feeds&lt;/a&gt;, Lesezeichen für gute Websites oder Podcasts.&lt;/p&gt;
-
-&lt;p&gt;Wie anfangs erwähnt gibt es Netzwerke, in denen die Beiträge chronologisch erscheinen und nicht von Algorithmen gefiltert oder verstärkt werden. Neben Mastodon gehört dazu auch die Foto-Plattform Flickr, die bewusst &lt;a href=&quot;https://blog.flickr.net/en/2025/02/04/artistry-over-algorithms/&quot;&gt;auf Algorithmen verzichtet (engl.)&lt;/a&gt;; dazu weitere, kleine Netzwerke (z.&lt;small&gt; &lt;/small&gt;B. Vero, Ello, MeWe, TapeReal – mir alle eher unbekannt).&lt;/p&gt;
-
-&lt;p&gt;Andererseits hat die rein zeitliche Sortierung ohne Algorithmen einen großen Nachteil: Leute, die viel veröffentlichen, sind in der Timeline dann deutlich präsenter als jemand mit wenigen, aber vielleicht interessanteren Posts – Masse schlägt Qualität. Dagegen können bestimmte Filter helfen (um belanglose Schlagworte auszublenden) oder den Vielschreibern bewusst zu entfolgen, wenn sie die Timeline zu sehr dominieren.&lt;/p&gt;
-
-&lt;h2 id=&quot;oder-bessere-algorithmen&quot;&gt;Oder bessere Algorithmen?&lt;/h2&gt;
-
-&lt;p&gt;Beiträge meiner Interessen hervorheben, radikale Inhalte zurückstufen, mich vor einer überfordernden Masse bewahren – Algorithmen sind nicht per se „böse“, sondern können durchaus nützlich sein. Entscheidend ist, welche Schwerpunkte ein Unternehmen mit seiner Sortier-Mechanik setzen will: Die Aufmerksamkeit des Nutzer:innen möglichst lange in Beschlag nehmen? Interaktion provozieren und dabei eventuell radikalisieren?&lt;/p&gt;
-
-&lt;p&gt;Um vor Manipulation geschützt zu sein und selbst entscheiden zu können, ob ein Algorithmus fair arbeitet, braucht es vor allem eines: Transparenz. Unternehmen müssen offen legen, wie ihre Sortierung in etwa funktioniert: Welche Faktoren werden wie stark gewichtet, welches Verhalten und welche Inhalte vermindern die Reichweite, warum erscheint dieser oder jener Beitrag in meinem Feed?&lt;/p&gt;
-
-&lt;p&gt;Durch Transparenz ist vielleicht nicht zu 100 Prozent nachvollziehbar, warum dir der Algorithmus einen ganz bestimmten Beitrag vor die Nase setzt – schließlich sind Algorithmen oft so komplex, dass selbst ihre Entwickler:innen am Ende nicht mehr genau wissen, warum eine Entscheidung so und nicht anders getroffen wird. Immerhin bekommst du aber eine gute Ahnung, womit du es zu tun hast.&lt;/p&gt;
-
-&lt;p&gt;Ein Beispiel für &lt;a href=&quot;https://algorithmen.zdf.de/&quot;&gt;transparente Algorithmen liefert das ZDF&lt;/a&gt;. Es erklärt, wie Empfehlungen in der Mediathek zustande kommen, welche Faktoren eine Rolle spielen und begründet sogar, warum diese dem Auftrag eines öffentlich-rechtlichen Senders entsprechen (z.&lt;small&gt; &lt;/small&gt;B. damit auch wenig genutzte Beiträge sichtbarer werden). In diesem Fall kann eine Personalisierung durch Algorithmen den Zuschauer:innen einen tatsächlichen Mehrwert bieten.&lt;/p&gt;
-
-&lt;p&gt;Abschließend als Lesetipp noch ein &lt;a href=&quot;https://www.bbc.com/news/articles/cp8e4p4z97eo&quot;&gt;BBC-Artikel über Algorithmen (engl.)&lt;/a&gt; – mit einem Überblick, wie sich Social-Media-Algorithmen entwickelt haben, wie sie den öffentlichen Diskurs beeinflussen und ob sie durch Vorfilterung die Meinungsfreiheit beeinträchtigen könnten.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/algorithmus.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/algorithmus.html</guid>
-	<pubDate>Tue, 18 Feb 2025 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
