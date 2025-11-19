@@ -14,12 +14,76 @@
 </image>
 
 <item>
+	<title>Malen, weil es Spaß macht</title>
+	<description>&lt;p&gt;Nicht mehr so regelmäßig, aber doch immer mal wieder male ich ein Bild fürs Fenster meines Arbeitszimmers. Es hängt so in der Scheibe, dass die Passanten draußen es sehen können. Für ein bisschen Abwechslung tausche ich das Bild alle paar Wochen aus, wenn ich eine neue Idee aufs Papier gebracht habe. Hier meine letzten zwölf Fensterbilder:&lt;/p&gt;
+
+&lt;style&gt;
+&lt;!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.bildraster &gt; a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%; height: 11em;
+	object-fit: contain; overflow: clip; }
+
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
+.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
+
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+--&gt;
+&lt;/style&gt;
+
+&lt;div class=&quot;bildraster&quot;&gt;
+&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/galerie/fb25k.jpg&quot; alt=&quot;Vier abstrakte, übereinanderliegende Schriftzeichen in den Farben Grün, Petrol, Pink und Lila. Die Schreibstriche bestehen aus vielen dünnen Linien, als ob die Zeichen mit einem Kamm geschrieben wurden.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/galerie/fb26k.jpg&quot; alt=&quot;Organische Farbflächen, die sich wie Bleiglas in einem Kirchenfenster aneinander schmiegen. Fast jedes Feld hat eine andere, eher kräftige Farbe, vorherrschend sind Blau- und Grüntöne, aber auch Violett und Braun, dazu oben Gelb und eine rote, sichelförmige Fläche.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/galerie/fb27k.jpg&quot; alt=&quot;Rasterförmig angeordnete Zeichen aus blauschwarzer Tinte. Die meisten haben einen hohen Strichkontrast und erinnern an japanische Schriftzeichen. Dazwischen vereinzelt sehr dünne Strichzeichen, aber auch viele Leerstellen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/galerie/fb28k.jpg&quot; alt=&quot;as Gemälde der Mona-Lisa, allerdings in 48 engen Zeilen mit jeweils 25 Schreibmaschinenbuchstaben sehr grob aber erkennbar nachgeahmt.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/galerie/fb29k.jpg&quot; alt=&quot;Ein spiralförmiges Spinnennetz mit schwarzen und violetten Fäden. Oben links sitze eine dicke, grüne Spinne.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/galerie/fb30k.jpg&quot; alt=&quot;Ein eng geschriebener Textblock mit breitem Rand, verfasst mit türkisfarbener Tinte. Inhaltlich erklärt der Text das künstlerische Verfahren der „Schüttung“. Über dem Textblock breiten sich große Pfützen aus, die farblich zwischen Grün und Hellblau chargieren.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/galerie/fb31k.jpg&quot; alt=&quot;Auf hellgrauen grund sind waagrecht dünne Papierstreifen geklebt. Oben sind sie sehr schmal, eher blassblau und vereinzelt, nach unten hin werden sie etwas breiter, dunkelblauer und dichter. Es entsteht der Eindruck einer Wasseroberfläche.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/galerie/fb32k.jpg&quot; alt=&quot;Das Bild stellt ein Stoffgewebe dar. Parallele, cyanfarbene Zickzack-Linien füllen die Fläche. In der rechten Hälfte läuft darüber ein senkrechter Streifen aus fünf durchgängigen Linien. Über allem darüber führen oben und unten zwei weiße, waagrechte Streifen, die ebenfalls aus fünf parallellen Linien bestehen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/galerie/fb33k.jpg&quot; alt=&quot;Dünne weiße Linen liegen wellenförmig nebeneinander auf dem Papier, der Grund dazwischen ist dunkelgrau, bräunlich oder hellgrau.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/galerie/fb34k.jpg&quot; alt=&quot;Ein Blumenbouquet auf blauem Grund. Zu sehen sind drei gelbe, strahlenförmige Blüten, drei rote Blumenbälle, lilagraue Kleinblüten und weiße Blütenpunkte in drei Gruppen an den Rändern, dazu noch dunkelgrüne Blätter.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/galerie/fb35k.jpg&quot; alt=&quot;Ein dunkler, ultramarinblauer Hintergrund mit Wolken. Darauf liegt ein Briefbogen mit unlesbarer Schreibschrift, darüber ein adressierter, licht verblichener Luftpost-Umschlag und eine hellblaue, gefaltete Papiertaube mit schwarzen Konturen.&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/galerie/fb36k.jpg&quot; alt=&quot;Graugrüne und bräunliche, gekurvte Flächen fügen sich aneinander. Die Kanten deuten Luftströmung an. An drei Stellen sind die Flächen wie ein Blatt im Wind geformt und knallgelb, intensivgrün und leuchtend violett gefärbt.&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
+&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb25.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb26.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb27.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb28.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb29.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb30.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb31.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb32.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb33.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb34.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb35.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb36.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mein Lieblingsbild dieser Serie sind die weißen Wellenlinien mit dazwischen Grau/Braun. Die Mona-Lisa entstand als &lt;a href=&quot;schreibmaschine.html&quot;&gt;Bild auf der Schreibmaschine&lt;/a&gt; und beim Blumenbouquet habe ich mich nochmal &lt;a href=&quot;oelfarben.html&quot;&gt;an Ölfarben gewagt&lt;/a&gt;. Für die drei fallenden Blätter im letzten Bild habe ich Pulverpigmente mit Wasser und Gummi arabicum zu einer farbintensiven Wasserfarbe angerührt und irgendwann nutze ich auch mal die Acrylfarben, die ich schon eine Weile gekauft habe.&lt;/p&gt;
+
+&lt;p&gt;Mit den &lt;a href=&quot;fensterbilder.html&quot;&gt;ersten zwölf Fensterbildern&lt;/a&gt; habe ich begonnen, um das Malen zu üben, &lt;a href=&quot;fensterbilder.html&quot;&gt;die zweite Serie&lt;/a&gt; hat mich ein bisschen frustriert und nun versuche ich, das ganze Vorhaben etwas lockerer zu sehen. Seid ihr kreativ tätig und verfolgt ein regelmäßiges Projekt, das euch zum Üben motiviert?&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/fensterbilder-3.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder-3.html</guid>
+	<pubDate>Wed, 19 Nov 2025 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Beim Inktober mitgezeichnet</title>
 	<description>&lt;p&gt;Im Internet bzw. auf Social Media gibt es jährlich eine kleine Kunstaktion namens „Inktober“ – vom englischen &lt;em&gt;ink&lt;/em&gt; (Tinte) und (Ok)tober. Bereits 2009 hat der amerikanische Illustrator Jake Parker diesen Wettbewerb ins Leben gerufen. Seitdem gibt er jedes Jahr eine Liste mit Stichworten („Prompts“) heraus. Wer mitmachen möchte, fertigt dazu täglich eine Zeichnung mit Tinte an. In den offiziellen Regeln wird empfohlen, die Zeichnungen im Netz zu veröffentlichen und mit einem Hashtag zu markieren. So kann man sie leicht finden.&lt;/p&gt;
 
 &lt;p&gt;Es geht dabei nicht um irgendwelche Preise oder um die tollste Zeichnung. Die Prompts sollen vor allem anregen, überhaupt etwas zu zeichnen und anderen zu präsentieren. Entsprechend vielfältig sind die Bilder der Teilnehmenden: Von einfachen Drei-Strich-Skizzen bis zu mehrfarbigen digitalen Bildern. Ich mache zum dritten Mal beim Inktober mit und habe mit dem Füller jeweils in der Größe 7×7 cm skizziert:&lt;/p&gt;
 
-&lt;figure&gt;&lt;a href=&quot;material/inktober25.jpg&quot;&gt;&lt;img src=&quot;material/inktober25-750px.jpg&quot; alt=&quot;Raster aus 5 mal 6 einzelnen Zeichnungen. Teilweise mit brauner, dunkelblauer und lilafarbener Tinte. Zu sehen sind unter anderem ein Hirsch mit Krone im Geweih, ein Baumstamm, zwei händeschüttelnde Männer und eine Frau, die kurz davor steht, einen Frosch abzulecken. Eine auffällig dunkles Feld zeigt eine Unterwasserszene. Einige Zeichnungen erstrecken sich über benachbarte Felder&quot; /&gt;&lt;/a&gt;
+&lt;figure&gt;&lt;a href=&quot;material/inktober25.jpg&quot;&gt;&lt;img src=&quot;material/inktober25-750px.jpg&quot; alt=&quot;Raster aus 5 mal 6 einzelnen Zeichnungen. Teilweise mit brauner, dunkelblauer und lilafarbener Tinte. Zu sehen sind unter anderem ein Hirsch mit Krone im Geweih, ein Baumstamm, zwei händeschüttelnde Männer und eine Frau, die kurz davor steht, einen Frosch abzulecken. Eine auffällig dunkles Feld zeigt eine Unterwasserszene. Einige Zeichnungen erstrecken sich über benachbarte Felder.&quot; /&gt;&lt;/a&gt;
 	&lt;figcaption&gt;Meine 31 Zeichnungen (Nr. 17+27 sind kombiniert) zu den folgenden Inktober-Stichworten: Schnurrbart, weben, Krone, trübe, Hirsch, durchstechen, Seestern, waghalsig, schwer, fegen, Stachel, in Fetzen, trinken, Strunk, zerklüftet, Patzer, reich verziert, Abmachung, arktisch, Rivalen, Druckwelle, Knopf, Leuchtkäfer, Rowdy, Inferno, rätselhaft, Zwiebel, skelettartig, Lektion, unbesetzt, Auszeichnung. (Die Abbildung verlinkt auf eine größere Ansicht)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -31,7 +95,7 @@
 
 &lt;p&gt;Nicht verschweigen möchte ich, dass es um den Inktober-Erfinder Jake Parker zwei Kontroversen gegeben hat. 2019 ließ er sich die Markenrechte am Logo und am Wort „Inktober“ schützen. &lt;a href=&quot;https://web.archive.org/web/20191222235521/https://www.mrjakeparker.com/blog/2019/12/20/inktober&quot;&gt;Laut seinem Blogartikel&lt;/a&gt; wollte er damit verhindern, dass Leute außerhalb der Community mit seinem Logo Werbeartikel verkaufen oder zu Hass und Gewalt aufrufen. Es gab wohl versehentliche und später eingestellte &lt;a href=&quot;https://www.reddit.com/r/ArtistLounge/comments/wdq2uw/comment/iijulw8/&quot;&gt;Abmahnungen an Künstler:innen&lt;/a&gt;, die ihre Inktober-Werke auf Etsy verkauft haben.&lt;/p&gt;
 
-&lt;p&gt;Der zweite Vorfall war im Jahr darauf, als Jake Parker eine Voransicht seines Anleitungsbuches &lt;em&gt;Inktober All Year Round: Your Indispensable Guide to Drawing With Ink&lt;/em&gt; zeigte. Ein anderer Illustrator behauptete daraufhin in einem YouTube-Video öffentlich, dieses Buch sei von seinem eigenen abgekupfert. (Das Originalvideo ist nicht mehr öffentlich, aber es gibt &lt;a href=&quot;https://www.youtube.com/watch?v=0GCWSBuTKPs&quot;&gt;abwägende Videos&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=GDNsHVDHfnk&quot;&gt;Video-Analysen&lt;/a&gt; und &lt;a href=&quot;https://www.youtube.com/watch?v=_Xjli9kzkoU&quot;&gt;-Kommentare&lt;/a&gt; zu dem möglichen Plagiat). Das Gerichtsverfahren dazu &lt;a href=&quot;https://web.archive.org/web/20241024101832/https://casetext.com/case/dunn-v-parker-11/&quot;&gt;wurde eingestellt&lt;/a&gt;, der Vorwurf führte jedoch zu Boykott-Aufrufen und vielen &lt;a href=&quot;https://brushwarriors.com/inktober-alternatives/#noinktober&quot;&gt;alternativen Zeichenwettbewerben&lt;/a&gt; im Oktober.&lt;/p&gt;
+&lt;p&gt;Der zweite Vorfall war im Jahr darauf, als Jake Parker eine Voransicht seines Anleitungsbuches &lt;em&gt;Inktober All Year Round: Your Indispensable Guide to Drawing With Ink&lt;/em&gt; zeigte. Ein anderer Illustrator behauptete daraufhin in einem YouTube-Video, dieses Buch sei von seinem eigenen abgekupfert. (Das Originalvideo ist nicht mehr öffentlich, aber es gibt &lt;a href=&quot;https://www.youtube.com/watch?v=0GCWSBuTKPs&quot;&gt;abwägende Videos&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=GDNsHVDHfnk&quot;&gt;Video-Analysen&lt;/a&gt; und &lt;a href=&quot;https://www.youtube.com/watch?v=_Xjli9kzkoU&quot;&gt;-Kommentare&lt;/a&gt; zu dem möglichen Plagiat). Das Gerichtsverfahren dazu &lt;a href=&quot;https://web.archive.org/web/20241024101832/https://casetext.com/case/dunn-v-parker-11/&quot;&gt;wurde eingestellt&lt;/a&gt;, der Vorwurf führte jedoch zu Boykott-Aufrufen und vielen &lt;a href=&quot;https://brushwarriors.com/inktober-alternatives/#noinktober&quot;&gt;alternativen Zeichenwettbewerben&lt;/a&gt; im Oktober.&lt;/p&gt;
 </description>
 	<link>https://charakterziffer.github.io/inktober.html</link>
 	<dc:creator>Gerhard Großmann</dc:creator>
@@ -197,44 +261,6 @@ Oregano (oder Basilikum, zum Garnieren)&lt;/div&gt;
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/wolken.html</guid>
 	<pubDate>Wed, 30 Jul 2025 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Unmögliche Neutralität</title>
-	<description>&lt;p&gt;Es gibt diesen Spruch: „Wenn du nicht für mich bist, dann bist du gegen mich.“ – Ich denke, das ist Quatsch. Nur weil ich jemanden nicht unterstütze, lege ich ihm nicht automatisch Steine in den Weg. Schließlich gibt es ja die dritte Option, neutral zu sein. Ich bin nicht für Gartenzwerge vor dem Haus, aber ich bin auch nicht dagegen. Mir sind Gartenzwerge schlicht egal und jeder sollte da machen dürfen, was er oder sie möchte. Mir ist auch egal, ob jemand Ananas auf seiner Pizza bevorzugt oder das eklig findet. Mir doch egal.&lt;/p&gt;
-
-&lt;p&gt;Nicht immer ist man aber fein raus, wenn man sich auf Neutralität beruft. Denn dieses „Mir doch egal“ bedeutet konkret: Die Folgen meiner Nicht-Entscheidung sind mir gleichgültig. Und dadurch gerate ich in einigen Fällen dann doch auf eine Seite, obwohl ich versuche, mich neutral zu verhalten.&lt;/p&gt;
-
-&lt;h2 id=&quot;politisch-neutral&quot;&gt;„Politisch neutral“&lt;/h2&gt;
-
-&lt;p&gt;Der Auslöser für diesen Blogartikel ist eine Entscheidung der Verwaltung des Deutschen Bundestags. Sie hat dem Regenbogennetzwerk von Parlamentsbeschäftigten untersagt, als Mitglieder des Bundestags beim Berliner Christopher-Street-Day (CSD) mitzulaufen (&lt;a href=&quot;https://www.zdfheute.de/politik/deutschland/csd-bundestag-regenbogennetzwerk-parlament-100.html&quot;&gt;Quelle beim ZDF&lt;/a&gt;). Queere&lt;a href=&quot;#note1&quot;&gt;&lt;sup id=&quot;ziffer1&quot;&gt;[1]&lt;/sup&gt;&lt;/a&gt; Mitarbeiter:innen dürfen sich bei der Parade am 26. Juli also nicht gemeinsam als Bundestagsmitglieder zeigen – anders als in den vergangenen beiden Jahren. Am Bundestagsgebäude soll an diesem Tag auch keine Regenbogenfahne gehisst werden.&lt;/p&gt;
-
-&lt;p&gt;Die Begründung für diese Entscheidung ist „politische Neutralität“. Kann man so machen … Weder dafür, noch dagegen.&lt;/p&gt;
-
-&lt;h2 id=&quot;wer-neutral-bleibt-hilft-dem-angreifer&quot;&gt;Wer neutral bleibt, hilft dem Angreifer&lt;/h2&gt;
-
-&lt;p&gt;Führen wir den Gedanken vom Anfang fort. In welchen Fällen falle ich denn automatisch auf eine Seite, wenn ich vorgebe, neutral zu sein? Und auf wessen Seite stehe ich denn dann?&lt;/p&gt;
-
-&lt;p&gt;Neutralität ist immer dann problematisch, wenn ich dadurch einen Missstand toleriere. Wenn ich mich einem Ertrinkenden gegenüber „neutral“ verhalte, billige ich dessen Untergang. Wenn ich einem marodierenden Mob „neutral“ zuschaue, stelle ich mich zu den Angreifern. Das kann man natürlich machen – dann aber zu behaupten, man sei ja nur „neutral“, ist Heuchelei.&lt;/p&gt;
-
-&lt;p&gt;Wer sich auf diese Weise scheinbar neutral verhält, sollte auch so ehrlich sein zu sagen: Mir ist die Benachteiligung dieser Minderheit egal, ich billige den Hass gegenüber dieser Gruppe, ich finde diese Ungerechtigkeit akzeptabel.&lt;/p&gt;
-
-&lt;h2 id=&quot;wohin-stellt-sich-die-bundestagsverwaltung&quot;&gt;Wohin stellt sich die Bundestagsverwaltung?&lt;/h2&gt;
-
-&lt;p&gt;Zurück zum Anlass dieses Artikels. Wenn die Bundestagsverwaltung ihren Beschäftigten &lt;em&gt;verbietet&lt;/em&gt;, als queere Mitarbeiter am CSD teilzunehmen, dann ist das keine Neutralität. Dann ist das „Der Bundestag verbietet seinen queeren Mitarbeiter:innen, sich beim CSD als Bundestagsbeschäftigte zu zeigen“ oder kurz: „Der Bundestag verbietet seinen Mitarbeiter:innen, sich als queer zu zeigen“. Und das bedeutet im Grunde, dass Mitarbeiter:innen des Bundestags ihre Identität nicht öffentlich zeigen dürfen (wenn sie von der „Normalität“ abweicht).&lt;/p&gt;
-
-&lt;p&gt;Meiner Meinung nach rutscht die Bundestagsverwaltung damit ein gutes Stück auf die Seite derjenigen, die queere Personen unsichtbar machen möchten und ihre Diskriminierung leugnen. Neutral ist diese Einstellung ganz sicher nicht. Ein paar ergänzende Gedanken, beispielsweise zu symbolischer und tatsächlicher Handlung sowie dem Verhältnis von Neutralität und dem Vertreten von Werten finden sich in der &lt;a href=&quot;https://www.ardaudiothek.de/episode/die-frage-des-tages/muss-sich-der-bundestag-zum-csd-neutral-verhalten/radio3/14759677/&quot;&gt;Frage des Tages&lt;/a&gt; von Radio3 (rbb).&lt;/p&gt;
-
-&lt;p&gt;Übrigens: Meines Wissens nach muss man nicht queer sein, um &lt;a href=&quot;https://csd-deutschland.de/csd-termine/&quot;&gt;an einer CSD-Parade teilzunehmen&lt;/a&gt;. Man kann auch einfach so mitlaufen, weil man denkt, dass Menschenrechte für alle gelten sollen. Ganz neutral 🏳️‍🌈&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;b id=&quot;note1&quot;&gt;[1] Queer:&lt;/b&gt; Ich verwende „queer“ hier als Sammelbegriff für schwul, lesbisch, bisexuell, transgender und intersexuell. Ja, dadurch mache ich die einzelnen Gruppen weniger sichtbar und vermische sexuelle Orientierung und geschlechtliche Identität. In diesem Fall geht es mir aber eher darum, Gemeinsamkeiten zu betonen, als die feinen Unterschiede.  &lt;a href=&quot;#ziffer1&quot;&gt;[↑]&lt;/a&gt;&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/neutralitaet.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/neutralitaet.html</guid>
-	<pubDate>Thu, 19 Jun 2025 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

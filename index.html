@@ -75,13 +75,76 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <p>Auf dieser Website ist Raum für das, wofür meinem Mastodon-Account <a href="https://typo.social/@charakterziffer/">@charakterziffer</a> zu kurzlebig ist. Mein Blog ist als Plus zu meinen Posts gedacht, eben „@cz+“. // Die letzten drei Artikel:</p>
 
 <article>
+	<time datetime="2025-11-19">Mi, 19. Nov. 2025</time>
+	<h1><a href="fensterbilder-3.html">Malen, weil es Spaß macht</a></h1>
+	<p>Nicht mehr so regelmäßig, aber doch immer mal wieder male ich ein Bild fürs Fenster meines Arbeitszimmers. Es hängt so in der Scheibe, dass die Passanten draußen es sehen können. Für ein bisschen Abwechslung tausche ich das Bild alle paar Wochen aus, wenn ich eine neue Idee aufs Papier gebracht habe. Hier meine letzten zwölf Fensterbilder:</p>
+
+<style>
+<!--
+.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
+.bildraster > a { display: flex; justify-content: center;
+	align-items: center; margin: 0; padding: 0; }
+.bildraster img { max-width: 100%; width: 100%; height: 11em;
+	object-fit: contain; overflow: clip; }
+
+@supports not (display: grid) {
+.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
+.bildraster > a { flex: 1 1 9em; margin: .5em; } }
+
+.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
+.lightbox:target { display: block; animation: none; }
+.lightbox span { display: block; width: 100%; height: 100%;
+	background-position: center; background-repeat: no-repeat; background-size: contain; }
+-->
+</style>
+
+<div class="bildraster">
+<a href="#bild-01"><img src="material/galerie/fb25k.jpg" alt="Vier abstrakte, übereinanderliegende Schriftzeichen in den Farben Grün, Petrol, Pink und Lila. Die Schreibstriche bestehen aus vielen dünnen Linien, als ob die Zeichen mit einem Kamm geschrieben wurden." /></a>
+<a href="#bild-02"><img src="material/galerie/fb26k.jpg" alt="Organische Farbflächen, die sich wie Bleiglas in einem Kirchenfenster aneinander schmiegen. Fast jedes Feld hat eine andere, eher kräftige Farbe, vorherrschend sind Blau- und Grüntöne, aber auch Violett und Braun, dazu oben Gelb und eine rote, sichelförmige Fläche." /></a>
+<a href="#bild-03"><img src="material/galerie/fb27k.jpg" alt="Rasterförmig angeordnete Zeichen aus blauschwarzer Tinte. Die meisten haben einen hohen Strichkontrast und erinnern an japanische Schriftzeichen. Dazwischen vereinzelt sehr dünne Strichzeichen, aber auch viele Leerstellen." /></a>
+<a href="#bild-04"><img src="material/galerie/fb28k.jpg" alt="as Gemälde der Mona-Lisa, allerdings in 48 engen Zeilen mit jeweils 25 Schreibmaschinenbuchstaben sehr grob aber erkennbar nachgeahmt." /></a>
+<a href="#bild-05"><img src="material/galerie/fb29k.jpg" alt="Ein spiralförmiges Spinnennetz mit schwarzen und violetten Fäden. Oben links sitze eine dicke, grüne Spinne." /></a>
+<a href="#bild-06"><img src="material/galerie/fb30k.jpg" alt="Ein eng geschriebener Textblock mit breitem Rand, verfasst mit türkisfarbener Tinte. Inhaltlich erklärt der Text das künstlerische Verfahren der „Schüttung“. Über dem Textblock breiten sich große Pfützen aus, die farblich zwischen Grün und Hellblau chargieren." /></a>
+<a href="#bild-07"><img src="material/galerie/fb31k.jpg" alt="Auf hellgrauen grund sind waagrecht dünne Papierstreifen geklebt. Oben sind sie sehr schmal, eher blassblau und vereinzelt, nach unten hin werden sie etwas breiter, dunkelblauer und dichter. Es entsteht der Eindruck einer Wasseroberfläche." /></a>
+<a href="#bild-08"><img src="material/galerie/fb32k.jpg" alt="Das Bild stellt ein Stoffgewebe dar. Parallele, cyanfarbene Zickzack-Linien füllen die Fläche. In der rechten Hälfte läuft darüber ein senkrechter Streifen aus fünf durchgängigen Linien. Über allem darüber führen oben und unten zwei weiße, waagrechte Streifen, die ebenfalls aus fünf parallellen Linien bestehen." /></a>
+<a href="#bild-09"><img src="material/galerie/fb33k.jpg" alt="Dünne weiße Linen liegen wellenförmig nebeneinander auf dem Papier, der Grund dazwischen ist dunkelgrau, bräunlich oder hellgrau." /></a>
+<a href="#bild-10"><img src="material/galerie/fb34k.jpg" alt="Ein Blumenbouquet auf blauem Grund. Zu sehen sind drei gelbe, strahlenförmige Blüten, drei rote Blumenbälle, lilagraue Kleinblüten und weiße Blütenpunkte in drei Gruppen an den Rändern, dazu noch dunkelgrüne Blätter." /></a>
+<a href="#bild-11"><img src="material/galerie/fb35k.jpg" alt="Ein dunkler, ultramarinblauer Hintergrund mit Wolken. Darauf liegt ein Briefbogen mit unlesbarer Schreibschrift, darüber ein adressierter, licht verblichener Luftpost-Umschlag und eine hellblaue, gefaltete Papiertaube mit schwarzen Konturen." /></a>
+<a href="#bild-12"><img src="material/galerie/fb36k.jpg" alt="Graugrüne und bräunliche, gekurvte Flächen fügen sich aneinander. Die Kanten deuten Luftströmung an. An drei Stellen sind die Flächen wie ein Blatt im Wind geformt und knallgelb, intensivgrün und leuchtend violett gefärbt." /></a>
+</div>
+
+<!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen -->
+<p><a href="#_" class="lightbox" id="bild-01"><span style="background-image:url(material/galerie/fb25.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-02"><span style="background-image:url(material/galerie/fb26.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-03"><span style="background-image:url(material/galerie/fb27.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-04"><span style="background-image:url(material/galerie/fb28.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-05"><span style="background-image:url(material/galerie/fb29.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-06"><span style="background-image:url(material/galerie/fb30.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-07"><span style="background-image:url(material/galerie/fb31.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-08"><span style="background-image:url(material/galerie/fb32.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-09"><span style="background-image:url(material/galerie/fb33.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-10"><span style="background-image:url(material/galerie/fb34.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-11"><span style="background-image:url(material/galerie/fb35.jpg)"></span></a>
+<a href="#_" class="lightbox" id="bild-12"><span style="background-image:url(material/galerie/fb36.jpg)"></span></a></p>
+
+<p>Mein Lieblingsbild dieser Serie sind die weißen Wellenlinien mit dazwischen Grau/Braun. Die Mona-Lisa entstand als <a href="schreibmaschine.html">Bild auf der Schreibmaschine</a> und beim Blumenbouquet habe ich mich nochmal <a href="oelfarben.html">an Ölfarben gewagt</a>. Für die drei fallenden Blätter im letzten Bild habe ich Pulverpigmente mit Wasser und Gummi arabicum zu einer farbintensiven Wasserfarbe angerührt und irgendwann nutze ich auch mal die Acrylfarben, die ich schon eine Weile gekauft habe.</p>
+
+<p>Mit den <a href="fensterbilder.html">ersten zwölf Fensterbildern</a> habe ich begonnen, um das Malen zu üben, <a href="fensterbilder.html">die zweite Serie</a> hat mich ein bisschen frustriert und nun versuche ich, das ganze Vorhaben etwas lockerer zu sehen. Seid ihr kreativ tätig und verfolgt ein regelmäßiges Projekt, das euch zum Üben motiviert?</p>
+
+	<p>---<br /><a href="fensterbilder-3.html#kommentieren">Artikel kommentieren …</a>
+		</p>
+</article>
+
+<article>
 	<time datetime="2025-10-31">Fr, 31. Okt. 2025</time>
 	<h1><a href="inktober.html">Beim Inktober mitgezeichnet</a></h1>
 	<p>Im Internet bzw. auf Social Media gibt es jährlich eine kleine Kunstaktion namens „Inktober“ – vom englischen <em>ink</em> (Tinte) und (Ok)tober. Bereits 2009 hat der amerikanische Illustrator Jake Parker diesen Wettbewerb ins Leben gerufen. Seitdem gibt er jedes Jahr eine Liste mit Stichworten („Prompts“) heraus. Wer mitmachen möchte, fertigt dazu täglich eine Zeichnung mit Tinte an. In den offiziellen Regeln wird empfohlen, die Zeichnungen im Netz zu veröffentlichen und mit einem Hashtag zu markieren. So kann man sie leicht finden.</p>
 
 <p>Es geht dabei nicht um irgendwelche Preise oder um die tollste Zeichnung. Die Prompts sollen vor allem anregen, überhaupt etwas zu zeichnen und anderen zu präsentieren. Entsprechend vielfältig sind die Bilder der Teilnehmenden: Von einfachen Drei-Strich-Skizzen bis zu mehrfarbigen digitalen Bildern. Ich mache zum dritten Mal beim Inktober mit und habe mit dem Füller jeweils in der Größe 7×7 cm skizziert:</p>
 
-<figure><a href="material/inktober25.jpg"><img src="material/inktober25-750px.jpg" alt="Raster aus 5 mal 6 einzelnen Zeichnungen. Teilweise mit brauner, dunkelblauer und lilafarbener Tinte. Zu sehen sind unter anderem ein Hirsch mit Krone im Geweih, ein Baumstamm, zwei händeschüttelnde Männer und eine Frau, die kurz davor steht, einen Frosch abzulecken. Eine auffällig dunkles Feld zeigt eine Unterwasserszene. Einige Zeichnungen erstrecken sich über benachbarte Felder" /></a>
+<figure><a href="material/inktober25.jpg"><img src="material/inktober25-750px.jpg" alt="Raster aus 5 mal 6 einzelnen Zeichnungen. Teilweise mit brauner, dunkelblauer und lilafarbener Tinte. Zu sehen sind unter anderem ein Hirsch mit Krone im Geweih, ein Baumstamm, zwei händeschüttelnde Männer und eine Frau, die kurz davor steht, einen Frosch abzulecken. Eine auffällig dunkles Feld zeigt eine Unterwasserszene. Einige Zeichnungen erstrecken sich über benachbarte Felder." /></a>
 	<figcaption>Meine 31 Zeichnungen (Nr. 17+27 sind kombiniert) zu den folgenden Inktober-Stichworten: Schnurrbart, weben, Krone, trübe, Hirsch, durchstechen, Seestern, waghalsig, schwer, fegen, Stachel, in Fetzen, trinken, Strunk, zerklüftet, Patzer, reich verziert, Abmachung, arktisch, Rivalen, Druckwelle, Knopf, Leuchtkäfer, Rowdy, Inferno, rätselhaft, Zwiebel, skelettartig, Lektion, unbesetzt, Auszeichnung. (Die Abbildung verlinkt auf eine größere Ansicht)</figcaption>
 </figure>
 
@@ -93,7 +156,7 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <p>Nicht verschweigen möchte ich, dass es um den Inktober-Erfinder Jake Parker zwei Kontroversen gegeben hat. 2019 ließ er sich die Markenrechte am Logo und am Wort „Inktober“ schützen. <a href="https://web.archive.org/web/20191222235521/https://www.mrjakeparker.com/blog/2019/12/20/inktober">Laut seinem Blogartikel</a> wollte er damit verhindern, dass Leute außerhalb der Community mit seinem Logo Werbeartikel verkaufen oder zu Hass und Gewalt aufrufen. Es gab wohl versehentliche und später eingestellte <a href="https://www.reddit.com/r/ArtistLounge/comments/wdq2uw/comment/iijulw8/">Abmahnungen an Künstler:innen</a>, die ihre Inktober-Werke auf Etsy verkauft haben.</p>
 
-<p>Der zweite Vorfall war im Jahr darauf, als Jake Parker eine Voransicht seines Anleitungsbuches <em>Inktober All Year Round: Your Indispensable Guide to Drawing With Ink</em> zeigte. Ein anderer Illustrator behauptete daraufhin in einem YouTube-Video öffentlich, dieses Buch sei von seinem eigenen abgekupfert. (Das Originalvideo ist nicht mehr öffentlich, aber es gibt <a href="https://www.youtube.com/watch?v=0GCWSBuTKPs">abwägende Videos</a>, <a href="https://www.youtube.com/watch?v=GDNsHVDHfnk">Video-Analysen</a> und <a href="https://www.youtube.com/watch?v=_Xjli9kzkoU">-Kommentare</a> zu dem möglichen Plagiat). Das Gerichtsverfahren dazu <a href="https://web.archive.org/web/20241024101832/https://casetext.com/case/dunn-v-parker-11/">wurde eingestellt</a>, der Vorwurf führte jedoch zu Boykott-Aufrufen und vielen <a href="https://brushwarriors.com/inktober-alternatives/#noinktober">alternativen Zeichenwettbewerben</a> im Oktober.</p>
+<p>Der zweite Vorfall war im Jahr darauf, als Jake Parker eine Voransicht seines Anleitungsbuches <em>Inktober All Year Round: Your Indispensable Guide to Drawing With Ink</em> zeigte. Ein anderer Illustrator behauptete daraufhin in einem YouTube-Video, dieses Buch sei von seinem eigenen abgekupfert. (Das Originalvideo ist nicht mehr öffentlich, aber es gibt <a href="https://www.youtube.com/watch?v=0GCWSBuTKPs">abwägende Videos</a>, <a href="https://www.youtube.com/watch?v=GDNsHVDHfnk">Video-Analysen</a> und <a href="https://www.youtube.com/watch?v=_Xjli9kzkoU">-Kommentare</a> zu dem möglichen Plagiat). Das Gerichtsverfahren dazu <a href="https://web.archive.org/web/20241024101832/https://casetext.com/case/dunn-v-parker-11/">wurde eingestellt</a>, der Vorwurf führte jedoch zu Boykott-Aufrufen und vielen <a href="https://brushwarriors.com/inktober-alternatives/#noinktober">alternativen Zeichenwettbewerben</a> im Oktober.</p>
 
 	<p>---<br /><a href="inktober.html#kommentieren">Artikel kommentieren …</a>
 		</p>
@@ -142,41 +205,6 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 		</p>
 </article>
 
-<article>
-	<time datetime="2025-08-12">Di, 12. Aug. 2025</time>
-	<h1><a href="tomatentarte.html">Herzhafte Tomatentarte</a></h1>
-	<p>Im Spätsommer esse ich gerne diesen süß-würzigen Kuchen. Für den Belag verwende ich mehrere Tomatensorten, vor allem verschiedene Farben sehen recht hübsch aus. Die Zutatenmenge reicht für eine Tarte mit 28 Zentimeter Durchmesser, die man sowohl ofenwarm als auch kalt essen kann.</p>
-
-<p><img src="material/tomatentarte.jpg" alt="Drei Teilbilder: Die Zutaten, der ganze Kuchen in der Tarte-Form, ein einzelnes Stück auf dem Teller" /></p>
-
-<h2 id="zutaten">Zutaten</h2>
-
-<div style="columns: 13em; margin: 1em 0 -0.25em;">
-200<small>&nbsp;</small>g Mehr (z.B. Dinkel)<br />
-Salz<br />
-100<small>&nbsp;</small>g Butter<br />
-1 Ei (mittelgroß)<br />
-150<small>&nbsp;</small>g Gorgonzola/Schafskäse<br />
-200<small>&nbsp;</small>g Doppelrahmfrischkäse<br />
-600<small>&nbsp;</small>g Tomaten<br />
-schwarzer Pfeffer<br />
-5 Scheiben Frühstücksspeck<br />
-Oregano (oder Basilikum, zum Garnieren)</div>
-
-<h2 id="zubereitung">Zubereitung</h2>
-
-<p>Mehr, 1½<small> </small>Teelöffel Salz, Butter (zerkleinert), das Ei und falls nötig 1–2<small> </small>Esslöffel Wasser mit den Knethaken zu einem glatten Teig rühren. Als Kugel in Frischhaltefolie für 30 Minuten in den Kühlschrank legen.</p>
-
-<p>Währenddessen in einer Schüssel den Gorgonzola (oder Schafskäse) mit der Gabel fein zerdrücken und mit dem Frischkäse verrühren. Mit Pfeffer abschmecken. Nun die Tomaten in Scheiben schneiden.</p>
-
-<p>Backofen auf 175 °C Umluft vorheizen. Den Teig ausrollen und in eine flache Tarteform legen. Die Gorgonzola-Creme auf dem Teigboden verstreichen und die Tomatenscheiben schuppenartig darauf legen. Salzen und pfeffern.</p>
-
-<p>Im Backofen auf unterer Schiene 25–35 Minuten backen. Dann die Schinkenscheiben ohne Überlappung auf dem Kuchen verteilen und noch 5 Minuten weiterbacken. Vor dem Servieren mit Oregano oder Basilikum dekorieren (vergesse ich immer).</p>
-
-	<p>---<br /><a href="tomatentarte.html#kommentieren">Artikel kommentieren …</a>
-		</p>
-</article>
-
 <p style="text-align:right;">Alle Artikel <a href="archiv.html">im Archiv lesen</a>&nbsp;…</p>
 
 <h1 id="sonstiges">Sonstiges</h1>
@@ -210,7 +238,7 @@ E-Mail: postfach2b [ät] web.de, SMS: <span style="margin-right:0.2em">0178</spa
 
 <p><strong>§<small> </small>3 Widerspruch gegen Direktwerbung</strong> · Die Verwendung meiner Kontaktdaten zur gewerblichen Werbung ist ausdrücklich nicht erwünscht; ich widerspreche hiermit jeder kommerziellen Nutzung und Weitergabe meiner Daten (gemäß § 21 DSGVO). // Über <a href="briefe.html">private Fanpost</a> freue ich mich allerdings sehr und antworte darauf mit großem Vergnügen!</p>
 
-<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2025-10-31T08:08:49+01:00</p>
+<p style="text-align:right; color:#666; font-size:0.75em; margin: 3.5em .75em 1.1em">Website zuletzt erstellt: 2025-11-19T07:49:41+01:00</p>
 
 </main>
 
