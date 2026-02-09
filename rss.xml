@@ -14,6 +14,94 @@
 </image>
 
 <item>
+	<title>Über die Musik im „Vampir“</title>
+	<description>&lt;p&gt;In meiner Freizeit spiele ich im Hohenfelser Burgtheater mit, einer Laienspielgruppe unter dem Dach des hiesigen Kolpingvereins. Dieses Jahr im März bringen wir Ralph Wallners Stück &lt;em&gt;Der Vampir von Zwickelbach&lt;/em&gt; auf die Bühne. Allerdings werde ich nicht mitspielen, denn ich habe die Aufgabe des Regisseurs übernommen. So mache ich mir seit Wochen schon Gedanken über Werbung, Bühnenbild, Beleuchtung, Kostüme … und natürlich leite ich die Proben und versuche mit den Schauspieler:innen die Figuren zu gestalten.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/vampir-inserat.jpg&quot; alt=&quot;Werbeanzeige mit Foto der Spieler und den Aufführungsterminen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Darüber hinaus habe ich mir vorgenommen, die Musik für unser Theaterstück selbst zu komponieren. Ich habe bei der örtlichen Jugendblaskapelle angefragt und sie möchte tatsächlich mitmachen und mit mir die Stücke aufnehmen. Zwar hätte ich vorhandene Musik suchen können (z.&lt;small&gt; &lt;/small&gt;B. Celine Dions &lt;em&gt;My Heart Will Go On&lt;/em&gt; für die Liebesszenen oder Verdis &lt;em&gt;Dies Irae&lt;/em&gt; für sehr dramatische Momente), aber selbstkomponiert hat die Musik exakt die Länge und Intensität, die ich mir an der jeweiligen Stelle vorstelle.&lt;/p&gt;
+
+&lt;h2 id=&quot;wie-kommt-man-auf-die-musik&quot;&gt;Wie kommt man auf die Musik?&lt;/h2&gt;
+
+&lt;p&gt;Inhaltlich spielt „Der Vampir von Zwickelbach“ in einem alten Gutshof, den die Besitzerin gern an ein neureiches Paar verkaufen möchte. Doch im verlassenen Weinkeller haust ein Vampir, dessen Biss unerwartete Folgen hat. Das bekommt auch ein junges Liebespaar zu spüren, das den Weinkeller für ein Stelldichein nutzen wollte. Ob zwei verrückte Vampirjäger zu einem guten Ende beitragen, ist zweifelhaft … Hier die ausführliche &lt;a href=&quot;https://ralph-wallner.de/Des-san-de-Stueckl/Der-Vampir-von-Zwicklbach/&quot;&gt;Stückbeschreibung des Autors&lt;/a&gt;, die aber viel verrät.&lt;/p&gt;
+
+&lt;p&gt;Zunächst habe ich im Textbuch die Stellen herausgesucht, wo Musik die Handlung unterstützt und bereichert. Lieber etwas weniger Musik und dafür zu den Momenten, wo sie die Dramatik oder die Gefühle der Figuren gut unterstreicht. Letztlich bin ich auf drei Themen gekommen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;der Moment, in dem der Vampir zubeißt&lt;/li&gt;
+  &lt;li&gt;das Mantra, mit dem sich die Vampirjäger motivieren&lt;/li&gt;
+  &lt;li&gt;ein romantisches Liebesthema&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dann habe ich mir Text und Handlung an den entsprechenden Stellen genau angesehen und überlegt, wie eine Musik dazu passen würde, wann sie alleinstehen muss und wann sie besser ruhig unter dem gesprochenen Text liegt.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-vampirbiss-schreck-ärger-und-ohnmacht&quot;&gt;1) Vampirbiss: Schreck, Ärger und Ohnmacht&lt;/h3&gt;
+
+&lt;p&gt;Beim Biss des Vampirs habe ich musikalisch das nachgezeichnet, was der Betroffene durchlebt: Zunächst eine plötzliche Überraschung (ein Paukenschlag), Schmerz und Zorn (ein lauter, dissonanter Akkord) und schließlich Schwindel und Ohnmacht (abwärts gerichtete Melodie). Am Ende folgen noch drei etwas „magische“ Akkorde mit Glockenspiel, die den Effekt des Bisses andeuten – mehr wird hier nicht verraten. Im Notenbild sieht das so aus (hier zwecks Übersicht ohne Flöte und Posaune):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/vampirmusik-1.svg#invert&quot; alt=&quot;Die Noten zum ersten Vampirbiss&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Und so klingt das ganze (mit Flöte und Posaune). Vorläufig nur mit den künstlichen Instrumenten der MIDI-Ausgabe, das tausche ich später aus, sobald ich die Aufnahme mit Orchester-Ensemble habe:&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/vampirmusik-1.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/vampirmusik-1.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-beschwörung-wir-fangen-einen-vampir&quot;&gt;2) Beschwörung: „Wir fangen einen Vampir“&lt;/h3&gt;
+
+&lt;p&gt;Für den Gesang der Vampirjäger war rhythmisch natürlich der Text ausschlaggebend. Die beiden Figuren sprechen beschwörend immer wieder: „Wir fangen einen Vampir“. Dafür habe ich erst mal nach einer mantra-artigen Betonung gesucht. Am einfachsten funktioniert das für mich, wenn ich den Satz wiederholt vor mich hin sage, verschiedene Betonungen ausprobiere und darauf achte, welche natürliche Sprachmelodie sich ergibt. Dadurch bin ich schließlich bei einem 6/8-Takt und einem eher flachen Melodieverlauf gelandet. Als Hilfe für die Darsteller:innen lasse ich den Rhythmus anfangs von der Trommel spielen. (Noten hier ohne Tuba, Trommel ab Takt 3, restliche ab Takt 5)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/vampirmusik-2.svg#invert&quot; alt=&quot;Anfang der Jäger-Beschwörung&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In dieser Szene stimmt ab der Hälfte eine dritte Figur in den Gesang ein, die es übertreibt und am Ende ins Opernhafte abgleitet. Dafür habe ich mir ein Musikzitat aus Mozarts &lt;em&gt;Zauberflöte&lt;/em&gt; geliehen, die berühmte zweiten Arie der Königin der Nacht (&lt;a href=&quot;https://de.wikipedia.org/wiki/Der_H%C3%B6lle_Rache_kocht_in_meinem_Herzen&quot;&gt;„Der Hölle Rache kocht in meinem Herzen“&lt;/a&gt;). Die steht zwar im 4/4-Takt, aber das konnte ich aufeinander abstimmen und ein Taktwechsel am Ende unterstützt das Chaotische der Situation.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/vampirmusik-2.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/vampirmusik-2.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;Außerdem wollte ich noch etwas Unheimliches, Unheilverkündendes und habe die Harmonien so angelegt, dass die Posaune mit dem &lt;a href=&quot;https://de.wikipedia.org/wiki/Dies_irae&quot;&gt;mittelalterlichen Dies Irae&lt;/a&gt; einsteigen konnte – eine sehr oft zitierte Melodie, die vielleicht der ein oder andere heraushört. Weggelassen habe ich das Siegfried-Motiv von Wagner, Fußball-Spottgesänge und stürzende Linien in der Klarinette – man muss bei einem Bündel an Ideen auch aussortieren.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-liebesthema-ein--und-ausatmen&quot;&gt;3) Liebesthema: Ein- und Ausatmen&lt;/h3&gt;
+
+&lt;p&gt;An zwei Stellen sprechen Figuren über ihren Geliebten. Ich wollte dies mit einer zarten Melodie unterstützen, die dezent unter dem Text liegt. Das heißt: Ein eher unauffälliger Rhythmus, leise Töne, ruhige Akkorde und eine reduzierte Instrumentierung: Keine Blechbläser, keine Schlaginstrumente, sondern Klarinette, Oboe und Bassklarinette.&lt;/p&gt;
+
+&lt;p&gt;Vom Melodieverlauf habe ich mich am Atmen orientiert: Luft holen, erwartungsvoll hoffen und schmachtend ausatmen. Damit ich trotzdem ein wiedererkennbares Element habe, beginnt das Thema mit drei aufsteigenden Achteln und einem wiederholten, längeren Ton; hier die Noten:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/vampirmusik-3.svg#invert&quot; alt=&quot;Noten des Liebesthemas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;material/vampirmusik-3.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+	Dein Browser scheint das HTML5-Audio-Element nicht zu unterstützen. Alternativ kannst du die &lt;a href=&quot;material/vampirmusik-3.mp3&quot;&gt;Datei herunterladen&lt;/a&gt;.
+&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;Großen Spaß macht es mir, die verschiedenen Musikmotive dann miteinander zu kombinieren. Zum Beispiel taucht am Schluss zwar ganz penetrant das Liebesthema auf, aber die Flöte streut ein „Jetzt haben wir einen Vampir“ aus der Beschwörung dazwischen. Und bei einem späteren Vampirbiss erklingt das Liebesthema im Glockenspiel (keine Sorge, das ergibt in der Handlung Sinn).&lt;/p&gt;
+
+&lt;h2 id=&quot;musik-schreiben-für-orchester-ensemble&quot;&gt;Musik schreiben für Orchester-Ensemble&lt;/h2&gt;
+
+&lt;p&gt;Für mich war das Komponieren für Blasorchester etwas ganz Neues. Zwar habe ich schon Stücke für Klavier, Chor und Streicher geschrieben, aber bei Blasinstrumenten hatte ich keine Erfahrung – sieht man von einem erfolglosen Versuch in der 9. Klasse ab, bei dem ich erfahren musste, dass einige Instrumente auf einen anderen Grundton gestimmt sind. Das heißt, wenn der Trompeter beispielsweise die Note C spielt, erklingt tatsächlich ein B. Man muss die einzelnen Stimmen in der Partitur also um den richtigen Tonabstand versetzen, damit am Ende alle Instrumente miteinander harmonieren (bei den Notenbeispielen oben habe ich übrigens nicht transponiert).&lt;/p&gt;
+
+&lt;p&gt;Um mich an die Aufgabe heranzutasten, habe ich im Dezember eine Probe des Jugendblaskapelle besucht. So konnte ich hören, welche Instrumente überhaupt vorhanden sind, welchen Klänge sich spielen lassen und was gut zueinander passt.&lt;/p&gt;
+
+&lt;h2 id=&quot;die-qual-der-großen-auswahl&quot;&gt;Die Qual der großen Auswahl&lt;/h2&gt;
+
+&lt;p&gt;Beim Komponieren war es für mich eine Herausforderung, zu entscheiden, welche Instrumente ich verwenden möchte. Die Blaskapelle hat nämlich einiges zur Verfügung: Flöten und diverse Klarinetten, verschiedene Saxofone, Trompeten, Posaunen, Tuba, Xylophon, Schlagzeug, … Ich musste auf jeden Fall eine Auswahl treffen, denn eine Komposition für großes Orchester hätte erstens nicht zum Stück gepasst und mich zweitens völlig überfordert.&lt;/p&gt;
+
+&lt;p&gt;Unklar war für mich auch, welche Instrumente die führende Stimme übernehmen sollen und welche eher begleiten. Bei Chorgesang liegt die Hauptmelodie automatisch im Sopran, der Alt begleitet, Tenor bildet ein Gegenstück und der Bass sorgt für eine stabile Grundlage. Hier im Orchester-Ensemble habe ich für die Hauptstimme die Klarinette gewählt, dazu als Begleitung ein Flügelhorn. Die Flöte liegt meist mit Verzierungen oben drüber – oder sie verstärkt die Melodie, indem sie einfach dasselbe spielt (bei Chorgesang verpönt, im Orchester ganz üblich). Die Posaune habe ich wie einen Tenor eingesetzt, als Gegenstück zur Hauptstimme. Die Bass-Linie kommt von der Tuba, mit Akzenten der Pauken. Und schließlich das Glockenspiel, eher für Effekte.&lt;/p&gt;
+
+&lt;p&gt;An dieser Stelle ein großes Dankeschön an die Leiterin der Blaskapelle, Nica Schächtele! Sie hat mir bei der Auswahl und Abstimmung der Klangfarben sehr geholfen und mir gute Tipps gegeben, was eine bequeme Tonhöhe für einzelne Instrumente ist und ob sich meine Noten überhaupt gut spielen lassen (z.&lt;small&gt; &lt;/small&gt;B. ist ein Glissando auf einer Klarinette sehr schwierig).&lt;/p&gt;
+
+&lt;p&gt;So viel zu Komposition für unser diesjähriges Theaterstück „Der Vampir von Zwickelbach“. Gestern haben wir die Bühne aufgebaut, in knapp zwei Wochen startet der Kartenvorverkauf, allmählich können die Darsteller:innen ihre Texte auswendig. Es gibt noch viel zu tun bis zur Premiere am Freitag, den 13. März 2026!&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/vampirmusik.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/vampirmusik.html</guid>
+	<pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Heute gelernt (Vorsatz 2026)</title>
 	<description>&lt;p&gt;In den letzten drei Jahren hat es mit meinem guten Vorsatz nicht so gut geklappt. 2023–2025 hatte ich es mit einer Listen von 23–25 Dingen versucht, die mir im jeweiligen Jahr Freude bereiten sollen. Aber erstens sind mir gar nicht so viele Dinge eingefallen (weshalb ich den Vorsatz immer nochmal fortgeführt habe) und zweitens waren mir dann nicht alle geplanten Dinge so wichtig.&lt;/p&gt;
 
@@ -165,42 +253,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/alphabet.html</guid>
 	<pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Herzhafte Tomatentarte</title>
-	<description>&lt;p&gt;Im Spätsommer esse ich gerne diesen süß-würzigen Kuchen. Für den Belag verwende ich mehrere Tomatensorten, vor allem verschiedene Farben sehen recht hübsch aus. Die Zutatenmenge reicht für eine Tarte mit 28 Zentimeter Durchmesser, die man sowohl ofenwarm als auch kalt essen kann.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;material/tomatentarte.jpg&quot; alt=&quot;Drei Teilbilder: Die Zutaten, der ganze Kuchen in der Tarte-Form, ein einzelnes Stück auf dem Teller&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;zutaten&quot;&gt;Zutaten&lt;/h2&gt;
-
-&lt;div style=&quot;columns: 13em; margin: 1em 0 -0.25em;&quot;&gt;
-200&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Mehr (z.B. Dinkel)&lt;br /&gt;
-Salz&lt;br /&gt;
-100&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Butter&lt;br /&gt;
-1 Ei (mittelgroß)&lt;br /&gt;
-150&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Gorgonzola/Schafskäse&lt;br /&gt;
-200&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Doppelrahmfrischkäse&lt;br /&gt;
-600&lt;small&gt;&amp;nbsp;&lt;/small&gt;g Tomaten&lt;br /&gt;
-schwarzer Pfeffer&lt;br /&gt;
-5 Scheiben Frühstücksspeck&lt;br /&gt;
-Oregano (oder Basilikum, zum Garnieren)&lt;/div&gt;
-
-&lt;h2 id=&quot;zubereitung&quot;&gt;Zubereitung&lt;/h2&gt;
-
-&lt;p&gt;Mehr, 1½&lt;small&gt; &lt;/small&gt;Teelöffel Salz, Butter (zerkleinert), das Ei und falls nötig 1–2&lt;small&gt; &lt;/small&gt;Esslöffel Wasser mit den Knethaken zu einem glatten Teig rühren. Als Kugel in Frischhaltefolie für 30 Minuten in den Kühlschrank legen.&lt;/p&gt;
-
-&lt;p&gt;Währenddessen in einer Schüssel den Gorgonzola (oder Schafskäse) mit der Gabel fein zerdrücken und mit dem Frischkäse verrühren. Mit Pfeffer abschmecken. Nun die Tomaten in Scheiben schneiden.&lt;/p&gt;
-
-&lt;p&gt;Backofen auf 175 °C Umluft vorheizen. Den Teig ausrollen und in eine flache Tarteform legen. Die Gorgonzola-Creme auf dem Teigboden verstreichen und die Tomatenscheiben schuppenartig darauf legen. Salzen und pfeffern.&lt;/p&gt;
-
-&lt;p&gt;Im Backofen auf unterer Schiene 25–35 Minuten backen. Dann die Schinkenscheiben ohne Überlappung auf dem Kuchen verteilen und noch 5 Minuten weiterbacken. Vor dem Servieren mit Oregano oder Basilikum dekorieren (vergesse ich immer).&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/tomatentarte.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/tomatentarte.html</guid>
-	<pubDate>Tue, 12 Aug 2025 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>
