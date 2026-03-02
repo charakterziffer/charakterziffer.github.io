@@ -41,7 +41,7 @@
 
 &lt;p&gt;&lt;img src=&quot;material/vampirmusik-1.svg#invert&quot; alt=&quot;Die Noten zum ersten Vampirbiss&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Und so klingt das ganze (mit Flöte und Posaune). Vorläufig nur mit den künstlichen Instrumenten der MIDI-Ausgabe, das tausche ich später aus, sobald ich die Aufnahme mit Orchester-Ensemble habe:&lt;/p&gt;
+&lt;p&gt;Und so klingt das ganze (mit Flöte und Posaune):&lt;/p&gt;
 
 &lt;p&gt;&lt;audio controls=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;material/vampirmusik-1.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
