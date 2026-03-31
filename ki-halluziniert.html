@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<!--
+      Hallo Fremde:r,
+
+      schön, dass du dich umschaust! Falls du Fragen hast oder wissen
+      möchtest, wie bestimmte Sachen auf meiner Website funktionieren,
+      schreib doch einfach an postfach2b [ät] web.de oder sende einen
+      Post an @charakterziffer@typo.social.
+
+      Weiterhin viele schöne Entdeckungen!
+-->
+<head>
+<meta charset="UTF-8">
+<title>KI halluziniert immer // @cz+</title>
+
+<link href='bestand/style.css' rel='stylesheet'>
+<link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<link href="https://charakterziffer.github.io/rss.xml" rel="alternate" type="application/rss+xml" title="@cz+ Blogartikel">
+
+<link rel="icon" href="/bestand/favicon.png">
+<link rel="apple-touch-icon" href="/bestand/touchicon.png">
+<meta name="theme-color" content="#228811">
+<meta name="color-scheme" content="light dark">
+
+<meta name="description" content="Sogenannte „künstliche Intelligenz“ ist weniger schlau, als wir ihr zutrauen.Und so wie sie funktioniert, wird sie weiterhin Fehler produzieren.">
+<meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
+<meta name="fediverse:creator" content="charakterziffer@typo.social" />
+<meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="strict-origin">
+
+<style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
+@media print { header:after { content: ""; width: 110px; height: 110px;
+background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/ki-halluziniert.html'); background-size: 110px;
+position: absolute; right: .7em; top: 1em;
+z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+
+<meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
+</head>
+
+<body>
+<header>
+<a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
+<div>
+<form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
+<input type="text" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
+<input type="hidden" id="q" name="q">
+<input type="hidden" name="kl" value="de-de">
+<input type="hidden" name="kj" value="281">
+<input type="hidden" name="kx" value="666">
+<input type="hidden" name="k9" value="281">
+<input type="hidden" name="kaa" value="839">
+<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="submit" value="🔍" aria-label="Suchen">
+</form>
+<nav class="no-hyphens no-print"><ul>
+	<li><a href="/archiv.html">Archiv</a></li>
+	<li><a href="/extra/index.html">Extra</a></li>
+	<li><a href="/rss.xml">RSS</a></li>
+	<li><a href="/index.html#impressum">Impressum</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main>
+<article>
+<time datetime="2026-03-31">Di, 31. März 2026</time>
+<h1>KI halluziniert immer</h1>
+<p>Künstliche Intelligenz (KI) hält in viele Bereiche des Alltags Einzug. Sie erzeugt Bildmaterial für Werbung, produziert günstige Musik für Privatradios, erstellt Übungsaufgaben fürs Lernen in der Schule, analysiert per Überwachungskamera das Verhalten von Passanten, schreibt selbstständig Programm-Code.</p>
+
+<p>Wenn KI mal daneben liegt, spricht man von „Halluzination“. Man unterstellt ihr, dass sie sich getäuscht habe, ihr ein Fehler unterlaufen ist, etc. Diese Wortwahl verschleiert aber eine fundamentale Eigenschaft von KI: Sie generiert ihre Ausgabe aufgrund von Statistik und ohne Absicht, eigenen Willen oder grundsätzliches Verständnis. Darum kann sie gar nicht halluzinieren – oder sie tut es immer.</p>
+
+<h2 id="wie-funktioniert-ki">Wie funktioniert KI?</h2>
+
+<p>„Künstliche Intelligenz“ (und ich halte diesen Begriff schon für eine Irreführung) erfüllt ihre Aufgaben grundsätzlich nach dem gleichen Prinzip. Zu Beginn wird eine riesige Datenmenge eingelesen: Fotos aller Art, verfügbare Musikstücke, Prüfungsaufgaben, Überwachungsvideos, Alltagstexte, Software-Code – je nachdem, womit die KI später umgehen soll. Diese Daten sind kategorisiert, bewertet, mit einer Beschreibung versehen, etc. … also möglichst verständlich aufbereitet, damit das KI-System darin logische Zusammenhänge erkennen kann. Diese Phase der Datenfütterung nennt man Training.</p>
+
+<p>Aufgrund der Trainingsdaten kann eine KI anschließend neue Informationen verarbeiten, Fragen beantworten und Bilder generieren. Sie sucht nach Verbindungen und gibt das aus, was am wahrscheinlichsten zur Anfrage passt – so, wie es in den Trainingsdaten angelegt war. Dabei kommen teils erstaunliche Ergebnisse hervor, die uns mit ihrem Detailreichtum, ihrer Schnelligkeit und scheinbaren Kreativität verblüffen.</p>
+
+<h2 id="wahrscheinlichkeit-und-interpretation">Wahrscheinlichkeit und Interpretation</h2>
+
+<p>Im Grunde ist die sogenannte künstliche Intelligenz jedoch eine recht gute Statistik-Maschine, die je nach Training wahrscheinlich passende Antworten ausgibt. Ob diese Antwort sinnvoll erscheint, hängt von der Qualität der Trainigsdaten ab, aber auch von demjenigen, der die Ausgabe interpretiert.</p>
+
+<p>Dass Chatbots auf uns so einfühlsam, klug und verständnisvoll wirken, liegt unter anderem daran, dass wir Menschen es gewohnt sind, unvollständige oder nicht ganz passende Aussagen in einen plausiblen Sinnzusammenhang zu stellen. Zwei Stichworte sind hier <a href="https://www.youtube.com/watch?v=Y9nI_Rxs1Fc">ELIZA-Effekt</a> <em>(Video vom rbb)</em>, bei dem wir technischen Geräten menschliche Eigenschaften zuschreiben, und der <a href="https://de.wikipedia.org/wiki/Barnum-Effekt">Barnum-Effekt</a>, der uns dazu bringt, allgemeine Aussagen auf uns passend zu deuten.</p>
+
+<p>Die menschliche Neigung, auch unklare Antworten sinnvoll einzuordnen, sollte man nicht vergessen, wenn man mit KI interagiert. Über <a href="irrtum.html">kognitive Verzerrungen</a> habe ich bereits früher gebloggt.</p>
+
+<h2 id="unbestreitbar-praktisch">Unbestreitbar praktisch</h2>
+
+<p>Dadurch, dass sie Verbindungen und Muster findet und reproduzieren kann, eignet sich KI hervorragend für Aufgaben, die genau das erfordern. Zum Beispiel habe ich neulich den Titel eines Films gesucht, an den ich mich nur vage erinnern konnte. Eine normale Internetsuche mit Stichworten brachte keine brauchbaren Ergebnisse, wohl aber Googles KI-Assistent:</p>
+
+<blockquote>
+  <p><strong>Wie heißt der Science-Fiction-Film, in dem an verschiedenen Orten auf der Welt schwarze Monolithe auftauchen? Es hat mit Aliens zu tun, die eine Zeichensprache verwenden, die Vergangenheit und Zukunft überbrücken kann.</strong></p>
+
+  <p>Der Film, den du suchst, heißt Arrival (2016).
+Obwohl die monolithischen Objekte oft mit Stanley Kubricks 2001: Odyssee im Weltraum assoziiert werden, passt deine Beschreibung der Zeitebenen und der Alien-Sprache exakt auf das Werk von Regisseur Denis Villeneuve.</p>
+</blockquote>
+
+<p>(Die Antwort war noch unnötig viel länger)</p>
+
+<h2 id="goldkörnchen-in-viel-zu-viel-sand">Goldkörnchen in viel zu viel Sand</h2>
+
+<p>Ist die Frage aber zu speziell, werden die Antworten eines Chatbots weniger brauchbar und es besteht auch die Gefahr, dass „die Maschine“ falsche Antworten ausgibt. Chatbots sind/waren nämlich so programmiert, dass sie eher etwas Wahrscheinliches (aber falsches) antworten, als einzuräumen, dass sie zur Anfrage nichts finden können.</p>
+
+<blockquote>
+  <p><strong>Wie heißt die Muschel, deren Gehäuse mit einem Muster versehen ist, das aussieht wie einzelne Schriftzeichen?</strong></p>
+
+  <p>Diese Muschel wird im Deutschen oft als Hebräische Kegelschnecke (Conus ebraeus) bezeichnet. Der Name rührt daher, dass die dunklen, rechteckigen Flecken auf ihrem hellen Gehäuse an hebräische Schriftzeichen erinnern. Es gibt jedoch noch weitere Arten mit ähnlichen “Schrift-Mustern”:</p>
+
+  <ul>
+    <li>Alphabet-Kegelschnecke (Conus spurius): Ihr Muster aus orangefarbenen oder braunen Flecken sieht oft wie Buchstaben des lateinischen Alphabets oder Zahlen aus.</li>
+    <li>Schrift-Kegelschnecke (Conus litteratus): Auch diese Art trägt ihren Namen aufgrund der musterhaften Ähnlichkeit zu Schriftstücken.</li>
+  </ul>
+</blockquote>
+
+<p>Die Antwort war noch länger. Mit einer Bildersuche konnte ich aber sehen, dass die drei genannten Schnecken nicht die waren, die ich gesucht habe. Ihr Gehäuse hat Tupfen, aber beim besten Willen keine Schriftzeichen. Also eine Rückfrage:</p>
+
+<blockquote>
+  <p><strong>Nein, diese Schnecken meine ich nicht. Gibt es eine andere Muschel, die wirklich so aussieht, als hätte sie jemand mit Schriftzeichen bemalt?</strong></p>
+
+  <p>Meinst du vielleicht die Schrift-Venerupis (Venerupis litterata)? Diese Muschel gehört zur Familie der Venusmuscheln und ihr Gehäuse ist tatsächlich mit einem sehr feinen, dunklen Muster überzogen, das an viele kleine, handgeschriebene Buchstaben oder zierliche Kalligraphie erinnert.</p>
+</blockquote>
+
+<p>Diese Behauptung war schwieriger zu verifizieren, denn unter diesem Namen fanden sich nur wenige Internettreffer (weil die Muschel in Wirklichkeit anders heißt?) Jedenfalls war auch das nicht das gesuchte Exemplar. Neuer Versuch:</p>
+
+<blockquote>
+  <p><strong>Nein, die ist es auch nicht. Welche Muscheln gibt es noch, auf deren Äußeres scheinbar Schriftzeichen geschrieben sind?</strong></p>
+
+  <p>Wenn die bisherigen Venus- und Kegelschnecken nicht die richtige Antwort waren, suchst du höchstwahrscheinlich nach der Hieroglyphen-Muschel (Lioconcha hieroglyphica).</p>
+
+  <p>Diese Muschel verdankt ihren Namen einem faszinierenden Muster aus dunkelbraunen Linien auf hellem Grund, die fast exakt wie handgezeichnete Hieroglyphen oder abstrakte Schriftzeichen wirken. […]</p>
+
+  <p>Vorkommen: Sie ist vor allem im Roten Meer und im Indopazifik heimisch, wo sie im flachen Wasser in Sandböden lebt. <a href="http://www.unterwasser-welt-rotesmeer.de/html/hieroglyphen-muschel.html">🔗</a></p>
+</blockquote>
+
+<p>Ja genau! Die <a href="https://duckduckgo.com/?t=ffab&amp;q=Lioconcha+hieroglyphica&amp;ia=images&amp;iax=images">Hieroglyphen-Venusmuschel</a> ist es!</p>
+
+<p>Das konnte ich mit KI aber nur durch beharrliches Nachfragen herausfinden und indem ich vorher schon ein bestimmtes Grundwissen mitgebracht habe, um falsche Antworten zu erkennen. Beim letzten Absatz verlinkt die KI zum Beispiel auf eine verwandte Art (<em>Lioconcha castrensis</em>), während die <em>Lioconcha hieroglyphica</em> gar nicht im Roten Meer lebt.</p>
+
+<h2 id="ki-kann-sich-auch-mal-irren">„KI kann sich auch mal irren“</h2>
+
+<p>Ja nun, Muscheln sind ja wirklich Expertenwissen, da liegt die KI halt manchmal daneben … Nein, genau das ist nicht der Fall. Und das möchte ich mit diesem Artikel klar stellen: KI macht keine Fehler, sie irrt nicht, sie hat sich nicht vertan.</p>
+
+<p>Eine KI zu benutzen ist immer, als ob man einen mehr oder weniger gut gezinkten Würfel wirft. Mit hoher Wahrscheinlichkeit kommt ein Treffer raus, aber genauso gibt es immer wieder Ergebnisse, die nicht passen. Und das sind keine Fehler, sondern es ist eine grundlegende Eigenschaft der „künstlichen Intelligenz“ – sie basiert auf Wahrscheinlichkeiten und eben nicht auf Fachwissen, vertieftes Nachdenken oder Weltverständnis.</p>
+
+<p>Leider kann man die Missgriffe der KI nur erkennen, wenn man ihre Antworten kritisch hinterfragt, mit einer anderen Quelle überprüft und selbst genug Fachwissen besitzt, um ihren Wahrheitsgehalt einschätzen zu können. Darum meine Empfehlung für den Gebrauch von Chatbots, Bildgeneratoren und anderem KI-Werkzeug: Nutze sie nur, wenn du die Richtigkeit der Ergebnisse selbst beurteilen kannst.</p>
+
+<h2 id="kurz-angerissen-weitere-ki-probleme">Kurz angerissen: Weitere KI-Probleme</h2>
+
+<p>In diesem Artikel geht es darum, wie brauchbar KI-Ausgaben sind. Wer damit arbeiten möchte, sollte sich weitere Probleme von KI-Werkzeugen bewusst machen:</p>
+
+<ul>
+  <li>
+    <p>Zum Training werden ungefragt Texte, Fotos, Musik und andere kreative Werke verwertet. Menschen, die von ihrer schöpferischen Arbeit leben möchten, erhalten dafür keine Entschädigung; dafür gehen ihnen Aufträge verloren, weil ihre kreative Arbeit mit KI billig nachproduziert wird.</p>
+  </li>
+  <li>
+    <p>Nicht nur die Anwendung sondern vor allem auch das Training der KI verbraucht massiv Rechenleistung und damit Energie und Trinkwasser zur Kühlung der Rechenzentren.</p>
+  </li>
+  <li>
+    <p>Um brauchbare Datensätze zu erhalten, müssen Menschen in Billiglohnländern unter unwürdigen Arbeitsbedingungen große Datenmengen sichten und kategorisieren – auch Datenmaterial wie Kindesmissbrauch und Enthauptungsvideos.</p>
+  </li>
+  <li>
+    <p>Die KI-Technik sorgt für eine Machtkonzentration bei Technik-Konzernen, ermöglicht die billige Produktion von Fake-News, massenhafte Überwachung, selbstständig tötende Kriegswaffen … Wer KI-Unternehmen finanziert, unterstützt womöglich auch diese Entwicklungen.</p>
+  </li>
+</ul>
+
+<p>Stimmt, ich halte nicht viel von dieser sogenannten „künstlichen Intelligenz“ – zumindest nicht so, wie sie derzeit angewendet wird. Ums Thema „KI“ ging es am 19.<small> </small>März auch bei <a href="https://www.ardmediathek.de/video/reschke-fernsehen/hey-chatgpt-lass-die-wirtschaft-crashen/das-erste/Y3JpZDovL25kci5kZS84NTAwYjQ3Yi0xODYzLTQ1OWMtYTkzMS0yN2NiZmQwZjBlY2I">Reschke Fernsehen</a>.</p>
+
+<p style="margin-bottom:2.25em;">---<br>
+<i>Rubrik(en):</i>&nbsp; <a href="archiv.html?kritik">#kritik</a>&nbsp;</p>
+</article>
+
+
+
+<div class="no-print">
+<h2 id="kommentieren">Artikel kommentieren</h2>
+<p>Ich lege Wert auf eine respektvolle Diskussion und überprüfe jeden Kommentar, bevor er hier erscheint. Beleidigende oder unsachliche Beiträge ignoriere ich mit großem Vergnügen. Alle Angaben sind freiwillig.</p>
+
+<form name="kommentarformular" id="kommentarformular" method="post"  action="https://www.onlex.de/_formmailer.php?username=charakterziffer" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" onsubmit="javascript:document.getElementById('aktuelles-datum').value = new Date().toLocaleString('de-DE')">
+<input type="hidden" name="post_id" value="/ki-halluziniert">
+<input type="hidden" name="date" id="aktuelles-datum" value="">
+<input type="hidden" name="nummer" value="1">
+
+<div>
+	<label for="name">Name</label>
+	<div><input name="&#10;name" id="name" type="text" size="25" spellcheck="false">
+	&nbsp;<i>(Pseudonym möglich)</i></div>
+	<!-- &#10; fügt in der Onlex-Mail eine Leerzeile davor ein -->
+</div>
+<div>
+	<label for="mail">E-Mail</label>
+	<div><input name="mail" id="mail" type="email" size="25" autocomplete="email" spellcheck="false" autocapitalize="off">
+	&nbsp;<i>(wird nicht veröffentlicht)</i></div>
+</div>
+<div>
+	<label for="link">Website</label>
+	<div><input name="link" id="link" type="url" size="25" spellcheck="false" onblur="javascript:if ( (this.value!='') && !(this.value.match(/^https?:\/\//g)) ) { this.value = 'http://' + this.value;}"></div>
+	<!-- Beim Verlassen des Feldes: Falls Webadresse nicht leer und nicht mit „http(s)://“ beginnt, dann ergänze „http://“. So bekommt der Nutzer wegen type="url" keine Fehlermeldung, auch wenn er das http:// vergisst. -->
+</div>
+<div>
+	<label for="comment">Kommentar</label><br>
+	<textarea name="comment" id="comment" required spellcheck="true"></textarea>
+</div>
+<input type="hidden" name="&#10;---&#10;Hinweis" value="Mehrzeilige Kommentare in 'Apostrophe' einschließen und um </р><р> ergänzen.">
+<input name="onlex_password" id="onlex_password" type="hidden" value="5">
+<div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
+</form>
+
+<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+</div> <!-- .no-print -->
+<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="vampirbuehne.html">← Über die Bühne zum „Vampir“</a></p>
+
+<p style="clear:both;" class="no-print"></p>
+</main>
+
+<aside class="no-hyphens">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
+<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</aside>
+
+<script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
+</body>
+</html>

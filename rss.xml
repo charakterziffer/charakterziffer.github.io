@@ -14,6 +14,113 @@
 </image>
 
 <item>
+	<title>KI halluziniert immer</title>
+	<description>&lt;p&gt;Künstliche Intelligenz (KI) hält in viele Bereiche des Alltags Einzug. Sie erzeugt Bildmaterial für Werbung, produziert günstige Musik für Privatradios, erstellt Übungsaufgaben fürs Lernen in der Schule, analysiert per Überwachungskamera das Verhalten von Passanten, schreibt selbstständig Programm-Code.&lt;/p&gt;
+
+&lt;p&gt;Wenn KI mal daneben liegt, spricht man von „Halluzination“. Man unterstellt ihr, dass sie sich getäuscht habe, ihr ein Fehler unterlaufen ist, etc. Diese Wortwahl verschleiert aber eine fundamentale Eigenschaft von KI: Sie generiert ihre Ausgabe aufgrund von Statistik und ohne Absicht, eigenen Willen oder grundsätzliches Verständnis. Darum kann sie gar nicht halluzinieren – oder sie tut es immer.&lt;/p&gt;
+
+&lt;h2 id=&quot;wie-funktioniert-ki&quot;&gt;Wie funktioniert KI?&lt;/h2&gt;
+
+&lt;p&gt;„Künstliche Intelligenz“ (und ich halte diesen Begriff schon für eine Irreführung) erfüllt ihre Aufgaben grundsätzlich nach dem gleichen Prinzip. Zu Beginn wird eine riesige Datenmenge eingelesen: Fotos aller Art, verfügbare Musikstücke, Prüfungsaufgaben, Überwachungsvideos, Alltagstexte, Software-Code – je nachdem, womit die KI später umgehen soll. Diese Daten sind kategorisiert, bewertet, mit einer Beschreibung versehen, etc. … also möglichst verständlich aufbereitet, damit das KI-System darin logische Zusammenhänge erkennen kann. Diese Phase der Datenfütterung nennt man Training.&lt;/p&gt;
+
+&lt;p&gt;Aufgrund der Trainingsdaten kann eine KI anschließend neue Informationen verarbeiten, Fragen beantworten und Bilder generieren. Sie sucht nach Verbindungen und gibt das aus, was am wahrscheinlichsten zur Anfrage passt – so, wie es in den Trainingsdaten angelegt war. Dabei kommen teils erstaunliche Ergebnisse hervor, die uns mit ihrem Detailreichtum, ihrer Schnelligkeit und scheinbaren Kreativität verblüffen.&lt;/p&gt;
+
+&lt;h2 id=&quot;wahrscheinlichkeit-und-interpretation&quot;&gt;Wahrscheinlichkeit und Interpretation&lt;/h2&gt;
+
+&lt;p&gt;Im Grunde ist die sogenannte künstliche Intelligenz jedoch eine recht gute Statistik-Maschine, die je nach Training wahrscheinlich passende Antworten ausgibt. Ob diese Antwort sinnvoll erscheint, hängt von der Qualität der Trainigsdaten ab, aber auch von demjenigen, der die Ausgabe interpretiert.&lt;/p&gt;
+
+&lt;p&gt;Dass Chatbots auf uns so einfühlsam, klug und verständnisvoll wirken, liegt unter anderem daran, dass wir Menschen es gewohnt sind, unvollständige oder nicht ganz passende Aussagen in einen plausiblen Sinnzusammenhang zu stellen. Zwei Stichworte sind hier &lt;a href=&quot;https://www.youtube.com/watch?v=Y9nI_Rxs1Fc&quot;&gt;ELIZA-Effekt&lt;/a&gt; &lt;em&gt;(Video vom rbb)&lt;/em&gt;, bei dem wir technischen Geräten menschliche Eigenschaften zuschreiben, und der &lt;a href=&quot;https://de.wikipedia.org/wiki/Barnum-Effekt&quot;&gt;Barnum-Effekt&lt;/a&gt;, der uns dazu bringt, allgemeine Aussagen auf uns passend zu deuten.&lt;/p&gt;
+
+&lt;p&gt;Die menschliche Neigung, auch unklare Antworten sinnvoll einzuordnen, sollte man nicht vergessen, wenn man mit KI interagiert. Über &lt;a href=&quot;irrtum.html&quot;&gt;kognitive Verzerrungen&lt;/a&gt; habe ich bereits früher gebloggt.&lt;/p&gt;
+
+&lt;h2 id=&quot;unbestreitbar-praktisch&quot;&gt;Unbestreitbar praktisch&lt;/h2&gt;
+
+&lt;p&gt;Dadurch, dass sie Verbindungen und Muster findet und reproduzieren kann, eignet sich KI hervorragend für Aufgaben, die genau das erfordern. Zum Beispiel habe ich neulich den Titel eines Films gesucht, an den ich mich nur vage erinnern konnte. Eine normale Internetsuche mit Stichworten brachte keine brauchbaren Ergebnisse, wohl aber Googles KI-Assistent:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Wie heißt der Science-Fiction-Film, in dem an verschiedenen Orten auf der Welt schwarze Monolithe auftauchen? Es hat mit Aliens zu tun, die eine Zeichensprache verwenden, die Vergangenheit und Zukunft überbrücken kann.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Der Film, den du suchst, heißt Arrival (2016).
+Obwohl die monolithischen Objekte oft mit Stanley Kubricks 2001: Odyssee im Weltraum assoziiert werden, passt deine Beschreibung der Zeitebenen und der Alien-Sprache exakt auf das Werk von Regisseur Denis Villeneuve.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(Die Antwort war noch unnötig viel länger)&lt;/p&gt;
+
+&lt;h2 id=&quot;goldkörnchen-in-viel-zu-viel-sand&quot;&gt;Goldkörnchen in viel zu viel Sand&lt;/h2&gt;
+
+&lt;p&gt;Ist die Frage aber zu speziell, werden die Antworten eines Chatbots weniger brauchbar und es besteht auch die Gefahr, dass „die Maschine“ falsche Antworten ausgibt. Chatbots sind/waren nämlich so programmiert, dass sie eher etwas Wahrscheinliches (aber falsches) antworten, als einzuräumen, dass sie zur Anfrage nichts finden können.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Wie heißt die Muschel, deren Gehäuse mit einem Muster versehen ist, das aussieht wie einzelne Schriftzeichen?&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Diese Muschel wird im Deutschen oft als Hebräische Kegelschnecke (Conus ebraeus) bezeichnet. Der Name rührt daher, dass die dunklen, rechteckigen Flecken auf ihrem hellen Gehäuse an hebräische Schriftzeichen erinnern. Es gibt jedoch noch weitere Arten mit ähnlichen “Schrift-Mustern”:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Alphabet-Kegelschnecke (Conus spurius): Ihr Muster aus orangefarbenen oder braunen Flecken sieht oft wie Buchstaben des lateinischen Alphabets oder Zahlen aus.&lt;/li&gt;
+    &lt;li&gt;Schrift-Kegelschnecke (Conus litteratus): Auch diese Art trägt ihren Namen aufgrund der musterhaften Ähnlichkeit zu Schriftstücken.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Die Antwort war noch länger. Mit einer Bildersuche konnte ich aber sehen, dass die drei genannten Schnecken nicht die waren, die ich gesucht habe. Ihr Gehäuse hat Tupfen, aber beim besten Willen keine Schriftzeichen. Also eine Rückfrage:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Nein, diese Schnecken meine ich nicht. Gibt es eine andere Muschel, die wirklich so aussieht, als hätte sie jemand mit Schriftzeichen bemalt?&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Meinst du vielleicht die Schrift-Venerupis (Venerupis litterata)? Diese Muschel gehört zur Familie der Venusmuscheln und ihr Gehäuse ist tatsächlich mit einem sehr feinen, dunklen Muster überzogen, das an viele kleine, handgeschriebene Buchstaben oder zierliche Kalligraphie erinnert.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Diese Behauptung war schwieriger zu verifizieren, denn unter diesem Namen fanden sich nur wenige Internettreffer (weil die Muschel in Wirklichkeit anders heißt?) Jedenfalls war auch das nicht das gesuchte Exemplar. Neuer Versuch:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Nein, die ist es auch nicht. Welche Muscheln gibt es noch, auf deren Äußeres scheinbar Schriftzeichen geschrieben sind?&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Wenn die bisherigen Venus- und Kegelschnecken nicht die richtige Antwort waren, suchst du höchstwahrscheinlich nach der Hieroglyphen-Muschel (Lioconcha hieroglyphica).&lt;/p&gt;
+
+  &lt;p&gt;Diese Muschel verdankt ihren Namen einem faszinierenden Muster aus dunkelbraunen Linien auf hellem Grund, die fast exakt wie handgezeichnete Hieroglyphen oder abstrakte Schriftzeichen wirken. […]&lt;/p&gt;
+
+  &lt;p&gt;Vorkommen: Sie ist vor allem im Roten Meer und im Indopazifik heimisch, wo sie im flachen Wasser in Sandböden lebt. &lt;a href=&quot;http://www.unterwasser-welt-rotesmeer.de/html/hieroglyphen-muschel.html&quot;&gt;🔗&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ja genau! Die &lt;a href=&quot;https://duckduckgo.com/?t=ffab&amp;amp;q=Lioconcha+hieroglyphica&amp;amp;ia=images&amp;amp;iax=images&quot;&gt;Hieroglyphen-Venusmuschel&lt;/a&gt; ist es!&lt;/p&gt;
+
+&lt;p&gt;Das konnte ich mit KI aber nur durch beharrliches Nachfragen herausfinden und indem ich vorher schon ein bestimmtes Grundwissen mitgebracht habe, um falsche Antworten zu erkennen. Beim letzten Absatz verlinkt die KI zum Beispiel auf eine verwandte Art (&lt;em&gt;Lioconcha castrensis&lt;/em&gt;), während die &lt;em&gt;Lioconcha hieroglyphica&lt;/em&gt; gar nicht im Roten Meer lebt.&lt;/p&gt;
+
+&lt;h2 id=&quot;ki-kann-sich-auch-mal-irren&quot;&gt;„KI kann sich auch mal irren“&lt;/h2&gt;
+
+&lt;p&gt;Ja nun, Muscheln sind ja wirklich Expertenwissen, da liegt die KI halt manchmal daneben … Nein, genau das ist nicht der Fall. Und das möchte ich mit diesem Artikel klar stellen: KI macht keine Fehler, sie irrt nicht, sie hat sich nicht vertan.&lt;/p&gt;
+
+&lt;p&gt;Eine KI zu benutzen ist immer, als ob man einen mehr oder weniger gut gezinkten Würfel wirft. Mit hoher Wahrscheinlichkeit kommt ein Treffer raus, aber genauso gibt es immer wieder Ergebnisse, die nicht passen. Und das sind keine Fehler, sondern es ist eine grundlegende Eigenschaft der „künstlichen Intelligenz“ – sie basiert auf Wahrscheinlichkeiten und eben nicht auf Fachwissen, vertieftes Nachdenken oder Weltverständnis.&lt;/p&gt;
+
+&lt;p&gt;Leider kann man die Missgriffe der KI nur erkennen, wenn man ihre Antworten kritisch hinterfragt, mit einer anderen Quelle überprüft und selbst genug Fachwissen besitzt, um ihren Wahrheitsgehalt einschätzen zu können. Darum meine Empfehlung für den Gebrauch von Chatbots, Bildgeneratoren und anderem KI-Werkzeug: Nutze sie nur, wenn du die Richtigkeit der Ergebnisse selbst beurteilen kannst.&lt;/p&gt;
+
+&lt;h2 id=&quot;kurz-angerissen-weitere-ki-probleme&quot;&gt;Kurz angerissen: Weitere KI-Probleme&lt;/h2&gt;
+
+&lt;p&gt;In diesem Artikel geht es darum, wie brauchbar KI-Ausgaben sind. Wer damit arbeiten möchte, sollte sich weitere Probleme von KI-Werkzeugen bewusst machen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Zum Training werden ungefragt Texte, Fotos, Musik und andere kreative Werke verwertet. Menschen, die von ihrer schöpferischen Arbeit leben möchten, erhalten dafür keine Entschädigung; dafür gehen ihnen Aufträge verloren, weil ihre kreative Arbeit mit KI billig nachproduziert wird.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Nicht nur die Anwendung sondern vor allem auch das Training der KI verbraucht massiv Rechenleistung und damit Energie und Trinkwasser zur Kühlung der Rechenzentren.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Um brauchbare Datensätze zu erhalten, müssen Menschen in Billiglohnländern unter unwürdigen Arbeitsbedingungen große Datenmengen sichten und kategorisieren – auch Datenmaterial wie Kindesmissbrauch und Enthauptungsvideos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Die KI-Technik sorgt für eine Machtkonzentration bei Technik-Konzernen, ermöglicht die billige Produktion von Fake-News, massenhafte Überwachung, selbstständig tötende Kriegswaffen … Wer KI-Unternehmen finanziert, unterstützt womöglich auch diese Entwicklungen.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stimmt, ich halte nicht viel von dieser sogenannten „künstlichen Intelligenz“ – zumindest nicht so, wie sie derzeit angewendet wird. Ums Thema „KI“ ging es am 19.&lt;small&gt; &lt;/small&gt;März auch bei &lt;a href=&quot;https://www.ardmediathek.de/video/reschke-fernsehen/hey-chatgpt-lass-die-wirtschaft-crashen/das-erste/Y3JpZDovL25kci5kZS84NTAwYjQ3Yi0xODYzLTQ1OWMtYTkzMS0yN2NiZmQwZjBlY2I&quot;&gt;Reschke Fernsehen&lt;/a&gt;.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/ki-halluziniert.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/ki-halluziniert.html</guid>
+	<pubDate>Tue, 31 Mar 2026 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Über die Bühne zum „Vampir“</title>
 	<description>&lt;p&gt;Derzeit dreht sich bei mir alles um unser Theaterstück „Der Vampir von Zwickelbach“. Wir haben diese Woche noch drei Hauptproben, am Freitag ist dann die Premiere. Als Regisseur komme ich gerade zu kaum etwas anderen. Warum nicht aus der Not eine Tugend machen und aus meinen Gedanken dazu noch einen Blogeintrag schreiben? Zur &lt;a href=&quot;vampirmusik.html&quot;&gt;selbstkomponierten Musik im Vampir&lt;/a&gt; habe ich ja bereits gebloggt.&lt;/p&gt;
 
@@ -245,32 +352,6 @@ wo es aus dem Keller geht. Er stellt die Verbindung zum Außen, Friedlichen, Nor
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder-3.html</guid>
 	<pubDate>Wed, 19 Nov 2025 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Beim Inktober mitgezeichnet</title>
-	<description>&lt;p&gt;Im Internet bzw. auf Social Media gibt es jährlich eine kleine Kunstaktion namens „Inktober“ – vom englischen &lt;em&gt;ink&lt;/em&gt; (Tinte) und (Ok)tober. Bereits 2009 hat der amerikanische Illustrator Jake Parker diesen Wettbewerb ins Leben gerufen. Seitdem gibt er jedes Jahr eine Liste mit Stichworten („Prompts“) heraus. Wer mitmachen möchte, fertigt dazu täglich eine Zeichnung mit Tinte an. In den offiziellen Regeln wird empfohlen, die Zeichnungen im Netz zu veröffentlichen und mit einem Hashtag zu markieren. So kann man sie leicht finden.&lt;/p&gt;
-
-&lt;p&gt;Es geht dabei nicht um irgendwelche Preise oder um die tollste Zeichnung. Die Prompts sollen vor allem anregen, überhaupt etwas zu zeichnen und anderen zu präsentieren. Entsprechend vielfältig sind die Bilder der Teilnehmenden: Von einfachen Drei-Strich-Skizzen bis zu mehrfarbigen digitalen Bildern. Ich mache zum dritten Mal beim Inktober mit und habe mit dem Füller jeweils in der Größe 7×7 cm skizziert:&lt;/p&gt;
-
-&lt;figure&gt;&lt;a href=&quot;material/inktober25.jpg&quot;&gt;&lt;img src=&quot;material/inktober25-750px.jpg&quot; alt=&quot;Raster aus 5 mal 6 einzelnen Zeichnungen. Teilweise mit brauner, dunkelblauer und lilafarbener Tinte. Zu sehen sind unter anderem ein Hirsch mit Krone im Geweih, ein Baumstamm, zwei händeschüttelnde Männer und eine Frau, die kurz davor steht, einen Frosch abzulecken. Eine auffällig dunkles Feld zeigt eine Unterwasserszene. Einige Zeichnungen erstrecken sich über benachbarte Felder.&quot; /&gt;&lt;/a&gt;
-	&lt;figcaption&gt;Meine 31 Zeichnungen (Nr. 17+27 sind kombiniert) zu den folgenden Inktober-Stichworten: Schnurrbart, weben, Krone, trübe, Hirsch, durchstechen, Seestern, waghalsig, schwer, fegen, Stachel, in Fetzen, trinken, Strunk, zerklüftet, Patzer, reich verziert, Abmachung, arktisch, Rivalen, Druckwelle, Knopf, Leuchtkäfer, Rowdy, Inferno, rätselhaft, Zwiebel, skelettartig, Lektion, unbesetzt, Auszeichnung. (Die Abbildung verlinkt auf eine größere Ansicht)&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Wie gesagt sind die Regeln recht offen (ausführlich auf Englisch erläutert &lt;a href=&quot;https://inktober.com/faq&quot;&gt;in den FAQ&lt;/a&gt;). Man muss nicht jeden Tag mitzeichnen, kann die Zeichnungen auch analog ausstellen, kann digital arbeiten, mit Bleistift vorzeichnen, Kalligrafie anwenden. Zwar wird vorgeschlagen, nur mit (schwarzer) Tinte zu zeichnen, aber natürlich gehen auch Filzstifte, Wasserfarben und alles, womit man sich sonst noch kreativ ausdrücken möchte.&lt;/p&gt;
-
-&lt;p&gt;Man muss sich auch nicht unbedingt an die offiziellen Prompts halten – aber es ist schon interessant zu sehen, wie andere Zeichner:innen die gleichen Stichworte umsetzen. Ich scrolle da regelmäßig durch Mastodon und gucke, was &lt;a href=&quot;https://mastodon.social/tags/inktober&quot;&gt;unter dem Schlagwort „Inktober“&lt;/a&gt; gepostet wird. Auf dem populäreren Instagram kann man das ohne Account leider nicht sehen.&lt;/p&gt;
-
-&lt;h2 id=&quot;warum-der-inktober-boykottiert-wurdewird&quot;&gt;Warum der Inktober boykottiert wurde/wird&lt;/h2&gt;
-
-&lt;p&gt;Nicht verschweigen möchte ich, dass es um den Inktober-Erfinder Jake Parker zwei Kontroversen gegeben hat. 2019 ließ er sich die Markenrechte am Logo und am Wort „Inktober“ schützen. &lt;a href=&quot;https://web.archive.org/web/20191222235521/https://www.mrjakeparker.com/blog/2019/12/20/inktober&quot;&gt;Laut seinem Blogartikel&lt;/a&gt; wollte er damit verhindern, dass Leute außerhalb der Community mit seinem Logo Werbeartikel verkaufen oder zu Hass und Gewalt aufrufen. Es gab wohl versehentliche und später eingestellte &lt;a href=&quot;https://www.reddit.com/r/ArtistLounge/comments/wdq2uw/comment/iijulw8/&quot;&gt;Abmahnungen an Künstler:innen&lt;/a&gt;, die ihre Inktober-Werke auf Etsy verkauft haben.&lt;/p&gt;
-
-&lt;p&gt;Der zweite Vorfall war im Jahr darauf, als Jake Parker eine Voransicht seines Anleitungsbuches &lt;em&gt;Inktober All Year Round: Your Indispensable Guide to Drawing With Ink&lt;/em&gt; zeigte. Ein anderer Illustrator behauptete daraufhin in einem YouTube-Video, dieses Buch sei von seinem eigenen abgekupfert. (Das Originalvideo ist nicht mehr öffentlich, aber es gibt &lt;a href=&quot;https://www.youtube.com/watch?v=0GCWSBuTKPs&quot;&gt;abwägende Videos&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=GDNsHVDHfnk&quot;&gt;Video-Analysen&lt;/a&gt; und &lt;a href=&quot;https://www.youtube.com/watch?v=_Xjli9kzkoU&quot;&gt;-Kommentare&lt;/a&gt; zu dem möglichen Plagiat). Das Gerichtsverfahren dazu &lt;a href=&quot;https://web.archive.org/web/20241024101832/https://casetext.com/case/dunn-v-parker-11/&quot;&gt;wurde eingestellt&lt;/a&gt;, der Vorwurf führte jedoch zu Boykott-Aufrufen und vielen &lt;a href=&quot;https://brushwarriors.com/inktober-alternatives/#noinktober&quot;&gt;alternativen Zeichenwettbewerben&lt;/a&gt; im Oktober.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/inktober.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/inktober.html</guid>
-	<pubDate>Fri, 31 Oct 2025 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
