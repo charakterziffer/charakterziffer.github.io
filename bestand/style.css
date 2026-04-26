@@ -297,8 +297,7 @@ blockquote > :is(h1, h2, h3) { margin: 0 0 .25em; }
 blockquote > p { margin: 0 0 .3em; }
 
 img { break-inside: avoid; }
-article div { -webkit-print-color-adjust: exact !important;
-	print-color-adjust:exact !important; /* Hintergrundbilder drucken */}
+article div { print-color-adjust: exact !important; /* Hintergrundbilder drucken */}
 
 #suchform, .no-print, a[href$='#kommentieren'], a[href$='#kommentare'] { display: none; }
 a[href]::after { content: ' [' attr(href) ']'; font: italic 1rem/1.4
