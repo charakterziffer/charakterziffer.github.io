@@ -14,6 +14,26 @@
 </image>
 
 <item>
+	<title>Die 9. Sinfonie von Dvořák</title>
+	<description>&lt;p&gt;Ein klassisches Musikstück, das ich sehr gern und immer wieder mit Gänsehaut höre, stammt vom böhmischen Komponisten Antonín Dvořák (1841–1904). Seine 9. Sinfonie in e-Moll (op. 95) dauert rund 43 Minuten. Hier eine Aufnahme des &lt;em&gt;hr-Sinfonieorchesters Frankfurt&lt;/em&gt; von 2022:&lt;/p&gt;
+
+&lt;figure style=&quot;position:relative; height:0; width:98.8%; padding-bottom:55.5%;&quot;&gt;&lt;iframe style=&quot;position:absolute; top:0; left:0; width:100%; height:100%; border:0;&quot; title=&quot;Eingebettetes Video&quot; src=&quot;data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3E%3Cp%3EDieses%20Video%20stammt%20aus%20der%20ARD-Mediathek.%20Beim%20Laden%20werden%20auch%20Skripte%20abgerufen%20und%20ggf.%20Cookies%20in%20deinem%20Browser%20gespeichert.%20Dadurch%20kann%20die%20ARD-Mediathek%20deine%20Aktivit%C3%A4ten%20auf%20ihrer%20Plattform%20verfolgen.%20Du%20kannst%20das%20teilweise%20verhindern%2C%20indem%20du%20Cookies%20von%20Drittanbietern%20in%20deinen%20Browser-Einstellungen%20blockierst.%3Cp%3ETrotz%20m%C3%B6glichem%20Tracking%20das%20%3Ca%20href%3D%27https%3A%2F%2Fwww.ardmediathek.de%2Fembed%2FZDc3ZGQ0OTQtZGE0MS00ZDY0LTg2MDMtMjQ1MGE5ZTFkMjYw%27%3EVideo%20aufrufen%3C%2Fa%3E%3F%3C%2Fbody%3E%3C%2Fhtml%3E&quot; allowfullscreen=&quot;&quot; allow=&quot;clipboard-read; clipboard-write&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;
+
+&lt;p&gt;Das Stück trägt den Namen „Aus der Neuen Welt“, dazu angeregt hat Dvořák nämlich ein dreijähriger Aufenthalt in Amerika ab 1892. Er hat dort unter anderem indianische Melodien recherchiert und sich von deren Charakter und Eigenheiten zu einer eigenen Komposition inspirieren lassen.&lt;/p&gt;
+
+&lt;p&gt;Glaubt man dem &lt;a href=&quot;https://de.wikipedia.org/wiki/9._Sinfonie_(Dvo%C5%99%C3%A1k)&quot;&gt;Wikipedia-Artikel&lt;/a&gt;, so offenbart die 9. Sinfonie, „dass Dvořáks Kenntnis authentischer Musik der Indigenen Völker und Schwarzen nicht sehr tiefgehend gewesen sein kann.“ – wobei das auch nicht die Absicht war! Und ehrlich gesagt finde ich das besser so. Lieber sich von neuen Eindrücken zu eigenen Ideen anregen lassen, als sich vorhandene Werke anzueignen und neu aufbereitet unter eigenem Namen herauszugeben.&lt;/p&gt;
+
+&lt;p&gt;„Aus der Neuen Welt“ gilt bei weitem nicht als Geheimtipp, sondern ist vermutlich Dvořáks bekanntestes Werk und im Bereich klassischer Musik recht populär. Mir gefällt daran die Vielfalt verschiedener Melodien, wie sie miteinader kombiniert werden und immer wieder aufblitzen. Außerdem begeistert mich der stellenweise kraftvolle und unerwartete Rhythmus, schön abgewechselt mit zarten, ruhigen Abschnitten … Es passiert einfach richtig viel in dieser Sinfonie!&lt;/p&gt;
+
+&lt;p&gt;Wer keine Zeit oder Lust auf eine Dreiviertelstunde Klassik hat, dem lege ich zumindest meine Lieblingsstelle ans Herz: die erste Hälfte des 4. Satzes (in der Aufnahme oben von ca. 32’20” bis 38’45).&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/dvoraks-neunte.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/dvoraks-neunte.html</guid>
+	<pubDate>Wed, 27 May 2026 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>KI halluziniert immer</title>
 	<description>&lt;p&gt;Künstliche Intelligenz (KI) hält in viele Bereiche des Alltags Einzug. Sie erzeugt Bildmaterial für Werbung, produziert günstige Musik für Privatradios, erstellt Übungsaufgaben fürs Lernen in der Schule, analysiert per Überwachungskamera das Verhalten von Passanten, schreibt selbstständig Programm-Code.&lt;/p&gt;
 
@@ -288,70 +308,6 @@ wo es aus dem Keller geht. Er stellt die Verbindung zum Außen, Friedlichen, Nor
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/gelernt.html</guid>
 	<pubDate>Fri, 02 Jan 2026 00:00:00 +0100</pubDate>
-</item>
-
-<item>
-	<title>Malen, weil es Spaß macht</title>
-	<description>&lt;p&gt;Nicht mehr so regelmäßig, aber doch immer mal wieder male ich ein Bild fürs Fenster meines Arbeitszimmers. Es hängt so in der Scheibe, dass die Passanten draußen es sehen können. Für ein bisschen Abwechslung tausche ich das Bild alle paar Wochen aus, wenn ich eine neue Idee aufs Papier gebracht habe. Hier meine letzten zwölf Fensterbilder:&lt;/p&gt;
-
-&lt;style&gt;
-&lt;!--
-.bildraster { margin: 2.2em 0; display: grid; grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); }
-.bildraster &gt; a { display: flex; justify-content: center;
-	align-items: center; margin: 0; padding: 0; }
-.bildraster img { max-width: 100%; width: 100%; height: 11em;
-	object-fit: contain; overflow: clip; }
-
-@supports not (display: grid) {
-.bildraster { margin:1.1em -.5em -.75em; display: flex; flex-wrap: wrap; }
-.bildraster &gt; a { flex: 1 1 9em; margin: .5em; } }
-
-.lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-	display:none; z-index:1; background:rgba(0,0,0,.8); padding:3vmin; }
-.lightbox:target { display: block; animation: none; }
-.lightbox span { display: block; width: 100%; height: 100%;
-	background-position: center; background-repeat: no-repeat; background-size: contain; }
---&gt;
-&lt;/style&gt;
-
-&lt;div class=&quot;bildraster&quot;&gt;
-&lt;a href=&quot;#bild-01&quot;&gt;&lt;img src=&quot;material/galerie/fb25k.jpg&quot; alt=&quot;Vier abstrakte, übereinanderliegende Schriftzeichen in den Farben Grün, Petrol, Pink und Lila. Die Schreibstriche bestehen aus vielen dünnen Linien, als ob die Zeichen mit einem Kamm geschrieben wurden.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-02&quot;&gt;&lt;img src=&quot;material/galerie/fb26k.jpg&quot; alt=&quot;Organische Farbflächen, die sich wie Bleiglas in einem Kirchenfenster aneinander schmiegen. Fast jedes Feld hat eine andere, eher kräftige Farbe, vorherrschend sind Blau- und Grüntöne, aber auch Violett und Braun, dazu oben Gelb und eine rote, sichelförmige Fläche.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-03&quot;&gt;&lt;img src=&quot;material/galerie/fb27k.jpg&quot; alt=&quot;Rasterförmig angeordnete Zeichen aus blauschwarzer Tinte. Die meisten haben einen hohen Strichkontrast und erinnern an japanische Schriftzeichen. Dazwischen vereinzelt sehr dünne Strichzeichen, aber auch viele Leerstellen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-04&quot;&gt;&lt;img src=&quot;material/galerie/fb28k.jpg&quot; alt=&quot;Das Gemälde der Mona-Lisa, allerdings in 48 engen Zeilen mit jeweils 25 Schreibmaschinenbuchstaben sehr grob aber erkennbar nachgeahmt.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-05&quot;&gt;&lt;img src=&quot;material/galerie/fb29k.jpg&quot; alt=&quot;Ein spiralförmiges Spinnennetz mit schwarzen und violetten Fäden. Oben links sitze eine dicke, grüne Spinne.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-06&quot;&gt;&lt;img src=&quot;material/galerie/fb30k.jpg&quot; alt=&quot;Ein eng geschriebener Textblock mit breitem Rand, verfasst mit türkisfarbener Tinte. Inhaltlich erklärt der Text das künstlerische Verfahren der „Schüttung“. Über dem Textblock breiten sich große Pfützen aus, die farblich zwischen Grün und Hellblau chargieren.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-07&quot;&gt;&lt;img src=&quot;material/galerie/fb31k.jpg&quot; alt=&quot;Auf hellgrauen Grund sind waagrecht dünne Papierstreifen geklebt. Oben sind sie sehr schmal, eher blassblau und vereinzelt, nach unten hin werden sie etwas breiter, dunkelblauer und dichter. Es entsteht der Eindruck einer Wasseroberfläche.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-08&quot;&gt;&lt;img src=&quot;material/galerie/fb32k.jpg&quot; alt=&quot;Das Bild stellt ein Stoffgewebe dar. Parallele, cyanfarbene Zickzack-Linien füllen die Fläche. In der rechten Hälfte läuft darüber ein senkrechter Streifen aus fünf durchgängigen Linien. Über allem darüber führen oben und unten zwei weiße, waagrechte Streifen, die ebenfalls aus fünf parallellen Linien bestehen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-09&quot;&gt;&lt;img src=&quot;material/galerie/fb33k.jpg&quot; alt=&quot;Dünne weiße Linen liegen wellenförmig nebeneinander auf dem Papier, der Grund dazwischen ist dunkelgrau, bräunlich oder hellgrau.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-10&quot;&gt;&lt;img src=&quot;material/galerie/fb34k.jpg&quot; alt=&quot;Ein Blumenbouquet auf blauem Grund. Zu sehen sind drei gelbe, strahlenförmige Blüten, drei rote Blumenbälle, lilagraue Kleinblüten und weiße Blütenpunkte in drei Gruppen an den Rändern, dazu noch dunkelgrüne Blätter.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-11&quot;&gt;&lt;img src=&quot;material/galerie/fb35k.jpg&quot; alt=&quot;Ein dunkler, ultramarinblauer Hintergrund mit Wolken. Darauf liegt ein Briefbogen mit unlesbarer Schreibschrift, darüber ein adressierter, licht verblichener Luftpost-Umschlag und eine hellblaue, gefaltete Papiertaube mit schwarzen Konturen.&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;#bild-12&quot;&gt;&lt;img src=&quot;material/galerie/fb36k.jpg&quot; alt=&quot;Graugrüne und bräunliche, gekurvte Flächen fügen sich aneinander. Die Kanten deuten Luftströmung an. An drei Stellen sind die Flächen wie ein Blatt im Wind geformt und knallgelb, intensivgrün und leuchtend violett gefärbt.&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;!-- Bilder als Hintergrund, so laden sie erst beim Lightbox-Öffnen --&gt;
-&lt;p&gt;&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-01&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb25.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-02&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb26.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-03&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb27.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-04&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb28.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-05&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb29.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-06&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb30.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-07&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb31.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-08&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb32.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-09&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb33.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-10&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb34.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-11&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb35.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;a href=&quot;#_&quot; class=&quot;lightbox&quot; id=&quot;bild-12&quot;&gt;&lt;span style=&quot;background-image:url(material/galerie/fb36.jpg)&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Mein Lieblingsbild dieser Serie sind die weißen Wellenlinien mit dazwischen Grau/Braun. Die Mona-Lisa entstand als &lt;a href=&quot;schreibmaschine.html&quot;&gt;Bild auf der Schreibmaschine&lt;/a&gt; und beim Blumenbouquet habe ich mich nochmal &lt;a href=&quot;oelfarben.html&quot;&gt;an Ölfarben gewagt&lt;/a&gt;. Für die drei fallenden Blätter im letzten Bild habe ich Pulverpigmente mit Wasser und Gummi arabicum zu einer farbintensiven Wasserfarbe angerührt und irgendwann nutze ich auch mal die Acrylfarben, die ich schon eine Weile gekauft habe.&lt;/p&gt;
-
-&lt;p&gt;Mit den &lt;a href=&quot;fensterbilder.html&quot;&gt;ersten zwölf Fensterbildern&lt;/a&gt; habe ich begonnen, um das Malen zu üben, &lt;a href=&quot;fensterbilder.html&quot;&gt;die zweite Serie&lt;/a&gt; hat mich ein bisschen frustriert und nun versuche ich, das ganze Vorhaben etwas lockerer zu sehen. Seid ihr kreativ tätig und verfolgt ein regelmäßiges Projekt, das euch zum Üben motiviert?&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/fensterbilder-3.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/fensterbilder-3.html</guid>
-	<pubDate>Wed, 19 Nov 2025 00:00:00 +0100</pubDate>
 </item>
 
 </channel></rss>
