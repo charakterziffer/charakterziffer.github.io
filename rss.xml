@@ -50,14 +50,14 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;anteilig&quot;&gt;
+&lt;figure class=&quot;anteilig2&quot;&gt;
   &lt;img src=&quot;material/tintenglanz.jpg&quot; alt=&quot;Pinkfarbener Glanz der Blue-Blood-Tinte&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;style&gt;
-@media (min-width: 28em) { .anteilig { float: right; width: 45%;
+@media (min-width: 28em) { .anteilig2 { float: right; width: 45%;
 	margin: .6em .4em .4em 1.2em; } }
-@media (min-width: 38em) { .anteilig { width: 35%; } }
+@media (min-width: 38em) { .anteilig2 { width: 35%; } }
 &lt;/style&gt;
 
 &lt;ul&gt;
@@ -131,7 +131,7 @@
     &lt;p&gt;Spannend finde ich, wie die Dynamik in der Spielgruppe abläuft und welche soziale Interaktion es gibt. Mir haben Spiele, bei denen alle für ein gemeinsames Ziel kooperieren, schon immer etwas besser gefallen als solche, wo einer möglichst haushoch über den anderen triumphieren muss. Bei den meisten Rollenspielen bist du recht schnell raus, wenn du gegen deine Gruppe agierst. Man braucht also Mitspieler:innen, die sich auf so eine Erzählung einlassen wollen. Alle Beteiligten müssen mitwirken, damit die Geschichte vorankommt, nicht langweilig, unglaubwürdig oder unfreiwillig komisch wird.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Und schließlich ist ein 20-seitiger Würfel schon irgendwie ein magischer Gegenstand, nicht war? Den oben abgebildeten W20 habe ich übrigens letztes Jahr bei &lt;a href=&quot;https://das-traumwerk.blogspot.com&quot;&gt;Das Traumwerk&lt;/a&gt; in Regensburg wohlüberlegt ausgesucht. Der Ladeninhaber scheint ein begeisterter Rollenspieler zu sein, mit dem man sich wahnsinnig gut über viele Themen austauschen kann.&lt;/p&gt;
+    &lt;p&gt;Und schließlich ist ein 20-seitiger Würfel schon irgendwie ein magischer Gegenstand, nicht wahr? Den oben abgebildeten W20 habe ich übrigens letztes Jahr bei &lt;a href=&quot;https://das-traumwerk.blogspot.com&quot;&gt;Das Traumwerk&lt;/a&gt; in Regensburg wohlüberlegt ausgesucht. Der Ladeninhaber scheint ein begeisterter Rollenspieler zu sein, mit dem man sich wahnsinnig gut über viele Themen austauschen kann.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
