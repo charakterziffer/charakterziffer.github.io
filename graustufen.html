@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Wer eine Skala aus Grautönen erstellt, sollte die Helligkeit nicht linear abnehmen lassen, sonst erscheinen die Graustufen ungleich verteilt.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/graustufen.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/graustufen.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,8 +70,10 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2020-02-20">Do, 20. Febr. 2020</time>
 <h1>Gleichmäßig wirkende Graustufen</h1>
+
+<p class="intro"><time datetime="2020-02-20">Do, 20. Febr. 2020</time>Wer eine Skala aus Grautönen erstellt, sollte die Helligkeit nicht linear abnehmen lassen, sonst erscheinen die Graustufen ungleich verteilt.</p>
+
 <style>
 p { font-variant: lining-nums; }
 @media screen and (prefers-color-scheme: dark) {
@@ -83,17 +88,17 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p class="hinterlegt">Achtung, es folgt ein ziemlich nerdiger Blogartikel mit einigem an Mathematik!</p>
 
-<p>Angenommen, eine Infografik soll verschiedene Intensitätswerte ausdrücken, von ganz schwach bis sehr stark. Klingt zunächst ziemlich einfach und sofort hat man eine Palette gebastelt, bei der die Farbdichte von 5<small> </small>% bis 95<small> </small>% gleichmäßig zunimmt:</p>
+<p>Angenommen, eine Infografik soll verschiedene Intensitätswerte ausdrücken, von ganz schwach bis sehr stark. Klingt zunächst ziemlich einfach und sofort hat man eine Palette gebastelt, bei der die Farbdichte von 5 % bis 95 % gleichmäßig zunimmt:</p>
 
 <p><img src="material/bis2020/grauskala-1.svg" alt="Grauskala mit 10 Helligkeitsstufen, jeweils um 11% dunkler werdend" /></p>
 
-<p>Doch komisch: Obwohl die Helligkeit von einer Stufe zur nächsten jeweils um 10<small> </small>% abnimmt, wirkt die Verteilung überhaupt nicht gleichmäßig. Gerade an den Enden der Skala scheinen die Unterschiede stärker zu sein. Zwischen 5<small> </small>% und 15<small> </small>% scheint die Helligkeit mehr abzunehmen als in der Mitte von 35<small> </small>% bis 65<small> </small>% Grau. Auch von 85<small> </small>% zu 95<small> </small>% wirken die Unterschiede größer.</p>
+<p>Doch komisch: Obwohl die Helligkeit von einer Stufe zur nächsten jeweils um 10 % abnimmt, wirkt die Verteilung überhaupt nicht gleichmäßig. Gerade an den Enden der Skala scheinen die Unterschiede stärker zu sein. Zwischen 5 % und 15 % scheint die Helligkeit mehr abzunehmen als in der Mitte von 35 % bis 65 % Grau. Auch von 85 % zu 95 % wirken die Unterschiede größer.</p>
 
 <h2 id="unsere-wahrnehmung-ist-relativ">Unsere Wahrnehmung ist relativ</h2>
 
 <p>Mathematisch lineare Graustufen erscheinen uns Menschen ungleichmäßig, weil wir Intensitäten nicht absolut wahrnehmen, sondern immer im Verhältnis zueinander. Als Vergleich ein Beispiel aus der Akustik: Zwischen absoluter Stille und einem Uhrticken erscheint uns der Lautstärkeunterschied viel größer als zwischen einem hupenden Auto und einem hupenden Auto, auf dem noch eine Uhr tickt. Dabei ist der Lautstärke-Unterschied in beiden Fällen gleich groß, nämlich die Lautstärke einer tickenden Uhr.</p>
 
-<p>Um die Intensitäten der grauen Felder in der Skala vergleichen zu können, muss man die Prozente erst mal in ein Schwarz-Weiß-Verhältnis umrechnen (genannt <em>v</em>). Man stelle sich vor, auf jedem Feld liegen 100 Kügelchen, entweder schwarz oder weiß. Zum Beispiel beinhaltet die Fläche mit 15<small> </small>% dann 15 schwarze Kügelchen und 85 weiße (= 100 − 15). Das Verhältnis von Schwarz zu Weiß ist für dieses Feld 15 zu 85 oder als Dezimalzahl ausgedrückt 0,18 (= 15 ÷ 85). Auf unsere Grauskala übertragen sieht das dann folgendermaßen aus:</p>
+<p>Um die Intensitäten der grauen Felder in der Skala vergleichen zu können, muss man die Prozente erst mal in ein Schwarz-Weiß-Verhältnis umrechnen (genannt <em>v</em>). Man stelle sich vor, auf jedem Feld liegen 100 Kügelchen, entweder schwarz oder weiß. Zum Beispiel beinhaltet die Fläche mit 15 % dann 15 schwarze Kügelchen und 85 weiße (= 100 − 15). Das Verhältnis von Schwarz zu Weiß ist für dieses Feld 15 zu 85 oder als Dezimalzahl ausgedrückt 0,18 (= 15 ÷ 85). Auf unsere Grauskala übertragen sieht das dann folgendermaßen aus:</p>
 
 <p><img src="material/bis2020/grauskala-2.svg" alt="Grauskala mit 10 Helligkeitsstufen und den entsprechenden Schwarz-Weiß-Verhältnissen" /></p>
 
@@ -105,11 +110,11 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <h2 id="gleichmäßig-abnehmende-helligkeit">Gleichmäßig abnehmende Helligkeit</h2>
 
-<p>Das Ziel ist natürlich, eine Grauskala zu bestimmen, bei der die Unterschiede zwischen den Stufen gleichmäßig erscheinen, also jeweils den gleichen Faktor haben. Voraussetzung für die Berechnung ist, dass die erste und letzte Stufe nicht ganz 0 oder 100 sind, sonst liegen deren Schwarz-Weiß-Verhältnisse bei 0/100 bzw. 100/0 (mit 0 und unendlich lässt sich schwer rechnen). Bleiben wir also bei 5<small> </small>% für „Weiß“ und 95<small> </small>% für „Schwarz“.</p>
+<p>Das Ziel ist natürlich, eine Grauskala zu bestimmen, bei der die Unterschiede zwischen den Stufen gleichmäßig erscheinen, also jeweils den gleichen Faktor haben. Voraussetzung für die Berechnung ist, dass die erste und letzte Stufe nicht ganz 0 oder 100 sind, sonst liegen deren Schwarz-Weiß-Verhältnisse bei 0/100 bzw. 100/0 (mit 0 und unendlich lässt sich schwer rechnen). Bleiben wir also bei 5 % für „Weiß“ und 95 % für „Schwarz“.</p>
 
 <p>Es ergeben sich die Schwarz-Weiß-Verhältnisse (<em>v</em>) wie oben: 5/95 (0,05…) für Weiß und 95/5 (19,0) für Schwarz. Zwischen diesen Verhältnissen liegt ein Gesamtfaktor von 361 (= 95/5 ÷ 5/95). Diesen Faktor verteilen wir jetzt auf neun Zwischenschritte (genannt <em>w</em>), nämlich vom ersten bis zum zehnten Feld: Weiß × w = Feld<sub>2</sub>; Feld<sub>2</sub> × w = Feld<sub>3</sub>; … Feld<sub>9</sub> × w = Schwarz. Abgekürzt: Weiß × w<sup>9</sup> = Schwarz.</p>
 
-<p>Der Zwischenfaktor w lässt sich jetzt berechnen mit <svg width=".65em" height="1.1em" style="position:relative; top:.1em; left:.1em"><use xlink:href="#9sqr"></use></svg>(Schwarz<small> </small>÷<small> </small>Weiß). In unserem Beispiel: w = <svg width=".65em" height="1.1em" style="position:relative; top:.1em; left:.1em"><use xlink:href="#9sqr"></use></svg>380 = 380<sup>1/9</sup> = 1,92383… – das klingt plausibel, denn es liegt zwischen den extremen Faktoren 3,60 und 1,48. Dann wollen wir mal rückwärts gehen:</p>
+<p>Der Zwischenfaktor w lässt sich jetzt berechnen mit <svg width=".65em" height="1.1em" style="position:relative; top:.1em; left:.1em"><use xlink:href="#9sqr"></use></svg>(Schwarz ÷ Weiß). In unserem Beispiel: w = <svg width=".65em" height="1.1em" style="position:relative; top:.1em; left:.1em"><use xlink:href="#9sqr"></use></svg>380 = 380<sup>1/9</sup> = 1,92383… – das klingt plausibel, denn es liegt zwischen den extremen Faktoren 3,60 und 1,48. Dann wollen wir mal rückwärts gehen:</p>
 
 <h2 id="der-richtige-faktor">Der richtige Faktor</h2>
 
@@ -119,7 +124,7 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>(Bitte wieder berücksichtigen, dass die Zahlen in der Skizze gerundet sind! Ich habe die Berechnung nicht mit 0,05 gestartet, sondern mit dem genauen Bruch 5/95.)</p>
 
-<p>Das Schwarz-Weiß-Verhältnis <em>v</em> haben wir ja erhalten aus Schwarzanteil ÷ Weißanteil, wobei der Weißanteil die Menge zu den fehlenden 100<small> </small>% war. Wir können uns die Prozentzahl von Schwarz (genannt <em>x</em>) berechnen aus der Formel für das Schwarz-Weiß-Verhältnis v = x ÷ (100 − x), umgestellt: x = 100v ÷ (1 + v). Und schon können wir die eben erstellte Grauskala mit Prozentwerten füllen:</p>
+<p>Das Schwarz-Weiß-Verhältnis <em>v</em> haben wir ja erhalten aus Schwarzanteil ÷ Weißanteil, wobei der Weißanteil die Menge zu den fehlenden 100 % war. Wir können uns die Prozentzahl von Schwarz (genannt <em>x</em>) berechnen aus der Formel für das Schwarz-Weiß-Verhältnis v = x ÷ (100 − x), umgestellt: x = 100v ÷ (1 + v). Und schon können wir die eben erstellte Grauskala mit Prozentwerten füllen:</p>
 
 <p><img src="material/bis2020/grauskala-5.svg" alt="Grauskala mit 10 Helligkeitsstufen, die Prozentwerte diesmal berechnet für eine gleichmäßig wirkende Verteilung" /></p>
 
@@ -141,7 +146,8 @@ img[src*='grauskala'] { filter:brightness(1); } }
 
 <p>(Und hier müsste man auf jeden Fall die dunklen Werte anpassen – glaube nie der reinen Mathematik, wenn es um Wahrnehmung geht!) Wer übrigens keine Lust auf diese Rechnerei hat, es mit der Helligkeitszunahme nicht ganz so genau nehmen muss oder für eine Infografik mehr braucht, als eine monochrome Farbskala, dem hilft der <a href="https://learnui.design/tools/data-color-picker.html">Data Color Picker</a> oder der <a href="https://gka.github.io/palettes">Chroma.js Color Palette Helper</a>.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp;</p>
 </article>
 
@@ -181,18 +187,22 @@ img[src*='grauskala'] { filter:brightness(1); } }
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="10-jahre-twitter.html">← 10 Jahre Twitter</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="stoffkrokodil.html">Ein Stoffkrokodil als Nähprojekt →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="10-jahre-twitter.html">← 10 Jahre Twitter</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="stoffkrokodil.html">Ein Stoffkrokodil als Nähprojekt →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

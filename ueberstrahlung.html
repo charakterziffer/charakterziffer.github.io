@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Nein, es geht hier nicht um eine sensationelle Sonnen-Diät, sondern um ein optisches Phänomen&#58; Helle Flächen überstrahlen dunkle – und wirken größer.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/ueberstrahlung.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/ueberstrahlung.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,8 +70,10 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2020-08-04">Di, 4. Aug. 2020</time>
 <h1>Licht macht dick</h1>
+
+<p class="intro"><time datetime="2020-08-04">Di, 4. Aug. 2020</time>Nein, es geht hier nicht um eine sensationelle Sonnen-Diät, sondern um ein optisches Phänomen&#58; Helle Flächen überstrahlen dunkle – und wirken größer.</p>
+
 <p>Im Bereich Typografie gibt es viele optische Täuschungen, die bei der Gestaltung von Buchstaben ausgeglichen werden müssen. So sitzt der waagrechte Mittelstrich im Buchstaben <em>H</em> ein bisschen höher als die geometrische Mitte – sonst wirkt es für uns Menschen so, als läge er zu tief. Spitze und runde Buchstaben wie <em>A</em> oder <em>O</em> ragen ein wenig über die Buchstabenhöhe hinaus, damit sie in unseren Augen genauso groß erscheinen, wie Buchstaben mit einem geraden Abschluss (z.B. <em>E</em>, <em>H</em> oder <em>X</em>).</p>
 
 <p>Eine Täuschung finde ich besonders absurd. Sie spielt bei der Anwendung von Schrift eine Rolle und ich kenne sie unter dem Begriff „Überstrahlung“. Hier eine Demonstration: Welche dieser zwei Linien erscheint dicker?</p>
@@ -98,19 +103,20 @@ background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
 
 <p>Schriftarten, die speziell für reflektierende oder hinterleuchtete Beschilderung gestaltet wurden, bringen manchmal eine Variante mit, die den Überstrahlungs-Effekt ausgleicht. Zum Beispiel hat die Schrift <em>Wayfinding Pro</em> eine Negativ-Version, die geringfügig dünner ist als der reguläre Schnitt. Damit können helle und dunkle Schilder nebeneinander hängen, ohne dass die Schrift auf einem davon dicker aussieht. Wie man die Negativ-Version anwendet, erklärt eine <a href="https://fdi-type.de/faq/font-usage/what-are-the-positive-and-negative-styles-of-wayfinding-sans-pro-for-r2/">FAQ-Seite des Schriftverlags FDI</a> (engl.).</p>
 
-<p>Auch auf Websites ist es möglich, die Wirkung der Überstrahlung abzumildern. In Webkit-Browsern (Chrome, Edge, Safari) funktioniert es, dem invers gesetzten Text (d.<small> </small>h. helle Schrift auf dunklem Grund) die CSS-Eigenschaft <code>-webkit-font-smoothing: antialiased</code> zu geben. Details dazu im Artikel  <a href="https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/">Please Stop “Fixing” Font Smoothing </a> (engl.). Genau wie der Autor Dmitry Fadeyev würde ich diese Methode aber nicht empfehlen, da sie nur für wenige Szenarien funktioniert und kein gültiger Webstandard ist.</p>
+<p>Auch auf Websites ist es möglich, die Wirkung der Überstrahlung abzumildern. In Webkit-Browsern (Chrome, Edge, Safari) funktioniert es, dem invers gesetzten Text (d. h. helle Schrift auf dunklem Grund) die CSS-Eigenschaft <code>-webkit-font-smoothing: antialiased</code> zu geben. Details dazu im Artikel  <a href="https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/">Please Stop “Fixing” Font Smoothing </a> (engl.). Genau wie der Autor Dmitry Fadeyev würde ich diese Methode aber nicht empfehlen, da sie nur für wenige Szenarien funktioniert und kein gültiger Webstandard ist.</p>
 
-<p>Inzwischen verwenden <a href="https://caniuse.com/variable-fonts">rund 90<small> </small>% der Internet-Nutzer:innen</a> einen Browser, der <em>variable Schriften</em> unterstützt. Mit solchen Schriften kann man die Strichstärke leicht anpassen, z.<small> </small>B. bei inversem Text auf <code>font-weight: 350</code> verringern (wenn die positiv gesetzte Schrift <code>font-weight: 400</code> besitzt). Je nach Helligkeitswerten und Schrift muss man mit den Werten ein wenig herumprobieren, bis beide Farbvarianten gleich dick aussehen. Eine Anleitung mit praktischer Demo bietet der Artikel <a href="https://css-tricks.com/dark-mode-and-variable-fonts/">Dark Mode and Variable Fonts</a> (engl.).</p>
+<p>Inzwischen verwenden <a href="https://caniuse.com/variable-fonts">rund 90 % der Internet-Nutzer:innen</a> einen Browser, der <em>variable Schriften</em> unterstützt. Mit solchen Schriften kann man die Strichstärke leicht anpassen, z. B. bei inversem Text auf <code>font-weight: 350</code> verringern (wenn die positiv gesetzte Schrift <code>font-weight: 400</code> besitzt). Je nach Helligkeitswerten und Schrift muss man mit den Werten ein wenig herumprobieren, bis beide Farbvarianten gleich dick aussehen. Eine Anleitung mit praktischer Demo bietet der Artikel <a href="https://css-tricks.com/dark-mode-and-variable-fonts/">Dark Mode and Variable Fonts</a> (engl.).</p>
 
 <p>Diese Lösung finde ich vor allem dann wichtig, wenn dunkler Text auf hellem Grund und seine umgekehrte Variante nah beieinander stehen. Dann haben Leser:innen den direkten Vergleich und man sollte die Überstrahlung ausgleichen, damit der helle Text nicht zu fett aussieht.</p>
 
-<p>Übrigens: Durch das Überstrahlen scheinen helle Buchstaben auf dunklem Grund auch ein wenig zusammenzulaufen und aneinander zu kleben. Dagegen hilft, die Buchstaben ganz leicht (!) zu sperren, im CSS z.<small> </small>B. mit <code>letter-spacing: .01em;</code>. Bei allen optischen Phänomenen zählt das Augenmaß weit mehr als mathematische Genauigkeit, getreu dem Zitat des Malers Josef Albers: „Nur der Schein trügt nicht.“</p>
+<p>Übrigens: Durch das Überstrahlen scheinen helle Buchstaben auf dunklem Grund auch ein wenig zusammenzulaufen und aneinander zu kleben. Dagegen hilft, die Buchstaben ganz leicht (!) zu sperren, im CSS z. B. mit <code>letter-spacing: .01em;</code>. Bei allen optischen Phänomenen zählt das Augenmaß weit mehr als mathematische Genauigkeit, getreu dem Zitat des Malers Josef Albers: „Nur der Schein trügt nicht.“</p>
 
 <p><strong>Update 6./11. Aug. 2020:</strong> Eben habe ich noch <a href="https://www.daltonmaag.com/library/darkmode">die Schrift „Darkmode“</a> entdeckt. Sie erschien im Mai 2020 und besitzt als <em>variable font</em> eine Einstellung extra für invers gesetzte Texte. Als englischen Fachbegriff für die Überstrahlung nutzt man <a href="https://twitter.com/bruno_maag/status/1292786581200351234">halo effect</a>, danke an Bruno Maag!</p>
 
 <p><strong>Update 8. Aug. 2020:</strong> Die tolle Website <em>Identifont</em> bietet eine <a href="http://www.identifont.com/pos-neg.html">Liste mit Positiv-/​Negativ-Schriften</a>.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
@@ -150,18 +156,22 @@ background: linear-gradient(90deg, #fff, #fff 50%, #000 50%, #000); } }
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="likes.html">← Please, don’t like me!</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="blogsuche.html">Mein Blog durchsuchen mit DuckDuckGo →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="likes.html">← Please, don’t like me!</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="blogsuche.html">Mein Blog durchsuchen mit DuckDuckGo →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

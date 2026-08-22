@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Etwas sonderlicher Text über die Bruchzahl ⅐ und deren erstaunliche Dezimalschreibweise. Du wurdest gewarnt.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/siebtel.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/siebtel.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,15 +70,17 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2023-03-24">Fr, 24. März 2023</time>
 <h1>Ein Siebtel</h1>
-<style>
-.periode { text-decoration-skip-ink: none; text-decoration: overline; }
-mark {background-color:var(--gruen-blass); color:var(--text-stark);}
-.mark2 {background-color:var(--akzent-blass); color:var(--text-stark);}
-</style>
+
+<p class="intro"><time datetime="2023-03-24">Fr, 24. März 2023</time>Etwas sonderlicher Text über die Bruchzahl ⅐ und deren erstaunliche Dezimalschreibweise. Du wurdest gewarnt.</p>
 
 <p>Doch, in diesem Blogartikel geht es tatsächlich um einen mathematischen Bruch, nämlich <sup>1</sup>⁄<sub>7</sub>. Als Dezimalzahl mit Komma ist das 0,1428571428571428… Es sind immer die gleichen sechs Ziffern, die sich wiederholen. In der Mathematik nennt man das „Periode“ und markiert die Ziffern mit einem Strich darüber: 0,<span class="periode">142857</span>. Zwei andere Beispiele zum Verständnis: <sup>4</sup>⁄<sub>27</sub> schreibt man dezimal als 0,<span class="periode">148</span> (also 0,14814814…) und <sup>5</sup>⁄<sub>6</sub> sind 0,8<span class="periode">3</span> (= 0,83333… – die erste 8 wiederholt sich nicht).</p>
+
+<style>
+.periode { text-decoration-skip-ink: none; text-decoration: overline; }
+mark {background-color:var(--opal1); color:var(--text);}
+.mark2 {background-color:var(--opal2); color:var(--text);}
+</style>
 
 <h2 id="immer-die-gleichen-ziffern">Immer die gleichen Ziffern</h2>
 
@@ -147,9 +152,10 @@ mark {background-color:var(--gruen-blass); color:var(--text-stark);}
 
 <p>Und <sup>1</sup>⁄<sub>37</sub> (0,<span class="periode">027</span>)? Das müsste dann ja das gleiche sein wie <sup>27</sup>⁄<sub>999</sub> – kurz nachrechnen, Zähler und Nenner durch 27 teilen … jepp, stimmt.</p>
 
-<p>Aber damit lassen wir es mal bewenden. Schließlich geht es in diesem Artikel ja nicht um Neuntel ;-) Ungeklärt soll hier bleiben, wie man aus dem Nenner auf die Länge der Periode schließen kann (wird bei <a href="https://de.wikipedia.org/w/index.php?title=Dezimalsystem&amp;oldid=238524896#Periode">Wikipedia</a> verraten) und nach welchem System sich beim gleichen Nenner die Ziffernfolgen wiederholen. Vielleicht regt euch dieser Artikel ja zu kleinen Zahlenüberlegungen oder anderen Experimenten an, z.<small> </small>B. wie teilt man einen Kuchen in sieben Stücke, wie zeichnet man einen Stern mit sieben Zacken, was ist der Vorteil einer 7-Tage-Woche, etc.</p>
+<p>Aber damit lassen wir es mal bewenden. Schließlich geht es in diesem Artikel ja nicht um Neuntel ;-) Ungeklärt soll hier bleiben, wie man aus dem Nenner auf die Länge der Periode schließen kann (wird bei <a href="https://de.wikipedia.org/w/index.php?title=Dezimalsystem&amp;oldid=238524896#Periode">Wikipedia</a> verraten) und nach welchem System sich beim gleichen Nenner die Ziffernfolgen wiederholen. Vielleicht regt euch dieser Artikel ja zu kleinen Zahlenüberlegungen oder anderen Experimenten an, z. B. wie teilt man einen Kuchen in sieben Stücke, wie zeichnet man einen Stern mit sieben Zacken, was ist der Vorteil einer 7-Tage-Woche, etc.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?ansporn">#ansporn</a>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp;</p>
 </article>
 
@@ -189,18 +195,22 @@ mark {background-color:var(--gruen-blass); color:var(--text-stark);}
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="kurzdramen.html">← Fünfmal kurzes Drama</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="origamituetchen.html">Tütchen für Pulver und Kerne →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="kurzdramen.html">← Fünfmal kurzes Drama</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="origamituetchen.html">Tütchen für Pulver und Kerne →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

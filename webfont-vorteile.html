@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Individuelle Webschriften verbrauchen unnötig Ressourcen und interessieren eh keinen? Solche Gegenargumente lassen sich leicht zerpflücken.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/webfont-vorteile.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/webfont-vorteile.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,8 +70,10 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2024-08-28">Mi, 28. Aug. 2024</time>
 <h1>Webfonts sind eine gute Sache</h1>
+
+<p class="intro"><time datetime="2024-08-28">Mi, 28. Aug. 2024</time>Individuelle Webschriften verbrauchen unnötig Ressourcen und interessieren eh keinen? Solche Gegenargumente lassen sich leicht zerpflücken.</p>
+
 <p>Mein Blog verwendet Webfonts, das heißt die Schriften werden genau wie Bilder oder Audios vom Webserver geladen. Dadurch kann ich Überschriften in meiner <strong>selbstgestalteten czSlab</strong> anzeigen – ohne dass die Schrift auf den Geräten meiner Leser:innen installiert sein muss.</p>
 
 <p>Die zweite Schrift, die ich verwende, ist <em>Source Sans</em>. Sie kommt für die Grundtexte und für <em>kursive Hervorhebungen</em> zum Einsatz und ist eher schlicht und unauffällig. Darum überlege ich seit einer Weile, ob ich dafür wirklich eine Webschrift laden soll.</p>
@@ -84,7 +89,7 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <p>– Nun ja. Genau wie Bilder und Videos sollte man Webschriften fürs Internet optimieren. Meine drei Webfonts sind zusammen beispielsweise nur 60 kB groß, die gleiche Dateigröße wie das Bild vom <a href="schiff-des-theseus">Buch „Das Schiff des Theseus“</a> in meinem Lesetipp.</p>
 
 <figure><img src="material/bis2020/theseus.jpg" alt="Aufgeschlagenes Buch mit farbigen Notizen, zwischen vielen Seiten klemmen Beilagen" />
-	<figcaption>Dieses Bild hat die gleiche Dateigröße (60<small>&nbsp;</small>kB) wie alle meine Webfonts: czSlab (26<small>&nbsp;</small>kB), Source Sans Regular (19<small>&nbsp;</small>kB) und Italic (15<small>&nbsp;</small>kB).</figcaption>
+	<figcaption>Dieses Bild hat die gleiche Dateigröße (60&#8239;kB) wie alle meine Webfonts: czSlab (26&#8239;kB), Source Sans Regular (19&#8239;kB) und Italic (15&#8239;kB).</figcaption>
 </figure>
 
 <p>Kaum jemand würde fordern: „Vermeidet Bilder im Internet! Verbannt Videos und Audios! Sie sind riesig! Megabytes! Netzwerkanfragen! Nur Text ist das einzig Wahre!“</p>
@@ -127,13 +132,13 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <h3 id="alle-zeichen-sind-schon-da">Alle Zeichen sind schon da</h3>
 
-<p>Die angepasste Webschrift enthält alle Buchstaben und Sonderzeichen, die man auf seiner Website benötigt. In meinem Fall sind das zum Beispiel Pfeile (↑ →), Bruchzahlen (⅔ ⅛), hochgestellte Ziffern (¹ ² ³ ⁴) oder ein Versal-Eszett (ẞ). Zusätzlich kann ich besondere Funktionen der Schrift nutzen. In meinem Fall sind das z.<small> </small>B. Mediävalziffern (2 3 6 7 8 9 0), die sich mit Ober- und Unterlängen unauffälliger in den Text einfügen, oder ein speziell gekürztes f vor hohen Buchstaben (vgl. <strong>fe</strong> und <strong>fk</strong>).</p>
+<p>Die angepasste Webschrift enthält alle Buchstaben und Sonderzeichen, die man auf seiner Website benötigt. In meinem Fall sind das zum Beispiel Pfeile (↑ →), Bruchzahlen (⅔ ⅛), hochgestellte Ziffern (¹ ² ³ ⁴) oder ein Versal-Eszett (ẞ). Zusätzlich kann ich besondere Funktionen der Schrift nutzen. In meinem Fall sind das z. B. Mediävalziffern (2 3 6 7 8 9 0), die sich mit Ober- und Unterlängen unauffälliger in den Text einfügen, oder ein speziell gekürztes f vor hohen Buchstaben (vgl. <strong>fe</strong> und <strong>fk</strong>).</p>
 
 <p>Systemschriften bieten solche Funktionen nicht unbedingt an. Und wenn dort ein Zeichen fehlt, wird es ersatzweise in einer anderen Schriftart dargestellt. Das sieht wirklich unschön aus (Beispiel: eĕ gġ nń). Bei einer Webschrift weiß ich genau, über welche Zeichen ich verfügen kann, bei installierten Systemschriften kann ich es nur abschätzen – denn je nach Gerät, auf dem die Website erscheint, wird womöglich eine andere Systemschrift verwendet.</p>
 
 <h3 id="einheitlich-und-überall-wiedererkennbar">Einheitlich und überall wiedererkennbar</h3>
 
-<p>Womit wir bei einem weiteren Vorteil von Webfonts sind: Sie sehen auf allen Geräten nahezu gleich aus (es gibt feine Unterschiede beim Rendering, d.<small> </small>h. der pixel-exakten Darstellung). Leser:innen bekommen also die gleiche Schrift, egal ob sie die Website am Laptop oder Smartphone besuchen. Die Gestaltung ist wiedererkennbar und spricht überall mit der gleichen Stimme.</p>
+<p>Womit wir bei einem weiteren Vorteil von Webfonts sind: Sie sehen auf allen Geräten nahezu gleich aus (es gibt feine Unterschiede beim Rendering, d. h. der pixel-exakten Darstellung). Leser:innen bekommen also die gleiche Schrift, egal ob sie die Website am Laptop oder Smartphone besuchen. Die Gestaltung ist wiedererkennbar und spricht überall mit der gleichen Stimme.</p>
 
 <h2 id="kein-webfont-für-schlichte-lesetexte">Kein Webfont für schlichte Lesetexte?</h2>
 
@@ -143,7 +148,8 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <p><b id="note1">[1] Video auf X:</b> Ich möchte ungern auf das ehemalige Twitter verlinken, weil ich finde, dass es sich unter Elon Musk zu einem unangenehmen Umfeld entwickelt hat. Der Transparenz wegen hier die Quelle des Videos: x.com/whitep4nth3r/status/1810961874441080924 (<em>Update:</em> Inzwischen hat Salma ihren X-Account gelöscht). <a href="#ziffer1">[↑]</a></p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
@@ -183,18 +189,22 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="miniheft-2.html">← Ein Zine von der Schreibmaschine</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="fontstack.html">Statt Webfonts ein Fontstack →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="miniheft-2.html">← Ein Zine von der Schreibmaschine</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="fontstack.html">Statt Webfonts ein Fontstack →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

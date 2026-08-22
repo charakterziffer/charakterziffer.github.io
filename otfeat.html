@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Viele Schriften enthalten OpenType-Features, mit denen zum Beispiel echte Kapitälchen oder Alternativbuchstaben aktiviert werden können. Seit kurzem lassen sich diese Funktionen auch per CSS einschalten und im Browser verwenden. Ob und welche Features unterstützt werden, kann man mit meiner Schrift Otfeat testen.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/otfeat.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/otfeat.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,8 +70,10 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2012-06-04">Mo, 4. Juni 2012</time>
 <h1>OpenType-Features im Browser</h1>
+
+<p class="intro"><time datetime="2012-06-04">Mo, 4. Juni 2012</time>Viele Schriften enthalten OpenType-Features, mit denen zum Beispiel echte Kapitälchen oder Alternativbuchstaben aktiviert werden können. Seit kurzem lassen sich diese Funktionen auch per CSS einschalten und im Browser verwenden. Ob und welche Features unterstützt werden, kann man mit meiner Schrift Otfeat testen.</p>
+
 <p class="hinterlegt"><b>UPDATE:</b> I’ve made an extra page with a clear <a href="extra/otfeat.html">OpenType feature test</a>.</p>
 
 <p>Vor gut zwei Jahren entwickelte sich ein brauchbarer Standard für Webfonts. Heute ist es möglich, beliebige Schriften auf Internetseiten zu verwenden – auch wenn diese nicht auf dem Rechner des Betrachters installiert sind. Die Schriftdatei wird einfach per CSS verlinkt:</p>
@@ -87,12 +92,9 @@ url('schrift.ttf') format('truetype'); /* für Android */
 <style>
 <!--
 @font-face {font-family: 'Otfeat';src:url('material/bis2020/otfeat.woff') format('woff'), url('material/bis2020/otfeat.ttf') format('truetype');}
-.otfeat{font:2.5em/1.3em Otfeat,sans-serif;text-indent:0;color:var(--text-matt);
-margin:.6em 0 -.2em;}
+.otfeat{font:2.5em/1.3em Otfeat,sans-serif;}
 .aktfeat { -webkit-font-feature-settings: "smcp", "c2sc", "c2pc", "pcap", "case", "salt", "ss01", "hist", "locl", "swsh", "titl", "unic", "ornm", "ital", "subs", "sinf", "sups", "mgrk", "nalt", "tnum", "pnum", "lnum", "onum", "zero", "kern", "cpsp", "liga", "dlig", "hlig", "clig", "calt", "cswh", "ordn", "numr", "dnom", "frac", "afrc", "fina";
 font-feature-settings: "smcp", "c2sc", "c2pc", "pcap", "case", "salt", "ss01", "hist", "locl", "swsh", "titl", "unic", "ornm", "ital", "subs", "sinf", "sups", "mgrk", "nalt", "tnum", "pnum", "lnum", "onum", "zero", "kern", "cpsp", "liga", "dlig", "hlig", "clig", "calt", "cswh", "ordn", "numr", "dnom", "frac", "afrc", "fina"; }
-@media (min-width: 25.3em) {
-	a[download] { float:left; margin: 1.038em 5%; width: 40%; } }
 -->
 </style>
 
@@ -132,7 +134,8 @@ font-feature-settings: "smcp", "c2sc", "c2pc";
 
 <p>Bei Fragen, Ideen und Verbesserungsvorschlägen freue ich mich über einen Kommentar.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
@@ -172,18 +175,22 @@ font-feature-settings: "smcp", "c2sc", "c2pc";
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="gebrochene-schriften.html">← Gebrochene Schriften oder Antiqua?</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="buchbinden.html">Vom Einzelblatt zum Buch →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="gebrochene-schriften.html">← Gebrochene Schriften oder Antiqua?</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="buchbinden.html">Vom Einzelblatt zum Buch →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Die CSS-Eigenschaft `columns` bricht einen Online-Text in mehrere Spalten um. So werden Zeilen auf einer Website nicht unleserlich lang.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/css-spalten.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/css-spalten.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,36 +70,9 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2024-03-18">Mo, 18. März 2024</time>
 <h1>CSS-Spalten gegen zu lange Textzeilen</h1>
-<style>
-<!--
-style[contenteditable] { display:block; width: 98.8%;
-margin: 1.5em 0 1.167em; padding: .05em .2em; border-radius: .1em;
-font: .9em/1.667 'Source Code Pro', Consolas, Monaco, 'Lucida Console',
-	'Andale Mono', 'DejaVu Sans Mono', monospace; white-space: pre-wrap;
-	background-color: var(--nebelgrau);
--webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
-style[contenteditable]::before { display:inline-block; margin:0 .1em -.2em 0; vertical-align:-12%; content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221.2em%22%20height%3D%221.2em%22%20viewBox%3D%220%200%2014%2014%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cg%20style%3D%22fill%3Anone%3Bstroke%3A%23c2b%3Bstroke-width%3A1.5%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%22%3E%3Cpath%20d%3D%22M%2011%2C11%2011%2C8%205%2C2%202%2C5%208%2C11%20z%22%2F%3E%3Cpath%20d%3D%22m%2010%2C7%20-3%2C3%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
-
-[class^="beispiel"] { font: .75em/1.2 'New York', 'Bitstream Charter', 'Constantia', Georgia, serif;
-hyphens: auto; background-color: var(--hintergrund); border: 1px solid var(--text-basis);
-width: calc(100vw - 6em); min-width: 100%; padding: 1em 1.5em;}
-[class^="beispiel"] > p { margin: 0; text-align: justify; }
-
-.beispiel-3 { padding: 1.5em 1.5em 0; }
-.beispiel-3 > div { display: inline-block; margin-bottom: 1.5em;
-	width:100%; height: 90px; background-color: var(--grau-matt, #444);}
-.beispiel-3 > div:nth-of-type(2n) { background-color: var(--akzent-basis, #839); }
-.beispiel-3 > div:nth-of-type(3n) { background-color: var(--gruen-basis, #281); }
-.beispiel-3 > div:nth-of-type(5n) { background-color: var(--akzent-aktiv, #c2b); }
-.beispiel-3 > div:nth-of-type(2n+1) { height: 100px; }
-.beispiel-3 > div:nth-of-type(3n+2) { height: 120px; }
-.beispiel-3 > div:nth-of-type(5n+3) { height: 80px; }
-.beispiel-3 > div:nth-of-type(7n) { height: 150px; }
--->
-</style>
+<p class="intro"><time datetime="2024-03-18">Mo, 18. März 2024</time>Die CSS-Eigenschaft `columns` bricht einen Online-Text in mehrere Spalten um. So werden Zeilen auf einer Website nicht unleserlich lang.</p>
 
 <p>In einem aktuellen Webprojekt habe ich mit längeren Texten zu tun.
 Weil sich die Breite der Texte an das Browserfensters anpassen soll,
@@ -108,6 +84,35 @@ dann entsteht rechts ein leerer Rand, wenn das Browserfenster breiter wird.
 So mache ich das hier in meinem Blog:
 Die Textbreite bleibt immer schmaler als 690 Pixel,
 die freie Fläche rechts füllen ein grünes Muster und eine Randnotiz.</p>
+
+<style>
+<!--
+style[contenteditable] { display:block; width: 100%;
+margin: .75rlh 0; padding: .05em .2em; border-radius: .1em;
+font: .9em/1.667 'Source Code Pro', Consolas, Monaco, 'Lucida Console',
+	'Andale Mono', 'DejaVu Sans Mono', monospace; white-space: pre-wrap;
+	background-color: var(--nebel);
+-webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+style[contenteditable]::before { display:inline-block; margin:0 .1em -.2em 0; vertical-align:-12%; content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 14 14" preserveAspectRatio="xMinYMin meet"><g style="fill:none;stroke:%23b0e;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="M 11,11 11,8 5,2 2,5 8,11 z"/><path d="m 10,7 -3,3"/></g></svg>'); }
+
+[class^="beispiel"] { font: .75em/1.2 'New York', 'Bitstream Charter', 'Constantia', Georgia, serif;
+hyphens: auto; background-color: var(--hintergrund); border: 1px solid var(--text);
+position: relative; left: -50vw; margin: 0 54%; width: calc(100vw - 8%); min-width: 100%; padding: 1em 1.5em; }
+[class^="beispiel"] > p { margin: 0; text-align: justify; }
+
+.beispiel-3 { padding: 1.5em 1.5em 0; }
+.beispiel-3 > div { display: inline-block; margin-bottom: 1.5em;
+	width:100%; height: 90px; background-color: var(--grau);}
+.beispiel-3 > div:nth-of-type(2n) { background-color: var(--akzent); }
+.beispiel-3 > div:nth-of-type(3n) { background-color: var(--gruen); }
+.beispiel-3 > div:nth-of-type(5n) { background-color: var(--opal2); }
+.beispiel-3 > div:nth-of-type(2n+1) { height: 100px; }
+.beispiel-3 > div:nth-of-type(3n+2) { height: 120px; }
+.beispiel-3 > div:nth-of-type(5n+3) { height: 80px; }
+.beispiel-3 > div:nth-of-type(7n) { height: 150px; }
+-->
+</style>
 
 <h2 id="textspalten-mit-css">Textspalten mit CSS</h2>
 
@@ -121,7 +126,7 @@ einen neuen Befehl bekommen:
 
 <p>Das Geschickte:
 Man kann nicht nur die gewünschte Anzahl der Spalten festlegen
-(z.<small> </small>B. <code>columns: 2;</code>),
+(z. B. <code>columns: 2;</code>),
 sondern auch eine optimale Spaltenbreite.
 Dann versucht der Browser von allein, diese Breite zu erreichen,
 und wählt eine Spaltenzahl, damit es möglichst gut passt.
@@ -174,7 +179,7 @@ Hier zum Ausprobieren:</p>
 <p>Das letzte Ding ist dann fest. Allein brauchen wir die Straße. Nein, wenn uns gebissen, findet die Hand den Wald heiß. Weil ab vier trägt der Junge Winter gelb zum Sommer, ob deshalb der Tisch lang und kräftig nach nichts denkt? Ein Brief, Kuss und Kaffee am Abend holen sieben Gärten. Kennen Sie die Zeit, außer einer badet schnell mal in Luft, sofort wurde fliegen hoch geschrieben.</p>
 <p>Er läuft Bein, die Nase schlechte Worte isst. Eltern dürfen Wasser bringen, das Tier dachte im Bett, so begann der Löwe seine sehr gute Frage. Ihr spielt Bauer mit Milch und Zahn, denn die Leute wird der Fisch spät sehen. Mit dem Onkel steigen etwas Spiel, beide Arme rennen weg etwas gestellt. Keiner soll schlimm ins Gesicht das Bild bezahlen, fing die Uhr auf Sache eine böse Minute. Ein Weg fuhr gerade und trifft ein wahres Buch. Mein Igel kann die Angst kaufen.</p>
 <p>In dir schenken Fehler dem Arzt Erde. Sitzen Anfang und Antwort? Nachher stellt jeder Bruder ein Glas Nacht für Omas Licht zur Geschichte. Wie frei das Rad auf den Boden fiel, leise hast du eine Woche Spaß. War der Herr Lehrer lustig?</p>
-<h2 style="font:inherit; font-weight:bold; font-size:1.1em; margin:.8em 0 .2em -.02em;">Eine Zwischenüberschrift</h2>
+<h2 style="font:inherit; font-weight:bold; font-size:1.1em; margin:.4rlh 0 .1rlh -.02em;">Eine Zwischenüberschrift</h2>
 <p>Mehr liegen sah ich tot, warum nun glücklich legen? Los, bei heißen Zahlen helfen natürlich gern diese roten Schuhe! Die Äpfel leben einfach hin, was den Ferien zum Land nächste Küche hängt. Geld lese nie grün hinter Weihnachten, oder durch Menschen las langsam nah und rund. An Brot waschen wir also doch kaputte Aufgaben. Sie erzählen, als wollen sie fast noch davon antworten, fangen vielleicht erst noch ganz die weiße Kuh. Neben dem Schiff schreien Elefanten vor Freude …</p>
 <p>Stand der Fuß, lag der Stuhl, rief der Freund, nahm die Stunde gegen die Ohren sich Tasse heraus. Stark erklärst du, wie lieb ich ihn haben könnte, so gab Vater. Vom Lernen bleiben einige immer zurück. Sie fährt, die Katze immer dabei. Richtig ließ, die Schwester nimmt.</p></div>
 </figure>
@@ -239,7 +244,8 @@ Dieses Layout ist <em>Masonry</em> bekannt, englisch für „Mauerwerk“.</p>
 Falls ihr nun auf den Geschmack gekommen seid und mit CSS noch etwas spielen möchtet,
 dann lest euch durch, wie man <a href="css-muster.html">mit CSS Muster erzeugen</a> kann.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
@@ -279,18 +285,22 @@ dann lest euch durch, wie man <a href="css-muster.html">mit CSS Muster erzeugen<
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="raetselkrimi.html">← Japanischer Rätselkrimi</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="ohne-style.html">Inhalt ohne Style →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="raetselkrimi.html">← Japanischer Rätselkrimi</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="ohne-style.html">Inhalt ohne Style →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="In einem Essay behauptet Roland Reuß, Texte würden in Büchern eine Bleibe finden, nicht aber im Internet. – Was ich hier mal hinterfrage.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/textbleibe.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/textbleibe.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,17 +70,19 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2017-03-09">Do, 9. März 2017</time>
 <h1>Wo Texte eine Bleibe finden</h1>
-<p>Kürzlich habe ich den Band „Die perfekte Lesemaschine“ gelesen. Darin beleuchtet Roland Reuß in fünfzig Essays verschiedene Aspekte <em>zur Ergonomie des Buches</em> – so der Untertitel. Mir gefiel das Buch recht gut, obwohl (oder auch weil) ich nicht immer der Meinung des Autors war. Hätte er doch nur auf die übertriebenen Bildungsprotzwörter verzichtet (Quisquilie, distrahierend, …) und bloßen Lobpreis des Materials vermieden (Bücher besäßen haptisch erfahrbare Körperlichkeit, das Lesen am Bildschirm sei pathologisch planimetrisch, S.<small> </small>25) …</p>
+
+<p class="intro"><time datetime="2017-03-09">Do, 9. März 2017</time>In einem Essay behauptet Roland Reuß, Texte würden in Büchern eine Bleibe finden, nicht aber im Internet. – Was ich hier mal hinterfrage.</p>
+
+<p>Kürzlich habe ich den Band „Die perfekte Lesemaschine“ gelesen. Darin beleuchtet Roland Reuß in fünfzig Essays verschiedene Aspekte <em>zur Ergonomie des Buches</em> – so der Untertitel. Mir gefiel das Buch recht gut, obwohl (oder auch weil) ich nicht immer der Meinung des Autors war. Hätte er doch nur auf die übertriebenen Bildungsprotzwörter verzichtet (Quisquilie, distrahierend, …) und bloßen Lobpreis des Materials vermieden (Bücher besäßen haptisch erfahrbare Körperlichkeit, das Lesen am Bildschirm sei pathologisch planimetrisch, S. 25) …</p>
 
 <p>Inhaltlich waren die Essays nachvollziehbar, größtenteils gut begründet und vor allem sehr anregend. In diesem Blogeintrag möchte ich mich mit einer Frage aus dem Buch beschäftigen, die der Autor scheinbar plausibel beantwortet, aber meiner Meinung nach nicht ganz durchdacht hat.</p>
 
 <h2 id="stabiles-buch-vergängliches-internet">Stabiles Buch, vergängliches Internet?</h2>
 
-<p>Ein Buch biete einem Text eine <em>Bleibe</em>, um langfristig unverändert zu bestehen. Im Internet seien Texte dagegen instabil und abhängig von technischen, politischen und ökonomischen Bedingungen, z.<small> </small>B. Elektrizität, Zensurfreiheit oder profitablem Serverbetrieb.</p>
+<p>Ein Buch biete einem Text eine <em>Bleibe</em>, um langfristig unverändert zu bestehen. Im Internet seien Texte dagegen instabil und abhängig von technischen, politischen und ökonomischen Bedingungen, z. B. Elektrizität, Zensurfreiheit oder profitablem Serverbetrieb.</p>
 
-<p>Diese Gegenüberstellung macht Roland Reuß einige Male (wie auf S.<small> </small>23 oder S.<small> </small>75), vor allem im Essay „Bleibe“ (S.<small> </small>17f). Damit wird angedeutet, wie überlegen das Buch doch dem Internet sei. Und für sich betrachtet stimmen die beiden Aussagen über Buch und Internet auch, doch der direkte Vergleich führt in die Irre. Und das liegt nicht nur daran, dass die Stärken des einen Gegenstands mit separaten Schwächen des anderen verglichen werden (man würde ja auch nicht die Anfälligkeit für Insektenfraß der weltweiten Verfügbarkeit gegenüberstellen).</p>
+<p>Diese Gegenüberstellung macht Roland Reuß einige Male (wie auf S. 23 oder S. 75), vor allem im Essay „Bleibe“ (S. 17f). Damit wird angedeutet, wie überlegen das Buch doch dem Internet sei. Und für sich betrachtet stimmen die beiden Aussagen über Buch und Internet auch, doch der direkte Vergleich führt in die Irre. Und das liegt nicht nur daran, dass die Stärken des einen Gegenstands mit separaten Schwächen des anderen verglichen werden (man würde ja auch nicht die Anfälligkeit für Insektenfraß der weltweiten Verfügbarkeit gegenüberstellen).</p>
 
 <h2 id="es-bleibt-was-man-bewahren-will">Es bleibt, was man bewahren will</h2>
 
@@ -107,7 +112,8 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <p>In diesem Artikel habe ich mich auf den Aspekt der Bleibe im Sinne der Beständigkeit beschränkt. Die Frage, ob Texte im Buch oder im Netz besser aufgehoben sind, hat noch viele andere Facetten. So haben Online-Texte eine potenziell höhere Reichweite, dafür ist Gedrucktes geschützter gegen Veränderungen (negativ wie positiv). Dazu kommen Gesichtspunkte wie die Abhängigkeit von großen Internetkonzernen, ein begrenzendes Urheberrecht, Books on Demand, typografische Qualität … und letztlich auch die Frage, ob und welche Texte überhaupt bleiben sollten.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?kritik">#kritik</a>&nbsp; <a href="archiv.html?sujet">#sujet</a>&nbsp;</p>
 </article>
 
@@ -147,18 +153,22 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="orion.html">← Der Jäger am Himmel</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="blogdesign-3.html">@cz+ grafisch überarbeitet →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="orion.html">← Der Jäger am Himmel</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="blogdesign-3.html">@cz+ grafisch überarbeitet →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

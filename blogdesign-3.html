@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Nach drei Jahren ist mir die Gestaltung meines Blog @cz+ zu eng geworden. Nun kommt es im großzügigeren Design daher.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/blogdesign-3.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/blogdesign-3.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,8 +70,10 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2017-04-11">Di, 11. Apr. 2017</time>
 <h1>@cz+ grafisch überarbeitet</h1>
+
+<p class="intro"><time datetime="2017-04-11">Di, 11. Apr. 2017</time>Nach drei Jahren ist mir die Gestaltung meines Blog @cz+ zu eng geworden. Nun kommt es im großzügigeren Design daher.</p>
+
 <p>Gut drei Jahre ist es her, dass mein kleines Blog hier ein neues Gewand bekommen hat. Und so langsam hatte ich mich daran satt gesehen: Zu dominanter Hintergrund, zu gewöhnliche Schriftmischung, irgendwie zu beengt. Gründe genug für eine Überarbeitung. Im Gegensatz zur <a href="neues-blogdesign.html">letzten Umgestaltung</a> hat sich technisch nicht viel verändert. Diesmal habe ich den Schwerpunkt auf die optische Erscheinung gelegt.</p>
 
 <p>Das vorige Design ist mir mit der Zeit zu eng geworden. Mir gefällt der grüne Hintergrund noch immer sehr gut, zumal größere, farbkräftige Flächen im Internet eher ungewöhnlich sind. Zunehmend hatte ich aber den Eindruck, die grüne Fläche ist so stark, dass sie den Inhalt nicht nur rahmt, sondern regelrecht einsperrt und klein hält.</p>
@@ -77,7 +82,7 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <h2 id="raum-für-texte">Raum für Texte</h2>
 
-<p>Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 1<small> </small>em (16px/12pt) auf 1,1<small> </small>em (17,6px/13,2pt) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.</p>
+<p>Ich wollte dem Text mehr Platz verschaffen. Deshalb habe ich als erstes die Schrift von 1 em (16px/12pt) auf 1,1 em (17,6px/13,2pt) vergrößert, so lässt es sich auch bequemer lesen. Folglich ergaben sich eine breitere Textspalte und ein größerer Zeilenabstand.</p>
 
 <p>Ob ich die graue Randspalte erhalten soll, darüber war ich mir lange Zeit unschlüssig. Sie stört, wenn ich ein eher minimales Design haben möchte, das sich auf den eigentlichen Text fokussiert. Andererseits gefällt mir der einladende Kurztext und er dient auch der Navigation ins Archiv oder zum RSS-Feed. Also habe ich ihn als durchscheinenden Kasten auf die rechte Seite gesetzt. Wird das Browserfenster schmaler, verschwindet der Kasten nach unten und stattdessen erscheint rechts oben ein reduziertes Menü zu den wichtigsten Bereichen meines Blogs.</p>
 
@@ -87,32 +92,33 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <p><img src="material/bis2020/blogdesign-2-zu-3.jpg" alt="Vergleich von Überschriften und Randspalte" /></p>
 
-<p>Weitaus einmaliger ist die Schriftart, die ich nun für Überschriften und Links verwende. Ich wollte mich ja schon länger von der <em>Bitter</em> verabschieden, auch weil sie in Kombination mit meiner Textschrift <em>Source Sans Pro</em> dank eines <a href="https://wordpress.org/themes/twentythirteen/">populären WordPress-Themes</a> recht verbreitet ist. Um mich von anderen Websites abzugrenzen, verwende ich nun die <em>czSlab</em>, die ich selbst extra für dieses Blog gestaltet habe. Sie ist stark von Yanone’s genialer <a href="https://www.yanone.de/fonts/antithesis/">Antithesis</a> inspiriert, ist dabei aber etwas schmaler, fetter, angepasster und hat eine geringere x-Höhe.</p>
+<p>Weitaus einmaliger ist die Schriftart, die ich nun für Überschriften und Links verwende. Ich wollte mich ja schon länger von der <em>Bitter</em> verabschieden, auch weil sie in Kombination mit meiner Textschrift <em>Source Sans Pro</em> dank eines <a href="https://wordpress.org/themes/twentythirteen/">populären WordPress-Themes</a> recht verbreitet ist. Um mich von anderen Websites abzugrenzen, verwende ich nun die <em>czSlab</em>, die ich selbst extra für dieses Blog gestaltet habe. Sie ist stark von Yanone’s genialer <a href="https://antithesis.de/typeface/">Antithesis</a> inspiriert, ist dabei aber etwas schmaler, fetter, angepasster und hat eine geringere x-Höhe.</p>
 
 <p>Vom neuen Design erhoffe ich mir, dass es großzügiger, offener und leichter wirkt als sein Vorgänger. Wem die jetzige Schrift übrigens zu groß sein sollte, der kann die Zoom-Funktion seines Browsers nutzen und den Text mit der Tastenkombination <kbd>Strg</kbd> + <kbd>-</kbd> verkleinern (zurücksetzen dann mit <kbd>Strg</kbd> + <kbd>0</kbd>).</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?ansporn">#ansporn</a>&nbsp; <a href="archiv.html?kritik">#kritik</a>&nbsp;</p>
 </article>
 <section id="kommentare">
 	<h2>3 Kommentare</h2>
 
-	<time datetime="2017-04-11 09:32">11.4.2017, 9:32 Uhr</time>
 	<h3 id="k1"><a href="#k1" style="color:inherit;">#1</a>
 	<a href="https://www.isoglosse.de/">Christopher Bergmann</a>
 	</h3>
+	<time datetime="2017-04-11 09:32">11.4.2017, 9:32 Uhr</time>
 	<p>Sieht gut aus – aber die Ausrichtung am linken Rand widerspricht meinen Sehgewohnheiten auf eine Weise, die ich nicht allzu angenehm finde. (<a href="https://twitter.com/isoglosse/status/851699498493636608">via Twitter</a>)<br> &amp;<br> Ja, auf dem Handy macht es natürlich keinen Unterschied. Auf dem Desktop empfinde ich es spontan eher als Lesehindernis. (<a href="https://twitter.com/isoglosse/status/851701145282244608">via Twitter</a>)</p>
 	<hr>
-	<time datetime="2017-04-11 09:38">11.4.2017, 9:38 Uhr</time>
 	<h3 id="k2"><span class="hinterlegt"><a href="#k2" style="color:inherit;">#2</a>
 	<a href="https://charakterziffer.github.io">Gerhard Großmann</a>
 	</span></h3>
+	<time datetime="2017-04-11 09:38">11.4.2017, 9:38 Uhr</time>
 	<p>Danke! Ja, die Ausrichtung ist ungewohnt – vor allem für Vollbildsurfer. Bin mir selbst noch unschlüssig, wie ich das finde :-) (<a href="https://twitter.com/charakterziffer/status/851700789638815745">via Twitter</a>)<br> &amp;<br> Möchte der Linksbündigkeit Zeit geben (einst sehr üblich), denke noch darüber nach. Evtl. interessant: <a href="https://praegnanz.de/weblog/2017/beyond-1280">praegnanz.de/weblog/beyond-1280</a> (<a href="https://twitter.com/charakterziffer/status/851703620223598592">via Twitter</a>)</p>
 	<hr>
-	<time datetime="2018-03-11 13:29">11.3.2018, 13:29 Uhr</time>
 	<h3 id="k3"><span class="hinterlegt"><a href="#k3" style="color:inherit;">#3</a>
 	<a href="https://charakterziffer.github.io">Gerhard Großmann</a>
 	</span></h3>
+	<time datetime="2018-03-11 13:29">11.3.2018, 13:29 Uhr</time>
 	<p>Nach fast einem Jahr dazu ein kleines Update: Mein Blog ist zwar immer noch linksbündig ausgerichtet, allerdings verschiebe ich auf sehr breiten Bildschirmen die Textspalte nun um 20 Prozent nach rechts. Dadurch sind die Ränder links und rechts ein bisschen ausgewogener.</p>
 	<hr></section>
 
@@ -150,18 +156,22 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="textbleibe.html">← Wo Texte eine Bleibe finden</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="fuchs-7.html">Vorgaben hinter sich lassen →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="textbleibe.html">← Wo Texte eine Bleibe finden</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="fuchs-7.html">Vorgaben hinter sich lassen →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

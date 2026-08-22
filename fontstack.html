@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Wenn ein Website-Text nicht unbedingt eine bestimmte Schrift haben muss, dann tut es vielleicht auch eine gut gewählte Systemschrift.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/fontstack.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/fontstack.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,12 +70,13 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2024-09-05">Do, 5. Sept. 2024</time>
 <h1>Statt Webfonts ein Fontstack</h1>
+
+<p class="intro"><time datetime="2024-09-05">Do, 5. Sept. 2024</time>Wenn ein Website-Text nicht unbedingt eine bestimmte Schrift haben muss, dann tut es vielleicht auch eine gut gewählte Systemschrift.</p>
+
 <style>
 /* Spezifischer Selektor verhindert Styling auf der Startseite */
-body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source Sans Pro', source-sans-pro, 'Myriad Pro', Myriad, 'Segoe UI', 'Open Sans', 'Noto Sans', 'Source Sans 3', sans-serif; }
-/* Source Sans 3 aktiviert Webschrift, darum in der Liste nach hinten gestellt */
+body { font-family: Seravek, 'Source Sans 3', 'Source Sans Pro', source-sans-pro, 'Myriad Pro', Myriad, 'Segoe UI', 'Open Sans', 'Noto Sans', sans-serif; }
 </style>
 
 <p>Im <a href="webfont-vorteile.html">vorigen Blogartikel</a> habe ich beschrieben, warum ein Webfont für wiedererkennbares Design und Konsistenz sorgt. Die Nachteile einer extra Schriftdatei (Performance, Layout-Verschiebungen) lassen sich mit etwas Geschick vermeiden.</p>
@@ -91,7 +95,7 @@ body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source San
 
 <p>Als Grundschrift für längere Artikel bevorzuge ich eine Schrift, die eine gute Lesbarkeit bietet. Ich setze darum weniger auf geometrische oder rationale/statische Schriften, sondern bevorzuge humanistische/dynamische Schriften mit offenen Buchstaben und einer lebhaften Formensprache. Sehr gut erklärt <a href="https://pimpmytype.com/font-matrix/">Oliver Schöndorfer diese Unterscheidung (engl.)</a>. Wegen des moderneren Flairs suche ich eher Sans-Serif-Schriften (ohne „Füßchen“ an den Strichenden).</p>
 
-<figure><img src="material/schriftform.png#invert" style="border: 1px solid var(--grau-matt);" alt="Das Testwort „Sango“ jeweils in einer geometrischen, rationalen und dynamischen Sans-Serif-Schrift. Die entscheidenden Unterschiede sind grün markiert." />
+<figure><img src="material/schriftform.png#invert" style="border: 1px solid var(--grau);" alt="Das Testwort „Sango“ jeweils in einer geometrischen, rationalen und dynamischen Sans-Serif-Schrift. Die entscheidenden Unterschiede sind grün markiert." />
 	<figcaption><b>Geometrische Schriften</b> haben scheinbar konstruierte Buchstaben, die auf Grundformen wie dem Kreis beruhen. Sie sind oft monolinear, zeigen also wenig Unterschiede in der Strichstärke. Beispielschrift: Outfit.<br />
 	In <b>rationalen Schriften</b> sind Buchstabenöffnungen eher eng, Unterschiede in der Strichstärke betonen die Senkrechte (schwer zu sehen bei Sans-Serif-Schriften wie der gezeigten Nimbus Sans).<br />
 	Dagegen haben <b>dynamische Schriften</b> eher offene Buchstabenformen und die Betonung zwischen dünnen und dicken Strichstärken liegt diagonal (Beispiel: Lucida Sans).</figcaption>
@@ -139,22 +143,23 @@ body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source San
 
 <p><b id="note1">[1] Die humanistische Font-Liste</b> von <em>Modern Font Stacks</em> ist <code>Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;</code>. Für eine Leseschrift haben mir Gill Sans und Ubuntu viel zu eigenwillige Buchstabenformen, vor allem fehlende Endstriche bei b, d, … Bei der Gill Sans ist mir außerdem die x-Höhe zu niedrig – unschön in einem deutschen Text mit vielen Großbuchstaben. Statt Calibri und DejaVu Sans gibt es besseres. <a href="#ziffer1">[↑]</a></p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 <section id="kommentare">
 	<h2>2 Kommentare</h2>
 
-	<time datetime="2024-09-05 17:39">5.9.2024, 17:39 Uhr</time>
 	<h3 id="k1"><a href="#k1" style="color:inherit;">#1</a>
 	<a href="http://www.juergensiebert.de">Jürgen Siebert</a>
 	</h3>
+	<time datetime="2024-09-05 17:39">5.9.2024, 17:39 Uhr</time>
 	<p>Zur Seravek ist noch zu ergänzen, dass sie seit mehreren Mac-OS-Generationen zu den „Schriften zur Dokumentunterstützung“ gehören. Diese müssen bei der Installation des Betriebsystems eigens geladen werden. Apple: „Diese Schriften stehen nur in Dokumenten zur Verfügung, die die jeweilige Schrift bereits verwenden, oder in Apps, die die Schrift namentlich anfordern. Bei einigen davon handelt es sich um ältere Schriften, die in früheren Versionen von macOS oder in Apple-Apps enthalten waren.“</p>
 	<hr>
-	<time datetime="2024-09-06 11:26">6.9.2024, 11:26 Uhr</time>
 	<h3 id="k2"><span class="hinterlegt"><a href="#k2" style="color:inherit;">#2</a>
 	<a href="https://charakterziffer.github.io/">Gerhard Großmann</a>
 	</span></h3>
+	<time datetime="2024-09-06 11:26">6.9.2024, 11:26 Uhr</time>
 	<p>Danke dir, Jürgen!<br> Inzwischen habe ich dazu eine Diskussion von 2016 gefunden, wo ein Nutzer das <a href="https://discussions.apple.com/thread/7564632">Verschwinden der Seravek</a> beklagt. Scheinbar lässt sich diese Schrift nur noch im Safari Reader verwenden. Ob die Leute hinter <i>Modern Font Stacks</i> das getestet haben?<br> Zur Not könnte ich auf die Kohinoor Bangla ausweichen – wobei ich da noch nichts bezüglich Mediävalziffern, Versal-Eszett, Pfeile und hochgestellte Ziffern weiß – und eine Kursive scheint auf jeden Fall zu fehlen, autsch … Ich muss wohl noch ein bisschen recherchieren.</p>
 	<hr></section>
 
@@ -192,18 +197,22 @@ body:has(header > a[title="Zur Startseite"]) { font-family: Seravek, 'Source San
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="webfont-vorteile.html">← Webfonts sind eine gute Sache</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="fontstack-probleme.html">Probleme mit Fontstacks →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="webfont-vorteile.html">← Webfonts sind eine gute Sache</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="fontstack-probleme.html">Probleme mit Fontstacks →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

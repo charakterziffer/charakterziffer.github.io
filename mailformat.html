@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="In letzter Zeit überlege ich, meine Mails nicht mehr in HTML zu formatieren. Ob Reintext aber für meine Bedürfnisse ausreicht? Ich denke mal laut darüber nach.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/mailformat.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/mailformat.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,8 +70,10 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2015-07-24">Fr, 24. Juli 2015</time>
 <h1>Reintext oder HTML?</h1>
+
+<p class="intro"><time datetime="2015-07-24">Fr, 24. Juli 2015</time>In letzter Zeit überlege ich, meine Mails nicht mehr in HTML zu formatieren. Ob Reintext aber für meine Bedürfnisse ausreicht? Ich denke mal laut darüber nach.</p>
+
 <p>Seit gut einem Jahr schreibe ich immer mal wieder verschlüsselte Mails. Leider bin ich sehr unsicher, wie gut verschiedene Mailprogramme die GnuPG-Verschlüsselung von HTML-Mails unterstützen (mit PGP/MIME). Deshalb versende ich verschlüsselte Mails standardmäßig als Reintext mit sehr eingeschränkter Formatierung: Mein Mailprogramm Thunderbird erlaubt Hervorhebungen mit <code style="font-weight:bold">*Sternchen*</code>, <code style="font-style:italic">/Schräg-/</code> und <code style="text-decoration:underline">_Unterstrichen_</code>.</p>
 
 <p>Dummerweise kann man in Reintext-Mails auch keine Bilder in den Text einbetten. Ich mache das sehr gern, weil man im vorangehenden Absatz dann direkt Bezug auf das Bild nehmen kann. Und noch ein Minuspunkt: Ohne HTML kann man keinerlei Wünsche bezüglich der Schrift äußern, in der die elektronische Post beim Empfänger angezeigt wird. Das ist zwar selbst mit HTML eher vage, aber eine bestimmte Richtung kann ich immerhin vorgeben.</p>
@@ -80,7 +85,7 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <p style="font-family:Corbel,Aller,Ubuntu,'Lucida Sans',sans-serif;line-height:20px;margin:1.4em 0 0.7em;">
 <a href="https://de.wikipedia.org/wiki/Die_Geburt_der_Venus"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAmACYDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUHAgQIBgP/xAAyEAABAwMDAgQFAQkAAAAAAAABAgMEAAURBiExEkEHExRRFWFxgZGhCCQyQlKC0eHw/8QAGAEBAQEBAQAAAAAAAAAAAAAABAMBAgX/xAAcEQADAQADAQEAAAAAAAAAAAAAAQMCESFBEmH/2gAMAwEAAhEDEQA/ANePJeEVS/MQXUnYnc89xjetRqVcnpBQ2olZOQAk79+1QETVlnkvlmLLUlZAyotFSUg7ZP8AjknirHfae01KtN7t8n1tvKU9bw4UojByRthQJ27cc0etlgrOD0Q8P4m7cU2xbbSJa1JSnrV0jfjPJ784qRvMSfYZbLNw8klxPUCgEj6ZOP8AjU54h20OSoGrbW2FNLCQ6QRnkFBJHscg/at7XMb4vpePdWkklKApQA3AOAfwaI7bYjMsIys2mpkq2MXFM+OGZCApKQ0FFORnfJx+KV6Dwvfbl6NhtnctFST9Qo/6pU3qjfTN+cLw5P8A2a4kmZc7suNakXcJjBEmKtaQS0VAkpBIycgAd9tsVeFgZatzcqPEbfm2NwYl259JEiIScFQSdyBjO3tn2Ncm6O1De9JXpu7Wh51pwbOISogOIzulQHb58g71flk8Y7VeW2nZbsdiU2On94dDTqCeQlzYEfcg9xSrTbfJxPfXBdOmmo8e2uWl18S7TKGYzwIIAP8AKfYjavvpyP6P1en5yQttSSWFEbLQrnHzB3/NVxY9XMMLU+1Mgele3dSp9PSD/UenIB+YAz3Fepd1DIbDCpkJ8JwFsSUpKkKBGQQobEEd6Ok14dsnNERV2lyda3CoIS55jZPGDtgfofvSiL3aJrDbolJbdCcLBIBpWp/hhw9Ni+XCdluKCh/H1dOVE/TbH61BOFMt4gp6Hsc9jtSlekwzMrTcJ0CR5kKU4wtPPSdiPpwatrSPipqyHY0Rm7k4026ClAbAIRj2CsgfbFKVCqKzffAkTrvfHPWzbzOWpeSAl0oA/tTtSlKM2NzlcH//2Q==" title="Kunstquadrat" alt="" style="border:0;float:left;margin:0 9px 0 0" width="38" height="38" /></a>
 Gerhard Gro&szlig;mann &nbsp;&#8226;&nbsp; Beispielstraße 3 &nbsp;&#8226;&nbsp; 12345 Beispielstadt<br />
-Telefon: 09XX<small>&nbsp;</small>/<small>&nbsp;</small>XXX<small>&nbsp;</small>XXX &nbsp;&#8226;&nbsp; SMS: 017X<small>&nbsp;</small>/<small>&nbsp;</small>XXX<small>&nbsp;</small>XX<small>&nbsp;</small>XX</p>
+Telefon: 09XX&#8239;/&#8239;XXX&#8239;XXX &nbsp;&#8226;&nbsp; SMS: 017X&#8239;/&#8239;XXX&#8239;XX&#8239;XX</p>
 
 <p>Das Kunstquadrat ist ein 38×38 Pixel großer Ausschnitt eines Gemäldes, verlinkt mit dem entsprechenden Wikipedia-Artikel. In meinen Augen ist das ein unterhaltsames kleines Extra, das monatlich zum Entdecken einlädt und meine Mails bereichert. Für Empfänger, die HTML nicht angezeigt bekommen können (gibt’s so was?), schickt mein Mailprogramm zur Sicherheit immer eine automatisch erzeugte Reintext-Version mit.</p>
 
@@ -90,7 +95,7 @@ Telefon: 09XX<small>&nbsp;</small>/<small>&nbsp;</small>XXX<small>&nbsp;</small>
 
 <p>Vielleicht würde ich mich dann auch stärker auf einen kurzen, prägnanten Schreibstil konzentrieren. Schließlich erscheint eine Reintext-Mail (zumindest bei mir) in einer puristischen Schreibmaschinen-Type, genau wie in minimalistischen Schreibprogrammen. Das motiviert, die Aufmerksamkeit auf den eigentlichen Inhalt zu richten. – Andererseits schreibe ich gern längere Mails, und wenn die dann ohne optimierte Lesbarkeitsgestaltung beim Empfänger ankommen …</p>
 
-<p>Der Dateigrößenvorteil ist eher zu vernachlässigen. Ohne Signatur bringt es eine HTML-Mail (mit Reintext-Fallback) aus den ersten zwei Absätzen dieses Blogeintrags auf 3,0<small> </small>kB, als bloße Reintext-Mail auf 1,4<small> </small>kB. Das ist zwar mehr als doppelt so viel, absolut gesehen reden wir aber nur über einen Unterschied von 1,6<small> </small>kB (zum Vergleich: Das Logo der Wikipedia hat allein 10,2<small> </small>kB).</p>
+<p>Der Dateigrößenvorteil ist eher zu vernachlässigen. Ohne Signatur bringt es eine HTML-Mail (mit Reintext-Fallback) aus den ersten zwei Absätzen dieses Blogeintrags auf 3,0 kB, als bloße Reintext-Mail auf 1,4 kB. Das ist zwar mehr als doppelt so viel, absolut gesehen reden wir aber nur über einen Unterschied von 1,6 kB (zum Vergleich: Das Logo der Wikipedia hat allein 10,2 kB).</p>
 
 <p>Noch nicht so ganz zufrieden bin ich damit, dass Reintext-Nachrichten in der Regel nach einer bestimmten<br />Zeichenzahl mit festen Zeilenumbrüchen versehen werden. Und nicht jedes Mailprogramm hat ein ausreichend<br />breites Anzeigefenster oder umbricht die Nachricht neu. Im schlimmsten Fall sehen meine Mails dann so<br />zebrastreifenartig aus wie dieser Absatz.</p>
 
@@ -110,7 +115,8 @@ Telefon: 09XX<small>&nbsp;</small>/<small>&nbsp;</small>XXX<small>&nbsp;</small>
 
 <p>Wie haltet ihr es mit euren Mails? Seid ihr minimalistische Text-Puristen oder verschickt ihr durchgestylte E-Post? Habt ihr die HTML-Anzeige in eurem Mailprogramm geblockt, weil ihr immer Comic-Sans-Mails bekommt? Oder habt ihr besseres zu tun, als über solche Dinge wie Mailformate nachzudenken?</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?ansporn">#ansporn</a>&nbsp; <a href="archiv.html?typografie">#typografie</a>&nbsp;</p>
 </article>
 
@@ -150,18 +156,22 @@ Telefon: 09XX<small>&nbsp;</small>/<small>&nbsp;</small>XXX<small>&nbsp;</small>
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="origamischachtel.html">← Eine Schachtel aus Papier</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="tagebuch.html">Blick ins Tagebuch →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="origamischachtel.html">← Eine Schachtel aus Papier</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="tagebuch.html">Blick ins Tagebuch →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

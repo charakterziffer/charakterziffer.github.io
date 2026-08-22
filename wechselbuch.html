@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Ein etwas sperriges Buch liest man am besten gemeinsam mit jemand anderem. Bleistiftkommentare motivieren zusätzlich.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/wechselbuch.html'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/wechselbuch.html');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,11 +70,13 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <article>
-<time datetime="2017-10-26">Do, 26. Okt. 2017</time>
 <h1>Abwechselnd und mit Bleistift lesen</h1>
-<p>Es gibt Bücher, die ich lesen möchte, weil sie literarisch eine gewisse Bedeutung haben (z.<small> </small>B. Ecos „Der Name der Rose“ oder Goethes „Faust“). Allerdings sind darunter einige, die … sagen wir: weniger zugänglich sind und für die ich eine gewisse Motivation brauche. Für genau diese Fälle habe ich mir eine Lesepartnerin gesucht.</p>
 
-<p>Derzeit lese ich mit einer Freundin den Roman „Ulysses“ von James Joyce. Die Geschichte spielt am 16.<small> </small>Juni 1904, wo der Leser die Hauptfiguren in 18 Episoden durch Dublin begleitet. Der Text ist sehr assoziativ geschrieben, springt gelegentlich unvermittelt, wagt sprachliche Experimente und die Handlung ist leider nicht gerade spannend. Dafür gibt es sehr viele Zitate und Anspielungen, die zu recherchieren dank Websites wie <a href="http://m.joyceproject.com/">http://m.joyceproject.com/</a> großes Vergnügen bereitet.</p>
+<p class="intro"><time datetime="2017-10-26">Do, 26. Okt. 2017</time>Ein etwas sperriges Buch liest man am besten gemeinsam mit jemand anderem. Bleistiftkommentare motivieren zusätzlich.</p>
+
+<p>Es gibt Bücher, die ich lesen möchte, weil sie literarisch eine gewisse Bedeutung haben (z. B. Ecos „Der Name der Rose“ oder Goethes „Faust“). Allerdings sind darunter einige, die … sagen wir: weniger zugänglich sind und für die ich eine gewisse Motivation brauche. Für genau diese Fälle habe ich mir eine Lesepartnerin gesucht.</p>
+
+<p>Derzeit lese ich mit einer Freundin den Roman „Ulysses“ von James Joyce. Die Geschichte spielt am 16. Juni 1904, wo der Leser die Hauptfiguren in 18 Episoden durch Dublin begleitet. Der Text ist sehr assoziativ geschrieben, springt gelegentlich unvermittelt, wagt sprachliche Experimente und die Handlung ist leider nicht gerade spannend. Dafür gibt es sehr viele Zitate und Anspielungen, die zu recherchieren dank Websites wie <a href="http://m.joyceproject.com/">http://m.joyceproject.com/</a> großes Vergnügen bereitet.</p>
 
 <h2 id="notizen-im-buch">Notizen im Buch</h2>
 
@@ -91,52 +96,53 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <p>Zugegebenermaßen dauert es um einiges länger, ein Buch abwechselnd mit dem Bleistift zu lesen (für „Ulysses“ werden wir mehr als ein Jahr brauchen). Es besteht zudem die Gefahr, zwischendurch den Faden zu verlieren. Ein Wechselbuch ermutigt aber zu einer intensiven Lektüre und die Kommentare des anderen motivieren jedes Mal neu einzusteigen. Für eher sperrige Bücher, die man trotzdem gerne lesen möchte, ist so eine Bleistiftlektüre gemeinsam mit einem Lesepartner in meinen Augen eine wunderbare Sache.</p>
 
-<p style="margin-bottom:2.25em;">---<br>
+
+<p>---<br>
 <i>Rubrik(en):</i>&nbsp; <a href="archiv.html?ansporn">#ansporn</a>&nbsp; <a href="archiv.html?methodik">#methodik</a>&nbsp; <a href="archiv.html?sujet">#sujet</a>&nbsp;</p>
 </article>
 <section id="kommentare">
 	<h2>7 Kommentare</h2>
 
-	<time datetime="2017-10-26 14:37">26.10.2017, 14:37 Uhr</time>
 	<h3 id="k1"><a href="#k1" style="color:inherit;">#1</a>
 	Astrid
 	</h3>
+	<time datetime="2017-10-26 14:37">26.10.2017, 14:37 Uhr</time>
 	<p>Als deine "Wechselpartnerin" möchte ich sagen: Sehr gut beschrieben! Danke für den schönen Beitrag zu unserer gemeinsamen Lektüre!</p>
 	<hr>
-	<time datetime="2017-10-26 19:54">26.10.2017, 19:54 Uhr</time>
 	<h3 id="k2"><a href="#k2" style="color:inherit;">#2</a>
 	Idgie
 	</h3>
+	<time datetime="2017-10-26 19:54">26.10.2017, 19:54 Uhr</time>
 	<p>Tolle Idee. Möchte ich auch mal ausprobieren.<br> Danke für die Anregung.</p>
 	<hr>
-	<time datetime="2017-10-26 22:42">26.10.2017, 22:42 Uhr</time>
 	<h3 id="k3"><a href="#k3" style="color:inherit;">#3</a>
 	<a href="https://biboskleinefluchten.wordpress.com">Bibo</a>
 	</h3>
+	<time datetime="2017-10-26 22:42">26.10.2017, 22:42 Uhr</time>
 	<p>Mich würde das wahnsinnig machen, in einem Buch zu lesen, das irgendwie beschriftet oder vollgekritzelt ist, auch dann, wenn die Notizen für mich sind. Wenn ich zufällig ein solches in die Hand bekomme, greife ich als erstes zum Radiergummi.<br> Außerdem braucht man ein ähnliches Lesetempo und muss sich darüber einigen, wer das Buch bekommt.<br> Ein Freund und ich haben uns mal abwechselnd gegenseitig vorgelesen. Das ging.</p>
 	<hr>
-	<time datetime="2017-10-26 23:37">26.10.2017, 23:37 Uhr</time>
 	<h3 id="k4"><a href="#k4" style="color:inherit;">#4</a>
 	Gudrun Friedrich / Patschouli
 	</h3>
+	<time datetime="2017-10-26 23:37">26.10.2017, 23:37 Uhr</time>
 	<p><blockquote>Wenn ich zufällig ein solches in die Hand bekomme, greife ich als erstes zum Radiergummi.</blockquote></p> <p>Als ich das gelesen habe, war meine erste Reaktion: "Nein, das kann doch nicht sein, das ist ja grausam!"<br> Natürlich wird nicht jedes Paar auf dieselbe Art gemeinsam lesen. Dieses ist <i>eine</i> Weise, die den beiden entspricht und gefällt. Und ich finde es durchaus interessant.</p>
 	<hr>
-	<time datetime="2017-10-27 09:31">27.10.2017, 9:31 Uhr</time>
 	<h3 id="k5"><a href="#k5" style="color:inherit;">#5</a>
 	<a href="https://fjonka.wordpress.com/">Oedi</a>
 	</h3>
+	<time datetime="2017-10-27 09:31">27.10.2017, 9:31 Uhr</time>
 	<p>Ich finde das sehr spannend, aber würde es nimmernienicht auch so machen können/ wollen, denn das schlimmste, was einem Buch mE passieren kann ist, "beschriftet" zu werden. Wobei ich nicht ans Buch denke, sondern an mein Lesevergnügen. Selbst bei fremden Unterstreichungen gerät mir mein flüssiges lesen aus dem Takt. Ich fühle mich gestört. So als ob meine eigenen Lese-Bilder unterdrückt würden, fremde mir aufgedrückt. Ganz schlimm!<br> Toll allerdings, sich so intensiv über ein Buch austauschen zu können! Ein Lesepartner ist sicherlich etwas tolles :-)</p>
 	<hr>
-	<time datetime="2017-10-27 10:23">27.10.2017, 10:23 Uhr</time>
 	<h3 id="k6"><span class="hinterlegt"><a href="#k6" style="color:inherit;">#6</a>
 	<a href="https://charakterziffer.github.io/">Gerhard Großmann</a>
 	</span></h3>
+	<time datetime="2017-10-27 10:23">27.10.2017, 10:23 Uhr</time>
 	<p>Vielen Dank für eure Kommentare hier und <a href="http://www.bookcrossing.com/forum/14/546696">im Bookcrossing-Forum</a>. Den Aspekt, dass man überhaupt in ein Buch hineinschreibt, habe ich in meinem Blogpost ganz vergessen. Es stimmt, einige Bücher erscheinen so „unantastbar“, dass ich sie auch nicht bekritzeln möchte. Das hat für mich etwas mit ihrer Typografie, Aufmachung oder mit dem Text an sich zu tun.</p> <p>Bei „Ulysses“ (nicht so toll gearbeitete Taschenbuch-Ausgabe) denke ich, dass meine Lesefreundin und ich noch eine dünne Schicht hinzufügen, die den Text vielleicht sogar bereichert. Einige Stellen hätte ich ohne Markierung schlicht überlesen. Stellenweise ist das zugegebenermaßen eher ein analytisches Lesen, als ein genussvolles Abtauchen in die Geschichte – für „Ulysses“ passt das meiner Meinung nach aber recht gut.</p> <p>Ein weiterer Aspekt: Die Notizen machen das Buch wieder mehr zum Gegenstand. So wie wenn sich vielleicht das Papier wellt, weil es auf der Zugreise zu meiner Berliner Cousine im Regen nass geworden ist; wenn zwischen den Seiten noch ein gepresstes Blatt vom Ginkgo-Baum aus dem Garten meiner Eltern liegt, … Das Buch, nein: <i>dieses</i> Buch hat mich ein Stück meines Lebens begleitet; ich habe mich damit auseinander gesetzt, es genossen, mich darüber geärgert, mich inspirieren lassen. Durch die Notizen bleibt ein Stück dieser gemeinsamen Reise im Buch zurück (viel direkter als ein kürzerer, allgemeinerer Journal-Eintrag bei Bookcrossing) – das kann der nachfolgende Leser beflügelnd oder störend finden.</p>
 	<hr>
-	<time datetime="2018-09-19 18:23">19.9.2018, 18:23 Uhr</time>
 	<h3 id="k7"><span class="hinterlegt"><a href="#k7" style="color:inherit;">#7</a>
 	<a href="https://charakterziffer.github.io/">Gerhard Großmann</a>
 	</span></h3>
+	<time datetime="2018-09-19 18:23">19.9.2018, 18:23 Uhr</time>
 	<p>Nach gut vierzehn Monaten sind wir mit Joyce’ <i>Ulysses</i> nun durch. Es war ein Abenteuer, das ich ohne meine Lesepartnerin vermutlich nicht durchgehalten hätte. Wie erwartet war die Handlung eher banal, aber die Form und Sprache fand ich sehr inspirierend. Besonders angesprochen haben mich die Kapitel 10 („Irrfelsen“: Kurze Szenen verschiedener Spaziergänger, die aufeinander Bezug nehmen, einander ergänzen), 17 („Ithaka“: Die Handlung wird präsentiert als Antworten auf nachforschende Fragen) und natürlich 14 („Die Rinder des Sonnengottes“: Während eine Frau gebiert, entwickelt sich die Sprache des Kapitels von fast unverständlichem Mittelhochdeutsch bzw. Altenglisch zum flapsigen Slang der Gegenwart).</p> <p>Wem das ganze Buch – immerhin 980 Seiten – zu umfangreich sein sollte, der kann einfach mal in einzelne Kapitel hineinschnuppern, zum Beispiel auch in Kapitel 18 (Penelope), das James Joyce im bekannten Bewusstseinsstrom verfasst hat; oder in Kapitel 7 (Äolus), das die Form kurzer Zeitungsartikel imitiert.</p>
 	<hr></section>
 
@@ -174,18 +180,22 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 <div><input name="submit" id="submit" type="submit" value="Veröffentlichen"></div>
 </form>
 
-<p class="no-hyphens" style="font-size:0.9em;line-height:1.667em;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außerdem Verlinkungen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und Bilder (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bildbeschreibung"&gt;).</p>
+<p class="no-hyphens" style="font-size:0.9em;line-height:.75rlh;">Formatierungen mit HTML sind möglich, z.<small>&nbsp;</small>B. &lt;em&gt;<em>betont</em>&lt;/em&gt;, &lt;strong&gt;<strong>hervor&shy;gehoben</strong>&lt;/strong&gt; oder &lt;code&gt;<code>Quelltext</code>&lt;/code&gt;. Außer&shy;dem Ver&shy;linkun&shy;gen (&lt;a href="http://verlinkte-website.de"&gt;Linktext&lt;/a&gt;) und online ab&shy;ruf&shy;bare Bil&shy;der (&lt;img src="http://pfad-zum.de/bild.jpg" alt="Bild&shy;beschrei&shy;bung"&gt;).</p>
 </div> <!-- .no-print -->
-<p style="width:48%; float:left; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="spendenwerbung.html">← Mit Spenden werben</a></p>
-<p style="width:48%; float:right; text-align:right; margin:3.1em 0 1.1em;" class="no-hyphens no-print"><a href="kalender-2018.html">Kleiner Wandkalender für 2018 →</a></p>
+
+
+<p style="width:48%; float:left; text-align:left; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="spendenwerbung.html">← Mit Spenden werben</a></p>
+<p style="width:48%; float:right; text-align:right; margin:1.5rlh 0 1rlh;" class="no-hyphens no-print"><a href="kalender-2018.html">Kleiner Wandkalender für 2018 →</a></p>
 <p style="clear:both;" class="no-print"></p>
+
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>

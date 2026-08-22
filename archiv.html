@@ -20,7 +20,7 @@
 
 <link rel="icon" href="/bestand/favicon.png">
 <link rel="apple-touch-icon" href="/bestand/touchicon.png">
-<meta name="theme-color" content="#228811">
+<meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
 <meta name="description" content="Gerhard Großmann bloggt seit November 2010. Hier eine Liste aller bisherigen Artikel mit einer kurzen Inhaltsangabe.">
@@ -33,27 +33,30 @@
 <meta name="referrer" content="strict-origin">
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
-@media print { header:after { content: ""; width: 110px; height: 110px;
-background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/archiv'); background-size: 110px;
-position: absolute; right: .7em; top: 1em;
-z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } </style>
+@media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/archiv');
+	background-size: 3.5rlh; position: absolute; transform: none;
+	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important; } } </style>
 
 <meta property="og:image" content="https://charakterziffer.github.io/bestand/cz200x200.jpg">
 </head>
 
 <body>
 <header>
+<div class="container">
 <a title="Zur Startseite" href="https://charakterziffer.github.io/"><img src="https://charakterziffer.github.io/bestand/favicon.png" width="59.8" height="59.8" alt="">@charak<br>terziffer</a>
-<div>
 <search><form id="suchform" method="GET" action="https://duckduckgo.com/" onsubmit="javascript:document.getElementById('q').value = document.getElementById('keyword').value + ' site:charakterziffer.github.io'">
 <input type="search" id="keyword" placeholder="Suche mit DuckDuckGo" aria-label="Seite extern durchsuchen mit DuckDuckGo">
 <input type="hidden" id="q" name="q">
 <input type="hidden" name="kl" value="de-de">
-<input type="hidden" name="kj" value="281">
-<input type="hidden" name="kx" value="666">
-<input type="hidden" name="k9" value="281">
-<input type="hidden" name="kaa" value="839">
-<input type="hidden" name="ka" value="Source Sans Pro">
+<input type="hidden" name="kj" value="c4d4cd">
+<input type="hidden" name="kx" value="77738c">
+<input type="hidden" name="k9" value="00804a">
+<input type="hidden" name="kaa" value="bf00e6">
+<input type="hidden" name="ka" value="Georgia">
+<input type="hidden" name="kt" value="Georgia">
 <input type="submit" value="🔍" aria-label="Suchen">
 </form></search>
 <nav class="no-hyphens no-print"><ul>
@@ -67,15 +70,14 @@ z-index:-1; -webkit-print-color-adjust: exact !important; print-color-adjust: ex
 
 <main>
 <style>
-nav li:nth-child(1) a { color: #3a1 !important; }
-.jahreszahl { margin-top:1.125em } /* Klasse wird in JS zum Ausblenden benutzt */
+nav li:nth-child(1) a { color: var(--gruen) !important; }
 .is-hidden { display:none; }
 </style>
 
 <h1 id="archiv-meiner-blogartikel-seit-2020">Archiv meiner Blogartikel seit 2020</h1>
 
 <p>Bisher habe ich 190 Artikel veröffentlicht. Hier sind sie vom neusten zum ältesten aufgelistet, jeweils mit einer kurzen Inhaltsangabe. Frühere Texte stehen im <a href="archiv-10.html">2010er-Archiv</a>.<br />
-Liste nach Rubrik filtern (mit JavaScript) → <a href="archiv.html?ansporn">#ansporn</a>  <a href="archiv.html?kritik">#kritik</a>  <a href="archiv.html?methodik">#methodik</a>  <a href="archiv.html?sujet">#sujet</a>  <a href="archiv.html?serie">#serie</a>  <a href="archiv.html?typografie">#typografie</a>  </p>
+Liste nach Rubrik filtern (mit JavaScript) → <a href="archiv.html?ansporn">#ansporn</a>  <a href="archiv.html?kritik">#kritik</a>  <a href="archiv.html?methodik">#methodik</a>  <a href="archiv.html?sujet">#sujet</a>  <a href="archiv.html?serie">#serie</a>  <a href="archiv.html?typografie">#typografie</a>  <br /> </p>
 
 <script type="text/javascript">
 var suchRubrik = encodeURI(self.location.search.replace(/\?/, ''));
@@ -83,84 +85,74 @@ if(suchRubrik.length) {
 	document.writeln("<p class=\"hinterlegt\"><b>Filter aktiv:<\/b> Es sind nur Artikel aus der Rubrik #"+suchRubrik+" zu sehen. Stattdessen <a href=\"archiv.html\">alle Einträge anzeigen<\/a>?<\/p>"); }
 </script>
 
-<p style="margin-bottom:-1em">&nbsp;</p>
-
 <h1 class="jahreszahl">2026</h1>
 
 <section data-rubrik="sujet ">
-	<time datetime="2026-08-06">Do, 6. Aug. 2026</time>
 	<h2><a href="sonnenfinsternis.html">Die Sonne hinterm Mond</a></h2>
 	<p>Zweimal im Jahr gibt’s eine Sonnenfinsternis – doch wenn man ihr nicht hinterherreist, sieht man eine ordentliche Finsternis eher selten.
  <a href="sonnenfinsternis.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>711 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-08-06">Do, 6. Aug. 2026</time> // 711 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2026-07-03">Fr, 3. Juli 2026</time>
 	<h2><a href="tintenfarben-2.html">Farbige Tinten fürs tägliche Schreiben</a></h2>
 	<p>Meinen Alltagsfüller betanke ich abwechselnd mit einer von derzeit neun Tinten. Hier stelle ich meine verschiedenen Farben kurz vor.
  <a href="tintenfarben-2.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>712 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-07-03">Fr, 3. Juli 2026</time> // 713 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2026-06-18">Do, 18. Juni 2026</time>
 	<h2><a href="rollenspiele.html">Wir würfeln uns ein Abenteuer</a></h2>
 	<p>Bei Rollenspielen trainieren die Beteiligten Kooperation und Fantasie, vielleicht finde ich diese Spielform deshalb so spannend.
  <a href="rollenspiele.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1191 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-06-18">Do, 18. Juni 2026</time> // 1191 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik ">
-	<time datetime="2026-05-27">Mi, 27. Mai 2026</time>
 	<h2><a href="dvoraks-neunte.html">Die 9. Sinfonie von Dvořák</a></h2>
 	<p>Das Werk „Aus der Neuen Welt“ gehört zu meinen Lieblingsstücken. Mein Blogartikel lädt dazu ein, es (mal wieder) anzuhören.
  <a href="dvoraks-neunte.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>258 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-05-27">Mi, 27. Mai 2026</time> // 258 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2026-03-31">Di, 31. März 2026</time>
 	<h2><a href="ki-halluziniert.html">KI halluziniert immer</a></h2>
 	<p>Sogenannte „künstliche Intelligenz“ ist weniger schlau, als wir ihr zutrauen. Und so wie sie funktioniert, wird sie weiterhin Fehler produzieren.
  <a href="ki-halluziniert.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1263 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-03-31">Di, 31. März 2026</time> // 1263 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2026-03-09">Mo, 9. März 2026</time>
 	<h2><a href="vampirbuehne.html">Über die Bühne zum „Vampir“</a></h2>
 	<p>Das Bühnenbild zu unserem diesjährigen Theaterstück soll gleichzeitig unheimlich und gemütlich wirken – ich löse das über die Lichtsetzung.
  <a href="vampirbuehne.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>824 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-03-09">Mo, 9. März 2026</time> // 824 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2026-02-10">Di, 10. Febr. 2026</time>
 	<h2><a href="vampirmusik.html">Über die Musik im „Vampir“</a></h2>
 	<p>Fürs diesjährige Stück des Hohenfelser Burgtheaters habe ich die Musik für Blasorchester komponiert. Die Melodien orientieren sich an der Handlung.
  <a href="vampirmusik.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1306 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-02-10">Di, 10. Febr. 2026</time> // 1306 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2026-01-02">Fr, 2. Jan. 2026</time>
 	<h2><a href="gelernt.html">Heute gelernt (Vorsatz 2026)</a></h2>
 	<p>Jeden Tag zu notieren, was mir neu war, was mich weitergebracht hat oder welche Herausforderung es gab – so mein Vorsatz für dieses Jahr.
  <a href="gelernt.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>294 Wörter //</i>&nbsp;
+	<p><i><time datetime="2026-01-02">Fr, 2. Jan. 2026</time> // 294 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
@@ -168,116 +160,104 @@ if(suchRubrik.length) {
 <h1 class="jahreszahl">2025</h1>
 
 <section data-rubrik="ansporn kritik sujet ">
-	<time datetime="2025-11-19">Mi, 19. Nov. 2025</time>
 	<h2><a href="fensterbilder-3.html">Malen, weil es Spaß macht</a></h2>
 	<p>Alle paar Wochen male ich ein neues Fensterbild, schon seit vier Jahren. Ich probiere Techniken aus und experimentiere mit verschiedenen Farben.
  <a href="fensterbilder-3.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>749 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-11-19">Mi, 19. Nov. 2025</time> // 748 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2025-10-31">Fr, 31. Okt. 2025</time>
 	<h2><a href="inktober.html">Beim Inktober mitgezeichnet</a></h2>
 	<p>Die Aktion eines Illustrators lädt dazu ein, im Oktober täglich zu zeichnen. Inspirierende Herausforderungen liefert eine Liste mit Stichworten.
  <a href="inktober.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>522 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-10-31">Fr, 31. Okt. 2025</time> // 522 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2025-09-12">Fr, 12. Sept. 2025</time>
 	<h2><a href="alphabet.html">Alphabet für einphasigen Schrifterwerb</a></h2>
 	<p>Für einen Modellversuch an bayerischen Grundschulen durfte ich ein flüssig schreibbares ABC entwerfen. Es soll das Schreibenlernen erleichtern.
  <a href="alphabet.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>764 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-09-12">Fr, 12. Sept. 2025</time> // 764 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2025-08-12">Di, 12. Aug. 2025</time>
 	<h2><a href="tomatentarte.html">Herzhafte Tomatentarte</a></h2>
 	<p>Rezept für einen flachen Kuchen aus Mürbeteig, belegt mit Tomatenscheiben und Frühstücksspeck. Schmeckt warm oder kalt.
  <a href="tomatentarte.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>218 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-08-12">Di, 12. Aug. 2025</time> // 218 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2025-07-30">Mi, 30. Juli 2025</time>
 	<h2><a href="wolken.html">Blick in die Wolken</a></h2>
 	<p>In den letzten Monaten habe ich eine Fotoserie angefertigt und immer mal wieder den Himmel fotografiert. Hier zeige ich eine Auswahl meiner Bilder.
  <a href="wolken.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>516 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-07-30">Mi, 30. Juli 2025</time> // 515 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2025-06-19">Do, 19. Juni 2025</time>
 	<h2><a href="neutralitaet.html">Unmögliche Neutralität</a></h2>
 	<p>Wer sich neutral verhalten will, stellt sich in manchen Fälle ungewollt auf die falsche Seite.
  <a href="neutralitaet.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>579 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-06-19">Do, 19. Juni 2025</time> // 579 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2025-05-30">Fr, 30. Mai 2025</time>
 	<h2><a href="origamitaube.html">Eine Taube aus Papier</a></h2>
 	<p>Eine Anleitung, wie man aus einem quadratischen Blatt eine Taube faltet. Ein bisschen Origami-Erfahrung kann bei dieser Figur nicht schaden!
  <a href="origamitaube.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>628 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-05-30">Fr, 30. Mai 2025</time> // 628 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2025-04-22">Di, 22. Apr. 2025</time>
 	<h2><a href="skulptur.html">Skulptur</a></h2>
 	<p>Eine Kurzgeschichte, die mehrdeutig, widersprüchlich und unklar bleibt. Die eigentlich einfache Handlung soll zu verschiedenen Deutungen anregen.
  <a href="skulptur.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>443 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-04-22">Di, 22. Apr. 2025</time> // 442 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2025-03-19">Mi, 19. März 2025</time>
 	<h2><a href="oelfarben.html">Ölfarben sind eigensinnig</a></h2>
 	<p>Sie mischen sich anders, lassen sich plastisch auftragen und erfordern viel Geduld beim Trocknen – einige meiner Erfahrungen beim Malen mit Ölfarbe.
  <a href="oelfarben.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>880 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-03-19">Mi, 19. März 2025</time> // 880 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2025-02-18">Di, 18. Febr. 2025</time>
 	<h2><a href="algorithmus.html">Vom Algorithmus gefüttert</a></h2>
 	<p>Auf Social Media wird vorsortiert, was du zu sehen bekommst – um deine Aufmerksamkeit möglichst lang zu fesseln. Zu wissen, wie ein Algorithmus funktioniert, hilft zu einen bewussteren Umgang.
  <a href="algorithmus.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1101 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-02-18">Di, 18. Febr. 2025</time> // 1101 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn ">
-	<time datetime="2025-01-16">Do, 16. Jan. 2025</time>
 	<h2><a href="nuetzlichkeit.html">Muss es nützlich sein?</a></h2>
 	<p>Ob ich Ideen weiterentwickle, entscheidet oft die Frage, ob sie einen Nutzen haben werden. Sollte das wirklich den Ausschlag geben?
  <a href="nuetzlichkeit.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>845 Wörter //</i>&nbsp;
+	<p><i><time datetime="2025-01-16">Do, 16. Jan. 2025</time> // 845 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <h1 class="jahreszahl">2024</h1>
 
 <section data-rubrik="ansporn methodik sujet typografie ">
-	<time datetime="2024-11-20">Mi, 20. Nov. 2024</time>
 	<h2><a href="schreibmaschine.html">Maschinengetippte Ideen</a></h2>
 	<p>Was lässt sich Kreatives mit einer Schreibmaschine anstellen? In den letzten Monaten habe ich einiges umgesetzt, neun Projekte stelle ich hier vor.
  <a href="schreibmaschine.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1379 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-11-20">Mi, 20. Nov. 2024</time> // 1378 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a>
@@ -285,247 +265,222 @@ if(suchRubrik.length) {
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2024-10-15">Di, 15. Okt. 2024</time>
 	<h2><a href="erfundene-fakten-12.html">Das wird man ja wohl noch träumen dürfen!</a></h2>
 	<p>Erfundene Geschichten können den Horizont erweitern und neue Möglichkeiten zeigen. Oder sie schüren Hetzte und verleugnen die Realität.
  <a href="erfundene-fakten-12.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>544 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-10-15">Di, 15. Okt. 2024</time> // 543 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2024-09-13">Fr, 13. Sept. 2024</time>
 	<h2><a href="fontstack-probleme.html">Probleme mit Fontstacks</a></h2>
 	<p>Welche vielen Möglichkeiten Webfonts bieten, erkennt man am besten, wenn man zeitweise darauf verzichtet.
  <a href="fontstack-probleme.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1492 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-09-13">Fr, 13. Sept. 2024</time> // 1475 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2024-09-05">Do, 5. Sept. 2024</time>
 	<h2><a href="fontstack.html">Statt Webfonts ein Fontstack</a></h2>
 	<p>Wenn ein Website-Text nicht unbedingt eine bestimmte Schrift haben muss, dann tut es vielleicht auch eine gut gewählte Systemschrift.
  <a href="fontstack.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1245 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-09-05">Do, 5. Sept. 2024</time> // 1228 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2024-08-28">Mi, 28. Aug. 2024</time>
 	<h2><a href="webfont-vorteile.html">Webfonts sind eine gute Sache</a></h2>
 	<p>Individuelle Webschriften verbrauchen unnötig Ressourcen und interessieren eh keinen? Solche Gegenargumente lassen sich leicht zerpflücken.
  <a href="webfont-vorteile.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>951 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-08-28">Mi, 28. Aug. 2024</time> // 951 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2024-08-06">Di, 6. Aug. 2024</time>
 	<h2><a href="miniheft-2.html">Ein Zine von der Schreibmaschine</a></h2>
 	<p>Aus ASCII-Art, kurzen Fakten und Überlegungen zur Schreibmaschine habe ich ein Heftchen gestaltet. Hier die Druckvorlage zum Nachbasteln.
  <a href="miniheft-2.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>132 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-08-06">Di, 6. Aug. 2024</time> // 132 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2024-07-29">Mo, 29. Juli 2024</time>
 	<h2><a href="fuchs-13.html">Zuspruch vom Fuchs</a></h2>
 	<p>Mit der Kreativität ist es nicht immer einfach. In meiner fortlaufenden Serie ermutigt der Fuchs die Ballerina zu neuen Blickwinkeln.
  <a href="fuchs-13.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>537 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-07-29">Mo, 29. Juli 2024</time> // 537 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2024-07-10">Mi, 10. Juli 2024</time>
 	<h2><a href="blindtext.html">Blindtext „Grundwortschatz“</a></h2>
 	<p>Ein Platzhaltertext, den ich möglichst kompakt aus häufigen deutschen Wörtern verfasst habe.
  <a href="blindtext.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>867 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-07-10">Mi, 10. Juli 2024</time> // 867 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2024-06-20">Do, 20. Juni 2024</time>
 	<h2><a href="haiku.html">Aus 17 Silben ein Gedicht</a></h2>
 	<p>Das Haiku ist ein japanisches Kurzgedicht mit strenger Form. Es beschreibt Naturimpressionen und versucht Hintergründiges anzudeuten.
  <a href="haiku.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>560 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-06-20">Do, 20. Juni 2024</time> // 560 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2024-05-28">Di, 28. Mai 2024</time>
 	<h2><a href="colapen.html">Schreibfedern aus der Getränkedose</a></h2>
 	<p>Aus Aluminiumblech eine Faltfeder biegen und an ein Griffstück kleben – so entsteht ein „Cola-Pen“ für mehr oder weniger experimentelles Schreiben.
  <a href="colapen.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>733 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-05-28">Di, 28. Mai 2024</time> // 731 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik sujet ">
-	<time datetime="2024-05-09">Do, 9. Mai 2024</time>
 	<h2><a href="fensterbilder-2.html">Malerei hinterm Fenster</a></h2>
 	<p>Jeden Monat ein neues Bild malen, das ich ins Fenster hänge – das sollte kreativ motivieren, doch vielleicht frustriert es auch als lästige Pflicht.
  <a href="fensterbilder-2.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>684 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-05-09">Do, 9. Mai 2024</time> // 683 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik ">
-	<time datetime="2024-04-19">Fr, 19. Apr. 2024</time>
 	<h2><a href="wohin-kommentieren.html">Wohin mit Kommentaren? – Eine Entgegnung</a></h2>
 	<p>Statt Kommentare im Blog möchte Manuel Moreales lieber private Mails oder eine öffentliche Antwort im eigenen Blog – für mich kein richtiger Ersatz.
  <a href="wohin-kommentieren.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1091 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-04-19">Fr, 19. Apr. 2024</time> // 1091 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2024-04-09">Di, 9. Apr. 2024</time>
 	<h2><a href="ohne-style.html">Inhalt ohne Style</a></h2>
 	<p>Beim CSS Naked Day erscheinen Websites ohne jedes CSS-Styling, das nackte HTML wird sichtbar.
  <a href="ohne-style.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>451 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-04-09">Di, 9. Apr. 2024</time> // 458 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2024-03-18">Mo, 18. März 2024</time>
 	<h2><a href="css-spalten.html">CSS-Spalten gegen zu lange Textzeilen</a></h2>
 	<p>Die CSS-Eigenschaft <code>columns</code> bricht einen Online-Text in mehrere Spalten um. So werden Zeilen auf einer Website nicht unleserlich lang.
  <a href="css-spalten.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1628 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-03-18">Mo, 18. März 2024</time> // 1651 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2024-02-21">Mi, 21. Febr. 2024</time>
 	<h2><a href="raetselkrimi.html">Japanischer Rätselkrimi</a></h2>
 	<p>Das Buch „Ich habe ihn getötet“ von Keigo Higashino erzählt eine komplexe Krimigeschichte. Der Kniff: Den Mörder muss man selbst überführen.
  <a href="raetselkrimi.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>412 Wörter //</i>&nbsp;
+	<p><i><time datetime="2024-02-21">Mi, 21. Febr. 2024</time> // 412 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <h1 class="jahreszahl">2023</h1>
 
 <section data-rubrik="ansporn typografie ">
-	<time datetime="2023-11-16">Do, 16. Nov. 2023</time>
 	<h2><a href="kalender-2024.html">Ein halber Monat auf einen Blick</a></h2>
 	<p>Auch 2024 verwende ich einen selbstgestalteten Kalender. Die Anordnung der Tageskästchen ist gewöhnungsbedürftig, jedoch sehr praktisch.
  <a href="kalender-2024.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>186 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-11-16">Do, 16. Nov. 2023</time> // 186 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2023-10-24">Di, 24. Okt. 2023</time>
 	<h2><a href="weisheiten.html">Drei kleine Weisheiten</a></h2>
 	<p>Mit meiner bisheriger Lebenserfahrung haben ich einige Grundsätze entdeckt, die sich in vielen Situationen gut bewährt haben.
  <a href="weisheiten.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>451 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-10-24">Di, 24. Okt. 2023</time> // 451 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2023-09-29">Fr, 29. Sept. 2023</time>
 	<h2><a href="cinnamon-rolls.html">Cinnamon Rolls</a></h2>
 	<p>Leckeres Hefegebäck nach dem Rezept eines Freundes (bzw. dessen Thermomix-Rezeptbuch). Man kann die Zimtschnecken auch am Abend zuvor vorbereiten und fertig backen.
  <a href="cinnamon-rolls.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>295 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-09-29">Fr, 29. Sept. 2023</time> // 295 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2023-09-07">Do, 7. Sept. 2023</time>
 	<h2><a href="beat-sheet.html">Das Beat-Sheet als Grundgerüst für Drehbücher</a></h2>
 	<p>In seinem Ratgeber übers Drehbuchschreiben präsentiert Blake Snyder eine Liste mit 15 Punkten. Sie hilft, eine Story solide zu strukturieren.
  <a href="beat-sheet.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>819 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-09-07">Do, 7. Sept. 2023</time> // 819 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn ">
-	<time datetime="2023-08-23">Mi, 23. Aug. 2023</time>
 	<h2><a href="online-freunde.html">Über Online-Freundschaften</a></h2>
 	<p>Soziale Netzwerke behaupten, die Pflege von Freundschaften zu erleichtern. Ich bin überzeugt, dass das nicht funktioniert.
  <a href="online-freunde.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>458 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-08-23">Mi, 23. Aug. 2023</time> // 458 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2023-06-20">Di, 20. Juni 2023</time>
 	<h2><a href="wildwiese.html">Meine wilde Wiese</a></h2>
 	<p>Nach unserem Umzug konnten wir noch keinen „richtigen“ Garten anlegen – stattdessen hat sich von ganz allein eine Wildblumenwiese angelegt.
  <a href="wildwiese.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>882 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-06-20">Di, 20. Juni 2023</time> // 882 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik sujet ">
-	<time datetime="2023-05-29">Mo, 29. Mai 2023</time>
 	<h2><a href="blogeintrag-150.html">Blogeintrag Nº 150</a></h2>
 	<p>Seit meinem hundertsten Blogartikel vor 4½ Jahren sind hier wieder viele neue Texte erschienen. Hier ein paar Highlights (aus meiner Sicht).
  <a href="blogeintrag-150.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>554 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-05-29">Mo, 29. Mai 2023</time> // 554 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik sujet ">
-	<time datetime="2023-04-30">So, 30. Apr. 2023</time>
 	<h2><a href="origamituetchen.html">Tütchen für Pulver und Kerne</a></h2>
 	<p>Faltanleitung für eine kleine Papiertüte, die sich ohne Klebstoff verschließen lässt. Sehr gut geeignet für Saatgut, Gewürzproben oder ähnliches.
  <a href="origamituetchen.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>319 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-04-30">So, 30. Apr. 2023</time> // 319 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2023-03-24">Fr, 24. März 2023</time>
 	<h2><a href="siebtel.html">Ein Siebtel</a></h2>
 	<p>Etwas sonderlicher Text über die Bruchzahl ⅐ und deren erstaunliche Dezimalschreibweise. Du wurdest gewarnt.
  <a href="siebtel.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>712 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-03-24">Fr, 24. März 2023</time> // 712 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2023-02-16">Do, 16. Febr. 2023</time>
 	<h2><a href="kurzdramen.html">Fünfmal kurzes Drama</a></h2>
 	<p>In diesem Blogartikel grabe ich einige Kurz-Texte von mir aus, vermutlich sind sie schon über 20 Jahre alt.
  <a href="kurzdramen.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>582 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-02-16">Do, 16. Febr. 2023</time> // 582 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2023-01-25">Mi, 25. Jan. 2023</time>
 	<h2><a href="raster.html">Raster für ein Magazin</a></h2>
 	<p>Um Texte und Bilder auf einer Seite systematisch anzuordnen, kann ein Gestaltungsraster helfen. Für ein Heft habe ich so einen Raster neu angelegt.
  <a href="raster.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1110 Wörter //</i>&nbsp;
+	<p><i><time datetime="2023-01-25">Mi, 25. Jan. 2023</time> // 1110 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
@@ -533,215 +488,193 @@ if(suchRubrik.length) {
 <h1 class="jahreszahl">2022</h1>
 
 <section data-rubrik="ansporn kritik methodik ">
-	<time datetime="2022-12-06">Di, 6. Dez. 2022</time>
 	<h2><a href="vergiftete-witze.html">Witze mit giftigem Kern</a></h2>
 	<p>Hinter manchen Internet-Memes stecken sehr bedenkliche Erzählmuster. Warum ich Witzbildchen dieser Art nicht unwidersprochen stehen lasse.
  <a href="vergiftete-witze.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1178 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-12-06">Di, 6. Dez. 2022</time> // 1178 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik methodik ">
-	<time datetime="2022-11-21">Mo, 21. Nov. 2022</time>
 	<h2><a href="perfekte-kuerze.html">Die perfekte Kürze im Mikroblog</a></h2>
 	<p>Wie viele Buchstaben sollte ein Post bei Twitter oder Mastodon umfassen dürfen? 140? 280? Lieber 500? Oder gar 10.000?
  <a href="perfekte-kuerze.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>440 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-11-21">Mo, 21. Nov. 2022</time> // 440 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2022-11-15">Di, 15. Nov. 2022</time>
 	<h2><a href="fensterbilder.html">Bilder für die da draußen</a></h2>
 	<p>Fürs Fenster meines Arbeitszimmers male ich monatlich ein neues Bild. Eine kreative Motivation für mich, ein kleiner Hingucker für Passanten.
  <a href="fensterbilder.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>483 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-11-15">Di, 15. Nov. 2022</time> // 482 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn typografie ">
-	<time datetime="2022-10-27">Do, 27. Okt. 2022</time>
 	<h2><a href="kalender-2023.html">2023 in bewährter Form</a></h2>
 	<p>Lange schon verwende ich ein selbst entwickeltes Kalenderdesign. Noch scheint nicht die Zeit gekommen, etwas daran zu ändern.
  <a href="kalender-2023.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>284 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-10-27">Do, 27. Okt. 2022</time> // 284 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2022-09-14">Mi, 14. Sept. 2022</time>
 	<h2><a href="seitenverhaeltnis.html">Harmonische Verhältnisse</a></h2>
 	<p>Das Format DIN A4 hat sich bei unseren Papiergrößen durchgesetzt. Was ist das Besondere daran und ist dieses Seitenverhältnis auch schön?
  <a href="seitenverhaeltnis.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>725 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-09-14">Mi, 14. Sept. 2022</time> // 725 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2022-07-19">Di, 19. Juli 2022</time>
 	<h2><a href="erfundene-fakten-11.html">Erfundener Zynismus, zum Glück selten</a></h2>
 	<p>Eigentlich sollen meine „Erfundenen Fakten“ ja zum Nachdenken und zum Lächeln anregen. Manchmal mischt sich jedoch Zynismus darunter …
  <a href="erfundene-fakten-11.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>489 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-07-19">Di, 19. Juli 2022</time> // 488 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2022-06-24">Fr, 24. Juni 2022</time>
 	<h2><a href="fuchs-12.html">Gebremste Kreativität</a></h2>
 	<p>Unsicherheit und unklare Rahmenbedingungen können gute Ideen verhindern. In meiner Twitterserie weiß der Fuchs immer beruhigenden Rat.
  <a href="fuchs-12.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>504 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-06-24">Fr, 24. Juni 2022</time> // 504 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2022-05-29">So, 29. Mai 2022</time>
 	<h2><a href="todgedicht.html">Was fangen wir an mit dem Tod?</a></h2>
 	<p>Eine Ausstellung hat mich bewegt, über das Thema Tod nachzudenken. Herausgekommen ist ein Gedicht.
  <a href="todgedicht.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>229 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-05-29">So, 29. Mai 2022</time> // 229 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik methodik ">
-	<time datetime="2022-04-19">Di, 19. Apr. 2022</time>
 	<h2><a href="informiert.html">Umfassend informiert</a></h2>
 	<p>Wer etwas über die Welt erfahren möchte, nutzt Medien. Wie wähle ich aus dem großen Angebot aus, um ein möglichst realistisches Bild zu bekommen?
  <a href="informiert.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>2271 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-04-19">Di, 19. Apr. 2022</time> // 2271 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2022-03-31">Do, 31. März 2022</time>
 	<h2><a href="erkrankung.html">Erkrankung als Stigma</a></h2>
 	<p>Warum hast du nicht besser aufgepasst? Du hättest dich vor einer Infektion schützen müssen, da bist du jetzt selbst schuld. – Ach ja?
  <a href="erkrankung.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>558 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-03-31">Do, 31. März 2022</time> // 558 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn sujet ">
-	<time datetime="2022-03-11">Fr, 11. März 2022</time>
 	<h2><a href="chorstueck.html">Ein Chorstück zum Trost</a></h2>
 	<p>Gelegentlich komponiere ich Musik. Diesmal haben mich ein Telefonat und ein Radiofeature zu einem dreistimmigen Lied inspiriert.
  <a href="chorstueck.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>483 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-03-11">Fr, 11. März 2022</time> // 483 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="kritik ">
-	<time datetime="2022-02-18">Fr, 18. Febr. 2022</time>
 	<h2><a href="irrtum.html">Irren ist menschlich</a></h2>
 	<p>Unsere Wahrnehmung ist nicht neutral, denn wir verarbeiten Informationen in bestimmter Weise. So kommt es zu systematischen Fehlern.
  <a href="irrtum.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1048 Wörter //</i>&nbsp;
+	<p><i><time datetime="2022-02-18">Fr, 18. Febr. 2022</time> // 1058 Wörter //</i>&nbsp;
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <h1 class="jahreszahl">2021</h1>
 
 <section data-rubrik="ansporn typografie ">
-	<time datetime="2021-12-13">Mo, 13. Dez. 2021</time>
 	<h2><a href="kalender-2022.html">3 Tage + 4 Tage</a></h2>
 	<p>Mein Halbmonatskalender folgt nicht ganz der traditionellen Zeiteinteilung. Wie der Name verrät, trennt er den Monat … aber auch die Woche.
  <a href="kalender-2022.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>443 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-12-13">Mo, 13. Dez. 2021</time> // 443 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2021-11-22">Mo, 22. Nov. 2021</time>
 	<h2><a href="chai-sirup.html">Chai-Latte-Sirup</a></h2>
 	<p>Nach diesem Rezept entsteht ein Sirup mit weihnachtlichen Gewürzen, der sich in heiße Milch rühren lässt. Auch als Geschenk verschickbar!
  <a href="chai-sirup.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>244 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-11-22">Mo, 22. Nov. 2021</time> // 244 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik typografie ">
-	<time datetime="2021-10-11">Mo, 11. Okt. 2021</time>
 	<h2><a href="wandbuchstaben.html">Die Zeichen an der Wand</a></h2>
 	<p>In meinem Arbeitszimmer habe ich mir Buchstaben an die Wand gemalt. Hier eine Dokumentation mit Fotos, wie ich vorgegangen bin.
  <a href="wandbuchstaben.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>670 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-10-11">Mo, 11. Okt. 2021</time> // 670 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik sujet ">
-	<time datetime="2021-07-27">Di, 27. Juli 2021</time>
 	<h2><a href="wachstum.html">Exponetielles Wachstum</a></h2>
 	<p>Zuerst steigen Messwerte langsam, dann aber immer schneller. Das wirkt überraschend, aber diese Art des Wachstums ist eigentlich ziemlich berechenbar.
  <a href="wachstum.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>812 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-07-27">Di, 27. Juli 2021</time> // 812 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2021-06-23">Mi, 23. Juni 2021</time>
 	<h2><a href="rezi.html">REZI</a></h2>
 	<p>Eine Kurzgeschichte aus einer nahen Zukunft, in der Roboter völlig alltäglich sind. Nich alltäglich ist mein Virus, der alles verändert.
  <a href="rezi.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>511 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-06-23">Mi, 23. Juni 2021</time> // 512 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2021-05-13">Do, 13. Mai 2021</time>
 	<h2><a href="erfundene-fakten-10.html">Der Funke in der Fiktion</a></h2>
 	<p>Meine erfundenen Fakten tragen kleine Ideen in sich, die anregen sollen, über den gewohnten Alltag hinaus zu denken.
  <a href="erfundene-fakten-10.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>487 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-05-13">Do, 13. Mai 2021</time> // 486 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2021-04-09">Fr, 9. Apr. 2021</time>
 	<h2><a href="fuchs-11.html">Der Fuchs hat Ideen!</a></h2>
 	<p>Neue Folgen aus meiner Twitterserie: Wie immer gibt der Fuchs der Ballerina Antworten, die nochmal über die Frage nachdenken lassen.
  <a href="fuchs-11.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>501 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-04-09">Fr, 9. Apr. 2021</time> // 501 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik sujet ">
-	<time datetime="2021-03-24">Mi, 24. März 2021</time>
 	<h2><a href="origamihase.html">Elf Faltschritte zum Osterhasen</a></h2>
 	<p>Diese Anleitung für einen Papierhasen ist nicht ganz einfach zu falten – dafür ist die fertige Figur recht niedlich.
  <a href="origamihase.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>536 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-03-24">Mi, 24. März 2021</time> // 536 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="sujet ">
-	<time datetime="2021-02-19">Fr, 19. Febr. 2021</time>
 	<h2><a href="automat.html">Ein Automat für Pixelmuster</a></h2>
 	<p>Vorsicht, es geht um Mathematik! Jedoch nicht um komplizierte Gleichungen, sondern um einfache Regeln, die eine weiße Fläche mit Mustern füllen.
  <a href="automat.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1876 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-02-19">Fr, 19. Febr. 2021</time> // 1876 Wörter //</i>&nbsp;
 	<a href="archiv.html?sujet">#sujet&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2021-01-25">Mo, 25. Jan. 2021</time>
 	<h2><a href="anfangen.html">Einfach mal anfangen!</a></h2>
 	<p>Eine gute Planung nützt nur dann etwas, wenn sie nicht vom Anfangen abhält.
  <a href="anfangen.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>328 Wörter //</i>&nbsp;
+	<p><i><time datetime="2021-01-25">Mo, 25. Jan. 2021</time> // 328 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
@@ -749,116 +682,104 @@ if(suchRubrik.length) {
 <h1 class="jahreszahl">2020</h1>
 
 <section data-rubrik="ansporn ">
-	<time datetime="2020-12-16">Mi, 16. Dez. 2020</time>
 	<h2><a href="verzicht.html">Monate voller Verzicht (Vorsatz&nbsp;2020)</a></h2>
 	<p>Jeden Monat auf etwas Bestimmtes verzichten – damit wollte ich dieses Jahr eingefahrene Gewohnheiten hinterfragen und Alternativen ausprobieren.
  <a href="verzicht.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1108 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-12-16">Mi, 16. Dez. 2020</time> // 1108 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn typografie ">
-	<time datetime="2020-11-06">Fr, 6. Nov. 2020</time>
 	<h2><a href="kalender-2021.html">Bewährt seit zehn Jahren</a></h2>
 	<p>Einen Halbmonatskalender habe ich zum ersten Mal für 2012 gestaltet. Weil mich das Konzept noch immer überzeugt, gibt’s auch 2021 einen „HMK“.
  <a href="kalender-2021.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>281 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-11-06">Fr, 6. Nov. 2020</time> // 281 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik typografie ">
-	<time datetime="2020-10-18">So, 18. Okt. 2020</time>
 	<h2><a href="chorplakate-2.html">Chorplakate und ihre Idee</a></h2>
 	<p>Jeden Herbst gibt unser Kirchenchor sein Jahreskonzert. Dafür gestalte ich seit zehn Jahren die Plakate und Programmblätter. Vier Beispiele …
  <a href="chorplakate-2.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>685 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-10-18">So, 18. Okt. 2020</time> // 685 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2020-09-30">Mi, 30. Sept. 2020</time>
 	<h2><a href="spinatsouffle.html">Spinatsoufflé</a></h2>
 	<p>Ich liebe Spinat – ob als Pfütze auf dem Teller, unter Nudeln gemischt oder in Blätterteig gewickelt. Oder eben als luftiges Soufflé.
  <a href="spinatsouffle.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>301 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-09-30">Mi, 30. Sept. 2020</time> // 301 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2020-08-24">Mo, 24. Aug. 2020</time>
 	<h2><a href="blogsuche.html">Mein Blog durchsuchen mit DuckDuckGo</a></h2>
 	<p>Anfang August habe ich mein Blog mit einem Suchfeld ausgerüstet. Meine Seite lässt sich nun mit DuckDuckGo nach Stichworten durchforsten.
  <a href="blogsuche.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>798 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-08-24">Mo, 24. Aug. 2020</time> // 798 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="typografie ">
-	<time datetime="2020-08-04">Di, 4. Aug. 2020</time>
 	<h2><a href="ueberstrahlung.html">Licht macht dick</a></h2>
 	<p>Nein, es geht hier nicht um eine sensationelle Sonnen-Diät, sondern um ein optisches Phänomen: Helle Flächen überstrahlen dunkle – und wirken größer.
  <a href="ueberstrahlung.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>686 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-08-04">Di, 4. Aug. 2020</time> // 686 Wörter //</i>&nbsp;
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik ">
-	<time datetime="2020-06-19">Fr, 19. Juni 2020</time>
 	<h2><a href="likes.html">Please, don’t like me!</a></h2>
 	<p>Herzchen oder Daumen hoch finde ich ziemlich nutzlose Rückmeldungen. Gebt mir kein Like, schreibt lieber einen Kommentar.
  <a href="likes.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1370 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-06-19">Fr, 19. Juni 2020</time> // 1369 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik typografie ">
-	<time datetime="2020-05-18">Mo, 18. Mai 2020</time>
 	<h2><a href="miniheft.html">Verblüffend einfaches Miniheft</a></h2>
 	<p>Aus einem Bogen Papier lässt sich sehr leicht ein Heftchen falten: acht freie Seiten für Kreativität.
  <a href="miniheft.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>262 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-05-18">Mo, 18. Mai 2020</time> // 261 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a>
 	<a href="archiv.html?typografie">#typografie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="serie ">
-	<time datetime="2020-04-28">Di, 28. Apr. 2020</time>
 	<h2><a href="fuchs-10.html">Kunst ohne Publikum</a></h2>
 	<p>Der Corona-Virus verhindert Kulturereignisse mit vielen Anwesenden. Auch die fiktive Ballerina aus meiner Twitterserie macht sich dazu Gedanken.
  <a href="fuchs-10.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>635 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-04-28">Di, 28. Apr. 2020</time> // 635 Wörter //</i>&nbsp;
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn methodik ">
-	<time datetime="2020-04-08">Mi, 8. Apr. 2020</time>
 	<h2><a href="stoffkrokodil.html">Ein Stoffkrokodil als Nähprojekt</a></h2>
 	<p>Wegen meiner Unbekümmertheit hat sich mein Eulenkissen leider in der Waschmaschine aufgelöst. Was mir die Gelegenheit bot, ein neues Stofftier zu nähen.
  <a href="stoffkrokodil.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>469 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-04-08">Mi, 8. Apr. 2020</time> // 469 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="methodik ">
-	<time datetime="2020-02-20">Do, 20. Febr. 2020</time>
 	<h2><a href="graustufen.html">Gleichmäßig wirkende Graustufen</a></h2>
 	<p>Wer eine Skala aus Grautönen erstellt, sollte die Helligkeit nicht linear abnehmen lassen, sonst erscheinen die Graustufen ungleich verteilt.
  <a href="graustufen.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>1079 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-02-20">Do, 20. Febr. 2020</time> // 1078 Wörter //</i>&nbsp;
 	<a href="archiv.html?methodik">#methodik&nbsp; </a><br />&nbsp;</p>
 </section>
 
 <section data-rubrik="ansporn kritik serie ">
-	<time datetime="2020-01-17">Fr, 17. Jan. 2020</time>
 	<h2><a href="10-jahre-twitter.html">10 Jahre Twitter</a></h2>
-	<p>Am 19. Januar 2010 habe ich mit dem Twittern begonnen. Ich glaube, nach zehn Jahren bin ich immer noch nicht schlauer …
+	<p>Am 19. Januar 2010 habe ich mit dem Twittern begonnen. Ich glaube, nach zehn Jahren bin ich immer noch nicht schlauer.
  <a href="10-jahre-twitter.html" aria-label="Artikel lesen">[→]</a></p>
-	<p><i>708 Wörter //</i>&nbsp;
+	<p><i><time datetime="2020-01-17">Fr, 17. Jan. 2020</time> // 708 Wörter //</i>&nbsp;
 	<a href="archiv.html?ansporn">#ansporn&nbsp; </a>
 	<a href="archiv.html?kritik">#kritik&nbsp; </a>
 	<a href="archiv.html?serie">#serie&nbsp; </a><br />&nbsp;</p>
@@ -897,11 +818,12 @@ if(suchRubrik.length) {
 
 </main>
 
-<aside class="no-hyphens">
-<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Über Fragen, Kritik und Anmer&shy;kungen freue ich mich sehr – z.<small>&nbsp;</small>B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
-<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> informiert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>.</p>
-<p>Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
-</aside>
+<footer class="no-hyphens">
+<div class="container">
+<p>Hallo, ich bin <a href="javascript:new%20Audio('bestand/aussprache.mp3').play()" class="anhoeren" title="Aussprache anhören">Gerhard Großmann</a> aus Hohen&shy;fels<span class="no-print"> (siehe <a href="/index.html#impressum">Impres&shy;sum/Daten&shy;schutz</a>)</span>. Fragen, Kritik und Anmer&shy;kungen er&shy;halte und be&shy;ant&shy;worte ich sehr gern – z.&#8239;B.<span class="no-print"> via <a href="https://typo.social/@charakterziffer" target="_blank" rel="noopener noreferrer">Masto&shy;don</a> oder</span> per Mail an <em>postfach2b [ät] web.de</em>.</p>
+<p class="no-print">Mein <a href="/rss.xml" class="icon-rss">RSS-Feed</a> infor&shy;miert immer pünkt&shy;lich über neue Artikel. Alle bis&shy;herigen Ein&shy;träge finden sich <a href="/archiv.html">im Archiv</a>. Die Texte in diesem Blog stehen unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" class="icon-ccbysa">Crea&shy;tive-Commons-Lizenz 4.0 (Deutsch&shy;land)</a> mit Namens&shy;nennung und Weiter&shy;gabe unter gleichen Bedin&shy;gungen.</p>
+</div>
+</footer>
 
 <script src="https://www.onlex.de/_counter.php?username=charakterziffer" defer></script>
 </body>
