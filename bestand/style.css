@@ -109,7 +109,8 @@ footer { padding:1rlh 0 1.5rlh; background:var(--grau) var(--dotmask); }
 h1, h2, h3, b, strong, a, form label {
 	font-family: czSlab, sans-serif; font-size-adjust: .5;
 	font-weight: bold; line-height: 1; letter-spacing: 0; font-style: normal; /* damit nicht künstlich verschrägt, z.B. Links in Bilduntertitel */ }
-h1, h2, h3 { letter-spacing: -.01em; font-variant: lining-nums; }
+h1, h2, h3, :is(h1,h2,h3) a {
+	letter-spacing: -.01em; font-variant: lining-nums; }
 b, strong, a, form label { padding: 0 .04em; }
 code, pre, kbd { font: .9em/1 'Source Code Pro', Consolas, Monaco,
 	'Lucida Console', 'Andale Mono', 'DejaVu Sans Mono', monospace; }
