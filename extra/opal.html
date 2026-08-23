@@ -12,7 +12,7 @@
 -->
 <head>
 <meta charset="UTF-8">
-<title>Extra // @cz+</title>
+<title>Opal // @cz+</title>
 
 <link href='bestand/style.css' rel='stylesheet'>
 <link href="bestand/czSlab.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#468163">
 <meta name="color-scheme" content="light dark">
 
-<meta name="description" content="Hier sammle ich Dinge, die für einen vollständigen Artikel ungeeignet sind oder nicht in den zeitlichen Verlauf eines Blogs passen.">
+<meta name="description" content="Die Hintergrundfarbe meines Headers besteht aus drei Punkterastern, die leicht verschoben übereinander liegen. Hier füllt das Muster die ganze Seite.">
 <meta name="author" content="Gerhard Großmann, postfach2b [ät] web.de">
 <meta name="fediverse:creator" content="charakterziffer@typo.social" />
 <meta name="keywords" content="Gerhard Großmann, Regensburg, Hohenfels, charakterziffer, Blog, Twitter, Mastodon">
@@ -34,7 +34,7 @@
 
 <style> /* QR-Code mit URL für Ausdrucke, siehe https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references */
 @media print { header:after { content:''; width: 3.5rlh; height: 3.5rlh;
-	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/extra/');
+	background-image: url('https://quickchart.io/qr?text=https://charakterziffer.github.io/extra/opal');
 	background-size: 3.5rlh; position: absolute; transform: none;
 	right: .25rlh; top: .25rlh; left: auto; z-index: 1;
 	-webkit-print-color-adjust: exact !important;
@@ -72,53 +72,12 @@
 <link href="../bestand/style.css" rel="stylesheet" />
 
 <style>
-nav li:nth-child(2) a { color: var(--aktiv) !important; }
-time { float: left; }
-time::after { content:" · "; }
+body { overflow: hidden; }
+header { height: 100vh; }
+header .container, footer { display: none; }
 </style>
 
-<h1 id="darfs-ein-bisschen-mehr-sein">Darf’s ein bisschen mehr sein?</h1>
-
-<p>Hier sammle ich Dinge, die ich nicht in den chronologischen Verlauf meines Blogs einordnen möchte oder die mir nicht für einen kompletten Artikel ausreichen:</p>
-
-<h2 id="header-hintergrund">Header-Hintergrund</h2>
-<p><time datetime="2026-08-24">Mo, 24. August 2026</time></p>
-
-<p>Im neuen Design meines Blogs hat die Kopfleiste einen besonderen Hintergrund. Es ist keine durchgängige Farbfläche, sondern drei Raster mit feinen Punkten, die leicht verschoben übereinander liegen. <a href="opal.html">→ Muster auf ganzer Fläche</a></p>
-
-<h2 id="buchkritiken">Buchkritiken</h2>
-<p><time datetime="2024-02-23">Fr, 23. Februar 2024</time></p>
-
-<p>Viele meiner Bücher bekomme ich über Bookcrossing. Man registriert ein Buch, das man nicht behalten möchte, dort auf der Website. Es bekommt dann eine Nummer („Bookcrossing-ID“), unter der man online Kommentare dazu schreiben und lesen kann. <a href="buchkritiken.html">→ Einige meiner Buchkritiken</a></p>
-
-<h2 id="highlights">Highlights</h2>
-<p><time datetime="2023-12-07">Do, 7. Dez. 2023</time></p>
-
-<p>Blogartikel, die ich für besonders lesenswert halte, habe ich in meinen drei Jubiläums-Einträgen gesammelt. So bieten <a href="/blogeintrag-50.html">mein 50.</a>, <a href="/blogeintrag-100.html">mein 100.</a> und der <a href="/blogeintrag-150.html">150. Blogartikel</a> einen schnellen Zugriff auf meine persönlichen Favoriten.</p>
-
-<h2 id="untertitel-verschiedener-tv-sender">Untertitel verschiedener TV-Sender</h2>
-<p><time datetime="2020-05-28">Do, 28. Mai 2020</time></p>
-
-<p>Fernsehsendungen mit Untertiteln sind auch für hörgeschädigte Menschen zugänglich oder in Situationen, wo der Ton nicht laufen kann. Jeder Sender kann die Gestaltung der Untertitel beeinflussen. <a href="tv-untertitel.html">→ verschiedene Beispiele von Untertiteln</a></p>
-
-<h2 id="nützliches-aus-meiner-usercontentcss">Nützliches aus meiner userContent.css</h2>
-<p><time datetime="2019-02-22">Fr, 22. Feb. 2019</time></p>
-
-<p>Mit der Datei userContent.css kann man Websites im Firefox nach seinen Bedürfnissen umgestalten, siehe mein Artikel über <a href="/user-css.html">User-CSS</a>. Ich aktiviere damit zum Beispiel die Silbentrennung und verstecke Anmelde-Aufforderungen. <a href="user-content.html">→ Auswahl meines angepassten CSS</a></p>
-
-<h2 id="bookmarklet-für-deutschlandfunknovade">Bookmarklet für deutschlandfunknova.de</h2>
-<p><time datetime="2018-08-14">Di, 14. Aug. 2018</time></p>
-
-<p>Wer Audios von der Dlf-Nova-Website laden möchte, hat es nicht einfach. Mein Bookmarklet verwandelt die grünen Playbuttons in direkte Links zur mp3-Datei.</p>
-
-<p><a href="javascript:document.querySelectorAll('button[data-mp3]').forEach(i=&gt;i.outerHTML='&lt;a%20href=%22'+i.getAttribute(%22data-mp3%22)+'%22%20class=%22button%20button--play%20button--solid%22%20style=%22font:2rem/1.4%20nova%22&gt;%EE%A4%8C&lt;/a&gt;')" download="">Nova 📥</a></p>
-
-<p>Anwendung: Den Button in die Lesezeichenleiste des Browsers ziehen. Anklicken, während die Website von Deutschlandfunk Nova angezeigt wird.</p>
-
-<h2 id="opentype-feature-test">OpenType Feature Test</h2>
-<p><time datetime="2012-06-12">Di, 12. Juni 2012</time></p>
-
-<p>Eine englischsprachige Seite über meine <a href="otfeat.html">Schrift Otfeat</a>. Sie zeigt, welche OpenType-Features gerade aktiv sind bzw. überhaupt unterstützt werden.</p>
+<p><a href="index.html"><img src="../bestand/favicon.png" width="32" height="32" style="position:absolute; top: 20px; left: 20px;" /></a></p>
 
 </main>
 
