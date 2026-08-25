@@ -107,11 +107,11 @@ footer { padding:1rlh 0 1.5rlh; background:var(--grau) var(--dotmask); }
 
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
-	font-family: czSlab, sans-serif; font-size-adjust: .5;
-	font-weight: bold; line-height: 1; letter-spacing: 0; font-style: normal; /* damit nicht künstlich verschrägt, z.B. Links in Bilduntertitel */ }
-h1, h2, h3, :is(h1,h2,h3) a {
-	letter-spacing: -.01em; font-variant: lining-nums; }
-b, strong, a, form label { padding: 0 .04em; }
+	font-family: czSlab, sans-serif; font-weight: bold; line-height: 1;
+	font-size-adjust: .5; font-style: normal; /* damit nicht künstlich verschrägt, z.B. Links in Bilduntertitel */ }
+h1, h2, h3, :is(h1,h2,h3) a { font-variant: lining-nums;
+	letter-spacing:-.01em; font-feature-settings:'liga','clig','calt'; }
+b, strong, a, form label { padding: 0 .04em; letter-spacing: 0; }
 code, pre, kbd { font: .9em/1 'Source Code Pro', Consolas, Monaco,
 	'Lucida Console', 'Andale Mono', 'DejaVu Sans Mono', monospace; }
 
@@ -138,26 +138,24 @@ p, ul, ol { margin: 0 0 .5rlh; }
 p, details, figcaption { text-align: justify; word-spacing: -0.05em; }
 
 .intro { font-size: 1.25em; line-height: 1rlh; margin: 0 0 1rlh;
-	font-style: italic; letter-spacing: .01em;} 
+	font-style: italic; letter-spacing: .01em; font-feature-settings: 'liga','clig','calt'; } 
 .intro + p:not(.hinterlegt)::first-letter {
 	float: left; margin: .09em .1em 0 -.03em; font-size: 6.04em;
 	color: var(--grau); font-variant-numeric: lining-nums; }
-@supports (background-clip:text) {
+@supports (background-clip: text) {
 	.intro + p:not(.hinterlegt)::first-letter { background-clip: text;
 	color: transparent; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width=".2em" height=".2em" viewBox="0 0 4 4"><circle cx="1" cy="1" r=".8" fill="%23000"/><circle cx="3" cy="3" r=".8" fill="%23000"/></svg>'), linear-gradient(-20deg,var(--opal1) 0%, var(--opal2) 100%); } }
-@supports (-webkit-initial-letter: 3) {
-	.intro + p:not(.hinterlegt)::first-letter {
-		-webkit-initial-letter: 3; float: none; margin-top: 0; } }
-@supports (initial-letter: 3) {
-	.intro + p:not(.hinterlegt)::first-letter {
-		initial-letter: 3; float: none; margin-top: 0; } }
+@supports (-webkit-initial-letter: 3) or (initial-letter: 3) {
+	.intro + p:not(.hinterlegt)::first-letter { float:none; margin-top:0;
+		-webkit-initial-letter: 3; initial-letter: 3; } }
 .intro + p::first-line { font-variant:small-caps; font-synthesis:style;
 	 letter-spacing: .06em; }
 
 .spalten { margin:.5rlh 0; columns:12em; column-gap: 1.4em;}
 .spalten * { text-align: left; }
 
-i, em { font-style: italic; letter-spacing: .02em; }
+i, em { font-style: italic; letter-spacing: .02em;
+	font-feature-settings: 'liga','clig','calt'; }
 b:not(::selection), strong:not(::selection) { filter:contrast(300%); }
 sup, sub { line-height: 0; letter-spacing: .05em; }
 sup { font-variant-numeric: lining-nums; }
@@ -258,7 +256,8 @@ p > img { margin: .6rlh 0 .15rlh } /* Extra-Abstand zu dem vom <p> */
 
 figure { margin: 1.1rlh 0 1rlh; background-color: var(--nebel); }
 figcaption { padding: .25rlh .7em .4rlh; font-size: .9em;
-	line-height: .75rlh; font-style: italic; letter-spacing: .03em; }
+	line-height: .75rlh; font-style: italic; letter-spacing: .03em;
+	font-feature-settings: 'liga','clig','calt'; }
 
 audio { margin: .6rlh 0 .15rlh; width: 100%; height: 1rlh; }
 
