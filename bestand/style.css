@@ -71,7 +71,7 @@ header::after { background: radial-gradient(var(--opal3) var(--dotsize), transpa
   transform: rotate(-.6deg); }
 
 header .container { display: grid; grid-template-columns: 1fr;
-grid-template-rows: 2.5rlh 1rlh 1fr; gap: .5rlh; }
+	grid-template-rows: 2.5rlh 1rlh 1fr; gap: .5rlh; }
 header a { color: var(--text) !important; text-decoration: none; }
 header a:hover { text-decoration: underline !important; }
 header .container > a { margin:0; font-size:1.8em; line-height:1rlh; }
@@ -101,9 +101,6 @@ nav li a { font-size: 1.32em; }
 
 main { padding: .75rlh 1.4em 1rlh; }
 footer { padding:1rlh 0 1.5rlh; background:var(--grau) var(--dotmask); }
-
-/* Onlex-Counter ausblenden, Zählung unbeeinträchtigt */
-.onlex_counter { display: none; }
 
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
