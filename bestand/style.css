@@ -153,7 +153,8 @@ p, details, figcaption { text-align: justify; word-spacing: -0.05em; }
 
 i, em { font-style: italic; letter-spacing: .02em;
 	font-feature-settings: 'liga','clig','calt'; }
-b:not(::selection), strong:not(::selection) { filter:contrast(300%); }
+b, strong { filter:contrast(300%); }
+
 sup, sub { line-height: 0; letter-spacing: .05em; }
 sup { font-variant-numeric: lining-nums; }
 abbr, .smcp { font-variant-caps:all-small-caps; font-synthesis:none;
@@ -173,6 +174,8 @@ hr { margin: 1.32rlh 0 1.1rlh; color: transparent;
 
 /* Angepasste Farbe für ::selection? Dagegen spricht https://alistapart.com/article/paint-the-picture-not-the-frame/#section6 */
 ::selection { background: var(--gruen2); color: var(--text); }
+b::selection, strong::selection { background: var(--opal1); }
+	/* gruen2 ist bei 300% Kontrast nicht mehr zu sehen */
 :is(details, .hinterlegt, a[download])::selection, :is(details, .hinterlegt, a[download]) ::selection { background: var(--hintergrund); }
 
 /* LISTEN, CODE, ZITATBLÖCKE */
