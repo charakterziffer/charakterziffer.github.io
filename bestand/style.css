@@ -16,7 +16,7 @@
 
 /* FARBEN */
 :root {
-	--dotsize: .028em; --dotdistance: 0.13em; /* Header-Rasterung */
+	--dotsize: .034em; --dotdistance: 0.13em; /* Header-Rasterung */
 	--grau: hsl(250, 10%, 50%);
 	--nebel: hsla(0, 0%, 60%, .25); --schatten: hsla(0,0%,0%,.4);
 
