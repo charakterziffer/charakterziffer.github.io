@@ -14,6 +14,58 @@
 </image>
 
 <item>
+	<title>Mein Blog im schimmernden Gewand</title>
+	<description>&lt;p&gt;Genau wie der Jahreswechsel ist auch der August bei mir etwas ruhiger, ich habe kaum Termine und weniger Verpflichtungen. In den Ferien ist Zeit für größere Projekte, zum Beispiel für Ausflüge, für ein Computer-Update, um Neues zu lernen – oder um meinem kleinen Blog nach neun Jahren ein frisches Design zu spendieren.&lt;/p&gt;
+
+&lt;p&gt;Zwar hatte ich noch vor zwei Jahren über &lt;a href=&quot;https://charakterziffer.github.io/fontstack.html&quot;&gt;humanistische Sans-Schriften als Fontstack&lt;/a&gt; nachgedacht, bin nun aber doch von der &lt;a href=&quot;https://blog.typekit.com/2012/08/02/source-sans-pro/&quot;&gt;Source Sans Pro&lt;/a&gt; weg, die ich ganz zu Beginn meines Blogs als Textschrift gewählt habe. Und an dem grünen Randstreifen mit dem kristallinen Muster von April 2017 hatte ich mich langsam sattgesehen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/blogdesign-3.jpg&quot; alt=&quot;Das Design meines Blogs seit April 2017&quot; style=&quot;border: 1px solid var(--grau);&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ich wollte meine Blogposts etwas gediegener und ruhiger präsentieren; weniger wie „halt so ein Internettext“, sondern etwas klassischer, ähnlich einem gedruckten Artikel. Darum habe ich mich für die Serifenschrift &lt;a href=&quot;https://de.wikipedia.org/wiki/Charis_(Schriftart)&quot;&gt;Charis&lt;/a&gt; entschieden und verwende sogar Blocksatz, wie in literarischen Büchern üblich (nicht bei schmalem Browserfenster). Damit es nicht zu altbacken und ein bisschen individueller wird, beginne ich meine Artikel mit einem kursiven Vorspann und setze im Absatz danach ein großes Initial, das zum Lesen einladen soll – wie in einem Magazin.&lt;/p&gt;
+
+&lt;p&gt;Dazu angeregt haben mich so einige Websites, die mir im vergangenen Jahr aufgefallen waren. Viele nutzen eine Serifenschrift mit Initial am Textbeginn, zum Beispiel &lt;a href=&quot;https://www.theguardian.com/culture/2026/aug/22/the-film-apollo-13-taught-me-how-to-survive-heartbreak&quot;&gt;theguardian.com&lt;/a&gt;, das &lt;a href=&quot;https://www.arte-magazin.de/sprache-der-tiere/&quot;&gt;Arte Magazin&lt;/a&gt;, &lt;a href=&quot;https://www.theverge.com/tech/972466/cipherx-permanent-pain-free-tattoo-microdot-patches&quot;&gt;The Verge&lt;/a&gt;, die &lt;a href=&quot;https://taz.de/Nachtzuege-durch-Europa/!6203271/&quot;&gt;taz&lt;/a&gt;, &lt;a href=&quot;https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man&quot;&gt;London Review of Books&lt;/a&gt;, &lt;a href=&quot;https://c82.net/printing-types/chapters/10&quot;&gt;Nicholas Rougeux&lt;/a&gt; und im Besonderen &lt;a href=&quot;https://ia.net/topics/on-icons&quot;&gt;iA.net&lt;/a&gt;. Allgemein gefiel mir auch die Gestaltung von &lt;a href=&quot;https://andybudd.com/archives/2025/11/the-new-browser-war-why-ai-companies-want-to-own-your-starting-point&quot;&gt;Andy Budd&lt;/a&gt;, &lt;a href=&quot;https://www.spiekileaks.com/24-schrift-der-unubersetzbare-begriff&quot;&gt;Erik Spiekermann&lt;/a&gt; und &lt;a href=&quot;https://vhbelvadi.com/re-defining-the-indieweb&quot;&gt;Venkatram Harish Belvadi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;teils-konstante-weiterentwicklung&quot;&gt;Teils konstante Weiterentwicklung&lt;/h2&gt;
+
+&lt;p&gt;Bereits bei der &lt;a href=&quot;blogdesign-3&quot;&gt;vorigen Neugestaltung&lt;/a&gt; habe ich überlegt, ob ich die Randspalte weglassen soll. Nun ist der verbliebene graue Kasten ganz verschwunden und nach unten in den Seitenfuß gewandert.&lt;/p&gt;
+
+&lt;p&gt;Wie 2017 habe ich auch diesmal den Text leicht vergrößert. In breiten Browserfenstern erhöht sich meine Textgröße von 1,1 auf 1,15 em (also von rund 17,6 auf 18,4 px). Entsprechend habe die Textspalte noch ein wenig breiter gemacht. Vermutlich werde ich langsam alt und Websites mit winziger Schrift nerven mich zunehmend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/blogdesign-3-zu-4.jpg&quot; alt=&quot;Vergleich der Spaltenbreite und Textanfänge&quot; style=&quot;border: 1px solid var(--grau);&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Meine selbstgestaltete Schrift &lt;em&gt;czSlab&lt;/em&gt; habe ich beibehalten und nutze sie wie zuvor für Überschriften, &lt;strong&gt;fette Hervorhebungen&lt;/strong&gt;, Links und im Kontaktformular. Auch das Logo habe ich unverändert gelassen, obwohl ich die Farben der Website generell ein wenig in die bläuliche Richtung gedreht habe.&lt;/p&gt;
+
+&lt;p&gt;Technisch gesehen verwende ich in der Stylesheet-Sprache &lt;abbr&gt;CSS&lt;/abbr&gt; einige Neuerungen, die vor neun Jahren nicht vorhanden oder kaum verbreitet waren. Mit &lt;code&gt;clamp()&lt;/code&gt; passe ich die Schriftgröße stufenlos an die Fenstergröße an, durch &lt;code&gt;::first-letter&lt;/code&gt; gestalte ich das Initial am Textbeginn und gebe ihn mit &lt;code&gt;background-clip&lt;/code&gt; einen gepunkteten Farbverlauf. Dank &lt;code&gt;::first-line&lt;/code&gt; kann ich die erste Textzeile in &lt;span class=&quot;smcp&quot;&gt;Kapitälchen&lt;/span&gt; setzen und mit der Einheit &lt;code&gt;rlh&lt;/code&gt; (&lt;em&gt;root line height&lt;/em&gt;) richte ich alle Elemente am &lt;a href=&quot;https://de.wikipedia.org/wiki/Grundlinienraster&quot;&gt;Grundlinienraster&lt;/a&gt; aus. Schön, dass sich die Technik weiterentwickelt und ich das praktisch anwenden kann.&lt;/p&gt;
+
+&lt;h2 id=&quot;farbfläche-mit-schimmer-effekt&quot;&gt;Farbfläche mit Schimmer-Effekt&lt;/h2&gt;
+
+&lt;p&gt;In der Hoffnung, dass ich mein Smartphone eher aus der Hand lege, habe ich dort abends einen Filter aktiviert, der das Display auf Graustufen schaltet. Das hat sicher dazu beigetragen, mich stärker auf Muster und Strukturen zu konzentrieren.&lt;/p&gt;
+
+&lt;p&gt;Für mein Blog wollte ich etwas Schimmerndes, Changierendes, Irisierendes – etwas wie &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Abalone_shell_pieces.JPG?uselang=de#/media/File:Abalone_shell_pieces.JPG&quot;&gt;Perlmutt&lt;/a&gt;, &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Flip-Flop_Effekt_03.jpg#/media/File:Flip-Flop_Effekt_03.jpg&quot;&gt;Flip-Flop-Lacke&lt;/a&gt; bei Autos oder &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Opal-white1.jpg#/media/File:Opal-white1.jpg&quot;&gt;weiße Opale&lt;/a&gt;. Technisch ist das auf einem Bildschirm aber nicht zu machen, also habe ich überlegt, wie ich etwas Vergleichbares imitieren könnte. Als Inspiration habe ich mir allerhand Bilder von &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_Hieronymus_im_Geh%C3%A4us_1514_Ausschnitt.jpeg#/media/File:Albrecht_D%C3%BCrer_Hieronymus_im_Geh%C3%A4us_1514_Ausschnitt.jpeg&quot;&gt;feinen Schraffuren&lt;/a&gt; gespeichert, von &lt;a href=&quot;https://de.wikipedia.org/wiki/Guilloche#/media/Datei:Guilloche.jpg&quot;&gt;Guillochen&lt;/a&gt;, &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Virmalised_17.03.15.jpg#/media/File:Virmalised_17.03.15.jpg&quot;&gt;Polarlichtern&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Druckraster#/media/Datei:Vierfarben.jpg&quot;&gt;Druckrastern&lt;/a&gt; und &lt;a href=&quot;https://de.wikipedia.org/wiki/Moir%C3%A9-Effekt#/media/Datei:Moir%C3%A92.png&quot;&gt;Moiré-Effekten&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Herausgekommen ist schließlich die Idee, drei feine Punkteraster in leuchtenden Farben übereinanderzulegen. Die Farben sind so aufeinander abgestimmt, dass sich insgesamt ein eher grauer Eindruck ergibt. Durch die Verschiebung der Raster schimmert stellenweise immer eine andere Farbe hervor und es ergeben sich gitterförmige oder wolkenartige Strukturen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/blogdesign-4-header.png&quot; alt=&quot;Die Kopfleiste mit der changierenden Hintergrundfarbe, darunter sechs weitere Varianten, wie die „Farbe“ noch aussehen kann.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ein schöner Effekt, den ich in der oberen Leiste meines Blogs anwende. Darum sieht der obere Rand immer wieder anders aus, abhängig vom Browser, von der Fenstergröße und der Vergrößerungsstufe. Wer damit ein wenig spielen möchte, für den habe ich das &lt;a href=&quot;extra/opal.html&quot;&gt;Opal-Muster auf einer Extra-Seite&lt;/a&gt; großflächig abgebildet.&lt;/p&gt;
+
+&lt;h2 id=&quot;punkteraster-als-prinzip&quot;&gt;Punkteraster als Prinzip&lt;/h2&gt;
+
+&lt;p&gt;Die Idee des Punkterasters mit verlaufenden, eher gedeckten Farben habe ich dann zur grafischen Grundlage des neuen Blogdesigns bestimmt. Ich lasse das an mehreren Stellen wieder auftauchen, zum Beispiel beim großen Buchstaben am Textanfang, unten in der grauen Fußleiste oder für Hervorhebungen wie die folgende:&lt;/p&gt;
+
+&lt;p class=&quot;hinterlegt&quot;&gt;Texte über einem Hintergrundmuster sind schlechter lesbar als mit blassem einfarbigen Hintergrund. Das nehme ich hier in Kauf und hoffe, dass das schwache Punktemuster in diesen seltenen Fall funktioniert.&lt;/p&gt;
+
+&lt;p&gt;Farblich ist mein Blog nun also ein bisschen gedeckter als zuvor, dafür besitzt es einige neue Elemente, die man mit böser Zunge als „rein dekorativ“ bemängeln könnte (z. B. den Vorspann, das Initial, das Punkteraster). Mal sehen, ob mir mein viertes Blogdesign auch fast ein Jahrzehnt lang gefällt …&lt;/p&gt;
+
+&lt;p&gt;Ach ja: Bei der Umgestaltung habe ich viele Details in früheren Artikeln angepasst (z. B. Farbvariablen, Abstände oder Textanfänge). Wahrscheinlich habe ich nicht alles gefunden und es gibt Stellen, die irgendwie falsch aussehen. Falls ihr so einen Fehler findet, schickt mir bitte eine kurze Nachricht, dann kann ich das reparieren. Und nun viel Spaß mit meinem neugestalteten Blog! 🥳&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/blogdesign-4.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/blogdesign-4.html</guid>
+	<pubDate>Wed, 26 Aug 2026 00:00:00 +0200</pubDate>
+</item>
+
+<item>
 	<title>Die Sonne hinterm Mond</title>
 	<description>&lt;p&gt;Nächsten Mittwoch (12. August) ist es mal wieder soweit: Der Mond zieht so zwischen Sonne und Erde hindurch, dass er auf die Erdoberfläche einen Schatten wirft. Von der Erde aus gesehen schiebt sich ein schwarzer Kreis über die Sonnenscheibe und verdeckt diese (je nach Standort) teilweise oder sogar vollständig – eine Sonnenfinsternis.&lt;/p&gt;
 
@@ -201,113 +253,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/dvoraks-neunte.html</guid>
 	<pubDate>Wed, 27 May 2026 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>KI halluziniert immer</title>
-	<description>&lt;p&gt;Künstliche Intelligenz (KI) hält in viele Bereiche des Alltags Einzug. Sie erzeugt Bildmaterial für Werbung, produziert günstige Musik für Privatradios, erstellt Übungsaufgaben fürs Lernen in der Schule, analysiert per Überwachungskamera das Verhalten von Passanten, schreibt selbstständig Programm-Code.&lt;/p&gt;
-
-&lt;p&gt;Wenn KI mal daneben liegt, spricht man von „Halluzination“. Man unterstellt ihr, dass sie sich getäuscht habe, ihr ein Fehler unterlaufen ist, etc. Diese Wortwahl verschleiert aber eine fundamentale Eigenschaft von KI: Sie generiert ihre Ausgabe aufgrund von Statistik und ohne Absicht, eigenen Willen oder grundsätzliches Verständnis. Darum kann sie gar nicht halluzinieren – oder sie tut es immer.&lt;/p&gt;
-
-&lt;h2 id=&quot;wie-funktioniert-ki&quot;&gt;Wie funktioniert KI?&lt;/h2&gt;
-
-&lt;p&gt;„Künstliche Intelligenz“ (und ich halte diesen Begriff schon für eine Irreführung) erfüllt ihre Aufgaben grundsätzlich nach dem gleichen Prinzip. Zu Beginn wird eine riesige Datenmenge eingelesen: Fotos aller Art, verfügbare Musikstücke, Prüfungsaufgaben, Überwachungsvideos, Alltagstexte, Software-Code – je nachdem, womit die KI später umgehen soll. Diese Daten sind kategorisiert, bewertet, mit einer Beschreibung versehen, etc. … also möglichst verständlich aufbereitet, damit das KI-System darin logische Zusammenhänge erkennen kann. Diese Phase der Datenfütterung nennt man Training.&lt;/p&gt;
-
-&lt;p&gt;Aufgrund der Trainingsdaten kann eine KI anschließend neue Informationen verarbeiten, Fragen beantworten und Bilder generieren. Sie sucht nach Verbindungen und gibt das aus, was am wahrscheinlichsten zur Anfrage passt – so, wie es in den Trainingsdaten angelegt war. Dabei kommen teils erstaunliche Ergebnisse hervor, die uns mit ihrem Detailreichtum, ihrer Schnelligkeit und scheinbaren Kreativität verblüffen.&lt;/p&gt;
-
-&lt;h2 id=&quot;wahrscheinlichkeit-und-interpretation&quot;&gt;Wahrscheinlichkeit und Interpretation&lt;/h2&gt;
-
-&lt;p&gt;Im Grunde ist die sogenannte künstliche Intelligenz jedoch eine recht gute Statistik-Maschine, die je nach Training wahrscheinlich passende Antworten ausgibt. Ob diese Antwort sinnvoll erscheint, hängt von der Qualität der Trainigsdaten ab, aber auch von demjenigen, der die Ausgabe interpretiert.&lt;/p&gt;
-
-&lt;p&gt;Dass Chatbots auf uns so einfühlsam, klug und verständnisvoll wirken, liegt unter anderem daran, dass wir Menschen es gewohnt sind, unvollständige oder nicht ganz passende Aussagen in einen plausiblen Sinnzusammenhang zu stellen. Zwei Stichworte sind hier &lt;a href=&quot;https://www.youtube.com/watch?v=Y9nI_Rxs1Fc&quot;&gt;ELIZA-Effekt&lt;/a&gt; &lt;em&gt;(Video vom rbb)&lt;/em&gt;, bei dem wir technischen Geräten menschliche Eigenschaften zuschreiben, und der &lt;a href=&quot;https://de.wikipedia.org/wiki/Barnum-Effekt&quot;&gt;Barnum-Effekt&lt;/a&gt;, der uns dazu bringt, allgemeine Aussagen auf uns passend zu deuten.&lt;/p&gt;
-
-&lt;p&gt;Die menschliche Neigung, auch unklare Antworten sinnvoll einzuordnen, sollte man nicht vergessen, wenn man mit KI interagiert. Über &lt;a href=&quot;irrtum.html&quot;&gt;kognitive Verzerrungen&lt;/a&gt; habe ich bereits früher gebloggt.&lt;/p&gt;
-
-&lt;h2 id=&quot;unbestreitbar-praktisch&quot;&gt;Unbestreitbar praktisch&lt;/h2&gt;
-
-&lt;p&gt;Dadurch, dass sie Verbindungen und Muster findet und reproduzieren kann, eignet sich KI hervorragend für Aufgaben, die genau das erfordern. Zum Beispiel habe ich neulich den Titel eines Films gesucht, an den ich mich nur vage erinnern konnte. Eine normale Internetsuche mit Stichworten brachte keine brauchbaren Ergebnisse, wohl aber Googles KI-Assistent:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Wie heißt der Science-Fiction-Film, in dem an verschiedenen Orten auf der Welt schwarze Monolithe auftauchen? Es hat mit Aliens zu tun, die eine Zeichensprache verwenden, die Vergangenheit und Zukunft überbrücken kann.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;Der Film, den du suchst, heißt Arrival (2016).
-Obwohl die monolithischen Objekte oft mit Stanley Kubricks 2001: Odyssee im Weltraum assoziiert werden, passt deine Beschreibung der Zeitebenen und der Alien-Sprache exakt auf das Werk von Regisseur Denis Villeneuve.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;(Die Antwort war noch unnötig viel länger)&lt;/p&gt;
-
-&lt;h2 id=&quot;goldkörnchen-in-viel-zu-viel-sand&quot;&gt;Goldkörnchen in viel zu viel Sand&lt;/h2&gt;
-
-&lt;p&gt;Ist die Frage aber zu speziell, werden die Antworten eines Chatbots weniger brauchbar und es besteht auch die Gefahr, dass „die Maschine“ falsche Antworten ausgibt. Chatbots sind/waren nämlich so programmiert, dass sie eher etwas Wahrscheinliches (aber falsches) antworten, als einzuräumen, dass sie zur Anfrage nichts finden können.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Wie heißt die Muschel, deren Gehäuse mit einem Muster versehen ist, das aussieht wie einzelne Schriftzeichen?&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;Diese Muschel wird im Deutschen oft als Hebräische Kegelschnecke (Conus ebraeus) bezeichnet. Der Name rührt daher, dass die dunklen, rechteckigen Flecken auf ihrem hellen Gehäuse an hebräische Schriftzeichen erinnern. Es gibt jedoch noch weitere Arten mit ähnlichen “Schrift-Mustern”:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Alphabet-Kegelschnecke (Conus spurius): Ihr Muster aus orangefarbenen oder braunen Flecken sieht oft wie Buchstaben des lateinischen Alphabets oder Zahlen aus.&lt;/li&gt;
-    &lt;li&gt;Schrift-Kegelschnecke (Conus litteratus): Auch diese Art trägt ihren Namen aufgrund der musterhaften Ähnlichkeit zu Schriftstücken.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Die Antwort war noch länger. Mit einer Bildersuche konnte ich aber sehen, dass die drei genannten Schnecken nicht die waren, die ich gesucht habe. Ihr Gehäuse hat Tupfen, aber beim besten Willen keine Schriftzeichen. Also eine Rückfrage:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Nein, diese Schnecken meine ich nicht. Gibt es eine andere Muschel, die wirklich so aussieht, als hätte sie jemand mit Schriftzeichen bemalt?&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;Meinst du vielleicht die Schrift-Venerupis (Venerupis litterata)? Diese Muschel gehört zur Familie der Venusmuscheln und ihr Gehäuse ist tatsächlich mit einem sehr feinen, dunklen Muster überzogen, das an viele kleine, handgeschriebene Buchstaben oder zierliche Kalligraphie erinnert.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Diese Behauptung war schwieriger zu verifizieren, denn unter diesem Namen fanden sich nur wenige Internettreffer (weil die Muschel in Wirklichkeit anders heißt?) Jedenfalls war auch das nicht das gesuchte Exemplar. Neuer Versuch:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Nein, die ist es auch nicht. Welche Muscheln gibt es noch, auf deren Äußeres scheinbar Schriftzeichen geschrieben sind?&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;Wenn die bisherigen Venus- und Kegelschnecken nicht die richtige Antwort waren, suchst du höchstwahrscheinlich nach der Hieroglyphen-Muschel (Lioconcha hieroglyphica).&lt;/p&gt;
-
-  &lt;p&gt;Diese Muschel verdankt ihren Namen einem faszinierenden Muster aus dunkelbraunen Linien auf hellem Grund, die fast exakt wie handgezeichnete Hieroglyphen oder abstrakte Schriftzeichen wirken. […]&lt;/p&gt;
-
-  &lt;p&gt;Vorkommen: Sie ist vor allem im Roten Meer und im Indopazifik heimisch, wo sie im flachen Wasser in Sandböden lebt. &lt;a href=&quot;http://www.unterwasser-welt-rotesmeer.de/html/hieroglyphen-muschel.html&quot;&gt;🔗&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ja genau! Die &lt;a href=&quot;https://duckduckgo.com/?t=ffab&amp;amp;q=Lioconcha+hieroglyphica&amp;amp;ia=images&amp;amp;iax=images&quot;&gt;Hieroglyphen-Venusmuschel&lt;/a&gt; ist es!&lt;/p&gt;
-
-&lt;p&gt;Das konnte ich mit KI aber nur durch beharrliches Nachfragen herausfinden und indem ich vorher schon ein bestimmtes Grundwissen mitgebracht habe, um falsche Antworten zu erkennen. Beim letzten Absatz verlinkt die KI zum Beispiel auf eine verwandte Art (&lt;em&gt;Lioconcha castrensis&lt;/em&gt;), während die &lt;em&gt;Lioconcha hieroglyphica&lt;/em&gt; gar nicht im Roten Meer lebt.&lt;/p&gt;
-
-&lt;h2 id=&quot;ki-kann-sich-auch-mal-irren&quot;&gt;„KI kann sich auch mal irren“&lt;/h2&gt;
-
-&lt;p&gt;Ja nun, Muscheln sind ja wirklich Expertenwissen, da liegt die KI halt manchmal daneben … Nein, genau das ist nicht der Fall. Und das möchte ich mit diesem Artikel klar stellen: KI macht keine Fehler, sie irrt nicht, sie hat sich nicht vertan.&lt;/p&gt;
-
-&lt;p&gt;Eine KI zu benutzen ist immer, als ob man einen mehr oder weniger gut gezinkten Würfel wirft. Mit hoher Wahrscheinlichkeit kommt ein Treffer raus, aber genauso gibt es immer wieder Ergebnisse, die nicht passen. Und das sind keine Fehler, sondern es ist eine grundlegende Eigenschaft der „künstlichen Intelligenz“ – sie basiert auf Wahrscheinlichkeiten und eben nicht auf Fachwissen, vertieftes Nachdenken oder Weltverständnis.&lt;/p&gt;
-
-&lt;p&gt;Leider kann man die Missgriffe der KI nur erkennen, wenn man ihre Antworten kritisch hinterfragt, mit einer anderen Quelle überprüft und selbst genug Fachwissen besitzt, um ihren Wahrheitsgehalt einschätzen zu können. Darum meine Empfehlung für den Gebrauch von Chatbots, Bildgeneratoren und anderem KI-Werkzeug: Nutze sie nur, wenn du die Richtigkeit der Ergebnisse selbst beurteilen kannst.&lt;/p&gt;
-
-&lt;h2 id=&quot;kurz-angerissen-weitere-ki-probleme&quot;&gt;Kurz angerissen: Weitere KI-Probleme&lt;/h2&gt;
-
-&lt;p&gt;In diesem Artikel geht es darum, wie brauchbar KI-Ausgaben sind. Wer damit arbeiten möchte, sollte sich weitere Probleme von KI-Werkzeugen bewusst machen:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Zum Training werden ungefragt Texte, Fotos, Musik und andere kreative Werke verwertet. Menschen, die von ihrer schöpferischen Arbeit leben möchten, erhalten dafür keine Entschädigung; dafür gehen ihnen Aufträge verloren, weil ihre kreative Arbeit mit KI billig nachproduziert wird.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Nicht nur die Anwendung sondern vor allem auch das Training der KI verbraucht massiv Rechenleistung und damit Energie und Trinkwasser zur Kühlung der Rechenzentren.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Um brauchbare Datensätze zu erhalten, müssen Menschen in Billiglohnländern unter unwürdigen Arbeitsbedingungen große Datenmengen sichten und kategorisieren – auch Datenmaterial wie Kindesmissbrauch und Enthauptungsvideos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Die KI-Technik sorgt für eine Machtkonzentration bei Technik-Konzernen, ermöglicht die billige Produktion von Fake-News, massenhafte Überwachung, selbstständig tötende Kriegswaffen … Wer KI-Unternehmen finanziert, unterstützt womöglich auch diese Entwicklungen.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Stimmt, ich halte nicht viel von dieser sogenannten „künstlichen Intelligenz“ – zumindest nicht so, wie sie derzeit angewendet wird. Ums Thema „KI“ ging es am 19. März auch bei &lt;a href=&quot;https://www.ardmediathek.de/video/reschke-fernsehen/hey-chatgpt-lass-die-wirtschaft-crashen/das-erste/Y3JpZDovL25kci5kZS84NTAwYjQ3Yi0xODYzLTQ1OWMtYTkzMS0yN2NiZmQwZjBlY2I&quot;&gt;Reschke Fernsehen&lt;/a&gt;.&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/ki-halluziniert.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/ki-halluziniert.html</guid>
-	<pubDate>Tue, 31 Mar 2026 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

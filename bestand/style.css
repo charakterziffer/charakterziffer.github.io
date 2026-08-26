@@ -153,7 +153,7 @@ p, details, figcaption { text-align: justify; word-spacing: -0.05em; }
 
 i, em { font-style: italic; letter-spacing: .02em;
 	font-feature-settings: 'liga','clig','calt'; }
-b, strong { filter:contrast(300%); }
+b, strong { filter: contrast(300%); }
 
 sup, sub { line-height: 0; letter-spacing: .05em; }
 sup { font-variant-numeric: lining-nums; }
