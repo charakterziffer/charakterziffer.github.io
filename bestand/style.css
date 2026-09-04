@@ -16,7 +16,7 @@
 
 /* FARBEN */
 :root {
-	--dotsize: .039em; --dotdistance: 0.14em; /* Header-Rasterung */
+	--dotsize: .038em; --dotdistance: 0.14em; /* Header-Rasterung */
 	--grau: hsl(250, 10%, 50%);
 	--nebel: hsla(0, 0%, 60%, .25); --schatten: hsla(0,0%,0%,.4);
 
@@ -24,8 +24,8 @@
 	--gruen: hsl(155, 100%, 25%); --gruen2: hsl(155, 15%, 80%);
 	--akzent: hsl(290, 50%, 40%); --aktiv: hsl(290, 100%, 45%);
 
-	--opal1: hsl(155, 70%, 55%); --opal2: hsl(290, 90%, 75%);
-	--opal3: hsl(25, 100%, 70%);
+	--opal1: hsl(155, 85%, 65%); --opal2: hsl(290, 100%, 80%);
+	--opal3: hsl(30, 100%, 75%);
 
 	--dotmask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width=".2em" height=".2em" viewBox="0 0 4 4"><path d="M-.05-.05V4H4V-.05zM1 .2a.7.7 0 0 1 .7.7.7.7 0 0 1-.7.7.7.7 0 0 1-.7-.7.7.7 0 0 1 .7-.7m2 2a.7.7 0 0 1 .7.7.7.7 0 0 1-.7.7.7.7 0 0 1-.7-.7.7.7 0 0 1 .7-.7" fill="%23fff"/></svg>'); }
 
@@ -50,25 +50,25 @@ img[src$='#invert'], /* als invertierbar markierte Bilder */
 
 *, ::before, ::after { box-sizing: border-box; }
 html { font: 400 1.15em/1.7 Charis,Charter,'Bitstream Charter','Sitka Text',Cambria,serif; font-variant: oldstyle-nums;
-	font-size: clamp(1.05rem, 0.97rem + 0.3vw, 1.15rem);
-	/* wächst von 1.05rem (bei ca. 425px) auf 1.15rem (bei 960px) */ }
+	font-size: clamp(1.1rem, 1.02rem + 0.3vw, 1.2rem);
+	/* wächst von 1.1rem (bei ca. 425px) auf 1.2rem (bei ca. 960px) */ }
 body { margin: 0; padding: 0; accent-color: var(--gruen);
 	color: var(--text); background-color: var(--hintergrund); }
 
 /*body { background: linear-gradient(#999 .02em, transparent 0) 0 0 / auto .5rlh; } /* Grundlinienraster */
 
 header, main, footer, article, section { display: block; }
-.container, main { max-width: 43.5em; margin: 0 auto; }
+.container, main { max-width: 42em; margin: 0 auto; }
 .container { padding: 0 1.4em 0; }
 
 header { position: relative; overflow: hidden; padding: .9rlh 0 .6rlh;
 	background: radial-gradient(var(--opal1) var(--dotsize), transparent 0) 0/var(--dotdistance) var(--dotdistance) space; border-bottom: 1px solid var(--nebel) ;}
 header::before, header::after { content: ""; position: absolute;
-	z-index: -1; width: 110%; left: -5%; height: 150%; top: -25%; }
+	z-index: -1; left: -5%; right: -5%; top: -25%; bottom: -25%; }
 header::before { background: radial-gradient(var(--opal2) var(--dotsize), transparent 0) 0/ var(--dotdistance) var(--dotdistance);
   transform: rotate(-.9deg); }
 header::after { background: radial-gradient(var(--opal3) var(--dotsize), transparent 0) 0/ var(--dotdistance) var(--dotdistance);
-  transform: rotate(-.6deg); }
+  transform: rotate(.6deg); }
 
 header .container { display: grid; grid-template-columns: 1fr;
 	grid-template-rows: 2.5rlh 1rlh 1fr; gap: .5rlh; }
