@@ -105,7 +105,7 @@ footer { padding:1rlh 0 1.5rlh; background:var(--grau) var(--dotmask); }
 /* Zweitschrift für Titel, Links und fett; Monospace-Schrift */
 h1, h2, h3, b, strong, a, form label {
 	font-family: czSlab, sans-serif; font-weight: bold; line-height: 1;
-	font-size-adjust: .5; font-style: normal; /* damit nicht künstlich verschrägt, z.B. Links in Bilduntertitel */ }
+	font-size-adjust: .483; font-style: normal; /* damit nicht künstlich verschrägt, z.B. Links in Bilduntertitel */ }
 h1, h2, h3, :is(h1,h2,h3) a { font-variant: lining-nums;
 	letter-spacing:-.01em; font-feature-settings:'liga','clig','calt'; }
 b, strong, a, form label { padding: 0 .04em; letter-spacing: 0; }
