@@ -41,7 +41,7 @@
 	--dotmask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width=".25em" height=".25em" viewBox="0 0 4 4"><path d="M-.05-.05V4H4V-.05zM1 .2a.7.7 0 0 1 .7.7.7.7 0 0 1-.7.7.7.7 0 0 1-.7-.7.7.7 0 0 1 .7-.7m2 2a.7.7 0 0 1 .7.7.7.7 0 0 1-.7.7.7.7 0 0 1-.7-.7.7.7 0 0 1 .7-.7" fill="%23000"/></svg>'); }
 
 h1, h2 { opacity: .85; }
-img, iframe { filter: brightness(.8); }
+img, iframe { filter: brightness(.7); }
 img[src$='#invert'], /* als invertierbar markierte Bilder */
 	.icon-rss::after { filter: invert(1) hue-rotate(180deg); }
 }
