@@ -305,8 +305,11 @@ input[type='submit'] { width: auto; }
 
 @media print {
 @page { margin: 1.5cm 1.5cm 2cm; }
-body { background-image: none; }
-header, main, footer, .container { width: 100%; }
+html { font-size: .8rem; }
+header, main, footer, .container { width: 100%; max-width: unset; }
+
+header { background: #ccc ;}
+header::before { background: none; }
 
 footer,figure,blockquote,.hinterlegt,details,pre,code,a[download] {
 	background: #fff; border: 1px solid #666; break-inside: avoid; }
@@ -316,6 +319,9 @@ h1, h2, h3, time {
 	break-after: avoid; break-inside: avoid; color: #222; }
 p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited {
 	color: #000; }
+
+.intro + p:not(.hinterlegt)::first-letter {
+	color: var(--grau) !important; background-image: none; }
 
 p, ul, ol { widows: 2; orphans: 2; }
 
