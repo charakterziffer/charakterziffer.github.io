@@ -43,7 +43,8 @@
 h1, h2 { opacity: .85; }
 img, iframe { filter: brightness(.7); }
 img[src$='#invert'], /* als invertierbar markierte Bilder */
-	.icon-rss::after { filter: invert(1) hue-rotate(180deg); }
+	.icon-rss::after, .anhoeren::after {
+	filter: invert(1) hue-rotate(180deg); }
 }
 
 /* GRUNDSÄTZLICHES LAYOUT */
@@ -244,8 +245,7 @@ a.anhoeren { color:inherit; font:inherit; text-decoration:underline dotted; curs
 .anhoeren::after, .icon-rss::after, .icon-ccbysa::after {
 	padding: 0; display: inline-block; }
 .anhoeren::after { width:.9em; height:.9em; margin: 0 0 0 .1em;
-	vertical-align:.2em; background-color:var(--text); content:'';
-	mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path fill="currentColor" d="M11 5 6 9H2v6h4l5 4V5z"/><path fill="none" d="M19 5a10 10 0 0 1 0 14M16 8a5 5 0 0 1 0 8"/></svg>'); } /* mit Maske, damit im Darkmode invertiert */
+	vertical-align:.2em; content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path fill="currentColor" d="M11 5 6 9H2v6h4l5 4V5z"/><path fill="none" d="M19 5a10 10 0 0 1 0 14M16 8a5 5 0 0 1 0 8"/></svg>'); }
 .icon-rss::after { width: .9em; margin: 0 .15em 0 .4em; vertical-align: -.1em; content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 14 14" preserveAspectRatio="xMinYMin meet"><g stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 13V1H1v12z" fill="%23f60" stroke="%23f60"/><path d="M11 11c1-9-8-8-8-8m4.5 8C8 6 3 6.5 3 6.5" fill="none" stroke="%23fff"/><circle cx="3.5" cy="10.5" r="1.5" fill="%23fff"/></g></svg>'); }
 .icon-ccbysa::after { width: 4em; margin: 0 .15em 0 .4em;  vertical-align: -.2em; content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 60 15" preserveAspectRatio="xMinYMin meet"><defs><clipPath id="a"><path d="M3 2h18v11H3z"/></clipPath></defs><path d="M.4.4h59.6v14.6H.4z" fill="%23fff" stroke="%23000" stroke-width=".8"/><path d="M2 2h56v11H2z"/><path d="M2 2v11h20c2.5-3.7 2.5-7.7 0-11z" fill="%23aaa"/><g clip-path="url(%23a)"><ellipse cx="12.6" cy="7.5" rx="7" ry="6.5" fill="%23fff" stroke="%23000" stroke-width="1.4"/></g><path d="M11.5 6.8c-.2-.4-.5-.6-.9-.6-.6 0-1 .5-1 1.3 0 .9.3 1.3 1 1.3.4 0 .8-.2 1-.6l.9.5c-.4.8-1.1 1.1-2 1.1-.7 0-1.2-.2-1.7-.6-.4-.4-.6-1-.6-1.7s.2-1.2.6-1.6c.5-.4 1-.6 1.7-.6.9 0 1.6.4 2 1.1zm4.4 0c-.2-.4-.5-.6-.8-.6-.7 0-1 .4-1 1.3s.3 1.3 1 1.3c.4 0 .8-.2.9-.6l1 .5c-.4.8-1.1 1.1-2 1.1-.7 0-1.2-.2-1.7-.6-.4-.4-.6-1-.6-1.7s.2-1.2.6-1.6c.4-.4 1-.6 1.6-.6.9 0 1.6.4 2 1.1z"/><text style="line-height:1" x="27" y="10.4" font-weight="bold" font-size="8.5" font-family="Helvetica,Arial,sans-serif" fill="%23fff">BY-SA</text></svg>'); }
 
@@ -307,7 +307,6 @@ input[type='submit'] { width: auto; }
 @page { margin: 1.5cm 1.5cm 2cm; }
 html { font-size: .8rem; }
 header, main, footer, .container { width: 100%; max-width: unset; }
-
 header { background: #ccc ;}
 header::before { background: none; }
 
@@ -317,12 +316,11 @@ pre > code { border: 0; }
 
 h1, h2, h3, time {
 	break-after: avoid; break-inside: avoid; color: #222; }
-p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited {
-	color: #000; }
-
 .intro + p:not(.hinterlegt)::first-letter {
 	color: var(--grau) !important; background-image: none; }
 
+p, ul, ol, code, pre, figcaption, blockquote, a:link, a:visited {
+	color: #000; }
 p, ul, ol { widows: 2; orphans: 2; }
 
 /* Im Druck geöffnet */
