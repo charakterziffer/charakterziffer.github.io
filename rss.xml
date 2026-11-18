@@ -14,6 +14,26 @@
 </image>
 
 <item>
+	<title>Kleiner Kalender, große Übersicht</title>
+	<description>&lt;p&gt;Zwar veröffentliche ich ihn nicht jedes Jahr, aber ich noch immer gestalte mir zum Jahresende hin einen Halbmonatskalender. In der Größe DIN A5 ist er kompakt und handlich, dank großer Zahlen lässt er sich trotzdem aus der Entfernung lesen und die Tageskästchen sind mit rund 8 cm² groß genug für Notizen und Termine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;material/hmk2027.jpg&quot; alt=&quot;Details meines Halbmonatskalenders 2027&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Der Zeilenwechsel zwischen Mittwoch und Donnerstag ist anfangs ungewohnt, aber so ergeben sich gut zwei Wochen auf einen Blick – für mich perfekt zum Planen. Die Schriftart dieses Jahr ist &lt;a href=&quot;https://thequestaproject.com&quot;&gt;Questa Sans&lt;/a&gt; von Martin Majoor und Jos Buivenga, erschienen 2014.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;material/hmk2027.pdf&quot; download=&quot;&quot;&gt;Kalender herunterladen&lt;br /&gt;&lt;em&gt;(PDF-Datei, 200 kB)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Achtung beim Ausdrucken: Einige Drucker verkleinern die Seiten, unbedingt „Originalgröße“ oder „Skalierung 100%“ oder ähnliches einstellen. Ich empfehle, die gedruckten Seiten dann zu halbieren, zu sortieren und schließlich die 24 Einzelblätter zusammenzuheften: mit einer Vielzweckklammer, einer Spiralbindung aus dem Copy-Shop, mit etwas Leim an der oberen Kante oder einfach jede Seite mittig lochen und aufhängen.&lt;/p&gt;
+
+&lt;p&gt;Mich freut, wenn euch mein Kalender gefällt. Ihr könnt ihn gern weitergeben, er steht dazu unter einer Creative-Commons-Lizenz mit Namensnennung, nicht kommerzieller Nutzung und Weitergabe unter gleichen Bedingungen (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de&quot;&gt;CC BY-NC-SA&lt;/a&gt;). Wer meinen Kalender stärker bearbeiten möchte (beispielsweise die optionalen Feiertage aufs eigene Bundesland anpassen), schreibe mir einfach oder hinterlasse hier einen Kommentar, dann verschicke ich gern die SVG-Dateien.&lt;/p&gt;
+</description>
+	<link>https://charakterziffer.github.io/kalender-2027.html</link>
+	<dc:creator>Gerhard Großmann</dc:creator>
+	<guid isPermaLink="true">https://charakterziffer.github.io/kalender-2027.html</guid>
+	<pubDate>Thu, 19 Nov 2026 00:00:00 +0100</pubDate>
+</item>
+
+<item>
 	<title>Comics mit Verzweigung</title>
 	<description>&lt;p&gt;Comic, Labyrinth und Spiel in einem – so lautet der Untertitel der &lt;em&gt;Adventuregame Comics&lt;/em&gt; aus dem Mantikore-Verlag. Man blättert die Bücher nämlich nicht von vorne bis hinten durch, sondern entscheidet beim Lesen immer wieder, wie/wo es weitergehen soll. So springt man im Buch wild hin und her, um einen Handlungsstrang zu verfolgen. Wie das konkret aussieht? Zum Beispiel so:&lt;/p&gt;
 
@@ -194,77 +214,6 @@
 	<dc:creator>Gerhard Großmann</dc:creator>
 	<guid isPermaLink="true">https://charakterziffer.github.io/tintenfarben-2.html</guid>
 	<pubDate>Fri, 03 Jul 2026 00:00:00 +0200</pubDate>
-</item>
-
-<item>
-	<title>Wir würfeln uns ein Abenteuer</title>
-	<description>&lt;p&gt;Seit einiger Zeit interessiere ich mich für Rollenspiele. Bei dieser Art von Spielen wird eine recht freie Handlung erzählt, die in ihrer endgültigen Form erst während des Spielens entsteht. Meist übernimmt eine Person die Spielleitung, plant die grobe Richtung der Geschichte und führt die übrigen Spieler:innen durch die Szenen. Die anderen schlüpfen in die Rollen der Hauptfiguren der Geschichte (darum „Rollenspiel“) und gestalten diese aus.&lt;/p&gt;
-
-&lt;p&gt;Ich habe mir unter anderem bei Rocket Beans TV die &lt;a href=&quot;https://rocketbeans.tv/mediathek/video/26036&quot;&gt;Videos zum Spiel „Telemar“&lt;/a&gt; angesehen, im &lt;a href=&quot;https://2w12.podigee.io/&quot;&gt;Podcast 2W12&lt;/a&gt; etwas über verschiedene Aspekte der Spielleitung gehört, dem Erzählspiel &lt;a href=&quot;https://www.youtube.com/watch?v=1ATxSz3txUo&quot;&gt;„Gegen das Monster“&lt;/a&gt; zugeschaut und ein paar Spieltipps und Theorie im &lt;a href=&quot;https://www.3w6-podcast.com/&quot;&gt;Podcast 3W6&lt;/a&gt; erfahren.&lt;/p&gt;
-
-&lt;h2 id=&quot;die-würfel-entscheiden-mit&quot;&gt;Die Würfel entscheiden mit&lt;/h2&gt;
-
-&lt;p&gt;Damit nicht nur die Spielleitung über den Verlauf der Geschichte bestimmt, arbeiten viele Rollenspiele mit Würfeln. Beispielsweise erzählt die Spielleitung, dass in der nächtlichen Ruine aus einer dunklen Ecke plötzlich ein zerzauster Wolf hervorspringt und nach einem der Abenteurer schnappt. Der entsprechende Spieler muss dann würfeln. Wirft er mindestens den zuvor bestimmten Wert, kann seine Figur rechtzeitig ausweichen; ansonsten erhält er eine böse Bisswunde. Diese Verletzung kann anschließend Auswirkungen auf die Figur haben und womöglich die gesamte Geschichte verändern, zum Beispiel ist die Figur danach weniger geschickt (sie muss für erfolgreiches Klettern einen höheren Wert erwürfeln), sie verwandelt sich in einen Werwolf oder die Gruppe muss nun erst ein Heilmittel suchen.&lt;/p&gt;
-
-&lt;figure class=&quot;anteilig&quot;&gt;
-  &lt;img src=&quot;material/w20.jpg&quot; alt=&quot;Ein milchig-transparenter, 20-seitiger Würfel mit blaugrünem Schimmer&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;style&gt;
-@media (min-width: 28em) { .anteilig { float: left; width: 45%;
-	margin: .3rlh 1.2em .2rlh 0; } }
-@media (min-width: 38em) { .anteilig { width: 35%; } }
-&lt;/style&gt;
-
-&lt;p&gt;Je nach Art des Rollenspiels werfen die Spielenden nicht nur den „normalen“ Würfel mit sechs Seiten (= W6), sondern haben je nach Zweck ein ganzes Arsenal zur Verfügung. Im bekanntesten Rollenspiel „Dungeons &amp;amp; Dragons“ ist der häufigste Würfel ein W20 (mit zwanzig Seiten, siehe Foto). Welchen Schaden bestimmte Waffen anrichten wird mit einem 8-seitigen (W8), 10-seitigen (W10) oder 12-seitigen Würfeln (W12) ausgelost. Zwei 10-Seiter (= 2W10) helfen, Prozentangaben und Zufallsereignisse aus langen Listen zu erwürfeln (ein Würfel für die Zehnerstelle, der zweite für die Einer). Es gibt auch den W4, der z. B. die Wirksamkeit von Zaubersprüchen bestimmt. Für mich sind das jedoch recht kleinteilige Regeln, da bin ich raus. Wer mag, erfährt mehr dazu u. a. auf &lt;a href=&quot;https://www.rollmydice.app/guides/complete-guide-dnd-dice&quot;&gt;Roll My Dice&lt;/a&gt; (engl.).&lt;/p&gt;
-
-&lt;h2 id=&quot;vielseitige-spielmechaniken&quot;&gt;Vielseitige Spielmechaniken&lt;/h2&gt;
-
-&lt;p&gt;Außer Würfeln können auch andere Gegenstände für Zufalls-Entscheidungen sorgen. Darum stimmt der Titel dieses Blogartikels nicht so ganz, wenn es allgemein um Rollenspiele geht. Bei &lt;a href=&quot;https://plotbunnygames.com/spiele/gegen-das-monster/&quot;&gt;„Gegen das Monster“&lt;/a&gt; gibt es keine Spielleitung, dafür ziehen die Spielenden reihum Karten aus einem französischen Deck (52 Karten). Jeder Karte ist eine Frage zugeordnet, die etwas über den eigenen Spielcharakter und über das zu jagende Monster aussagt (z. B. „Was an dir ist eine Gefahr für das Monster?“).&lt;/p&gt;
-
-&lt;p&gt;Im &lt;a href=&quot;https://rpg-duelmen.de/10-candles/&quot;&gt;Horrorspiel „Ten Candles“&lt;/a&gt; entscheiden verlöschende Kerzen mit, wie lange eine Spielrunde dauert und wie viele Würfel bei einer (hoffentlich guten) Entscheidung mitwirken dürfen. Für das &lt;a href=&quot;https://www.system-matters.de/shop/star-crossed/&quot;&gt;Beziehungsspiel „Star Crossed“&lt;/a&gt; benötigt man einen Wackelturm (Jenga), der natürlich irgendwann einstürzt und damit das Ende besiegelt.&lt;/p&gt;
-
-&lt;p&gt;Bereits gespielt habe ich Krimispiele, die in einer verschlossenen Packung daher kommen. Als Ermittler:innen versuchen alle, den geschilderten Kriminalfall mit den gegebenen Hinweisen, Spuren und Materialien zu lösen. Häufig gibt es ein dazugehöriges Internetportal, wo man weitere Beweise zum Fall bekommt, Ermittlungsergebnisse sammeln kann und schließlich die vermutete Lösung zur Bestätigung einreichen kann.&lt;/p&gt;
-
-&lt;p&gt;Ein Trend in den 1980ern waren interaktive Spielbücher (Stichwort: „Choose Your Own Adventure“) – im Grunde Rollenspiele in Buchform für eine Person. Die Geschichte darin ist in nummerierte Abschnitte gegliedert, die aber nicht in der abgedruckten Reihenfolge gelesen werden. Stattdessen ist am Ende eines Abschnitts eine Entscheidungsfrage mit Verweisen auf dazu passende Handlungsverzweigungen, Beispiel: &lt;em&gt;Öffnest du nun die Tür hinter dem Wandteppich (lies weiter im Abschnitt 51) oder gehst du die Kellertreppe hinunter (weiter bei 238)?&lt;/em&gt; Manchmal soll man als Leser:in für eine Entscheidung würfeln und eine Liste mit Ausrüstung und Gesundheitspunkten führen.&lt;/p&gt;
-
-&lt;p&gt;Ein weiteres Element bei Rollenspielen kann ein Spielplan mit 1-Zoll-Raster sein, auf den die Umgebung gezeichnet ist. Dort bewegen sich die Spiel-Charaktere in Form kleiner Figuren und treffen auf Gegner. Mögliche Aktionen hängen dann von der Position auf dem Spielfeld ab, zum Beispiel ob ein Nahkampf möglich ist oder eine Tür geöffnet werden kann.&lt;/p&gt;
-
-&lt;p&gt;Typisch für Rollenspiele sind auch &lt;a href=&quot;https://www.dnddeutsch.de/ausfuellhilfe-fuer-den-charakterbogen/&quot;&gt;Charakterbögen&lt;/a&gt; (Beispiel für Dungeons &amp;amp; Dragons). Darin werden zu den Figuren der Spieler:innen die jeweiligen Stärken, Fähigkeiten, Lebenspunkte, vorhandene Ausrüstung, etc. festgehalten.&lt;/p&gt;
-
-&lt;h2 id=&quot;über-kurz-oder-lang&quot;&gt;Über kurz oder lang&lt;/h2&gt;
-
-&lt;p&gt;Solche Charakterbögen sind hilfreich, um die Eigenschaften seiner Figur und den aktuellen Status (Gesundheit, Waffen, Schätze, verbrauchte Zauber, …) zu dokumentieren. Schließlich laufen manche Rollenspiele als „Kampagnen“ mit mehreren Zusammenkünften über eine längere Zeit – da ist es gut, die Übersicht zu behalten und seinen Charakter nach und nach zu entwickeln.&lt;/p&gt;
-
-&lt;p&gt;Genauso gibt es den „One Shot“, also ein Rollenspiel, das in einer Sitzung von 2–3 Stunden fertig durchgespielt ist. Ein Beispiel, was mir gut gefällt, wäre da &lt;a href=&quot;https://de.wikipedia.org/wiki/Die_Werw%C3%B6lfe_von_D%C3%BCsterwald_(Spiel)&quot;&gt;„Die Werwölfe von Düsterwald“&lt;/a&gt;, wo alle in die Rolle von Dorfbewohnern (oder heimlichen Werwölfen) schlüpfen und in wechselnden Tag-/Nachtphasen versuchen, etwas über die Identität der anderen Spieler:innen herauszufinden. Der Bayerische Rundfunk hat das Spiel übrigens &lt;a href=&quot;https://www.ardmediathek.de/serie/werwoelfe-das-spiel-von-list-und-taeuschung/staffel-1/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdFNlcmllcy9GMjAyNVdPMDA4MjY1QTA/1&quot;&gt;als Gameshow verfilmt&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Einige Rollenspiele kann man auch nur ein einziges Mal spielen, wie die oben genannten Krimispiele oder auch Escape-Spiele, bei denen man Rätsel lösen muss, um den eigenen Spiel-Charakter aus einem verschlossenen Raum zu befreien. Einmal gespielt, kennt man alle Hinweise und Lösungen.&lt;/p&gt;
-
-&lt;h2 id=&quot;was-fasziniert-mich-am-rollenspiel&quot;&gt;Was fasziniert mich am Rollenspiel?&lt;/h2&gt;
-
-&lt;p&gt;Ehrlich gesagt: Keine Ahnung; manche Aspekte daran finde ich auch eher langweilig. Ich hatte gehofft, mein Interesse an Rollenspielen mit diesem Blogartikel ein bisschen zu analysieren. Vermutlich ist es eine Summe aus verschiedenen Eigenschaften:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Mich reizt die Balance zwischen dem willkürlichen Erzählen der Spielleitung, den teilweise streng definierten Spielregeln und auch der Anforderung, dass die Geschichte spannend, nachvollziehbar und abwechslungsreich sein muss, damit alle am Spieltisch ihren Spaß daran haben.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Viele Rollenspiele sind in einer Fantasy- oder Science-Fiction-Welt angesiedelt, was mich weniger anspricht. Darum finde ich epische, fortlaufende Abenteuerrunden, bei denen sich der eigene Charakter über Monate und Jahre entwickelt, nicht so reizvoll (Puristen pochen vermutlich darauf, dass nur das die wahren Rollenspiele sind). Gut, eine Spielwelt muss natürlich genügend Herausforderungen, Risiken und Geheimnisse bieten … das geht besser in Genres, die nicht ganz so alltäglich sind.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Spannend finde ich, wie die Dynamik in der Spielgruppe abläuft und welche soziale Interaktion es gibt. Mir haben Spiele, bei denen alle für ein gemeinsames Ziel kooperieren, schon immer etwas besser gefallen als solche, wo einer möglichst haushoch über den anderen triumphieren muss. Bei den meisten Rollenspielen bist du recht schnell raus, wenn du gegen deine Gruppe agierst. Man braucht also Mitspieler:innen, die sich auf so eine Erzählung einlassen wollen. Alle Beteiligten müssen mitwirken, damit die Geschichte vorankommt, nicht langweilig, unglaubwürdig oder unfreiwillig komisch wird.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Und schließlich ist ein 20-seitiger Würfel schon irgendwie ein magischer Gegenstand, nicht wahr? Den oben abgebildeten W20 habe ich übrigens letztes Jahr bei &lt;a href=&quot;https://das-traumwerk.blogspot.com&quot;&gt;Das Traumwerk&lt;/a&gt; in Regensburg wohlüberlegt ausgesucht. Der Ladeninhaber scheint ein begeisterter Rollenspieler zu sein, mit dem man sich wahnsinnig gut über viele Themen austauschen kann.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Über eure Erfahrungen und Vorlieben bei Rollenspielen freue ich mich in den Kommentaren!&lt;/p&gt;
-</description>
-	<link>https://charakterziffer.github.io/rollenspiele.html</link>
-	<dc:creator>Gerhard Großmann</dc:creator>
-	<guid isPermaLink="true">https://charakterziffer.github.io/rollenspiele.html</guid>
-	<pubDate>Thu, 18 Jun 2026 00:00:00 +0200</pubDate>
 </item>
 
 </channel></rss>

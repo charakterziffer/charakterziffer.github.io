@@ -337,6 +337,6 @@ a[href]::after { content: ' [' attr(href) ']';
 	font: italic 1rem/1rlh Charis,Charter,'Bitstream Charter','Sitka Text',Cambria,serif;
 	margin: 0; width: auto; vertical-align: inherit; /* Reset für Links, die ein Icon gehabt hätten */ }
 a[href^='#']::after, a[href^='javascript']::after, a.anhoeren::after, header a[href]::after, a[href^='archiv.html?']::after {
-	content: ''; margin:0; }
+	content: ''; margin: 0; }
 a.anhoeren { text-decoration: none; }
 }
